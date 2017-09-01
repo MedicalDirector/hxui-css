@@ -1,0 +1,354 @@
+// =========
+// Helix Theme and Variables
+// =========
+
+// Resets
+$hxui-reset: 'hxui-reset';
+
+// Namespace
+$namespace: 'hx';
+
+// Colors
+$color-purple: hsl(256, 49%, 38%);
+$color-purple-light: hsl(256, 31%, 49%);
+$color-purple-lighter: hsl(258, 31%, 59%);
+$color-purple-lightest: hsl(261, 31%, 74%);
+
+$color-red: hsl(341, 72%, 42%);
+$color-red-light: hsl(339, 85%, 53%);
+$color-red-lighter: hsl(335, 82%, 62%);
+$color-red-lightest: hsl(333, 80%, 81%);
+
+$color-blue: hsl(204, 78%, 22%);
+$color-blue-light: hsl(205, 52%, 40%);
+$color-blue-lighter: hsl(202, 51%, 51%);
+$color-blue-lightest: hsl(200, 54%, 65%);
+
+$color-green: hsl(164, 96%, 21%);
+$color-green-light: hsl(155, 48%, 49%);
+$color-green-lighter: hsl(153, 42%, 61%);
+$color-green-lightest: hsl(148, 39%, 72%);
+
+$color-orange: hsl(22, 87%, 53%);
+$color-orange-light: hsl(27, 92%, 58%);
+$color-orange-lighter: hsl(24, 92%, 77%);
+$color-orange-lightest: hsl(24, 96%, 87%);
+
+$color-yellow: hsl(41, 97%, 49%);
+$color-yellow-light: hsl(39, 100%, 69%);
+$color-yellow-lighter: hsl(38, 100%, 76%);
+$color-yellow-lightest: hsl(37, 100%, 85%);
+
+$color-white:  hsl(0, 0%, 100%) !default;
+$color-black:  hsl(0, 0%, 0%) !default;
+$color-teal:   hsl(193, 66%, 61%) !default;
+$color-pink:   hsl(349, 100%, 67%) !default;
+
+$color-primary: $color-green-light !default;
+$color-accent: $color-blue !default;
+
+// Grayscale
+$color-gray-dark:                 hsl(200, 3%, 17%) !default;
+$color-gray:                      hsl(0, 0%, 23%) !default;
+$color-gray-light:                hsl(15, 2%, 38%) !default;
+$color-gray-lighter:              hsl(340, 1%, 68%) !default;
+$color-gray-lightest:             hsl(240, 19%, 97%) !default;
+
+// Other colors
+$color-success:             $color-green-light !default;
+$color-info:                $color-blue !default;
+$color-warning:             $color-yellow !default;
+$color-danger:              $color-red !default;
+$color-inverse:             $color-gray-dark !default;
+
+$color-light: $color-gray-lightest !default;
+$color-dark: $color-gray-dark !default;
+
+$color-white-ter: hsl(0, 0%, 96%) !default;
+$color-white-bis: hsl(0, 0%, 99%) !default;
+
+// Invert colors
+$color-orange-invert: findColorInvert($color-orange) !default;
+$color-yellow-invert: findColorInvert($color-yellow) !default;
+$color-green-invert: findColorInvert($color-green) !default;
+$color-blue-invert: findColorInvert($color-blue) !default;
+$color-purple-invert: findColorInvert($color-purple) !default;
+$color-red-invert: findColorInvert($color-red) !default;
+
+$color-primary-invert: $color-green-invert !default;
+$color-info-invert: $color-blue-invert !default;
+$color-success-invert: $color-green-invert !default;
+$color-warning-invert: $color-orange-invert !default;
+$color-danger-invert: $color-red-invert !default;
+$color-light-invert: $color-dark !default;
+$color-dark-invert: $color-light !default;
+
+$colors: (
+  'white': ($color-white, $color-black),
+  'black': ($color-black, $color-white),
+  'light': ($color-light, $color-light-invert),
+  'dark': ($color-dark, $color-dark-invert),
+  'primary': ($color-primary, $color-primary-invert),
+  'info': ($color-info, $color-info-invert),
+  'success': ($color-success, $color-success-invert),
+  'warning': ($color-warning, $color-warning-invert),
+  'danger': ($color-danger, $color-danger-invert)
+) !default;
+
+
+// Options
+$enable-rounded:            true !default;
+$enable-shadows:            true !default;
+$enable-hover-media-query:  false !default;
+
+// Body
+$body-bg:       $color-gray-lightest !default;
+$body-color:    $color-gray-dark !default;
+
+// General colors
+$background-color: $color-gray-lightest !default;
+
+// Spacer
+$spacer: 1rem !default;
+
+// Borders
+$border-color:           rgba($color-black,.1) !default;
+$border-width:               1px !default;
+$border-radius:          .25rem !default;
+$border-radius-lg:       .3rem !default;
+$border-radius-sm:       .1rem !default;
+
+$hr-border-color:             rgba(0,0,0,.1) !default;
+$hr-border-width:             $border-width !default;
+
+// Cursors
+$cursor-disabled:                not-allowed !default;
+
+// Caret
+$caret-width:            .3em !default;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-size-base: .92rem !default;
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .85rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-weight-normal: 300 !default;
+$font-weight-bolder: 500 !default;
+$font-weight-bold: bold !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+// Text colors
+$text: $color-gray-dark !default;
+$text-invert: findColorInvert($text) !default;
+$text-light: $color-gray !default;
+$text-strong: $color-gray-dark !default;
+
+// Headings
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   400 !default;
+$headings-line-height:   1.1 !default;
+$headings-color:         darken($color-blue, 10) !default;
+$headings-letter-spacing: -.01em !default;
+
+// Font sizes
+$font-size-h1: 2.3rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.35rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: .95rem !default;
+
+// Titles
+$title-size: $font-size-h1;
+$title-font-weight: 300;
+
+$subtitle-size: $font-size-h5;
+$subtitle-font-weight: 200;
+
+$lead-font-size:   1.25rem !default;
+$lead-font-weight: 300 !default;
+
+$small-font-size: .75rem !default;
+$medium-font-size: 1.25rem !default;
+$large-font-size: 1.5rem !default;
+
+$mark-padding: .2em !default;
+
+$kbd-box-shadow:         inset 0 -.1rem 0 rgba($color-black,.25) !default;
+$kbd-nested-font-weight: $font-weight-bold !default;
+
+$line-height-base:           1.5 !default;
+$line-height:                $line-height-base !default;
+
+// Border
+$border-radius:          .25rem !default;
+$border-radius-lg:       .4rem !default;
+$border-radius-sm:       .25rem !default;
+
+// Links
+$link-color:            $color-primary !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$link-hover-border-color: $color-gray-light;
+$link-focus:  $color-gray-dark;
+$link-focus-border-color: $color-primary;
+$link-active: $color-gray-dark;
+$link-active-border-color: $color-gray;
+
+// Buttons
+$button: $color-gray-dark !default;
+$button-background: $color-white !default;
+$button-border: rgba($color-gray-light,.3) !default;
+
+$button-hover: $color-gray !default;
+$button-hover-border: $link-hover-border-color !default;
+
+$button-focus: $link-focus !default;
+$button-focus-border: $link-focus-border-color !default;
+
+$button-active: $link-active !default;
+$button-active-border: $link-active-border-color !default;
+
+$button-shadow-inset: inset 0 1px 2px rgba($color-black, 0.3) !default;
+
+// Responsiveness
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default;
+// 960px container + 40px
+$desktop: 1000px !default;
+// 1152px container + 40
+$widescreen: 1340px !default;
+// 1344px container + 40
+$fullhd: 1640px !default;
+
+// Form states and alerts colours
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border-color:     darken($state-success-bg, 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border-color:        darken($state-info-bg, 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$mark-bg:                        $state-warning-bg !default;
+$state-warning-border-color:     darken($state-warning-bg, 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border-color:      darken($state-danger-bg, 5%) !default;
+
+
+// Code
+$code-font-size:              80% !default;
+$code-padding-y:              .2rem !default;
+$code-padding-x:              .4rem !default;
+$code-color:                  $color-red-light !default;
+$code-bg:                     darken($color-gray-lightest, 2) !default;
+
+$kbd-color:                   $color-white !default;
+$kbd-bg:                      $color-gray-dark !default;
+
+$pre-color:                   $color-gray-dark !default;
+$pre-scrollable-max-height:   340px !default;
+$pre-margin:                  0 0 1rem 0;
+
+// Form
+$input:                     $color-gray-dark !default;
+$input-background:          transparent !default;
+$input-border:              rgba(0, 0, 0, .2) !default;
+
+$input-hover:               $color-gray-dark !default;
+$input-hover-border:        $color-gray-light !default;
+
+$input-focus:               $color-gray-dark !default;
+$input-focus-border:        $color-primary !default;
+
+$input-disabled:            $color-gray-lighter !default;
+$input-disabled-background: $color-gray-lighter !default;
+$input-disabled-border:     $color-gray-lighter !default;
+
+$input-arrow:               $color-gray !default;
+
+$input-icon:                $color-gray-lighter !default;
+$input-icon-active:         $color-gray !default;
+
+$input-radius:              $border-radius-sm !default;
+
+// Table
+$table: $color-gray-dark !default;
+$table-background: transparent !default;
+$table-border: rgba($color-black, .08) !default;
+$table-head: $color-gray-light !default;
+
+$table-row-hover-background: rgba($color-black, .03) !default;
+$table-row-odd-background: rgba($color-black, .02) !default;
+$table-row-odd-hover-background: rgba($color-black, .05) !default;
+
+// =========
+// Components
+// =========
+
+// Grid
+$column-padding: .75rem;
+$columns-margin: .75rem;
+
+
+// Navbar
+$navbar-height: 3.25rem !default;
+$navbar-item-padding: .5rem .75rem !default;
+
+// Nav
+$nav-disabled-link-color: $color-gray-lightest;
+$nav-disabled-link-hover-color:$color-gray-lightest;
+$nav-link-hover-color: rgba(0,0,0,.02);
+$nav-link-active-color: $color-green-light;
+$nav-link-color:$color-gray;
+$nav-link-font-size: $font-size-sm;
+$nav-link-font-weight: $font-weight-bolder;
+
+// Dropdown
+$dropdown-bg:                    #fff !default;
+$dropdown-border-color:          $border-color !default;
+$dropdown-border-width:          $border-width !default;
+$dropdown-divider-bg:            $border-color !default;
+
+$dropdown-link-color:            $color-gray !default;
+$dropdown-link-hover-color:      #fff !default;
+$dropdown-link-hover-bg:         $color-green-light !default;
+
+$dropdown-link-active-color:     #fff !default;
+$dropdown-link-active-bg:        $color-green-light !default;
+
+$dropdown-link-disabled-color:   $color-gray-lighter !default;
+
+$dropdown-header-color:          $color-gray-lighter !default;
+
+// Progress Timeline
+$progress-timeline-head-color:		hsl(0, 0, 80%) !default;
+$progress-timeline-tail-color:		hsl(0, 0, 91%) !default;
+$progress-timeline-content-body-color:		hsl(0, 0, 52%) !default;
+
+
+/**
+ * Z-index master list
+ * A bird's eye view of each components z-index order.
+ */
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-navbar-sticky:     1030 !default;
+$zindex-modal-bg:          1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-tooltip:           1070 !default;

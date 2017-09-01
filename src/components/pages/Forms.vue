@@ -1,0 +1,546 @@
+<template>
+  <div id="forms">
+    <h1 class="hx-title">Form</h1>
+    <h2 class="hx-subtitle">Forms are the standard way to receive user inputted data. <br>The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.</h2>
+    <hr>
+    <section class="hx-section">
+
+      <h3>Input fields</h3>
+      <div class="hx-columns">
+        <div class="hx-column is-one-third">
+          <p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing.
+            You must have a  <code>.hx-input-control</code> div wrapping your input and label.</p>
+        </div>
+      </div>
+
+      <div class="hx-columns">
+        <div class="hx-column is-12">
+          <h5>Example</h5>
+          <div class="hx-input-control">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Full Name <sup>*</sup></label>
+            <div class="hx-help">Please enter your full name</div>
+          </div>
+          <div class="hx-input-control">
+            <input class="hx-input" type="password" required>
+            <label class="hx-label">Password <sup>*</sup></label>
+            <div class="hx-help">Please enter your password</div>
+          </div>
+
+          <div class="hx-input-control">
+            <input class="hx-input" type="text">
+            <label class="hx-label">Phone Number</label>
+            <div class="hx-help">Please enter your phone number</div>
+          </div>
+
+          <div class="hx-input-control is-info">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Info!</div>
+          </div>
+
+          <div class="hx-input-control is-success">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Success!</div>
+          </div>
+
+          <div class="hx-input-control is-warning">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Warning!</div>
+          </div>
+
+          <div class="hx-input-control is-danger">
+            <input class="hx-input" type="text" value="joe.chan@medicaldirector.c">
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Danger!</div>
+          </div>
+
+          <div class="hx-input-control">
+            <input class="hx-input" type="text" disabled placeholder="I am disabled" required>
+            <label class="hx-label">This is Disabled</label>
+          </div>
+
+        </div>
+
+        <div class="hx-column is-12">
+          <h5>Code</h5>
+          <pre><code class="language-markup"><xmp>
+          <div class="hx-input-control">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Full Name <sup>*</sup></label>
+            <div class="hx-help">Please enter your full name</div>
+          </div>
+          <div class="hx-input-control">
+            <input class="hx-input" type="password" required>
+            <label class="hx-label">Password <sup>*</sup></label>
+            <div class="hx-help">Please enter your password</div>
+          </div>
+
+          <div class="hx-input-control">
+            <input class="hx-input" type="text">
+            <label class="hx-label">Phone Number</label>
+            <div class="hx-help">Please enter your phone number</div>
+          </div>
+
+          <div class="hx-input-control is-info">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Info!</div>
+          </div>
+
+          <div class="hx-input-control is-success">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Success!</div>
+          </div>
+
+          <div class="hx-input-control is-warning">
+            <input class="hx-input" type="text" required>
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Warning!</div>
+          </div>
+
+          <div class="hx-input-control is-danger">
+            <input class="hx-input" type="text" value="joe.chan@medicaldirector.com">
+            <label class="hx-label">Email <sup>*</sup></label>
+            <div class="hx-help">Danger!</div>
+          </div>
+
+          <div class="hx-input-control">
+            <input class="hx-input" type="text" disabled placeholder="I am disabled" required>
+            <label class="hx-label">This is Disabled</label>
+          </div>
+          </xmp></code></pre>
+        </div>
+      </div>
+    </section>
+    <br>
+    <hr>
+
+    <div class="hx-section">
+      <h3>Textarea</h3>
+      <div class="hx-columns">
+        <div class="hx-column is-one-third">
+          <p>Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code>hx-input-control</code> div wrapping your input and label.</p>
+        </div>
+      </div>
+
+      <div class="hx-columns">
+        <div class="hx-column is-12">
+          <h5>Example</h5>
+          <div class="hx-input-control">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control">
+            <textarea name="textarea-sample" class="hx-textarea" placeholder="Placeholder text..."></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea with Placeholder</label>
+          </div>
+
+          <div class="hx-input-control is-info">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-success">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-warning">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-danger">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+        </div>
+
+        <div class="hx-column is-12">
+          <h5>Code</h5>
+          <pre><code class="language-markup"><xmp>
+          <div class="hx-input-control">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control">
+            <textarea name="textarea-sample" class="hx-textarea" placeholder="Placeholder text..."></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea with Placeholder</label>
+          </div>
+
+          <div class="hx-input-control is-info">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-success">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-warning">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+
+          <div class="hx-input-control is-danger">
+            <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+            <label for="textarea-sample" class="hx-label">Textarea</label>
+          </div>
+          </xmp></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="hx-section">
+      <h3>Select List</h3>
+      <div class="hx-columns">
+        <div class="hx-column is-one-third">
+          <p>Select allows user input through specified options. Make sure you wrap it in a <code>hx-select-control</code> for proper alignment with other text fields. </p>
+        </div>
+      </div>
+
+      <div class="hx-columns">
+        <div class="hx-column is-6">
+          <h5>Example</h5>
+          <div class="hx-input-control">
+            <div class="hx-select-control">
+              <select class="hx-select" id="state">
+                <option value="">Please select</option>
+                <option>New South Wales</option>
+                <option>Victoria</option>
+                <option>South Australia</option>
+                <option>Tasmania</option>
+                <option>Northern Territory</option>
+                <option>Western Australia</option>
+                <option>Queensland</option>
+              </select>
+              <label for="state" class="hx-label">Suburb <sup>*</sup></label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-select-control">
+              <select class="hx-select" disabled>
+                <option>This is disabled</option>
+                <option>New South Wales</option>
+                <option>Victoria</option>
+                <option>South Australia</option>
+                <option>Tasmania</option>
+                <option>Northern Territory</option>
+                <option>Western Australia</option>
+                <option>Queensland</option>
+              </select>
+              <label for="" class="hx-label">This is disabled <sup>*</sup></label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hx-column is-6">
+          <h5>Code</h5>
+          <pre><code class="language-markup"><xmp>
+          <div class="hx-input-control">
+            <div class="hx-select-control">
+              <select class="hx-select" id="state">
+                <option value="">Please select</option>
+                <option>New South Wales</option>
+                <option>Victoria</option>
+                <option>South Australia</option>
+                <option>Tasmania</option>
+                <option>Northern Territory</option>
+                <option>Western Australia</option>
+                <option>Queensland</option>
+              </select>
+              <label for="state" class="hx-label">Suburb <sup>*</sup></label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-select-control">
+              <select class="hx-select" disabled>
+                <option>This is disabled</option>
+                <option>New South Wales</option>
+                <option>Victoria</option>
+                <option>South Australia</option>
+                <option>Tasmania</option>
+                <option>Northern Territory</option>
+                <option>Western Australia</option>
+                <option>Queensland</option>
+              </select>
+              <label for="" class="hx-label">This is disabled <sup>*</sup></label>
+            </div>
+          </div>
+          </xmp></code></pre>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="hx-section">
+      <h3>Radio Buttons</h3>
+      <div class="hx-columns">
+        <div class="hx-column is-one-third">
+          <p>Radio Buttons are used when the user must make only one selection out of a group of items.</p>
+        </div>
+      </div>
+
+      <div class="hx-columns">
+        <div class="hx-column is-2">
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup1" type="radio" class="hx-radio" id="yes" checked />
+              <label for="yes" class="hx-label">Yes</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup1" type="radio" class="hx-radio" id="no"/>
+              <label for="no" class="hx-label">No</label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup2" type="radio" class="hx-radio" id="true" checked />
+              <label for="true" class="hx-label">True</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup2" type="radio" class="hx-radio" id="false"/>
+              <label for="false" class="hx-label">False</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="hx-column is-2">
+          <div class="hx-input-control">
+            <div class="hx-radio-control is-inline">
+              <input name="radioGroup3" type="radio" class="hx-radio is-danger" id="male" checked/>
+              <label for="male" class="hx-label">Male</label>
+            </div>
+
+            <div class="hx-radio-control is-inline">
+              <input name="radioGroup3" type="radio" class="hx-radio" id="female"/>
+              <label for="female" class="hx-label">Female</label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="top" checked/>
+              <label for="top" class="hx-label">Top</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="left" disabled />
+              <label for="left" class="hx-label">Disabled</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="bottom"/>
+              <label for="bottom" class="hx-label">Bottom</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="right" disabled />
+              <label for="right" class="hx-label">Disabled</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="hx-column is-6 is-offset-2">
+          <h5>Code</h5>
+          <pre><code class="language-markup"><xmp>
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup1" type="radio" class="hx-radio" id="yes" checked />
+              <label for="yes" class="hx-label">Yes</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup1" type="radio" class="hx-radio" id="no"/>
+              <label for="no" class="hx-label">No</label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup2" type="radio" class="hx-radio" id="true" checked />
+              <label for="true" class="hx-label">True</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup2" type="radio" class="hx-radio" id="false"/>
+              <label for="false" class="hx-label">False</label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-radio-control is-inline">
+              <input name="radioGroup3" type="radio" class="hx-radio is-danger" id="male" checked/>
+              <label for="male" class="hx-label">Male</label>
+            </div>
+
+            <div class="hx-radio-control is-inline">
+              <input name="radioGroup3" type="radio" class="hx-radio" id="female"/>
+              <label for="female" class="hx-label">Female</label>
+            </div>
+          </div>
+
+          <div class="hx-input-control">
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="top" checked/>
+              <label for="top" class="hx-label">Top</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="left" disabled />
+              <label for="left" class="hx-label">Disabled</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="bottom"/>
+              <label for="bottom" class="hx-label">Bottom</label>
+            </div>
+
+            <div class="hx-radio-control">
+              <input name="radioGroup4" type="radio" class="hx-radio" id="right" disabled />
+              <label for="right" class="hx-label">Disabled</label>
+            </div>
+          </div>
+          </xmp></code></pre>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="hx-section">
+      <h3>Checkboxes</h3>
+      <div class="hx-columns">
+        <div class="hx-column is-one-third">
+          <p>Use checkboxes when looking for yes or no answers. The <code>for</code> attribute is necessary to bind our custom checkbox with the input. Add the input's <code>id</code> as the value of the <code>for</code> attribute of the label.</p>
+        </div>
+      </div>
+
+      <div class="hx-columns">
+        <div class="hx-column is-2">
+          <div class="hx-input-control">
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option1" />
+              <label for="option1" class="hx-label">Option 1</label>
+            </div>
+
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option2" checked />
+              <label for="option2" class="hx-label">Option 2</label>
+            </div>
+
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option3" disabled />
+              <label for="option3" class="hx-label">Option 3</label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hx-column is-2">
+
+          <div class="hx-input-control">
+            <strong>Notification Settings</strong>
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email" checked />
+              <label for="email" class="hx-label">Email</label>
+            </div>
+
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack"/>
+              <label for="slack" class="hx-label">Slack</label>
+            </div>
+
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat" disabled/>
+              <label for="hipchat" class="hx-label">Hipchat</label>
+            </div>
+
+            <div class="hx-checkbox-control">
+              <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms" disabled />
+              <label for="sms" class="hx-label">SMS</label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hx-column is-6 is-offset-2">
+          <h5>Code</h5>
+          <pre><code class="language-markup"><xmp>
+        <div class="hx-input-control">
+          <strong>Notification Settings</strong>
+          <div class="hx-checkbox-control">
+            <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email" checked />
+            <label for="email" class="hx-label">Email</label>
+          </div>
+
+          <div class="hx-checkbox-control">
+            <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack"/>
+            <label for="slack" class="hx-label">Slack</label>
+          </div>
+
+          <div class="hx-checkbox-control">
+            <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat" disabled/>
+            <label for="hipchat" class="hx-label">Hipchat</label>
+          </div>
+
+          <div class="hx-checkbox-control">
+            <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms" disabled />
+            <label for="sms" class="hx-label">SMS</label>
+          </div>
+        </div>
+          </xmp></code></pre>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="hx-section">
+      <h3>Sizes</h3>
+      <h4>Medium</h4>
+      <p>Simply add class <code>.is-medium</code> to the base class <code>.hx-input-control</code>.</p>
+      <h5>Example</h5>
+      <div class="hx-input-control is-medium">
+        <input class="hx-input" type="text" required>
+        <label class="hx-label">Full Name <sup>*</sup></label>
+        <div class="hx-help">Please enter your full name</div>
+      </div>
+      <h4>Large</h4>
+      <p>Simply add class <code>.is-large</code> to the base class <code>.hx-input-control</code>.</p>
+      <h5>Example</h5>
+      <div class="hx-input-control is-large">
+        <input class="hx-input" type="text" required>
+        <label class="hx-label">Full Name <sup>*</sup></label>
+        <div class="hx-help">Please enter your full name</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css">
+</style>
