@@ -2,7 +2,7 @@
   <div class="panel">
     <div class="hx-header has-pointer" @click="toggleItem" >
       {{ title }}
-      <i class="icon is-small my-0 is-pulled-right" :class="{ 'icon-angle-down' : show, 'icon-angle-up': !show }"></i>
+      <i class="hx-icon is-small my-0 is-pulled-right" :class="{ 'icon-angle-down' : show, 'icon-angle-up': !show }"></i>
     </div>
     <div class="navs" :style="{ height: ht + 'px' }" >
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">

@@ -7,12 +7,12 @@
         </svg>
       </li>
       <li class="hx-nav-item" v-for="item in mainNavItems">
-        <a class="hx-nav-link" :href="item.link" :class="{ 'is-active': item.link === 'http://gethxui.com', 'is-disabled' : item.status === 'disabled' }"><i class="icon" :class="item.icon"></i> <span>{{ item.name }}</span></a>
+        <a class="hx-nav-link" :href="item.link" :class="{ 'is-active': item.link === 'http://gethxui.com', 'is-disabled' : item.status === 'disabled' }"><i class="hx-icon" :class="item.icon"></i> <span>{{ item.name }}</span></a>
       </li>
     </ul>
     <ul class="hx-nav hx-nav-vertical is-bottom">
       <li class="hx-nav-item">
-        <a class="hx-nav-link is-disabled" href=""><i class="icon icon-chat-bubble"></i>  <span>Feedback</span></a>
+        <a class="hx-nav-link is-disabled" href=""><i class="hx-icon icon-chat-bubble"></i>  <span>Feedback</span></a>
       </li>
     </ul>
   </aside>
