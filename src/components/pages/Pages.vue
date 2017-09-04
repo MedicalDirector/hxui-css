@@ -11,7 +11,7 @@
       <div class="hx-column">
 
       <pre v-highlightjs ref="code"><code class="html">
-    {{ code }}
+{{ code }}
       </code></pre>
 
       <!-- <pre><code class="language-html"><xmp>
@@ -31,11 +31,11 @@ export default {
   data () {
     return {
       code: `
-    <div class="hx-page">
-      <header class="hx-page-header"> </header>
-      <main class="hx-page-body"></main>
-      <footer class="hx-page-footer"></footer>
-    </div>
+<div class="hx-page">
+  <header class="hx-page-header"> </header>
+  <main class="hx-page-body"></main>
+  <footer class="hx-page-footer"></footer>
+</div>
       `
     }
   }

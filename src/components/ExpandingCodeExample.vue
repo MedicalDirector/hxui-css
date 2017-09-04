@@ -6,7 +6,7 @@
     </div>
     <div class="hx-card-content pa-0 hx-code" :style="{ height: ht + 'px' }">
       <pre v-highlightjs ref="code"><code class="html">
-    {{ code }}
+{{ code }}
       </code></pre>
     </div>
     <div class="hx-card-content" v-html="example"></div>

@@ -5,7 +5,7 @@
 
     <hr>
 
-    <expanding-code-example v-for="example in examples"
+    <expanding-code-example v-for="(example, i) in examples" key="i"
       :title="example.title"
       :code="example.code"
       :example="example.code"
@@ -24,35 +24,35 @@ export default {
         {
           title: 'Toggle examples',
           code: `
-      <p>Default State</p>
-      <div class="hx-toggle">
-        <label>
-          Off
-          <input type="checkbox">
-          <span class="lever"></span>
-          On
-        </label>
-      </div>
-      <br>
-      <p>Checked State</p>
-      <div class="hx-toggle">
-        <label>
-          Off
-          <input type="checkbox" checked>
-          <span class="lever"></span>
-          On
-        </label>
-      </div>
-      <br>
-      <p>Disabled State</p>
-      <div class="hx-toggle">
-        <label>
-          Off
-          <input disabled type="checkbox">
-          <span class="lever"></span>
-          On
-        </label>
-      </div>
+<p>Default State</p>
+<div class="hx-toggle">
+  <label>
+    Off
+    <input type="checkbox">
+    <span class="lever"></span>
+    On
+  </label>
+</div>
+<br>
+<p>Checked State</p>
+<div class="hx-toggle">
+  <label>
+    Off
+    <input type="checkbox" checked>
+    <span class="lever"></span>
+    On
+  </label>
+</div>
+<br>
+<p>Disabled State</p>
+<div class="hx-toggle">
+  <label>
+    Off
+    <input disabled type="checkbox">
+    <span class="lever"></span>
+    On
+  </label>
+</div>
           `
         }
       ]
