@@ -3,6 +3,8 @@
     <h1 class="hx-title">Tabs</h1>
     <h2 class="hx-subtitle">The tab component is a small complete navigation component.</h2>
 
+    <hr>
+
     <expanding-code-example v-for="example in examples"
       :title="example.title"
       :code="example.code"

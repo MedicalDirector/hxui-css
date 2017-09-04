@@ -9,14 +9,18 @@
 
     <div class="hx-columns">
       <div class="hx-column">
-        <p>Code</p>
-      <pre><code class="language-html"><xmp>
+
+      <pre v-highlightjs ref="code"><code class="html">
+    {{ code }}
+      </code></pre>
+
+      <!-- <pre><code class="language-html"><xmp>
       <div class="hx-page">
           <header class="hx-page-header"> </header>
           <main class="hx-page-body"></main>
           <footer class="hx-page-footer"></footer>
       </div>
-      </xmp></code></pre>
+      </xmp></code></pre> -->
       </div>
     </div>
   </div>
@@ -24,6 +28,17 @@
 
 <script>
 export default {
+  data () {
+    return {
+      code: `
+    <div class="hx-page">
+      <header class="hx-page-header"> </header>
+      <main class="hx-page-body"></main>
+      <footer class="hx-page-footer"></footer>
+    </div>
+      `
+    }
+  }
 }
 </script>
 

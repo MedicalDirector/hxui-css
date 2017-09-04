@@ -3,6 +3,8 @@
     <h1 class="hx-title">Toggle</h1>
     <h2 class="hx-subtitle">A toggle switch is used as an on/off control.</h2>
 
+    <hr>
+
     <expanding-code-example v-for="example in examples"
       :title="example.title"
       :code="example.code"
