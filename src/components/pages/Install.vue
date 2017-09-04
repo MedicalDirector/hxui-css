@@ -12,7 +12,7 @@
           <!-- <p>You can run this command if you are using <strong>personal access tokens(https)</strong> method to access Visual Studio Team Services.</p> -->
 
           <pre v-highlightjs><code class="apache">
-    npm install git+https://bitbucket.org/md-design/hxui-html-css.git --save
+npm install git+https://bitbucket.org/md-design/gethxui.git --save
           </code></pre>
 
         </section>
@@ -30,7 +30,7 @@
           <p><span class="h5">2. </span><strong>Import the compiled css</strong> into a index.html file.</p>
 
            <pre v-highlightjs><code class="html">
-    {{ code }}
+{{ code }}
           </code></pre>
 
 
@@ -41,7 +41,7 @@
           <p><span class="h5">3. </span>Alternatively <strong>import the uncompiled .scss file</strong> into an existing projects scss.</p>
 
           <pre v-highlightjs><code class="scss">
-    @import "/node_modules/@hxui/css/scss/hxui.scss";
+@import "/node_modules/@hxui/css/dist/static/scss/hxui.scss";
           </code></pre>
 
         </section>
@@ -57,8 +57,8 @@
     Simply import the utilities dependencies, and then the files you need directly:</p>
 
     <pre v-highlightjs><code class="scss">
-    @import "/node_modules/@hxui/css/scss/utilities/_all";
-    @import "/node_modules/@hxui/css/scss/components/grid";
+@import "/node_modules/@hxui/css/dist/static/scss/utilities/_all";
+@import "/node_modules/@hxui/css/dist/static/scss/components/grid";
     </code></pre>
 
     <br>
@@ -71,7 +71,7 @@
     <p>You can easily run the documentation locally by running the following command in terminal or command prompt.</p>
 
     <pre v-highlightjs><code class="apache">
-    npm run serve-doc
+npm start
     </code></pre>
 
     <p>There're basic requirements to run the documentation locally. You will need to install <a href="https://nodejs.org/en/" target="_blank">Node Package Manager(npm)</a> and <a href="https://jekyllrb.com/" target="_blank">jekyll</a> in order to run the documentation.</p>
@@ -82,7 +82,7 @@
 export default {
   data () {
     return {
-      code: '<link rel="stylesheet" href="/node_modules/@hxui/css/hxui.css">'
+      code: '<link rel="stylesheet" href="/node_modules/@hxui/css/dist/static/css/hxui.css">'
     }
   },
   components: {

@@ -1,0 +1,642 @@
+// =========
+// Form
+// =========
+
+// Container
+.#{$namespace}-input-control {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &.is-medium {
+    $medium: 1.5;
+
+    .#{$namespace}-input,
+    .#{$namespace}-textarea {
+      padding: (.8rem * $medium) 0 (.6rem * $medium);
+      font-size: (1rem * $medium);
+
+      & + .#{$namespace}-label {
+        top: (.6rem * $medium);
+        font-size: (1rem * $medium);
+        sup {
+          font-size: (.6rem * $medium);
+        }
+
+        & + .#{$namespace}-help {
+          font-size: (.75rem * $medium);
+          margin-top: (.25rem * $medium);
+
+          &:before,
+          &:after {
+            top: (-.35rem * $medium);
+            // height: (3px * $large);
+          }
+        }
+      }
+
+      &:focus ~ .#{$namespace}-label,
+      &:valid ~ .#{$namespace}-label {
+        top: (-.6rem);
+        font-size: (1rem);
+        sup {
+          font-size: (.4rem * $medium);
+        }
+      }
+
+      &[disabled],
+      &.is-disabled {
+
+        &~ .#{$namespace}-label {
+          // top: -.5rem;
+          // font-size: .75rem;
+
+          sup {
+            // font-size: .4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-large {
+    $large: 2;
+
+    .#{$namespace}-input,
+    .#{$namespace}-textarea {
+      padding: (.8rem * $large) 0 (.6rem * $large);
+      font-size: (1rem * $large);
+
+      & + .#{$namespace}-label {
+        top: (.6rem * $large);
+        font-size: (1rem * $large);
+        sup {
+          font-size: (.6rem * $large);
+        }
+
+        & + .#{$namespace}-help {
+          font-size: (.75rem * $large);
+          margin-top: (.25rem * $large);
+
+          &:before,
+          &:after {
+            top: (-.35rem * $large);
+            // height: (3px * $large);
+          }
+        }
+      }
+
+      &:focus ~ .#{$namespace}-label,
+      &:valid ~ .#{$namespace}-label {
+        top: (-.5rem);
+        font-size: (2rem / $large);
+        sup {
+          font-size: (.4rem * $large);
+        }
+      }
+
+      &[disabled],
+      &.is-disabled {
+
+        &~ .#{$namespace}-label {
+          // top: -.5rem;
+          // font-size: .75rem;
+
+          sup {
+            // font-size: .4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-success {
+    input,
+    textarea {
+      & + .#{$namespace}-label {
+        color: $color-success;
+
+        & + .#{$namespace}.#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $color-success;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $color-success;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-info {
+    input,
+    textarea {
+      & + .#{$namespace}-label {
+        color: $color-info;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $color-info;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $color-info;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-warning {
+    input,
+    textarea {
+      & + .#{$namespace}-label {
+        color: $color-warning;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $color-warning;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $color-warning;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-danger {
+    input,
+    textarea {
+      & + .#{$namespace}-label {
+        color: $color-danger;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $color-danger;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $color-danger;
+          }
+        }
+      }
+    }
+  }
+
+  &.has-text-centered {
+    .hx-label {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .hx-input {
+      text-align: center;
+    }
+  }
+}
+
+.#{$namespace}-input,
+.#{$namespace}-textarea {
+  display: block;
+  width: 100%;
+  padding: .8rem 0 .6rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border: 1px solid $input-border;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  background-color: $input-background;
+  position: relative;
+  z-index: 1;
+
+  & + .#{$namespace}-label {
+    position: absolute;
+    top: .6rem;
+    margin: 0;
+    font-weight: normal;
+    left: 0;
+    transition: .3s;
+    z-index: 0;
+
+    sup {
+      color: $color-danger;
+      font-size: .6rem;
+    }
+
+    & + .#{$namespace}-help {
+      font-size: .75rem;
+      margin-top: .25rem;
+      color: $color-gray;
+      transition: .3s;
+      opacity: 0;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: -.4rem;
+        width: 0%;
+        height: 3px;
+        background-color: $input-focus-border;
+        transition: .3s;
+        z-index: 1;
+      }
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus ~ .#{$namespace}-label,
+  &:valid ~ .#{$namespace}-label {
+    top: -.5rem;
+    font-size: .75rem;
+    color: $color-primary;
+    sup {
+      font-size: .4rem;
+    }
+  }
+
+  &:focus ~ .#{$namespace}-help,
+  &:valid ~ .#{$namespace}-help {
+    opacity: 1;
+    &:before,
+    &:after {
+      width: 50%;
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    border-color: $input-disabled-border;
+    color: $input-disabled;
+    cursor: $cursor-disabled;
+
+    &~ .#{$namespace}-label {
+      top: -.5rem;
+      font-size: .75rem;
+      color: $input-disabled;
+      cursor: $cursor-disabled;
+
+      sup {
+        font-size: .4rem;
+      }
+    }
+  }
+}
+
+.#{$namespace}-textarea {
+  display: initial;
+  padding: 0 0 .6rem 0;
+  height: 2.7rem;
+  &:focus ~ .#{$namespace}-label,
+  &:valid ~ .#{$namespace}-label {
+    top: -1.6rem;
+  }
+}
+
+
+.#{$namespace}-select {
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance: none;
+  width: 100%;
+  padding: .8rem 0 .6rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  position: relative;
+  outline: none;
+
+  &[disabled],
+  &.is-disabled {
+    border-color: $input-disabled-border;
+    color: $input-disabled;
+    cursor: $cursor-disabled;
+
+    &~ .#{$namespace}-label {
+      top: -.5rem;
+      left: 0;
+      font-size: .75rem;
+      color: $input-disabled;
+      cursor: $cursor-disabled;
+
+      sup {
+        font-size: .4rem;
+      }
+    }
+  }
+
+  & + .#{$namespace}-label {
+    position: absolute;
+    top: -.55rem;
+    left: 0;
+    font-size: .75rem;
+    z-index: 0;
+    sup {
+      color: $color-red;
+      font-size: .6rem;
+    }
+    & + .#{$namespace}-help {
+      font-size: .75rem;
+      margin-top: .25rem;
+      color: gray;
+      transition: .3s;
+    }
+  }
+  .option {
+    &:before, &:after {
+      content: '1';
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &.has-badges {
+    transition: .3s;
+  	&.is-active {
+  		border-bottom: 3px solid $color-primary;
+  	}
+		input {
+			font-size: 1rem;
+			outline: none;
+			background-color: transparent;
+			display: block;
+			border: none;
+			line-height: 32px;
+			height: 32px;
+			transition: .3s;
+		}
+		> .icon {
+			color: $color-primary;
+			&.animated {
+				animation-duration: 2s;
+			}
+		}
+		&.is-not-focus {
+			input {
+				height: 0;
+				padding: 0;
+				overflow: auto;
+			}
+			border-bottom-color: transparent;
+		}
+	}
+
+}
+
+.#{$namespace}-select-control {
+  &:after {
+    position: absolute;
+    top: 1.35em;
+    right: 0.5em;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: .25em solid transparent;
+    border-right: .25em solid transparent;
+    border-top: .375em solid $color-gray-lighter;
+    pointer-events: none;
+  }
+}
+
+// Radio button container
+.#{$namespace}-radio-control {
+
+  &.is-inline {
+    display: inline-block;
+    margin-right: 0.7rem;
+
+    .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+    .#{$namespace}-radio:checked + .#{$namespace}-label {
+          padding-left: 1.7rem;
+    }
+  }
+}
+
+// Radio buttons
+.#{$namespace}-radio:not(:checked),
+.#{$namespace}-radio:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+.#{$namespace}-radio:checked + .#{$namespace}-label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  transition: .28s ease;
+
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  user-select: none;
+}
+
+.#{$namespace}-radio + .#{$namespace}-label:before,
+.#{$namespace}-radio + .#{$namespace}-label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  transition: .28s ease;
+}
+
+/* Unchecked styles */
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after,
+.#{$namespace}-radio:checked + .#{$namespace}-label:before,
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  border-radius: 50%;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
+  border: 2px solid $color-gray-lighter;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
+  transform: scale(0);
+}
+
+/* Checked styles */
+.#{$namespace}-radio:checked + .#{$namespace}-label:before {
+  border: 2px solid $color-primary;
+}
+
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  border-color: $color-primary;
+}
+
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  background-color: $color-primary;
+}
+
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  transform: scale(1.02);
+}
+
+// /* Radio With gap */
+// [type="radio"].with-gap:checked + .#{$namespace}-label:after {
+//   transform: scale(.5);
+// }
+//
+// /* Focused styles */
+// [type="radio"].tabbed:focus + .#{$namespace}-label:before {
+//   box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+// }
+//
+// /* Disabled Radio With gap */
+// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:before {
+//   border: 2px solid $input-disabled;
+// }
+//
+// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:after {
+//   border: none;
+//   background-color: $input-disabled;
+// }
+
+/* Disabled style */
+.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:before {
+  background-color: transparent;
+  border-color: $input-disabled;
+  cursor: $cursor-disabled;
+}
+
+.#{$namespace}-radio:disabled + .#{$namespace}-label {
+  color: $input-disabled;
+  cursor: $cursor-disabled;
+}
+
+.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before {
+  border-color: $input-disabled;
+}
+
+.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:after {
+  background-color: $input-disabled;
+  border-color: $input-disabled;
+}
+
+// Checkbox container
+.#{$namespace}-checkbox-control {
+  margin: .8rem 0;
+}
+
+/* Remove default checkbox */
+.#{$namespace}-checkbox:not(:checked),
+.#{$namespace}-checkbox:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+// Checkbox Styles
+.#{$namespace}-checkbox {
+  // Text Label Style
+  + .#{$namespace}-label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+  }
+
+  /* checkbox aspect */
+  + .#{$namespace}-label:before,
+  + .#{$namespace}-label:after  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    border: 2px solid $color-gray-lighter;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+  }
+
+  &:disabled + .#{$namespace}-label {
+    cursor: $cursor-disabled;
+  }
+
+  &:not(:checked):disabled + .#{$namespace}-label:before {
+    border: none;
+    background-color: $input-disabled;
+    cursor: $cursor-disabled;
+  }
+}
+
+.#{$namespace}-checkbox:checked {
+  + .#{$namespace}-label:before {
+    top: 2px;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+
+  + .#{$namespace}-label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    z-index: 0;
+  }
+
+
+
+  &:disabled + .#{$namespace}-label:before {
+    border-right: 2px solid $input-disabled;
+    border-bottom: 2px solid $input-disabled;
+
+  }
+}

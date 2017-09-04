@@ -1,0 +1,80 @@
+// =========
+// Navbar
+// =========
+
+.#{$namespace}-navbar {
+  @extend .hx-flex;
+  position: relative;
+  text-align: center;
+  align-items: stretch;
+  background: $color-white;
+
+  // Navbar Position
+  &-left,
+  &-right {
+    align-items: stretch;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  &-left {
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  &-right {
+    justify-content: flex-end;
+  }
+
+  &-item {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: $font-size-base;
+    justify-content: center;
+    line-height: $line-height-base;
+    padding: $navbar-item-padding;
+
+    a {
+      flex-grow: 1;
+      flex-shrink: 0;
+      color: $color-white;
+    }
+
+  }
+
+  // Logo/Brand
+  &-logo {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    text-align: center;
+
+    &.is-small {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.is-medium {
+      width: 40px;
+      height: 40px;
+    }
+
+    &.is-large {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  // Navbar Background Variation
+  &.has-gradient-background {
+    background: $color-primary;
+    background: -webkit-linear-gradient(left, $color-primary, $color-accent);
+    background: linear-gradient(to right, $color-primary, $color-accent);
+  }
+
+}

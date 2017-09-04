@@ -1,7 +1,7 @@
 {
-  "name": "gethxui",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "@hxui/css",
+  "version": "1.0.2",
+  "description": "Helix User Interface Library - Pure CSS Framework",
   "author": "Chris Yap <chris.yap@medicaldirector.com>",
   "private": true,
   "scripts": {
