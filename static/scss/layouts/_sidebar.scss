@@ -6,6 +6,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   padding:$spacer 0;
   display: inline-flex;
   flex-direction: column;
+  transition: .3s ease-in-out;
 
   .#{$namespace}-nav-vertical {
     .#{$namespace}-nav-item {

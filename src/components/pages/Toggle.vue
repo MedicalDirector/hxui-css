@@ -20,7 +20,7 @@ export default {
     return {
       examples: [
         {
-          name: 'Toggle examples',
+          title: 'Toggle examples',
           code: `
       <p>Default State</p>
       <div class="hx-toggle">

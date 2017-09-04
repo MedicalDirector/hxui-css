@@ -1,5 +1,5 @@
 <template>
-  <aside class="hx-sidebar is-minified has-blue-gradient">
+  <aside class="hx-sidebar has-blue-gradient" :class="{ 'is-minified': isMini }" @click="toggleNav">
     <ul class="hx-nav hx-nav-vertical hx-flex-auto">
       <li class="hx-nav-item hx-nav-brand">
         <svg class="hxui-logo is-white">
@@ -7,7 +7,7 @@
         </svg>
       </li>
       <li class="hx-nav-item" v-for="item in mainNavItems">
-        <a class="hx-nav-link" :href="item.link" :class="{ 'is-active': item.link === 'http://gethxui.com'}"><i class="icon" :class="item.icon"></i> <span>{{ item.name }}</span></a>
+        <a class="hx-nav-link" :href="item.link" :class="{ 'is-active': item.link === 'http://gethxui.com', 'is-disabled' : item.status === 'disabled' }"><i class="icon" :class="item.icon"></i> <span>{{ item.name }}</span></a>
       </li>
     </ul>
     <ul class="hx-nav hx-nav-vertical is-bottom">
@@ -22,28 +22,38 @@
 export default {
   data () {
     return {
+      isMini: true,
       mainNavItems: [
         {
           name: 'HTML & CSS',
           link: 'http://gethxui.com',
-          icon: 'icon-html-css'
+          icon: 'icon-html-css',
+          status: 'active'
         },
         {
           name: 'Angular',
           link: 'http://angular.gethxui.com',
-          icon: 'icon-angular'
+          icon: 'icon-angular',
+          status: 'active'
         },
         {
           name: 'ReactJS',
           link: 'http://react.gethxui.com',
-          icon: 'icon-react'
+          icon: 'icon-react',
+          status: 'disabled'
         },
         {
           name: 'VueJS',
           link: 'http://vue.gethxui.com',
-          icon: 'icon-vue'
+          icon: 'icon-vue',
+          status: 'disabled'
         }
       ]
+    }
+  },
+  methods: {
+    toggleNav () {
+      this.isMini = !this.isMini
     }
   }
 }
