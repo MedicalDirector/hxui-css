@@ -2,6 +2,7 @@
 // Code
 // =========
 
+/*
 code,
 kbd,
 pre,
@@ -43,7 +44,7 @@ pre {
   display: block;
   margin: $pre-margin;
   font-size: $code-font-size;
-  color: $pre-color;
+  // color: $pre-color;
   max-height: 38rem;
   border-radius: 0 !important;
   overflow: scroll;
@@ -60,6 +61,12 @@ pre {
 .#{$namespace}-pre-is-scrollable {
   max-height: $pre-scrollable-max-height;
   overflow-y: scroll;
+}
+*/
+
+code {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .#{$namespace}-code {
