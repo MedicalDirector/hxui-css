@@ -1,0 +1,83 @@
+// =========
+// Badges
+// =========
+.#{$namespace}-badge {
+  align-items: center;
+  background-color: rgba(0,0,0,.05);
+  border-radius: 290486px;
+  color: $color-gray-dark;
+  display: inline-flex;
+  font-size: $font-size-xs;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.875em;
+  padding-right: 0.875em;
+  margin: 0 .25em .2em 0;
+  white-space: nowrap;
+
+  .hx-delete {
+    margin-left: 0.5em;
+    margin-right: -0.5em;
+  }
+
+  &.is-white, &.is-outlined {
+    .hx-info {
+    	background-color: rgba(255,255,255,.8);
+    	border: 1px solid rgba(0,0,0,.1);
+    }
+  }
+
+  &.is-primary {
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &.is-info {
+    background-color: $color-blue-lightest;
+    color: $color-white;
+  }
+
+  &.is-white {
+    background-color: $color-white;
+  }
+
+  &.is-outlined {
+    border: 1px solid rgba(10, 10, 10, 0.15);
+    background-color: $color-white;
+  }
+
+  &.is-dark {
+    background-color: $color-gray;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &.is-black {
+    background-color: $color-black;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &.is-warning {
+    background-color: $color-warning;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &.is-danger {
+    background-color: $color-danger;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &.is-medium {
+    font-size: 1rem;
+  }
+
+  &.is-large {
+    font-size: $font-size-lg;
+  }
+
+}

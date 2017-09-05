@@ -1,0 +1,104 @@
+// Functions
+@import 'utilities/functions';
+
+// Themes/Variables
+@import 'variables';
+
+// Mixins
+@import 'utilities/mixins/center';
+@import 'utilities/mixins/unselectable';
+@import 'utilities/mixins/delete';
+@import 'utilities/mixins/arrow';
+@import 'utilities/mixins/loader';
+@import 'utilities/mixins/overlay';
+@import 'utilities/mixins/control';
+@import 'utilities/mixins/placeholder';
+@import 'utilities/mixins/border-radius';
+@import 'utilities/mixins/box-shadow';
+@import 'utilities/mixins/hover';
+@import 'utilities/mixins/gradient';
+@import 'utilities/mixins/responsiveness';
+@import 'utilities/mixins/hover';
+@import 'utilities/mixins/nav-divider';
+@import 'utilities/mixins/transition';
+@import 'utilities/mixins/clearfix';
+@import 'utilities/mixins/content';
+@import 'utilities/mixins/icons';
+@import 'utilities/mixins/text-truncate';
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &.#{$hxui-reset} {
+    font-size: 16px;
+  }
+}
+
+@font-face {
+  font-family: 'hxui';
+  src:  url('../fonts/hxui.eot');
+  src:  url('../fonts/hxui.eot#iefix') format('embedded-opentype'),
+    url('../fonts/hxui.ttf') format('truetype'),
+    url('../fonts/hxui.woff') format('woff'),
+    url('../fonts/hxui.svg?#hxui') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.#{$hxui-reset} {
+
+display: flex;
+flex-direction: column;
+width: 100%;
+font-size: .92rem;
+
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// Utilities
+@import 'utilities/helpers';
+@import 'utilities/flexbox';
+@import 'utilities/scrollable';
+@import 'utilities/text';
+// Core Styles
+@import 'base/base';
+@import 'base/table';
+@import 'base/image';
+@import 'base/code';
+@import 'base/content';
+@import 'base/colors';
+// icons
+@import 'components/icon';
+@import 'components/icons';
+// Components
+@import 'components/form';
+@import 'components/grid';
+@import 'components/button';
+@import 'components/lists';
+@import 'components/toggle';
+@import 'components/badge';
+@import 'components/breadcrumb';
+@import 'components/nav';
+@import 'components/navbar';
+@import 'components/tooltip';
+@import 'components/dropdown';
+@import 'components/card';
+@import 'components/modal';
+@import 'components/tab';
+@import 'components/pagination';
+@import 'components/progress-timeline';
+// layouts
+@import 'layouts/container';
+@import 'layouts/page';
+@import 'layouts/section';
+@import 'layouts/field';
+@import 'layouts/sidebar';
+
+}

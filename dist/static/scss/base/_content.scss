@@ -1,0 +1,247 @@
+// =========
+// Content
+// =========
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  // margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  letter-spacing: $headings-letter-spacing;
+  margin-top: 0.2rem;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+.#{$namespace}-title {
+  font-size: $font-size-h1;
+  font-weight: $title-font-weight;
+  margin: 0;
+
+  & + .#{$namespace}-subtitle {
+    margin-top: .5rem;
+    color: $color-gray-light;
+  }
+}
+
+.#{$namespace}-subtitle {
+  font-size: $font-size-base;
+  font-weight: $subtitle-font-weight;
+  margin-bottom: 1.5rem;
+  line-height: 1.8rem;
+}
+
+small,
+.small {
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+hr {
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+// Inline
+li + li {
+  margin-top: 0.25em;
+}
+
+// Block
+p,
+ol,
+ul,
+blockquote,
+table {
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+
+
+blockquote {
+  // background-color: $background;
+  border-left: 5px solid $border-color;
+  padding: 1.25em 1.5em;
+}
+
+ol {
+  list-style: decimal outside;
+  margin-top: 1em;
+}
+
+ul {
+  list-style: disc outside;
+  margin-top: 1em;
+  padding: 0 1rem;
+
+  ul {
+    list-style-type: circle;
+    margin-top: 0.5em;
+
+    ul {
+      list-style-type: square;
+    }
+  }
+}
+
+dt {
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.3rem;
+}
+
+dd {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+.#{$namespace}-header {
+	padding: .75rem .8rem;
+	font-size: 0.675rem;
+	color: #aeadad;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+  .hx-icon {
+    font-size: 12px;
+    width: 1rem;
+    height: 1rem;
+    top: 1px;
+    position: relative;
+  }
+}
+
+.content {
+  @include block;
+
+  color: $text;
+
+  // Inline
+  li + li {
+    margin-top: 0.25em;
+  }
+
+  // Block
+  p,
+  ol,
+  ul,
+  blockquote,
+  table {
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $text-strong;
+    font-weight: $font-weight-normal;
+    line-height: 1.125;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5714em;
+
+    &:not(:first-child) {
+      margin-top: 1.1428em;
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.6666em;
+
+    &:not(:first-child) {
+      margin-top: 1.3333em;
+    }
+  }
+
+  h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.8em;
+  }
+
+  h5 {
+    font-size: 1.125em;
+    margin-bottom: 0.8888em;
+  }
+
+  h6 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  blockquote {
+    // background-color: $background;
+    border-left: 5px solid $border-color;
+    padding: 1.25em 1.5em;
+  }
+
+  ol {
+    list-style: decimal outside;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+  }
+
+  ul {
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+
+    ul {
+      list-style-type: circle;
+      margin-top: 0.5em;
+
+      ul {
+        list-style-type: square;
+      }
+    }
+  }
+
+  dt {
+    font-weight: $font-weight-bold;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

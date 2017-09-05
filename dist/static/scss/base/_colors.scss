@@ -1,0 +1,31 @@
+// Colors
+//
+// Backgrounds
+//
+ .#{$namespace}-bg {
+   &-primary {
+     background-color: $color-primary;
+     color: $color-white;
+   }
+   &-info {
+     background-color: $color-info;
+     color: $color-white;
+   }
+   &-warning {
+     background-color: $color-warning;
+     color: $color-white;
+   }
+   &-danger {
+     background-color: $color-danger;
+     color: $color-white;
+   }
+   &-light {
+     background-color: $color-gray-light;
+     color: $color-white;
+
+     code:not(.hljs) {
+       background-color: $color-red;
+       color: $color-white;
+     }
+   }
+ }
