@@ -1,5 +1,5 @@
 <template>
-  <div class="hx-card is-flat mb-3">
+  <div class="hx-card example is-flat mb-3">
     <div class="hx-card-header">
       <h4 class="hx-card-header-title my-2">{{ title }}</h4>
       <button class="hx-button is-pulled-right mx-4" v-on:click="toggleCode">Code</button>
@@ -9,7 +9,7 @@
 {{ code }}
       </code></pre>
     </div>
-    <div class="hx-card-content" v-html="example"></div>
+    <div class="hx-card-content" v-html="example" :class="background"></div>
   </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
     title: { default: 'Example title', type: String },
     code: { default: '<h1>Code here</h1>', type: String },
     example: { default: 'Example goes here', type: String },
+    background: { default: '', type: String },
     visible: { default: false, type: Boolean }
   },
   data () {

@@ -19,4 +19,13 @@
      background-color: $color-danger;
      color: $color-white;
    }
+   &-light {
+     background-color: $color-gray-light;
+     color: $color-white;
+
+     code:not(.hljs) {
+       background-color: $color-red;
+       color: $color-white;
+     }
+   }
  }
