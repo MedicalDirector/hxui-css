@@ -65,8 +65,16 @@ pre {
 */
 
 code {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  &:not(.hljs) {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 3px;
+    padding: .1rem .5rem;
+    color: $color-danger;
+  }
 }
 
 .#{$namespace}-code {
