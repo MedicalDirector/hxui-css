@@ -42,11 +42,11 @@ html {
 
 @font-face {
   font-family: 'hxui';
-  src:  url('/fonts/hxui.eot');
-  src:  url('/fonts/hxui.eot#iefix') format('embedded-opentype'),
-    url('/fonts/hxui.ttf') format('truetype'),
-    url('/fonts/hxui.woff') format('woff'),
-    url('/fonts/hxui.svg?#hxui') format('svg');
+  src:  url('../fonts/hxui.eot');
+  src:  url('../fonts/hxui.eot#iefix') format('embedded-opentype'),
+    url('../fonts/hxui.ttf') format('truetype'),
+    url('../fonts/hxui.woff') format('woff'),
+    url('../fonts/hxui.svg?#hxui') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -73,6 +73,7 @@ font-size: .92rem;
 @import 'base/image';
 @import 'base/code';
 @import 'base/content';
+@import 'base/colors';
 // icons
 @import 'components/icon';
 @import 'components/icons';
