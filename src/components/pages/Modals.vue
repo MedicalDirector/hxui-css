@@ -42,21 +42,7 @@
       </div>
     </div>
   </div>
-  <pre><code class="language-markup"><xmp>
-    <div class="hx-modal is-active">
-      <div class="hx-modal-content">
-        <div class="hx-card">
-          <div class="hx-card-content">
-              <p>
-                <strong>09:37</strong> <a href="#">@Liz</a>: Please call James Meadows asap re: his test result. 2nd time he has called.
-              </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-          </div>
-        </div>
-      </div>
-      <button class="hx-modal-close"></button>
-    </div>
-  </xmp></code></pre>
+
   <br>
 
     <h1 class="h3">Modal Card Dialog</h1>
@@ -111,28 +97,21 @@
       </div>
     </div>
 
-    <pre><code class="language-markup"><xmp>
-    <div class="hx-modal is-active">
-      <div class="hx-modal-card">
-        <header class="hx-modal-card-head">
-          <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
-          <button class="delete"></button>
-        </header>
-        <section class="hx-modal-card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-        </section>
-        <footer class="hx-modal-card-foot">
-          <a class="hx-button is-primary">Save changes</a>
-          <a class="hx-button">Cancel</a>
-        </footer>
-      </div>
-    </div>
-    </xmp></code></pre>
   </div>
 </template>
 
 <script>
+import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+
 export default {
+  data () {
+    return {
+
+    }
+  },
+  components: {
+    ExpandingCodeExample
+  }
 }
 </script>
 

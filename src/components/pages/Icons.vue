@@ -35,9 +35,9 @@
 
       <p>Code</p>
 
-      <pre><code class="language-markup"><xmp>
-  <i class="hx-icon icon-helix"></i>
-      </xmp></code></pre>
+      <pre v-highlightjs><code class="html">
+{{ code }}
+      </code></pre>
 
       <p>The <code>icon</code> container will take up exactly <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at <strong>21px</strong>.</p>
     </section>
@@ -94,6 +94,7 @@ export default {
     return {
       searchTerm: '',
       filterResults: [],
+      code: '<i class="hx-icon icon-helix"></i>',
       icons: [
         { name: 'helix' },
         { name: 'recall' },
