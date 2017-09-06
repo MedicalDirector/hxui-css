@@ -83,10 +83,6 @@ export default {
               path: './icons'
             },
             {
-              name: 'Lists',
-              path: './lists'
-            },
-            {
               name: 'Tables',
               path: './tables'
             },
@@ -110,6 +106,10 @@ export default {
             {
               name: 'Forms',
               path: './forms'
+            },
+            {
+              name: 'Lists & list group',
+              path: './lists'
             },
             {
               name: 'Modals',

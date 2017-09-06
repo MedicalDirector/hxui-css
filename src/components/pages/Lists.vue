@@ -117,6 +117,100 @@ export default {
   <li></li>
 </ul>
           `
+        },
+        {
+          title: 'List group',
+          code: `
+<p>The most basic list group is an unordered list with list items and the proper classes</p>
+<div class="hx-columns mt-5">
+  <div class="hx-column is-4 is-offset-4">
+    <div class="hx-card">
+      <ul class="hx-list-group">
+        <li class="">
+          <a>Cras justo odio</a>
+        </li>
+        <li class="">
+          <a>Dapibus ac facilisis in</a>
+        </li>
+        <li class="">
+          <a>Morbi leo risus</a>
+        </li>
+        <li class="">
+          <a>Porta ac consectetur ac</a>
+        </li>
+        <li class="">
+          <a>Vestibulum at eros</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br />
+<p>Adding actions into the list</p>
+<div class="hx-columns mt-5">
+  <div class="hx-column is-4 is-offset-4">
+    <div class="hx-card">
+      <ul class="hx-list-group">
+        <li class="">
+          <a>
+            <div class="hx-list-action">
+              <button class="hx-info is-small"></button>
+            </div>
+            <div class="hx-list-content">Cras justo odio</div>
+            <div class="hx-list-action">
+              <button class="hx-delete is-small"></button>
+            </div>
+          </a>
+        </li>
+        <li class="">
+          <a>
+            <div class="hx-list-action">
+              <button class="hx-info is-small"></button>
+            </div>
+            <div class="hx-list-content">Dapibus ac facilisis in</div>
+            <div class="hx-list-action">
+              <button class="hx-delete is-small"></button>
+            </div>
+          </a>
+        </li>
+        <li class="">
+          <a>
+            <div class="hx-list-action">
+              <button class="hx-info is-small"></button>
+            </div>
+            <div class="hx-list-content">Morbi leo risus</div>
+            <div class="hx-list-action">
+              <button class="hx-delete is-small"></button>
+            </div>
+          </a>
+        </li>
+        <li class="">
+          <a>
+            <div class="hx-list-action">
+              <button class="hx-info is-small"></button>
+            </div>
+            <div class="hx-list-content">Porta ac consectetur ac</div>
+            <div class="hx-list-action">
+              <button class="hx-delete is-small"></button>
+            </div>
+          </a>
+        </li>
+        <li class="">
+          <a>
+            <div class="hx-list-action">
+              <button class="hx-info is-small"></button>
+            </div>
+            <div class="hx-list-content">Vestibulum at eros</div>
+            <div class="hx-list-action">
+              <button class="hx-delete is-small"></button>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          `
         }
       ]
     }
