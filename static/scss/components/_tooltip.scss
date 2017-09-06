@@ -24,6 +24,7 @@
   opacity: 0;
 
   .#{$namespace}-tooltip-content {
+    position: relative;
     max-width: 200px;
     padding: 3px 8px;
     color: #fff;
@@ -32,6 +33,7 @@
     border-radius: .25rem;
 
     &::before {
+      content: '';
       position: absolute;
       width: 0;
       height: 0;
@@ -46,7 +48,6 @@
         bottom: -5px;
         left: 50%;
         margin-left: -5px;
-        content: '';
         border-width: 5px 5px 0;
         border-top-color: $color-blue;
       }
@@ -59,7 +60,6 @@
         top: 50%;
         left: -5px;
         margin-top: -5px;
-        content: "";
         border-width: 5px 5px 5px 0;
         border-right-color: $color-blue;
         border-top-color: transparent;
@@ -73,7 +73,6 @@
         top: -5px;
         left: 50%;
         margin-left: -5px;
-        content: "";
         border-width: 0 5px 5px;
         border-bottom-color: $color-blue;
       }
@@ -86,7 +85,6 @@
         top: 50%;
         right: -5px;
         margin-top: -5px;
-        content: "";
         border-width: 5px 0 5px 5px;
         border-left-color: $color-blue;
       }
