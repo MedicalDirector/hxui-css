@@ -41,6 +41,10 @@ export default {
               path: './containers'
             },
             {
+              name: 'Grid',
+              path: './grid'
+            },
+            {
               name: 'Pages',
               path: './pages'
             },
@@ -50,13 +54,34 @@ export default {
             }
           ]
         },
-        {
-          title: 'Content',
-          items: [
+        // {
+        //   title: 'Content',
+        //   items: [
             // {
             //   name: 'Code',
             //   path: './code'
             // },
+            // {
+            //   name: 'Typography',
+            //   path: './typography'
+            // }
+        //   ]
+        // },
+        {
+          title: 'Elements',
+          items: [
+            {
+              name: 'Badges',
+              path: './badges'
+            },
+            {
+              name: 'Buttons',
+              path: './buttons'
+            },
+            {
+              name: 'Icons',
+              path: './icons'
+            },
             {
               name: 'Tables',
               path: './tables'
@@ -71,14 +96,6 @@ export default {
           title: 'Components',
           items: [
             {
-              name: 'Badges',
-              path: './badges'
-            },
-            {
-              name: 'Buttons',
-              path: './buttons'
-            },
-            {
               name: 'Cards',
               path: './cards'
             },
@@ -89,14 +106,6 @@ export default {
             {
               name: 'Forms',
               path: './forms'
-            },
-            {
-              name: 'Grid',
-              path: './grid'
-            },
-            {
-              name: 'Icons',
-              path: './icons'
             },
             {
               name: 'Modals',
