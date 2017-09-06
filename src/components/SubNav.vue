@@ -83,6 +83,10 @@ export default {
               path: './icons'
             },
             {
+              name: 'Lists',
+              path: './lists'
+            },
+            {
               name: 'Tables',
               path: './tables'
             },

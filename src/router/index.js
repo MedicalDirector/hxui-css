@@ -18,6 +18,7 @@ import Dropdowns from '@/components/pages/Dropdowns'
 import Forms from '@/components/pages/Forms'
 import Grid from '@/components/pages/Grid'
 import Icons from '@/components/pages/Icons'
+import Lists from '@/components/pages/Lists'
 import Modals from '@/components/pages/Modals'
 import Nav from '@/components/pages/Nav'
 import Pagination from '@/components/pages/Pagination'
@@ -106,6 +107,11 @@ export default new Router({
       path: '/icons',
       name: 'Icons',
       component: Icons
+    },
+    {
+      path: '/lists',
+      name: 'Lists',
+      component: Lists
     },
     {
       path: '/modals',

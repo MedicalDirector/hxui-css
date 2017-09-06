@@ -1,6 +1,133 @@
 // LISTS
-//
 
+// list
+.#{$namespace}-list {
+  list-style: none;
+  > li {
+    color: $text;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -1rem;
+      top: .4rem;
+      width: .5rem;
+      height: .5rem;
+      border-radius: 100%;
+      background-color: $color-gray-lighter;
+      z-index: 1;
+    }
+    &.is-success {
+      &:before {
+        background-color: $color-success;
+      }
+    }
+    &.is-warning {
+      &:before {
+        background-color: $color-warning;
+      }
+    }
+    &.is-danger {
+      &:before {
+        background-color: $color-danger;
+      }
+    }
+  }
+
+  &.has-status {
+    padding-left: 2rem;
+    > li {
+      &:before {
+        left: -2rem;
+        top: .2rem;
+        width: 1rem;
+        height: 1rem;
+      }
+      & + li {
+        margin-top: .5em;
+      }
+
+      &.is-not-checked {
+        &:before {
+          border: 2px solid $color-gray-lighter;
+          background-color: transparent;
+        }
+        &.is-success {
+          &:before {
+            border-color: $color-success;
+          }
+        }
+        &.is-warning {
+          &:before {
+            border-color: $color-warning;
+          }
+        }
+        &.is-danger {
+          &:before {
+            border-color: $color-danger;
+          }
+        }
+      }
+
+      &.is-checked {
+        &:before {
+          content: '\e90c';
+          font-family: 'hxui';
+          font-size: 1.2rem;
+          color: $color-white;
+          line-height: .9;
+          text-indent: -.1em;
+        }
+      }
+    }
+
+    &.is-joined {
+      > li {
+        padding-bottom: 1rem;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 1.4rem;
+          left: -1.5rem;
+          bottom: -.45rem;
+          width: 1px;
+          background-color: $color-gray-lighter;
+        }
+        &.is-success {
+          &:after {
+            background-color: $color-success;
+          }
+        }
+        &.is-warning {
+          &:after {
+            background-color: $color-warning;
+          }
+        }
+        &.is-danger {
+          &:after {
+            background-color: $color-danger;
+          }
+        }
+        .hx-title {
+          padding-top: .2em;
+          font-size: 1rem;
+          font-weight: $font-weight-bolder;
+          margin-bottom: .5rem;
+          .hx-icon {
+            font-size: 1rem;
+          }
+        }
+        .hx-group {
+          margin-bottom: .5rem;
+          p {
+            font-size: .85rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
 
 // List group
 .#{$namespace}-list-group {
