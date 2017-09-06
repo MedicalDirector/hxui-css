@@ -2,6 +2,7 @@
   <div id="sidebar">
     <h1 class="hx-title">Sidebar</h1>
     <h2 class="hx-subtitle">Primarily used for navigation or meta data.</h2>
+
     <hr>
 
     <h4>Variations</h4>
@@ -9,20 +10,9 @@
 
     <div class="hx-columns">
       <div class="hx-column">
-        <p>Code</p>
-        <pre><code class="language-markup"><xmp>
-          <!-- minified no gradient -->
-          <div class="hx-sidebar is-minified"></div>
-
-          <!--  blue gradient -->
-          <div class="hx-sidebar has-blue-gradient"></div>
-
-          <!--  purple gradient -->
-          <div class="hx-sidebar has-purple-gradient"></div>
-
-          <!--  orange gradient -->
-          <div class="hx-sidebar has-orange-gradient"></div>
-        </xmp></code></pre>
+        <pre v-highlightjs><code class="html">
+{{ code }}
+        </code></pre>
       </div>
     </div>
   </div>
@@ -30,6 +20,23 @@
 
 <script>
 export default {
+  data () {
+    return {
+      code: `
+<!-- minified no gradient -->
+<div class="hx-sidebar is-minified"></div>
+
+<!--  blue gradient -->
+<div class="hx-sidebar has-blue-gradient"></div>
+
+<!--  purple gradient -->
+<div class="hx-sidebar has-purple-gradient"></div>
+
+<!--  orange gradient -->
+<div class="hx-sidebar has-orange-gradient"></div>
+      `
+    }
+  }
 }
 </script>
 

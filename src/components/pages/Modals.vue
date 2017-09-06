@@ -5,6 +5,11 @@
 
     <hr>
 
+    <div class="has-text-centered my-5 py-5">
+      <button class="hx-button is-large" @click="demoSimple = true">Open simple modal</button>
+      <button class="hx-button is-large" @click="demoTrad = true">Open classic card modal</button>
+    </div>
+
     <expanding-code-example v-for="(example, i) in examples" key="i"
       :title="example.title"
       :code="example.code"
@@ -12,11 +17,6 @@
       :visible="false"
       :background="example.bg"
     ></expanding-code-example>
-
-    <div class="has-text-centered my-5 py-5">
-      <button class="hx-button is-large" @click="demoSimple = true">Open simple modal</button>
-      <button class="hx-button is-large" @click="demoTrad = true">Open classic card modal</button>
-    </div>
 
     <div class="hx-modal" :class="{ 'is-active': demoSimple }">
       <div class="hx-modal-background"></div>
@@ -83,7 +83,7 @@ export default {
     </ul>
   </li>
 </ul>
-<p>See demo at the bottom of the page.</p>
+<p>See demo at the top of the page.</p>
 <br />
 <div class="hx-modal is-active mb-5 is-demo">
   <div class="hx-modal-background"></div>
@@ -132,6 +132,7 @@ export default {
     </ul>
   </li>
 </ul>
+<p>See demo at the top of the page.</p>
 <br />
 <div class="hx-modal is-active is-demo">
   <div class="hx-modal-card">
