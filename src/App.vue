@@ -10,7 +10,7 @@
         <div class="hx-section scrollable-y">
           <div class="hx-section is-comfortable">
 
-            <transition name="slide-x">
+            <transition name="slide-x" mode="out-in">
               <router-view></router-view>
             </transition>
 
@@ -42,6 +42,23 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../static/scss/hxui.scss">
-
+<style lang="scss" src="../static/scss/hxui.scss"></style>
+<style lang="css">
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0
+}
+.slide-x-enter-active, .slide-x-leave-active {
+  transition: .5s;
+}
+.slide-x-enter {
+  transform: translateX(-10%);
+  opacity: 0;
+}
+.slide-x-leave-to {
+  transform: translateX(10%);
+  opacity: 0;
+}
 </style>
