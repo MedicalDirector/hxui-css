@@ -1,10 +1,10 @@
 // @font-face {
-//   font-family: 'hxui';
-//   src:  url('../fonts/hxui.eot?h1g956');
-//   src:  url('../fonts/hxui.eot?h1g956#iefix') format('embedded-opentype'),
-//     url('../fonts/hxui.ttf?h1g956') format('truetype'),
-//     url('../fonts/hxui.woff?h1g956') format('woff'),
-//     url('../fonts/hxui.svg?h1g956#hxui') format('svg');
+//   font-family: 'icomoon';
+//   src:  url('fonts/icomoon.eot?mjlodr');
+//   src:  url('fonts/icomoon.eot?mjlodr#iefix') format('embedded-opentype'),
+//     url('fonts/icomoon.ttf?mjlodr') format('truetype'),
+//     url('fonts/icomoon.woff?mjlodr') format('woff'),
+//     url('fonts/icomoon.svg?mjlodr#icomoon') format('svg');
 //   font-weight: normal;
 //   font-style: normal;
 // }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-code:before {
+  content: "\e97c";
+}
 .icon-circle:before {
   content: "\e974";
 }

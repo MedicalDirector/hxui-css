@@ -26,11 +26,11 @@ export default {
             {
               name: 'Install guide',
               path: './install'
-            },
-            {
-              name: 'Modifiers',
-              path: './modifiers'
             }
+            // {
+            //   name: 'Modifiers',
+            //   path: './modifiers'
+            // }
           ]
         },
         {

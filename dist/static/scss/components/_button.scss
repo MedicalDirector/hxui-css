@@ -223,6 +223,10 @@
     margin-left: .25rem;
     margin-right: .25rem;
 
+    .#{$namespace}-icon-control {
+      margin-top: 1px;
+    }
+
     &.is-small {
       width: 2.5rem;
       height: 2.5rem;
