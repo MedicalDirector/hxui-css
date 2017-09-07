@@ -54,15 +54,6 @@
         border-bottom-left-radius: $border-radius-sm;
         border-top-left-radius: $border-radius-sm;
 
-        &.is-light,
-        &.is-dark,
-        &.is-black,
-        &.is-primary,
-        &.is-info,
-        &.is-warning,
-        &.is-danger {
-          border-left-color: transparent;
-        }
       }
 
       &:last-child .#{$namespace}-button,
@@ -79,18 +70,6 @@
         border-radius: 0;
         padding-left: 1.15rem;
         padding-right: 1.15rem;
-
-        &.is-light {
-          border-left: 1px solid rgba($color-white, 1);
-        }
-        &.is-dark,
-        &.is-black,
-        &.is-primary,
-        &.is-info,
-        &.is-warning,
-        &.is-danger {
-          border-left: 1px solid rgba($color-white, .3);
-        }
 
         &:hover,
         &.is-hovered {

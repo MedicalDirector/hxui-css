@@ -87,6 +87,7 @@ $colors: (
   'white': ($color-white, $color-black),
   'black': ($color-black, $color-white),
   'light': ($color-light, $color-light-invert),
+  'transparent': (transparent, $color-black),
   'dark': ($color-dark, $color-dark-invert),
   'primary': ($color-primary, $color-primary-invert),
   'info': ($color-info, $color-info-invert),

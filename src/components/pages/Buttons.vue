@@ -30,11 +30,12 @@ export default {
   <a class="hx-button is-light">Light</a>
   <a class="hx-button is-dark">Dark</a>
   <a class="hx-button is-black">Black</a>
-  <a class="hx-button is-link">Link</a>
   <a class="hx-button is-primary">Primary</a>
   <a class="hx-button is-info">Info</a>
   <a class="hx-button is-warning">Warning</a>
   <a class="hx-button is-danger">Danger</a>
+  <a class="hx-button is-link">Link</a>
+  <a class="hx-button is-transparent">Transparent</a>
 </div>
           `
         },
@@ -113,291 +114,216 @@ export default {
           code: `
 <div class="has-text-centered">
   <p>
-    <a class="hx-button"><span class="hx-icon-control"><i class="icon icon-helix"></i></span> <span>Helix</span></a>
-    <a class="hx-button"><span>Helix</span> <span class="hx-icon-control"><i class="icon icon-helix"></i></span></a>
-    <a class="hx-button is-success"><span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span> <span>Add</span></a>
-    <a class="hx-button is-info"><span>More</span> <span class="hx-icon-control"><i class="icon icon-more"></i></span></a>
-    <a class="hx-button is-danger"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span> <span>Remove</span></a>
+    <a class="hx-button">
+      <span class="hx-icon-control"><i class="icon icon-helix"></i></span>
+      <span>Helix</span>
+    </a>
+    <a class="hx-button">
+      <span>Helix</span>
+      <span class="hx-icon-control"><i class="icon icon-helix"></i></span>
+    </a>
+    <a class="hx-button is-success">
+      <span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span>
+      <span>Add</span>
+    </a>
+    <a class="hx-button is-info">
+      <span>More</span>
+      <span class="hx-icon-control"><i class="icon icon-more"></i></span>
+    </a>
+    <a class="hx-button is-danger">
+      <span class="hx-icon-control"><i class="icon icon-close-empty"></i></span>
+      <span>Remove</span>
+    </a>
   </p>
   <p>
-    <a class="hx-button is-primary is-outlined"><span class="hx-icon-control"><i class="icon icon-helix"></i></span></a>
-    <a class="hx-button is-warning"><span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span></a>
-    <a class="hx-button is-dark"><span class="hx-icon-control"><i class="icon icon-angle-left"></i></span></a>
-    <a class="hx-button is-success"><span class="hx-icon-control"><i class="icon icon-angle-right"></i></span></a>
-    <a class="hx-button is-danger"><span class="hx-icon-control"><i class="icon icon-heart"></i></span></a>
+    <a class="hx-button is-primary is-outlined">
+      <span class="hx-icon-control"><i class="icon icon-helix"></i></span>
+    </a>
+    <a class="hx-button is-warning">
+      <span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span>
+    </a>
+    <a class="hx-button is-dark">
+      <span class="hx-icon-control"><i class="icon icon-angle-left"></i></span>
+    </a>
+    <a class="hx-button is-success">
+      <span class="hx-icon-control"><i class="icon icon-angle-right"></i></span>
+    </a>
+    <a class="hx-button is-danger">
+      <span class="hx-icon-control"><i class="icon icon-heart"></i></span>
+    </a>
   </p>
   <p>
-    <a class="hx-button is-small"><span>Small</span> <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span></a>
-    <a class="hx-button"><span>Medium</span> <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span></a>
-    <a class="hx-button is-large"><span>Large</span> <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span></a>
-  </p>
-</div>
-          `
-        },
-        {
-          title: 'Button groups',
-          code: `
-<p class="has-text-centered">If you want to group buttons together, use the <code>.is-grouped</code> modifier on the <code>.hx-field</code> container:</p>
-<div class="hx-field is-grouped">
-  <p class="hx-control">
+    <a class="hx-button is-small">
+      <span>Small</span>
+      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
+    </a>
     <a class="hx-button">
-      Cancel
+      <span>Medium</span>
+      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
     </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-danger">
-      Delete item
-    </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-primary">
-      Save changes
-    </a>
-  </p>
-</div>
-<hr />
-<p class="mt-5 has-text-centered">You can center the button group or any grouped elements using <code>.is-grouped-centered</code> modifier.</p>
-<div class="hx-field is-grouped is-grouped-centered">
-  <p class="hx-control">
-    <a class="hx-button">
-      Cancel
-    </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-danger">
-      Delete item
-    </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-primary">
-      Save changes
-    </a>
-  </p>
-</div>
-<hr />
-<p class="mt-5 has-text-centered">You can also right align the group using <code>.is-grouped-right</code> modifier.</p>
-<div class="hx-field is-grouped is-grouped-right">
-  <p class="hx-control">
-    <a class="hx-button">
-      Cancel
-    </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-danger">
-      Delete item
-    </a>
-  </p>
-  <p class="hx-control">
-    <a class="hx-button is-primary">
-      Save changes
+    <a class="hx-button is-large">
+      <span>Large</span>
+      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
     </a>
   </p>
 </div>
           `
         },
         {
-          title: 'Button group addons',
+          title: 'Round icon buttons',
           code: `
-<p class="has-text-centered">This is a simple example for the Button Group Addons</p>
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button">
-      Left
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      Middle
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      Right
-    </a>
-  </div>
-</div>
-<p class="mt-5 has-text-centered">You can change the button styls in button group addons using the button modifiers such as <code>.is-info</code> or <code>.is-primary</code>, etc.</p>
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      Left
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      Middle
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      Right
-    </a>
-  </div>
-</div>
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      Left
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      Middle
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      Right
-    </a>
-  </div>
+<div class="has-text-centered">
+  <button class="hx-button is-round is-light is-small">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-minus-empty"></i>
+    </span>
+  </button>
+  <button class="hx-button is-round is-danger is-small">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-heart"></i>
+    </span>
+  </button>
+  <button class="hx-button is-round">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-plus-empty is-medium"></i>
+    </span>
+  </button>
+  <button class="hx-button is-info is-round">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-medications is-medium"></i>
+    </span>
+  </button>
+  <button class="hx-button is-round is-light is-large">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-email-outline is-large"></i>
+    </span>
+  </button>
+  <button class="hx-button is-round is-black is-large">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-paperclip is-large"></i>
+    </span>
+  </button>
 </div>
           `
         },
         {
-          title: 'Button group addons with icons',
+          title: 'Button group',
           code: `
-<p>You can add icons to the Button Group Addons in this structure,</p>
-<ul>
-  <li><code>.hx-field .has-addons</code></li>
-  <ul>
-    <li><code>.hx-control</code></li>
-    <ul>
-      <li><code>.hx-button</code></li>
-      <ul>
-        <li><code>.hx-icon-control</code></li>
-        <ul>
-          <li><code>.hx-icon icon-telephone is-small</code></li>
-        </ul>
-        <li><code>&lt;span&gt;Call&lt;/span&gt;</code></li>
-      </ul>
-    </ul>
-  </ul>
-</ul>
-<div class="hx-field has-addons mt-5">
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-telephone is-small"></i></span>
-      <span>Call</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-email is-small"></i></span>
-      <span>Email</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-flag is-small"></i></span>
-      <span>Flag</span>
-    </a>
-  </div>
+<p class="has-text-centered">These are examples of the Button Group.</p>
+<div class="hx-button-group mb-3 has-text-centered">
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-email-outline"></i>
+    </span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-printer-outline"></i>
+    </span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-credit-card"></i>
+    </span>
+  </a>
 </div>
-<hr />
-<p class="mt-5 has-text-centered">This works like Button Groups, you can center it using <code>.has-addons-centered</code> modifier.</p>
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-telephone is-small"></i></span>
-      <span>Call</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-email is-small"></i></span>
-      <span>Email</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-flag is-small"></i></span>
-      <span>Flag</span>
-    </a>
-  </div>
+<div class="hx-button-group mb-3 has-text-centered">
+  <a class="hx-button">
+    Left
+  </a>
+  <a class="hx-button">
+    Middle
+  </a>
+  <a class="hx-button">
+    Right
+  </a>
 </div>
-<hr />
-<p class="has-text-right">Or right aligh it using <code>.has-addons-right</code> modifier.</p>
-<div class="hx-field has-addons has-addons-right">
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-telephone is-small"></i></span>
-      <span>Call</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-email is-small"></i></span>
-      <span>Email</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button">
-      <span class="hx-icon-control"><i class="hx-icon icon-flag is-small"></i></span>
-      <span>Flag</span>
-    </a>
-  </div>
+<div class="hx-button-group has-text-centered">
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-email-outline"></i>
+    </span>
+    <span>Email</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-printer-outline"></i>
+    </span>
+    <span>Print</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-credit-card"></i>
+    </span>
+    <span>Pay</span>
+  </a>
 </div>
-<hr />
-<p class="mt-5">Make a group of buttons stretch at equal sizes to span the entire width of its parent.</p>
-<p>You can have full width addons using <code>.has-addons-fullwidth</code> modifier. And use <code>.is-fullwidth</code> modifier for buttons</p>
-<div class="hx-field has-addons has-addons-fullwidth">
-  <div class="hx-control">
-    <a class="hx-button is-fullwidth">
-      <span class="hx-icon-control"><i class="hx-icon icon-telephone is-small"></i></span>
-      <span>Call</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-fullwidth">
-      <span class="hx-icon-control"><i class="hx-icon icon-email is-small"></i></span>
-      <span>Email</span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-fullwidth">
-      <span class="hx-icon-control"><i class="hx-icon icon-flag is-small"></i></span>
-      <span>Flag</span>
-    </a>
-  </div>
+<p class="mt-5 has-text-centered">You can change the button style in button group addons using the button modifiers such as <code>.is-info</code> or <code>.is-primary</code>, etc.</p>
+<div class="hx-button-group mb-3 has-text-centered">
+  <a class="hx-button is-info">
+    Left
+  </a>
+  <a class="hx-button is-info">
+    Middle
+  </a>
+  <a class="hx-button is-info">
+    Right
+  </a>
 </div>
-          `
-        },
-        {
-          title: 'Icon based button group addons',
-          code: `
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      <span class="hx-icon-control"><i class="hx-icon icon-telephone"></i></span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      <span class="hx-icon-control"><i class="hx-icon icon-email"></i></span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-primary">
-      <span class="hx-icon-control"><i class="hx-icon icon-flag"></i></span>
-    </a>
-  </div>
+<div class="hx-button-group has-text-centered">
+  <a class="hx-button is-primary">
+    Left
+  </a>
+  <a class="hx-button is-primary">
+    Middle
+  </a>
+  <a class="hx-button is-primary">
+    Right
+  </a>
 </div>
-<div class="hx-field has-addons has-addons-centered">
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      <span class="hx-icon-control"><i class="hx-icon icon-cloud-download"></i></span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      <span class="hx-icon-control"><i class="hx-icon icon-cloud-upload"></i></span>
-    </a>
-  </div>
-  <div class="hx-control">
-    <a class="hx-button is-info">
-      <span class="hx-icon-control"><i class="hx-icon icon-printer"></i></span>
-    </a>
-  </div>
+<br />
+<p class="has-text-centered">Make the group of buttons stretch to the entire width of its parent. Just add class <code>is-fullwidth</code> to the group.</p>
+<div class="hx-button-group has-text-centered is-fullwidth">
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-email-outline"></i>
+    </span>
+    <span>Email to the patient</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-printer-outline"></i>
+    </span>
+    <span>Print invoice</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-credit-card"></i>
+    </span>
+    <span>Pay bill with credit card</span>
+  </a>
+</div>
+<br />
+<p class="has-text-centered">Make a group of buttons stretch at equal sizes to span the entire width of its parent. Add another class <code>is-justified</code> to the group.</p>
+<div class="hx-button-group has-text-centered is-fullwidth is-justified">
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-email-outline"></i>
+    </span>
+    <span>Email to the patient</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-printer-outline"></i>
+    </span>
+    <span>Print invoice</span>
+  </a>
+  <a class="hx-button">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-credit-card"></i>
+    </span>
+    <span>Pay bill with credit card</span>
+  </a>
 </div>
           `
         }

@@ -167,6 +167,16 @@
         }
       }
     }
+
+
+
+
+  }
+
+  &.is-transparent {
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
   }
 
   // Sizes
@@ -202,6 +212,25 @@
       @include center(1em);
 
       position: absolute !important;
+    }
+  }
+
+  &.is-round {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: .25rem;
+    margin-right: .25rem;
+
+    &.is-small {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &.is-large {
+      width: 4.5rem;
+      height: 4.5rem;
     }
   }
 }
@@ -307,4 +336,71 @@ input[type="submit"].button {
   line-height: 1;
   padding-bottom: 0.4em;
   padding-top: 0.35em;
+}
+
+// Button group
+.#{$namespace}-button-group {
+  display: flex;
+  flex-direction: row;
+  > .#{$namespace}-button {
+    margin-right: 0;
+    margin-left: -1px;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+    border-radius: 0;
+
+    &.is-light {
+      border-left: 1px solid rgba($color-white, 1);
+    }
+    &.is-dark,
+    &.is-black,
+    &.is-success,
+    &.is-primary,
+    &.is-info,
+    &.is-warning,
+    &.is-danger {
+      border-left: 1px solid rgba($color-white, .3);
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius-sm;
+      border-bottom-left-radius: $border-radius-sm;
+
+      &.is-light,
+      &.is-dark,
+      &.is-black,
+      &.is-primary,
+      &.is-success,
+      &.is-info,
+      &.is-warning,
+      &.is-danger {
+        border-left-color: transparent;
+      }
+
+    }
+    &:last-child {
+      border-top-right-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+    }
+    &:hover {
+      z-index: 1;
+    }
+
+  }
+  &.has-text-centered {
+    justify-content: center;
+  }
+  &.has-text-right {
+    justify-content: flex-end;
+  }
+  &.is-fullwidth {
+    > .#{$namespace}-button {
+      flex: 1 0 auto;
+    }
+    &.is-justified {
+      > .#{$namespace}-button {
+        flex: 1;
+      }
+    }
+  }
 }
