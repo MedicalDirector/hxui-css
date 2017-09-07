@@ -1,6 +1,11 @@
 // LISTS
 
 // list
+.#{$namespace}-card-content, .#{$namespace}-popover {
+  > .#{$namespace}-list {
+    margin-top: 0;
+  }
+}
 .#{$namespace}-list {
   list-style: none;
   > li {
@@ -127,6 +132,17 @@
       }
     }
   }
+
+  &.is-horizontal {
+    padding-left: 1.5rem;
+    > li {
+      display: inline-block;
+      &:before {
+        left: -1.5rem;
+      }
+    }
+  }
+
 }
 
 // List group

@@ -23,62 +23,56 @@ export default {
   <div class="hx-column is-6 is-offset-3">
     <div class="hx-card">
       <div class="hx-card-content">
-        <ul class="hx-progress-timeline">
-          <li class="hx-item is-success">
-            <div class="hx-head"><i class="icon icon-check-empty"></i></div>
-            <div class="hx-content">
-              <div><h6 class="is-marginless">Booked <i class="icon icon-angle-up"></i></h6></div>
-              <ul>
-                <li><strong>SMS sent: Appointment Reminder</strong></li>
-                <li><small class="is-text-italic">16/03/2017</small></li>
-              </ul>
-              <ul>
-                <li><strong>SMS sent: Appointment booked</strong></li>
-                <li><small class="is-text-italic">20/03/2017</small></li>
-                <li>
-                    You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749. <br>
-                    You can reply 'YES' to this message to confirm, or 'NO' to cancel. <br>
-                    If you need to reschedule. please call us at 03 3482 2181.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="hx-item is-next">
-            <div class="hx-head"></div>
-            <div class="hx-content">
-              <div><h6 class="is-marginless">Confirmed <i class="icon icon-angle-up"></i></h6></div>
-              <ul>
-                <li><strong>SMS rec'd: Patient Confirmed</strong></li>
-                <li><small class="is-text-italic">20/03/2017</small></li>
-                <li>YES</li>
-              </ul>
-            </div>
-          </li>
-          <li class="hx-item is-warning">
-              <div class="hx-head"></div>
-              <div class="hx-content">
-                <div><h6 class="is-marginless">Checked in <i class="icon icon-angle-up"></i></h6></div>
-                <ul>
-                    <li><strong>SMS rec'd: Patient Replied at 3:55pm.</strong></li>
-                    <li><small class="is-text-italic">20/03/2017</small></li>
-                    <li>Yes</li>
-                </ul>
+        <ul class="hx-list has-status is-joined">
+          <li class="is-success is-checked">
+            <h5 class="hx-title">Booked <i class="icon icon-angle-up"></i></h5>
+            <div class="hx-collapsible">
+              <div class="hx-group">
+                <p><strong>SMS sent: Appointment Reminder</strong><p>
+                <p><em>16.04.2017</em></p>
               </div>
-          </li>
-          <li class="hx-item is-danger">
-            <div class="hx-head"></div>
-            <div class="hx-content">
-              <div><h6 class="is-marginless">Waiting <i class="icon icon-angle-up"></i></h6></div>
-              <ul>
-                <li><strong>SMS rec'd: Patient Declined at 4:05pm.</strong></li>
-                <li><small class="is-text-italic">20/03/2017</small></li>
-                <li>Yes</li>
-              </ul>
+              <div class="hx-group">
+                <p><strong>SMS sent: Appointment booked</strong><p>
+                <p><em>20.04.2017</em></p>
+              </div>
+              <div class="hx-group">
+                <p>You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
+          You can reply 'YES' to this message to confirm, or 'NO' to cancel.
+          If you need to reschedule. please call us at 03 3482 2181.</p>
+              </div>
             </div>
           </li>
-          <li class="hx-item">
-            <div class="hx-head"></div>
+          <li class="is-not-checked is-success">
+            <h6 class="hx-title">Confirmed <i class="hx-icon icon-angle-up"></i></h6>
+            <div class="hx-collapsible">
+              <div class="hx-group">
+                <p><strong>SMS rec'd: Patient Confirmed</strong><p>
+                <p><em>20.03.2017</em></p>
+                <p>YES</p>
+              </div>
+            </div>
           </li>
+          <li class="is-not-checked is-warning">
+            <h6 class="hx-title">Checked in <i class="hx-icon icon-angle-up"></i></h6>
+            <div class="hx-collapsible">
+              <div class="hx-group">
+                <p class="is-warning"><strong>SMS rec'd: Patient Replied at 3:55pm.</strong><p>
+                <p><em>20.03.2017</em></p>
+                <p>YES</p>
+              </div>
+            </div>
+          </li>
+          <li class="is-not-checked is-danger">
+            <h6 class="hx-title">Waiting <i class="hx-icon icon-angle-up"></i></h6>
+            <div class="hx-collapsible">
+              <div class="hx-group">
+                <p class="is-danger"><strong>SMS rec'd: Patient Declined at 4:05pm.</strong><p>
+                <p><em>20.03.2017</em></p>
+                <p>YES</p>
+              </div>
+            </div>
+          </li>
+          <li></li>
         </ul>
       </div>
     </div>
@@ -97,62 +91,56 @@ export default {
         <div class="hx-progress-timeline-status">
           <span class="hx-marker is-success is-animated"><i class="icon icon-check-empty"></i></span>
           <div class="hx-popover is-opened">
-            <ul class="hx-progress-timeline">
-              <li class="hx-item is-success">
-                <div class="hx-head"><i class="icon icon-check-empty"></i></div>
-                <div class="hx-content">
-                  <div>
-                    <h6 class="is-marginless">Booked <i class="icon icon-angle-up"></i></h6></div>
-                  <ul>
-                    <li><strong>SMS sent: Appointment Reminder</strong></li>
-                    <li><small class="is-text-italic">16/03/2017</small></li>
-                  </ul>
-                  <ul>
-                    <li><strong>SMS sent: Appointment booked</strong></li>
-                    <li><small class="is-text-italic">20/03/2017</small></li>
-                    <li>
-                      You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749. <br> You can reply 'YES' to this message to confirm, or 'NO' to cancel. <br> If you need to reschedule. please
-                      call us at 03 3482 2181.
-                    </li>
-                  </ul>
+            <ul class="hx-list has-status is-joined">
+              <li class="is-success is-checked">
+                <h5 class="hx-title">Booked <i class="icon icon-angle-up"></i></h5>
+                <div class="hx-collapsible">
+                  <div class="hx-group">
+                    <p><strong>SMS sent: Appointment Reminder</strong><p>
+                    <p><em>16.04.2017</em></p>
+                  </div>
+                  <div class="hx-group">
+                    <p><strong>SMS sent: Appointment booked</strong><p>
+                    <p><em>20.04.2017</em></p>
+                  </div>
+                  <div class="hx-group">
+                    <p>You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
+              You can reply 'YES' to this message to confirm, or 'NO' to cancel.
+              If you need to reschedule. please call us at 03 3482 2181.</p>
+                  </div>
                 </div>
               </li>
-              <li class="hx-item is-next">
-                <div class="hx-head"></div>
-                <div class="hx-content">
-                  <div>
-                    <h6 class="is-marginless">Confirmed <i class="icon icon-angle-up"></i></h6></div>
-                  <ul>
-                    <li><strong>SMS rec'd: Patient Confirmed</strong></li>
-                    <li><small class="is-text-italic">20/03/2017</small></li>
-                    <li>YES</li>
-                  </ul>
+              <li class="is-not-checked is-success">
+                <h6 class="hx-title">Confirmed <i class="hx-icon icon-angle-up"></i></h6>
+                <div class="hx-collapsible">
+                  <div class="hx-group">
+                    <p><strong>SMS rec'd: Patient Confirmed</strong><p>
+                    <p><em>20.03.2017</em></p>
+                    <p>YES</p>
+                  </div>
                 </div>
               </li>
-              <li class="hx-item is-warning">
-                <div class="hx-head"></div>
-                <div class="hx-content">
-                  <div>
-                    <h6 class="is-marginless">Checked in <i class="icon icon-angle-up"></i></h6></div>
-                  <ul>
-                    <li><strong>SMS rec'd: Patient Replied at 3:55pm.</strong></li>
-                    <li><small class="is-text-italic">20/03/2017</small></li>
-                    <li>Yes</li>
-                  </ul>
+              <li class="is-not-checked is-warning">
+                <h6 class="hx-title">Checked in <i class="hx-icon icon-angle-up"></i></h6>
+                <div class="hx-collapsible">
+                  <div class="hx-group">
+                    <p class="is-warning"><strong>SMS rec'd: Patient Replied at 3:55pm.</strong><p>
+                    <p><em>20.03.2017</em></p>
+                    <p>YES</p>
+                  </div>
                 </div>
               </li>
-              <li class="hx-item is-danger">
-                <div class="hx-head"></div>
-                <div class="hx-content">
-                  <div>
-                    <h6 class="is-marginless">Waiting <i class="icon icon-angle-up"></i></h6></div>
-                  <ul>
-                    <li><strong>SMS rec'd: Patient Declined at 4:05pm.</strong></li>
-                    <li><small class="is-text-italic">20/03/2017</small></li>
-                    <li>Yes</li>
-                  </ul>
+              <li class="is-not-checked is-danger">
+                <h6 class="hx-title">Waiting <i class="hx-icon icon-angle-up"></i></h6>
+                <div class="hx-collapsible">
+                  <div class="hx-group">
+                    <p class="is-danger"><strong>SMS rec'd: Patient Declined at 4:05pm.</strong><p>
+                    <p><em>20.03.2017</em></p>
+                    <p>YES</p>
+                  </div>
                 </div>
               </li>
+              <li></li>
             </ul>
           </div>
         </div>
@@ -175,48 +163,40 @@ export default {
   <div class="hx-card-content">
     <div class="hx-flex hx-flex-justify-between">
       <div class="hx-flex hx-flex-align-center">
-        <div class="hx-progress-timeline-status">
-          <span class="hx-marker is-success is-animated"><i class="icon icon-check-empty"></i></span>
-          <strong class="is-success">Success</strong>
-        </div>
-        <i class="icon icon-angle-right"></i>
-        <a class="hx-button is-primary">
-            <span>Animated</span>
-            <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
-          </a>
+        <ul class="hx-list has-status is-horizontal pr-1">
+          <li class="is-success is-checked">
+            <strong class="is-success">Success</strong>
+          </li>
+        </ul>
+        <i class="hx-icon icon-angle-right"></i>
+        <button class="hx-button is-primary">
+          <span>Next action</span>
+          <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+        </button>
       </div>
       <div class="hx-flex hx-flex-align-center">
-        <div class="hx-progress-timeline-status">
-          <span class="hx-marker is-success"><i class="icon icon-check-empty"></i></span>
-        </div>
-        <strong class="is-success">Success</strong>
-        <i class="icon icon-angle-right"></i>
-        <a class="hx-button is-primary">
-            <span>Success</span>
-            <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
-          </a>
+        <ul class="hx-list has-status is-horizontal pr-1">
+          <li class="is-warning is-not-checked">
+            <strong class="is-warning">Attention</strong>
+          </li>
+        </ul>
+        <i class="hx-icon icon-angle-right"></i>
+        <button class="hx-button is-primary">
+          <span>Next action</span>
+          <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+        </button>
       </div>
       <div class="hx-flex hx-flex-align-center">
-        <div class="hx-progress-timeline-status">
-          <span class="hx-marker is-warning"></span>
-        </div>
-        <strong class="is-warning">Attention</strong>
-        <i class="icon icon-angle-right"></i>
-        <a class="hx-button is-primary">
-            <span>Attention</span>
-            <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
-          </a>
-      </div>
-      <div class="hx-flex hx-flex-align-center">
-        <div class="hx-progress-timeline-status">
-          <span class="hx-marker is-danger"></span>
-        </div>
-        <strong class="is-danger">Declined</strong>
-        <i class="icon icon-angle-right"></i>
-        <a class="hx-button is-primary">
-          <span>Danger</span>
-          <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
-        </a>
+        <ul class="hx-list has-status is-horizontal pr-1">
+          <li class="is-danger is-not-checked">
+            <strong class="is-danger">Declined</strong>
+          </li>
+        </ul>
+        <i class="hx-icon icon-angle-right"></i>
+        <button class="hx-button is-primary">
+          <span>Next action</span>
+          <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+        </button>
       </div>
     </div>
   </div>
