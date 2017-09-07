@@ -7,6 +7,7 @@ import Modifiers from '@/components/pages/Modifiers'
 import Containers from '@/components/pages/Containers'
 import Pages from '@/components/pages/Pages'
 import Sections from '@/components/pages/Sections'
+import Spacing from '@/components/pages/Spacing'
 // content
 import Tables from '@/components/pages/Tables'
 import Typography from '@/components/pages/Typography'
@@ -137,6 +138,11 @@ export default new Router({
       path: '/sidebar',
       name: 'Sidebar',
       component: Sidebar
+    },
+    {
+      path: '/spacing',
+      name: 'Spacing',
+      component: Spacing
     },
     {
       path: '/tabs',

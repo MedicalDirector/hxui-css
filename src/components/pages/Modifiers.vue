@@ -2,11 +2,11 @@
   <div id="modifiers">
     <h1 class="hx-title">Modifiers</h1>
     <h2 class="hx-subtitle">Most HxUI components have alternative styles. <br>To apply them, you only need to append one of the <strong>modifier classes</strong>. They all start with <code>is-</code> or <code>has-</code>.</h2>
+
     <hr>
 
     <expanding-code-example v-for="(example, i) in examples" key="i"
       :title="example.title"
-      :code="example.code"
       :example="example.code"
       :visible="false"
       :background="example.bg"
@@ -72,10 +72,6 @@ export default {
     return {
       examples: [
         {
-          title: 'Text',
-          code: `
-
-          `
         }
       ]
     }

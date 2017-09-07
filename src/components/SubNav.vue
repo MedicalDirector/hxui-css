@@ -51,6 +51,10 @@ export default {
             {
               name: 'Sections',
               path: './sections'
+            },
+            {
+              name: 'Spacing',
+              path: './spacing'
             }
           ]
         },

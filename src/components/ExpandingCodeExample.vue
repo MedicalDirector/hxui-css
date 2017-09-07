@@ -2,7 +2,7 @@
   <div class="hx-card example is-flat mb-3">
     <div class="hx-card-header">
       <h4 class="hx-card-header-title my-2">{{ title }}</h4>
-      <button class="hx-button is-pulled-right mx-4" v-on:click="toggleCode">Code</button>
+      <button class="hx-button is-pulled-right mx-4" v-on:click="toggleCode" v-if="code !== '<h1>Code here</h1>'">Code</button>
     </div>
     <div class="hx-card-content pa-0 hx-code" :style="{ height: ht + 'px' }">
       <pre v-highlightjs ref="code"><code class="html">

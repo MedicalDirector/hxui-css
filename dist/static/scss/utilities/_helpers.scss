@@ -104,7 +104,7 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 
 // margins & paddings
 $unit: 0.25;
-@for $i from 0 through 5 {
+@for $i from 0 through 10 {
     .mt-#{$i} { margin-top: 1rem * ($i * $unit) !important; }
     .mr-#{$i} { margin-right: 1rem * ($i * $unit) !important; }
     .mb-#{$i} { margin-bottom: 1rem * ($i * $unit) !important; }
