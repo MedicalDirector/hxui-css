@@ -73,7 +73,7 @@
   .#{$namespace}-popover {
     background: $color-white;
     border: 1px solid $color-gray-lightest;
-    box-shadow: 3px 8px 9px 0 rgba(0,0,0, 0.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,.145);
     border-radius: 5px;
     position: absolute;
     min-width: 320px;
