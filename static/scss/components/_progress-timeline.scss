@@ -81,7 +81,6 @@
     padding: 1.25rem;
     padding-bottom: 0;
     z-index: 9;
-    left:0;
     opacity: 0.01;
     transition: all .3s ease;
     max-height: 200px;
@@ -99,7 +98,10 @@
 
     &.is-right{
       right:0;
-      left: initial;
+    }
+
+    &.is-left{
+      left:0;
     }
   }
 }
