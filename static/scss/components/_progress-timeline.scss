@@ -81,7 +81,7 @@
     padding: 1.25rem;
     padding-bottom: 0;
     z-index: 9;
-    right: -410%;
+    left:0;
     opacity: 0.01;
     transition: all .3s ease;
     max-height: 200px;
@@ -95,6 +95,11 @@
       transform: translateY(5px);
       max-height: 500px;
       overflow-y: scroll;
+    }
+
+    &.is-right{
+      right:0;
+      left: initial;
     }
   }
 }
