@@ -33,7 +33,7 @@
     <section class="hx-section">
       <p>Because the icons can take a few seconds to load, and because you want control over the space the icons will take, you can use the icon class as a container:</p>
 
-      <p>Code</p>
+      <p>Usage</p>
 
       <pre v-highlightjs><code class="html">
 {{ code }}
@@ -240,7 +240,8 @@ export default {
         { name: 'filter' },
         { name: 'filter-outline' },
         { name: 'funnel' },
-        { name: 'funnel-outline' }
+        { name: 'funnel-outline' },
+        { name: 'code' }
       ]
     }
   },
