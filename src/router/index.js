@@ -29,6 +29,8 @@ import Tabs from '@/components/pages/Tabs'
 import Toggle from '@/components/pages/Toggle'
 import Tooltips from '@/components/pages/Tooltips'
 import Downloads from '@/components/pages/Downloads'
+// Random
+import Deploying from '@/components/pages/Deploying'
 
 Vue.use(Router)
 
@@ -164,6 +166,12 @@ export default new Router({
       path: '/downloads',
       name: 'Downloads',
       component: Downloads
+    },
+
+    {
+      path: '/deploying',
+      name: 'Deploying',
+      component: Deploying
     }
   ]
 })
