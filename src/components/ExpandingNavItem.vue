@@ -1,8 +1,10 @@
 <template>
   <div class="panel">
-    <div class="hx-header has-pointer" @click="toggleItem" >
-      {{ title }}
-      <i class="hx-icon is-small my-0 is-pulled-right" :class="{ 'icon-angle-down' : show, 'icon-angle-up': !show }"></i>
+    <div class="hx-header hx-flex py-2 has-pointer" @click="toggleItem" >
+      <span class="hx-flex-1 py-2">{{ title }}</span>
+      <span class="hx-icon-control  py-1">
+        <i class="hx-icon is-small my-0" :class="{ 'icon-angle-down' : show, 'icon-angle-up': !show }"></i>
+      </span>
     </div>
     <div class="navs" :style="{ height: ht + 'px' }" >
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">
