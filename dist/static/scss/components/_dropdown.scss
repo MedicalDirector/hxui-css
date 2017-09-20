@@ -1,10 +1,12 @@
 // The dropdown wrapper (`<div>`)
 .is-dropup,
+.dropup,
 .#{$namespace}-dropdown {
   position: relative;
 }
 
-.is-dropup {
+.is-dropup,
+.dropup {
   .#{$namespace}-btn-dropdown {
     &::after {
       border-top: 0;
@@ -117,7 +119,8 @@
 
 
 // Open state for the dropdown
-.is-open {
+.is-open,
+.open{
   // Show the menu
   > .#{$namespace}-dropdown-menu {
     display: block;
@@ -130,7 +133,7 @@
 }
 
 // Menu positioning
-.is-right {
+.is-right{
   .#{$namespace}-dropdown-menu {
     right: 0;
     left: auto;
@@ -169,11 +172,12 @@
 
 
 
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
+// Allow for dropdowns to go bottom up (aka, is-dropup)
 //
-// Just add .syn-dropup after the standard .syn-dropdown class and you're set.
+// Just add .hx-dropup after the standard .hx-dropdown class and you're set.
 
-.is-dropup{
+.is-dropup,
+dropup{
   // Reverse the caret
   .caret {
     content: "";
