@@ -149,15 +149,15 @@ export default {
             }
           ]
         },
-        {
-          title: 'Some examples',
-          items: [
-            {
-              name: 'Deploying page',
-              path: './deploying'
-            }
-          ]
-        },
+        // {
+        //   title: 'Some examples',
+        //   items: [
+        //     {
+        //       name: 'Deploying page',
+        //       path: './deploying'
+        //     }
+        //   ]
+        // },
         {
           title: 'Resources',
           items: [
