@@ -35,7 +35,8 @@
       }
 
       &:focus ~ .#{$namespace}-label,
-      &:valid ~ .#{$namespace}-label {
+      &:valid ~ .#{$namespace}-label,
+      &.ng-valid  ~ .#{$namespace}-label{
         top: (-.6rem);
         font-size: (1rem);
         sup {
@@ -86,7 +87,8 @@
       }
 
       &:focus ~ .#{$namespace}-label,
-      &:valid ~ .#{$namespace}-label {
+      &:valid ~ .#{$namespace}-label,
+      &.ng-valid  ~ .#{$namespace}-label {
         top: (-.5rem);
         font-size: (2rem / $large);
         sup {
@@ -266,7 +268,8 @@
   }
 
   &:focus ~ .#{$namespace}-label,
-  &:valid ~ .#{$namespace}-label {
+  &:valid ~ .#{$namespace}-label,
+  &.ng-valid  ~ .#{$namespace}-label {
     top: -.5rem;
     font-size: .75rem;
     color: $color-primary;
@@ -276,7 +279,8 @@
   }
 
   &:focus ~ .#{$namespace}-help,
-  &:valid ~ .#{$namespace}-help {
+  &:valid ~ .#{$namespace}-help,
+  &.ng-valid  ~ .#{$namespace}-label {
     opacity: 1;
     &:before,
     &:after {
@@ -308,7 +312,8 @@
   padding: 0 0 .6rem 0;
   height: 2.7rem;
   &:focus ~ .#{$namespace}-label,
-  &:valid ~ .#{$namespace}-label {
+  &:valid ~ .#{$namespace}-label,
+  &.ng-valid  ~ .#{$namespace}-label{
     top: -1.6rem;
   }
 }
