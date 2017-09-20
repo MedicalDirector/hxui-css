@@ -73,6 +73,12 @@
       }
       &.has-animation {
         &:before {
+          animation-delay: 10s;
+        }
+        &:after {
+          animation-delay: 20s;
+        }
+        &:before {
           @include radial-gradient(bottom left, $color-gradient-green, $color-gradient-blue);
         }
         &:after {
