@@ -35,7 +35,7 @@ import Deploying from '@/components/pages/Deploying'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
