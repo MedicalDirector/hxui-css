@@ -76,7 +76,8 @@
 
 .#{$namespace}-card {
   background-color: $color-white;
-  box-shadow: 0 2px 3px rgba($color-black, 0.1), 0 0 0 1px rgba($color-black, 0.1);
+  // box-shadow: 0 2px 3px rgba($color-black, 0.1), 0 0 0 1px rgba($color-black, 0.1);
+  border: 1px solid rgba($color-black, .08);
   color: $text;
   max-width: 100%;
   position: relative;
@@ -91,20 +92,21 @@
   }
 
   // States
-  &.is-hovered {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 25px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.2);
+  &.is-hovered,
+  &:hover {
+    // transform: translateY(-4px);
+    box-shadow: 0 0px 8px 0 rgba($color-black,.03), 0 4px 8px 0 rgba($color-black,.03);
   }
 
   &:focus,
   &.is-focused {
     outline: none;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.2);
+    box-shadow: 0 2px 12px 0 rgba($color-black,.06);
   }
 
   &.is-active {
     transform: scale(1.05);
-    box-shadow: 0px 8px 36px rgba($color-black, .3), 0 0 0 1px rgba($color-black, 0.1);
+    box-shadow: 0px 8px 36px rgba($color-black, .06);
     outline: none;
   }
 
@@ -112,15 +114,15 @@
     border-left: 5px solid $color-primary;
 
     &.is-small {
-      border-width: 2px;
+      border-left-width: 2px;
     }
 
     &.is-medium {
-      border-width: 12px;
+      border-left-width: 12px;
     }
 
     &.is-large {
-      border-width: 25px;
+      border-left-width: 25px;
     }
 
     &.is-info {

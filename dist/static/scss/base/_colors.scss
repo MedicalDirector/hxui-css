@@ -37,16 +37,6 @@
   &-gradient {
     &.has-animation {
       position: relative;
-      &.is-fullscreen {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100vh;
-        width: 100vw;
-        > div {
-          z-index: 1;
-        }
-      }
       &:before, &:after {
         content: '';
         position: absolute;

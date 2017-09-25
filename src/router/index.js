@@ -5,6 +5,7 @@ import Install from '@/components/pages/Install'
 import Modifiers from '@/components/pages/Modifiers'
 // page layouts
 import Containers from '@/components/pages/Containers'
+import Elevation from '@/components/pages/Elevation'
 import Pages from '@/components/pages/Pages'
 import Sections from '@/components/pages/Sections'
 import Spacing from '@/components/pages/Spacing'
@@ -56,6 +57,11 @@ export default new Router({
       path: '/containers',
       name: 'Containers',
       component: Containers
+    },
+    {
+      path: '/elevation',
+      name: 'Elevation',
+      component: Elevation
     },
     {
       path: '/pages',
