@@ -105,23 +105,26 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 // margins & paddings
 $unit: 0.25;
 @for $i from 0 through 10 {
-    .mt-#{$i} { margin-top: 1rem * ($i * $unit) !important; }
-    .mr-#{$i} { margin-right: 1rem * ($i * $unit) !important; }
-    .mb-#{$i} { margin-bottom: 1rem * ($i * $unit) !important; }
-    .ml-#{$i} { margin-left: 1rem * ($i * $unit) !important; }
-    .mx-#{$i} { margin-left: 1rem * ($i * $unit) !important; margin-right: 1rem * ($i * $unit) !important; }
-    .my-#{$i} { margin-top: 1rem * ($i * $unit) !important; margin-bottom: 1rem * ($i * $unit) !important; }
-    .ma-#{$i} { margin: 1rem * ($i * $unit) !important; }
+  .mt-#{$i} { margin-top: 1rem * ($i * $unit) !important; }
+  .mr-#{$i} { margin-right: 1rem * ($i * $unit) !important; }
+  .mb-#{$i} { margin-bottom: 1rem * ($i * $unit) !important; }
+  .ml-#{$i} { margin-left: 1rem * ($i * $unit) !important; }
+  .mx-#{$i} { margin-left: 1rem * ($i * $unit) !important; margin-right: 1rem * ($i * $unit) !important; }
+  .my-#{$i} { margin-top: 1rem * ($i * $unit) !important; margin-bottom: 1rem * ($i * $unit) !important; }
+  .ma-#{$i} { margin: 1rem * ($i * $unit) !important; }
 
-    .pt-#{$i} { padding-top: 1rem * ($i * $unit) !important; }
-    .pr-#{$i} { padding-right: 1rem * ($i * $unit) !important; }
-    .pb-#{$i} { padding-bottom: 1rem * ($i * $unit) !important; }
-    .pl-#{$i} { padding-left: 1rem * ($i * $unit) !important; }
-    .px-#{$i} { padding-left: 1rem * ($i * $unit) !important; padding-right: 1rem * ($i * $unit) !important; }
-    .py-#{$i} { padding-top: 1rem * ($i * $unit) !important; padding-bottom: 1rem * ($i * $unit) !important; }
-    .pa-#{$i} { padding: 1rem * ($i * $unit) !important; }
+  .pt-#{$i} { padding-top: 1rem * ($i * $unit) !important; }
+  .pr-#{$i} { padding-right: 1rem * ($i * $unit) !important; }
+  .pb-#{$i} { padding-bottom: 1rem * ($i * $unit) !important; }
+  .pl-#{$i} { padding-left: 1rem * ($i * $unit) !important; }
+  .px-#{$i} { padding-left: 1rem * ($i * $unit) !important; padding-right: 1rem * ($i * $unit) !important; }
+  .py-#{$i} { padding-top: 1rem * ($i * $unit) !important; padding-bottom: 1rem * ($i * $unit) !important; }
+  .pa-#{$i} { padding: 1rem * ($i * $unit) !important; }
 }
 
+@for $i from 0 through 24 {
+  .is-elevate-#{$i} { box-shadow: 0 (($i * $unit) * 5px) ($i * 2px) ($i * .1px) rgba(0,0,0,.08); }
+}
 
 // Other
 
