@@ -25,7 +25,7 @@ export default {
       <div class="hx-card-content">
         <ul class="hx-list has-status is-joined">
           <li class="is-success is-checked">
-            <h5 class="hx-title">Booked <i class="icon icon-angle-up"></i></h5>
+            <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
             <div class="hx-collapsible">
               <div class="hx-group">
                 <p><strong>SMS sent: Appointment Reminder</strong><p>
@@ -93,7 +93,7 @@ export default {
           <div class="hx-popover is-opened">
             <ul class="hx-list has-status is-joined">
               <li class="is-success is-checked">
-                <h5 class="hx-title">Booked <i class="icon icon-angle-up"></i></h5>
+                <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
                 <div class="hx-collapsible">
                   <div class="hx-group">
                     <p><strong>SMS sent: Appointment Reminder</strong><p>
