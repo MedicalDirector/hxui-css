@@ -41,6 +41,10 @@ export default {
               path: './containers'
             },
             {
+              name: 'Elevation',
+              path: './elevation'
+            },
+            {
               name: 'Grid',
               path: './grid'
             },

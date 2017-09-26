@@ -64,7 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 .hx-nav-brand {
-  transition: .3s;
+  transition: .3s ease-in-out;
 }
 .hxui-logo {
   transition: .3s;
