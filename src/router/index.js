@@ -13,6 +13,7 @@ import Spacing from '@/components/pages/Spacing'
 import Tables from '@/components/pages/Tables'
 import Typography from '@/components/pages/Typography'
 // components
+import Alerts from '@/components/pages/Alerts'
 import Badges from '@/components/pages/Badges'
 import Buttons from '@/components/pages/Buttons'
 import Cards from '@/components/pages/Cards'
@@ -82,6 +83,12 @@ export default new Router({
       path: '/typography',
       name: 'Typography',
       component: Typography
+    },
+    // components
+    {
+      path: '/alerts',
+      name: 'Alerts',
+      component: Alerts
     },
     {
       path: '/badges',

@@ -104,6 +104,10 @@ export default {
           title: 'Components',
           items: [
             {
+              name: 'Alerts',
+              path: './alerts'
+            },
+            {
               name: 'Cards',
               path: './cards'
             },

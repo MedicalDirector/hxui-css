@@ -1,7 +1,7 @@
 <template>
   <div id="tabs">
     <h1 class="hx-title">Tabs</h1>
-    <h2 class="hx-subtitle">The tab component is a small complete navigation component.</h2>
+    <h2 class="hx-subtitle">The tab component is used for hiding content behind a selectable item.</h2>
 
     <hr>
 
@@ -126,6 +126,126 @@ export default {
   </div>
 </div>
           `
+        },
+        {
+          title: 'Justified aligned',
+          code: `
+<p>To justify align the nav, simply add the modifier <code>.is-justified</code> to the <code>.hx-nav</code> base class.</p>
+
+<br>
+<div class="hx-tab-container">
+  <ul class="hx-nav hx-nav-tabs is-justified">
+    <li class="hx-nav-item is-active">
+      <a class="hx-nav-link is-active" href="javascript:void(0);">
+        <span>Template</span>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <span>Typescript</span>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <span>Javascript</span>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <span>Other</span>
+      </a>
+    </li>
+  </ul>
+  <div class="hx-tab-content">
+    Tab content container
+  </div>
+</div>
+          `
+        },
+        {
+          title: 'Info tabs',
+          code: `
+<p>To justify align the nav, simply add the modifier <code>.is-justified</code> to the <code>.hx-nav</code> base class.</p>
+
+<br>
+<div class="hx-tab-container">
+  <ul class="hx-nav hx-nav-tabs is-justified has-info">
+    <li class="hx-nav-item is-active">
+      <a class="hx-nav-link is-active" href="javascript:void(0);">
+        <h6 class="mt-0 mb-1">Unbatched</strong></h6>
+        <div class="hx-columns mt-0 pt-0">
+          <div class="hx-column hx-flex-grow">
+            <h6 class="mt-0 mb-0">75 <small>vouchers</small></h6>
+            <h6 class="mt-0 mb-0">-300 <small>claims</small></h6>
+          </div>
+          <div class="hx-column has-text-right">
+            <h5 class="mb-0">$3,766.00</h4>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <h6 class="mt-0 mb-1">Batched</strong></h6>
+        <div class="hx-columns mt-0 pt-0">
+          <div class="hx-column hx-flex-grow">
+            <h6 class="mt-0 mb-0">6,899 <small>vouchers</small></h6>
+            <h6 class="mt-0 mb-0">300 <small>claims</small></h6>
+          </div>
+          <div class="hx-column has-text-right">
+            <h5 class="mb-0">$3,766.00</h5>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <h6 class="mt-0 mb-1">Awaiting response</strong></h6>
+        <div class="hx-columns mt-0 pt-0">
+          <div class="hx-column hx-flex-grow">
+            <h6 class="mt-0 mb-0">75 <small>vouchers</small></h6>
+            <h6 class="mt-0 mb-0">4 <small>claims</small></h6>
+          </div>
+          <div class="hx-column has-text-right">
+            <h5 class="mb-0">$3,766.00</h5>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <h6 class="mt-0 mb-1">Exceptions</strong></h6>
+        <div class="hx-columns mt-0 pt-0">
+          <div class="hx-column hx-flex-grow">
+            <h6 class="mt-0 mb-0">34 <small>vouchers</small></h6>
+            <h6 class="mt-0 mb-0">4 <small>claims</small></h6>
+          </div>
+          <div class="hx-column has-text-right">
+            <h5 class="mb-0">$3,766.00</h5>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="hx-nav-item">
+      <a class="hx-nav-link" href="javascript:void(0);">
+        <h6 class="mt-0 mb-1">Resolved</strong></h6>
+        <div class="hx-columns mt-0 pt-0">
+          <div class="hx-column hx-flex-grow">
+            <h6 class="mt-0 mb-0">9,728 <small>vouchers</small></h6>
+            <h6 class="mt-0 mb-0">4 <small>claims</small></h6>
+          </div>
+          <div class="hx-column has-text-right">
+            <h5 class="mb-0">$3,766.00</h5>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <div class="hx-tab-content">
+    Tab content container
+  </div>
+</div>
+          `
         }
       ]
     }
@@ -136,5 +256,32 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss" >
+.hx-nav-tabs {
+  &.is-justified {
+    .hx-nav-item, .hx-nav-link {
+      display: block;
+      flex-grow: 1;
+    }
+  }
+  &.has-info {
+    .hx-nav-link {
+      .hx-columns {
+        border-top: 1px solid rgba(0,0,0,.1);
+        color: #555;
+        transition: .3s ease-in-out;
+        > * {
+          padding-top: .5rem;
+          justify-content: center;
+          opacity: .75;
+        }
+      }
+      &:hover {
+        .hx-columns {
+          border-top: 1px solid rgba(0,0,0,.3);
+        }
+      }
+    }
+  }
+}
 </style>
