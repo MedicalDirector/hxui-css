@@ -79,6 +79,21 @@
     }
   }
 
+  // temporary for Helix clashing with bootstrap
+  button.hx-button.is-link{
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-start;
+
+    @include hover-focus {
+      color: $dropdown-link-hover-color;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+
   // Disabled state
   //
   // Gray out text and ensure the hover/focus state remains gray

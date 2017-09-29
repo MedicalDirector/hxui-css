@@ -98,7 +98,7 @@ export default {
 // <p>The floating alert component is used to display a quick message to a user.</p>
 // <div class="hx-alert is-float" v-if="alert">
 //   <span class="hx-icon-control mr-2">
-//     <i class="hx-icon is-medium icon-check"></i>
+//     <i class="hx-icon is-medium icon-check"></<i></i>>
 //   </span>
 //   <span class="hx-flex-1">
 //     This is a default alert.
