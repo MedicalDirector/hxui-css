@@ -3,7 +3,8 @@
 //
 .#{$namespace}-nav-tabs {
   border-bottom: 1px solid rgba(0,0,0,.1);
-  .hx-nav-link{
+
+  .#{$namespace}-nav-link{
     border-bottom: 1px solid transparent;
     border-radius: 0;
     transition: .3s;
@@ -17,31 +18,31 @@
       box-shadow: 0 1px 0 0 $color-green-light;
       border-bottom: 1px solid $color-green-light;
     }
+  }
 
-    &.is-justified {
-      .hx-nav-item, .hx-nav-link {
-        display: block;
-        flex-grow: 1;
-      }
+  &.is-justified {
+    .hx-nav-item, .hx-nav-link {
+      display: block;
+      flex-grow: 1;
     }
+  }
 
-    &.has-info {
-      .hx-nav-link {
-        .hx-columns {
-          border-top: 1px solid rgba(0,0,0,.1);
-          color: #555;
-          transition: .3s ease-in-out;
-          > * {
-            padding-top: .5rem;
-            justify-content: center;
-            opacity: .75;
-          }
+  &.has-info {
+    .hx-nav-link {
+      .hx-columns {
+        border-top: 1px solid rgba(0,0,0,.1);
+        color: #555;
+        transition: .3s ease-in-out;
+        > * {
+          padding-top: .5rem;
+          justify-content: center;
+          opacity: .75;
         }
+      }
 
-        &:hover {
-          .hx-columns {
-            border-top: 1px solid rgba(0,0,0,.3);
-          }
+      &:hover {
+        .hx-columns {
+          border-top: 1px solid rgba(0,0,0,.3);
         }
       }
     }
