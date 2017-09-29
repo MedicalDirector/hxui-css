@@ -257,31 +257,5 @@ export default {
 </script>
 
 <style lang="scss" >
-.hx-nav-tabs {
-  &.is-justified {
-    .hx-nav-item, .hx-nav-link {
-      display: block;
-      flex-grow: 1;
-    }
-  }
-  &.has-info {
-    .hx-nav-link {
-      .hx-columns {
-        border-top: 1px solid rgba(0,0,0,.1);
-        color: #555;
-        transition: .3s ease-in-out;
-        > * {
-          padding-top: .5rem;
-          justify-content: center;
-          opacity: .75;
-        }
-      }
-      &:hover {
-        .hx-columns {
-          border-top: 1px solid rgba(0,0,0,.3);
-        }
-      }
-    }
-  }
-}
+
 </style>
