@@ -65,6 +65,10 @@
       margin: 0;
       height: auto;
       width: auto;
+      .#{$namespace}-icon {
+        height: auto;
+        width: auto;
+      }
     }
   }
 
