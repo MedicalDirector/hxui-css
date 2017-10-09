@@ -1,6 +1,6 @@
 {
   "name": "@hxui/css",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Helix User Interface Library - Pure CSS Framework",
   "author": "Chris Yap <chris.yap@medicaldirector.com>",
   "private": true,
