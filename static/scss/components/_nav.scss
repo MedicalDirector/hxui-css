@@ -187,3 +187,52 @@
     }
   }
 }
+
+.#{$namespace}-nav-drawer {
+  display: flex;
+  z-index: 1;
+  @media (max-width: 1264px) {
+    position: fixed;
+  }
+  > span {
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+    > .hx-nav {
+      height: 100vh;
+    }
+  }
+}
+.#{$namespace}-overlay {
+  @media (max-width: 1264px) {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(black,.8);
+    z-index: 0;
+  }
+}
+.#{$namespace}-nav-navicon {
+  position: fixed;
+  left: 18.5rem;
+  line-height: 3.3rem;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  text-align: center;
+  transition: .5s ease-in-out;
+  z-index: 2;
+  &.is-closed {
+    left: 0;
+    color: gray;
+  }
+  @media (max-width: 344px) {
+    display: none;
+  }
+  @media (min-width: 1264px) {
+    color: gray;
+    background-color: rgba(#f6f6f9, .6);
+  }
+}

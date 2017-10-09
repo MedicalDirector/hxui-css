@@ -9,7 +9,10 @@
     <div class="navs" :style="{ height: ht + 'px' }" >
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">
         <li class="hx-nav-item" v-for="item in items">
-          <router-link class="hx-nav-link" :to="{ path: item.path }" exact-active-class="is-active" exact>{{ item.name }}</router-link>
+          <router-link class="hx-nav-link" :to="{ path: item.path }" exact-active-class="is-active" exact
+          @click.native="closeNav">
+            {{ item.name }}
+          </router-link>
         </li>
       </ul>
     </div>
@@ -39,6 +42,9 @@ export default {
     },
     getHeight () {
       this.ht = this.$refs.navs.clientHeight
+    },
+    closeNav () {
+      Event.$emit('toggleNav')
     }
   },
   mounted () {

@@ -49,7 +49,7 @@ export default {
           name: 'VueJS',
           link: 'http://vue.gethxui.com',
           icon: 'icon-vue',
-          status: 'disabled'
+          status: 'active'
         }
       ]
     }

@@ -12,6 +12,8 @@ import 'highlight.js/styles/atom-one-dark.css'
 
 Vue.config.productionTip = false
 
+window.Event = new Vue()
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

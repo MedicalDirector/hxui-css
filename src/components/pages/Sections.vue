@@ -20,16 +20,17 @@ export default {
   data () {
     return {
       code: `
-    <body>
-      <section class="hx-section">
-        <div class="hx-container">
-          <h1 class="hx-title">Section</h1>
-          <h2 class="hx-subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-          </h2>
-        </div>
-      </section>
-    </body>
+<body>
+  <section class="hx-section">
+    <div class="hx-container">
+      <h1 class="hx-title">Section</h1>
+      <h2 class="hx-subtitle">
+        A simple container to divide your page into <strong>sections</strong>,
+        like the one you're currently reading.
+      </h2>
+    </div>
+  </section>
+</body>
       `
     }
   }

@@ -75,14 +75,14 @@
   // States
   &:hover,
   &.is-hovered {
-    border-color: $button-hover-border;
+    border-color: rgba($button-hover-border, .5);
     color: $button-hover;
     text-decoration: none;
   }
 
   &:focus,
   &.is-focused {
-    border-color: $button-focus-border;
+    border-color: rgba($button-focus-border, .5);
     box-shadow: 0 0 0.5em rgba($button-focus-border, 0.35);
     color: $button-focus;
     text-decoration: none;
@@ -90,7 +90,7 @@
 
   &:active,
   &.is-active {
-    border-color: $button-active-border;
+    border-color: rgba($button-active-border, .5);
     box-shadow: $button-shadow-inset;
     color: $button-active;
     text-decoration: none;
@@ -154,13 +154,13 @@
 
       &.is-outlined {
         background-color: transparent;
-        border-color: $color;
+        border-color: rgba($color, .5);
         color: $color;
 
         &:hover,
         &:focus {
           background-color: $color;
-          border-color: $color;
+          border-color: rgba($color, .5);
           color: $color-invert;
         }
 

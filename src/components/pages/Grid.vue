@@ -353,7 +353,9 @@ export default {
         {
           title: 'Offsetting columns',
           code: `
-<p>While you can use empty columns (like <code>&lt;div class="hx-column"&gt;&lt;/div&gt;</code>) to create horizontal space around <code>.hx-column</code> elements, you can also use <strong>offset modifiers</strong> like <code>.is-offset-x</code>:</p>
+<p>While you can use empty columns (like <code>&lt;div class="hx-column"&gt;&lt;/div&gt;</code>)
+  to create horizontal space around <code>.hx-column</code> elements, you can also use
+  <strong>offset modifiers</strong> like <code>.is-offset-x</code>:</p>
 <br />
 <div class="hx-columns">
   <div class="hx-column is-half is-offset-one-quarter">
@@ -380,7 +382,8 @@ export default {
         {
           title: 'Nesting columns',
           code: `
-<p>You can <strong>nest columns</strong> to have more flexibility in your design. You only need to follow this structure:</p>
+<p>You can <strong>nest columns</strong> to have more flexibility in your design.
+  You only need to follow this structure:</p>
 <ul>
   <li><code>.hx-columns</code> Top-level (First level) columns container</li>
   <ul>
@@ -429,7 +432,8 @@ export default {
         {
           title: 'Gapless columns',
           code: `
-<p>If you want to <strong>remove the space between the columns</strong>, add the <code>is-gapless</code> modifier on the columns container:</p>
+<p>If you want to <strong>remove the space between the columns</strong>, add the
+  <code>is-gapless</code> modifier on the columns container:</p>
 <div class="hx-columns is-gapless">
   <div class="hx-column has-text-centered">
     <p class="hx-bg-primary pa-5">First column</p>

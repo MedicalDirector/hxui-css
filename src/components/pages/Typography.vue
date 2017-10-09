@@ -60,7 +60,7 @@ export default {
           title: 'Paragraphs and Inline text elements',
           code: `
 <div class="hx-columns">
-  <div class="hx-column is-5">
+  <div class="hx-column is-4">
     <ul>
       <li><code>&lt;p&gt;</code> Paragraphs</li>
       <li><code>&lt;mark&gt;</code> Mark</li>
@@ -144,11 +144,11 @@ export default {
   <tbody>
     <tr>
       <td><code>.is-text-nowrap</code></td>
-      <td><div class="is-text-nowrap">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</div></td>
+      <td class="is-text-nowrap">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
     <tr>
       <td><code>.is-text-truncate</code></td>
-      <td><div class="is-text-truncate">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</div></td>
+      <td class="is-text-truncate">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
     <tr>
       <td><code>.is-text-center</code></td>

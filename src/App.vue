@@ -3,9 +3,10 @@
     <div class="hx-page">
       <div class="hx-page-body">
 
-        <main-nav></main-nav>
-
-        <sub-nav></sub-nav>
+        <nav-container>
+          <main-nav></main-nav>
+          <sub-nav></sub-nav>
+        </nav-container>
 
         <div class="hx-section scrollable-y">
           <div class="hx-section is-comfortable">
@@ -23,6 +24,7 @@
 </template>
 
 <script>
+import NavContainer from '@/components/NavContainer'
 import MainNav from '@/components/MainNav'
 import SubNav from '@/components/SubNav'
 
@@ -34,6 +36,7 @@ export default {
     }
   },
   components: {
+    NavContainer,
     MainNav,
     SubNav
   },
