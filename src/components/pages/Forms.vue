@@ -66,7 +66,40 @@ export default {
   <label class="hx-label">This is Disabled</label>
   <div class="hx-help">Danger!</div>
 </div>
-          `
+<div class="hx-input-group">
+  <div class="hx-input-control">
+    <input class="hx-input" type="text" required>
+    <label class="hx-label">Date <sup>*</sup></label>
+    <div class="hx-help">Please select a date</div>
+  </div>
+   <i class="hx-icon icon-calendar"></i>
+</div>
+<div class="hx-input-group">
+ <i class="hx-icon icon-search"></i>
+  <div class="hx-input-control">
+    <input class="hx-input" type="text" required>
+    <label class="hx-label">Search <sup>*</sup></label>
+    <div class="hx-help">Please search by patient name</div>
+  </div>
+</div>
+<div class="hx-input-group">
+ <i class="hx-icon icon-person"></i>
+  <div class="hx-input-control">
+    <input class="hx-input" type="text" value="JG001" required>
+    <label class="hx-label">Username<sup>*</sup></label>
+    <div class="hx-help">Please enter your username</div>
+  </div>
+  <i class="hx-icon icon-check-empty is-medium is-success"></i>
+</div>
+<div class="hx-input-group">
+  <div class="hx-input-control">
+    <input class="hx-input" type="text"  required>
+    <label class="hx-label">Search<sup>*</sup></label>
+    <div class="hx-help">Please enter a search term</div>
+  </div>
+  <button class="hx-button is-transparent">GO</button>
+</div>
+  `
         },
         {
           title: 'Textarea',

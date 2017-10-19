@@ -2,6 +2,7 @@
 // Form
 // =========
 
+
 // Container
 .#{$namespace}-input-control {
   position: relative;
@@ -202,6 +203,52 @@
     }
     .hx-input {
       text-align: center;
+    }
+  }
+}
+
+// Group Container
+.#{$namespace}-input-group {
+  position:relative;
+
+  .#{$namespace}-icon,
+  .#{$namespace}-button{
+    position:absolute;
+    top:.5rem;
+    z-index:1;
+  }
+
+  // select icon|button after hx-input-control
+  .#{$namespace}-input-control + .#{$namespace}-icon,
+  .#{$namespace}-input-control + .#{$namespace}-button{
+    right:0;
+  }
+
+  /// select icon|button before hx-input-control
+  .#{$namespace}-icon ~ .#{$namespace}-input-control,
+  .#{$namespace}-button ~ .#{$namespace}-input-control{
+    left:0;
+  }
+
+  // select hx-input-control after icon|button
+  .#{$namespace}-icon + .#{$namespace}-input-control,
+  .#{$namespace}-button + .#{$namespace}-input-control {
+    .#{$namespace}-input{
+        padding-left:1.8rem;
+    }
+    .#{$namespace}-label{
+      margin-left:1.8rem;
+    }
+  }
+
+  // select hx-input-control after icon|button
+  .#{$namespace}-icon ~ .#{$namespace}-input-control,
+  .#{$namespace}-button ~ .#{$namespace}-input-control {
+    .#{$namespace}-input{
+      padding-right:1.8rem;
+    }
+    .#{$namespace}-label{
+      margin-right:1.8rem;
     }
   }
 }
