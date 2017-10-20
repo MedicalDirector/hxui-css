@@ -1,6 +1,6 @@
 {
   "name": "@hxui/css",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "Helix User Interface Library - Pure CSS Framework",
   "author": "Chris Yap <chris.yap@medicaldirector.com>",
   "private": true,
@@ -11,8 +11,10 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "precommit-msg": "echo 'Pre-commit building...' && exit 0"
   },
+  "pre-commit": [ "precommit-msg", "build" ],
   "dependencies": {
     "prismjs": "^1.6.0",
     "v-media-query": "^1.0.3",
@@ -70,6 +72,7 @@
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.14",
+    "pre-commit": "^1.2.2",
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.6",
     "selenium-server": "^3.0.1",
