@@ -692,3 +692,47 @@
 
   }
 }
+
+/// is-small checkbox
+.#{$namespace}-input-control.is-small{
+
+  // Checkbox container
+  .#{$namespace}-checkbox-control {
+    margin: .4rem 0;
+  }
+
+
+  // Checkbox Styles
+  .#{$namespace}-checkbox {
+    // Text Label Style
+    + .#{$namespace}-label {
+      padding-left: 25px;
+      height: 20px;
+      line-height: 20px;
+      font-size: .859rem;
+    }
+
+    /* checkbox aspect */
+    + .#{$namespace}-label:before,
+    + .#{$namespace}-label:after  {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+    }
+  }
+
+  .#{$namespace}-checkbox:checked {
+    + .#{$namespace}-label:before {
+      top: 2px;
+      left: 2px;
+      width: 5px;
+      height: 10px;
+    }
+
+    + .#{$namespace}-label:after {
+      top: 0;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
