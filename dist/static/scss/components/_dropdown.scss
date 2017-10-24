@@ -79,6 +79,15 @@
     }
   }
 
+  &.is-active {
+    @include plain-hover-focus {
+      color:  $dropdown-link-active-bg;
+      text-decoration: none;
+      background-color: $dropdown-link-active-color;
+      outline: 0;
+    }
+  }
+
   // temporary for Helix clashing with bootstrap
   button.hx-button.is-link{
     text-decoration: none;

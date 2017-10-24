@@ -5,8 +5,8 @@
   margin-bottom: 1.5rem;
   width: 100%;
 
-  thead {
-    th {
+  > thead {
+    > tr > th {
       vertical-align: bottom;
       border: 1px solid $color-gray-lighter;
       border-width: 0 0 1px;
@@ -15,9 +15,9 @@
     }
   }
 
-  tfoot {
-    td,
-    th {
+  > tfoot {
+    > tr > td,
+    > tr > th {
       vertical-align: top;
       border: 1px solid $color-gray-lighter;
       border-width: 1px 0 0;
@@ -26,8 +26,9 @@
     }
   }
 
-  td,
-  th {
+  > tbody > tr > td,
+  > tbody > tr > th,
+  > thead > tr > th {
     border: 1px solid transparent;
     border-width: 0 0 1px;
     padding: 0.5em 0.75em;
@@ -45,32 +46,33 @@
     }
   }
 
-  th {
+  > thead > tr > th {
     padding: 0.6em 0.75em;
   }
 
-  tr {
+  > thead > tr,
+  > tbody > tr {
     &.is-selected, &.is-selected:hover {
-      th, td {
+      > th, > td {
         background-color: $color-primary;
         border-bottom-color: transparent;
       }
-      th, td, th a, td a, {
+      > th, > td, > th a, > td a {
         color: $color-white;
       }
     }
     &:hover {
-      th, td {
+      > th, > td {
         background-color: $table-row-hover-background;
       }
     }
   }
 
-  tbody {
-    tr {
+  > tbody {
+    > tr {
       &:last-child {
-        td,
-        th {
+        > td,
+        > th {
           border-bottom-width: 0;
           color: $text;
         }
@@ -97,24 +99,28 @@
   // }
 
   &.is-narrow {
-    td {
-      padding: 0.25em 0.5em;
+    > tbody > tr {
+      > td {
+        padding: 0.25em 0.5em;
+      }
     }
-    th {
-      padding: 0.3em 0.5em;
+    > thead > tr {
+      > th {
+        padding: 0.3em 0.5em;
+      }
     }
   }
 
   &.is-striped {
-    tbody {
-      tr {
+    > tbody {
+      > tr {
         &:nth-child(odd) {
-          th, td {
+          > th, > td {
             background-color: $table-row-odd-background;
           }
 
           &:hover {
-            th, td {
+            > th, > td {
               background-color: $table-row-odd-hover-background;
             }
           }
