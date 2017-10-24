@@ -693,89 +693,46 @@
   }
 }
 
+/// is-small checkbox
+.#{$namespace}-input-control.is-small{
 
-// Checkbox .is-small
-// Checkbox container
-
-.#{$namespace}-checkbox-control.is-small {
-  margin: .4rem 0;
-
-// Checkbox Styles
-.#{$namespace}-checkbox {
-  // Text Label Style
-  + .#{$namespace}-label {
-    padding-left: 15px;
-    cursor: pointer;
-    display: inline-block;
-    height: 12px;
-    line-height: 12px;
-    font-size: .5rem;
-
-    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
-  }
-
-  /* checkbox aspect */
-  + .#{$namespace}-label:before,
-  + .#{$namespace}-label:after  {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
-    border: 2px solid $color-gray-lighter;
-    border-radius: 1px;
-    margin-top: 2px;
-    transition: .2s;
-  }
-
-  &:disabled + .#{$namespace}-label {
-    cursor: $cursor-disabled;
-  }
-
-  &:not(:checked):disabled + .#{$namespace}-label:before {
-    border: none;
-    background-color: $input-disabled;
-    cursor: $cursor-disabled;
-  }
-}
-
-.#{$namespace}-checkbox:checked {
-  + .#{$namespace}-label:before {
-    top: 2px;
-    left: 1px;
-    width: 8px;
-    height: 13px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    -webkit-transform: rotateZ(37deg);
-    transform: rotateZ(37deg);
-
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
-
-  + .#{$namespace}-label:after {
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid $color-primary;
-    background-color: $color-primary;
-    z-index: 0;
+  // Checkbox container
+  .#{$namespace}-checkbox-control {
+    margin: .4rem 0;
   }
 
 
+  // Checkbox Styles
+  .#{$namespace}-checkbox {
+    // Text Label Style
+    + .#{$namespace}-label {
+      padding-left: 25px;
+      height: 20px;
+      line-height: 20px;
+      font-size: .859rem;
+    }
 
-  &:disabled + .#{$namespace}-label:before {
-    border-right: 2px solid $input-disabled;
-    border-bottom: 2px solid $input-disabled;
-
+    /* checkbox aspect */
+    + .#{$namespace}-label:before,
+    + .#{$namespace}-label:after  {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+    }
   }
-}
+
+  .#{$namespace}-checkbox:checked {
+    + .#{$namespace}-label:before {
+      top: 2px;
+      left: 2px;
+      width: 5px;
+      height: 10px;
+    }
+
+    + .#{$namespace}-label:after {
+      top: 0;
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
