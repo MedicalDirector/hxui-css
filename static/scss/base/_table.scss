@@ -29,7 +29,6 @@
   > tbody > tr > td,
   > tbody > tr > th,
   > thead > tr > th {
-    border: 1px solid transparent;
     border-width: 0 0 1px;
     padding: 0.5em 0.75em;
     vertical-align: top;
@@ -44,6 +43,11 @@
       white-space: nowrap;
       width: 1%;
     }
+  }
+
+  > tbody > tr > td,
+  > tbody > tr > th {
+    border: 1px solid transparent;
   }
 
   > thead > tr > th {

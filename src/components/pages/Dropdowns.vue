@@ -45,7 +45,8 @@ export default {
           code: `
 <div class="has-text-centered">
   <p>Add a header to label sections of actions and/or dividers in any dropdown menu.</p>
-  <div class="hx-dropdown is-open">
+  <div class="hx-flex hx-flex-justify-center">
+  <div class="hx-dropdown is-open mr-4">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
       Dropdown button
     </button>
@@ -58,9 +59,43 @@ export default {
       <a class="hx-dropdown-item" href="#">Another action</a>
     </div>
   </div>
+  <div class="hx-dropdown is-open ml-4">
+    <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
+      Dropdown button
+    </button>
+    <div class="hx-dropdown-menu">
+      <div class="hx-dropdown-header">Sort By</div>
+      <a class="hx-dropdown-item is-active" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-up"></i>Ascending</div></a>
+      <a class="hx-dropdown-item" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-down"></i>Descending</div></a>
+
+
+      <div class="hx-dropdown-divider"></div>
+      <div class="hx-dropdown-header">Filter <a href="">clear filters</a></div>
+      <div class="hx-flex hx-flex-column pl-4 pr-4 mt-4">
+
+          <div class="hx-input-group">
+              <div class="hx-input-control mb-0">
+                  <input id="mhrFilterDateFrom" class="hx-input" type="text" required>
+                  <label class="hx-label">From</label>
+                  <div class="hx-help">&nbsp;</div>
+              </div>
+              <i id="fromDateCalendar" class="hx-icon icon-calendar-outline"></i>
+          </div>
+          <div class="hx-input-group" id="toContainer">
+              <div class="hx-input-control mb-0">
+                  <input id="mhrFilterDateTo" class="hx-input" type="text" required>
+                  <label class="hx-label">To</label>
+                  <div class="hx-help">&nbsp;</div>
+              </div>
+              <i id="toDateCalendar" class="hx-icon icon-calendar-outline"></i>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           `
         },
         {
