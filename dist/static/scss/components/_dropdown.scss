@@ -173,7 +173,9 @@
 
 // Dropdown section headers
 .#{$namespace}-dropdown-header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6px 14px;
   //font-size: $font-size-sm;
   font-size:0.675rem;
@@ -182,6 +184,11 @@
   white-space: nowrap; // as with > li > a
   text-transform: uppercase;
   font-weight:bold;
+
+  > a {
+    font-weight:normal;
+    text-transform: capitalize;
+  }
 }
 
 // Backdrop to catch body clicks on mobile, etc.
