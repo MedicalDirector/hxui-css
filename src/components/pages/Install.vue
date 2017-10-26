@@ -45,7 +45,16 @@ npm install git+https://bitbucket.org/md-design/gethxui.git --save
           </code></pre>
 
         </section>
-        <p>Please note that by importing the scss file, icons <strong>will not</strong> work.</p>
+        <br>
+<p> Please note that by importing the scss file, icons <strong>may not</strong> work due to the icon font files path.<br>
+  To change the path simply override it via the <code>$icons-path: '../fonts/';</code> scss variable.</p>
+
+        <pre v-highlightjs><code class="scss">
+// set the icon path before you import
+$icons-path: '../fonts/';
+@import "/node_modules/@hxui/css/dist/static/scss/hxui.scss";
+          </code></pre>
+
       </div>
     </div>
     <br>
@@ -60,7 +69,22 @@ npm install git+https://bitbucket.org/md-design/gethxui.git --save
 @import "/node_modules/@hxui/css/dist/static/scss/utilities/_all";
 @import "/node_modules/@hxui/css/dist/static/scss/components/grid";
     </code></pre>
+<br>
 
+    <h3 class="h5">Designed to work in parallel with other frameworks</h3>
+    <p>In order for HxUI to work with other frameworks, the <code>.hxui-reset</code> class is required to be the parent class for any HxUi specific styles to work. </p>
+<br>
+    <p>For apps that only require HxUI, add this class to the html tag.</p>
+    <pre v-highlightjs><code class="html">
+&#x3C;html class=&#x22;hxui-reset&#x22;&#x3E;
+...
+          </code></pre>
+
+    <p>For apps that wish to use multiple frameworks, add this class to any container that is HxUi specific.</p>
+    <pre v-highlightjs><code class="html">
+&#x3C;div class=&#x22;hxui-reset&#x22;&#x3E;
+...
+          </code></pre>
     <br>
     <br>
 
@@ -75,6 +99,8 @@ npm start
     </code></pre>
 
     <p>There're basic requirements to run the documentation locally. You will need to install <a href="https://nodejs.org/en/" target="_blank">Node Package Manager(npm)</a> and <a href="https://jekyllrb.com/" target="_blank">jekyll</a> in order to run the documentation.</p>
+
+
   </div>
 </template>
 
