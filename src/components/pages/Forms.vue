@@ -37,12 +37,12 @@ export default {
   <div class="hx-help">Please enter your password</div>
 </div>
 <div class="hx-input-control">
-  <input class="hx-input" type="text">
-  <label class="hx-label">Phone Number</label>
+  <input class="hx-input" type="text" pattern= "[0-9]" required>
+  <label class="hx-label">Phone Number <sup>*</sup></label>
   <div class="hx-help">Please enter your phone number</div>
 </div>
 <div class="hx-input-control is-info">
-  <input class="hx-input" type="text" required>
+  <input class="hx-input" type="email" required>
   <label class="hx-label">Email <sup>*</sup></label>
   <div class="hx-help">Info!</div>
 </div>
