@@ -238,7 +238,9 @@
     }
 
     .hx-icon {
-      height: 0;
+      &.is-large {
+        height: 2rem;
+      }
     }
   }
 

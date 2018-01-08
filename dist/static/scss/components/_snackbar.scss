@@ -2,7 +2,10 @@
   position: fixed;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transition: .3s;
+  transform: translate3D(-50%, 100%, 0);
+
+  opacity: 0;
   min-width: 288px;
 
   &.is-absolute {
@@ -11,6 +14,7 @@
 
   &.is-top {
     top: 0;
+    transform: translate3D(-50%, -100%, 0);
     bottom: auto;
   }
 
@@ -18,13 +22,30 @@
     padding: .5rem;
     right: 0;
     left: auto;
-    transform: translateX(0);
+    transform: translate3D(0%, 100%, 0);
+
+    &.is-top {
+      transform: translate3D(0%, -100%, 0);
+    }
   }
 
   &.is-left {
     padding: .5rem;
     left: 0;
-    transform: translateX(0);
+    transform: translate3D(0%, 100%, 0);
+
+    &.is-top {
+      transform: translate3D(0%, -100%, 0);
+    }
+  }
+
+  &.is-active {
+    transform: translate3D(-50%, 0, 0);
+    opacity: 1;
+
+    &.is-right, &.is-left {
+      transform: translate3D(0, 0, 0);
+    }
   }
 
   &.is-success {
