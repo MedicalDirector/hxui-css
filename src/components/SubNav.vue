@@ -144,6 +144,10 @@ export default {
               path: './sidebar'
             },
             {
+              name: 'Snackbars & toasts',
+              path: './snackbars-toasts'
+            },
+            {
               name: 'Tabs',
               path: './tabs'
             },

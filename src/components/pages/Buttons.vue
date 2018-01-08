@@ -50,6 +50,17 @@ export default {
           `
         },
         {
+          title: 'Flat',
+          code: `
+<div class="has-text-centered">
+  <a class="hx-button is-flat">Flat</a>
+  <a class="hx-button is-primary is-flat">Flat</a>
+  <a class="hx-button is-info is-flat">Flat</a>
+  <a class="hx-button is-danger is-flat">Flat</a>
+</div>
+          `
+        },
+        {
           title: 'Outlined',
           code: `
 <div class="has-text-centered">

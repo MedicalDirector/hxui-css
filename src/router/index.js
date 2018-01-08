@@ -27,6 +27,7 @@ import Nav from '@/components/pages/Nav'
 import Pagination from '@/components/pages/Pagination'
 import ProgressTimeline from '@/components/pages/ProgressTimeline'
 import Sidebar from '@/components/pages/Sidebar'
+import SnackbarsToasts from '@/components/pages/SnackbarsToasts'
 import Tabs from '@/components/pages/Tabs'
 import Toggle from '@/components/pages/Toggle'
 import Tooltips from '@/components/pages/Tooltips'
@@ -73,6 +74,11 @@ export default new Router({
       path: '/sections',
       name: 'Sections',
       component: Sections
+    },
+    {
+      path: '/snackbars-toasts',
+      name: 'SnackbarsToasts',
+      component: SnackbarsToasts
     },
     {
       path: '/tables',

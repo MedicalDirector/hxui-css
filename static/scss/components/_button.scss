@@ -171,10 +171,6 @@
         }
       }
     }
-
-
-
-
   }
 
   &.is-transparent {
@@ -239,6 +235,47 @@
     &.is-large {
       width: 4.5rem;
       height: 4.5rem;
+    }
+
+    .hx-icon {
+      &.is-large {
+        height: 2rem;
+      }
+    }
+  }
+
+  &.is-flat {
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+
+    &:hover {
+      background-color: rgba(black, .05);
+    }
+
+    @each $name, $pair in $colors {
+      $color: nth($pair, 1);
+      $color-invert: nth($pair, 2);
+
+      &.is-#{$name} {
+        color: $color;
+
+        &:hover,
+        &.is-hovered {
+          background-color: rgba($color, .1);
+          color: $color;
+        }
+
+        &:focus,
+        &.is-focused {
+          background-color: rgba($color, 0.35);
+        }
+
+        &:active,
+        &.is-active {
+          background-color: rgba($color, 0.35);
+        }
+      }
     }
   }
 }

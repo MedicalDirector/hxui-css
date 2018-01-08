@@ -14,7 +14,10 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "precommit-msg": "echo 'Checking pre-commit build...' && exit 0"
   },
-  "pre-commit": [ "precommit-msg", "build" ],
+  "pre-commit": [
+    "precommit-msg",
+    "build"
+  ],
   "dependencies": {
     "prismjs": "^1.6.0",
     "v-media-query": "^1.0.3",
