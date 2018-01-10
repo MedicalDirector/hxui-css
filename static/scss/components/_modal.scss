@@ -48,12 +48,16 @@
   background-color: $color-white;
   display: flex;
   flex-shrink: 0;
-  justify-content: flex-start;
   padding: 20px;
   position: relative;
 }
 
+.#{$namespace}-modal-card-foot{
+  justify-content: flex-end;
+ }
+
 .#{$namespace}-modal-card-head {
+  justify-content: flex-start;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   padding: 20px 20px 10px;
