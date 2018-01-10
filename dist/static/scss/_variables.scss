@@ -146,6 +146,7 @@ $font-size-xs:   .75rem !default;
 
 $font-weight-normal: 300 !default;
 $font-weight-bolder: 500 !default;
+$font-weight-boldest: 600 !default;
 $font-weight-bold: bold !default;
 
 $font-weight-base: $font-weight-normal !default;
@@ -299,8 +300,8 @@ $table-border: rgba($color-black, .08) !default;
 $table-head: $color-gray-light !default;
 
 $table-row-hover-background: rgba($color-black, .03) !default;
-$table-row-odd-background: rgba($color-black, .02) !default;
-$table-row-odd-hover-background: rgba($color-black, .05) !default;
+$table-row-even-background: rgba($color-black, .02) !default;
+$table-row-even-hover-background: rgba($color-black, .05) !default;
 
 // =========
 // Components

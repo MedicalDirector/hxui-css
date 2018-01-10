@@ -44,26 +44,10 @@ export default {
       <th>Qualification or relegation</th>
     </tr>
   </thead>
-  <tfoot>
-    <tr>
-      <th><abbr title="Position">Pos</abbr></th>
-      <th>Team</th>
-      <th class="has-text-right"><abbr title="Played">Pld</abbr></th>
-      <th class="has-text-right"><abbr title="Won">W</abbr></th>
-      <th class="has-text-right"><abbr title="Drawn">D</abbr></th>
-      <th class="has-text-right"><abbr title="Lost">L</abbr></th>
-      <th class="has-text-right"><abbr title="Goals for">GF</abbr></th>
-      <th class="has-text-right"><abbr title="Goals against">GA</abbr></th>
-      <th class="has-text-right"><abbr title="Goal difference">GD</abbr></th>
-      <th class="has-text-right"><abbr title="Points">Pts</abbr></th>
-      <th>Qualification or relegation</th>
-    </tr>
-  </tfoot>
   <tbody>
     <tr>
       <th>1</th>
-      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-      </td>
+      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong></td>
       <td class="has-text-right">38</td>
       <td class="has-text-right">23</td>
       <td class="has-text-right">12</td>
@@ -196,42 +180,6 @@ export default {
           `
         },
         {
-          title: 'Striped table',
-          code: `
-<p>Add <code>class="hx-table is-striped"</code> to the table tag for a striped table</p>
-<table class="hx-table is-striped">
-  <thead>
-    <tr>
-      <th>One</th>
-      <th>Two</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Three</td>
-      <td>Four</td>
-    </tr>
-    <tr>
-      <td>Five</td>
-      <td>Six</td>
-    </tr>
-    <tr>
-      <td>Seven</td>
-      <td>Eight</td>
-    </tr>
-    <tr>
-      <td>Nine</td>
-      <td>Ten</td>
-    </tr>
-    <tr>
-      <td>Eleven</td>
-      <td>Twelve</td>
-    </tr>
-  </tbody>
-</table>
-          `
-        },
-        {
           title: 'Narrow table',
           code: `
 <p>Add <code>class="hx-table is-narrow"</code> to the table tag to make the cells narrower.</p>
@@ -265,6 +213,229 @@ export default {
     </tr>
   </tbody>
 </table>
+          `
+        },
+        {
+          title: 'Hover table',
+          code: `
+            <p>Add <code>class="hx-table is-hover"</code> to the table tag for a hover state on rows</p>
+            <table class="hx-table is-hover">
+              <thead>
+                <tr>
+                  <th>One</th>
+                  <th>Two</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Three</td>
+                  <td>Four</td>
+                </tr>
+                <tr>
+                  <td>Five</td>
+                  <td>Six</td>
+                </tr>
+                <tr>
+                  <td>Seven</td>
+                  <td>Eight</td>
+                </tr>
+                <tr>
+                  <td>Nine</td>
+                  <td>Ten</td>
+                </tr>
+                <tr>
+                  <td>Eleven</td>
+                  <td>Twelve</td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
+          title: 'Contextual',
+          code: `
+            <p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag </p>
+            <table class="hx-table">
+              <thead>
+                <tr>
+                  <th>Context</th>
+                  <th>Icon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-danger">
+                  <td>Danger</td>
+                   <td><i class="hx-icon icon-exclamation"></i></td>
+                </tr>
+                <tr class="is-warning">
+                  <td>Warning</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
+                </tr>
+                <tr class="is-success">
+                  <td>Success</td>
+                   <td><i class="hx-icon icon-check"></i></td>
+                </tr>
+                <tr class="is-info">
+                  <td>Info</td>
+                   <td><i class="hx-icon icon-information"></i></td>
+                </tr>
+                <tr>
+                  <td>Default</td>
+                   <td><i class="hx-icon icon-information-outline"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
+          title: 'Grouped rows table',
+          code: `
+            <p>Add <code>class="hx-table-group"</code> to the tbody tag proceeding tbody related rows.</p>
+            <table class="hx-table is-striped">
+              <thead>
+                <tr>
+                  <th><div class="hx-checkbox-control">
+                      <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-all" class="hx-label"></label>
+                    </div></th>
+                  <th>Id</th>
+                  <th>User Code</th>
+                  <th>Firstname</th>
+                  <th>Surname</th>
+                </tr>
+              </thead>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Administrators <small>People who have access to all areas of the application</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-19" class="hx-label"></label>
+                    </div></td>
+                  <td>19</td>
+                  <td>TS001</td>
+                  <td>Tupac</td>
+                  <td>Shakur</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-20" class="hx-label"></label>
+                    </div></td>
+                  <td>20</td>
+                  <td>BP001</td>
+                  <td>Brian</td>
+                  <td>Pulliese</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-21" class="hx-label"></label>
+                    </div></td>
+                  <td>21</td>
+                  <td>JS001</td>
+                  <td>John</td>
+                  <td>Smith</td>
+                </tr>
+              </tbody>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>General Practice <small>People who have access to patient clinical records</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-1" class="hx-label"></label>
+                    </div></td>
+                  <td>1</td>
+                  <td>BR001</td>
+                  <td>Branda</td>
+                  <td>Reed</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-2" class="hx-label"></label>
+                    </div></td>
+                  <td>2</td>
+                  <td>MR001</td>
+                  <td>Mercedes</td>
+                  <td>Mendez</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-3" class="hx-label"></label>
+                    </div></td>
+                  <td>3</td>
+                  <td>HS001</td>
+                  <td>Harry</td>
+                  <td>Sechi</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-4" class="hx-label"></label>
+                    </div></td>
+                  <td>4</td>
+                  <td>CY001</td>
+                  <td>Chris</td>
+                  <td>Yap</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-5" class="hx-label"></label>
+                    </div></td>
+                  <td>5</td>
+                  <td>KL001</td>
+                  <td>Kevin</td>
+                  <td>Liang</td>
+                </tr>
+              </tbody>
+               <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Specialist <small>People who are an expert on a specific aspect of a job</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-6" class="hx-label"></label>
+                    </div></td>
+                  <td>6</td>
+                  <td>BS001</td>
+                  <td>Biggie</td>
+                  <td>Smalls</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-7" class="hx-label"></label>
+                    </div></td>
+                  <td>7</td>
+                  <td>JS001</td>
+                  <td>Julia</td>
+                  <td>Sampson</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-8" class="hx-label"></label>
+                    </div></td>
+                  <td>8</td>
+                  <td>GP001</td>
+                  <td>John</td>
+                  <td>Pipps</td>
+                </tr>
+              </tbody>
+            </table>
           `
         }
       ]

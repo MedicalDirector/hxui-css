@@ -11,7 +11,9 @@
       border: 1px solid $color-gray-lighter;
       border-width: 0 0 1px;
       color: $table-head;
-      font-weight: $font-weight-normal;
+      font-weight:  $font-weight-bolder;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
     }
   }
 
@@ -19,19 +21,18 @@
     > tr > td,
     > tr > th {
       vertical-align: top;
-      border: 1px solid $color-gray-lighter;
+      border: 1px solid $color-gray-lightest;
       border-width: 1px 0 0;
       color: $table-head;
       font-weight: $font-weight-normal;
     }
   }
 
-  > tbody > tr > td,
-  > tbody > tr > th,
+  > tbody:not(.hx-table-group) > tr > td,
+  > tbody:not(.hx-table-group) > tr > th,
   > thead > tr > th {
     border-width: 0 0 1px;
-    padding: 0.5em 0.75em;
-    vertical-align: top;
+    padding: 0.9em 0.75em;
     font-weight: $font-weight-normal;
     @include transition (.3s);
     strong {
@@ -43,6 +44,56 @@
       white-space: nowrap;
       width: 1%;
     }
+
+    .hx-checkbox-control{
+      margin:0;
+      .hx-checkbox + .hx-label {
+        display:initial;
+      }
+    }
+  }
+
+  // Always striped
+  > tbody:not(.hx-table-group) {
+    > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info) {
+      &:nth-child(even) {
+        > th, > td {
+          background-color: $table-row-even-background;
+        }
+      }
+    }
+  }
+
+  // Groups
+  > tbody.hx-table-group > tr > td,
+  > tbody.hx-table-group > tr > th {
+    @include transition (.3s);
+    font-weight: $font-weight-bolder;
+    background-color: #fff;
+    padding: .9rem 0.75em;
+    border-top: 1px solid #e5e5e5;
+    text-transform: uppercase;
+
+    > div {
+      display: flex;
+      align-items: center;
+      width:100%;
+       > small {
+         flex: 1;
+         margin-left: 1rem;
+      }
+    }
+  }
+
+  > tbody.hx-table-group {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.03), 0 4px 8px 0 rgba(0,0,0,.03);
+  }
+
+  > thead + tbody.hx-table-group{
+    > tr > td,
+    > tr > th {
+      border-top: transparent;
+    }
   }
 
   > tbody > tr > td,
@@ -52,10 +103,12 @@
 
   > thead > tr > th {
     padding: 0.6em 0.75em;
+    font-weight: $font-weight-boldest;
+    font-size: $font-size-xs;
   }
 
   > thead > tr,
-  > tbody > tr {
+  > tbody:not(.hx-table-group) > tr {
     &.is-selected, &.is-selected:hover {
       > th, > td {
         background-color: $color-primary;
@@ -63,11 +116,6 @@
       }
       > th, > td, > th a, > td a {
         color: $color-white;
-      }
-    }
-    &:hover {
-      > th, > td {
-        background-color: $table-row-hover-background;
       }
     }
   }
@@ -115,20 +163,37 @@
     }
   }
 
-  &.is-striped {
-    > tbody {
-      > tr {
-        &:nth-child(odd) {
-          > th, > td {
-            background-color: $table-row-odd-background;
-          }
-
-          &:hover {
-            > th, > td {
-              background-color: $table-row-odd-hover-background;
-            }
+  &.is-hover {
+    > tbody:not(.hx-table-group) {
+      > tr:not(.is-selected) {
+        &:hover {
+           > td {
+            background-color: $table-row-even-hover-background;
           }
         }
+      }
+    }
+  }
+
+  > tbody > tr {
+    &.is-danger{
+      > td {
+        background-color: rgba($color-danger, 0.1);
+      }
+    }
+    &.is-warning{
+      > td {
+        background-color: rgba($color-warning, 0.1);
+      }
+    }
+    &.is-success{
+      > td {
+        background-color: rgba($color-success, 0.1);
+      }
+    }
+    &.is-info{
+      > td {
+        background-color: rgba($color-info, 0.1);
       }
     }
   }
