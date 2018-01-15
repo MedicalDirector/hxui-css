@@ -1,0 +1,12 @@
+.icon {
+  font-size: 21px;
+  &.is-small {
+    font-size: 14px;
+  }
+  &.is-medium {
+    font-size: 28px;
+  }
+  &.is-large {
+    font-size: 42px;
+  }
+}

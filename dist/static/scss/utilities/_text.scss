@@ -1,0 +1,27 @@
+
+// Text colour modifiers
+@each $label, $colour in $colors {
+  .is-#{$label}{
+    color: nth($colour, 1);
+  }
+
+  .is-text-#{$label}{
+    color: nth($colour, 1) !important;
+  }
+}
+
+// Alignment
+.is-text-justify        { text-align: justify !important; }
+.is-text-nowrap         { white-space: nowrap !important; }
+.is-text-truncate       { @include text-truncate; }
+.is-text-center         { text-align:center !important;}
+
+// Transformation
+.is-text-lowercase      { text-transform: lowercase !important; }
+.is-text-uppercase      { text-transform: uppercase !important; }
+.is-text-capitalise     { text-transform: capitalize !important; }
+
+// Weight and italics
+.is-text-weight-normal  { font-weight: normal !important; }
+.is-text-bold           { font-weight: bold !important; }
+.is-text-italic         { font-style: italic !important; }

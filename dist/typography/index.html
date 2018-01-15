@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="hxui-reset" data-n-head="class" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="Nuxt.js project" name="description" data-hid="description"><title data-n-head="true">gethxui.com</title><link href="/favicon.ico" rel="icon" data-n-head="true" type="image/x-icon"><link href="/" rel="stylesheet" data-n-head="true" media="all"><link href="/_nuxt/manifest.fa5ddf70f30dbb64890a.js" rel="preload" as="script"><link href="/_nuxt/vendor.82be88fe213cb4c083eb.js" rel="preload" as="script"><link href="/_nuxt/app.11e921bc406d78d7ed78.js" rel="preload" as="script"><link href="/_nuxt/css/hxui.css" rel="preload" as="style"><link href="/_nuxt/layouts/default.6619289d4608d426f09c.js" rel="preload" as="script"><link href="/_nuxt/pages/typography.6d60cacecd560eb2e5b3.js" rel="preload" as="script"><link href="/_nuxt/pages/buttons.4129b4662b1b9c6247b3.js" rel="prefetch"><link href="/_nuxt/pages/tooltips.2e4b38c8eca2018778c3.js" rel="prefetch"><link href="/_nuxt/pages/toggle.0259c9fd7cbd49b1ad45.js" rel="prefetch"><link href="/_nuxt/pages/tabs.51dfe2812decbcb4d992.js" rel="prefetch"><link href="/_nuxt/pages/tables.d5082690f7719fb89359.js" rel="prefetch"><link href="/_nuxt/pages/snackbars-toasts.f0f52881b0e74f02df81.js" rel="prefetch"><link href="/_nuxt/pages/progress-timeline.bc921fef17368d2ec9f0.js" rel="prefetch"><link href="/_nuxt/pages/pagination.4aaac2627d6ccb8d2e23.js" rel="prefetch"><link href="/_nuxt/pages/nav.66550e8cc2b7d021a5a7.js" rel="prefetch"><link href="/_nuxt/pages/modals.e1a6824d389182f324e4.js" rel="prefetch"><link href="/_nuxt/pages/lists.2c0dcb7b29b0a8011a60.js" rel="prefetch"><link href="/_nuxt/pages/grid.511795b253e0a18de98a.js" rel="prefetch"><link href="/_nuxt/pages/forms.25fa44d23d2969895822.js" rel="prefetch"><link href="/_nuxt/pages/dropdowns.a36d964607afc5f084d9.js" rel="prefetch"><link href="/_nuxt/pages/cards.f57164e5765585a9a39b.js" rel="prefetch"><link href="/_nuxt/pages/badges.ed4b86cc3be513bd4bed.js" rel="prefetch"><link href="/_nuxt/pages/alerts.69569afbf11fbec85cc5.js" rel="prefetch"><link href="/_nuxt/pages/icons.3766d3aa1d1b8826baa8.js" rel="prefetch"><link href="/_nuxt/pages/spacing.4c11e7a6363f35776dac.js" rel="prefetch"><link href="/_nuxt/pages/sidebar.133e44208a2fbd8e5692.js" rel="prefetch"><link href="/_nuxt/pages/sections.11bcff11057fe3d6e97d.js" rel="prefetch"><link href="/_nuxt/pages/pages.f6aca5ee0d72c9ae08da.js" rel="prefetch"><link href="/_nuxt/pages/install.2f97e00674ce81b5e765.js" rel="prefetch"><link href="/_nuxt/pages/index.d69ec659a7ca07f8138c.js" rel="prefetch"><link href="/_nuxt/pages/elevation.2097db1e714220a48f94.js" rel="prefetch"><link href="/_nuxt/pages/downloads.0bcf439c3b627ee4eccd.js" rel="prefetch"><link href="/_nuxt/pages/containers.25cfe0bc0d558a143ef5.js" rel="prefetch"><link href="/_nuxt/pages/container-demo.58ef36c2cdb950552ff0.js" rel="prefetch"><link href="/_nuxt/css/hxui.css" rel="stylesheet"><style data-vue-ssr-id="6103766b:0">html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}*,:after,:before,html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{margin:0}.fade-enter-active,.fade-leave-active{-webkit-transition:opacity .5s;transition:opacity .5s}.fade-enter,.fade-leave-to{opacity:0}.slide-x-enter-active,.slide-x-leave-active{-webkit-transition:.5s;transition:.5s}.slide-x-enter{-webkit-transform:translateX(-10%);transform:translateX(-10%);opacity:0}.slide-x-leave-to{-webkit-transform:translateX(10%);transform:translateX(10%);opacity:0}</style><style data-vue-ssr-id="aedc3086:0">.slide-left-enter-active,.slide-left-leave-active{-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}.slide-left-enter,.slide-left-leave-to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.fade-enter-active,.fade-leave-active{-webkit-transition:.5s;transition:.5s}.fade-enter,.fade-leave-to{opacity:0}</style><style data-vue-ssr-id="5d798338:0">.hx-nav-brand[data-v-273f981f]{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}.hxui-logo[data-v-273f981f]{-webkit-transition:.3s;transition:.3s;max-height:32px;max-height:2rem}.hxui-logo.is-white[data-v-273f981f]{fill:#fff}</style><style data-vue-ssr-id="1bfd8f65:0"></style><style data-vue-ssr-id="1f37879b:0">.navs{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out;overflow:auto;-webkit-box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.05);box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.05)}</style><style data-vue-ssr-id="f27a67fa:0"></style><style data-vue-ssr-id="5bf96988:0">.hx-code[data-v-735a47f0]{overflow:auto;-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div class="hxui-reset" id="app"><div class="hx-page"><div class="hx-page-body"><div class="hx-nav-drawer"><span><aside class="hx-sidebar has-blue-gradient is-minified" data-v-273f981f><ul class="hx-nav hx-nav-vertical hx-flex-auto" data-v-273f981f><li class="hx-nav-item hx-nav-brand" data-v-273f981f><svg class="hxui-logo is-white" data-v-273f981f><use data-v-273f981f xlink:href="/static/assets/images/hxui.svg#hxui"></use></svg><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-active" href="http://gethxui.com" data-v-273f981f><i class="hx-icon icon-html-css" data-v-273f981f></i><span class="ml-1" data-v-273f981f>HTML & CSS</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" href="http://angular.gethxui.com" data-v-273f981f><i class="hx-icon icon-angular" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Angular</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-disabled" href="http://react.gethxui.com" data-v-273f981f><i class="hx-icon icon-react" data-v-273f981f></i><span class="ml-1" data-v-273f981f>ReactJS</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" href="http://vue.gethxui.com" data-v-273f981f><i class="hx-icon icon-vue" data-v-273f981f></i><span class="ml-1" data-v-273f981f>VueJS</span></a></ul><ul class="hx-nav hx-nav-vertical is-bottom" data-v-273f981f><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-disabled" href data-v-273f981f><i class="hx-icon icon-chat-bubble" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Feedback</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" data-v-273f981f><i class="hx-icon icon-more" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Collapse</span></a></ul></aside><div class="hx-sidebar is-medium-width is-scrollable py-0"><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Getting started</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/">
+          Welcome
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/install">
+          Install guide
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Page layouts</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/containers">
+          Containers
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/elevation">
+          Elevation
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/grid">
+          Grid
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/pages">
+          Pages
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/sections">
+          Sections
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/spacing">
+          Spacing
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Elements</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/badges">
+          Badges
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/buttons">
+          Buttons
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/icons">
+          Icons
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/tables">
+          Tables
+        </a><li class="hx-nav-item"><a class="hx-nav-link is-active nuxt-link-active" href="/typography">
+          Typography
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Components</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/alerts">
+          Alerts
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/cards">
+          Cards
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/dropdowns">
+          Dropdowns
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/forms">
+          Forms
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/lists">
+          Lists & list group
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/modals">
+          Modals
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/nav">
+          Nav
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/pagination">
+          Pagination
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/progress-timeline">
+          Progress timeline
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/sidebar">
+          Sidebar
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/snackbars-toasts">
+          Snackbars & toasts
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/tabs">
+          Tabs
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/toggle">
+          Toggle
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/tooltips">
+          Tooltips
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Resources</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/downloads">
+          Downloads
+        </a></ul></div></div></div></span><div class="hx-overlay"></div><div class="hx-nav-navicon"><i class="hx-icon icon-navicon"></i></div></div><div class="hx-section scrollable-y"><div class="hx-section is-comfortable"><div id="typo"><h1 class="hx-title">Typography</h1><h2 class="hx-subtitle">Simple typography to add depth to your page</h2><hr><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Titles</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;p>There are &lt;strong>2 types&lt;/strong> of titles:&lt;/p>
+&lt;ul>
+  &lt;li>&lt;code>.hx-title&lt;/code>&lt;/li>
+  &lt;li>&lt;code>.hx-subtitle&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h1 class="hx-title">Title&lt;/h1>
+&lt;h2 class="hx-subtitle">Subtitle&lt;/h2>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<p>There are <strong>2 types</strong> of titles:</p>
+<ul>
+  <li><code>.hx-title</code></li>
+  <li><code>.hx-subtitle</code></li>
+</ul>
+<br>
+<h1 class="hx-title">Title</h1>
+<h2 class="hx-subtitle">Subtitle</h2>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Headings</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;p>There are &lt;strong>6 sizes&lt;/strong> available:&lt;/p>
+&lt;ul>
+  &lt;li>&lt;code>&amplt;h1&ampgt;&lt;/code> or &lt;code>.h1&lt;/code>&lt;/li>
+  &lt;li>&lt;code>&amplt;h2&ampgt;&lt;/code> or &lt;code>.h2&lt;/code>&lt;/li>
+  &lt;li>&lt;code>&amplt;h3&ampgt;&lt;/code> or &lt;code>.h3&lt;/code>&lt;/li>
+  &lt;li>&lt;code>&amplt;h4&ampgt;&lt;/code> or &lt;code>.h4&lt;/code>&lt;/li>
+  &lt;li>&lt;code>&amplt;h5&ampgt;&lt;/code> or &lt;code>.h5&lt;/code>&lt;/li>
+  &lt;li>&lt;code>&amplt;h6&ampgt;&lt;/code> or &lt;code>.h6&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h1>h1. HxUI heading&lt;/h1>
+&lt;h2>h2. HxUI heading&lt;/h2>
+&lt;h3>h3. HxUI heading&lt;/h3>
+&lt;h4>h4. HxUI heading&lt;/h4>
+&lt;h5>h5. HxUI heading&lt;/h5>
+&lt;h6>h6. HxUI heading&lt;/h6>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<p>There are <strong>6 sizes</strong> available:</p>
+<ul>
+  <li><code>&lt;h1></code> or <code>.h1</code></li>
+  <li><code>&lt;h2></code> or <code>.h2</code></li>
+  <li><code>&lt;h3></code> or <code>.h3</code></li>
+  <li><code>&lt;h4></code> or <code>.h4</code></li>
+  <li><code>&lt;h5></code> or <code>.h5</code></li>
+  <li><code>&lt;h6></code> or <code>.h6</code></li>
+</ul>
+<br>
+<h1>h1. HxUI heading</h1>
+<h2>h2. HxUI heading</h2>
+<h3>h3. HxUI heading</h3>
+<h4>h4. HxUI heading</h4>
+<h5>h5. HxUI heading</h5>
+<h6>h6. HxUI heading</h6>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Paragraphs and Inline text elements</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;div class="hx-columns">
+  &lt;div class="hx-column is-4">
+    &lt;ul>
+      &lt;li>&lt;code>&amplt;p&ampgt;&lt;/code> Paragraphs&lt;/li>
+      &lt;li>&lt;code>&amplt;mark&ampgt;&lt;/code> Mark&lt;/li>
+      &lt;li>&lt;code>&amplt;del&ampgt;&lt;/code> Delete&lt;/li>
+      &lt;li>&lt;code>&amplt;s&ampgt;&lt;/code> Strikeline&lt;/li>
+      &lt;li>&lt;code>&amplt;ins&ampgt;&lt;/code> Insert&lt;/li>
+      &lt;li>&lt;code>&amplt;u&ampgt;&lt;/code> Underline&lt;/li>
+      &lt;li>&lt;code>&amplt;small&ampgt;&lt;/code> Small&lt;/li>
+      &lt;li>&lt;code>&amplt;strong&ampgt;&lt;/code> Strong&lt;/li>
+      &lt;li>&lt;code>&amplt;em&ampgt;&lt;/code> Emphasized&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="hx-column">
+    &lt;p>This is a paragraph.&lt;/p>
+    &lt;p>You can use the mark tag to &lt;mark>highlight&lt;/mark> text.&lt;/p>
+    &lt;p>&lt;del>This line of text is meant to be treated as deleted text.&lt;/del>&lt;/p>
+    &lt;p>&lt;s>This line of text is meant to be treated as no longer accurate.&lt;/s>&lt;/p>
+    &lt;p>&lt;ins>This line of text is meant to be treated as an addition to the document.&lt;/ins>&lt;/p>
+    &lt;p>&lt;u>This line of text will render as underlined&lt;/u>&lt;/p>
+    &lt;p>&lt;small>This line of text is meant to be treated as fine print.&lt;/small>&lt;/p>
+    &lt;p>&lt;strong>This line rendered as bold text.&lt;/strong>&lt;/p>
+    &lt;p>&lt;em>This line rendered as italicized text.&lt;/em>&lt;/p>
+  &lt;/div>
+&lt;/div>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<div class="hx-columns">
+  <div class="hx-column is-4">
+    <ul>
+      <li><code>&lt;p></code> Paragraphs</li>
+      <li><code>&lt;mark></code> Mark</li>
+      <li><code>&lt;del></code> Delete</li>
+      <li><code>&lt;s></code> Strikeline</li>
+      <li><code>&lt;ins></code> Insert</li>
+      <li><code>&lt;u></code> Underline</li>
+      <li><code>&lt;small></code> Small</li>
+      <li><code>&lt;strong></code> Strong</li>
+      <li><code>&lt;em></code> Emphasized</li>
+    </ul>
+  </div>
+  <div class="hx-column">
+    <p>This is a paragraph.</p>
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <p><u>This line of text will render as underlined</u></p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+  </div>
+</div>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Lists</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;div class="hx-columns">
+  &lt;div class="hx-column is-4">
+    &lt;p>Use an unordered list to list things, if the order of the items doesn't matter.&lt;/p>
+    &lt;p>And a definition list &lt;code>&amplt;dl&ampgt;&lt;/code> is used to display name-value pairs, &lt;br>like metadata or a dictionary definition. &lt;br>Each term &lt;code>&amplt;dt&ampgt;&lt;/code> is paired with one or more definitions &lt;code>&amplt;dd&ampgt;&lt;/code>.&lt;/p>
+    &lt;ul>
+      &lt;li>&lt;code>&amplt;ul&ampgt;&lt;/code> Unorder list&lt;/li>
+      &lt;li>&lt;code>&amplt;ol&ampgt;&lt;/code> Order list&lt;/li>
+      &lt;li>&lt;code>&amplt;dl&ampgt;&lt;/code> Definition Lists&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="hx-column is-2 is-offset-1">
+    &lt;p>&lt;strong>Unordered lists&lt;/strong>&lt;/p>
+    &lt;ul>
+      &lt;li>List item&lt;/li>
+      &lt;li>List item&lt;/li>
+      &lt;ul>
+        &lt;li>List item&lt;/li>
+      &lt;/ul>
+    &lt;/ul>
+    &lt;p>&lt;strong>Ordered lists&lt;/strong>&lt;/p>
+    &lt;ol>
+      &lt;li>List item&lt;/li>
+      &lt;li>List item&lt;/li>
+      &lt;ol>
+        &lt;li>List item&lt;/li>
+      &lt;/ol>
+    &lt;/ol>
+  &lt;/div>
+  &lt;div class="hx-column is-3">
+    &lt;p>&lt;strong>Definition list&lt;/strong>&lt;/p>
+    &lt;dl>
+      &lt;dt>Time&lt;/dt>
+      &lt;dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.&lt;/dd>
+      &lt;dt>Space&lt;/dt>
+      &lt;dd>A continuous area or expanse that is free, available, or unoccupied.&lt;/dd>
+      &lt;dd>The dimensions of height, depth, and width within which all things exist and move.&lt;/dd>
+    &lt;/dl>
+  &lt;/div>
+&lt;/div>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<div class="hx-columns">
+  <div class="hx-column is-4">
+    <p>Use an unordered list to list things, if the order of the items doesn't matter.</p>
+    <p>And a definition list <code>&lt;dl></code> is used to display name-value pairs, <br>like metadata or a dictionary definition. <br>Each term <code>&lt;dt></code> is paired with one or more definitions <code>&lt;dd></code>.</p>
+    <ul>
+      <li><code>&lt;ul></code> Unorder list</li>
+      <li><code>&lt;ol></code> Order list</li>
+      <li><code>&lt;dl></code> Definition Lists</li>
+    </ul>
+  </div>
+  <div class="hx-column is-2 is-offset-1">
+    <p><strong>Unordered lists</strong></p>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <ul>
+        <li>List item</li>
+      </ul>
+    </ul>
+    <p><strong>Ordered lists</strong></p>
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
+      <ol>
+        <li>List item</li>
+      </ol>
+    </ol>
+  </div>
+  <div class="hx-column is-3">
+    <p><strong>Definition list</strong></p>
+    <dl>
+      <dt>Time</dt>
+      <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+      <dt>Space</dt>
+      <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+      <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+    </dl>
+  </div>
+</div>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Alignments</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;table class="hx-table is-striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Class&lt;/th>
+      &lt;th>Example&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-nowrap&lt;/code>&lt;/td>
+      &lt;td class="is-text-nowrap">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-truncate&lt;/code>&lt;/td>
+      &lt;td class="is-text-truncate">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-center&lt;/code>&lt;/td>
+      &lt;td class="is-text-center">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-nowrap</code></td>
+      <td class="is-text-nowrap">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-truncate</code></td>
+      <td class="is-text-truncate">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-center</code></td>
+      <td class="is-text-center">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+  </tbody>
+</table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Transformation</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;table class="hx-table is-striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Class&lt;/th>
+      &lt;th>Example&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-lowercase&lt;/code>&lt;/td>
+      &lt;td class="is-text-lowercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-uppercase&lt;/code>&lt;/td>
+      &lt;td class="is-text-uppercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-capitalise&lt;/code>&lt;/td>
+      &lt;td class="is-text-capitalise">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-lowercase</code></td>
+      <td class="is-text-lowercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-uppercase</code></td>
+      <td class="is-text-uppercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-capitalise</code></td>
+      <td class="is-text-capitalise">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+  </tbody>
+</table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Weights & italics</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;table class="hx-table is-striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Class&lt;/th>
+      &lt;th>Example&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-weight-normal&lt;/code>&lt;/td>
+      &lt;td class="is-text-weight-normal">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-bold&lt;/code>&lt;/td>
+      &lt;td class="is-text-bold">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-text-italic&lt;/code>&lt;/td>
+      &lt;td class="is-text-italic">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-weight-normal</code></td>
+      <td class="is-text-weight-normal">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-bold</code></td>
+      <td class="is-text-bold">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-italic</code></td>
+      <td class="is-text-italic">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+  </tbody>
+</table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Colours</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;p>Easily colour text with text colour classes&lt;/p>
+&lt;table class="hx-table is-striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Class&lt;/th>
+      &lt;th>Example&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>&lt;code>.is-white&lt;/code>&lt;/td>
+      &lt;td class="is-white">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-black&lt;/code>&lt;/td>
+      &lt;td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-light&lt;/code>&lt;/td>
+      &lt;td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-dark&lt;/code>&lt;/td>
+      &lt;td class="is-dark">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-primary&lt;/code>&lt;/td>
+      &lt;td class="is-primary">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-info&lt;/code>&lt;/td>
+      &lt;td class="is-info">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-warning&lt;/code>&lt;/td>
+      &lt;td class="is-warning">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>&lt;code>.is-danger&lt;/code>&lt;/td>
+      &lt;td class="is-danger">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<p>Easily colour text with text colour classes</p>
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-white</code></td>
+      <td class="is-white">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-black</code></td>
+      <td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-light</code></td>
+      <td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-dark</code></td>
+      <td class="is-dark">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-primary</code></td>
+      <td class="is-primary">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-info</code></td>
+      <td class="is-info">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-warning</code></td>
+      <td class="is-warning">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
+      <td><code>.is-danger</code></td>
+      <td class="is-danger">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+  </tbody>
+</table>
+          </div></div></div></div></div></div></div></div></div></div><script type="text/javascript">window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:!0}</script><script defer src="/_nuxt/manifest.fa5ddf70f30dbb64890a.js"></script><script defer src="/_nuxt/layouts/default.6619289d4608d426f09c.js"></script><script defer src="/_nuxt/pages/typography.6d60cacecd560eb2e5b3.js"></script><script defer src="/_nuxt/vendor.82be88fe213cb4c083eb.js"></script><script defer src="/_nuxt/app.11e921bc406d78d7ed78.js"></script>
+  
+

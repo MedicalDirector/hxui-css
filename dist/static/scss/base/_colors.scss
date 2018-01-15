@@ -1,0 +1,88 @@
+// Colors
+//
+// Backgrounds
+//
+
+.#{$namespace}-bg {
+  &-primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &-info {
+    background-color: $color-info;
+    color: $color-white;
+  }
+
+  &-warning {
+    background-color: $color-warning;
+    color: $color-white;
+  }
+
+  &-danger {
+    background-color: $color-danger;
+    color: $color-white;
+  }
+
+  &-light {
+    background-color: $color-gray-light;
+    color: $color-white;
+
+    code:not(.hljs) {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+
+  &-gradient {
+    &.has-animation {
+      position: relative;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        animation-name: fade;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        transform: translateZ(0);
+      }
+    }
+    &.is-green-blue {
+      @include radial-gradient(top, $color-gradient-green, $color-gradient-blue);
+      color: white;
+      text-shadow: 0 1px 0 rgba(0,0,0,.3);
+      .hx-button.is-loading {
+        font-size: 3rem;
+        &:after {
+          border-color: transparent transparent white white !important;
+        }
+      }
+      &.has-animation {
+        &:before {
+          animation-delay: 10s;
+        }
+        &:after {
+          animation-delay: 20s;
+        }
+        &:before {
+          @include radial-gradient(bottom left, $color-gradient-green, $color-gradient-blue);
+        }
+        &:after {
+          @include radial-gradient(bottom right, $color-gradient-green, $color-gradient-blue);
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  50% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 0; }
+}

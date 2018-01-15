@@ -1,0 +1,54 @@
+$pagination-disabled-link-color: $color-gray-lighter;
+$pagination-disabled-link-hover-color:$color-gray-lightest;
+$pagination-hover-color: $color-green-light;
+$pagination-active-color: $color-green-light;
+$pagination-color: $color-gray-dark;
+
+.#{$namespace}-pagination{
+  @extend .hx-flex;
+  @extend .hx-flex-align-center;
+  @extend .hx-flex-justify-center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin-top:0;
+    a {
+      @extend .hx-flex;
+      @extend .hx-flex-1;
+      @extend .hx-flex-align-center;
+      text-decoration: none;
+      color:$pagination-color;
+      padding: ($spacer/4) ($spacer/2);
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+
+      @include hover-focus {
+        text-decoration: none;
+        border-bottom:1px solid $color-gray-lighter;
+        color:$pagination-hover-color;
+      }
+
+    }
+
+    &.is-current a{
+      border-bottom: 2px solid $pagination-active-color;
+      color: $pagination-active-color;
+    }
+
+    &.is-disabled a{
+      border-bottom:1px solid transparent;
+      color: $pagination-disabled-link-color;
+    }
+
+    span{
+      @extend .hx-flex;
+      @extend .hx-flex-align-center;
+      color:$pagination-disabled-link-color;
+      padding: ($spacer/4) ($spacer/2);
+    }
+  }
+}
+

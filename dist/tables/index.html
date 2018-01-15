@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html class="hxui-reset" data-n-head="class" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="Nuxt.js project" name="description" data-hid="description"><title data-n-head="true">gethxui.com</title><link href="/favicon.ico" rel="icon" data-n-head="true" type="image/x-icon"><link href="/" rel="stylesheet" data-n-head="true" media="all"><link href="/_nuxt/manifest.fa5ddf70f30dbb64890a.js" rel="preload" as="script"><link href="/_nuxt/vendor.82be88fe213cb4c083eb.js" rel="preload" as="script"><link href="/_nuxt/app.11e921bc406d78d7ed78.js" rel="preload" as="script"><link href="/_nuxt/css/hxui.css" rel="preload" as="style"><link href="/_nuxt/layouts/default.6619289d4608d426f09c.js" rel="preload" as="script"><link href="/_nuxt/pages/tables.d5082690f7719fb89359.js" rel="preload" as="script"><link href="/_nuxt/pages/buttons.4129b4662b1b9c6247b3.js" rel="prefetch"><link href="/_nuxt/pages/typography.6d60cacecd560eb2e5b3.js" rel="prefetch"><link href="/_nuxt/pages/tooltips.2e4b38c8eca2018778c3.js" rel="prefetch"><link href="/_nuxt/pages/toggle.0259c9fd7cbd49b1ad45.js" rel="prefetch"><link href="/_nuxt/pages/tabs.51dfe2812decbcb4d992.js" rel="prefetch"><link href="/_nuxt/pages/snackbars-toasts.f0f52881b0e74f02df81.js" rel="prefetch"><link href="/_nuxt/pages/progress-timeline.bc921fef17368d2ec9f0.js" rel="prefetch"><link href="/_nuxt/pages/pagination.4aaac2627d6ccb8d2e23.js" rel="prefetch"><link href="/_nuxt/pages/nav.66550e8cc2b7d021a5a7.js" rel="prefetch"><link href="/_nuxt/pages/modals.e1a6824d389182f324e4.js" rel="prefetch"><link href="/_nuxt/pages/lists.2c0dcb7b29b0a8011a60.js" rel="prefetch"><link href="/_nuxt/pages/grid.511795b253e0a18de98a.js" rel="prefetch"><link href="/_nuxt/pages/forms.25fa44d23d2969895822.js" rel="prefetch"><link href="/_nuxt/pages/dropdowns.a36d964607afc5f084d9.js" rel="prefetch"><link href="/_nuxt/pages/cards.f57164e5765585a9a39b.js" rel="prefetch"><link href="/_nuxt/pages/badges.ed4b86cc3be513bd4bed.js" rel="prefetch"><link href="/_nuxt/pages/alerts.69569afbf11fbec85cc5.js" rel="prefetch"><link href="/_nuxt/pages/icons.3766d3aa1d1b8826baa8.js" rel="prefetch"><link href="/_nuxt/pages/spacing.4c11e7a6363f35776dac.js" rel="prefetch"><link href="/_nuxt/pages/sidebar.133e44208a2fbd8e5692.js" rel="prefetch"><link href="/_nuxt/pages/sections.11bcff11057fe3d6e97d.js" rel="prefetch"><link href="/_nuxt/pages/pages.f6aca5ee0d72c9ae08da.js" rel="prefetch"><link href="/_nuxt/pages/install.2f97e00674ce81b5e765.js" rel="prefetch"><link href="/_nuxt/pages/index.d69ec659a7ca07f8138c.js" rel="prefetch"><link href="/_nuxt/pages/elevation.2097db1e714220a48f94.js" rel="prefetch"><link href="/_nuxt/pages/downloads.0bcf439c3b627ee4eccd.js" rel="prefetch"><link href="/_nuxt/pages/containers.25cfe0bc0d558a143ef5.js" rel="prefetch"><link href="/_nuxt/pages/container-demo.58ef36c2cdb950552ff0.js" rel="prefetch"><link href="/_nuxt/css/hxui.css" rel="stylesheet"><style data-vue-ssr-id="6103766b:0">html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}*,:after,:before,html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{margin:0}.fade-enter-active,.fade-leave-active{-webkit-transition:opacity .5s;transition:opacity .5s}.fade-enter,.fade-leave-to{opacity:0}.slide-x-enter-active,.slide-x-leave-active{-webkit-transition:.5s;transition:.5s}.slide-x-enter{-webkit-transform:translateX(-10%);transform:translateX(-10%);opacity:0}.slide-x-leave-to{-webkit-transform:translateX(10%);transform:translateX(10%);opacity:0}</style><style data-vue-ssr-id="aedc3086:0">.slide-left-enter-active,.slide-left-leave-active{-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}.slide-left-enter,.slide-left-leave-to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.fade-enter-active,.fade-leave-active{-webkit-transition:.5s;transition:.5s}.fade-enter,.fade-leave-to{opacity:0}</style><style data-vue-ssr-id="5d798338:0">.hx-nav-brand[data-v-273f981f]{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}.hxui-logo[data-v-273f981f]{-webkit-transition:.3s;transition:.3s;max-height:32px;max-height:2rem}.hxui-logo.is-white[data-v-273f981f]{fill:#fff}</style><style data-vue-ssr-id="1bfd8f65:0"></style><style data-vue-ssr-id="1f37879b:0">.navs{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out;overflow:auto;-webkit-box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.05);box-shadow:inset 0 -1px 0 0 rgba(0,0,0,.05)}</style><style data-vue-ssr-id="2736cc1d:0"></style><style data-vue-ssr-id="5bf96988:0">.hx-code[data-v-735a47f0]{overflow:auto;-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div class="hxui-reset" id="app"><div class="hx-page"><div class="hx-page-body"><div class="hx-nav-drawer"><span><aside class="hx-sidebar has-blue-gradient is-minified" data-v-273f981f><ul class="hx-nav hx-nav-vertical hx-flex-auto" data-v-273f981f><li class="hx-nav-item hx-nav-brand" data-v-273f981f><svg class="hxui-logo is-white" data-v-273f981f><use data-v-273f981f xlink:href="/static/assets/images/hxui.svg#hxui"></use></svg><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-active" href="http://gethxui.com" data-v-273f981f><i class="hx-icon icon-html-css" data-v-273f981f></i><span class="ml-1" data-v-273f981f>HTML & CSS</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" href="http://angular.gethxui.com" data-v-273f981f><i class="hx-icon icon-angular" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Angular</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-disabled" href="http://react.gethxui.com" data-v-273f981f><i class="hx-icon icon-react" data-v-273f981f></i><span class="ml-1" data-v-273f981f>ReactJS</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" href="http://vue.gethxui.com" data-v-273f981f><i class="hx-icon icon-vue" data-v-273f981f></i><span class="ml-1" data-v-273f981f>VueJS</span></a></ul><ul class="hx-nav hx-nav-vertical is-bottom" data-v-273f981f><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link is-disabled" href data-v-273f981f><i class="hx-icon icon-chat-bubble" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Feedback</span></a><li class="hx-nav-item" data-v-273f981f><a class="hx-nav-link" data-v-273f981f><i class="hx-icon icon-more" data-v-273f981f></i><span class="ml-1" data-v-273f981f>Collapse</span></a></ul></aside><div class="hx-sidebar is-medium-width is-scrollable py-0"><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Getting started</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/">
+          Welcome
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/install">
+          Install guide
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Page layouts</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/containers">
+          Containers
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/elevation">
+          Elevation
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/grid">
+          Grid
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/pages">
+          Pages
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/sections">
+          Sections
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/spacing">
+          Spacing
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Elements</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/badges">
+          Badges
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/buttons">
+          Buttons
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/icons">
+          Icons
+        </a><li class="hx-nav-item"><a class="hx-nav-link is-active nuxt-link-active" href="/tables">
+          Tables
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/typography">
+          Typography
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Components</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/alerts">
+          Alerts
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/cards">
+          Cards
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/dropdowns">
+          Dropdowns
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/forms">
+          Forms
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/lists">
+          Lists & list group
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/modals">
+          Modals
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/nav">
+          Nav
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/pagination">
+          Pagination
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/progress-timeline">
+          Progress timeline
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/sidebar">
+          Sidebar
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/snackbars-toasts">
+          Snackbars & toasts
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/tabs">
+          Tabs
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/toggle">
+          Toggle
+        </a><li class="hx-nav-item"><a class="hx-nav-link" href="/tooltips">
+          Tooltips
+        </a></ul></div></div><div class="panel"><div class="hx-header hx-flex py-2 has-pointer"><span class="hx-flex-1 py-2">Resources</span><span class="hx-icon-control py-1"><i class="hx-icon is-small my-0 icon-angle-up"></i></span></div><div class="navs" style="height:0"><ul class="hx-nav hx-nav-vertical py-4"><li class="hx-nav-item"><a class="hx-nav-link" href="/downloads">
+          Downloads
+        </a></ul></div></div></div></span><div class="hx-overlay"></div><div class="hx-nav-navicon"><i class="hx-icon icon-navicon"></i></div></div><div class="hx-section scrollable-y"><div class="hx-section is-comfortable"><div id="tables"><h1 class="hx-title">Tables</h1><h2 class="hx-subtitle">The inevitable HTML table, with special case cells</h2><hr><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Default table</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;p>Tables are borderless by default.&lt;/p>
+&lt;p>Add &lt;code>class="hx-table"&lt;/code> to the table tag for a HxUI styled table.&lt;/p>
+&lt;p>You can set a table row as &lt;strong>selected&lt;/strong> by appending the &lt;code>is-selected&lt;/code> modifier on a &lt;code>&amp#x3C;tr&amp#x3E;&lt;/code>.&lt;/p>
+&lt;table class="hx-table is-striped mt-5">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>&lt;abbr title="Position">Pos&lt;/abbr>&lt;/th>
+      &lt;th>Team&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Played">Pld&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Won">W&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Drawn">D&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Lost">L&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Goals for">GF&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Goals against">GA&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Goal difference">GD&lt;/abbr>&lt;/th>
+      &lt;th class="has-text-right">&lt;abbr title="Points">Pts&lt;/abbr>&lt;/th>
+      &lt;th>Qualification or relegation&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th>1&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City&lt;/a> &lt;strong>(C)&lt;/strong>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">23&lt;/td>
+      &lt;td class="has-text-right">12&lt;/td>
+      &lt;td class="has-text-right">3&lt;/td>
+      &lt;td class="has-text-right">68&lt;/td>
+      &lt;td class="has-text-right">36&lt;/td>
+      &lt;td class="has-text-right">+32&lt;/td>
+      &lt;td class="has-text-right">81&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>2&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">20&lt;/td>
+      &lt;td class="has-text-right">11&lt;/td>
+      &lt;td class="has-text-right">7&lt;/td>
+      &lt;td class="has-text-right">65&lt;/td>
+      &lt;td class="has-text-right">36&lt;/td>
+      &lt;td class="has-text-right">+29&lt;/td>
+      &lt;td class="has-text-right">71&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>3&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">19&lt;/td>
+      &lt;td class="has-text-right">13&lt;/td>
+      &lt;td class="has-text-right">6&lt;/td>
+      &lt;td class="has-text-right">69&lt;/td>
+      &lt;td class="has-text-right">35&lt;/td>
+      &lt;td class="has-text-right">+34&lt;/td>
+      &lt;td class="has-text-right">70&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr class="is-selected">
+      &lt;th>4&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">19&lt;/td>
+      &lt;td class="has-text-right">9&lt;/td>
+      &lt;td class="has-text-right">10&lt;/td>
+      &lt;td class="has-text-right">71&lt;/td>
+      &lt;td class="has-text-right">41&lt;/td>
+      &lt;td class="has-text-right">+30&lt;/td>
+      &lt;td class="has-text-right">66&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>5&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester United&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">19&lt;/td>
+      &lt;td class="has-text-right">9&lt;/td>
+      &lt;td class="has-text-right">10&lt;/td>
+      &lt;td class="has-text-right">49&lt;/td>
+      &lt;td class="has-text-right">35&lt;/td>
+      &lt;td class="has-text-right">+14&lt;/td>
+      &lt;td class="has-text-right">66&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>6&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">18&lt;/td>
+      &lt;td class="has-text-right">9&lt;/td>
+      &lt;td class="has-text-right">11&lt;/td>
+      &lt;td class="has-text-right">59&lt;/td>
+      &lt;td class="has-text-right">41&lt;/td>
+      &lt;td class="has-text-right">+18&lt;/td>
+      &lt;td class="has-text-right">63&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>7&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham United&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">16&lt;/td>
+      &lt;td class="has-text-right">14&lt;/td>
+      &lt;td class="has-text-right">8&lt;/td>
+      &lt;td class="has-text-right">65&lt;/td>
+      &lt;td class="has-text-right">51&lt;/td>
+      &lt;td class="has-text-right">+14&lt;/td>
+      &lt;td class="has-text-right">62&lt;/td>
+      &lt;td>Qualification for the &lt;a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round" title="2016–17 UEFA Europa League">Europa League third qualifying round&lt;/a>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>8&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">16&lt;/td>
+      &lt;td class="has-text-right">12&lt;/td>
+      &lt;td class="has-text-right">10&lt;/td>
+      &lt;td class="has-text-right">63&lt;/td>
+      &lt;td class="has-text-right">50&lt;/td>
+      &lt;td class="has-text-right">+13&lt;/td>
+      &lt;td class="has-text-right">60&lt;/td>
+      &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>9&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">14&lt;/td>
+      &lt;td class="has-text-right">9&lt;/td>
+      &lt;td class="has-text-right">15&lt;/td>
+      &lt;td class="has-text-right">41&lt;/td>
+      &lt;td class="has-text-right">55&lt;/td>
+      &lt;td class="has-text-right">−14&lt;/td>
+      &lt;td class="has-text-right">51&lt;/td>
+      &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th>10&lt;/th>
+      &lt;td>&lt;a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea&lt;/a>&lt;/td>
+      &lt;td class="has-text-right">38&lt;/td>
+      &lt;td class="has-text-right">12&lt;/td>
+      &lt;td class="has-text-right">14&lt;/td>
+      &lt;td class="has-text-right">12&lt;/td>
+      &lt;td class="has-text-right">59&lt;/td>
+      &lt;td class="has-text-right">53&lt;/td>
+      &lt;td class="has-text-right">+6&lt;/td>
+      &lt;td class="has-text-right">50&lt;/td>
+      &lt;td>&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<p>Tables are borderless by default.</p>
+<p>Add <code>class="hx-table"</code> to the table tag for a HxUI styled table.</p>
+<p>You can set a table row as <strong>selected</strong> by appending the <code>is-selected</code> modifier on a <code>&lt;tr></code>.</p>
+<table class="hx-table is-striped mt-5">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th class="has-text-right"><abbr title="Played">Pld</abbr></th>
+      <th class="has-text-right"><abbr title="Won">W</abbr></th>
+      <th class="has-text-right"><abbr title="Drawn">D</abbr></th>
+      <th class="has-text-right"><abbr title="Lost">L</abbr></th>
+      <th class="has-text-right"><abbr title="Goals for">GF</abbr></th>
+      <th class="has-text-right"><abbr title="Goals against">GA</abbr></th>
+      <th class="has-text-right"><abbr title="Goal difference">GD</abbr></th>
+      <th class="has-text-right"><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">23</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">3</td>
+      <td class="has-text-right">68</td>
+      <td class="has-text-right">36</td>
+      <td class="has-text-right">+32</td>
+      <td class="has-text-right">81</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">20</td>
+      <td class="has-text-right">11</td>
+      <td class="has-text-right">7</td>
+      <td class="has-text-right">65</td>
+      <td class="has-text-right">36</td>
+      <td class="has-text-right">+29</td>
+      <td class="has-text-right">71</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">13</td>
+      <td class="has-text-right">6</td>
+      <td class="has-text-right">69</td>
+      <td class="has-text-right">35</td>
+      <td class="has-text-right">+34</td>
+      <td class="has-text-right">70</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr class="is-selected">
+      <th>4</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">71</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">+30</td>
+      <td class="has-text-right">66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester United</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">49</td>
+      <td class="has-text-right">35</td>
+      <td class="has-text-right">+14</td>
+      <td class="has-text-right">66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">18</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">11</td>
+      <td class="has-text-right">59</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">+18</td>
+      <td class="has-text-right">63</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham United</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">16</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">8</td>
+      <td class="has-text-right">65</td>
+      <td class="has-text-right">51</td>
+      <td class="has-text-right">+14</td>
+      <td class="has-text-right">62</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round" title="2016–17 UEFA Europa League">Europa League third qualifying round</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">16</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">63</td>
+      <td class="has-text-right">50</td>
+      <td class="has-text-right">+13</td>
+      <td class="has-text-right">60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">15</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">55</td>
+      <td class="has-text-right">−14</td>
+      <td class="has-text-right">51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">59</td>
+      <td class="has-text-right">53</td>
+      <td class="has-text-right">+6</td>
+      <td class="has-text-right">50</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Narrow table</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+&lt;p>Add &lt;code>class="hx-table is-narrow"&lt;/code> to the table tag to make the cells narrower.&lt;/p>
+&lt;table class="hx-table is-narrow">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>One&lt;/th>
+      &lt;th>Two&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>Three&lt;/td>
+      &lt;td>Four&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Five&lt;/td>
+      &lt;td>Six&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Seven&lt;/td>
+      &lt;td>Eight&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Nine&lt;/td>
+      &lt;td>Ten&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Eleven&lt;/td>
+      &lt;td>Twelve&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+<p>Add <code>class="hx-table is-narrow"</code> to the table tag to make the cells narrower.</p>
+<table class="hx-table is-narrow">
+  <thead>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Three</td>
+      <td>Four</td>
+    </tr>
+    <tr>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+    </tr>
+    <tr>
+      <td>Nine</td>
+      <td>Ten</td>
+    </tr>
+    <tr>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Hover table</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+            &lt;p>Add &lt;code>class="hx-table is-hover"&lt;/code> to the table tag for a hover state on rows&lt;/p>
+            &lt;table class="hx-table is-hover">
+              &lt;thead>
+                &lt;tr>
+                  &lt;th>One&lt;/th>
+                  &lt;th>Two&lt;/th>
+                &lt;/tr>
+              &lt;/thead>
+              &lt;tbody>
+                &lt;tr>
+                  &lt;td>Three&lt;/td>
+                  &lt;td>Four&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>Five&lt;/td>
+                  &lt;td>Six&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>Seven&lt;/td>
+                  &lt;td>Eight&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>Nine&lt;/td>
+                  &lt;td>Ten&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>Eleven&lt;/td>
+                  &lt;td>Twelve&lt;/td>
+                &lt;/tr>
+              &lt;/tbody>
+            &lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+            <p>Add <code>class="hx-table is-hover"</code> to the table tag for a hover state on rows</p>
+            <table class="hx-table is-hover">
+              <thead>
+                <tr>
+                  <th>One</th>
+                  <th>Two</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Three</td>
+                  <td>Four</td>
+                </tr>
+                <tr>
+                  <td>Five</td>
+                  <td>Six</td>
+                </tr>
+                <tr>
+                  <td>Seven</td>
+                  <td>Eight</td>
+                </tr>
+                <tr>
+                  <td>Nine</td>
+                  <td>Ten</td>
+                </tr>
+                <tr>
+                  <td>Eleven</td>
+                  <td>Twelve</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Contextual</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+            &lt;p>Add &lt;code>class="is-danger"&lt;/code>, &lt;code>class="is-warning"&lt;/code>, &lt;code>class="is-success"&lt;/code>, &lt;code>class="is-info"&lt;/code> to the tr tag &lt;/p>
+            &lt;table class="hx-table">
+              &lt;thead>
+                &lt;tr>
+                  &lt;th>Context&lt;/th>
+                  &lt;th>Icon&lt;/th>
+                &lt;/tr>
+              &lt;/thead>
+              &lt;tbody>
+                &lt;tr class="is-danger">
+                  &lt;td>Danger&lt;/td>
+                   &lt;td>&lt;i class="hx-icon icon-exclamation">&lt;/i>&lt;/td>
+                &lt;/tr>
+                &lt;tr class="is-warning">
+                  &lt;td>Warning&lt;/td>
+                   &lt;td>&lt;i class="hx-icon icon-exclamation-outline">&lt;/i>&lt;/td>
+                &lt;/tr>
+                &lt;tr class="is-success">
+                  &lt;td>Success&lt;/td>
+                   &lt;td>&lt;i class="hx-icon icon-check">&lt;/i>&lt;/td>
+                &lt;/tr>
+                &lt;tr class="is-info">
+                  &lt;td>Info&lt;/td>
+                   &lt;td>&lt;i class="hx-icon icon-information">&lt;/i>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>Default&lt;/td>
+                   &lt;td>&lt;i class="hx-icon icon-information-outline">&lt;/i>&lt;/td>
+                &lt;/tr>
+              &lt;/tbody>
+            &lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+            <p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag </p>
+            <table class="hx-table">
+              <thead>
+                <tr>
+                  <th>Context</th>
+                  <th>Icon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-danger">
+                  <td>Danger</td>
+                   <td><i class="hx-icon icon-exclamation"></i></td>
+                </tr>
+                <tr class="is-warning">
+                  <td>Warning</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
+                </tr>
+                <tr class="is-success">
+                  <td>Success</td>
+                   <td><i class="hx-icon icon-check"></i></td>
+                </tr>
+                <tr class="is-info">
+                  <td>Info</td>
+                   <td><i class="hx-icon icon-information"></i></td>
+                </tr>
+                <tr>
+                  <td>Default</td>
+                   <td><i class="hx-icon icon-information-outline"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div></div><div class="hx-card example is-flat mb-3" data-v-735a47f0><div class="hx-card-header" data-v-735a47f0><h4 class="hx-card-header-title my-2" data-v-735a47f0>Grouped rows table</h4><button class="hx-button is-round is-transparent is-small is-pulled-right mx-4" data-v-735a47f0><span class="hx-icon-control" data-v-735a47f0><i class="hx-icon icon-code is-medium" data-v-735a47f0></i></span></button></div><div class="hx-card-content pa-0 hx-code" style="height:0" data-v-735a47f0><pre data-v-735a47f0><code class="html" data-v-735a47f0>
+
+            &lt;p>Add &lt;code>class="hx-table-group"&lt;/code> to the tbody tag proceeding tbody related rows.&lt;/p>
+            &lt;table class="hx-table is-striped">
+              &lt;thead>
+                &lt;tr>
+                  &lt;th>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-all" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/th>
+                  &lt;th>Id&lt;/th>
+                  &lt;th>User Code&lt;/th>
+                  &lt;th>Firstname&lt;/th>
+                  &lt;th>Surname&lt;/th>
+                &lt;/tr>
+              &lt;/thead>
+              &lt;tbody class="hx-table-group">
+                &lt;tr>
+                  &lt;th colspan="5">&lt;div>Administrators &lt;small>People who have access to all areas of the application&lt;/small> &lt;span class="hx-icon icon-angle-down">&lt;/span>&lt;/div>&lt;/th>
+                &lt;/tr>
+              &lt;/tbody>
+              &lt;tbody>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-19" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>19&lt;/td>
+                  &lt;td>TS001&lt;/td>
+                  &lt;td>Tupac&lt;/td>
+                  &lt;td>Shakur&lt;/td>
+                &lt;/tr>
+                 &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-20" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>20&lt;/td>
+                  &lt;td>BP001&lt;/td>
+                  &lt;td>Brian&lt;/td>
+                  &lt;td>Pulliese&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-21" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>21&lt;/td>
+                  &lt;td>JS001&lt;/td>
+                  &lt;td>John&lt;/td>
+                  &lt;td>Smith&lt;/td>
+                &lt;/tr>
+              &lt;/tbody>
+              &lt;tbody class="hx-table-group">
+                &lt;tr>
+                  &lt;th colspan="5">&lt;div>General Practice &lt;small>People who have access to patient clinical records&lt;/small> &lt;span class="hx-icon icon-angle-down">&lt;/span>&lt;/div>&lt;/th>
+                &lt;/tr>
+              &lt;/tbody>
+              &lt;tbody>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      &lt;label for="checkbox-1" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>1&lt;/td>
+                  &lt;td>BR001&lt;/td>
+                  &lt;td>Branda&lt;/td>
+                  &lt;td>Reed&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      &lt;label for="checkbox-2" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>2&lt;/td>
+                  &lt;td>MR001&lt;/td>
+                  &lt;td>Mercedes&lt;/td>
+                  &lt;td>Mendez&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-3" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>3&lt;/td>
+                  &lt;td>HS001&lt;/td>
+                  &lt;td>Harry&lt;/td>
+                  &lt;td>Sechi&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-4" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>4&lt;/td>
+                  &lt;td>CY001&lt;/td>
+                  &lt;td>Chris&lt;/td>
+                  &lt;td>Yap&lt;/td>
+                &lt;/tr>
+                 &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-5" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>5&lt;/td>
+                  &lt;td>KL001&lt;/td>
+                  &lt;td>Kevin&lt;/td>
+                  &lt;td>Liang&lt;/td>
+                &lt;/tr>
+              &lt;/tbody>
+               &lt;tbody class="hx-table-group">
+                &lt;tr>
+                  &lt;th colspan="5">&lt;div>Specialist &lt;small>People who are an expert on a specific aspect of a job&lt;/small> &lt;span class="hx-icon icon-angle-down">&lt;/span>&lt;/div>&lt;/th>
+                &lt;/tr>
+              &lt;/tbody>
+              &lt;tbody>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-6" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>6&lt;/td>
+                  &lt;td>BS001&lt;/td>
+                  &lt;td>Biggie&lt;/td>
+                  &lt;td>Smalls&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-7" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>7&lt;/td>
+                  &lt;td>JS001&lt;/td>
+                  &lt;td>Julia&lt;/td>
+                  &lt;td>Sampson&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td>&lt;div class="hx-checkbox-control">
+                      &lt;input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
+                      &lt;label for="checkbox-8" class="hx-label">&lt;/label>
+                    &lt;/div>&lt;/td>
+                  &lt;td>8&lt;/td>
+                  &lt;td>GP001&lt;/td>
+                  &lt;td>John&lt;/td>
+                  &lt;td>Pipps&lt;/td>
+                &lt;/tr>
+              &lt;/tbody>
+            &lt;/table>
+          
+      </code></pre></div><div class="hx-card-content" data-v-735a47f0>
+            <p>Add <code>class="hx-table-group"</code> to the tbody tag proceeding tbody related rows.</p>
+            <table class="hx-table is-striped">
+              <thead>
+                <tr>
+                  <th><div class="hx-checkbox-control">
+                      <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-all" class="hx-label"></label>
+                    </div></th>
+                  <th>Id</th>
+                  <th>User Code</th>
+                  <th>Firstname</th>
+                  <th>Surname</th>
+                </tr>
+              </thead>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Administrators <small>People who have access to all areas of the application</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-19" class="hx-label"></label>
+                    </div></td>
+                  <td>19</td>
+                  <td>TS001</td>
+                  <td>Tupac</td>
+                  <td>Shakur</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-20" class="hx-label"></label>
+                    </div></td>
+                  <td>20</td>
+                  <td>BP001</td>
+                  <td>Brian</td>
+                  <td>Pulliese</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-21" class="hx-label"></label>
+                    </div></td>
+                  <td>21</td>
+                  <td>JS001</td>
+                  <td>John</td>
+                  <td>Smith</td>
+                </tr>
+              </tbody>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>General Practice <small>People who have access to patient clinical records</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All">
+                      <label for="checkbox-1" class="hx-label"></label>
+                    </div></td>
+                  <td>1</td>
+                  <td>BR001</td>
+                  <td>Branda</td>
+                  <td>Reed</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All">
+                      <label for="checkbox-2" class="hx-label"></label>
+                    </div></td>
+                  <td>2</td>
+                  <td>MR001</td>
+                  <td>Mercedes</td>
+                  <td>Mendez</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-3" class="hx-label"></label>
+                    </div></td>
+                  <td>3</td>
+                  <td>HS001</td>
+                  <td>Harry</td>
+                  <td>Sechi</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-4" class="hx-label"></label>
+                    </div></td>
+                  <td>4</td>
+                  <td>CY001</td>
+                  <td>Chris</td>
+                  <td>Yap</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-5" class="hx-label"></label>
+                    </div></td>
+                  <td>5</td>
+                  <td>KL001</td>
+                  <td>Kevin</td>
+                  <td>Liang</td>
+                </tr>
+              </tbody>
+               <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Specialist <small>People who are an expert on a specific aspect of a job</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-6" class="hx-label"></label>
+                    </div></td>
+                  <td>6</td>
+                  <td>BS001</td>
+                  <td>Biggie</td>
+                  <td>Smalls</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-7" class="hx-label"></label>
+                    </div></td>
+                  <td>7</td>
+                  <td>JS001</td>
+                  <td>Julia</td>
+                  <td>Sampson</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All">
+                      <label for="checkbox-8" class="hx-label"></label>
+                    </div></td>
+                  <td>8</td>
+                  <td>GP001</td>
+                  <td>John</td>
+                  <td>Pipps</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></div></div></div></div></div></div></div></div></div><script type="text/javascript">window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:!0}</script><script defer src="/_nuxt/manifest.fa5ddf70f30dbb64890a.js"></script><script defer src="/_nuxt/layouts/default.6619289d4608d426f09c.js"></script><script defer src="/_nuxt/pages/tables.d5082690f7719fb89359.js"></script><script defer src="/_nuxt/vendor.82be88fe213cb4c083eb.js"></script><script defer src="/_nuxt/app.11e921bc406d78d7ed78.js"></script>
+  
+
