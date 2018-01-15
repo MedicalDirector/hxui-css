@@ -1,0 +1,451 @@
+<template>
+  <div id="tables">
+    <h1 class="hx-title">Tables</h1>
+    <h2 class="hx-subtitle">The inevitable HTML table, with special case cells</h2>
+
+    <hr>
+
+    <expanding-code-example v-for="(example, i) in examples" :key="i"
+      :title="example.title"
+      :code="example.code"
+      :example="example.code"
+      :visible="false"
+    ></expanding-code-example>
+
+  </div>
+</template>
+
+<script>
+import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+
+export default {
+  data () {
+    return {
+      examples: [
+        {
+          title: 'Default table',
+          code: `
+<p>Tables are borderless by default.</p>
+<p>Add <code>class="hx-table"</code> to the table tag for a HxUI styled table.</p>
+<p>You can set a table row as <strong>selected</strong> by appending the <code>is-selected</code> modifier on a <code>&#x3C;tr&#x3E;</code>.</p>
+<table class="hx-table is-striped mt-5">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th class="has-text-right"><abbr title="Played">Pld</abbr></th>
+      <th class="has-text-right"><abbr title="Won">W</abbr></th>
+      <th class="has-text-right"><abbr title="Drawn">D</abbr></th>
+      <th class="has-text-right"><abbr title="Lost">L</abbr></th>
+      <th class="has-text-right"><abbr title="Goals for">GF</abbr></th>
+      <th class="has-text-right"><abbr title="Goals against">GA</abbr></th>
+      <th class="has-text-right"><abbr title="Goal difference">GD</abbr></th>
+      <th class="has-text-right"><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">23</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">3</td>
+      <td class="has-text-right">68</td>
+      <td class="has-text-right">36</td>
+      <td class="has-text-right">+32</td>
+      <td class="has-text-right">81</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">20</td>
+      <td class="has-text-right">11</td>
+      <td class="has-text-right">7</td>
+      <td class="has-text-right">65</td>
+      <td class="has-text-right">36</td>
+      <td class="has-text-right">+29</td>
+      <td class="has-text-right">71</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">13</td>
+      <td class="has-text-right">6</td>
+      <td class="has-text-right">69</td>
+      <td class="has-text-right">35</td>
+      <td class="has-text-right">+34</td>
+      <td class="has-text-right">70</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr class="is-selected">
+      <th>4</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">71</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">+30</td>
+      <td class="has-text-right">66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester United</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">19</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">49</td>
+      <td class="has-text-right">35</td>
+      <td class="has-text-right">+14</td>
+      <td class="has-text-right">66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">18</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">11</td>
+      <td class="has-text-right">59</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">+18</td>
+      <td class="has-text-right">63</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage" title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham United</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">16</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">8</td>
+      <td class="has-text-right">65</td>
+      <td class="has-text-right">51</td>
+      <td class="has-text-right">+14</td>
+      <td class="has-text-right">62</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round" title="2016–17 UEFA Europa League">Europa League third qualifying round</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">16</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">10</td>
+      <td class="has-text-right">63</td>
+      <td class="has-text-right">50</td>
+      <td class="has-text-right">+13</td>
+      <td class="has-text-right">60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">9</td>
+      <td class="has-text-right">15</td>
+      <td class="has-text-right">41</td>
+      <td class="has-text-right">55</td>
+      <td class="has-text-right">−14</td>
+      <td class="has-text-right">51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a></td>
+      <td class="has-text-right">38</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">14</td>
+      <td class="has-text-right">12</td>
+      <td class="has-text-right">59</td>
+      <td class="has-text-right">53</td>
+      <td class="has-text-right">+6</td>
+      <td class="has-text-right">50</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+          `
+        },
+        {
+          title: 'Narrow table',
+          code: `
+<p>Add <code>class="hx-table is-narrow"</code> to the table tag to make the cells narrower.</p>
+<table class="hx-table is-narrow">
+  <thead>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Three</td>
+      <td>Four</td>
+    </tr>
+    <tr>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+    </tr>
+    <tr>
+      <td>Nine</td>
+      <td>Ten</td>
+    </tr>
+    <tr>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+          `
+        },
+        {
+          title: 'Hover table',
+          code: `
+            <p>Add <code>class="hx-table is-hover"</code> to the table tag for a hover state on rows</p>
+            <table class="hx-table is-hover">
+              <thead>
+                <tr>
+                  <th>One</th>
+                  <th>Two</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Three</td>
+                  <td>Four</td>
+                </tr>
+                <tr>
+                  <td>Five</td>
+                  <td>Six</td>
+                </tr>
+                <tr>
+                  <td>Seven</td>
+                  <td>Eight</td>
+                </tr>
+                <tr>
+                  <td>Nine</td>
+                  <td>Ten</td>
+                </tr>
+                <tr>
+                  <td>Eleven</td>
+                  <td>Twelve</td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
+          title: 'Contextual',
+          code: `
+            <p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag </p>
+            <table class="hx-table">
+              <thead>
+                <tr>
+                  <th>Context</th>
+                  <th>Icon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-danger">
+                  <td>Danger</td>
+                   <td><i class="hx-icon icon-exclamation"></i></td>
+                </tr>
+                <tr class="is-warning">
+                  <td>Warning</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
+                </tr>
+                <tr class="is-success">
+                  <td>Success</td>
+                   <td><i class="hx-icon icon-check"></i></td>
+                </tr>
+                <tr class="is-info">
+                  <td>Info</td>
+                   <td><i class="hx-icon icon-information"></i></td>
+                </tr>
+                <tr>
+                  <td>Default</td>
+                   <td><i class="hx-icon icon-information-outline"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
+          title: 'Grouped rows table',
+          code: `
+            <p>Add <code>class="hx-table-group"</code> to the tbody tag proceeding tbody related rows.</p>
+            <table class="hx-table is-striped">
+              <thead>
+                <tr>
+                  <th><div class="hx-checkbox-control">
+                      <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-all" class="hx-label"></label>
+                    </div></th>
+                  <th>Id</th>
+                  <th>User Code</th>
+                  <th>Firstname</th>
+                  <th>Surname</th>
+                </tr>
+              </thead>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Administrators <small>People who have access to all areas of the application</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-19" class="hx-label"></label>
+                    </div></td>
+                  <td>19</td>
+                  <td>TS001</td>
+                  <td>Tupac</td>
+                  <td>Shakur</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-20" class="hx-label"></label>
+                    </div></td>
+                  <td>20</td>
+                  <td>BP001</td>
+                  <td>Brian</td>
+                  <td>Pulliese</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-21" class="hx-label"></label>
+                    </div></td>
+                  <td>21</td>
+                  <td>JS001</td>
+                  <td>John</td>
+                  <td>Smith</td>
+                </tr>
+              </tbody>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>General Practice <small>People who have access to patient clinical records</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-1" class="hx-label"></label>
+                    </div></td>
+                  <td>1</td>
+                  <td>BR001</td>
+                  <td>Branda</td>
+                  <td>Reed</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-2" class="hx-label"></label>
+                    </div></td>
+                  <td>2</td>
+                  <td>MR001</td>
+                  <td>Mercedes</td>
+                  <td>Mendez</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-3" class="hx-label"></label>
+                    </div></td>
+                  <td>3</td>
+                  <td>HS001</td>
+                  <td>Harry</td>
+                  <td>Sechi</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-4" class="hx-label"></label>
+                    </div></td>
+                  <td>4</td>
+                  <td>CY001</td>
+                  <td>Chris</td>
+                  <td>Yap</td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-5" class="hx-label"></label>
+                    </div></td>
+                  <td>5</td>
+                  <td>KL001</td>
+                  <td>Kevin</td>
+                  <td>Liang</td>
+                </tr>
+              </tbody>
+               <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="5"><div>Specialist <small>People who are an expert on a specific aspect of a job</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-6" class="hx-label"></label>
+                    </div></td>
+                  <td>6</td>
+                  <td>BS001</td>
+                  <td>Biggie</td>
+                  <td>Smalls</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-7" class="hx-label"></label>
+                    </div></td>
+                  <td>7</td>
+                  <td>JS001</td>
+                  <td>Julia</td>
+                  <td>Sampson</td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-8" class="hx-label"></label>
+                    </div></td>
+                  <td>8</td>
+                  <td>GP001</td>
+                  <td>John</td>
+                  <td>Pipps</td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        }
+      ]
+    }
+  },
+  components: {
+    ExpandingCodeExample
+  }
+}
+</script>
+
+<style lang="css">
+</style>
