@@ -65,7 +65,7 @@
   &.is-warning {
     .hx-snackbar-content {
       background-color: $color-warning;
-      color: $color-gray-dark;
+      color: $color-warning-invert;
     }
   }
 
