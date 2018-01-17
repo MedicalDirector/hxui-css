@@ -233,6 +233,10 @@ export default {
       <td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
     <tr>
+      <td><code>.is-lighter</code></td>
+      <td class="is-lighter">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
+    <tr>
       <td><code>.is-light</code></td>
       <td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
