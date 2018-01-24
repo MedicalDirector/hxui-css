@@ -241,7 +241,12 @@ export default {
         { name: 'filter-outline' },
         { name: 'funnel' },
         { name: 'funnel-outline' },
-        { name: 'code' }
+        { name: 'code' },
+        { name: 'lock' },
+        { name: 'lock-outline' },
+        { name: 'bin' },
+        { name: 'bin-outline' },
+        { name: 'send' }
       ]
     }
   },
