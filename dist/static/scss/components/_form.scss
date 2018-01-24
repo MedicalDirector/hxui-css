@@ -17,10 +17,10 @@
       font-size: (1rem * $medium);
 
       & + .#{$namespace}-label {
-        top: (.6rem * $medium);
+        top: (.7rem * $medium);
         font-size: (1rem * $medium);
         sup {
-          font-size: (.6rem * $medium);
+          font-size: (.7rem * $medium);
         }
 
         & + .#{$namespace}-help {
@@ -69,10 +69,10 @@
       font-size: (1rem * $large);
 
       & + .#{$namespace}-label {
-        top: (.6rem * $large);
+        top: (.7rem * $large);
         font-size: (1rem * $large);
         sup {
-          font-size: (.6rem * $large);
+          font-size: (.7rem * $large);
         }
 
         & + .#{$namespace}-help {
@@ -118,7 +118,7 @@
       & + .#{$namespace}-label {
         color: $color-success;
 
-        & + .#{$namespace}.#{$namespace}-help {
+        & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
           color: $color-success;
@@ -175,7 +175,7 @@
     }
   }
 
-  &.is-danger {
+  &.is-danger, {
     input,
     textarea {
       & + .#{$namespace}-label {
@@ -204,6 +204,28 @@
     .hx-input {
       text-align: center;
     }
+  }
+
+  .#{$namespace}-input {
+
+    &.ng-invalid.ng-dirty {
+      & + .#{$namespace}-label {
+        color: $color-danger;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $color-danger;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $color-danger;
+          }
+        }
+      }
+    }
+
   }
 }
 
@@ -269,22 +291,25 @@
 
   & + .#{$namespace}-label {
     position: absolute;
-    top: .6rem;
+    top: .7rem;
     margin: 0;
     font-weight: normal;
+    color: $color-gray-lighter;
     left: 0;
     transition: .3s;
     z-index: 0;
 
     sup {
+      top: -.2rem;
       color: $color-danger;
-      font-size: .6rem;
+      font-size: .7rem;
+      transition: .3s;
     }
 
     & + .#{$namespace}-help {
       font-size: .75rem;
       margin-top: .25rem;
-      color: $color-gray;
+      color: $color-gray-light;
       transition: .3s;
       opacity: 0;
       position: relative;
@@ -319,14 +344,19 @@
   &:-webkit-autofill  ~ .#{$namespace}-label {
     top: -.5rem;
     font-size: .75rem;
-    color: $color-primary;
     sup {
+      top: -.3rem;
       font-size: .4rem;
     }
   }
 
+  &:focus ~ .#{$namespace}-label,
+  &:-webkit-autofill  ~ .#{$namespace}-label {
+    color: $color-primary;
+  }
+
   &:focus ~ .#{$namespace}-help,
-  &:valid ~ .#{$namespace}-help,
+  // &:valid ~ .#{$namespace}-help,
   &:-webkit-autofill  ~ .#{$namespace}-label {
     opacity: 1;
     &:before,
@@ -365,7 +395,6 @@
   }
 }
 
-
 .#{$namespace}-select {
   -webkit-appearance: none;
   -moz-appearance:none;
@@ -380,6 +409,15 @@
   border-width: 0 0 1px 0;
   position: relative;
   outline: none;
+
+  &.ng-invalid.ng-dirty {
+    border-color: $color-danger;
+    color: $color-danger;
+
+    & + .#{$namespace}-label {
+      color: $color-danger;
+    }
+  }
 
   &[disabled],
   &.is-disabled {
