@@ -92,7 +92,8 @@ $color-dark-invert: $color-light !default;
 $colors: (
   'white': ($color-white, $color-black),
   'black': ($color-black, $color-white),
-  'light': ($color-light, $color-light-invert),
+  'light': ($color-gray-light, $color-gray-light),
+  'lighter': ($color-gray-lighter, $color-gray-lighter),
   'transparent': (transparent, $color-black),
   'dark': ($color-dark, $color-dark-invert),
   'primary': ($color-primary, $color-primary-invert),
