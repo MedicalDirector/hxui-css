@@ -437,6 +437,58 @@ export default {
               </tbody>
             </table>
           `
+        },
+        {
+          title: 'Matrix table',
+          code: `
+            <p>Add column helper classes for specific column types. You can add <code>class="hx-table-checkbox"</code>, <code>class="hx-table-icon"</code>, <code>class="hx-table-actions"</code> to td tags.</p>
+            <table class="hx-table is-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Allied Health</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">GP <i class="hx-icon icon-arrow-down is-small"></i></a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Nurse Practitioner</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Nurse</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Specialist</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Accounts</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Practice Manager</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Receptionist</a></th>
+                  <th class="hx-table-icon"><span class="hx-icon icon-information-outline is-small"></span><a href="#">Administrator</a></th>
+                </tr>
+              </thead>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="10"><div>Role Statistics<small>Statistical information about specific roles</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Users with this role assigned</td>
+                  <td>2</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>1</td>
+                </tr>
+                 <tr>
+                  <td>Edited from original settings</td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                  <td><button class="hx-button is-mall is-outline">No</button></td>
+                </tr>
+              </tbody>
+            </table>
+          `
         }
       ]
     }
