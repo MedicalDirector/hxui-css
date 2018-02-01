@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gethxui.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/app.6d1d514dfccab247c4ae.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/layouts_default.ce8515272347893533f7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/manifest.67daf210ba5c90932a87.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_alerts.21922c096ed41fe2bd65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_badges.220b900ae7c3d0e0752b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_buttons.458f3a77b56d24f2d60d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_container-demo.6ad7fcc6c403a082db0c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_containers.39c0888f3de1622d81f9.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_downloads.bc16e987421db8816689.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_dropdowns.f51faa3376baba8ca774.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_elevation.00d96597ec923fbbc305.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_forms.8c4343edcd5427c0ac47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_grid.2089f58531fe8ea87138.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_icons.3b35469468ef939da4a0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_index.52e326bd45f8afbdf9f2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_install.7fe871dd69eb280fde4f.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_lists.84bad0f34e41f54f391a.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_modals.20e7b35710563e4610b3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_nav.6f12c0f5860d71ee0724.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_pages.78e8081b0540ca82872f.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_pagination.ba981ace8c1f2aea9f76.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_progress-timeline.bf5e45b4008a07c693af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_sections.6d7e0b2a4ef4d341d191.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_sidebar.61d7a296cd0b00209c3b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_snackbars-toasts.4581eb9d7f3fc1cb5c64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_spacing.a27f40cc0332b798ad26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_tables.e0bffb880f572905b861.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_tabs.9910c5887b7f77a846ab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_toggle.178085625a1eb41ce908.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_tooltips.e05d500630d8c49efc1e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_typography.cc3c65b9254861fa9882.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/app.e856862db03b64f63412.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/layouts/default.10a4e1dd429cc0afeadb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.ee00bba9de442575828b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/alerts.c565e331018980ff7ba4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/badges.674e8f293da1261d0a23.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/buttons.9a65ad56b34d453b89b9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/container-demo.ad7bdf006c144a797fce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/containers.2c6ab250e346f2a378b5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/downloads.bc3f50bbeae27a6956c9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/dropdowns.bad038dd430f79e233a2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/elevation.ad8059d3bffc2f56292f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/forms.5c215d0f99fd8b7eca9b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/grid.cafe4bb48169d4ce960f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/icons.88e792a8dfda75b11c76.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/index.7b143bbeba2aa52a9f27.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/install.a7032879eca6e00dbab7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/lists.44aad1364e067579a40c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/modals.879f03df02c7876e4891.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/nav.a39bb9eeb8c698dc6b78.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pages.bbe9eaf2eea53536ea93.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pagination.eec78101d5cd9f9119c1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/progress-timeline.36c196623289feeed9ec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sections.8bf8784c0d528f3b5aaf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sidebar.f1d86686a74219841c1b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/snackbars-toasts.54bea6ed534e47ceaf24.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/spacing.414a68490d9a9cb3d385.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tables.8367339b15f5942635e6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tabs.cc0e630c9b13606d9c52.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/toggle.46bd6067d8659d37daf4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tooltips.99546a6b78e140686356.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/typography.a0d9a4ece97e531bf359.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.1dcc887.eot" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.691d0c7.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.510c5a5.woff" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.5a49bbb.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.fa5974d.ttf" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.ae4408a.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/_nuxt/img/hxui.bdcee9d.svg" afterPath="$PROJECT_DIR$/dist/_nuxt/img/hxui.e42531e.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/cards.5b6b79bd455b93c1671c.js" afterPath="$PROJECT_DIR$/dist/_nuxt/pages_cards.c76a5bb0aff2c663cb17.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/alerts/index.html" afterPath="$PROJECT_DIR$/dist/alerts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/badges/index.html" afterPath="$PROJECT_DIR$/dist/badges/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/buttons/index.html" afterPath="$PROJECT_DIR$/dist/buttons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards/index.html" afterPath="$PROJECT_DIR$/dist/cards/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/container-demo/index.html" afterPath="$PROJECT_DIR$/dist/container-demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/containers/index.html" afterPath="$PROJECT_DIR$/dist/containers/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/downloads/index.html" afterPath="$PROJECT_DIR$/dist/downloads/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/dropdowns/index.html" afterPath="$PROJECT_DIR$/dist/dropdowns/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/elevation/index.html" afterPath="$PROJECT_DIR$/dist/elevation/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/forms/index.html" afterPath="$PROJECT_DIR$/dist/forms/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/grid/index.html" afterPath="$PROJECT_DIR$/dist/grid/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/icons/index.html" afterPath="$PROJECT_DIR$/dist/icons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/install/index.html" afterPath="$PROJECT_DIR$/dist/install/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/lists/index.html" afterPath="$PROJECT_DIR$/dist/lists/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/modals/index.html" afterPath="$PROJECT_DIR$/dist/modals/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/nav/index.html" afterPath="$PROJECT_DIR$/dist/nav/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/pages/index.html" afterPath="$PROJECT_DIR$/dist/pages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/pagination/index.html" afterPath="$PROJECT_DIR$/dist/pagination/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/progress-timeline/index.html" afterPath="$PROJECT_DIR$/dist/progress-timeline/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sections/index.html" afterPath="$PROJECT_DIR$/dist/sections/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sidebar/index.html" afterPath="$PROJECT_DIR$/dist/sidebar/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/fonts/selection.json" afterPath="$PROJECT_DIR$/dist/static/fonts/selection.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/toggle/index.html" afterPath="$PROJECT_DIR$/dist/toggle/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/fonts/selection.json" afterPath="$PROJECT_DIR$/static/static/fonts/selection.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="415967" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_icon.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icon.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hxui.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/hxui.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_icons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hxui.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/_nuxt/css/hxui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="49401" lean-forward="false" selection-start-line="0" selection-start-column="49401" selection-end-line="0" selection-end-column="49401" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ul</find>
+      <find>hx-popover</find>
+      <find>hxpopover</find>
+      <find>hpopover</find>
+      <find>popover</find>
+      <find>shadow</find>
+      <find>a:</find>
+      <find>links</find>
+      <find>.ng-valid</find>
+      <find>icon</find>
+      <find>large</find>
+      <find>header</find>
+      <find>valid</find>
+      <find>justify-content</find>
+      <find>odd</find>
+      <find>font</find>
+      <find>font-weight-bolder</find>
+      <find>hover</find>
+      <find>e93c</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>:-webkit-autofill</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/scss/utilities/_reset.scss" />
+        <option value="$PROJECT_DIR$/static/scss/components/_icon.scss" />
+        <option value="$PROJECT_DIR$/static/scss/components/_progress-timeline.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/ProgressTimeline.vue" />
+        <option value="$PROJECT_DIR$/static/scss/components/_lists.scss" />
+        <option value="$PROJECT_DIR$/static/scss/hxui.scss" />
+        <option value="$PROJECT_DIR$/dist/static/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/dist/static/scss/hxui.scss" />
+        <option value="$PROJECT_DIR$/dist/static/scss/components/_form.scss" />
+        <option value="$PROJECT_DIR$/static/scss/components/_dropdown.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Dropdowns.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Typography.vue" />
+        <option value="$PROJECT_DIR$/static/scss/utilities/_text.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Install.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Forms.vue" />
+        <option value="$PROJECT_DIR$/static/scss/components/_form.scss" />
+        <option value="$PROJECT_DIR$/static/scss/components/_modal.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Modals.vue" />
+        <option value="$PROJECT_DIR$/static/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/static/scss/base/_table.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Tables.vue" />
+        <option value="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2906" />
+    <option name="height" value="1826" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../interview" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="C:\gitRepo\gethxui\node_modules\eslint" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="" />
+      <created>1505383987851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505383987851</updated>
+      <workItem from="1505383989366" duration="1946000" />
+      <workItem from="1505426804821" duration="4635000" />
+      <workItem from="1505879161837" duration="2146000" />
+      <workItem from="1506053251220" duration="866000" />
+      <workItem from="1506300174882" duration="2138000" />
+      <workItem from="1506317136220" duration="154000" />
+      <workItem from="1506390383980" duration="1490000" />
+      <workItem from="1507515004916" duration="279000" />
+      <workItem from="1507515611091" duration="153000" />
+      <workItem from="1507761242581" duration="753000" />
+      <workItem from="1507843783336" duration="23000" />
+      <workItem from="1508191836354" duration="66000" />
+      <workItem from="1508192050196" duration="14000" />
+      <workItem from="1508453101787" duration="4056000" />
+      <workItem from="1508457961304" duration="794000" />
+      <workItem from="1508820138603" duration="2220000" />
+      <workItem from="1508880543302" duration="6633000" />
+      <workItem from="1509055869230" duration="7354000" />
+      <workItem from="1510095099884" duration="19000" />
+      <workItem from="1515534633623" duration="13400000" />
+      <workItem from="1515617702096" duration="265000" />
+      <workItem from="1515621898017" duration="9607000" />
+      <workItem from="1515708202975" duration="1386000" />
+      <workItem from="1517448097010" duration="1684000" />
+      <workItem from="1517470199640" duration="450000" />
+      <workItem from="1517470674504" duration="550000" />
+      <workItem from="1517471462334" duration="325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="63406000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2505293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5012337" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4472973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_icon.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_progress-timeline.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_dropdown.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/utilities/mixins/_hover.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_lists.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_form.scss" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_icon.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_progress-timeline.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/utilities/mixins/_hover.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_lists.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_dropdown.scss" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_dropdown.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/utilities/_reset.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/utilities/mixins/_hover.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/ProgressTimeline.vue" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_progress-timeline.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_lists.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/hxui.scss" />
+    <entry file="file://$PROJECT_DIR$/dist/static/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/static/scss/hxui.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="57" column="2" lean-forward="false" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/static/scss/components/_form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="781" column="0" lean-forward="true" selection-start-line="696" selection-start-column="0" selection-end-line="781" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Dropdowns.vue" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_dropdown.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_colors.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_code.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_content.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Typography.vue" />
+    <entry file="file://$PROJECT_DIR$/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_icons.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_icon.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/utilities/_text.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Install.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Forms.vue" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_form.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Modals.vue" />
+    <entry file="file://$PROJECT_DIR$/static/scss/components/_modal.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/static/scss/base/_table.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Tables.vue" />
+    <entry file="file://$PROJECT_DIR$/dist/_nuxt/css/hxui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49401" lean-forward="false" selection-start-line="0" selection-start-column="49401" selection-end-line="0" selection-end-column="49401" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/hxui.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
