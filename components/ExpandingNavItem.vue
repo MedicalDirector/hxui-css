@@ -56,9 +56,7 @@ export default {
 <style lang="scss">
 .navs {
   transition: .3s ease-in-out;
-  overflow: auto;
-    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05);
-  .hx-nav {
-  }
+  overflow: hidden;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05);
 }
 </style>
