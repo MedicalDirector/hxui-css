@@ -1,5 +1,4 @@
 
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'hxui' !important;
@@ -39,8 +38,14 @@
 .icon-box:before {
   content: "\e90a";
 }
+.icon-appointment-outline:before {
+  content: "\e90b";
+}
 .icon-calendar-outline:before {
   content: "\e90b";
+}
+.icon-appointment:before {
+  content: "\e90c";
 }
 .icon-calendar:before {
   content: "\e90c";
@@ -147,6 +152,9 @@
 .icon-iphone:before {
   content: "\e92e";
 }
+.icon-mobile:before {
+  content: "\e92e";
+}
 .icon-list-outline:before {
   content: "\e92f";
 }
@@ -168,7 +176,13 @@
 .icon-nutrition-outline:before {
   content: "\e935";
 }
+.icon-carrot-outline:before {
+  content: "\e935";
+}
 .icon-nutrition:before {
+  content: "\e936";
+}
+.icon-carrot:before {
   content: "\e936";
 }
 .icon-patient-add-outline:before {
@@ -183,8 +197,14 @@
 .icon-patient:before {
   content: "\e93a";
 }
+.icon-user-outline:before {
+  content: "\e93b";
+}
 .icon-person-outline:before {
   content: "\e93b";
+}
+.icon-user:before {
+  content: "\e93c";
 }
 .icon-person:before {
   content: "\e93c";
@@ -194,6 +214,9 @@
 }
 .icon-pie:before {
   content: "\e93e";
+}
+.icon-plus-empty:before {
+  content: "\e940";
 }
 .icon-plus-outline:before {
   content: "\e940";
@@ -234,8 +257,14 @@
 .icon-telephone:before {
   content: "\e94c";
 }
+.icon-alcohol-outline:before {
+  content: "\e94d";
+}
 .icon-wine-outline:before {
   content: "\e94d";
+}
+.icon-alcohol:before {
+  content: "\e94e";
 }
 .icon-wine:before {
   content: "\e94e";
@@ -285,11 +314,20 @@
 .icon-note:before {
   content: "\e95d";
 }
+.icon-settings-outline:before {
+  content: "\e95e";
+}
 .icon-cog-outline:before {
   content: "\e95e";
 }
 .icon-recall:before {
   content: "\e95f";
+}
+.icon-login:before {
+  content: "\e960";
+}
+.icon-logout:before {
+  content: "\e960";
 }
 .icon-power:before {
   content: "\e960";
@@ -321,8 +359,14 @@
 .icon-caret-right:before {
   content: "\e969";
 }
+.icon-filter-outline:before {
+  content: "\e96a";
+}
 .icon-funnel-outline:before {
   content: "\e96a";
+}
+.icon-filter:before {
+  content: "\e96b";
 }
 .icon-funnel:before {
   content: "\e96b";
@@ -336,20 +380,35 @@
 .icon-grid:before {
   content: "\e96e";
 }
+.icon-settings:before {
+  content: "\e96f";
+}
 .icon-cog:before {
   content: "\e96f";
 }
 .icon-react:before {
   content: "\e970";
 }
+.icon-dashboard-outline:before {
+  content: "\e971";
+}
 .icon-speedometer-outline:before {
   content: "\e971";
+}
+.icon-dashboard:before {
+  content: "\e972";
 }
 .icon-speedometer:before {
   content: "\e972";
 }
+.icon-woman:before {
+  content: "\e973";
+}
 .icon-female:before {
   content: "\e973";
+}
+.icon-man:before {
+  content: "\e974";
 }
 .icon-male:before {
   content: "\e974";
