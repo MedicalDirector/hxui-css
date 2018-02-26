@@ -1,0 +1,131 @@
+// stepper__step
+//
+.#{$namespace}-stepper {
+
+  &__header {
+    border-bottom: none;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1), 0 4px 10px -5px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+
+    &.is-multiline {
+      align-items: start;
+
+      .divider {
+        margin: 2.25rem -4rem 0;
+        align-self: flex-start;
+      }
+
+      .#{$namespace}-stepper__step {
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 190px;
+
+        &__step {
+          margin-bottom: .5rem;
+          margin-right: 0;
+        }
+
+        &__label {
+          text-align: center;
+          line-height: 1.2;
+        }
+
+      }
+
+    }
+
+    .#{$namespace}-stepper__step {
+      padding: 1.5rem;
+      display: flex;
+
+      &.is-editable {
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0,0,0,.05);
+        }
+      }
+
+      &.has-error {
+
+        .#{$namespace}-stepper__step {
+
+          &__step {
+            background-color: transparent;
+
+            .hx-icon {
+              color: $color-danger;
+            }
+
+          }
+
+          &__label {
+            color: $color-danger;
+          }
+        }
+
+      }
+
+      &__step {
+        height: 1.5rem;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        border-radius: 50%;
+        text-align: center;
+        background-color: rgba(0,0,0,.38);
+        color: $color-white;
+        margin-right: .5rem;
+
+        .hx-icon {
+          font-size: 1.8rem;
+          line-height: 1.8;
+        }
+
+      }
+
+      &__label {
+        color: rgba(0,0,0,.38);
+      }
+
+      &.is-active, &.is-complete {
+
+        .#{$namespace}-stepper__step {
+
+          &__step {
+            background-color: $color-primary;
+          }
+
+          &__label {
+            color: $color-black;
+          }
+
+        }
+
+      }
+
+    }
+
+    .divider {
+      flex: 1;
+    }
+
+  }
+
+  &__items {
+
+    .#{$namespace}-stepper {
+
+      &__content {
+
+      }
+
+      &__wrapper {
+        padding: 1.5rem;
+      }
+
+    }
+
+  }
+
+}

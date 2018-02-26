@@ -193,6 +193,7 @@
   z-index: 1;
   @media (max-width: 1264px) {
     position: fixed;
+    z-index: 100;
   }
   > span {
     display: flex;
