@@ -1,8 +1,37 @@
-// stepper__step
+// stepper-step
 //
 .#{$namespace}-stepper {
 
-  &__header {
+  &.is-vertical {
+
+    .#{$namespace}-stepper {
+
+      &-step {
+        padding: 1.5rem 1.5rem 1rem;
+      }
+
+      &-content {
+
+        &:not(:last-child) {
+          border-left: 1px solid rgba(0,0,0,.1);
+        }
+
+        margin: -.5rem -2.25rem -1rem 2.25rem;
+        padding: 1rem 3.75rem 1rem 1.43rem;
+        width: auto;
+
+      }
+
+      &-wrapper {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+  }
+
+  &-header {
     border-bottom: none;
     box-shadow: 0 1px 0 0 rgba(0,0,0,.1), 0 4px 10px -5px rgba(0,0,0,.1);
     display: flex;
@@ -16,17 +45,17 @@
         align-self: flex-start;
       }
 
-      .#{$namespace}-stepper__step {
+      .#{$namespace}-stepper-step {
         align-items: center;
         flex-direction: column;
         flex-basis: 190px;
 
-        &__step {
+        &-step {
           margin-bottom: .5rem;
           margin-right: 0;
         }
 
-        &__label {
+        &-label {
           text-align: center;
           line-height: 1.2;
         }
@@ -35,93 +64,111 @@
 
     }
 
-    .#{$namespace}-stepper__step {
-      padding: 1.5rem;
-      display: flex;
-
-      &.is-editable {
-        cursor: pointer;
-
-        &:hover {
-          background-color: rgba(0,0,0,.05);
-        }
-      }
-
-      &.has-error {
-
-        .#{$namespace}-stepper__step {
-
-          &__step {
-            background-color: transparent;
-
-            .hx-icon {
-              color: $color-danger;
-            }
-
-          }
-
-          &__label {
-            color: $color-danger;
-          }
-        }
-
-      }
-
-      &__step {
-        height: 1.5rem;
-        width: 1.5rem;
-        line-height: 1.5rem;
-        border-radius: 50%;
-        text-align: center;
-        background-color: rgba(0,0,0,.38);
-        color: $color-white;
-        margin-right: .5rem;
-
-        .hx-icon {
-          font-size: 1.8rem;
-          line-height: 1.8;
-        }
-
-      }
-
-      &__label {
-        color: rgba(0,0,0,.38);
-      }
-
-      &.is-active, &.is-complete {
-
-        .#{$namespace}-stepper__step {
-
-          &__step {
-            background-color: $color-primary;
-          }
-
-          &__label {
-            color: $color-black;
-          }
-
-        }
-
-      }
-
-    }
-
     .divider {
       flex: 1;
+
+      &:last-child {
+        display: none;
+      }
+
     }
 
   }
 
-  &__items {
+  .#{$namespace}-stepper-step {
+    padding: 1.5rem;
+    display: flex;
 
-    .#{$namespace}-stepper {
+    &.is-editable {
+      cursor: pointer;
 
-      &__content {
+      &:hover {
+        background-color: rgba(0,0,0,.05);
+      }
+    }
+
+    &.has-error {
+
+      .#{$namespace}-stepper-step {
+
+        &-step {
+          background-color: transparent;
+
+          .hx-icon {
+            color: $color-danger;
+          }
+
+        }
+
+        &-label {
+          color: $color-danger;
+        }
+      }
+
+    }
+
+    @media only screen and (max-width: 959px) {
+
+      &-step {
+        margin-right: 0;
+      }
+
+      &-label {
+        display: none;
+      }
+
+    }
+
+    &-step {
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      border-radius: 50%;
+      text-align: center;
+      background-color: rgba(0,0,0,.38);
+      color: $color-white;
+      margin-right: .5rem;
+
+      .hx-icon {
+        font-size: 1.8rem;
+        line-height: 1.8;
+      }
+
+    }
+
+    &-label {
+      color: rgba(0,0,0,.38);
+    }
+
+    &.is-active, &.is-complete {
+
+      .#{$namespace}-stepper-step {
+
+        &-step {
+          background-color: $color-primary;
+        }
+
+        &-label {
+          color: $color-black;
+        }
 
       }
 
-      &__wrapper {
-        padding: 1.5rem;
+    }
+
+  }
+
+  .#{$namespace}-stepper {
+
+    &-content {
+
+    }
+
+    &-wrapper {
+      padding: 1.5rem;
+
+      > *:first-of-type {
+        margin-top: 0;
       }
 
     }
