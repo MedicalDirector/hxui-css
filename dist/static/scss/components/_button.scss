@@ -29,6 +29,8 @@
   text-align: center;
   white-space: nowrap;
   transition: all .15s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 400;
 
   strong {
     color: inherit;
@@ -37,13 +39,13 @@
   .#{$namespace}-icon-control {
 
     &:first-child:not(:last-child) {
-      margin-left: calc(-0.375em - 1px);
-      margin-right: 0.1875em;
+      margin-left: calc(-0.1rem - 1px);
+      margin-right: 0.3rem;
     }
 
     &:last-child:not(:first-child) {
-      margin-left: 0.1875em;
-      margin-right: calc(-0.375em - 1px);
+      margin-left: 0.3rem;
+      margin-right: calc(-0.1rem - 1px);
     }
 
     &:first-child:last-child {
@@ -128,7 +130,7 @@
       &.is-hovered {
         background-color: darken($color, 10%);
         border-color: transparent;
-        color: $color-invert;
+        color: findColorInvert(darken($color, 10%));
       }
 
       &:focus,
@@ -143,7 +145,7 @@
         background-color: darken($color, 5%);
         border-color: transparent;
         box-shadow: $button-shadow-inset;
-        color: $color-invert;
+        color: findColorInvert(darken($color, 5%));
       }
 
       &.is-loading {
@@ -239,7 +241,7 @@
 
     .hx-icon {
       &.is-large {
-        height: 2rem;
+        height: 3rem;
       }
     }
   }
@@ -393,6 +395,8 @@ input[type="submit"].button {
     padding-left: 1.15rem;
     padding-right: 1.15rem;
     border-radius: 0;
+    letter-spacing: -.01em;
+    font-weight: 300;
 
     &.is-light {
       border-left: 1px solid rgba($color-white, 1);

@@ -131,6 +131,10 @@ export default {
               path: '/snackbars-toasts'
             },
             {
+              name: 'Steppers',
+              path: '/steppers'
+            },
+            {
               name: 'Tabs',
               path: '/tabs'
             },
@@ -141,6 +145,10 @@ export default {
             {
               name: 'Tooltips',
               path: '/tooltips'
+            },
+            {
+              name: 'Toolbars',
+              path: '/toolbars'
             }
           ]
         },

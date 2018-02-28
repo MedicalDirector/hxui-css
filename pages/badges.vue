@@ -57,7 +57,13 @@ export default {
           title: 'Sizes',
           code: `
 <div class="has-text-centered">
-  <p>There are 2 additional sizes</p>
+  <p>There are 4 additional sizes</p>
+  <p>
+    <span class="hx-badge is-outlined is-small">Small</span>
+  </p>
+  <p>
+    <span class="hx-badge is-outlined">Default</span>
+  </p>
   <p>
     <span class="hx-badge is-outlined is-medium">Medium</span>
   </p>

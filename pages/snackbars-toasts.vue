@@ -33,7 +33,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -46,7 +48,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -59,7 +63,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -72,7 +78,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -90,7 +98,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -101,7 +111,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -111,8 +123,10 @@ export default {
   <div class="hx-snackbar is-absolute is-warning is-active">
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
-      <button class="hx-button is-dark is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+      <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -123,7 +137,9 @@ export default {
     <div class="hx-snackbar-content">
       Hello, I'm a snackbar
       <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
-        <i class="hx-icon icon-close-empty is-large"></i>
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-close-empty is-medium"></i>
+        </span>
       </button>
     </div>
   </div>
