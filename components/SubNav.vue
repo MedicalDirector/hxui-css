@@ -141,6 +141,10 @@ export default {
             {
               name: 'Tooltips',
               path: '/tooltips'
+            },
+            {
+              name: 'Toolbars',
+              path: '/toolbars'
             }
           ]
         },
