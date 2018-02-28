@@ -1,0 +1,99 @@
+// =========
+// Navbar
+// =========
+
+.#{$namespace}-toolbar {
+
+    display: flex;
+    align-items: center;
+    padding:$spacer;
+    background-color:#fff;
+
+    span{
+      color: $color-gray-lighter;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+
+
+    // Contextual themes
+    &.is-primary{
+      background-color:$color-primary;
+      span{
+        color:rgba(255,255,255,0.8);
+      }
+      button,a{
+        color:#fff;
+      }
+
+      &.is-inverted{
+        background-color:transparent;
+        span{
+          color:rgba($color-primary,0.8);
+        }
+        button,a{
+          color:$color-primary;
+        }
+      }
+    }
+
+    &.is-warning{
+      background-color:$color-warning;
+      span{
+        color:rgba(255,255,255,0.8);
+      }
+      button,a{
+        color:#fff;
+      }
+
+      &.is-inverted{
+        background-color:transparent;
+        span{
+          color:rgba($color-warning,0.8);
+        }
+        button,a{
+          color:$color-warning;
+        }
+      }
+    }
+
+    &.is-danger{
+      background-color:$color-danger;
+      span{
+        color:rgba(255,255,255,0.8);
+      }
+      button,a{
+        color:#fff;
+      }
+      &.is-inverted{
+        background-color:transparent;
+        span{
+          color:rgba($color-danger,0.8);
+        }
+        button,a{
+          color:$color-danger;
+        }
+      }
+    }
+
+    &.is-info{
+      background-color:$color-info;
+      span{
+        color:rgba(255,255,255,0.8);
+      }
+      button,a{
+        color:#fff;
+      }
+      &.is-inverted{
+        background-color:transparent;
+        span{
+          color:rgba($color-info,0.8);
+        }
+        button,a{
+          color:$color-info;
+        }
+      }
+    }
+}
