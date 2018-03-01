@@ -10,4 +10,6 @@ npm-debug.log
 # Nuxt generate
 # dist
 
+.idea
 .idea/workspace.xml
+.DS_Store
