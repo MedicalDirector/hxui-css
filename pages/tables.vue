@@ -288,13 +288,69 @@ export default {
           `
         },
         {
+          title: 'Table with text field',
+          code: `
+            <p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag </p>
+            <table class="hx-table">
+              <thead>
+                <tr>
+                  <th>Dessert (100g)</th>
+                  <th class="has-text-right"><a href="#"><i class="hx-icon icon-arrow-down"></i> Calories</a></th>
+                  <th class="has-text-right">Fat (g)</th>
+                  <th class="has-text-right">Carbs (g)</th>
+                  <th class="has-text-right">Protein (g)</th>
+                  <th class="has-text-right">Iron (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td>Frozen Yoghurt</td>
+                  <td width="110" class="has-text-right">159</td>
+                  <td width="90" class="has-text-right">6</td>
+                  <td width="90" class="has-text-right">24</td>
+                  <td width="90" class="has-text-right">4</td>
+                  <td width="90" class="has-text-right">1</td>
+                </tr>
+                <tr class="">
+                  <td class="has-text-field">
+                    <input class="hx-input" type="text" placeholder="Name of dessert" required>
+                  </td>
+                  <td width="110" class="has-text-field has-text-right">
+                    <input class="hx-input" type="text" placeholder="" required>
+                  </td>
+                  <td width="90" class="has-text-field has-text-right">
+                    <input class="hx-input" type="text" placeholder="" required>
+                  </td>
+                  <td width="90" class="has-text-field has-text-right">
+                    <input class="hx-input" type="text" placeholder="" required>
+                  </td>
+                  <td width="90" class="has-text-field has-text-right">
+                    <input class="hx-input" type="text" placeholder="" required>
+                  </td>
+                  <td width="90" class="has-text-field has-text-right">
+                    <input class="hx-input" type="text" placeholder="" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <a href="#" class="is-gray is-flex hx-flex-align-center">
+                      <i class="hx-icon icon-plus-outline mr-2"></i>
+                      Add new row
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
           title: 'Grouped rows table',
           code: `
             <p>Add <code>class="hx-table-group"</code> to the tbody tag proceeding tbody related rows.</p>
             <table class="hx-table is-striped">
               <thead>
                 <tr>
-                  <th><div class="hx-checkbox-control">
+                  <th width="1"><div class="hx-checkbox-control">
                       <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-all" class="hx-label"></label>
                     </div></th>

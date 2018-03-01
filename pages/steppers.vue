@@ -143,6 +143,7 @@ export default {
 </div>
 
 <h6 class="mb-2">Editable step</h6>
+<p>Add <code>is-editable</code> to the <code>hx-stepper-step</code> inside the <code>hx-stepper-header</code> tag.</p>
 <div class="hx-card mb-10">
   <div class="hx-stepper">
     <div class="hx-stepper-header">
@@ -167,6 +168,7 @@ export default {
 </div>
 
 <h6 class="mb-2">Error step</h6>
+<p>Add <code>has-error</code> to the error <code>hx-stepper-step</code> inside the <code>hx-stepper-header</code> tag.</p>
 <div class="hx-card mb-10">
   <div class="hx-stepper">
     <div class="hx-stepper-header">
@@ -193,6 +195,7 @@ export default {
 </div>
 
 <h6 class="mb-2">Multiline</h6>
+<p>Add <code>is-multiline</code> to the <code>hx-stepper-header</code> tag.</p>
 <div class="hx-card">
   <div class="hx-stepper">
     <div class="hx-stepper-header is-multiline">
@@ -218,6 +221,7 @@ export default {
       {
         title: 'Vertical',
         code: `
+<p>Add <code>is-vertical</code> to the <code>hx-stepper</code> tag.</p>
 <div class="hx-card">
   <div class="hx-stepper is-vertical">
     <div class="hx-stepper-step is-active">
