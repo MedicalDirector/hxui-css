@@ -210,6 +210,35 @@ export default {
     </div>
   </div>
 </div>
+
+<p>Adding textfield into the list</p>
+<div class="hx-columns mt-5">
+  <div class="hx-column is-4 is-offset-4">
+    <div class="hx-card">
+      <ul class="hx-list-group">
+        <li class="">
+          <a>
+            Bring the dog out for a walk
+          </a>
+        </li>
+        <li class="">
+          <a>
+            Clear the rubbish
+          </a>
+        </li>
+        <li class="has-text-field">
+          <input type="text" placeholder="Add item here" />
+        </li>
+        <li class="">
+          <a href="#" class="is-gray">
+            <i class="hx-icon icon-plus-outline mr-2"></i>
+            Add another row
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
           `
         }
       ]
