@@ -87,6 +87,10 @@ export default {
           title: 'Components',
           items: [
             {
+              name: 'Accordions',
+              path: '/accordions'
+            },
+            {
               name: 'Alerts',
               path: '/alerts'
             },
