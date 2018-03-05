@@ -246,7 +246,20 @@ export default {
         { name: 'lock-outline' },
         { name: 'bin' },
         { name: 'bin-outline' },
-        { name: 'send' }
+        { name: 'send' },
+        { name: 'home' },
+        { name: 'home-outline' },
+        { name: 'compass-outline' },
+        { name: 'compass' },
+        { name: 'edit-outline' },
+        { name: 'edit' },
+        { name: 'recalls' },
+        { name: 'pathology-outline' },
+        { name: 'pathology' },
+        { name: 'imaging-outline' },
+        { name: 'imaging' },
+        { name: 'radiology-outline' },
+        { name: 'radiology' }
       ]
     }
   },
