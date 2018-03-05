@@ -13,56 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-imaging-outline:before {
+  content: "\e982";
+}
+.icon-radiology-outline:before {
+  content: "\e982";
+}
+.icon-compass-outline:before {
+  content: "\e99c";
+}
 .icon-compass:before {
   content: "\e93f";
-}
-.icon-compass-outline .path1:before {
-  content: "\e982";
-  color: rgb(35, 31, 31);
-}
-.icon-compass-outline .path2:before {
-  content: "\e983";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path3:before {
-  content: "\e984";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path4:before {
-  content: "\e985";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path5:before {
-  content: "\e986";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path6:before {
-  content: "\e987";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path7:before {
-  content: "\e988";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path8:before {
-  content: "\e989";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path9:before {
-  content: "\e98a";
-  margin-left: -1.03515625em;
-  color: rgb(4, 5, 5);
-}
-.icon-compass-outline .path10:before {
-  content: "\e98b";
-
 }
 .icon-edit-outline:before {
   content: "\e98c";
@@ -84,45 +45,6 @@
 }
 .icon-pathology:before {
   content: "\e992";
-}
-.icon-imaging-outline .path1:before {
-  content: "\e993";
-  color: rgb(0, 0, 0);
-}
-.icon-imaging-outline .path2:before {
-  content: "\e994";
-  margin-left: -1.03515625em;
-  color: rgb(0, 0, 0);
-}
-.icon-imaging-outline .path3:before {
-  content: "\e995";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
-}
-.icon-imaging-outline .path4:before {
-  content: "\e996";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
-}
-.icon-imaging-outline .path5:before {
-  content: "\e997";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
-}
-.icon-imaging-outline .path6:before {
-  content: "\e998";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
-}
-.icon-imaging-outline .path7:before {
-  content: "\e999";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
-}
-.icon-imaging-outline .path8:before {
-  content: "\e99a";
-  margin-left: -1.03515625em;
-  color: rgb(3, 4, 4);
 }
 .icon-imaging:before {
   content: "\e99b";
