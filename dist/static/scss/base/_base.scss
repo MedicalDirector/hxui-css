@@ -87,6 +87,7 @@ pre {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  cursor: pointer;
   color: $link-color;
   text-decoration: $link-decoration;
   background-color: transparent; // Remove the gray background on active links in IE 10.
@@ -96,6 +97,16 @@ a {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
+
+  &.is-gray {
+    color: lighten($text, 30%);
+
+    &:hover {
+      color: $text;
+      text-decoration: none;
+    }
+  }
+
 }
 
 p {

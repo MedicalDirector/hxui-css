@@ -144,3 +144,8 @@
 .hx-flex-align-self-stretch {
   align-self: stretch;
 }
+
+// spacer utility
+.hx-spacer{
+  flex:1;
+}
