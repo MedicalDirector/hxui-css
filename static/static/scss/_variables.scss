@@ -62,7 +62,7 @@ $color-gray-lightest:             hsl(240, 19%, 97%) !default;
 
 // Other colors
 $color-success:             $color-green-light !default;
-$color-info:                $color-blue !default;
+$color-info:                $color-teal !default;
 $color-warning:             $color-orange-light !default;
 $color-danger:              $color-red !default;
 $color-inverse:             $color-gray-dark !default;
@@ -78,11 +78,12 @@ $color-orange-invert: findColorInvert($color-orange-light) !default;
 $color-yellow-invert: findColorInvert($color-yellow) !default;
 $color-green-invert: findColorInvert($color-green) !default;
 $color-blue-invert: findColorInvert($color-blue) !default;
+$color-info-invert: findColorInvert($color-teal) !default;
 $color-purple-invert: findColorInvert($color-purple) !default;
 $color-red-invert: findColorInvert($color-red) !default;
 
 $color-primary-invert: $color-green-invert !default;
-$color-info-invert: $color-blue-invert !default;
+$color-info-invert: $color-info-invert !default;
 $color-success-invert: $color-green-invert !default;
 $color-warning-invert: $color-orange-invert !default;
 $color-danger-invert: $color-red-invert !default;
@@ -92,15 +93,24 @@ $color-dark-invert: $color-light !default;
 $colors: (
   'white': ($color-white, $color-black),
   'black': ($color-black, $color-white),
-  'light': ($color-gray-light, $color-gray-light),
+  'light': ($color-gray-light, $color-white),
   'lighter': ($color-gray-lighter, $color-gray-lighter),
   'transparent': (transparent, $color-black),
   'dark': ($color-dark, $color-dark-invert),
+  'grey': ($color-dark, $color-dark-invert),
   'primary': ($color-primary, $color-primary-invert),
-  'info': ($color-info, $color-info-invert),
+  'info': ($color-teal, $color-info-invert),
   'success': ($color-success, $color-success-invert),
   'warning': ($color-warning, $color-warning-invert),
-  'danger': ($color-danger, $color-danger-invert)
+  'danger': ($color-danger, $color-danger-invert),
+  'purple': ($color-purple, findColorInvert($color-purple)),
+  'red': ($color-red, findColorInvert($color-red)),
+  'blue': ($color-blue, findColorInvert($color-blue)),
+  'green': ($color-green, findColorInvert($color-green)),
+  'orange': ($color-orange, findColorInvert($color-orange)),
+  'yellow': ($color-yellow, findColorInvert($color-yellow)),
+  'teal': ($color-teal, findColorInvert($color-teal)),
+  'pink': ($color-pink, findColorInvert($color-pink))
 ) !default;
 
 

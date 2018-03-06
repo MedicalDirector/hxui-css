@@ -59,6 +59,19 @@ export default {
           ]
         },
         {
+          title: 'Styles',
+          items: [
+            {
+              name: 'Colours',
+              path: 'colours'
+            },
+            {
+              name: 'Typography',
+              path: '/typography'
+            }
+          ]
+        },
+        {
           title: 'Elements',
           items: [
             {
@@ -76,10 +89,6 @@ export default {
             {
               name: 'Tables',
               path: '/tables'
-            },
-            {
-              name: 'Typography',
-              path: '/typography'
             }
           ]
         },
@@ -93,6 +102,10 @@ export default {
             {
               name: 'Alerts',
               path: '/alerts'
+            },
+            {
+              name: 'Avatars',
+              path: '/avatars'
             },
             {
               name: 'Cards',
