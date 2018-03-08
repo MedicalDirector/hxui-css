@@ -1,5 +1,5 @@
 <template>
-  <aside class="hx-sidebar has-blue-gradient" :class="{ 'is-minified': isMini }">
+  <aside class="hx-sidebar has-blue-gradient is-active" :class="{ 'is-minified': isMini }">
     <ul class="hx-nav hx-nav-vertical hx-flex-auto">
       <li class="hx-nav-item hx-nav-brand">
         <svg class="hxui-logo is-white">

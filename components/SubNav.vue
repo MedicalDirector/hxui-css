@@ -1,5 +1,5 @@
 <template>
-  <div class="hx-sidebar is-medium-width is-scrollable py-0">
+  <div class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white">
 
     <expanding-nav-item v-for="(section, i) in sections" :key="i"
       :title="section.title"
@@ -140,7 +140,7 @@ export default {
               path: '/progress-timeline'
             },
             {
-              name: 'Sidebar',
+              name: 'Sidebar / Drawer',
               path: '/sidebar'
             },
             {
