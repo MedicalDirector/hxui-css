@@ -352,9 +352,8 @@ export default {
                 <tr>
                   <th width="1"><div class="hx-checkbox-control">
                       <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-all" class="hx-label"></label>
+                      <label for="checkbox-all" class="hx-label">ID</label>
                     </div></th>
-                  <th>Id</th>
                   <th>User Code</th>
                   <th>Firstname</th>
                   <th>Surname</th>
@@ -369,9 +368,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-19" class="hx-label"></label>
+                      <label for="checkbox-19" class="hx-label">19</label>
                     </div></td>
-                  <td>19</td>
                   <td>TS001</td>
                   <td>Tupac</td>
                   <td>Shakur</td>
@@ -379,9 +377,8 @@ export default {
                  <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-20" class="hx-label"></label>
+                      <label for="checkbox-20" class="hx-label">20</label>
                     </div></td>
-                  <td>20</td>
                   <td>BP001</td>
                   <td>Brian</td>
                   <td>Pulliese</td>
@@ -389,9 +386,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-21" class="hx-label"></label>
+                      <label for="checkbox-21" class="hx-label">21</label>
                     </div></td>
-                  <td>21</td>
                   <td>JS001</td>
                   <td>John</td>
                   <td>Smith</td>
@@ -406,9 +402,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
-                      <label for="checkbox-1" class="hx-label"></label>
+                      <label for="checkbox-1" class="hx-label">1</label>
                     </div></td>
-                  <td>1</td>
                   <td>BR001</td>
                   <td>Branda</td>
                   <td>Reed</td>
@@ -416,9 +411,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
-                      <label for="checkbox-2" class="hx-label"></label>
+                      <label for="checkbox-2" class="hx-label">2</label>
                     </div></td>
-                  <td>2</td>
                   <td>MR001</td>
                   <td>Mercedes</td>
                   <td>Mendez</td>
@@ -426,9 +420,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-3" class="hx-label"></label>
+                      <label for="checkbox-3" class="hx-label">3</label>
                     </div></td>
-                  <td>3</td>
                   <td>HS001</td>
                   <td>Harry</td>
                   <td>Sechi</td>
@@ -436,9 +429,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-4" class="hx-label"></label>
+                      <label for="checkbox-4" class="hx-label">4</label>
                     </div></td>
-                  <td>4</td>
                   <td>CY001</td>
                   <td>Chris</td>
                   <td>Yap</td>
@@ -446,9 +438,8 @@ export default {
                  <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-5" class="hx-label"></label>
+                      <label for="checkbox-5" class="hx-label">5</label>
                     </div></td>
-                  <td>5</td>
                   <td>KL001</td>
                   <td>Kevin</td>
                   <td>Liang</td>
@@ -463,9 +454,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-6" class="hx-label"></label>
+                      <label for="checkbox-6" class="hx-label">6</label>
                     </div></td>
-                  <td>6</td>
                   <td>BS001</td>
                   <td>Biggie</td>
                   <td>Smalls</td>
@@ -473,9 +463,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-7" class="hx-label"></label>
+                      <label for="checkbox-7" class="hx-label">7</label>
                     </div></td>
-                  <td>7</td>
                   <td>JS001</td>
                   <td>Julia</td>
                   <td>Sampson</td>
@@ -483,9 +472,8 @@ export default {
                 <tr>
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
-                      <label for="checkbox-8" class="hx-label"></label>
+                      <label for="checkbox-8" class="hx-label">8</label>
                     </div></td>
-                  <td>8</td>
                   <td>GP001</td>
                   <td>John</td>
                   <td>Pipps</td>

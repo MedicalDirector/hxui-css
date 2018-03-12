@@ -231,6 +231,7 @@
 		align-items: center;
 		text-align: center;
 		width: 1.8rem;
+    padding-right: 1rem;
 
 		.hx-info {
 			margin-left: 0;
@@ -250,6 +251,8 @@
 		flex-grow: 1;
 
 		& + .hx-list-action {
+      padding-left: 1rem;
+      padding-right: 0;
 			justify-content: flex-end;
 		}
 	}
