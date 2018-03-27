@@ -25,15 +25,33 @@ export default {
           title: 'Badges for text',
           code: `
 <div class="has-text-centered">
-  <span class="hx-badge">Default</span>
-  <span class="hx-badge is-white">White</span>
-  <span class="hx-badge is-outlined">Outlined</span>
-  <span class="hx-badge is-dark">Dark</span>
-  <span class="hx-badge is-black">Black</span>
-  <span class="hx-badge is-primary">Primary</span>
-  <span class="hx-badge is-info">Info</span>
-  <span class="hx-badge is-warning">Warning</span>
-  <span class="hx-badge is-danger">Danger</span>
+  <span class="hx-badge">
+    <span class="hx-badge-content">Default</span>
+  </span>
+  <span class="hx-badge is-white">
+    <span class="hx-badge-content">White</span>
+  </span>
+  <span class="hx-badge is-outlined">
+    <span class="hx-badge-content">Outlined</span>
+  </span>
+  <span class="hx-badge is-dark">
+    <span class="hx-badge-content">Dark</span>
+  </span>
+  <span class="hx-badge is-black">
+    <span class="hx-badge-content">Black</span>
+  </span>
+  <span class="hx-badge is-primary">
+    <span class="hx-badge-content">Primary</span>
+  </span>
+  <span class="hx-badge is-info">
+    <span class="hx-badge-content">Info</span>
+  </span>
+  <span class="hx-badge is-warning">
+    <span class="hx-badge-content">Warning</span>
+  </span>
+  <span class="hx-badge is-danger">
+    <span class="hx-badge-content">Danger</span>
+  </span>
 </div>
           `
         },
@@ -41,15 +59,15 @@ export default {
           title: 'Badges for numerical values',
           code: `
 <div class="has-text-centered">
-  <span class="hx-badge">0</span>
-  <span class="hx-badge is-white">34</span>
-  <span class="hx-badge is-outlined">83</span>
-  <span class="hx-badge is-dark">87</span>
-  <span class="hx-badge is-black">59</span>
-  <span class="hx-badge is-primary">99+</span>
-  <span class="hx-badge is-info">3</span>
-  <span class="hx-badge is-warning">6</span>
-  <span class="hx-badge is-danger">2</span>
+  <span class="hx-badge"><span class="hx-badge-content">0</span></span>
+  <span class="hx-badge is-white"><span class="hx-badge-content">34</span></span>
+  <span class="hx-badge is-outlined"><span class="hx-badge-content">83</span></span>
+  <span class="hx-badge is-dark"><span class="hx-badge-content">87</span></span>
+  <span class="hx-badge is-black"><span class="hx-badge-content">59</span></span>
+  <span class="hx-badge is-primary"><span class="hx-badge-content">99+</span></span>
+  <span class="hx-badge is-info"><span class="hx-badge-content">3</span></span>
+  <span class="hx-badge is-warning"><span class="hx-badge-content">6</span></span>
+  <span class="hx-badge is-danger"><span class="hx-badge-content">2</span></span>
 </div>
           `
         },
@@ -59,16 +77,16 @@ export default {
 <div class="has-text-centered">
   <p>There are 4 additional sizes</p>
   <p>
-    <span class="hx-badge is-outlined is-small">Small</span>
+    <span class="hx-badge is-outlined is-small"><span class="hx-badge-content">Small</span></span>
   </p>
   <p>
-    <span class="hx-badge is-outlined">Default</span>
+    <span class="hx-badge is-outlined"><span class="hx-badge-content">Default</span></span>
   </p>
   <p>
-    <span class="hx-badge is-outlined is-medium">Medium</span>
+    <span class="hx-badge is-outlined is-medium"><span class="hx-badge-content">Medium</span></span>
   </p>
   <p>
-    <span class="hx-badge is-danger is-large">Large</span>
+    <span class="hx-badge is-danger is-large"><span class="hx-badge-content">Large</span></span>
   </p>
 </div>
           `
@@ -79,18 +97,109 @@ export default {
 <div class="has-text-centered">
   <p>Add a delete button</p>
   <p>
-    <span class="hx-badge is-outlined">Default
-      <button class="hx-delete is-small"></button>
+    <span class="hx-badge is-outlined">
+      <span class="hx-badge-content">
+        Default
+        <button class="hx-delete is-small"></button>
+      </span>
     </span>
   </p>
   <p>
-    <span class="hx-badge is-warning is-medium">Medium
-      <button class="hx-delete is-small"></button>
+    <span class="hx-badge is-warning is-medium">
+      <span class="hx-badge-content">
+        Medium
+        <button class="hx-delete is-small"></button>
+      </span>
     </span>
   </p>
   <p>
-    <span class="hx-badge is-danger is-large">Large
-      <button class="hx-delete"></button>
+    <span class="hx-badge is-danger is-large">
+      <span class="hx-badge-content">
+        Large
+        <button class="hx-delete"></button>
+      </span>
+    </span>
+  </p>
+</div>
+          `
+        },
+        {
+          title: 'With avatar & icons',
+          code: `
+<div class="has-text-centered">
+  <p>
+    <span class="hx-badge">
+      <span class="hx-badge-content">
+        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        Default
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-dark">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-teal">VB</span>
+        Default
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-black">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-orange">
+          <i class="hx-icon icon-medications"></i>
+        </span>
+        Default
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+  </p>
+  <p>
+    <span class="hx-badge is-primary is-medium">
+      <span class="hx-badge-content">
+        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        Medium
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-warning is-medium">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-black">VB</span>
+        Medium
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-danger is-medium">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-black">
+          <i class="hx-icon icon-injection"></i>
+        </span>
+        Medium
+        <button class="hx-delete is-small"></button>
+      </span>
+    </span>
+  </p>
+  <p>
+    <span class="hx-badge is-large">
+      <span class="hx-badge-content">
+        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        Large
+        <button class="hx-delete"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-info is-large">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-black">VB</span>
+        Large
+        <button class="hx-delete"></button>
+      </span>
+    </span>
+    <span class="hx-badge is-warning is-large">
+      <span class="hx-badge-content">
+        <span class="hx-avatar hx-bg-black">
+          <i class="hx-icon icon-bell"></i>
+        </span>
+        Large
+        <button class="hx-delete"></button>
+      </span>
     </span>
   </p>
 </div>

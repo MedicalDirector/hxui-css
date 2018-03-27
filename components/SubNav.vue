@@ -108,6 +108,10 @@ export default {
               path: '/avatars'
             },
             {
+              name: 'Breadcrumbs',
+              path: '/breadcrumbs'
+            },
+            {
               name: 'Cards',
               path: '/cards'
             },
