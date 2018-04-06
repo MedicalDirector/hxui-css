@@ -1,20 +1,48 @@
 // =========
 // Badges
 // =========
-.#{$namespace}-badge {
+//
+.#{$namespace}-badge, .#{$namespace}-badge-content {
+  display: inline-flex;
   align-items: center;
+  vertical-align: middle;
+}
+
+.#{$namespace}-badge {
   background-color: rgba(0,0,0,.05);
   border-radius: 290486px;
   color: $color-gray-dark;
-  display: inline-flex;
   font-size: $font-size-xs;
-  height: 2em;
   justify-content: center;
   line-height: 1.5;
-  padding-left: 0.875em;
-  padding-right: 0.875em;
-  margin: 0 .25em .2em 0;
+  margin: 4px;
   white-space: nowrap;
+
+  &-content {
+    padding-left: 0.875em;
+    padding-right: 0.875em;
+    justify-content: space-between;
+    height: 2em;
+  }
+
+  .#{$namespace}-avatar {
+    min-width: 24px;
+    min-height: 24px;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    margin-right: 0.4rem;
+    font-size: .75rem;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+
+    .#{$namespace}-icon {
+      font-size: 1rem;
+    }
+  }
 
   .hx-delete {
     margin-left: 0.5em;
@@ -78,10 +106,32 @@
 
   &.is-medium {
     font-size: 1rem;
+
+    .#{$namespace}-avatar {
+      height: 28px;
+      width: 28px;
+      font-size: .9rem;
+
+      .#{$namespace}-icon {
+        font-size: 1.1rem;
+      }
+    }
   }
 
   &.is-large {
     font-size: $font-size-lg;
+
+    .#{$namespace}-avatar {
+      height: 34px;
+      width: 34px;
+      margin-left: -15px;
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+
+      .#{$namespace}-icon {
+        font-size: 1.25rem;
+      }
+    }
   }
 
 }

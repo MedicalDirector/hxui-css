@@ -5,7 +5,7 @@
 
     <hr>
 
-    <expanding-code-example v-for="(example, i) in examples" key="i"
+    <expanding-code-example v-for="(example, i) in examples" :key="i"
                             :title="example.title"
                             :code="example.code"
                             :example="example.code"

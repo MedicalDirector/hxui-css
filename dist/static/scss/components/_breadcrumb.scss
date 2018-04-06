@@ -1,0 +1,39 @@
+// breadcrumbs
+//
+.#{$namespace}-breadcrumb {
+  list-style: none;
+
+  > li {
+    display: inline;
+
+    &.#{$namespace}-breadcrumb-divider {
+      padding: 0 .75rem;
+      color: $color-gray-lighter;
+
+      .#{$namespace}-icon {
+        font-size: 1rem;
+        height: auto;
+        line-height: 1;
+
+        &:before {
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+
+    &.is-disabled {
+
+      > a {
+        color: $color-gray-lighter;
+      }
+    }
+
+    a {
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -2,8 +2,168 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/app.b583f5a75c92ebc7c4c0.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/layouts/default.0e7f51435e75b43a005e.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/manifest.70fbce843100fac4a6f7.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/accordions.77aa0eb8bb8ff0e4055e.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/alerts.0a4de4d1d0207055fb1d.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/badges.a9618e478c0a420d9c9b.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/buttons.4cf19585cafb6bcabc86.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/cards.cb54237f0d86eee93ab3.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/container-demo.c190719e3552d23a0b68.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/containers.296e703058f26663c5ec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/downloads.a31cebc0c112e0c5aab0.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/dropdowns.b974c182003cdc42794e.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/elevation.eb539451aa9f569b2618.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/forms.8bbaf7d535fd7440a502.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/icons.cd50794ec19d622f193a.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/index.151b2c4a71901f0791a1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/install.6d6ac1955e1812fb7604.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/lists.a5946a6fc00c3de89807.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/modals.f364d930de2695625057.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/nav.aa0d6c64cd10b119b24d.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/pages.32059a45d21461bfafe3.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/pagination.b5bae56b83cce97a0374.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/progress-timeline.fe1ac2fc5bde9b02fda1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/sections.5b8379db8653935545a2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/sidebar.efe369e5888ccbe7a8d4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/snackbars-toasts.fe5db64170d8773336ac.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/spacing.1461112447f9aded9cfd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/steppers.a0a151f7552853c95108.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/tables.abbb301dd896e90635d2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/tabs.62b96a0a779dbccfda55.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/toggle.fcb03f6185dd5937eb14.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/toolbars.d5f3761b53913ec3791a.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/tooltips.0c5f91c7e5bf03df1d24.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/typography.3e4d45f9c50aabec6290.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/accordions/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/static/scss/components/_accordions.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/static/scss/components/_steppers.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/static/scss/components/_toolbar.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/steppers/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/toolbars/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/avatars.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/breadcrumbs.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/colours.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/static/assets/images/0223.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/static/assets/images/default-avatar-business-bear.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/static/assets/images/frenchie.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/static/scss/components/_avatars.scss" />
+      <change beforePath="$PROJECT_DIR$/components/MainNav.vue" afterPath="$PROJECT_DIR$/components/MainNav.vue" />
+      <change beforePath="$PROJECT_DIR$/components/SubNav.vue" afterPath="$PROJECT_DIR$/components/SubNav.vue" />
+      <change beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/app.6d1d514dfccab247c4ae.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.839aa17.eot" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.e177983.eot" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.bff438d.ttf" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.8ff92cc.woff" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.cffcb0c.woff" afterPath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.d3179fe.ttf" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/img/hxui.42a82b8.svg" afterPath="$PROJECT_DIR$/dist/_nuxt/img/hxui.ec40f67.svg" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/layouts_default.3e4225d88e29db2a8430.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.7720a31014dcbdd7314e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_alerts.21922c096ed41fe2bd65.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_badges.220b900ae7c3d0e0752b.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_buttons.458f3a77b56d24f2d60d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_cards.c76a5bb0aff2c663cb17.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_container-demo.6ad7fcc6c403a082db0c.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_containers.39c0888f3de1622d81f9.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_downloads.bc16e987421db8816689.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_dropdowns.f51faa3376baba8ca774.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_elevation.00d96597ec923fbbc305.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_forms.8c4343edcd5427c0ac47.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_grid.2089f58531fe8ea87138.js" afterPath="$PROJECT_DIR$/dist/_nuxt/pages/grid.20447f23d530af81a9c2.js" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_icons.3b35469468ef939da4a0.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_index.52e326bd45f8afbdf9f2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_install.7fe871dd69eb280fde4f.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_lists.84bad0f34e41f54f391a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_modals.20e7b35710563e4610b3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_nav.6f12c0f5860d71ee0724.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_pages.78e8081b0540ca82872f.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_pagination.ba981ace8c1f2aea9f76.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_progress-timeline.bf5e45b4008a07c693af.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_sections.6d7e0b2a4ef4d341d191.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_sidebar.61d7a296cd0b00209c3b.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_snackbars-toasts.4581eb9d7f3fc1cb5c64.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_spacing.a27f40cc0332b798ad26.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tables.e0bffb880f572905b861.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tabs.9910c5887b7f77a846ab.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_toggle.178085625a1eb41ce908.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tooltips.e05d500630d8c49efc1e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_typography.cc3c65b9254861fa9882.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/vendor.82be88fe213cb4c083eb.js" afterPath="$PROJECT_DIR$/dist/_nuxt/vendor.8e4d5369d997a1912549.js" />
+      <change beforePath="$PROJECT_DIR$/dist/alerts/index.html" afterPath="$PROJECT_DIR$/dist/alerts/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/badges/index.html" afterPath="$PROJECT_DIR$/dist/badges/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/buttons/index.html" afterPath="$PROJECT_DIR$/dist/buttons/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/cards/index.html" afterPath="$PROJECT_DIR$/dist/cards/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/container-demo/index.html" afterPath="$PROJECT_DIR$/dist/container-demo/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/containers/index.html" afterPath="$PROJECT_DIR$/dist/containers/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/downloads/index.html" afterPath="$PROJECT_DIR$/dist/downloads/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/dropdowns/index.html" afterPath="$PROJECT_DIR$/dist/dropdowns/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/elevation/index.html" afterPath="$PROJECT_DIR$/dist/elevation/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/forms/index.html" afterPath="$PROJECT_DIR$/dist/forms/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/grid/index.html" afterPath="$PROJECT_DIR$/dist/grid/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/icons/index.html" afterPath="$PROJECT_DIR$/dist/icons/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/install/index.html" afterPath="$PROJECT_DIR$/dist/install/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/lists/index.html" afterPath="$PROJECT_DIR$/dist/lists/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/modals/index.html" afterPath="$PROJECT_DIR$/dist/modals/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/nav/index.html" afterPath="$PROJECT_DIR$/dist/nav/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/index.html" afterPath="$PROJECT_DIR$/dist/pages/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/pagination/index.html" afterPath="$PROJECT_DIR$/dist/pagination/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/progress-timeline/index.html" afterPath="$PROJECT_DIR$/dist/progress-timeline/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/sections/index.html" afterPath="$PROJECT_DIR$/dist/sections/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/sidebar/index.html" afterPath="$PROJECT_DIR$/dist/sidebar/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/selection.json" afterPath="$PROJECT_DIR$/dist/static/fonts/selection.json" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/base/_base.scss" afterPath="$PROJECT_DIR$/dist/static/scss/base/_base.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_form.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_form.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_lists.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_lists.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_nav.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_nav.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/fonts" afterPath="$PROJECT_DIR$/dist/static/scss/fonts" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/hxui.scss" afterPath="$PROJECT_DIR$/dist/static/scss/hxui.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/utilities/_flexbox.scss" afterPath="$PROJECT_DIR$/dist/static/scss/utilities/_flexbox.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/toggle/index.html" afterPath="$PROJECT_DIR$/dist/toggle/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/pages/alerts.vue" afterPath="$PROJECT_DIR$/pages/alerts.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/badges.vue" afterPath="$PROJECT_DIR$/pages/badges.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/icons.vue" afterPath="$PROJECT_DIR$/pages/icons.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/lists.vue" afterPath="$PROJECT_DIR$/pages/lists.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/pagination.vue" afterPath="$PROJECT_DIR$/pages/pagination.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/sidebar.vue" afterPath="$PROJECT_DIR$/pages/sidebar.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/tables.vue" afterPath="$PROJECT_DIR$/pages/tables.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/toggle.vue" afterPath="$PROJECT_DIR$/pages/toggle.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbars.vue" afterPath="$PROJECT_DIR$/pages/toolbars.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/tooltips.vue" afterPath="$PROJECT_DIR$/pages/tooltips.vue" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.eot" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.svg" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/selection.json" afterPath="$PROJECT_DIR$/static/static/fonts/selection.json" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/_variables.scss" afterPath="$PROJECT_DIR$/static/static/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/base/_colors.scss" afterPath="$PROJECT_DIR$/static/static/scss/base/_colors.scss" />
       <change beforePath="$PROJECT_DIR$/static/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_badge.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_badge.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_breadcrumb.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_breadcrumb.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_card.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_card.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_lists.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_lists.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_nav.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_nav.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_tooltip.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_tooltip.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/hxui.scss" afterPath="$PROJECT_DIR$/static/static/scss/hxui.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/layouts/_sidebar.scss" afterPath="$PROJECT_DIR$/static/static/scss/layouts/_sidebar.scss" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/utilities/_functions.scss" afterPath="$PROJECT_DIR$/static/static/scss/utilities/_functions.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,15 +187,13 @@
         <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding>
-                <marker date="1520292409307" expanded="true" signature="3868:3872" ph="{...}" />
-              </folding>
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -45,11 +203,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_table.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_table.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/static/scss/base/_table.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="229">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -142,7 +300,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -161,6 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +364,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -340,25 +498,25 @@
       <workItem from="1520302023029" duration="1506000" />
       <workItem from="1520461272747" duration="1103000" />
       <workItem from="1522973338584" duration="19000" />
+      <workItem from="1522973500084" duration="201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69409000" />
+    <option name="totallyTimeSpent" value="69610000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24954791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5012337" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31729785" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31729785" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -522,17 +680,7 @@
     <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <marker date="1520292409307" expanded="true" signature="3868:3872" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -540,7 +688,15 @@
     <entry file="file://$PROJECT_DIR$/static/static/scss/base/_table.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>

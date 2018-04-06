@@ -23,13 +23,13 @@
   word-wrap: break-word;
   opacity: 0;
 
-  .#{$namespace}-tooltip-content {
+  &-content {
     position: relative;
     max-width: 200px;
     padding: 3px 8px;
     color: #fff;
     text-align: center;
-    background-color: $color-blue;
+    background-color: $color-info;
     border-radius: .25rem;
 
     &::before {
@@ -49,7 +49,7 @@
         left: 50%;
         margin-left: -5px;
         border-width: 5px 5px 0;
-        border-top-color: $color-blue;
+        border-top-color: $color-info;
       }
     }
   }
@@ -61,7 +61,7 @@
         left: -5px;
         margin-top: -5px;
         border-width: 5px 5px 5px 0;
-        border-right-color: $color-blue;
+        border-right-color: $color-info;
         border-top-color: transparent;
       }
     }
@@ -74,7 +74,7 @@
         left: 50%;
         margin-left: -5px;
         border-width: 0 5px 5px;
-        border-bottom-color: $color-blue;
+        border-bottom-color: $color-info;
       }
     }
   }
@@ -86,12 +86,131 @@
         right: -5px;
         margin-top: -5px;
         border-width: 5px 0 5px 5px;
-        border-left-color: $color-blue;
+        border-left-color: $color-info;
       }
     }
+  }
+
+  &.is-success {
+
+    .#{$namespace}-tooltip-content {
+      background-color: $color-success;
+    }
+
+    &.is-top {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-top-color: $color-success;
+        }
+      }
+    }
+
+    &.is-bottom {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-bottom-color: $color-success;
+        }
+      }
+    }
+
+    &.is-left {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-left-color: $color-success;
+        }
+      }
+    }
+
+    &.is-right {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-right-color: $color-success;
+        }
+      }
+    }
+  }
+
+  &.is-warning {
+
+    .#{$namespace}-tooltip-content {
+      background-color: $color-warning;
+    }
+
+    &.is-top {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-top-color: $color-warning;
+        }
+      }
+    }
+
+    &.is-bottom {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-bottom-color: $color-warning;
+        }
+      }
+    }
+
+    &.is-left {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-left-color: $color-warning;
+        }
+      }
+    }
+
+    &.is-right {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-right-color: $color-warning;
+        }
+      }
+    }
+  }
+
+  &.is-danger {
+
+    .#{$namespace}-tooltip-content {
+      background-color: $color-danger;
+    }
+
+    &.is-top {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-top-color: $color-danger;
+        }
+      }
+    }
+
+    &.is-bottom {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-bottom-color: $color-danger;
+        }
+      }
+    }
+
+    &.is-left {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-left-color: $color-danger;
+        }
+      }
+    }
+
+    &.is-right {
+      .#{$namespace}-tooltip-content {
+        &::before {
+          border-right-color: $color-danger;
+        }
+      }
+    }
+
   }
 
   &.is-active {
     opacity:1;
   }
+
 }

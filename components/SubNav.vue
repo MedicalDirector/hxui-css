@@ -1,5 +1,5 @@
 <template>
-  <div class="hx-sidebar is-medium-width is-scrollable py-0">
+  <div class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white">
 
     <expanding-nav-item v-for="(section, i) in sections" :key="i"
       :title="section.title"
@@ -59,6 +59,19 @@ export default {
           ]
         },
         {
+          title: 'Styles',
+          items: [
+            {
+              name: 'Colours',
+              path: 'colours'
+            },
+            {
+              name: 'Typography',
+              path: '/typography'
+            }
+          ]
+        },
+        {
           title: 'Elements',
           items: [
             {
@@ -76,10 +89,6 @@ export default {
             {
               name: 'Tables',
               path: '/tables'
-            },
-            {
-              name: 'Typography',
-              path: '/typography'
             }
           ]
         },
@@ -93,6 +102,14 @@ export default {
             {
               name: 'Alerts',
               path: '/alerts'
+            },
+            {
+              name: 'Avatars',
+              path: '/avatars'
+            },
+            {
+              name: 'Breadcrumbs',
+              path: '/breadcrumbs'
             },
             {
               name: 'Cards',
@@ -127,7 +144,7 @@ export default {
               path: '/progress-timeline'
             },
             {
-              name: 'Sidebar',
+              name: 'Sidebar / Drawer',
               path: '/sidebar'
             },
             {

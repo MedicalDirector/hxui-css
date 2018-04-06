@@ -74,6 +74,81 @@ export default {
   </div>
 </div>
           `
+        },
+        {
+          title: 'Contextual',
+          code: `
+<p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code> to the tooltip.</p>
+<br />
+<div class="hx-example has-text-centered">
+  <div class="hx-tooltip is-top is-success is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the top
+    </div>
+  </div>
+  <div class="hx-tooltip is-right is-success is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the right
+    </div>
+  </div>
+  <div class="hx-tooltip is-bottom is-success is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the bottom
+    </div>
+  </div>
+  <div class="hx-tooltip is-left is-success is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the left
+    </div>
+  </div>
+</div>
+<br />
+<div class="hx-example has-text-centered">
+  <div class="hx-tooltip is-top is-warning is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the top
+    </div>
+  </div>
+  <div class="hx-tooltip is-right is-warning is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the right
+    </div>
+  </div>
+  <div class="hx-tooltip is-bottom is-warning is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the bottom
+    </div>
+  </div>
+  <div class="hx-tooltip is-left is-warning is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the left
+    </div>
+  </div>
+</div>
+<br />
+<div class="hx-example has-text-centered">
+  <div class="hx-tooltip is-top is-danger is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the top
+    </div>
+  </div>
+  <div class="hx-tooltip is-right is-danger is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the right
+    </div>
+  </div>
+  <div class="hx-tooltip is-bottom is-danger is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the bottom
+    </div>
+  </div>
+  <div class="hx-tooltip is-left is-danger is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the left
+    </div>
+  </div>
+</div>
+          `
         }
       ]
     }

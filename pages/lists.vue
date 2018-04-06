@@ -136,7 +136,7 @@ export default {
           <a>Morbi leo risus</a>
         </li>
         <li class="">
-          <a>Porta ac consectetur ac</a>
+          <a>Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque. </a>
         </li>
         <li class="">
           <a>Vestibulum at eros</a>
@@ -189,7 +189,7 @@ export default {
             <div class="hx-list-action">
               <button class="hx-info is-small"></button>
             </div>
-            <div class="hx-list-content">Porta ac consectetur ac</div>
+            <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
             <div class="hx-list-action">
               <button class="hx-delete is-small"></button>
             </div>

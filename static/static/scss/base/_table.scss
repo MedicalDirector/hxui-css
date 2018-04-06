@@ -33,6 +33,15 @@
         }
       }
     }
+    > tr > th > .hx-checkbox-control {
+      margin-bottom: -3px !important;
+      > .hx-checkbox + label {
+        padding-top: 5px !important;
+        font-weight:  $font-weight-boldest !important;
+        text-transform: uppercase;
+        font-size: .8rem;
+      }
+    }
   }
 
   > tfoot {
@@ -66,7 +75,9 @@
     .hx-checkbox-control{
       margin:0;
       .hx-checkbox + .hx-label {
+        padding-top: 2px;
         display:initial;
+        font-weight: $font-weight-normal;
       }
     }
   }
