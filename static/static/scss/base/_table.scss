@@ -26,7 +26,7 @@
         cursor: pointer;
         &:link, &:visited, &:active {
           color: $table-head;
-        },
+        }
         &:hover {
           text-decoration: none;
           color: lighten($table-head, 20%);
