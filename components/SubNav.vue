@@ -55,6 +55,10 @@ export default {
             {
               name: 'Spacing',
               path: '/spacing'
+            },
+            {
+              name: 'Dividers',
+              path: '/dividers'
             }
           ]
         },
