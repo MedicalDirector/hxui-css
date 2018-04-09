@@ -10,7 +10,10 @@
 
           <div class="hx-input-control has-text-centered">
             <input class="hx-input" type="text" required v-model="searchTerm">
-            <label class="hx-label">Search icons</label>
+            <label class="hx-label">
+              <i class="hx-icon icon-search is-small"></i>
+              Search icons
+            </label>
           </div>
 
         </div>

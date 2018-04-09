@@ -227,6 +227,17 @@
     }
 
   }
+
+  .#{$namespace}-textarea {
+
+    & + .#{$namespace}-label {
+
+      & + .#{$namespace}-help {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
 }
 
 // Group Container
@@ -386,13 +397,15 @@
 }
 
 .#{$namespace}-textarea {
-  display: initial;
+  // display: initial;
   padding: 0 0 .6rem 0;
-  height: 2.7rem;
+  resize: vertical;
+  min-height: 3.5rem;
+  line-height: 1.3;
   &:focus ~ .#{$namespace}-label,
   &:valid ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label{
-    top: -1.6rem;
+    top: -1.3rem;
   }
 }
 

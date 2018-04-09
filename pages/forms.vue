@@ -107,28 +107,29 @@ export default {
 <p>Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code>.hx-input-control</code> div wrapping your input and label.</p>
 <br />
 <div class="hx-input-control">
-  <textarea name="textarea-sample" class="hx-textarea" required></textarea>
-  <label for="textarea-sample" class="hx-label">Textarea</label>
-</div>
-<div class="hx-input-control">
-  <textarea name="textarea-sample" class="hx-textarea" placeholder="Placeholder text..."></textarea>
-  <label for="textarea-sample" class="hx-label">Textarea with Placeholder</label>
+  <textarea name="textarea-sample" class="hx-textarea" placeholder="Placeholder text... (mandatory)"></textarea>
+  <label for="textarea-sample" class="hx-label">Textarea with Placeholder </label>
+  <div class="hx-help">Textarea hint (if required)</div>
 </div>
 <div class="hx-input-control is-info">
-  <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+  <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
+  <div class="hx-help">Info!</div>
 </div>
 <div class="hx-input-control is-success">
-  <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+  <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
+  <div class="hx-help">Success!</div>
 </div>
 <div class="hx-input-control is-warning">
-  <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+  <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
+  <div class="hx-help">Warning!</div>
 </div>
 <div class="hx-input-control is-danger">
-  <textarea name="textarea-sample" class="hx-textarea" required></textarea>
+  <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
+  <div class="hx-help">Danger!</div>
 </div>
           `
         },
