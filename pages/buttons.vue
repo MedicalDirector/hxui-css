@@ -337,6 +337,26 @@ export default {
   </a>
 </div>
           `
+        },
+        {
+          title: 'Split buttons',
+          code: `
+            <div class="hx-flex hx-flex-justify-around">
+                <div class="hx-button-split">
+                    <button type="button" class="hx-button is-primary is-small">Create recall</button>
+                    <button type="button" class="hx-button is-primary is-small"><i class="icon icon-angle-down"></i></button>
+                </div>
+
+                <div class="hx-button-split">
+                    <button type="button" class="hx-button is-primary">Create recall</button>
+                    <button type="button" class="hx-button is-primary"><i class="icon icon-angle-down"></i></button>
+                </div>
+                <div class="hx-button-split">
+                    <button type="button" class="hx-button is-primary is-large">Create recall</button>
+                    <button type="button" class="hx-button is-primary is-large"><i class="icon icon-angle-down"></i></button>
+                </div>
+            </div>
+          `
         }
       ]
     }
