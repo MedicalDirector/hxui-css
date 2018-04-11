@@ -8,29 +8,103 @@
   color: $color-white;
   display: flex;
   align-items: center;
-  .hx-icon {
+  .#{$namespace}-icon {
     text-shadow: none;
     color: rgba(white, .3);
   }
   &.is-success {
     background-color: $color-primary;
     color: $color-white;
-    .hx-icon {
+    .#{$namespace}-icon {
       color: rgba(black, .3);
     }
   }
   &.is-warning {
     background-color: #f6a904;
     color: $color-white;
-    .hx-icon {
+    .#{$namespace}-icon {
       color: rgba(black, .3);
     }
   }
   &.is-danger {
     background-color: #b81e4f;
     color: $color-white;
-    .hx-icon {
+    .#{$namespace}-icon {
       color: rgba(black, .3);
+    }
+  }
+  &.is-inverse {
+    background-color: $color-gray-lightest;
+    color: $color-gray-dark;
+    text-shadow: none;
+
+    a {
+      color: shade($color-gray-dark, 10%);
+      text-decoration: none;
+      border-bottom: 1px solid $color-gray-dark;
+      border-bottom-color: $color-gray-dark;
+      transition: .3s;
+      &:hover {
+        color: $color-gray;
+        border-bottom-color: transparent;
+      }
+    }
+    .#{$namespace}-icon {
+      color: $color-gray-dark;
+    }
+
+    &.is-success {
+      background-color: tint($color-success, 85%);
+      color: shade($color-success, 10%);
+
+      a {
+        color: shade($color-success, 10%);
+        border-bottom-color: shade($color-success, 10%);
+        &:hover {
+          color: $color-gray;
+          border-bottom-color: transparent;
+        }
+      }
+
+      .#{$namespace}-icon {
+        color: shade($color-success, 10%);
+      }
+    }
+
+    &.is-warning {
+      background-color: tint($color-warning, 85%);
+      color: shade($color-warning, 10%);
+
+      a {
+        color: shade($color-warning, 10%);
+        border-bottom-color: shade($color-warning, 10%);
+        &:hover {
+          color: $color-gray;
+          border-bottom-color: transparent;
+        }
+      }
+
+      .#{$namespace}-icon {
+        color: shade($color-warning, 10%);
+      }
+    }
+
+    &.is-danger {
+      background-color: tint($color-danger, 85%);
+      color: shade($color-danger, 10%);
+
+      a {
+        color: shade($color-danger, 10%);
+        border-bottom-color: shade($color-danger, 10%);
+        &:hover {
+          color: $color-gray;
+          border-bottom-color: transparent;
+        }
+      }
+
+      .#{$namespace}-icon {
+        color: shade($color-danger, 10%);
+      }
     }
   }
   &.is-float {

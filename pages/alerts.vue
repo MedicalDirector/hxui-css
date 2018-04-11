@@ -91,6 +91,57 @@ export default {
     This is an error alert with no icon.
   </span>
 </div>`
+        },
+        {
+          title: 'Inverse/Softer version',
+          code: `
+<p>The <code>.hx-alert</code> component comes in 4 variations, success, info, warning and error. They can have icons assigned which can be changed and represent different actions.</p>
+
+<div class="hx-alert is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is the default alert. <a href="">Click here</a> to URL.
+  </span>
+  <span class="hx-icon-control ml-2">
+    <button class="hx-delete"></button>
+  </span>
+</div>
+<div class="hx-alert is-success is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-check"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is a success alert. <a href="">Click here</a> to URL.
+  </span>
+  <span class="hx-icon-control ml-2">
+    <button class="hx-delete"></button>
+  </span>
+</div>
+<div class="hx-alert is-warning is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-exclamation"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is a warning alert. <a href="">Click here</a> to URL.
+  </span>
+  <span class="hx-icon-control ml-2">
+    <button class="hx-delete"></button>
+  </span>
+</div>
+<div class="hx-alert is-danger is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-exclamation"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is a danger alert. <a href="">Click here</a> to URL.
+  </span>
+  <span class="hx-icon-control ml-2">
+    <button class="hx-delete"></button>
+  </span>
+</div>
+          `
         }
       ]
     }
