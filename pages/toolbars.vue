@@ -139,6 +139,33 @@
     <div class="hx-spacer"></div>
   </div>
           `
+          },
+          {
+            title: 'Sizes',
+            code: `
+<p>Toolbar supports 3 sizes.</p>
+<ul>
+  <li><span class="hx-badge is-warning"><span class="hx-badge-content">Default</span></span> - no modifier</li>
+  <li><code>.is-small</code> modifier</li>
+  <li><code>.is-xsmall</code> modifier</li>
+</ul>
+
+ <div class="hx-toolbar is-info">
+    <span>Title</span>
+    <div class="hx-spacer"></div>
+    <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  </div>
+   <div class="hx-toolbar is-info is-small  mt-2">
+    <span>Title</span>
+    <div class="hx-spacer"></div>
+    <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  </div>
+  <div class="hx-toolbar is-info is-xsmall mt-2">
+    <span>Title</span>
+    <div class="hx-spacer"></div>
+    <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  </div>
+          `
           }
         ]
       }
