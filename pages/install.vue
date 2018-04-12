@@ -12,7 +12,7 @@
           <!-- <p>You can run this command if you are using <strong>personal access tokens(https)</strong> method to access Visual Studio Team Services.</p> -->
 
           <pre v-highlightjs><code class="apache">
-npm install git+https://bitbucket.org/md-design/gethxui.git --save
+npm install @hxui/css --save
           </code></pre>
 
         </section>
@@ -39,7 +39,7 @@ npm install git+https://bitbucket.org/md-design/gethxui.git --save
           <p><span class="h5">3. </span>Alternatively <strong>import the uncompiled .scss file</strong> into an existing projects scss.</p>
 
           <pre v-highlightjs><code class="scss">
-@import "/node_modules/@hxui/css/dist/static/scss/hxui.scss";
+@import "/node_modules/@hxui/css/static/static/scss/hxui.scss";
           </code></pre>
 
         </section>
@@ -50,7 +50,7 @@ npm install git+https://bitbucket.org/md-design/gethxui.git --save
         <pre v-highlightjs><code class="scss">
 // set the icon path before you import
 $icons-path: '../fonts/';
-@import "/node_modules/@hxui/css/dist/static/scss/hxui.scss";
+@import "/node_modules/@hxui/css/static/static/scss/hxui.scss";
         </code></pre>
 
       </div>
@@ -64,8 +64,8 @@ $icons-path: '../fonts/';
     Simply import the utilities dependencies, and then the files you need directly:</p>
 
     <pre v-highlightjs><code class="scss">
-@import "/node_modules/@hxui/css/dist/static/scss/utilities/_all";
-@import "/node_modules/@hxui/css/dist/static/scss/components/grid";
+@import "/node_modules/@hxui/css/static/static/scss/utilities/_all";
+@import "/node_modules/@hxui/css/static/static/scss/components/grid";
     </code></pre>
     <br>
 
