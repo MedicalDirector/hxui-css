@@ -16,8 +16,6 @@
       font-size: 0.85rem;
     }
 
-
-
     // Contextual themes
     &.is-primary{
       background-color:$color-primary;
@@ -96,4 +94,16 @@
         }
       }
     }
+
+  // size
+  &.is-small{
+    padding:.5rem;
+  }
+
+  &.is-xsmall{
+    padding:0;
+    & > span{
+      padding-left:.5rem;
+    }
+  }
 }

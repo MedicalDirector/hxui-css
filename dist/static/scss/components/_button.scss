@@ -4,7 +4,7 @@
 
 @mixin button-small {
   border-radius: $border-radius-sm;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
 }
 
 @mixin button-medium {
@@ -29,7 +29,7 @@
   text-align: center;
   white-space: nowrap;
   transition: all .15s ease-in-out;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 400;
 
   strong {
@@ -184,6 +184,13 @@
   // Sizes
   &.is-small {
     @include button-small;
+    &:not(.is-round) {
+      .#{$namespace}-icon-control {
+        * {
+          font-size: .75rem;
+        }
+      }
+    }
   }
 
   &.is-medium {
