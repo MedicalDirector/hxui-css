@@ -2,89 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/app.49a7ae1f64b587eb2af4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/img/hxui.ec40f67.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/layouts/default.8063a7ee26d7ef04479f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.37359dafc5f7d221d487.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/accordions.60f73647b478a8534c4d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/alerts.4a9bf1bb0d54dc0a2dc0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/avatars.5474efb82297a35b9e5c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/badges.8e5823ece979a2619003.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/breadcrumbs.45822fcc3beca7f41f1e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/buttons.004bcf41a1fc80c594b5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/cards.ddaa6ad0a22ee637d12a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/colours.856791c972c07f4ac684.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/container-demo.19716de9c502eebe1987.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/containers.7151c9cdfe691cdf0985.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/dividers.04939473ab26a9ead87e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/downloads.30bbd63900410295195d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/dropdowns.5bc5d1a30b6830c21ef1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/elevation.bff4a14562ae435e5d86.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/forms.72f265c52328a2a830d1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/grid.7d5f22aa78211ddb4c7b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/icons.c3baa00a96ee64d68085.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/index.ade1eb7a873b2cfda408.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/install.67caa5e9eb259d2d0ecd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/lists.230f99a3f0b400fb6a7a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/modals.08173eac7d20bf0a47c8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/nav.a1901c09cd9334696447.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pages.d780a5ece610df8ba2da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pagination.a4c67df9bdc6548f7990.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/progress-timeline.922fddfcae04bf06eb77.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sections.322fd82ed3219278198f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sidebar.c4c6a28763c17bbdab49.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/snackbars-toasts.fe5db64170d8773336ac.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/spacing.7965dc70eaefbb21f8fd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/steppers.a0a151f7552853c95108.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tables.e25cde73064e0470a8c3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tabs.62b96a0a779dbccfda55.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/toggle.e1a63dc80535a05a943f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/toolbars.fd057496be41ab18f079.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tooltips.6809fba5b1ca9a0a47f2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/typography.3e4d45f9c50aabec6290.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/accordions/index.html" afterPath="$PROJECT_DIR$/dist/accordions/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/alerts/index.html" afterPath="$PROJECT_DIR$/dist/alerts/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/avatars/index.html" afterPath="$PROJECT_DIR$/dist/avatars/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/badges/index.html" afterPath="$PROJECT_DIR$/dist/badges/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/breadcrumbs/index.html" afterPath="$PROJECT_DIR$/dist/breadcrumbs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/buttons/index.html" afterPath="$PROJECT_DIR$/dist/buttons/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards/index.html" afterPath="$PROJECT_DIR$/dist/cards/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/colours/index.html" afterPath="$PROJECT_DIR$/dist/colours/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/container-demo/index.html" afterPath="$PROJECT_DIR$/dist/container-demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/containers/index.html" afterPath="$PROJECT_DIR$/dist/containers/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/dividers/index.html" afterPath="$PROJECT_DIR$/dist/dividers/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/downloads/index.html" afterPath="$PROJECT_DIR$/dist/downloads/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/dropdowns/index.html" afterPath="$PROJECT_DIR$/dist/dropdowns/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/elevation/index.html" afterPath="$PROJECT_DIR$/dist/elevation/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/forms/index.html" afterPath="$PROJECT_DIR$/dist/forms/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/grid/index.html" afterPath="$PROJECT_DIR$/dist/grid/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/icons/index.html" afterPath="$PROJECT_DIR$/dist/icons/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/install/index.html" afterPath="$PROJECT_DIR$/dist/install/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/lists/index.html" afterPath="$PROJECT_DIR$/dist/lists/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/modals/index.html" afterPath="$PROJECT_DIR$/dist/modals/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/nav/index.html" afterPath="$PROJECT_DIR$/dist/nav/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/pages/index.html" afterPath="$PROJECT_DIR$/dist/pages/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/pagination/index.html" afterPath="$PROJECT_DIR$/dist/pagination/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/progress-timeline/index.html" afterPath="$PROJECT_DIR$/dist/progress-timeline/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sections/index.html" afterPath="$PROJECT_DIR$/dist/sections/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sidebar/index.html" afterPath="$PROJECT_DIR$/dist/sidebar/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/scss/components/_alerts.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_alerts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/scss/components/_toolbar.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_toolbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/steppers/index.html" afterPath="$PROJECT_DIR$/dist/steppers/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/toggle/index.html" afterPath="$PROJECT_DIR$/dist/toggle/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/toolbars/index.html" afterPath="$PROJECT_DIR$/dist/toolbars/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/components/_pagination.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_pagination.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="46">
               <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pagination.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_pagination.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -236,11 +165,11 @@
         <option value="$PROJECT_DIR$/pages/dividers.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/pages/buttons.vue" />
-        <option value="$PROJECT_DIR$/static/static/scss/components/_pagination.scss" />
         <option value="$PROJECT_DIR$/pages/pagination.vue" />
         <option value="$PROJECT_DIR$/pages/install.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/static/static/scss/components/_pagination.scss" />
       </list>
     </option>
   </component>
@@ -281,6 +210,32 @@
             <path>
               <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
               <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,10 +391,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92676000" />
+    <option name="totallyTimeSpent" value="96346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2505293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,7 +404,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39054054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3310811" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -658,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_pagination.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/static/scss/hxui.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2484">
@@ -676,6 +625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4669">
           <caret line="203" column="42" lean-forward="false" selection-start-line="203" selection-start-column="42" selection-end-line="203" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="46">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
@@ -719,6 +669,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_pagination.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
           <folding />
         </state>
       </provider>
