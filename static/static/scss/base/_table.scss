@@ -11,7 +11,7 @@
       border: 1px solid $color-gray-lighter;
       border-width: 0 0 1px;
       color: $table-head;
-      font-weight:  $font-weight-bolder;
+
       text-transform: uppercase;
       font-size: $font-size-sm;
 
@@ -25,11 +25,11 @@
       a {
         cursor: pointer;
         &:link, &:visited, &:active {
-          color: $table-head;
+          color: $color-info;
         }
         &:hover {
           text-decoration: none;
-          color: lighten($table-head, 20%);
+          color: lighten($color-info, 20%);
         }
       }
     }
@@ -58,6 +58,7 @@
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th{
     border-bottom:1px solid $table-border;
+    font-weight:  $font-weight-bolder;
   }
 
   > tbody:not(.hx-table-group) > tr > td,
@@ -106,11 +107,13 @@
     padding: .9rem 0.75em;
     border-top: 1px solid #e5e5e5;
     text-transform: uppercase;
+    color: $color-info;
 
     > div {
       display: flex;
       align-items: center;
       width:100%;
+      color: $color-info;
        > small {
          flex: 1;
          margin-left: 1rem;
@@ -226,7 +229,7 @@
     }
     &.is-info{
       > td {
-        background-color: rgba($color-info, 0.1);
+        background-color: rgba($color-teal, 0.1);
       }
     }
 

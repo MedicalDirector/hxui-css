@@ -22,7 +22,7 @@ $color-red-light: hsl(339, 85%, 53%);
 $color-red-lighter: hsl(335, 82%, 62%);
 $color-red-lightest: hsl(333, 80%, 81%);
 
-$color-blue: hsl(204, 78%, 22%);
+$color-blue: hsl(204, 81%, 26%);
 $color-blue-light: hsl(205, 52%, 40%);
 $color-blue-lighter: hsl(202, 51%, 51%);
 $color-blue-lightest: hsl(200, 54%, 65%);
@@ -62,7 +62,7 @@ $color-gray-lightest:             hsl(240, 19%, 97%) !default;
 
 // Other colors
 $color-success:             $color-green-light !default;
-$color-info:                $color-teal !default;
+$color-info:                $color-blue !default;
 $color-warning:             $color-orange-light !default;
 $color-danger:              $color-red !default;
 $color-inverse:             $color-gray-dark !default;
@@ -77,8 +77,8 @@ $color-white-bis: hsl(0, 0%, 99%) !default;
 $color-orange-invert: findColorInvert($color-orange-light) !default;
 $color-yellow-invert: findColorInvert($color-yellow) !default;
 $color-green-invert: findColorInvert($color-green) !default;
-$color-blue-invert: findColorInvert($color-blue) !default;
-$color-info-invert: findColorInvert($color-teal) !default;
+$color-blue-invert: findColorInvert($color-teal) !default;
+$color-info-invert: findColorInvert($color-blue) !default;
 $color-purple-invert: findColorInvert($color-purple) !default;
 $color-red-invert: findColorInvert($color-red) !default;
 
