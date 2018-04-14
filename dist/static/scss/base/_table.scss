@@ -8,8 +8,8 @@
   > thead {
     > tr > th {
       vertical-align: bottom;
-      border: 1px solid $color-gray-lighter;
-      border-width: 0 0 1px;
+      border: 2px solid rgba(0,0,0,0.09);
+      border-width: 0 0 2px;
       color: $table-head;
       font-weight:  $font-weight-bolder;
       text-transform: uppercase;
@@ -48,17 +48,21 @@
     > tr > td,
     > tr > th {
       vertical-align: top;
-      border: 1px solid $color-gray-lightest;
-      border-width: 1px 0 0;
+      border: 2px solid $table-border;
+      border-width: 2px 0 0;
       color: $table-head;
       font-weight: $font-weight-normal;
     }
   }
 
   > tbody:not(.hx-table-group) > tr > td,
+  > tbody:not(.hx-table-group) > tr > th{
+    border-bottom:1px solid $table-border;
+  }
+
+  > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th,
   > thead > tr > th {
-    border-width: 0 0 1px;
     padding: 0.9em 0.75em;
     font-weight: $font-weight-normal;
     @include transition (.3s);
@@ -127,7 +131,7 @@
 
   > tbody > tr > td,
   > tbody > tr > th {
-    border: 1px solid transparent;
+    border-color: $table-border;
   }
 
   > thead > tr > th {
