@@ -347,7 +347,7 @@ export default {
           title: 'Grouped rows table',
           code: `
             <p>Add <code>class="hx-table-group"</code> to the tbody tag proceeding tbody related rows.</p>
-            <table class="hx-table is-striped">
+            <table class="hx-table is-hover">
               <thead>
                 <tr>
                   <th width="1"><div class="hx-checkbox-control">
@@ -357,15 +357,16 @@ export default {
                   <th>User Code</th>
                   <th>Firstname</th>
                   <th>Surname</th>
+                  <th class="actions is-text-center">Actions</th>
                 </tr>
               </thead>
               <tbody class="hx-table-group">
                 <tr>
-                  <th colspan="5"><div>Administrators <small>People who have access to all areas of the application</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                  <th colspan="6"><div>Administrators <small>People who have access to all areas of the application</small> <span class="hx-icon icon-angle-down"></span></div></th>
                 </tr>
               </tbody>
               <tbody>
-                <tr>
+                <tr class="is-selected">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-19" class="hx-label">19</label>
@@ -373,6 +374,12 @@ export default {
                   <td>TS001</td>
                   <td>Tupac</td>
                   <td>Shakur</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                  <tr>
                   <td><div class="hx-checkbox-control">
@@ -382,6 +389,12 @@ export default {
                   <td>BP001</td>
                   <td>Brian</td>
                   <td>Pulliese</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -391,11 +404,17 @@ export default {
                   <td>JS001</td>
                   <td>John</td>
                   <td>Smith</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
               <tbody class="hx-table-group">
                 <tr>
-                  <th colspan="5"><div>General Practice <small>People who have access to patient clinical records</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                  <th colspan="6"><div>General Practice <small>People who have access to patient clinical records</small> <span class="hx-icon icon-angle-down"></span></div></th>
                 </tr>
               </tbody>
               <tbody>
@@ -407,6 +426,12 @@ export default {
                   <td>BR001</td>
                   <td>Branda</td>
                   <td>Reed</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -416,6 +441,12 @@ export default {
                   <td>MR001</td>
                   <td>Mercedes</td>
                   <td>Mendez</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -425,6 +456,12 @@ export default {
                   <td>HS001</td>
                   <td>Harry</td>
                   <td>Sechi</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -434,6 +471,12 @@ export default {
                   <td>CY001</td>
                   <td>Chris</td>
                   <td>Yap</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                  <tr>
                   <td><div class="hx-checkbox-control">
@@ -443,11 +486,17 @@ export default {
                   <td>KL001</td>
                   <td>Kevin</td>
                   <td>Liang</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
                <tbody class="hx-table-group">
                 <tr>
-                  <th colspan="5"><div>Specialist <small>People who are an expert on a specific aspect of a job</small> <span class="hx-icon icon-angle-down"></span></div></th>
+                  <th colspan="6"><div>Specialist <small>People who are an expert on a specific aspect of a job</small> <span class="hx-icon icon-angle-down"></span></div></th>
                 </tr>
               </tbody>
               <tbody>
@@ -459,6 +508,12 @@ export default {
                   <td>BS001</td>
                   <td>Biggie</td>
                   <td>Smalls</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -468,6 +523,12 @@ export default {
                   <td>JS001</td>
                   <td>Julia</td>
                   <td>Sampson</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><div class="hx-checkbox-control">
@@ -477,6 +538,12 @@ export default {
                   <td>GP001</td>
                   <td>John</td>
                   <td>Pipps</td>
+                  <td>
+                    <div class="hx-button-split">
+                      <button type="button" class="hx-button is-flat"><i class="hx-icon icon-edit"></i></button>
+                      <button type="button" class="hx-button is-flat"><i class="icon icon-more"></i></button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -491,5 +558,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+  .actions{
+    width:5%;
+  }
 </style>

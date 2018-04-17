@@ -147,11 +147,22 @@
   > tbody:not(.hx-table-group) > tr {
     &.is-selected, &.is-selected:hover {
       > th, > td {
-        background-color: $color-primary;
-        border-bottom-color: transparent;
+       // background-color: $color-primary;
+       // background-color: rgba(0,0,0,.02);
       }
-      > th, > td, > th a, > td a {
-        color: $color-white;
+      > th,
+      > td,
+      > th a:not(.hx-dropdown-item),
+      > td a:not(.hx-dropdown-item) {
+        color: $color-primary;
+        .hx-button .hx-icon,
+        .hx-button .icon{
+          color: $color-primary;
+        }
+
+        .hx-checkbox + .hx-label:after{
+          border-color:$color-primary;
+        }
       }
     }
   }
@@ -204,7 +215,8 @@
       > tr:not(.is-selected) {
         &:hover {
            > td {
-            background-color: $table-row-even-hover-background;
+            background-color: $table-row-even-hover-background !important;
+             cursor: pointer;
           }
         }
       }
