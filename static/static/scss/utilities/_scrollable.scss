@@ -15,13 +15,13 @@
 
 
 .not-scrollable-y{
-  overflow-y:initial;
+  overflow-y:initial !important;
 }
 
 .not-scrollable-x{
-  overflow-x:initial;
+  overflow-x:initial !important;
 }
 
 .not-scrollable{
-  overflow:initial;
+  overflow:initial !important;
 }

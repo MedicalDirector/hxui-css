@@ -38,18 +38,6 @@ export default {
           link: 'http://angular.gethxui.com',
           icon: 'icon-angular',
           status: 'active'
-        },
-        {
-          name: 'ReactJS',
-          link: 'http://react.gethxui.com',
-          icon: 'icon-react',
-          status: 'disabled'
-        },
-        {
-          name: 'VueJS',
-          link: 'http://vue.gethxui.com',
-          icon: 'icon-vue',
-          status: 'active'
         }
       ]
     }

@@ -1,8 +1,9 @@
 {
   "name": "@hxui/css",
-  "version": "1.1.30",
+  "version": "1.1.31",
   "description": "Helix User Interface Library - Pure CSS Framework",
   "author": "Design @ MD <design@medicaldirector.com>",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "dev": "nuxt",
