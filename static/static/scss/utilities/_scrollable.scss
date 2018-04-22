@@ -12,3 +12,16 @@
   overflow:auto;
   -webkit-overflow-scrolling: touch;
 }
+
+
+.not-scrollable-y{
+  overflow-y:initial;
+}
+
+.not-scrollable-x{
+  overflow-x:initial;
+}
+
+.not-scrollable{
+  overflow:initial;
+}
