@@ -131,6 +131,15 @@
     }
   }
 
+  &.is-narrow{
+    > tbody.hx-table-group > tr > th {
+      padding: .6rem 0.5em;
+    }
+    > thead > tr > th .hx-checkbox-control {
+      margin-left: 0.09rem;
+    }
+  }
+
   > tbody.hx-table-group {
     box-shadow: 0 0 8px 0 rgba(0,0,0,.03), 0 4px 8px 0 rgba(0,0,0,.03);
   }
