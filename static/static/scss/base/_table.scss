@@ -118,6 +118,7 @@
     border-top: 1px solid #e5e5e5;
     text-transform: uppercase;
     color: $color-info;
+    cursor: pointer;
 
     > div {
       display: flex;
@@ -242,25 +243,33 @@
     }
   }
 
-  > tbody > tr {
+  > tbody > tr{
     &.is-danger{
-      > td {
+      > td,
+      > th{
         background-color: rgba($color-danger, 0.1);
+        div,span {color: $color-danger;}
       }
     }
     &.is-warning{
-      > td {
+      > td,
+      > th {
         background-color: rgba($color-warning, 0.1);
+       div,span {color: $color-warning;}
       }
     }
     &.is-success{
-      > td {
+      > td,
+      > th {
         background-color: rgba($color-success, 0.1);
+        div,span {color: $color-success;}
       }
     }
     &.is-info{
-      > td {
-        background-color: rgba($color-teal, 0.1);
+      > td,
+      > th {
+        background-color: rgba($color-info, 0.1);
+        div,span {color: $color-info;}
       }
     }
 
