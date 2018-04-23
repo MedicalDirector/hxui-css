@@ -384,12 +384,8 @@ export default {
                         <span>Batch 1</span>
                         <small class="ml-3">Mr Kun Aguero</small>
                         <div class="hx-spacer"></div>
-                        <span class="hx-badge is-warning">
-                            <span class="hx-badge-content">
-                                <span class="hx-avatar hx-bg-orange darken-3"><i class="hx-icon icon-exclamation-outline is-small"></i></span>
-                                Check item no 3287 for...
-                            </span>
-                          </span>
+                        <small class="hx-flex hx-flex-align-center is-warning"><i class="hx-icon icon-exclamation"> </i> Check item no 3287 for......</small>
+
                         <div class="hx-spacer"></div>
                         <small class="mr-3"><b>Batch Date:</b> 04/02/18</small>
                         <span class="hx-icon icon-angle-down"></span>
@@ -554,12 +550,272 @@ export default {
                         <span>Batch 3</span>
                         <small class="ml-3">Ms Kim Yeonkiong</small>
                          <div class="hx-spacer"></div>
-                        <span class="hx-badge is-danger">
-                            <span class="hx-badge-content">
-                                <span class="hx-avatar hx-bg-red darken-3"><i class="hx-icon icon-exclamation is-small"></i></span>
-                                Medicare error no 7896...
-                            </span>
-                          </span>
+
+                         <small class="hx-flex hx-flex-align-center is-danger"><i class="hx-icon icon-exclamation"> </i>Medicare error no 7896...</small>
+
+                        <div class="hx-spacer"></div>
+                        <small class="mr-3"><b>Batch Date:</b> 06/02/18</small>
+                        <span class="hx-icon icon-angle-down"></span>
+                    </div>
+                  </div>
+                  </th>
+                </tr>
+              </tbody>
+              <tbody class="is-hidden">
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-6" class="hx-label">6</label>
+                    </div></td>
+                  <td>BS001</td>
+                  <td>Biggie</td>
+                  <td>Smalls</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-7" class="hx-label">7</label>
+                    </div></td>
+                  <td>JS001</td>
+                  <td>Julia</td>
+                  <td>Sampson</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-8" class="hx-label">8</label>
+                    </div></td>
+                  <td>GP001</td>
+                  <td>John</td>
+                  <td>Pipps</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+<br>
+<hr>
+<br>
+
+            <p>Modifiers like <code>.is-narrow</code> and <code>.is-danger</code> will work as documented in above sections.</p>
+
+            <div class="hx-toolbar is-xsmall py-4 is-perforated">
+              <button class="hx-button is-outlined mr-1">
+                <div class="hx-icon-control"><i class="hx-icon icon-send"></i></div>
+                <div>Resubmit</div>
+              </button>
+              <button class="hx-button is-outlined">
+                <div class="hx-icon-control"><i class="hx-icon icon-printer-outline"></i></div>
+                <div>Print</div>
+              </button>
+              <div class="hx-spacer"></div>
+            </div>
+            <table class="hx-table is-hover is-narrow">
+              <thead>
+                <tr>
+                  <th width="1"><div class="hx-checkbox-control">
+                      <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-all" class="hx-label">ID</label>
+                    </div></th>
+                  <th>User Code</th>
+                  <th>Firstname</th>
+                  <th>Surname</th>
+                  <th class="actions is-text-center">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="hx-table-group">
+                <tr>
+                  <th colspan="6">
+                 <div>
+                    <div class="hx-checkbox-control">
+                        <input id="checkbox-group-1-all" name="checkbox-group-1-all" type="checkbox" class="hx-checkbox" title="Select All" />
+                         <label for="checkbox-group-1-all" class="hx-label"></label>
+                      </div>
+                     <div class="hx-flex hx-flex-1 hx-flex-align-center">
+                        <span>Batch 1</span>
+                        <small class="ml-3">Mr Kun Aguero</small>
+                        <div class="hx-spacer"></div>
+                        <small class="mr-3"><b>Batch Date:</b> 04/02/18</small>
+                        <span class="hx-icon icon-angle-down"></span>
+                      </div>
+                      </div>
+                    </th>
+                </tr>
+              </tbody>
+              <tbody class="is-hidden">
+                <tr class="is-selected">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-19" class="hx-label">19</label>
+                    </div></td>
+                  <td>TS001</td>
+                  <td>Tupac</td>
+                  <td>Shakur</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-20" class="hx-label">20</label>
+                    </div></td>
+                  <td>BP001</td>
+                  <td>Brian</td>
+                  <td>Pulliese</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-21" class="hx-label">21</label>
+                    </div></td>
+                  <td>JS001</td>
+                  <td>John</td>
+                  <td>Smith</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="hx-table-group">
+                <tr>
+                 <th colspan="6">
+                 <div>
+                    <div class="hx-checkbox-control">
+                        <input id="checkbox-group-2-all" name="checkbox-group-2-all" type="checkbox" class="hx-checkbox" title="Select All" />
+                         <label for="checkbox-group-2-all" class="hx-label"></label>
+                      </div>
+                     <div class="hx-flex hx-flex-1 hx-flex-align-center">
+                        <span>Batch 2</span>
+                        <small class="ml-3">Mr Leonel Messi</small>
+                        <div class="hx-spacer"></div>
+                        <small class="mr-3"><b>Batch Date:</b> 05/02/18</small>
+                        <span class="hx-icon icon-angle-down"></span>
+                      </div>
+                      </div>
+                    </th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-1" class="hx-label">1</label>
+                    </div></td>
+                  <td>BR001</td>
+                  <td>Branda</td>
+                  <td>Reed</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-2" class="hx-label">2</label>
+                    </div></td>
+                  <td>MR001</td>
+                  <td>Mercedes</td>
+                  <td>Mendez</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-3" class="hx-label">3</label>
+                    </div></td>
+                  <td>HS001</td>
+                  <td>Harry</td>
+                  <td>Sechi</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-4" class="hx-label">4</label>
+                    </div></td>
+                  <td>CY001</td>
+                  <td>Chris</td>
+                  <td>Yap</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                 <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-5" class="hx-label">5</label>
+                    </div></td>
+                  <td>KL001</td>
+                  <td>Kevin</td>
+                  <td>Liang</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+               <tbody class="hx-table-group">
+                <tr>
+
+                  <th colspan="6">
+                  <div>
+                    <div class="hx-checkbox-control">
+                      <input id="checkbox-group-3-all" name="checkbox-group-3-all" type="checkbox" class="hx-checkbox" title="Select All" />
+                       <label for="checkbox-group-3-all" class="hx-label"></label>
+                    </div>
+                    <div class="hx-flex hx-flex-1 hx-flex-align-center">
+                        <span>Batch 3</span>
+                        <small class="ml-3">Ms Kim Yeonkiong</small>
+                         <div class="hx-spacer"></div>
+                        <small class="hx-flex hx-flex-align-center is-danger"><i class="hx-icon icon-exclamation"> </i> Check item no 3287 for......</small>
                         <div class="hx-spacer"></div>
                         <small class="mr-3"><b>Batch Date:</b> 06/02/18</small>
                         <span class="hx-icon icon-angle-down"></span>
