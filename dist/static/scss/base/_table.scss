@@ -76,14 +76,24 @@
       white-space: nowrap;
       width: 1%;
     }
+  }
 
-    .hx-checkbox-control{
-      margin:0;
+  > tbody > tr > td,
+  > tbody > tr > th,
+  > thead > tr > th {
+    .hx-checkbox-control {
+      margin: 0;
       .hx-checkbox + .hx-label {
         padding-top: 2px;
-        display:initial;
+        display: initial;
         font-weight: $font-weight-normal;
       }
+    }
+  }
+
+  > thead > tr > th {
+    .hx-checkbox-control {
+      margin-left: 0.18rem;
     }
   }
 
