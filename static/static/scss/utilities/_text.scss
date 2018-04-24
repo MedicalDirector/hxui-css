@@ -2,7 +2,7 @@
 // Text colour modifiers
 @each $label, $colour in $colors {
   .is-#{$label}{
-    color: nth($colour, 1) !important;
+    color: nth($colour, 1);
   }
 
   .is-text-#{$label}{

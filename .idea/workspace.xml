@@ -3,54 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
-      <change beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
-      <change beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.1cb8389096629493af60.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tables.1c98de4042ce345eff22.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/accordions/index.html" afterPath="$PROJECT_DIR$/dist/accordions/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/alerts/index.html" afterPath="$PROJECT_DIR$/dist/alerts/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/avatars/index.html" afterPath="$PROJECT_DIR$/dist/avatars/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/badges/index.html" afterPath="$PROJECT_DIR$/dist/badges/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/breadcrumbs/index.html" afterPath="$PROJECT_DIR$/dist/breadcrumbs/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/buttons/index.html" afterPath="$PROJECT_DIR$/dist/buttons/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/cards/index.html" afterPath="$PROJECT_DIR$/dist/cards/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/colours/index.html" afterPath="$PROJECT_DIR$/dist/colours/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/container-demo/index.html" afterPath="$PROJECT_DIR$/dist/container-demo/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/containers/index.html" afterPath="$PROJECT_DIR$/dist/containers/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/dividers/index.html" afterPath="$PROJECT_DIR$/dist/dividers/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/downloads/index.html" afterPath="$PROJECT_DIR$/dist/downloads/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/dropdowns/index.html" afterPath="$PROJECT_DIR$/dist/dropdowns/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/elevation/index.html" afterPath="$PROJECT_DIR$/dist/elevation/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/forms/index.html" afterPath="$PROJECT_DIR$/dist/forms/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/grid/index.html" afterPath="$PROJECT_DIR$/dist/grid/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/icons/index.html" afterPath="$PROJECT_DIR$/dist/icons/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/install/index.html" afterPath="$PROJECT_DIR$/dist/install/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/lists/index.html" afterPath="$PROJECT_DIR$/dist/lists/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/modals/index.html" afterPath="$PROJECT_DIR$/dist/modals/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/nav/index.html" afterPath="$PROJECT_DIR$/dist/nav/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/index.html" afterPath="$PROJECT_DIR$/dist/pages/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/pagination/index.html" afterPath="$PROJECT_DIR$/dist/pagination/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/progress-timeline/index.html" afterPath="$PROJECT_DIR$/dist/progress-timeline/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/sections/index.html" afterPath="$PROJECT_DIR$/dist/sections/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/sidebar/index.html" afterPath="$PROJECT_DIR$/dist/sidebar/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
-      <change beforePath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" />
-      <change beforePath="$PROJECT_DIR$/dist/steppers/index.html" afterPath="$PROJECT_DIR$/dist/steppers/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/toggle/index.html" afterPath="$PROJECT_DIR$/dist/toggle/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/toolbars/index.html" afterPath="$PROJECT_DIR$/dist/toolbars/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/tables.vue" afterPath="$PROJECT_DIR$/pages/tables.vue" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/_variables.scss" afterPath="$PROJECT_DIR$/static/static/scss/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_form.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_form.scss" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/hxui.scss" afterPath="$PROJECT_DIR$/static/static/scss/hxui.scss" />
       <change beforePath="$PROJECT_DIR$/static/static/scss/utilities/_text.scss" afterPath="$PROJECT_DIR$/static/static/scss/utilities/_text.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -71,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="true" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -340,7 +293,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/static/scss/components/_form.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
@@ -366,7 +319,7 @@
         <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_text.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -434,8 +387,8 @@
       <find>table-head</find>
       <find>font-weight</find>
       <find>nav-link-color</find>
-      <find>$table</find>
       <find>checkbox</find>
+      <find>$table</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -490,11 +443,11 @@
         <option value="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/hxui.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/_variables.scss" />
-        <option value="$PROJECT_DIR$/static/static/scss/utilities/_text.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
         <option value="$PROJECT_DIR$/pages/tables.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_form.scss" />
+        <option value="$PROJECT_DIR$/static/static/scss/utilities/_text.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -742,7 +695,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128847000" />
+    <option name="totallyTimeSpent" value="129040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -1113,42 +1066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/static/scss/base/_content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3882">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/base/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9654">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2705">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_text.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1400,18 +1321,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/static/scss/components/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="798" column="7" lean-forward="false" selection-start-line="798" selection-start-column="7" selection-end-line="798" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_helpers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2705">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/base/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9654">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_text.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
