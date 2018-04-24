@@ -394,8 +394,8 @@ export default {
                     </th>
                 </tr>
               </tbody>
-              <tbody class="is-hidden">
-                <tr class="is-selected">
+              <tbody>
+                <tr class="is-warning">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-19" class="hx-label">19</label>
@@ -410,7 +410,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                 <tr>
+                 <tr  class="is-warning">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-20" class="hx-label">20</label>
@@ -425,7 +425,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="is-warning">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-21" class="hx-label">21</label>
@@ -561,8 +561,8 @@ export default {
                   </th>
                 </tr>
               </tbody>
-              <tbody class="is-hidden">
-                <tr>
+              <tbody class="is-danger">
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-6" class="hx-label">6</label>
@@ -577,7 +577,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-7" class="hx-label">7</label>
@@ -592,7 +592,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-8" class="hx-label">8</label>
@@ -824,8 +824,8 @@ export default {
                   </th>
                 </tr>
               </tbody>
-              <tbody class="is-hidden">
-                <tr>
+              <tbody>
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-narrow-6" name="checkbox-narrow-6" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-narrow-6" class="hx-label">6</label>
@@ -840,7 +840,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-narrow-7" name="checkbox-narrow-7" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-narrow-7" class="hx-label">7</label>
@@ -855,7 +855,7 @@ export default {
                   </div>
                   </td>
                 </tr>
-                <tr>
+                <tr class="is-danger">
                   <td><div class="hx-checkbox-control">
                       <input id="checkbox-narrow-8" name="checkbox-narrow-8" type="checkbox" class="hx-checkbox" title="Select All" />
                       <label for="checkbox-narrow-8" class="hx-label">8</label>

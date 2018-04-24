@@ -751,7 +751,8 @@
 }
 
 /// is-small checkbox
-.#{$namespace}-input-control.is-small{
+.#{$namespace}-input-control.is-small,
+.hx-table.is-narrow {
 
   // Checkbox container
   .#{$namespace}-checkbox-control {
@@ -777,6 +778,28 @@
       margin-top: 2px;
     }
   }
+
+  th {
+    .#{$namespace}-checkbox-control {
+      padding-bottom: .1rem;
+    }
+    .#{$namespace}-checkbox {
+      + .#{$namespace}-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .hx-table-group {
+    th {
+      .#{$namespace}-checkbox-control {
+        padding: 0;
+        margin-top: -.01rem;
+      }
+    }
+  }
+
 
   .#{$namespace}-checkbox:checked {
     + .#{$namespace}-label:before {

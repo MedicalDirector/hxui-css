@@ -58,17 +58,16 @@
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th{
     border-bottom:1px solid $table-border;
-    font-weight:  $font-weight-bolder;
   }
 
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th,
   > thead > tr > th {
     padding: 0.9em 0.75em;
-    font-weight: $font-weight-normal;
+    font-weight:  $font-weight-bolder;
     @include transition (.3s);
     strong {
-      font-weight: $font-weight-bolder;
+      font-weight: $font-weight-boldest;
     }
 
     // Modifiers
@@ -112,13 +111,12 @@
   > tbody.hx-table-group > tr > td,
   > tbody.hx-table-group > tr > th {
     @include transition (.3s);
-    font-weight: $font-weight-bolder;
+    font-weight: $font-weight-bold;
     background-color: #fff;
     padding: .9rem 0.75em;
     border-top: 1px solid #e5e5e5;
     text-transform: uppercase;
     color: $color-info;
-    cursor: pointer;
 
     > div {
       display: flex;
@@ -247,29 +245,41 @@
     &.is-danger{
       > td,
       > th{
-        background-color: rgba($color-danger, 0.1);
+        color: $color-danger;
         div,span {color: $color-danger;}
+      }
+      > td{
+        background-color: rgba($color-danger, 0.1);
       }
     }
     &.is-warning{
       > td,
-      > th {
+      > th{
+        color: $color-warning;
+        div,span {color: $color-warning;}
+      }
+      > td {
         background-color: rgba($color-warning, 0.1);
-       div,span {color: $color-warning;}
       }
     }
     &.is-success{
       > td,
-      > th {
-        background-color: rgba($color-success, 0.1);
+      > th{
+        color: $color-success;
         div,span {color: $color-success;}
+      }
+      > td {
+        background-color: rgba($color-success, 0.1);
       }
     }
     &.is-info{
       > td,
-      > th {
-        background-color: rgba($color-info, 0.1);
+      > th{
+        color: $color-info;
         div,span {color: $color-info;}
+      }
+      > td {
+        background-color: rgba($color-info, 0.1);
       }
     }
 
