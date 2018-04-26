@@ -1,3 +1,5 @@
+
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'hxui' !important;
@@ -13,6 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-prescription:before {
+  content: "\e983";
+}
 .icon-imaging-outline:before {
   content: "\e982";
 }
@@ -350,6 +355,9 @@
   content: "\e95b";
 }
 .icon-paperclip:before {
+  content: "\e95c";
+}
+.icon-attachment:before {
   content: "\e95c";
 }
 .icon-note:before {
