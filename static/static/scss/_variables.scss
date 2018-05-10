@@ -58,7 +58,7 @@ $color-gray-dark:                 hsl(200, 3%, 17%) !default;
 $color-gray:                      hsl(0, 0%, 23%) !default;
 $color-gray-light:                hsl(15, 2%, 38%) !default;
 $color-gray-lighter:              hsl(340, 1%, 68%) !default;
-$color-gray-lightest:             hsl(240, 19%, 97%) !default;
+$color-gray-lightest:             hsl(0, 0%, 91%) !default;
 
 // Other colors
 $color-success:             $color-green-light !default;
@@ -95,6 +95,7 @@ $colors: (
   'black': ($color-black, $color-white),
   'light': ($color-gray-light, $color-white),
   'lighter': ($color-gray-lighter, $color-gray-lighter),
+  'lightest': ($color-gray-lightest, $color-gray-light),
   'transparent': (transparent, $color-black),
   'dark': ($color-dark, $color-dark-invert),
   'grey': ($color-dark, $color-dark-invert),

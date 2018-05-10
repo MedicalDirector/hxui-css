@@ -1,14 +1,32 @@
-.scrollable-y{
-  overflow-y:auto;
-  -webkit-overflow-scrolling: touch;
+.scrollable-y,
+.is-scrollable-y{
+  overflow-y:auto !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
-.scrollable-x{
-  overflow-x:auto;
-  -webkit-overflow-scrolling: touch;
+.scrollable-x,
+.is-scrollable-x{
+  overflow-x:auto !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
-.scrollable{
-  overflow:auto;
-  -webkit-overflow-scrolling: touch;
+.scrollable,
+.is-scrollable{
+  overflow:auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.not-scrollable{
+  overflow:initial !important;
+  -webkit-overflow-scrolling: initial !important;
+}
+
+.not-scrollable-y{
+  overflow-y:initial !important;
+  -webkit-overflow-scrolling: initial !important;
+}
+
+.not-scrollable{
+  overflow-x:initial !important;
+  -webkit-overflow-scrolling: initial !important;
 }

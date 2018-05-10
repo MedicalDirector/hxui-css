@@ -224,21 +224,28 @@ export default {
     </tr>
   </thead>
   <tbody>
+  <tr>
+      <td><code>.is-black</code></td>
+      <td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+    </tr>
     <tr>
       <td><code>.is-white</code></td>
       <td class="is-white">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
-    <tr>
-      <td><code>.is-black</code></td>
-      <td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+
+<tr>
+      <td><code>.is-light</code></td>
+      <td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
     <tr>
       <td><code>.is-lighter</code></td>
       <td class="is-lighter">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
-    <tr>
-      <td><code>.is-light</code></td>
-      <td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+
+
+      <tr>
+      <td><code>.is-lightest</code></td>
+      <td class="is-lightest">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
     </tr>
     <tr>
       <td><code>.is-dark</code></td>
@@ -258,7 +265,7 @@ export default {
     </tr>
     <tr>
       <td><code>.is-danger</code></td>
-      <td class="is-danger">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td><span class="is-danger">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</span></td>
     </tr>
   </tbody>
 </table>

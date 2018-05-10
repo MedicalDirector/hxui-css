@@ -175,7 +175,7 @@
     }
   }
 
-  &.is-danger, {
+  &.is-danger {
     input,
     textarea {
       & + .#{$namespace}-label {
