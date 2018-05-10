@@ -58,17 +58,16 @@
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th{
     border-bottom:1px solid $table-border;
-    font-weight:  $font-weight-bolder;
   }
 
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th,
   > thead > tr > th {
     padding: 0.9em 0.75em;
-    font-weight: $font-weight-normal;
+    font-weight:  $font-weight-bolder;
     @include transition (.3s);
     strong {
-      font-weight: $font-weight-bolder;
+      font-weight: $font-weight-boldest;
     }
 
     // Modifiers
@@ -76,14 +75,24 @@
       white-space: nowrap;
       width: 1%;
     }
+  }
 
-    .hx-checkbox-control{
-      margin:0;
+  > tbody > tr > td,
+  > tbody > tr > th,
+  > thead > tr > th {
+    .hx-checkbox-control {
+      margin: 0;
       .hx-checkbox + .hx-label {
         padding-top: 2px;
-        display:initial;
+        display: initial;
         font-weight: $font-weight-normal;
       }
+    }
+  }
+
+  > thead > tr > th {
+    .hx-checkbox-control {
+      margin-left: 0.18rem;
     }
   }
 
@@ -102,7 +111,7 @@
   > tbody.hx-table-group > tr > td,
   > tbody.hx-table-group > tr > th {
     @include transition (.3s);
-    font-weight: $font-weight-bolder;
+    font-weight: $font-weight-bold;
     background-color: #fff;
     padding: .9rem 0.75em;
     border-top: 1px solid #e5e5e5;
@@ -118,6 +127,15 @@
          flex: 1;
          margin-left: 1rem;
       }
+    }
+  }
+
+  &.is-narrow{
+    > tbody.hx-table-group > tr > th {
+      padding: .6rem 0.5em;
+    }
+    > thead > tr > th .hx-checkbox-control {
+      margin-left: 0.09rem;
     }
   }
 
@@ -223,25 +241,45 @@
     }
   }
 
-  > tbody > tr {
+  > tbody > tr{
     &.is-danger{
-      > td {
+      > td,
+      > th{
+        color: $color-danger;
+        div,span {color: $color-danger;}
+      }
+      > td{
         background-color: rgba($color-danger, 0.1);
       }
     }
     &.is-warning{
+      > td,
+      > th{
+        color: $color-warning;
+        div,span {color: $color-warning;}
+      }
       > td {
         background-color: rgba($color-warning, 0.1);
       }
     }
     &.is-success{
+      > td,
+      > th{
+        color: $color-success;
+        div,span {color: $color-success;}
+      }
       > td {
         background-color: rgba($color-success, 0.1);
       }
     }
     &.is-info{
+      > td,
+      > th{
+        color: $color-info;
+        div,span {color: $color-info;}
+      }
       > td {
-        background-color: rgba($color-teal, 0.1);
+        background-color: rgba($color-info, 0.1);
       }
     }
 

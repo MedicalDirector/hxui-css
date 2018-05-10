@@ -157,9 +157,11 @@ $font-size-sm:   .85rem !default;
 $font-size-xs:   .75rem !default;
 
 $font-weight-normal: 300 !default;
-$font-weight-bolder: 500 !default;
+$font-weight-bolder: 400 !default;
+$font-weight-bold: 500 !default;
 $font-weight-boldest: 600 !default;
-$font-weight-bold: bold !default;
+
+
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
@@ -306,10 +308,10 @@ $input-icon-active:         $color-gray !default;
 $input-radius:              $border-radius-sm !default;
 
 // Table
-$table: $color-gray-dark !default;
+$table: $color-gray !default;
 $table-background: transparent !default;
 $table-border: rgba($color-black, .08) !default;
-$table-head: $color-gray-light !default;
+$table-head: $color-dark !default;
 
 $table-row-hover-background: rgba($color-black, .03) !default;
 $table-row-even-background: rgba($color-black, .02) !default;

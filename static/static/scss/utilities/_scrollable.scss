@@ -30,3 +30,16 @@
   overflow-x:initial !important;
   -webkit-overflow-scrolling: initial !important;
 }
+
+
+.not-scrollable-y{
+  overflow-y:initial !important;
+}
+
+.not-scrollable-x{
+  overflow-x:initial !important;
+}
+
+.not-scrollable{
+  overflow:initial !important;
+}
