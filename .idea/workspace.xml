@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/app.49a7ae1f64b587eb2af4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/img/hxui.137019e.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/layouts/default.5cb7a74fc2ffec0b01e9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.d8a9b040d3008276d920.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/accordions.60f73647b478a8534c4d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/alerts.d43d08281ef3e7b9aaf6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/avatars.5474efb82297a35b9e5c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/badges.8e5823ece979a2619003.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/breadcrumbs.45822fcc3beca7f41f1e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/buttons.004bcf41a1fc80c594b5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/cards.ddaa6ad0a22ee637d12a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/colours.856791c972c07f4ac684.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/container-demo.19716de9c502eebe1987.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/containers.7151c9cdfe691cdf0985.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/dividers.04939473ab26a9ead87e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/downloads.30bbd63900410295195d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/dropdowns.5bc5d1a30b6830c21ef1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/elevation.bff4a14562ae435e5d86.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/forms.72f265c52328a2a830d1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/grid.7d5f22aa78211ddb4c7b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/icons.9346f8568628f1612c8b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/index.ade1eb7a873b2cfda408.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/install.918539e39aff89e2c7a2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/lists.230f99a3f0b400fb6a7a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/modals.08173eac7d20bf0a47c8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/nav.a1901c09cd9334696447.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pages.d780a5ece610df8ba2da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/pagination.a4c67df9bdc6548f7990.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/progress-timeline.922fddfcae04bf06eb77.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sections.322fd82ed3219278198f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/sidebar.c4c6a28763c17bbdab49.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/snackbars-toasts.fe5db64170d8773336ac.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/spacing.7965dc70eaefbb21f8fd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/steppers.a0a151f7552853c95108.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tables.a77be3b5c890241a1d64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tabs.62b96a0a779dbccfda55.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/toggle.e1a63dc80535a05a943f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/toolbars.be2372d3bc32af96e9c2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/tooltips.6809fba5b1ca9a0a47f2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/pages/typography.3e4d45f9c50aabec6290.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.82713753cc6c8bd05ce2.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
@@ -75,6 +36,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/static/scss/_variables.scss" afterPath="$PROJECT_DIR$/dist/static/scss/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/steppers/index.html" afterPath="$PROJECT_DIR$/dist/steppers/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
@@ -83,6 +45,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/_variables.scss" afterPath="$PROJECT_DIR$/static/static/scss/_variables.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -105,7 +68,7 @@
       <file leaf-file-name="package.json" pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="23">
               <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
@@ -195,8 +158,8 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7176">
-              <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
+            <state relative-caret-position="283">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -288,7 +251,6 @@
         <option value="$PROJECT_DIR$/components/MainNav.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_badge.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
-        <option value="$PROJECT_DIR$/static/static/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
         <option value="$PROJECT_DIR$/pages/tables.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_form.scss" />
@@ -296,6 +258,7 @@
         <option value="$PROJECT_DIR$/static/static/scss/hxui.scss" />
         <option value="$PROJECT_DIR$/pages/icons.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
+        <option value="$PROJECT_DIR$/static/static/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -314,7 +277,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="2880" />
     <option name="height" value="1800" />
   </component>
@@ -518,25 +481,26 @@
       <workItem from="1523669474989" duration="7002000" />
       <workItem from="1523918624114" duration="4647000" />
       <workItem from="1524703330885" duration="1857000" />
-      <workItem from="1525991590215" duration="1082000" />
+      <workItem from="1525991590215" duration="1151000" />
+      <workItem from="1525998171135" duration="295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132231000" />
+    <option name="totallyTimeSpent" value="132595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2514245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24911785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5012337" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3780965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3918919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -785,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13800">
           <caret line="619" column="42" lean-forward="false" selection-start-line="619" selection-start-column="42" selection-end-line="619" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,14 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7176">
-          <caret line="312" column="24" lean-forward="false" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -876,9 +830,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="23">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
