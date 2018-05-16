@@ -121,11 +121,11 @@ $enable-shadows:            true !default;
 $enable-hover-media-query:  false !default;
 
 // Body
-$body-bg:       $color-gray-lightest !default;
+$body-bg:       hsla(240,20%,97%,1) !default;
 $body-color:    $color-gray-dark !default;
 
 // General colors
-$background-color: $color-gray-lightest !default;
+$background-color: $body-bg !default;
 
 // Spacer
 $spacer: 1rem !default;
