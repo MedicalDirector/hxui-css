@@ -144,15 +144,15 @@ export default {
   <tbody>
     <tr>
       <td><code>.is-text-nowrap</code></td>
-      <td class="is-text-nowrap">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-truncate</code></td>
-      <td class="is-text-truncate">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-center</code></td>
-      <td class="is-text-center">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
   </tbody>
 </table>
@@ -171,15 +171,15 @@ export default {
   <tbody>
     <tr>
       <td><code>.is-text-lowercase</code></td>
-      <td class="is-text-lowercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-lowercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-uppercase</code></td>
-      <td class="is-text-uppercase">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-capitalise</code></td>
-      <td class="is-text-capitalise">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-capitalise">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
   </tbody>
 </table>
@@ -198,15 +198,15 @@ export default {
   <tbody>
     <tr>
       <td><code>.is-text-weight-normal</code></td>
-      <td class="is-text-weight-normal">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-bold</code></td>
-      <td class="is-text-bold">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-text-italic</code></td>
-      <td class="is-text-italic">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-text-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
   </tbody>
 </table>
@@ -226,46 +226,46 @@ export default {
   <tbody>
   <tr>
       <td><code>.is-black</code></td>
-      <td class="is-black">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-white</code></td>
-      <td class="is-white">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
 
 <tr>
       <td><code>.is-light</code></td>
-      <td class="is-light">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-lighter</code></td>
-      <td class="is-lighter">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
 
 
       <tr>
       <td><code>.is-lightest</code></td>
-      <td class="is-lightest">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-dark</code></td>
-      <td class="is-dark">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-primary</code></td>
-      <td class="is-primary">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-info</code></td>
-      <td class="is-info">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-warning</code></td>
-      <td class="is-warning">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</td>
+      <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-danger</code></td>
-      <td><span class="is-danger">Lorizzle ipsum bow wow wow fizzle amet, shizzle my nizzle crocodizzle adipiscing elit.</span></td>
+      <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
     </tr>
   </tbody>
 </table>

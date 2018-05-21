@@ -17,7 +17,7 @@
 
 .#{$namespace}-button {
   @include control;
-  @include unselectable;
+  @include no-copy;
   border-radius: $border-radius-sm;
   background-color: $button-background;
   border: 1px solid $button-border;

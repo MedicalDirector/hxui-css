@@ -76,6 +76,27 @@ export default {
           ]
         },
         {
+          title: 'Helpers',
+          items: [
+            {
+              name: 'Text',
+              path: '/text'
+            },
+            {
+              name: 'Scrollable',
+              path: '/scrollable'
+            },
+            {
+              name: 'Responsiveness',
+              path: '/responsiveness'
+            },
+            {
+              name: 'Other',
+              path: '/other'
+            }
+          ]
+        },
+        {
           title: 'Elements',
           items: [
             {

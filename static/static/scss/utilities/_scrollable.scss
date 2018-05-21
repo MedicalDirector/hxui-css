@@ -16,30 +16,14 @@
   -webkit-overflow-scrolling: touch !important;
 }
 
-.not-scrollable{
-  overflow:initial !important;
-  -webkit-overflow-scrolling: initial !important;
-}
-
-.not-scrollable-y{
-  overflow-y:initial !important;
-  -webkit-overflow-scrolling: initial !important;
-}
-
-.not-scrollable{
-  overflow-x:initial !important;
-  -webkit-overflow-scrolling: initial !important;
-}
-
-
-.not-scrollable-y{
+.not-scrollable-y {
   overflow-y:initial !important;
 }
 
-.not-scrollable-x{
+.not-scrollable-x {
   overflow-x:initial !important;
 }
 
-.not-scrollable{
+.not-scrollable {
   overflow:initial !important;
 }
