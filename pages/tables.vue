@@ -288,6 +288,42 @@ export default {
           `
         },
         {
+          title: 'Contextual Stripe',
+          code: `
+            <p>Add <code>class="has-stripe-danger"</code>, <code>class="has-stripe-warning"</code>, <code>class="has-stripe-success"</code>, <code>class="has-stripe-info"</code> to the tr tag </p>
+            <table class="hx-table">
+              <thead>
+                <tr>
+                  <th>Context</th>
+                  <th>Icon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="has-stripe-danger">
+                  <td>Danger</td>
+                   <td><i class="hx-icon icon-exclamation"></i></td>
+                </tr>
+                <tr class="has-stripe-warning">
+                  <td>Warning</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
+                </tr>
+                <tr class="has-stripe-success">
+                  <td>Success</td>
+                   <td><i class="hx-icon icon-check"></i></td>
+                </tr>
+                <tr class="has-stripe-info">
+                  <td>Info</td>
+                   <td><i class="hx-icon icon-information"></i></td>
+                </tr>
+                <tr>
+                  <td>Default</td>
+                   <td><i class="hx-icon icon-information-outline"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          `
+        },
+        {
           title: 'Table with text field',
           code: `
             <p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag </p>

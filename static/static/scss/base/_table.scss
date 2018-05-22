@@ -283,6 +283,24 @@
       }
     }
 
+    &.has-stripe-info {
+      @include table-stripe($color-info);
+    }
+
+    &.has-stripe-success {
+      @include table-stripe($color-success);
+    }
+
+    &.has-stripe-warning {
+      @include table-stripe($color-warning);
+    }
+
+    &.has-stripe-danger {
+      @include table-stripe($color-danger);
+    }
+
+
+
     > td {
       &.has-text-field {
         padding: .25rem;
