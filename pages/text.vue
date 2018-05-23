@@ -156,65 +156,6 @@ export default {
   </tbody>
 </table>
           `
-        },
-        {
-          title: 'Colours',
-          code: `
-<p>Easily colour text with text colour classes</p>
-<table class="hx-table is-striped">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td><code>.is-black</code></td>
-      <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-white</code></td>
-      <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-
-<tr>
-      <td><code>.is-light</code></td>
-      <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-lighter</code></td>
-      <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-
-
-      <tr>
-      <td><code>.is-lightest</code></td>
-      <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-dark</code></td>
-      <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-primary</code></td>
-      <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-info</code></td>
-      <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-warning</code></td>
-      <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-danger</code></td>
-      <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
-    </tr>
-  </tbody>
-</table>
-          `
         }
       ]
     }

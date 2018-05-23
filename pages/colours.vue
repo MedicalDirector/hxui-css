@@ -6,7 +6,7 @@
 
       <hr>
 
-      <h4>Classes</h4>
+      <h4 class="mt-6 mb-5">Background colours</h4>
       <p>Each color from the spec gets converted to a background variant for styling within your application through a class, eg. <code>&lt;div class="hx-bg-red"&gt;&lt;/div&gt;</code>.</p>
 
       <p>Below is a list of the HxUI themed color palette.</p>
@@ -285,11 +285,84 @@
         </div>
       </div>
 
+      <hr class="mb-6">
+
+      <expanding-code-example v-for="(example, i) in examples" :key="i"
+        :title="example.title"
+        :code="example.code"
+        :example="example.code"
+        :visible="false"
+      ></expanding-code-example>
+
   </div>
 </template>
 
 <script>
+import ExpandingCodeExample from '@/components/ExpandingCodeExample'
 export default {
+  data: () => ({
+    examples: [
+      {
+        title: 'Text colours',
+        code: `
+<p>Easily colour text with text colour classes</p>
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-black</code></td>
+      <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr class="hx-bg-black">
+      <td><code>.is-white</code></td>
+      <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-light</code></td>
+      <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-lighter</code></td>
+      <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-lightest</code></td>
+      <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-dark</code></td>
+      <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-primary</code></td>
+      <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-info</code></td>
+      <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-warning</code></td>
+      <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-danger</code></td>
+      <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
+    </tr>
+  </tbody>
+</table>
+      `
+      }
+    ]
+  }),
+  components: {
+    ExpandingCodeExample
+  }
 }
 </script>
 
