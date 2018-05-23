@@ -34,7 +34,7 @@ export default {
         {
           title: 'List with status',
           code: `
-<p>An <strong>Unordered</strong> list with <strong>status</strong> gives the option not only to change bullet colours, but to also changing the bullet to symbolises status. </p>
+<p>An <strong>Unordered</strong> list with <strong>status</strong> is used to indicate a particular status. </p>
 <p>Simply add a class <code>.hx-list</code> <code>.has-status</code> to the list. To change colours, add either <code>.is-success</code>, <code>.is-success</code> or  <code>.is-danger</code> to the list item.</p>
 <ul class="hx-list has-status">
   <li>Item one - default</li>
@@ -53,6 +53,89 @@ export default {
 <br />
 <p>To turn the bullets into <strong>Checked</strong> circles, simply add <code>.is-checked</code> to the list item.</p>
 <ul class="hx-list has-status">
+  <li class="is-checked">Item one - default</li>
+  <li class="is-checked is-success">Item two - success</li>
+  <li class="is-checked is-warning">Item three - warning</li>
+  <li class="is-checked is-danger">Item four - danger</li>
+</ul>
+
+
+          `
+        },
+        {
+          title: 'Modifiers',
+          code: `
+<h5>Layout</h5>
+<p>By default a list will be layed out vertically, however sometimes you will need a horizontal layout. Simply add the class <code>.is-horizontal</code> to the list.</p>
+<ul class="hx-list is-horizontal">
+  <li>Item one - default</li>
+  <li class="is-success">Item two - success</li>
+  <li class="is-warning">Item three - warning</li>
+  <li class="is-danger">Item four - danger</li>
+</ul>
+<p>&nbsp;</p>
+<h5>Invert</h5>
+<p>Invert the style by using the <code>.is-inverse</code> modifier. </p>
+
+<ul class="hx-list is-horizontal is-inverse">
+  <li>Item one - default</li>
+  <li class="is-success">Item two - success</li>
+  <li class="is-warning">Item three - warning</li>
+  <li class="is-danger">Item four - danger</li>
+</ul>
+<br />
+<ul class="hx-list has-status is-horizontal is-inverse">
+  <li>Item one - default</li>
+  <li class="is-success">Item two - success</li>
+  <li class="is-warning">Item three - warning</li>
+  <li class="is-danger">Item four - danger</li>
+</ul>
+<br />
+
+<ul class="hx-list has-status is-horizontal is-inverse">
+  <li class="is-not-checked">Item one - default</li>
+  <li class="is-not-checked is-success">Item two - success</li>
+  <li class="is-not-checked is-warning">Item three - warning</li>
+  <li class="is-not-checked is-danger">Item four - danger</li>
+</ul>
+<br />
+
+<ul class="hx-list has-status is-horizontal is-inverse">
+  <li class="is-checked">Item one - default</li>
+  <li class="is-checked is-success">Item two - success</li>
+  <li class="is-checked is-warning">Item three - warning</li>
+  <li class="is-checked is-danger">Item four - danger</li>
+</ul>
+<p>&nbsp;</p>
+<h5>Bordered</h5>
+<p>Inverted styles are predominantly designed to work on white backgrounds. <br>
+In some cases they will go on other background colours that make the inverted style hard to see. <br>
+Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
+
+<ul class="hx-list is-bordered is-horizontal is-inverse">
+  <li>Item one - default</li>
+  <li class="is-success">Item two - success</li>
+  <li class="is-warning">Item three - warning</li>
+  <li class="is-danger">Item four - danger</li>
+</ul>
+<br />
+<ul class="hx-list is-bordered has-status is-horizontal is-inverse">
+  <li>Item one - default</li>
+  <li class="is-success">Item two - success</li>
+  <li class="is-warning">Item three - warning</li>
+  <li class="is-danger">Item four - danger</li>
+</ul>
+<br />
+
+<ul class="hx-list is-bordered has-status is-horizontal is-inverse">
+  <li class="is-not-checked">Item one - default</li>
+  <li class="is-not-checked is-success">Item two - success</li>
+  <li class="is-not-checked is-warning">Item three - warning</li>
+  <li class="is-not-checked is-danger">Item four - danger</li>
+</ul>
+<br />
+
+<ul class="hx-list is-bordered has-status is-horizontal is-inverse">
   <li class="is-checked">Item one - default</li>
   <li class="is-checked is-success">Item two - success</li>
   <li class="is-checked is-warning">Item three - warning</li>

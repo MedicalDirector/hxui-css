@@ -106,6 +106,19 @@
         color: shade($color-danger, 10%);
       }
     }
+
+    &.is-bordered {
+      border:1px solid rgba($color_dark,0.3);
+      &.is-success{
+        border-color: rgba($color_success,0.3);
+      }
+      &.is-warning{
+        border-color:rgba($color_warning,0.3);
+      }
+      &.is-danger{
+        border-color:rgba($color_danger,0.3);
+      }
+    }
   }
   &.is-float {
     position: fixed;

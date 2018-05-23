@@ -39,6 +39,66 @@
     }
   }
 
+
+  &.is-inverse{
+    > li {
+      &:before {
+        background-color: tint($color-gray-lighter, 85%);
+      }
+
+      &.is-success {
+        &.is-not-checked:before,
+        &:before {
+          background-color: tint($color-success, 85%);
+        }
+        &.is-checked:before{
+          color: shade($color-success, 10%);
+        }
+      }
+      &.is-warning {
+        &.is-not-checked:before,
+        &:before {
+          background-color: tint($color-warning, 85%);
+        }
+        &.is-checked:before{
+          color: shade($color-warning, 10%);
+        }
+      }
+      &.is-danger {
+        &.is-not-checked:before,
+        &:before {
+          background-color: tint($color-danger, 85%);
+        }
+        &.is-checked:before{
+          color: shade($color-danger, 10%);
+        }
+      }
+    }
+
+    &.is-bordered {
+      > li {
+        &:before {
+          border: 1px solid $color-gray-lightest;
+        }
+        &.is-success:not(.is-not-checked){
+          &:before{
+            border-color:  rgba($color_success,0.3);
+          }
+        }
+        &.is-warning:not(.is-not-checked){
+          &:before{
+            border-color:  rgba($color_warning,0.3);
+          }
+        }
+        &.is-danger:not(.is-not-checked){
+          &:before{
+            border-color:  rgba($color_danger,0.3);
+          }
+        }
+      }
+    }
+  }
+
   &.has-status {
     padding-left: 2rem;
     > li {
@@ -137,6 +197,17 @@
         }
       }
     }
+
+    &.is-inverse{
+      > li {
+        &.is-not-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info):before{
+          background-color: tint($color-gray-lighter, 85%);
+        }
+        &.is-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info):before {
+          color: shade($color-gray-lighter, 10%);
+        }
+      }
+    }
   }
 
   &.is-horizontal {
@@ -145,6 +216,7 @@
     > li {
       display: inline-flex;
       line-height: 1.5rem;
+      margin-right: 4.5rem;
       &:before {
         left: -1.5rem;
       }

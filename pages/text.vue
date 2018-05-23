@@ -85,6 +85,29 @@ export default {
           `
         },
         {
+          title: 'Decoration',
+          code: `
+<table class="hx-table is-striped">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-line-through</code></td>
+      <td class="is-text-line-through">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-underline</code></td>
+      <td class="is-text-underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>
+          `
+        },
+        {
           title: 'Weights & italics',
           code: `
 <table class="hx-table is-striped">
