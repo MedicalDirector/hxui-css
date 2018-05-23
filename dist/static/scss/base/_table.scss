@@ -256,7 +256,7 @@
       > td,
       > th{
         color: $color-warning;
-        div,span {color: $color-warning;}
+       > div, > span:not(.hx-badge) {color: $color-warning;}
       }
       > td {
         background-color: rgba($color-warning, 0.1);
