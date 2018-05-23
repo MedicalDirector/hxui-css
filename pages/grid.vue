@@ -464,6 +464,117 @@ export default {
   </div>
 </div>
           `
+        },
+        {
+          title: 'Columns responsiveness',
+          code: `
+<div class="hx-alert is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    Resize your browser and see when the columns are stacked and when they are horizontally distributed.
+  </span>
+</div>
+
+<h5 class="mb-2">Mobile columns</h5>
+<p>By default, columns are only activated from <strong>tablet</strong> onwards. Columns will be stacked on top of each other when displayed on <strong>mobile</strong>. If you want columns to work on mobile, simply just add the <code>is-mobile</code> modifier on the columns container.</p>
+<div class="hx-columns is-mobile">
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">2</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">3</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">4</div>
+    </div>
+  </div>
+</div>
+
+<h5 class="mb-2">Desktop columns</h5>
+<p>If you only want columns on <strong>desktop</strong> upwards, just use the <code>is-desktop</code> modifier on the columns container.</p>
+<div class="hx-columns is-desktop">
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">2</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">3</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">4</div>
+    </div>
+  </div>
+</div>
+          `
+        },
+        {
+          title: 'Different column sizes per breakpoint',
+          code: `
+<div class="hx-alert is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    Resize your browser and see when the columns are stacked and when they are horizontally distributed.
+  </span>
+</div>
+
+<p>You can define a <strong>column size</strong> for <em>each</em> viewport size: <strong>mobile</strong>, <strong>tablet</strong>, and <strong>desktop</strong>.</p>
+<div class="hx-columns is-mobile">
+  <div class="hx-column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">
+        <code>is-three-quarters-mobile</code><br />
+        <code>is-two-thirds-tablet</code><br />
+        <code>is-half-desktop</code><br />
+        <code>is-one-third-widescreen</code><br />
+        <code>is-one-quarter-fullhd</code>
+      </div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="hx-card hx-bg-teal lighten-5">
+      <div class="hx-card-content has-text-centered">1</div>
+    </div>
+  </div>
+</div>
+          `
         }
       ]
     }

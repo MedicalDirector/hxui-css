@@ -37,6 +37,10 @@ export default {
               path: '/containers'
             },
             {
+              name: 'Dividers',
+              path: '/dividers'
+            },
+            {
               name: 'Elevation',
               path: '/elevation'
             },
@@ -51,14 +55,6 @@ export default {
             {
               name: 'Sections',
               path: '/sections'
-            },
-            {
-              name: 'Spacing',
-              path: '/spacing'
-            },
-            {
-              name: 'Dividers',
-              path: '/dividers'
             }
           ]
         },
@@ -79,16 +75,20 @@ export default {
           title: 'Helpers',
           items: [
             {
-              name: 'Text',
-              path: '/text'
+              name: 'Responsiveness',
+              path: '/responsiveness'
             },
             {
               name: 'Scrollable',
               path: '/scrollable'
             },
             {
-              name: 'Responsiveness',
-              path: '/responsiveness'
+              name: 'Spacing',
+              path: '/spacing'
+            },
+            {
+              name: 'Text',
+              path: '/text'
             },
             {
               name: 'Other',
@@ -189,12 +189,12 @@ export default {
               path: '/toggle'
             },
             {
-              name: 'Tooltips',
-              path: '/tooltips'
-            },
-            {
               name: 'Toolbars',
               path: '/toolbars'
+            },
+            {
+              name: 'Tooltips',
+              path: '/tooltips'
             }
           ]
         },
