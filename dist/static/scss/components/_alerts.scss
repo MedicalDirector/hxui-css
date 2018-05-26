@@ -8,6 +8,11 @@
   color: $color-white;
   display: flex;
   align-items: center;
+
+  &.is-small {
+    padding: .3rem .75rem;
+  }
+
   .#{$namespace}-icon {
     text-shadow: none;
     color: rgba(white, .3);

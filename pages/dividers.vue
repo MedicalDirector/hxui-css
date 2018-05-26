@@ -39,14 +39,16 @@ export default {
 <div class="hx-columns">
   <div class="hx-column">
     <div class="hx-card">
-        <div class="is-perforated py-8 px-4">Content</div>
+        <div class="py-8 px-4">Content</div>
+        <hr class="is-perforated" />
         <div class="py-4 px-4">Related Content</div>
     </div>
   </div>
    <div class="hx-column">
     <div class="hx-card">
         <div class="py-8 px-4">Content</div>
-        <div class="is-divided py-4 px-4">Non Related Content</div>
+        <hr class="is-divided" />
+        <div class="py-4 px-4">Non Related Content</div>
     </div>
   </div>
 </div>

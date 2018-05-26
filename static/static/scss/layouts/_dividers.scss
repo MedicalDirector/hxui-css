@@ -5,12 +5,18 @@
 // to be used when dividing related content
 .is-perforated,
 hr.is-perforated {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 0 0 0 0;
   border-bottom: 1px dashed $border-color;
 }
 
 // to be used when dividing none related content
 .is-divided,
 hr.is-divided {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 0 0 0 0;
   border-top: 1px solid $border-color;
 }
 
