@@ -17,6 +17,13 @@
     text-shadow: none;
     color: rgba(white, .3);
   }
+  &.is-info {
+    background-color: $color-info;
+    color: $color-white;
+    .#{$namespace}-icon {
+      color: rgba(white, .3);
+    }
+  }
   &.is-success {
     background-color: $color-primary;
     color: $color-white;
@@ -56,6 +63,24 @@
     }
     .#{$namespace}-icon {
       color: $color-gray-dark;
+    }
+
+    &.is-info {
+      background-color: tint($color-info, 85%);
+      color: shade($color-info, 10%);
+
+      a {
+        color: shade($color-info, 10%);
+        border-bottom-color: shade($color-info, 10%);
+        &:hover {
+          color: $color-gray;
+          border-bottom-color: transparent;
+        }
+      }
+
+      .#{$namespace}-icon {
+        color: shade($color-info, 10%);
+      }
     }
 
     &.is-success {
@@ -114,6 +139,9 @@
 
     &.is-bordered {
       border:1px solid rgba($color_dark,0.3);
+      &.is-info{
+        border-color: rgba($color_info,0.3);
+      }
       &.is-success{
         border-color: rgba($color_success,0.3);
       }

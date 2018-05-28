@@ -33,6 +33,14 @@ export default {
     This is the default alert
   </span>
 </div>
+<div class="hx-alert is-info">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is the default alert
+  </span>
+</div>
 <div class="hx-alert is-success">
   <span class="hx-icon-control mr-2">
     <i class="hx-icon is-medium icon-check"></i>
@@ -108,6 +116,17 @@ export default {
     <button class="hx-delete"></button>
   </span>
 </div>
+<div class="hx-alert is-info is-inverse">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is the default alert. <a href="">Click here</a> to URL.
+  </span>
+  <span class="hx-icon-control ml-2">
+    <button class="hx-delete"></button>
+  </span>
+</div>
 <div class="hx-alert is-success is-inverse">
   <span class="hx-icon-control mr-2">
     <i class="hx-icon is-medium icon-check"></i>
@@ -156,6 +175,14 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
     This is the default alert. <a href="">Click here</a> to URL.
   </span>
 </div>
+<div class="hx-alert is-info is-inverse is-bordered">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is the default alert. <a href="">Click here</a> to URL.
+  </span>
+</div>
 <div class="hx-alert is-success is-inverse is-bordered">
   <span class="hx-icon-control mr-2">
     <i class="hx-icon is-medium icon-check"></i>
@@ -186,6 +213,14 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
 <p>Add the  <code>.is-small</code> modifier to reduce padding and overall size of alerts. </p>
 
 <div class="hx-alert is-inverse is-bordered is-small">
+  <span class="hx-icon-control mr-2">
+    <i class="hx-icon is-medium icon-information"></i>
+  </span>
+  <span class="hx-flex-1">
+    This is the default alert. <a href="">Click here</a> to URL.
+  </span>
+</div>
+<div class="hx-alert is-info is-inverse is-bordered is-small">
   <span class="hx-icon-control mr-2">
     <i class="hx-icon is-medium icon-information"></i>
   </span>
