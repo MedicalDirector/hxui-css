@@ -1,45 +1,13 @@
 $sidebar-nav-hover-color: colour-gray-light;
 
-.#{$namespace}-sidebar, .#{$namespace}-drawer {
-  width: 17rem;
-  height: 100%;
-  max-height: calc(100% - 0px);
-  display: block;
-  top: 0;
-  bottom: 0;
-  transform: translateX(-100%);
-  background-color: $color-gray-lightest;
-  padding: $spacer 0;
+
+.#{$namespace}-sidebar,
+.#{$namespace}-drawer{
+  background-color: #fff;
+  padding:$spacer 0;
+  display: inline-flex;
+  flex-direction: column;
   transition: .3s ease-in-out;
-  box-shadow: inset -1px 0 0 0 rgba(0,0,0,.05);
-  z-index: 1;
-
-  &-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0,0,0,.8);
-  }
-
-  &.is-absolute {
-    position: absolute;
-  }
-
-  &.is-fixed {
-    position: fixed;
-  }
-
-  &.is-right {
-    right: 0;
-    transform: translateX(100%);
-    box-shadow: inset 1px 0 0 0 rgba(0,0,0,.05);
-  }
-
-  &.is-active {
-    transform: translateX(0%);
-  }
 
   .#{$namespace}-nav-vertical {
     .#{$namespace}-nav-item {
@@ -57,7 +25,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.is-minified{
-    width:($spacer * 3.5);
+    width:($spacer * 3.5) !important;
     .#{$namespace}-nav-vertical {
       .#{$namespace}-nav-item {
         padding-left: 0rem;
@@ -67,7 +35,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.is-expanded {
-    width:($spacer * 50);
+    width:($spacer * 50) !important;
     .#{$namespace}-nav-vertical {
       .#{$namespace}-nav-item {
         padding-left: 0rem;
@@ -100,6 +68,51 @@ $sidebar-nav-hover-color: colour-gray-light;
 
     hr{
       border-top: 1px solid rgba(255,255,255, 0.2);
+    }
+  }
+}
+
+.#{$namespace}-nav-drawer {
+  .#{$namespace}-sidebar,
+  .#{$namespace}-drawer {
+    width: 17rem;
+    height: 100%;
+    max-height: calc(100% - 0px);
+    display: block;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    background-color: $color-gray-lightest;
+    padding: $spacer 0;
+    transition: .3s ease-in-out;
+    box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, .05);
+    z-index: 1;
+
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, .8);
+    }
+
+    &.is-absolute {
+      position: absolute;
+    }
+
+    &.is-fixed {
+      position: fixed;
+    }
+
+    &.is-right {
+      right: 0;
+      transform: translateX(100%);
+      box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, .05);
+    }
+
+    &.is-active {
+      transform: translateX(0%);
     }
   }
 }

@@ -34,7 +34,7 @@ export default {
       {
         title: 'Default',
         code: `
-<div class="hx-card is-flex mb-2" style="height: 10rem">
+<div class="hx-card is-flex mb-2 hx-nav-drawer" style="height: 10rem">
   <!-- no gradient (.hx-sidebar still works)-->
   <div class="hx-drawer is-active"></div>
   <!-- Main content -->
@@ -43,7 +43,7 @@ export default {
   </div>
 </div>
 
-<div class="hx-card is-flex" style="height: 10rem">
+<div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
   <!--  purple gradient -->
   <div class="hx-drawer has-purple-gradient is-active"></div>
   <!-- Main content -->
@@ -53,11 +53,11 @@ export default {
 </div>
 
 <!--
-<div class="hx-card mb-2" style="height: 10rem">
+<div class="hx-card mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer has-purple-gradient"></div>
 </div>
 
-<div class="hx-card mb-2" style="height: 10rem">
+<div class="hx-card mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer has-orange-gradient"></div>
 </div>
 -->
@@ -66,7 +66,7 @@ export default {
       {
         title: 'Navigation drawer',
         code: `
-<div class="hx-card is-flex" style="height: 10rem">
+<div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
   <div class="is-flex">
     <div class="hx-drawer has-purple-gradient is-minified is-active"></div>
     <div class="hx-drawer is-active"></div>
@@ -81,7 +81,7 @@ export default {
       {
         title: 'Sizes',
         code: `
-<div class="hx-card is-flex mb-2" style="height: 10rem">
+<div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer hx-bg-purple is-active is-minified"></div>
   <div class="content py-4 px-6">
     <h3>Minimised</h3>
@@ -89,14 +89,14 @@ export default {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
   </div>
 </div>
-<div class="hx-card is-flex mb-2" style="height: 10rem">
+<div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer hx-bg-purple is-active"></div>
   <div class="content py-4 px-6">
     <h3>Default</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
   </div>
 </div>
-<div class="hx-card is-flex mb-2" style="height: 10rem">
+<div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer hx-bg-purple is-active is-expanded"></div>
   <div class="content py-4 px-6">
     <h3>Expanded</h3>
@@ -109,7 +109,7 @@ export default {
       {
         title: 'Right aligned',
         code: `
-<div class="hx-card is-flex mb-2" style="height: 10rem">
+<div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
   <div class="content py-3 px-6">
     <p>Add class <code>is-right</code> to the drawer.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
@@ -121,7 +121,7 @@ export default {
       {
         title: 'With overlay',
         code: `
-<div class="hx-card is-flex" style="height: 10rem">
+<div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
   <div class="hx-drawer hx-bg-purple is-absolute is-active"></div>
   <div class="hx-drawer-bg is-active"></div>
   <div class="content py-4 px-6">
