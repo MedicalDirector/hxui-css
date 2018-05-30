@@ -55,6 +55,7 @@ module.exports = {
   ** Plug-ins
   */
   plugins: [
-    '~/plugins/vue-highlightjs'
+    '~/plugins/vue-highlightjs',
+    { src: '~/plugins/ga.js', ssr: false }
   ]
 }
