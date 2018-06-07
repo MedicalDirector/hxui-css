@@ -4,7 +4,7 @@
 
       <div class="hx-column welcome">
         <h1>Welcome to HxUI</h1>
-        <p class="hx-subtitle">HxUI is Helix Experience UI library for creating websites and Apps</p>
+        <p class="hx-subtitle">HxUI is a health care focused UI Library</p>
         <p>HxUI includes the resources to create user interfaces consistent with the Helix design principles, design language, and best practices. Rather than focusing on pixels, developers can focus on application logic, while designers can focus on user experience, interactions, and flows.</p>
       </div>
 
