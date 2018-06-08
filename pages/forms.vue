@@ -204,7 +204,7 @@ export default {
           code: `
 <p>Use checkboxes when looking for yes or no answers. The <code>for</code> attribute is necessary to bind our custom checkbox with the input. Add the input's <code>id</code> as the value of the <code>for</code> attribute of the label.</p>
 <div class="hx-columns">
-  <div class="hx-column is-2 is-offset-4">
+  <div class="hx-column is-2 is-offset-3">
     <div class="hx-input-control">
       <div class="hx-checkbox-control">
         <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option1" />
@@ -238,6 +238,27 @@ export default {
       <div class="hx-checkbox-control">
         <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms" disabled />
         <label for="sms" class="hx-label">SMS</label>
+      </div>
+    </div>
+  </div>
+  <div class="hx-column is-2">
+    <div class="hx-input-control is-small">
+      <strong>Small Variation</strong>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email1" checked />
+        <label for="email1" class="hx-label">Email</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack1"/>
+        <label for="slack1" class="hx-label">Slack</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat1" disabled/>
+        <label for="hipchat1" class="hx-label">Hipchat</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms1" disabled />
+        <label for="sms1" class="hx-label">SMS</label>
       </div>
     </div>
   </div>
