@@ -260,9 +260,9 @@ export default {
 <p>Simply add class <code>.is-large</code> to the base class <code>.hx-input-control</code>.</p>
 <br />
 <div class="hx-input-control is-large">
-  <input class="hx-input" type="text" required>
-  <label class="hx-label">Full Name <sup>*</sup></label>
-  <div class="hx-help">Please enter your full name</div>
+<input class="hx-input" type="text" required>
+<label class="hx-label">Full Name <sup>*</sup></label>
+<div class="hx-help">Please enter your full name</div>
 </div>
           `
         }

@@ -1,0 +1,446 @@
+// =========
+// Form
+// =========
+
+$input-height: 56px;
+
+.#{$namespace}-input-group {
+  position: relative;
+
+  .#{$namespace}-icon {
+    position: absolute;
+    top: 38%;
+    transform: translate3d(0, -50%, 0);
+    opacity: .6;
+
+    &:first-child {
+      left: .75rem;
+
+      & + .#{$namespace}-input-control {
+        .#{$namespace}-input {
+          padding-left: 2.65rem;
+          & + .#{$namespace}-label {
+            left: 2.75rem;
+            & + .#{$namespace}-help {
+              padding-left: 2.75rem;
+            }
+          }
+        }
+      }
+
+    }
+
+    &:last-child {
+      right: .75rem;
+    }
+
+  }
+
+  .#{$namespace}-button {
+    position: absolute;
+    top: .8rem;
+    right: .75rem;
+    z-index: 1;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+}
+
+.#{$namespace}-input-control {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .#{$namespace}-input, .#{$namespace}-textarea, .#{$namespace}-select {
+
+    &.ng-invalid.ng-dirty {
+      & + .#{$namespace}-label {
+        color: $color-danger;
+        opacity: 1;
+        & + .#{$namespace}-help {
+          color: $color-danger;
+          &:before, &:after {
+            width: 50%;
+            background-color: $color-danger;
+          }
+        }
+      }
+    }
+
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    color: rgba(0,0,0,.87);
+    font-size: 1rem;
+    background-color: rgba(0,0,0,.02);
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    padding: 1.5rem .75rem .5rem;
+    height: $input-height;
+    outline: none;
+    appearance: none;
+    transition: .3s;
+
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
+
+    &:focus {
+
+      & + .#{$namespace}-label {
+        color: $color-primary;
+        opacity: 1;
+
+        & + .#{$namespace}-help {
+          color: rgba(0,0,0,0.6);
+          &:before, &:after {
+            width: 50%;
+          }
+        }
+
+      }
+
+    }
+
+    &[disabled] {
+      opacity: .6;
+      & + .#{$namespace}-label {
+        opacity: .3;
+      }
+      &:hover {
+        cursor: not-allowed;
+        background-color: rgba(0,0,0,.02);
+      }
+    }
+
+    & + .#{$namespace}-label {
+      position: absolute;
+      top: 1.1rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      left: .75rem;
+      transition: .3s;
+      opacity: .6;
+
+      sup {
+        position: relative;
+        top: -3px;
+        color: rgba(0,0,0,.5);
+      }
+
+      & + .#{$namespace}-help {
+        position: relative;
+        font-size: .75rem;
+        font-weight: 400;
+        width: 100%;
+        font-family: Roboto, sans-serif;
+        color: rgba(0,0,0,0);
+        padding: .25rem 0 0 .75rem;
+        line-height: 1;
+        z-index: 1;
+        transition: .3s;
+
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          top: -2px;
+          height: 2px;
+          width: 0%;
+          transition: .3s;
+          opacity: 1;
+          background-color: $color-primary;
+        }
+
+        &:before {
+          right: 50%;
+        }
+
+        &:after {
+          left: 50%;
+        }
+
+      }
+
+    }
+
+    &:focus ~ .#{$namespace}-label,
+    &:valid ~ .#{$namespace}-label,
+    &[disabled] ~ .#{$namespace}-label,
+    &:-webkit-autofill  ~ .#{$namespace}-label {
+      // top: .5rem;
+      // font-size: .75rem;
+      transform-origin: left center;
+      transform: scale(.75) translate3d(0, -.8rem, 0);
+      sup {
+        top: -.3rem;
+        font-size: .4rem;
+      }
+    }
+
+  }
+
+  .#{$namespace}-textarea {
+    height: auto;
+    min-height: 56px;
+    padding-top: 1.6rem;
+    resize: vertical;
+
+    & + .#{$namespace}-label {
+
+      & + .#{$namespace}-help {
+        top: -6px;
+        z-index: 1;
+      }
+
+    }
+
+  }
+
+  .#{$namespace}-select-control {
+    position: relative;
+    &:after {
+      content: "\E955";
+      font-family: hxui!important;
+      position: absolute;
+      top: 0;
+      right: .75rem;
+      font-size: 1.5rem;
+      height: 56px;
+      line-height: 56px;
+      opacity: .6;
+    }
+    .#{$namespace}-select {
+
+      &.ng-invalid.ng-dirty {
+        border-bottom: 2px solid $color-danger;
+        & + .#{$namespace}-label {
+          color: $color-danger;
+          opacity: 1;
+        }
+      }
+
+      cursor: pointer;
+      &:focus {
+        border-bottom-width: 2px;
+        border-bottom-color: $color-primary;
+      }
+    }
+  }
+
+  &.is-danger {
+    .#{$namespace}-input, .#{$namespace}-textarea {
+      & + .#{$namespace}-label {
+        color: $color-danger;
+        opacity: 1;
+        & + .#{$namespace}-help {
+          color: $color-danger;
+          &:before, &:after {
+            width: 50%;
+            background-color: $color-danger;
+          }
+        }
+      }
+    }
+
+    & + .#{$namespace}-icon {
+      opacity: 1;
+      color: $color-danger;
+    }
+  }
+
+  &.is-medium {
+
+    .#{$namespace}-input {
+      height: $input-height * 1.2;
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      & + .#{$namespace}-label {
+        top: 1.4rem;
+        left: 1rem;
+        font-size: calc(.75rem * 1.2);
+
+        & + .#{$namespace}-help {
+          padding-top: .5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &.is-large {
+
+    .#{$namespace}-input {
+      height: $input-height * 1.4;
+      font-size: 1.4rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      & + .#{$namespace}-label {
+        top: 1.6rem;
+        left: 1rem;
+        font-size: calc(.75rem * 1.4);
+
+        & + .#{$namespace}-help {
+          padding-top: .5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+
+  // Radio
+  .#{$namespace}-radio-control {
+    margin: .25rem 0;
+
+    .#{$namespace}-radio {
+      display: none;
+
+      & + .#{$namespace}-label {
+        position: relative;
+        padding: 0 1rem 0 1.75rem;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          border-radius: 50%;
+          background-color: lighten($color-black, 95%);
+          width: 1.25rem;
+          height: 1.25rem;
+          transition: .3s;
+          box-shadow:
+            inset 0 0 0px 2px lighten($color-black, 80%),
+            inset 0 0 0 6px white;
+        }
+
+      }
+
+      &:checked {
+
+        & + .#{$namespace}-label {
+
+          &:before {
+            background-color: $color-primary;
+            box-shadow:
+              inset 0 0 0px 2px lighten($color-primary, 30%),
+              inset 0 0 0 3px white;
+          }
+
+        }
+
+      }
+
+      &[disabled] {
+
+        & + .#{$namespace}-label {
+          cursor: not-allowed;
+          color: rgba($color-black, .3);
+
+          &:before {
+            background-color: rgba($color-black, .1);
+            box-shadow: none;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  // Checkboxes
+  .#{$namespace}-checkbox-control {
+    margin: .25rem 0;
+
+    .#{$namespace}-checkbox {
+      display: none;
+
+      & + .#{$namespace}-label {
+
+        position: relative;
+        padding-left: 1.75rem;
+        padding-right: 1.5rem;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          border-radius: 1px;
+          background-color: white;
+          width: 1.25rem;
+          height: 1.25rem;
+          transition: .3s;
+          box-shadow:
+            inset 0 0 0px 2px lighten($color-black, 70%),
+            inset 0 0 0 6px white;
+        }
+
+        &:after {
+          content: '';
+          transition: .3s;
+        }
+
+      }
+
+      &:checked {
+
+        & + .#{$namespace}-label {
+
+          &:before {
+            background-color: $color-primary;
+            box-shadow:
+              inset 0 0 0px 0px lighten($color-black, 70%),
+              inset 0 0 0 0px white;
+          }
+
+          &:after {
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+
+        }
+
+      }
+
+      &[disabled] {
+
+        & + .#{$namespace}-label {
+          color: rgba($color-black, .3);
+
+          &:before {
+            background-color: rgba($color-black, .1);
+            box-shadow:
+              inset 0 0 0px 0px lighten($color-black, 70%),
+              inset 0 0 0 0px white;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}
