@@ -29,13 +29,13 @@ export default {
       mainNavItems: [
         {
           name: 'HTML & CSS',
-          link: 'http://gethxui.com',
+          link: 'http://hxui.io',
           icon: 'icon-html-css',
           status: 'active'
         },
         {
           name: 'Angular',
-          link: 'http://angular.gethxui.com',
+          link: 'http://angular.hxui.io',
           icon: 'icon-angular',
           status: 'active'
         }
