@@ -4,7 +4,6 @@
 
 .#{$namespace}-tooltip {
   @include transition(.15s);
-  position: absolute;
   z-index: $zindex-tooltip;
   display: block;
   font-style: normal;
@@ -23,6 +22,15 @@
   word-wrap: break-word;
   opacity: 0;
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
   &-content {
     position: relative;
     max-width: 200px;
@@ -31,63 +39,46 @@
     text-align: center;
     background-color: $color-info;
     border-radius: .25rem;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-color: transparent;
-      border-style: solid;
-    }
   }
 
   &.is-top {
-    .#{$namespace}-tooltip-content {
-      &::before {
-        bottom: -5px;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px 5px 0;
-        border-top-color: $color-info;
-      }
+    &::before {
+      bottom: -5px;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px 5px 0;
+      border-top-color: $color-info;
     }
   }
 
   &.is-right {
-    .#{$namespace}-tooltip-content {
-      &::before {
-        top: 50%;
-        left: -5px;
-        margin-top: -5px;
-        border-width: 5px 5px 5px 0;
-        border-right-color: $color-info;
-        border-top-color: transparent;
-      }
+    &::before {
+      top: 50%;
+      left: -5px;
+      margin-top: -5px;
+      border-width: 5px 5px 5px 0;
+      border-right-color: $color-info;
+      border-top-color: transparent;
     }
   }
 
   &.is-bottom {
-    .#{$namespace}-tooltip-content {
-      &::before {
-        top: -5px;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 0 5px 5px;
-        border-bottom-color: $color-info;
-      }
+    &::before {
+      top: -5px;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 0 5px 5px;
+      border-bottom-color: $color-info;
     }
   }
 
   &.is-left {
-    .#{$namespace}-tooltip-content {
-      &::before {
-        top: 50%;
-        right: -5px;
-        margin-top: -5px;
-        border-width: 5px 0 5px 5px;
-        border-left-color: $color-info;
-      }
+    &::before {
+      top: 50%;
+      right: -5px;
+      margin-top: -5px;
+      border-width: 5px 0 5px 5px;
+      border-left-color: $color-info;
     }
   }
 
@@ -98,35 +89,27 @@
     }
 
     &.is-top {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-top-color: $color-success;
         }
-      }
     }
 
     &.is-bottom {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-bottom-color: $color-success;
         }
-      }
     }
 
     &.is-left {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-left-color: $color-success;
         }
-      }
     }
 
     &.is-right {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-right-color: $color-success;
         }
-      }
     }
   }
 
@@ -137,35 +120,27 @@
     }
 
     &.is-top {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-top-color: $color-warning;
         }
-      }
     }
 
     &.is-bottom {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-bottom-color: $color-warning;
         }
-      }
     }
 
     &.is-left {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-left-color: $color-warning;
         }
-      }
     }
 
     &.is-right {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-right-color: $color-warning;
         }
-      }
     }
   }
 
@@ -176,35 +151,27 @@
     }
 
     &.is-top {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-top-color: $color-danger;
         }
-      }
     }
 
     &.is-bottom {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-bottom-color: $color-danger;
         }
-      }
     }
 
     &.is-left {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-left-color: $color-danger;
         }
-      }
     }
 
     &.is-right {
-      .#{$namespace}-tooltip-content {
         &::before {
           border-right-color: $color-danger;
         }
-      }
     }
 
   }
@@ -214,3 +181,4 @@
   }
 
 }
+
