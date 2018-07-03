@@ -340,21 +340,21 @@ $nav-link-font-size: $font-size-sm;
 $nav-link-font-weight: $font-weight-bolder;
 
 // Dropdown
-$dropdown-bg:                    #fff !default;
-$dropdown-border-color:          $border-color !default;
-$dropdown-border-width:          $border-width !default;
-$dropdown-divider-bg:            $border-color !default;
+$hx-dropdown-bg:                    #fff !default;
+$hx-dropdown-border-color:          $border-color !default;
+$hx-dropdown-border-width:          $border-width !default;
+$hx-dropdown-divider-bg:            $border-color !default;
 
-$dropdown-link-color:            $color-gray !default;
-$dropdown-link-hover-color:      #fff !default;
-$dropdown-link-hover-bg:         $color-green-light !default;
+$hx-dropdown-link-color:            $color-gray !default;
+$hx-dropdown-link-hover-color:      #fff !default;
+$hx-dropdown-link-hover-bg:         $color-green-light !default;
 
-$dropdown-link-active-color:     #fff !default;
-$dropdown-link-active-bg:        $color-green-light !default;
+$hx-dropdown-link-active-color:     #fff !default;
+$hx-dropdown-link-active-bg:        $color-green-light !default;
 
-$dropdown-link-disabled-color:   $color-gray-lighter !default;
+$hx-dropdown-link-disabled-color:   $color-gray-lighter !default;
 
-$dropdown-header-color:          $color-gray-lighter !default;
+$hx-dropdown-header-color:          $color-gray-lighter !default;
 
 // Progress Timeline
 $progress-timeline-head-color:		hsl(0, 0, 80%) !default;

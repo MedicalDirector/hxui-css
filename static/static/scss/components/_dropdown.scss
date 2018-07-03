@@ -35,16 +35,16 @@
   color: $color-gray;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
-  background-color: $dropdown-bg;
+  background-color: $hx-dropdown-bg;
   background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
+  border: $hx-dropdown-border-width solid $hx-dropdown-border-color;
   //@include border-radius($border-radius);
   box-shadow: 0 6px 12px rgba(0,0,0,.145);
 }
 
 // Dividers (basically an `<hr>`) within the dropdown
 .#{$namespace}-dropdown-divider {
-  @include nav-divider($dropdown-divider-bg);
+  @include nav-divider($hx-dropdown-divider-bg);
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -57,33 +57,33 @@
   clear: both;
   font-weight: normal;
   line-height: $line-height;
-  color: $dropdown-link-color;
+  color: $hx-dropdown-link-color;
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
 
   @include hover-focus {
-    color: $dropdown-link-hover-color;
+    color: $hx-dropdown-link-hover-color;
     text-decoration: none;
-    background-color: $dropdown-link-hover-bg;
+    background-color: $hx-dropdown-link-hover-bg;
   }
 
   // Active state
   &.active {
     @include plain-hover-focus {
-      color: $dropdown-link-active-color;
+      color: $hx-dropdown-link-active-color;
       text-decoration: none;
-      background-color: $dropdown-link-active-bg;
+      background-color: $hx-dropdown-link-active-bg;
       outline: 0;
     }
   }
 
   &.is-active {
     @include plain-hover-focus {
-      color:  $dropdown-link-active-bg;
+      color:  $hx-dropdown-link-active-bg;
       text-decoration: none;
-      background-color: $dropdown-link-active-color;
+      background-color: $hx-dropdown-link-active-color;
       outline: 0;
     }
   }
@@ -97,7 +97,7 @@
     justify-content: flex-start;
 
     @include hover-focus {
-      color: $dropdown-link-hover-color;
+      color: $hx-dropdown-link-hover-color;
       text-decoration: none;
       background-color: transparent;
     }
@@ -108,7 +108,7 @@
   // Gray out text and ensure the hover/focus state remains gray
   &.disabled {
     @include plain-hover-focus {
-      color: $dropdown-link-disabled-color;
+      color: $hx-dropdown-link-disabled-color;
     }
 
     // Nuke hover/focus effects
@@ -180,7 +180,7 @@
   //font-size: $font-size-sm;
   font-size:0.675rem;
   //line-height: $line-height;
-  color: $dropdown-header-color;
+  color: $hx-dropdown-header-color;
   white-space: nowrap; // as with > li > a
   text-transform: uppercase;
   font-weight:bold;
