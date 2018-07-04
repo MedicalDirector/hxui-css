@@ -5,14 +5,14 @@
 
 .#{$namespace}-bg {
   // is-primary, is-info, is-success, is-warning, is-danger
-  @each $name, $pair in $colors {
+  @each $name, $pair in $hx-colors {
     $color: nth($pair, 1);
-    $color-invert: nth($pair, 2);
+    $hx-color-invert: nth($pair, 2);
 
     &-#{$name} {
       background-color: $color !important;
       border-color: transparent !important;
-      color: $color-invert !important;
+      color: $hx-color-invert !important;
 
       &.lighten-5 {
         $tint: tint($color, 80%);
@@ -72,12 +72,12 @@
   }
 
   &-light {
-    background-color: $color-gray-light !important;
-    color: $color-white;
+    background-color: $hx-color-gray-light !important;
+    color: $hx-color-white;
 
     code:not(.hljs) {
-      background-color: $color-red;
-      color: $color-white;
+      background-color: $hx-color-red;
+      color: $hx-color-white;
     }
   }
 
@@ -99,7 +99,7 @@
       }
     }
     &.is-green-blue {
-      @include radial-gradient(top, $color-gradient-green, $color-gradient-blue);
+      @include radial-gradient(top, $hx-color-gradient-green, $hx-color-gradient-blue);
       color: white;
       text-shadow: 0 1px 0 rgba(0,0,0,.3);
       .hx-button.is-loading {
@@ -116,10 +116,10 @@
           animation-delay: 20s;
         }
         &:before {
-          @include radial-gradient(bottom left, $color-gradient-green, $color-gradient-blue);
+          @include radial-gradient(bottom left, $hx-color-gradient-green, $hx-color-gradient-blue);
         }
         &:after {
-          @include radial-gradient(bottom right, $color-gradient-green, $color-gradient-blue);
+          @include radial-gradient(bottom right, $hx-color-gradient-green, $hx-color-gradient-blue);
         }
       }
     }

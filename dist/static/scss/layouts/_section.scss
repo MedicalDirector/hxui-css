@@ -4,7 +4,7 @@
 
 .#{$namespace}-section {
   @extend .hx-flex-1;
-  padding: ($spacer + .5);
+  padding: ($hx-spacer + .5);
 
   .#{$namespace}-section {
     padding-left: 0;

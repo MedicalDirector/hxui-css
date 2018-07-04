@@ -8,7 +8,7 @@
 
     &.#{$namespace}-breadcrumb-divider {
       padding: 0 .75rem;
-      color: $color-gray-lighter;
+      color: $hx-color-gray-lighter;
 
       .#{$namespace}-icon {
         font-size: 1rem;
@@ -25,7 +25,7 @@
     &.is-disabled {
 
       > a {
-        color: $color-gray-lighter;
+        color: $hx-color-gray-lighter;
       }
     }
 

@@ -4,7 +4,7 @@ $sidebar-nav-hover-color: colour-gray-light;
 .#{$namespace}-sidebar,
 .#{$namespace}-drawer{
   background-color: #fff;
-  padding:$spacer 0;
+  padding:$hx-spacer 0;
   display: inline-flex;
   flex-direction: column;
   transition: .3s ease-in-out;
@@ -25,7 +25,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.is-minified{
-    width:($spacer * 3.5) !important;
+    width:($hx-spacer * 3.5) !important;
     .#{$namespace}-nav-vertical {
       .#{$namespace}-nav-item {
         padding-left: 0rem;
@@ -35,7 +35,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.is-expanded {
-    width:($spacer * 50) !important;
+    width:($hx-spacer * 50) !important;
     .#{$namespace}-nav-vertical {
       .#{$namespace}-nav-item {
         padding-left: 0rem;
@@ -45,7 +45,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-blue-gradient{
-    @include radial-gradient(top, $color-green-light, $color-blue);
+    @include radial-gradient(top, $hx-color-green-light, $hx-color-blue);
     color:#fff;
 
     hr{
@@ -54,7 +54,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-orange-gradient{
-    @include radial-gradient(top, $color-yellow-light, $color-orange);
+    @include radial-gradient(top, $hx-color-yellow-light, $hx-color-orange);
     color:#fff;
 
     hr{
@@ -63,7 +63,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-purple-gradient{
-    @include radial-gradient(top, $color-red-light, $color-purple);
+    @include radial-gradient(top, $hx-color-red-light, $hx-color-purple);
     color:#fff;
 
     hr{
@@ -82,8 +82,8 @@ $sidebar-nav-hover-color: colour-gray-light;
     top: 0;
     bottom: 0;
     transform: translateX(-100%);
-    background-color: $color-gray-lightest;
-    padding: $spacer 0;
+    background-color: $hx-color-gray-lightest;
+    padding: $hx-spacer 0;
     transition: .3s ease-in-out;
     box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, .05);
     z-index: 1;

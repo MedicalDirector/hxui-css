@@ -10,13 +10,13 @@
     transition: .3s;
 
     &:hover {
-      box-shadow: 0 1px 0 0 $color-gray-lighter;
+      box-shadow: 0 1px 0 0 $hx-color-gray-lighter;
     }
 
     &.is-active {
       background-color: transparent;
-      box-shadow: 0 1px 0 0 $color-green-light;
-      border-bottom: 1px solid $color-green-light;
+      box-shadow: 0 1px 0 0 $hx-color-green-light;
+      border-bottom: 1px solid $hx-color-green-light;
     }
   }
 
@@ -50,7 +50,7 @@
 }
 // Hide tabbable panes to start, show them when `.is-active`
 .#{$namespace}-tab-content {
-  padding:$spacer;
+  padding:$hx-spacer;
 
   > .hx-tab-pane {
     display: none;

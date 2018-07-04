@@ -16,9 +16,9 @@
 }
 
 @function colorLuminance($color) {
-  $color-rgb: ("red": red($color), "green": green($color), "blue": blue($color));
+  $hx-color-rgb: ("red": red($color), "green": green($color), "blue": blue($color));
 
-  @each $name, $value in $color-rgb {
+  @each $name, $value in $hx-color-rgb {
     $adjusted: 0;
     $value: $value / 255;
 
@@ -30,10 +30,10 @@
       $value: powerNumber($value, 2);
     }
 
-    $color-rgb: map-merge($color-rgb, ($name: $value));
+    $hx-color-rgb: map-merge($hx-color-rgb, ($name: $value));
   }
 
-  @return map-get($color-rgb, "red") * 0.2126 + map-get($color-rgb, "green") * 0.7152 + map-get($color-rgb, "blue") * 0.0722;
+  @return map-get($hx-color-rgb, "red") * 0.2126 + map-get($hx-color-rgb, "green") * 0.7152 + map-get($hx-color-rgb, "blue") * 0.0722;
 }
 
 @function findColorInvert($color) {

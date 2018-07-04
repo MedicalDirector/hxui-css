@@ -7,7 +7,7 @@
   position: relative;
   text-align: center;
   align-items: stretch;
-  background: $color-white;
+  background: $hx-color-white;
 
   // Navbar Position
   &-left,
@@ -34,15 +34,15 @@
     display: flex;
     flex-grow: 0;
     flex-shrink: 0;
-    font-size: $font-size-base;
+    font-size: $hx-font-size-base;
     justify-content: center;
-    line-height: $line-height-base;
-    padding: $navbar-item-padding;
+    line-height: $hx-line-height-base;
+    padding: $hx-navbar-item-padding;
 
     a {
       flex-grow: 1;
       flex-shrink: 0;
-      color: $color-white;
+      color: $hx-color-white;
     }
 
   }
@@ -72,9 +72,9 @@
 
   // Navbar Background Variation
   &.has-gradient-background {
-    background: $color-primary;
-    background: -webkit-linear-gradient(left, $color-primary, $color-accent);
-    background: linear-gradient(to right, $color-primary, $color-accent);
+    background: $hx-color-primary;
+    background: -webkit-linear-gradient(left, $hx-color-primary, $hx-color-accent);
+    background: linear-gradient(to right, $hx-color-primary, $hx-color-accent);
   }
 
 }

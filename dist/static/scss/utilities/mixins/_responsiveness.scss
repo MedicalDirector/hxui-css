@@ -1,29 +1,29 @@
 @mixin mobile {
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: $hx-tablet - 1px) {
     @content
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $hx-tablet) {
     @content
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $hx-desktop) {
     @content
   }
 }
 
 @mixin widescreen {
-  @media screen and (min-width: $widescreen) {
+  @media screen and (min-width: $hx-widescreen) {
     @content
   }
 }
 
 @mixin fullhd {
-  @media screen and (min-width: $fullhd) {
+  @media screen and (min-width: $hx-fullhd) {
     @content;
   }
 }

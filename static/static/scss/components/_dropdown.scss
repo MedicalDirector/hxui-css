@@ -10,7 +10,7 @@
   .#{$namespace}-btn-dropdown {
     &::after {
       border-top: 0;
-      border-bottom: $caret-width solid;
+      border-bottom: $hx-caret-width solid;
     }
   }
 }
@@ -25,20 +25,20 @@
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: $zindex-dropdown;
+  z-index: $hx-zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
   padding: 5px 0;
   margin: 0; // override default ul
-  font-size: $font-size-base;
-  color: $color-gray;
+  font-size: $hx-font-size-base;
+  color: $hx-color-gray;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: $hx-dropdown-bg;
   background-clip: padding-box;
   border: $hx-dropdown-border-width solid $hx-dropdown-border-color;
-  //@include border-radius($border-radius);
+  //@include border-radius($hx-border-radius);
   box-shadow: 0 6px 12px rgba(0,0,0,.145);
 }
 
@@ -56,7 +56,7 @@
   padding: 3px 14px;
   clear: both;
   font-weight: normal;
-  line-height: $line-height;
+  line-height: $hx-line-height;
   color: $hx-dropdown-link-color;
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
@@ -114,7 +114,7 @@
     // Nuke hover/focus effects
     @include hover-focus {
       text-decoration: none;
-      cursor: $cursor-disabled;
+      cursor: $hx-cursor-disabled;
       background-color: transparent;
       background-image: none; // Remove CSS gradient
       //@include reset-filter();
@@ -177,9 +177,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 6px 14px;
-  //font-size: $font-size-sm;
+  //font-size: $hx-font-size-sm;
   font-size:0.675rem;
-  //line-height: $line-height;
+  //line-height: $hx-line-height;
   color: $hx-dropdown-header-color;
   white-space: nowrap; // as with > li > a
   text-transform: uppercase;
@@ -198,7 +198,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: ($zindex-dropdown - 10);
+  z-index: ($hx-zindex-dropdown - 10);
 }
 
 
@@ -213,7 +213,7 @@ dropup{
   .caret {
     content: "";
     border-top: 0;
-    border-bottom: $caret-width solid;
+    border-bottom: $hx-caret-width solid;
   }
 
   // Different positioning for bottom up menu

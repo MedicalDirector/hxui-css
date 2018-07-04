@@ -1,6 +1,6 @@
 
 // Text colour modifiers
-@each $label, $colour in $colors {
+@each $label, $colour in $hx-colors {
   .is-#{$label}{
     color: nth($colour, 1);
   }

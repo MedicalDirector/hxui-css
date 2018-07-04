@@ -1,19 +1,19 @@
 
 .#{$namespace}-table {
-  background-color: $table-background;
-  color: $table;
+  background-color: $hx-table-background;
+  color: $hx-table;
   margin-bottom: 1.5rem;
   width: 100%;
 
   > thead {
     > tr > th {
       vertical-align: bottom;
-      border: 1px solid $color-gray-lighter;
+      border: 1px solid $hx-color-gray-lighter;
       border-width: 0 0 1px;
-      color: $table-head;
+      color: $hx-table-head;
 
       text-transform: uppercase;
-      font-size: $font-size-sm;
+      font-size: $hx-font-size-sm;
 
       .hx-icon {
         font-size: .75rem;
@@ -25,11 +25,11 @@
       a {
         cursor: pointer;
         &:link, &:visited, &:active {
-          color: $color-info;
+          color: $hx-color-info;
         }
         &:hover {
           text-decoration: none;
-          color: lighten($color-info, 20%);
+          color: lighten($hx-color-info, 20%);
         }
       }
     }
@@ -37,7 +37,7 @@
       margin-bottom: -3px !important;
       > .hx-checkbox + label {
         padding-top: 5px !important;
-        font-weight:  $font-weight-boldest !important;
+        font-weight:  $hx-font-weight-boldest !important;
         text-transform: uppercase;
         font-size: .8rem;
       }
@@ -48,26 +48,26 @@
     > tr > td,
     > tr > th {
       vertical-align: top;
-      border: 2px solid $table-border;
+      border: 2px solid $hx-table-border;
       border-width: 2px 0 0;
-      color: $table-head;
-      font-weight: $font-weight-normal;
+      color: $hx-table-head;
+      font-weight: $hx-font-weight-normal;
     }
   }
 
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th{
-    border-bottom:1px solid $table-border;
+    border-bottom:1px solid $hx-table-border;
   }
 
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th,
   > thead > tr > th {
     padding: 0.9em 0.75em;
-    font-weight:  $font-weight-bolder;
+    font-weight:  $hx-font-weight-bolder;
     @include transition (.3s);
     strong {
-      font-weight: $font-weight-boldest;
+      font-weight: $hx-font-weight-boldest;
     }
 
     // Modifiers
@@ -85,7 +85,7 @@
       .hx-checkbox + .hx-label {
         padding-top: 2px;
         display: initial;
-        font-weight: $font-weight-normal;
+        font-weight: $hx-font-weight-normal;
       }
     }
   }
@@ -101,7 +101,7 @@
     > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info) {
       &:nth-child(even) {
         > th, > td {
-          background-color: $table-row-even-background;
+          background-color: $hx-table-row-even-background;
         }
       }
     }
@@ -111,18 +111,18 @@
   > tbody.hx-table-group > tr > td,
   > tbody.hx-table-group > tr > th {
     @include transition (.3s);
-    font-weight: $font-weight-bold;
+    font-weight: $hx-font-weight-bold;
     background-color: #fff;
     padding: .9rem 0.75em;
     border-top: 1px solid #e5e5e5;
     text-transform: uppercase;
-    color: $color-info;
+    color: $hx-color-info;
 
     > div {
       display: flex;
       align-items: center;
       width:100%;
-      color: $color-info;
+      color: $hx-color-info;
        > small {
          flex: 1;
          margin-left: 1rem;
@@ -152,34 +152,34 @@
 
   > tbody > tr > td,
   > tbody > tr > th {
-    border-color: $table-border;
+    border-color: $hx-table-border;
   }
 
   > thead > tr > th {
     padding: 0.6em 0.75em;
-    font-weight: $font-weight-boldest;
-    font-size: $font-size-xs;
+    font-weight: $hx-font-weight-boldest;
+    font-size: $hx-font-size-xs;
   }
 
   > thead > tr,
   > tbody:not(.hx-table-group) > tr {
     &.is-selected, &.is-selected:hover {
       > th, > td {
-       // background-color: $color-primary;
+       // background-color: $hx-color-primary;
        // background-color: rgba(0,0,0,.02);
       }
       > th,
       > td,
       > th a:not(.hx-dropdown-item),
       > td a:not(.hx-dropdown-item) {
-        color: $color-primary;
+        color: $hx-color-primary;
         .hx-button .hx-icon,
         .hx-button .icon{
-          color: $color-primary;
+          color: $hx-color-primary;
         }
 
         .hx-checkbox + .hx-label:after{
-          border-color:$color-primary;
+          border-color:$hx-color-primary;
         }
       }
     }
@@ -191,7 +191,7 @@
         > td,
         > th {
           border-bottom-width: 0;
-          color: $text;
+          color: $hx-text;
         }
       }
     }
@@ -199,7 +199,7 @@
 
   // Modifiers
   // &.is-bordered {
-  //   border: 1px solid $table-border;
+  //   border: 1px solid $hx-table-border;
   //   td,
   //   th {
   //     border-width: 0 1px 1px 0;
@@ -233,7 +233,7 @@
       > tr:not(.is-selected) {
         &:hover {
            > td {
-            background-color: $table-row-even-hover-background !important;
+            background-color: $hx-table-row-even-hover-background !important;
              cursor: pointer;
           }
         }
@@ -245,58 +245,58 @@
     &.is-danger{
       > td,
       > th{
-        color: $color-danger;
-        div,span {color: $color-danger;}
+        color: $hx-color-danger;
+        div,span {color: $hx-color-danger;}
       }
       > td{
-        background-color: rgba($color-danger, 0.1);
+        background-color: rgba($hx-color-danger, 0.1);
       }
     }
     &.is-warning{
       > td,
       > th{
-        color: $color-warning;
-       > div, > span:not(.hx-badge) {color: $color-warning;}
+        color: $hx-color-warning;
+       > div, > span:not(.hx-badge) {color: $hx-color-warning;}
       }
       > td {
-        background-color: rgba($color-warning, 0.1);
+        background-color: rgba($hx-color-warning, 0.1);
       }
     }
     &.is-success{
       > td,
       > th{
-        color: $color-success;
-        div,span {color: $color-success;}
+        color: $hx-color-success;
+        div,span {color: $hx-color-success;}
       }
       > td {
-        background-color: rgba($color-success, 0.1);
+        background-color: rgba($hx-color-success, 0.1);
       }
     }
     &.is-info{
       > td,
       > th{
-        color: $color-info;
-        div,span {color: $color-info;}
+        color: $hx-color-info;
+        div,span {color: $hx-color-info;}
       }
       > td {
-        background-color: rgba($color-info, 0.1);
+        background-color: rgba($hx-color-info, 0.1);
       }
     }
 
     &.has-stripe-info {
-      @include table-stripe($color-info);
+      @include table-stripe($hx-color-info);
     }
 
     &.has-stripe-success {
-      @include table-stripe($color-success);
+      @include table-stripe($hx-color-success);
     }
 
     &.has-stripe-warning {
-      @include table-stripe($color-warning);
+      @include table-stripe($hx-color-warning);
     }
 
     &.has-stripe-danger {
-      @include table-stripe($color-danger);
+      @include table-stripe($hx-color-danger);
     }
 
 
@@ -308,24 +308,24 @@
           margin: 0;
           padding: .6rem;
           border-radius: .2rem;
-          border: 1px solid lighten($text, 65%);
+          border: 1px solid lighten($hx-text, 65%);
           box-shadow: none;
           transition: .3s;
           &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: lighten($text, 60%);
+            color: lighten($hx-text, 60%);
           }
           &::-moz-placeholder { /* Firefox 19+ */
-            color: lighten($text, 60%);
+            color: lighten($hx-text, 60%);
           }
           &:-ms-input-placeholder { /* IE 10+ */
-            color: lighten($text, 60%);
+            color: lighten($hx-text, 60%);
           }
           &:-moz-placeholder { /* Firefox 18- */
-            color: lighten($text, 60%);
+            color: lighten($hx-text, 60%);
           }
           &:focus {
             background-color: rgba(255,255,255,.5);
-            box-shadow: inset 0 0 0 1px lighten($text, 65%), inset 0 0 3px 1px rgba(0,0,0,.1);
+            box-shadow: inset 0 0 0 1px lighten($hx-text, 65%), inset 0 0 3px 1px rgba(0,0,0,.1);
           }
         }
       }

@@ -7,15 +7,15 @@ code,
 kbd,
 pre,
 samp {
-  font-family: $font-family-monospace;
+  font-family: $hx-font-family-monospace;
 }
 
 code {
-  @include border-radius($border-radius);
-  padding: $code-padding-y $code-padding-x;
-  font-size: $code-font-size;
-  color: $code-color;
-  background-color: $code-bg;
+  @include border-radius($hx-border-radius);
+  padding: $hx-code-padding-y $hx-code-padding-x;
+  font-size: $hx-code-font-size;
+  color: $hx-code-color;
+  background-color: $hx-code-bg;
 
   a > & {
     padding: 0;
@@ -25,26 +25,26 @@ code {
 }
 
 kbd {
-  @include border-radius($border-radius-sm);
-  @include box-shadow($kbd-box-shadow);
-  padding: $code-padding-y $code-padding-x;
-  font-size: $code-font-size;
-  color: $kbd-color;
-  background-color: $kbd-bg;
+  @include border-radius($hx-border-radius-sm);
+  @include box-shadow($hx-kbd-box-shadow);
+  padding: $hx-code-padding-y $hx-code-padding-x;
+  font-size: $hx-code-font-size;
+  color: $hx-kbd-color;
+  background-color: $hx-kbd-bg;
 
   kbd {
     @include box-shadow(none);
     padding: 0;
     font-size: 100%;
-    font-weight: $kbd-nested-font-weight;
+    font-weight: $hx-kbd-nested-font-weight;
   }
 }
 
 pre {
   display: block;
-  margin: $pre-margin;
-  font-size: $code-font-size;
-  // color: $pre-color;
+  margin: $hx-pre-margin;
+  font-size: $hx-code-font-size;
+  // color: $hx-pre-color;
   max-height: 38rem;
   border-radius: 0 !important;
   overflow: scroll;
@@ -59,7 +59,7 @@ pre {
 }
 
 .#{$namespace}-pre-is-scrollable {
-  max-height: $pre-scrollable-max-height;
+  max-height: $hx-pre-scrollable-max-height;
   overflow-y: scroll;
 }
 */
@@ -73,7 +73,7 @@ code {
     background-color: rgba(0,0,0,.05);
     border-radius: 3px;
     padding: .1rem .5rem;
-    color: $color-danger;
+    color: $hx-color-danger;
   }
 }
 

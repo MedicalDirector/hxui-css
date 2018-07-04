@@ -8,7 +8,7 @@ hr.is-perforated {
   margin-top: 0;
   margin-bottom: 0;
   border-width: 0 0 0 0;
-  border-bottom: 1px dashed $border-color;
+  border-bottom: 1px dashed $hx-border-color;
 }
 
 // to be used when dividing none related content
@@ -17,7 +17,7 @@ hr.is-divided {
   margin-top: 0;
   margin-bottom: 0;
   border-width: 0 0 0 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $hx-border-color;
 }
 
 

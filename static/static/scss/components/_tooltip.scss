@@ -4,7 +4,7 @@
 
 .#{$namespace}-tooltip {
   @include transition(.15s);
-  z-index: $zindex-tooltip;
+  z-index: $hx-zindex-tooltip;
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@
     padding: 3px 8px;
     color: #fff;
     text-align: center;
-    background-color: $color-info;
+    background-color: $hx-color-info;
     border-radius: .25rem;
   }
 
@@ -47,7 +47,7 @@
       left: 50%;
       margin-left: -5px;
       border-width: 5px 5px 0;
-      border-top-color: $color-info;
+      border-top-color: $hx-color-info;
     }
   }
 
@@ -57,7 +57,7 @@
       left: -5px;
       margin-top: -5px;
       border-width: 5px 5px 5px 0;
-      border-right-color: $color-info;
+      border-right-color: $hx-color-info;
       border-top-color: transparent;
     }
   }
@@ -68,7 +68,7 @@
       left: 50%;
       margin-left: -5px;
       border-width: 0 5px 5px;
-      border-bottom-color: $color-info;
+      border-bottom-color: $hx-color-info;
     }
   }
 
@@ -78,37 +78,37 @@
       right: -5px;
       margin-top: -5px;
       border-width: 5px 0 5px 5px;
-      border-left-color: $color-info;
+      border-left-color: $hx-color-info;
     }
   }
 
   &.is-success {
 
     .#{$namespace}-tooltip-content {
-      background-color: $color-success;
+      background-color: $hx-color-success;
     }
 
     &.is-top {
         &::before {
-          border-top-color: $color-success;
+          border-top-color: $hx-color-success;
         }
     }
 
     &.is-bottom {
         &::before {
-          border-bottom-color: $color-success;
+          border-bottom-color: $hx-color-success;
         }
     }
 
     &.is-left {
         &::before {
-          border-left-color: $color-success;
+          border-left-color: $hx-color-success;
         }
     }
 
     &.is-right {
         &::before {
-          border-right-color: $color-success;
+          border-right-color: $hx-color-success;
         }
     }
   }
@@ -116,30 +116,30 @@
   &.is-warning {
 
     .#{$namespace}-tooltip-content {
-      background-color: $color-warning;
+      background-color: $hx-color-warning;
     }
 
     &.is-top {
         &::before {
-          border-top-color: $color-warning;
+          border-top-color: $hx-color-warning;
         }
     }
 
     &.is-bottom {
         &::before {
-          border-bottom-color: $color-warning;
+          border-bottom-color: $hx-color-warning;
         }
     }
 
     &.is-left {
         &::before {
-          border-left-color: $color-warning;
+          border-left-color: $hx-color-warning;
         }
     }
 
     &.is-right {
         &::before {
-          border-right-color: $color-warning;
+          border-right-color: $hx-color-warning;
         }
     }
   }
@@ -147,30 +147,30 @@
   &.is-danger {
 
     .#{$namespace}-tooltip-content {
-      background-color: $color-danger;
+      background-color: $hx-color-danger;
     }
 
     &.is-top {
         &::before {
-          border-top-color: $color-danger;
+          border-top-color: $hx-color-danger;
         }
     }
 
     &.is-bottom {
         &::before {
-          border-bottom-color: $color-danger;
+          border-bottom-color: $hx-color-danger;
         }
     }
 
     &.is-left {
         &::before {
-          border-left-color: $color-danger;
+          border-left-color: $hx-color-danger;
         }
     }
 
     &.is-right {
         &::before {
-          border-right-color: $color-danger;
+          border-right-color: $hx-color-danger;
         }
     }
 

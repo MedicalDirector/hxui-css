@@ -5,7 +5,7 @@
 .#{$namespace}-modal-background {
   @include overlay;
 
-  background-color: rgba($color-black, 0.5);
+  background-color: rgba($hx-color-black, 0.5);
 }
 
 .#{$namespace}-modal-content,
@@ -45,7 +45,7 @@
 .#{$namespace}-modal-card-head,
 .#{$namespace}-modal-card-foot {
   align-items: center;
-  background-color: $color-white;
+  background-color: $hx-color-white;
   display: flex;
   flex-shrink: 0;
   padding: 20px;
@@ -58,25 +58,25 @@
 
 .#{$namespace}-modal-card-head {
   justify-content: flex-start;
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
+  border-top-left-radius: $hx-border-radius;
+  border-top-right-radius: $hx-border-radius;
   padding: 20px 20px 10px;
 }
 
 .#{$namespace}-modal-card-title {
-  color: $headings-color;
+  color: $hx-headings-color;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: $font-size-h5;
+  font-size: $hx-font-size-h5;
   line-height: 1;
   font-weight: 500;
   margin: 0;
 }
 
 .#{$namespace}-modal-card-foot {
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-  border-top: 1px solid $border-color;
+  border-bottom-left-radius: $hx-border-radius;
+  border-bottom-right-radius: $hx-border-radius;
+  border-top: 1px solid $hx-border-color;
 
   .#{$namespace}-button {
     &:not(:last-child) {
@@ -87,12 +87,12 @@
 
 .#{$namespace}-modal-card-content {
   -webkit-overflow-scrolling: touch;
-  background-color: $color-white;
+  background-color: $hx-color-white;
   flex-grow: 1;
   flex-shrink: 1;
   overflow: auto;
   padding: 0 20px 20px;
-  font-size: $font-size-sm;
+  font-size: $hx-font-size-sm;
 
 
 }

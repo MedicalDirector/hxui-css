@@ -3,7 +3,7 @@
 }
 
 @mixin hover-focus {
-  @if $enable-hover-media-query {
+  @if $hx-enable-hover-media-query {
     &:focus { @content }
     @include hover { @content }
   } @else {
@@ -15,7 +15,7 @@
 }
 
 @mixin plain-hover-focus {
-  @if $enable-hover-media-query {
+  @if $hx-enable-hover-media-query {
     &,
     &:focus {
       @content
@@ -31,7 +31,7 @@
 }
 
 @mixin hover-focus-active {
-  @if $enable-hover-media-query {
+  @if $hx-enable-hover-media-query {
     &:focus,
     &:active {
       @content

@@ -1,8 +1,8 @@
-$pagination-disabled-link-color: $color-gray-lighter;
-$pagination-disabled-link-hover-color:$color-gray-lightest;
-$pagination-hover-color: $color-green-light;
-$pagination-active-color: $color-green-light;
-$pagination-color: $color-gray-dark;
+$pagination-disabled-link-color: $hx-color-gray-lighter;
+$pagination-disabled-link-hover-color:$hx-color-gray-lightest;
+$pagination-hover-color: $hx-color-green-light;
+$pagination-active-color: $hx-color-green-light;
+$pagination-color: $hx-color-gray-dark;
 
 .#{$namespace}-pagination{
   display:flex;
@@ -20,14 +20,14 @@ $pagination-color: $color-gray-dark;
       @extend .hx-flex-align-center;
       text-decoration: none;
       color:$pagination-color;
-      padding: ($spacer/4) ($spacer/2);
+      padding: ($hx-spacer/4) ($hx-spacer/2);
       transition: all .2s ease-in-out;
       cursor: pointer;
       border-bottom: 1px solid transparent;
 
       @include hover-focus {
         text-decoration: none;
-        border-bottom:1px solid $color-gray-lighter;
+        border-bottom:1px solid $hx-color-gray-lighter;
         color:$pagination-hover-color;
       }
 
@@ -49,7 +49,7 @@ $pagination-color: $color-gray-dark;
       @extend .hx-flex;
       @extend .hx-flex-align-center;
       color:$pagination-disabled-link-color;
-      padding: ($spacer/4) ($spacer/2);
+      padding: ($hx-spacer/4) ($hx-spacer/2);
     }
   }
 

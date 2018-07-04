@@ -3,7 +3,7 @@
 
   @include desktop {
     margin: 0 auto;
-    width: $desktop - 40px;
+    width: $hx-desktop - 40px;
 
     // Modifiers
     &.is-fluid {
@@ -14,11 +14,11 @@
   }
 
   @include widescreen {
-    width: $widescreen - 40px;
+    width: $hx-widescreen - 40px;
   }
 
   @include fullhd {
-    width: $fullhd - 40px;
+    width: $hx-fullhd - 40px;
   }
 }
 

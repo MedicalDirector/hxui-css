@@ -3,25 +3,25 @@
 // =========
 
 @mixin button-small {
-  border-radius: $border-radius-sm;
-  font-size: $font-size-xs;
+  border-radius: $hx-border-radius-sm;
+  font-size: $hx-font-size-xs;
 }
 
 @mixin button-medium {
-  font-size: $font-size-base;
+  font-size: $hx-font-size-base;
 }
 
 @mixin button-large {
-  font-size: $font-size-lg;
+  font-size: $hx-font-size-lg;
 }
 
 .#{$namespace}-button {
   @include control;
   @include no-copy;
-  border-radius: $border-radius-sm;
-  background-color: $button-background;
-  border: 1px solid $button-border;
-  color: $button;
+  border-radius: $hx-border-radius-sm;
+  background-color: $hx-button-background;
+  border: 1px solid $hx-button-border;
+  color: $hx-button;
   cursor: pointer;
   justify-content: center;
   padding-left: .75rem;
@@ -77,24 +77,24 @@
   // States
   &:hover,
   &.is-hovered {
-    border-color: rgba($button-hover-border, .5);
-    color: $button-hover;
+    border-color: rgba($hx-button-hover-border, .5);
+    color: $hx-button-hover;
     text-decoration: none;
   }
 
   &:focus,
   &.is-focused {
-    border-color: rgba($button-focus-border, .5);
-    box-shadow: 0 0 0.5em rgba($button-focus-border, 0.35);
-    color: $button-focus;
+    border-color: rgba($hx-button-focus-border, .5);
+    box-shadow: 0 0 0.5em rgba($hx-button-focus-border, 0.35);
+    color: $hx-button-focus;
     text-decoration: none;
   }
 
   &:active,
   &.is-active {
-    border-color: rgba($button-active-border, .5);
-    box-shadow: $button-shadow-inset;
-    color: $button-active;
+    border-color: rgba($hx-button-active-border, .5);
+    box-shadow: $hx-button-shadow-inset;
+    color: $hx-button-active;
     text-decoration: none;
   }
 
@@ -102,7 +102,7 @@
   &.is-link {
     background-color: transparent;
     border-color: transparent;
-    color: $text;
+    color: $hx-text;
     text-decoration: underline;
 
     &:hover,
@@ -111,20 +111,20 @@
     &.is-focused,
     &:active,
     &.is-active {
-      background-color: $background-color;
-      color: $text-strong;
+      background-color: $hx-background-color;
+      color: $hx-text-strong;
     }
   }
 
   // is-primary, is-info, is-success, is-warning, is-danger
-  @each $name, $pair in $colors {
+  @each $name, $pair in $hx-colors {
     $color: nth($pair, 1);
-    $color-invert: nth($pair, 2);
+    $hx-color-invert: nth($pair, 2);
 
     &.is-#{$name} {
       background-color: $color;
       border-color: transparent;
-      color: $color-invert;
+      color: $hx-color-invert;
 
       &:hover,
       &.is-hovered {
@@ -137,20 +137,20 @@
       &.is-focused {
         border-color: transparent;
         box-shadow: 0 0 0.5em rgba($color, 0.35);
-        color: $color-invert;
+        color: $hx-color-invert;
       }
 
       &:active,
       &.is-active {
         background-color: darken($color, 5%);
         border-color: transparent;
-        box-shadow: $button-shadow-inset;
+        box-shadow: $hx-button-shadow-inset;
         color: findColorInvert(darken($color, 5%));
       }
 
       &.is-loading {
         &:after {
-          border-color: transparent transparent $color-invert $color-invert !important;
+          border-color: transparent transparent $hx-color-invert $hx-color-invert !important;
         }
       }
 
@@ -163,7 +163,7 @@
         &:focus {
           background-color: $color;
           border-color: rgba($color, .5);
-          color: $color-invert;
+          color: $hx-color-invert;
         }
 
         &.is-loading {
@@ -262,9 +262,9 @@
       background-color: rgba(black, .05);
     }
 
-    @each $name, $pair in $colors {
+    @each $name, $pair in $hx-colors {
       $color: nth($pair, 1);
-      $color-invert: nth($pair, 2);
+      $hx-color-invert: nth($pair, 2);
 
       &.is-#{$name} {
         color: $color;
@@ -365,7 +365,7 @@
 	position: relative;
   outline: none;
   transition: .3s;
-  color: $color-black;
+  color: $hx-color-black;
   &:hover {
 	  background-color: rgba(0,0,0,.1);
   }
@@ -406,7 +406,7 @@ input[type="submit"].button {
     font-weight: 300;
 
     &.is-light {
-      border-left: 1px solid rgba($color-white, 1);
+      border-left: 1px solid rgba($hx-color-white, 1);
     }
     &.is-dark,
     &.is-black,
@@ -415,12 +415,12 @@ input[type="submit"].button {
     &.is-info,
     &.is-warning,
     &.is-danger {
-      border-left: 1px solid rgba($color-white, .3);
+      border-left: 1px solid rgba($hx-color-white, .3);
     }
 
     &:first-child {
-      border-top-left-radius: $border-radius-sm;
-      border-bottom-left-radius: $border-radius-sm;
+      border-top-left-radius: $hx-border-radius-sm;
+      border-bottom-left-radius: $hx-border-radius-sm;
 
       &.is-light,
       &.is-dark,
@@ -435,8 +435,8 @@ input[type="submit"].button {
 
     }
     &:last-child {
-      border-top-right-radius: $border-radius-sm;
-      border-bottom-right-radius: $border-radius-sm;
+      border-top-right-radius: $hx-border-radius-sm;
+      border-bottom-right-radius: $hx-border-radius-sm;
     }
     &:hover {
       z-index: 1;

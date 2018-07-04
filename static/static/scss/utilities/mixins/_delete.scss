@@ -3,12 +3,12 @@
 
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: rgba($color-black, 0.2);
+  background-color: rgba($hx-color-black, 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
   display: inline-block;
-  font-size: $font-size-base;
+  font-size: $hx-font-size-base;
   height: 20px;
   outline: none;
   position: relative;
@@ -17,7 +17,7 @@
 
   &:before,
   &:after {
-    background-color: $color-white;
+    background-color: $hx-color-white;
     content: "";
     display: block;
     left: 50%;
@@ -39,11 +39,11 @@
 
   &:hover,
   &:focus {
-    background-color: rgba($color-black, 0.3);
+    background-color: rgba($hx-color-black, 0.3);
   }
 
   &:active {
-    background-color: rgba($color-black, 0.4);
+    background-color: rgba($hx-color-black, 0.4);
   }
 
   // Sizes

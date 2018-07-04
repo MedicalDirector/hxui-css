@@ -6,11 +6,11 @@
 
     display: flex;
     align-items: center;
-    padding:$spacer;
+    padding:$hx-spacer;
     background-color:transparent;
 
     span{
-      color: $color-gray-lighter;
+      color: $hx-color-gray-lighter;
       font-weight: normal;
       text-transform: uppercase;
       font-size: 0.85rem;
@@ -18,7 +18,7 @@
 
     // Contextual themes
     &.is-primary{
-      background-color:$color-primary;
+      background-color:$hx-color-primary;
       span{
         color:rgba(255,255,255,0.8);
       }
@@ -29,16 +29,16 @@
       &.is-inverted{
         background-color:transparent;
         span{
-          color:rgba($color-primary,0.8);
+          color:rgba($hx-color-primary,0.8);
         }
         button,a{
-          color:$color-primary;
+          color:$hx-color-primary;
         }
       }
     }
 
     &.is-warning{
-      background-color:$color-warning;
+      background-color:$hx-color-warning;
       span{
         color:rgba(255,255,255,0.8);
       }
@@ -49,16 +49,16 @@
       &.is-inverted{
         background-color:transparent;
         span{
-          color:rgba($color-warning,0.8);
+          color:rgba($hx-color-warning,0.8);
         }
         button,a{
-          color:$color-warning;
+          color:$hx-color-warning;
         }
       }
     }
 
     &.is-danger{
-      background-color:$color-danger;
+      background-color:$hx-color-danger;
       span{
         color:rgba(255,255,255,0.8);
       }
@@ -68,16 +68,16 @@
       &.is-inverted{
         background-color:transparent;
         span{
-          color:rgba($color-danger,0.8);
+          color:rgba($hx-color-danger,0.8);
         }
         button,a{
-          color:$color-danger;
+          color:$hx-color-danger;
         }
       }
     }
 
     &.is-info{
-      background-color:$color-info;
+      background-color:$hx-color-info;
       span{
         color:rgba(255,255,255,0.8);
       }
@@ -87,10 +87,10 @@
       &.is-inverted{
         background-color:transparent;
         span{
-          color:rgba($color-info,0.8);
+          color:rgba($hx-color-info,0.8);
         }
         button,a{
-          color:$color-info;
+          color:$hx-color-info;
         }
       }
     }

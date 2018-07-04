@@ -5,7 +5,7 @@
   margin-bottom: 1rem;
   font-weight: 400;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  color: $color-white;
+  color: $hx-color-white;
   display: flex;
   align-items: center;
 
@@ -18,138 +18,138 @@
     color: rgba(white, .3);
   }
   &.is-info {
-    background-color: $color-info;
-    color: $color-white;
+    background-color: $hx-color-info;
+    color: $hx-color-white;
     .#{$namespace}-icon {
       color: rgba(white, .3);
     }
   }
   &.is-success {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $hx-color-primary;
+    color: $hx-color-white;
     .#{$namespace}-icon {
       color: rgba(black, .3);
     }
   }
   &.is-warning {
     background-color: #f6a904;
-    color: $color-white;
+    color: $hx-color-white;
     .#{$namespace}-icon {
       color: rgba(black, .3);
     }
   }
   &.is-danger {
     background-color: #b81e4f;
-    color: $color-white;
+    color: $hx-color-white;
     .#{$namespace}-icon {
       color: rgba(black, .3);
     }
   }
   &.is-inverse {
-    background-color: $color-gray-lightest;
-    color: $color-gray-dark;
+    background-color: $hx-color-gray-lightest;
+    color: $hx-color-gray-dark;
     text-shadow: none;
 
     a {
-      color: shade($color-gray-dark, 10%);
+      color: shade($hx-color-gray-dark, 10%);
       text-decoration: none;
-      border-bottom: 1px solid $color-gray-dark;
-      border-bottom-color: $color-gray-dark;
+      border-bottom: 1px solid $hx-color-gray-dark;
+      border-bottom-color: $hx-color-gray-dark;
       transition: .3s;
       &:hover {
-        color: $color-gray;
+        color: $hx-color-gray;
         border-bottom-color: transparent;
       }
     }
     .#{$namespace}-icon {
-      color: $color-gray-dark;
+      color: $hx-color-gray-dark;
     }
 
     &.is-info {
-      background-color: tint($color-info, 85%);
-      color: shade($color-info, 10%);
+      background-color: tint($hx-color-info, 85%);
+      color: shade($hx-color-info, 10%);
 
       a {
-        color: shade($color-info, 10%);
-        border-bottom-color: shade($color-info, 10%);
+        color: shade($hx-color-info, 10%);
+        border-bottom-color: shade($hx-color-info, 10%);
         &:hover {
-          color: $color-gray;
+          color: $hx-color-gray;
           border-bottom-color: transparent;
         }
       }
 
       .#{$namespace}-icon {
-        color: shade($color-info, 10%);
+        color: shade($hx-color-info, 10%);
       }
     }
 
     &.is-success {
-      background-color: tint($color-success, 85%);
-      color: shade($color-success, 10%);
+      background-color: tint($hx-color-success, 85%);
+      color: shade($hx-color-success, 10%);
 
       a {
-        color: shade($color-success, 10%);
-        border-bottom-color: shade($color-success, 10%);
+        color: shade($hx-color-success, 10%);
+        border-bottom-color: shade($hx-color-success, 10%);
         &:hover {
-          color: $color-gray;
+          color: $hx-color-gray;
           border-bottom-color: transparent;
         }
       }
 
       .#{$namespace}-icon {
-        color: shade($color-success, 10%);
+        color: shade($hx-color-success, 10%);
       }
     }
 
     &.is-warning {
-      background-color: tint($color-warning, 85%);
-      color: shade($color-warning, 10%);
+      background-color: tint($hx-color-warning, 85%);
+      color: shade($hx-color-warning, 10%);
 
       a {
-        color: shade($color-warning, 10%);
-        border-bottom-color: shade($color-warning, 10%);
+        color: shade($hx-color-warning, 10%);
+        border-bottom-color: shade($hx-color-warning, 10%);
         &:hover {
-          color: $color-gray;
+          color: $hx-color-gray;
           border-bottom-color: transparent;
         }
       }
 
       .#{$namespace}-icon {
-        color: shade($color-warning, 10%);
+        color: shade($hx-color-warning, 10%);
       }
     }
 
     &.is-danger {
-      background-color: tint($color-danger, 85%);
-      color: shade($color-danger, 10%);
+      background-color: tint($hx-color-danger, 85%);
+      color: shade($hx-color-danger, 10%);
 
       a {
-        color: shade($color-danger, 10%);
-        border-bottom-color: shade($color-danger, 10%);
+        color: shade($hx-color-danger, 10%);
+        border-bottom-color: shade($hx-color-danger, 10%);
         &:hover {
-          color: $color-gray;
+          color: $hx-color-gray;
           border-bottom-color: transparent;
         }
       }
 
       .#{$namespace}-icon {
-        color: shade($color-danger, 10%);
+        color: shade($hx-color-danger, 10%);
       }
     }
 
     &.is-bordered {
-      border:1px solid rgba($color_dark,0.3);
+      border:1px solid rgba($hx-color-dark,0.3);
       &.is-info{
-        border-color: rgba($color_info,0.3);
+        border-color: rgba($hx-color-info,0.3);
       }
       &.is-success{
-        border-color: rgba($color_success,0.3);
+        border-color: rgba($hx-color-success,0.3);
       }
       &.is-warning{
-        border-color:rgba($color_warning,0.3);
+        border-color:rgba($hx-color-warning,0.3);
       }
       &.is-danger{
-        border-color:rgba($color_danger,0.3);
+        border-color:rgba($hx-color-danger,0.3);
       }
     }
   }
@@ -159,15 +159,15 @@
     right: 1rem;
     width: 25rem;
     // transform: translateX(100%);
-    box-shadow: 0 0 0px 1px rgba($color-white,.1), 0 0 1rem 0 rgba(#333,.5), 0 0 3rem rgba(#333,.4);
+    box-shadow: 0 0 0px 1px rgba($hx-color-white,.1), 0 0 1rem 0 rgba(#333,.5), 0 0 3rem rgba(#333,.4);
     &.is-success {
-      box-shadow: 0 0 0px 1px rgba($color-white,.1), 0 0 1rem 0 rgba($color-primary,.5), 0 0 3rem rgba($color-primary,.4);
+      box-shadow: 0 0 0px 1px rgba($hx-color-white,.1), 0 0 1rem 0 rgba($hx-color-primary,.5), 0 0 3rem rgba($hx-color-primary,.4);
     }
     &.is-warning {
-      box-shadow: 0 0 0px 1px rgba($color-white,.1), 0 0 1rem 0 rgba(#f6a904,.5), 0 0 3rem rgba(#f6a904,.4);
+      box-shadow: 0 0 0px 1px rgba($hx-color-white,.1), 0 0 1rem 0 rgba(#f6a904,.5), 0 0 3rem rgba(#f6a904,.4);
     }
     &.is-danger {
-      box-shadow: 0 0 0px 1px rgba($color-white,.1), 0 0 1rem 0 rgba(#b81e4f,.5), 0 0 3rem rgba(#b81e4f,.4);
+      box-shadow: 0 0 0px 1px rgba($hx-color-white,.1), 0 0 1rem 0 rgba(#b81e4f,.5), 0 0 3rem rgba(#b81e4f,.4);
     }
   }
 }

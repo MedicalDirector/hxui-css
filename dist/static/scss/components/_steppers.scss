@@ -95,13 +95,13 @@
           background-color: transparent;
 
           .hx-icon {
-            color: $color-danger;
+            color: $hx-color-danger;
           }
 
         }
 
         &-label {
-          color: $color-danger;
+          color: $hx-color-danger;
         }
       }
 
@@ -126,7 +126,7 @@
       border-radius: 50%;
       text-align: center;
       background-color: rgba(0,0,0,.38);
-      color: $color-white;
+      color: $hx-color-white;
       margin-right: .5rem;
 
       .hx-icon {
@@ -145,11 +145,11 @@
       .#{$namespace}-stepper-step {
 
         &-step {
-          background-color: $color-primary;
+          background-color: $hx-color-primary;
         }
 
         &-label {
-          color: $color-black;
+          color: $hx-color-black;
         }
 
       }

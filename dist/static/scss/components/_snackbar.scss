@@ -50,28 +50,28 @@
 
   &.is-success {
     .hx-snackbar-content {
-      background-color: $color-success;
-      color: $color-success-invert;
+      background-color: $hx-color-success;
+      color: $hx-color-success-invert;
     }
   }
 
   &.is-info {
     .hx-snackbar-content {
-      background-color: $color-info;
-      color: $color-success-invert;
+      background-color: $hx-color-info;
+      color: $hx-color-success-invert;
     }
   }
 
   &.is-warning {
     .hx-snackbar-content {
-      background-color: $color-warning;
-      color: $color-warning-invert;
+      background-color: $hx-color-warning;
+      color: $hx-color-warning-invert;
     }
   }
 
   &.is-error {
     .hx-snackbar-content {
-      background-color: $color-danger;
+      background-color: $hx-color-danger;
     }
   }
 
@@ -87,7 +87,7 @@
     font-weight: 400;
     min-width: 18rem;
     max-width: 35.5rem;
-    border-radius: $border-radius-sm;
+    border-radius: $hx-border-radius-sm;
 
     .hx-button {
       margin: 0 0 0 3rem;

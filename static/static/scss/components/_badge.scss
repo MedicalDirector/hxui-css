@@ -11,8 +11,8 @@
 .#{$namespace}-badge {
   background-color: rgba(0,0,0,.05);
   border-radius: 290486px;
-  color: $color-gray-dark;
-  font-size: $font-size-xs;
+  color: $hx-color-gray-dark;
+  font-size: $hx-font-size-xs;
   justify-content: center;
   line-height: 1.5;
   margin: 4px;
@@ -57,46 +57,46 @@
   }
 
   &.is-primary {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $hx-color-primary;
+    color: $hx-color-white;
     font-weight: 400;
   }
 
   &.is-info {
-    background-color: $color-info;
-    color: $color-white;
+    background-color: $hx-color-info;
+    color: $hx-color-white;
   }
 
   &.is-white {
-    background-color: $color-white;
+    background-color: $hx-color-white;
   }
 
   &.is-outlined {
     border: 1px solid rgba(10, 10, 10, 0.15);
-    background-color: $color-white;
+    background-color: $hx-color-white;
   }
 
   &.is-dark {
-    background-color: $color-gray;
-    color: $color-white;
+    background-color: $hx-color-gray;
+    color: $hx-color-white;
     font-weight: 400;
   }
 
   &.is-black {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: $hx-color-black;
+    color: $hx-color-white;
     font-weight: 400;
   }
 
   &.is-warning {
-    background-color: $color-warning;
-    color: $color-white;
+    background-color: $hx-color-warning;
+    color: $hx-color-white;
     font-weight: 400;
   }
 
   &.is-danger {
-    background-color: $color-danger;
-    color: $color-white;
+    background-color: $hx-color-danger;
+    color: $hx-color-white;
     font-weight: 400;
   }
 
@@ -119,7 +119,7 @@
   }
 
   &.is-large {
-    font-size: $font-size-lg;
+    font-size: $hx-font-size-lg;
 
     .#{$namespace}-avatar {
       height: 34px;

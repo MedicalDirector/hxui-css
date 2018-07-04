@@ -1,5 +1,5 @@
-$control-radius: $border-radius !default;
-$control-radius-small: $border-radius-sm !default;
+$control-radius: $hx-border-radius !default;
+$control-radius-small: $hx-border-radius-sm !default;
 
 @mixin control {
   -moz-appearance: none;
@@ -9,7 +9,7 @@ $control-radius-small: $border-radius-sm !default;
   // border-radius: $control-radius;
   box-shadow: none;
   display: inline-flex;
-  font-size: $font-size-base;
+  font-size: $hx-font-size-base;
   height: 2.25em;
   justify-content: flex-start;
   line-height: 1.25;
@@ -37,13 +37,13 @@ $control-radius-small: $border-radius-sm !default;
 // The controls sizes use mixins so they can be used at different breakpoints
 @mixin control-small {
   border-radius: $control-radius-small;
-  font-size: $font-size-sm;
+  font-size: $hx-font-size-sm;
 }
 
 @mixin control-medium {
-  font-size: $font-size-base;
+  font-size: $hx-font-size-base;
 }
 
 @mixin control-large {
-  font-size: $font-size-lg;
+  font-size: $hx-font-size-lg;
 }

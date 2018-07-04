@@ -4,7 +4,7 @@
 
 .#{$namespace}-card-header {
   align-items: stretch;
-  box-shadow: 0 1px 0 $border-color;
+  box-shadow: 0 1px 0 $hx-border-color;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,10 +12,10 @@
 
 .#{$namespace}-card-header-title {
   align-items: center;
-  color: $text-strong;
+  color: $hx-text-strong;
   display: flex;
   flex-grow: 1;
-  font-weight: $font-weight-normal;
+  font-weight: $hx-font-weight-normal;
   padding: 0.75rem 1.25rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .#{$namespace}-card-footer {
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $hx-border-color;
   align-items: stretch;
   display: flex;
 }
@@ -70,15 +70,15 @@
   padding: 0.75rem;
 
   &:not(:last-child) {
-    border-right: 1px solid $border-color;
+    border-right: 1px solid $hx-border-color;
   }
 }
 
 .#{$namespace}-card {
-  background-color: $color-white;
-  // box-shadow: 0 2px 3px rgba($color-black, 0.1), 0 0 0 1px rgba($color-black, 0.1);
-  border: 1px solid rgba($color-black, .08);
-  color: $text;
+  background-color: $hx-color-white;
+  // box-shadow: 0 2px 3px rgba($hx-color-black, 0.1), 0 0 0 1px rgba($hx-color-black, 0.1);
+  border: 1px solid rgba($hx-color-black, .08);
+  color: $hx-text;
   max-width: 100%;
   position: relative;
   transition: all .2s ease;
@@ -96,23 +96,23 @@
   &.is-hovered,
   &:hover {
     // transform: translateY(-4px);
-    box-shadow: 0 0px 8px 0 rgba($color-black,.03), 0 4px 8px 0 rgba($color-black,.03);
+    box-shadow: 0 0px 8px 0 rgba($hx-color-black,.03), 0 4px 8px 0 rgba($hx-color-black,.03);
   }
 
   &:focus,
   &.is-focused {
     outline: none;
-    box-shadow: 0 2px 12px 0 rgba($color-black,.06);
+    box-shadow: 0 2px 12px 0 rgba($hx-color-black,.06);
   }
 
   &.is-active {
     transform: scale(1.05);
-    box-shadow: 0px 8px 36px rgba($color-black, .06);
+    box-shadow: 0px 8px 36px rgba($hx-color-black, .06);
     outline: none;
   }
 
   &.is-border-highlighted {
-    border-left: 5px solid $color-primary;
+    border-left: 5px solid $hx-color-primary;
 
     &.is-small {
       border-left-width: 2px;
@@ -127,19 +127,19 @@
     }
 
     &.is-info {
-      border-left: 5px solid $color-info;
+      border-left: 5px solid $hx-color-info;
     }
 
     &.is-success {
-      border-left: 5px solid $color-success;
+      border-left: 5px solid $hx-color-success;
     }
 
     &.is-warning {
-      border-left: 5px solid $color-warning;
+      border-left: 5px solid $hx-color-warning;
     }
 
     &.is-danger {
-      border-left: 5px solid $color-danger;
+      border-left: 5px solid $hx-color-danger;
     }
 
   }

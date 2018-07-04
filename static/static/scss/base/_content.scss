@@ -5,55 +5,55 @@
 // Headings
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  // margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  // color: $headings-color;
-  letter-spacing: $headings-letter-spacing;
+  // margin-bottom: $hx-headings-margin-bottom;
+  font-family: $hx-headings-font-family;
+  font-weight: $hx-headings-font-weight;
+  line-height: $hx-headings-line-height;
+  // color: $hx-headings-color;
+  letter-spacing: $hx-headings-letter-spacing;
   margin-top: 0.2rem;
 }
 
-h1, .h1 { font-size: $font-size-h1; color: $color-info; }
-h2, .h2 { font-size: $font-size-h2; color: $color-info;}
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h1, .h1 { font-size: $hx-font-size-h1; color: $hx-color-info; }
+h2, .h2 { font-size: $hx-font-size-h2; color: $hx-color-info;}
+h3, .h3 { font-size: $hx-font-size-h3; }
+h4, .h4 { font-size: $hx-font-size-h4; }
+h5, .h5 { font-size: $hx-font-size-h5; }
+h6, .h6 { font-size: $hx-font-size-h6; }
 
 .#{$namespace}-title {
-  font-size: $font-size-h1;
-  font-weight: $title-font-weight;
+  font-size: $hx-font-size-h1;
+  font-weight: $hx-title-font-weight;
   margin: 0;
 
   & + .#{$namespace}-subtitle {
     margin-top: .5rem;
-    color: $color-gray-light;
+    color: $hx-color-gray-light;
   }
 }
 
 .#{$namespace}-subtitle {
-  font-size: $font-size-base;
-  font-weight: $subtitle-font-weight;
+  font-size: $hx-font-size-base;
+  font-weight: $hx-subtitle-font-weight;
   margin-bottom: 1.5rem;
   line-height: 1.8rem;
 }
 
 small,
 .small {
-  font-size: $small-font-size;
-  font-weight: $font-weight-normal;
+  font-size: $hx-small-font-size;
+  font-weight: $hx-font-weight-normal;
 }
 
 mark,
 .mark {
-  padding: $mark-padding;
-  background-color: $mark-bg;
+  padding: $hx-mark-padding;
+  background-color: $hx-mark-bg;
 }
 
 hr {
-  margin-top: $spacer;
-  margin-bottom: $spacer;
+  margin-top: $hx-spacer;
+  margin-bottom: $hx-spacer;
   border: 0;
   border-top: $hr-border-width solid $hr-border-color;
 }
@@ -77,7 +77,7 @@ table {
 
 blockquote {
   // background-color: $background;
-  border-left: 5px solid $border-color;
+  border-left: 5px solid $hx-border-color;
   padding: 1.25em 1.5em;
 }
 
@@ -102,7 +102,7 @@ ul {
 }
 
 dt {
-  font-weight: $font-weight-bold;
+  font-weight: $hx-font-weight-bold;
   margin-bottom: 0.3rem;
 }
 
@@ -137,7 +137,7 @@ strong {
 .content {
   @include block;
 
-  color: $text;
+  color: $hx-text;
 
   // Inline
   li + li {
@@ -161,8 +161,8 @@ strong {
   h4,
   h5,
   h6 {
-    color: $text-strong;
-    font-weight: $font-weight-normal;
+    color: $hx-text-strong;
+    font-weight: $hx-font-weight-normal;
     line-height: 1.125;
   }
 
@@ -210,7 +210,7 @@ strong {
 
   blockquote {
     // background-color: $background;
-    border-left: 5px solid $border-color;
+    border-left: 5px solid $hx-border-color;
     padding: 1.25em 1.5em;
   }
 
@@ -238,7 +238,7 @@ strong {
   }
 
   dt {
-    font-weight: $font-weight-bold;
+    font-weight: $hx-font-weight-bold;
   }
 
   dd {

@@ -116,17 +116,17 @@
     input,
     textarea {
       & + .#{$namespace}-label {
-        color: $color-success;
+        color: $hx-color-success;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
-          color: $color-success;
+          color: $hx-color-success;
 
           &:before,
           &:after {
             width: 50%;
-            background-color: $color-success;
+            background-color: $hx-color-success;
           }
         }
       }
@@ -137,17 +137,17 @@
     input,
     textarea {
       & + .#{$namespace}-label {
-        color: $color-info;
+        color: $hx-color-info;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
-          color: $color-info;
+          color: $hx-color-info;
 
           &:before,
           &:after {
             width: 50%;
-            background-color: $color-info;
+            background-color: $hx-color-info;
           }
         }
       }
@@ -158,17 +158,17 @@
     input,
     textarea {
       & + .#{$namespace}-label {
-        color: $color-warning;
+        color: $hx-color-warning;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
-          color: $color-warning;
+          color: $hx-color-warning;
 
           &:before,
           &:after {
             width: 50%;
-            background-color: $color-warning;
+            background-color: $hx-color-warning;
           }
         }
       }
@@ -179,17 +179,17 @@
     input,
     textarea {
       & + .#{$namespace}-label {
-        color: $color-danger;
+        color: $hx-color-danger;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
-          color: $color-danger;
+          color: $hx-color-danger;
 
           &:before,
           &:after {
             width: 50%;
-            background-color: $color-danger;
+            background-color: $hx-color-danger;
           }
         }
       }
@@ -210,17 +210,17 @@
 
     &.ng-invalid.ng-dirty {
       & + .#{$namespace}-label {
-        color: $color-danger;
+        color: $hx-color-danger;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
-          color: $color-danger;
+          color: $hx-color-danger;
 
           &:before,
           &:after {
             width: 50%;
-            background-color: $color-danger;
+            background-color: $hx-color-danger;
           }
         }
       }
@@ -291,13 +291,13 @@
   display: block;
   width: 100%;
   padding: .8rem 0 .6rem;
-  font-family: $font-family-sans-serif;
+  font-family: $hx-font-family-sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  border: 1px solid $input-border;
+  border: 1px solid $hx-input-border;
   border-radius: 0;
   border-width: 0 0 1px 0;
-  background-color: $input-background;
+  background-color: $hx-input-background;
   position: relative;
   z-index: 1;
 
@@ -306,14 +306,14 @@
     top: .7rem;
     margin: 0;
     font-weight: normal;
-    color: $color-gray-lighter;
+    color: $hx-color-gray-lighter;
     left: 0;
     transition: .3s;
     z-index: 0;
 
     sup {
       top: -.2rem;
-      color: $color-danger;
+      color: $hx-color-danger;
       font-size: .7rem;
       transition: .3s;
     }
@@ -321,7 +321,7 @@
     & + .#{$namespace}-help {
       font-size: .75rem;
       margin-top: .25rem;
-      color: $color-gray-light;
+      color: $hx-color-gray-light;
       transition: .3s;
       opacity: 0;
       position: relative;
@@ -333,7 +333,7 @@
         top: -.4rem;
         width: 0%;
         height: 3px;
-        background-color: $input-focus-border;
+        background-color: $hx-input-focus-border;
         transition: .3s;
         z-index: 1;
       }
@@ -364,7 +364,7 @@
 
   &:focus ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label {
-    color: $color-primary;
+    color: $hx-color-primary;
   }
 
   &:focus ~ .#{$namespace}-help,
@@ -379,15 +379,15 @@
 
   &[disabled],
   &.is-disabled {
-    border-color: $input-disabled-border;
-    color: $input-disabled;
-    cursor: $cursor-disabled;
+    border-color: $hx-input-disabled-border;
+    color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
 
     &~ .#{$namespace}-label {
       top: -.5rem;
       font-size: .75rem;
-      color: $input-disabled;
-      cursor: $cursor-disabled;
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
 
       sup {
         font-size: .4rem;
@@ -425,26 +425,26 @@
   outline: none;
 
   &.ng-invalid.ng-dirty {
-    border-color: $color-danger;
-    color: $color-danger;
+    border-color: $hx-color-danger;
+    color: $hx-color-danger;
 
     & + .#{$namespace}-label {
-      color: $color-danger;
+      color: $hx-color-danger;
     }
   }
 
   &[disabled],
   &.is-disabled {
-    border-color: $input-disabled-border;
-    color: $input-disabled;
-    cursor: $cursor-disabled;
+    border-color: $hx-input-disabled-border;
+    color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
 
     &~ .#{$namespace}-label {
       top: -.5rem;
       left: 0;
       font-size: .75rem;
-      color: $input-disabled;
-      cursor: $cursor-disabled;
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
 
       sup {
         font-size: .4rem;
@@ -459,7 +459,7 @@
     font-size: .75rem;
     z-index: 0;
     sup {
-      color: $color-red;
+      color: $hx-color-red;
       font-size: .6rem;
     }
     & + .#{$namespace}-help {
@@ -480,7 +480,7 @@
   &.has-badges {
     transition: .3s;
   	&.is-active {
-  		border-bottom: 3px solid $color-primary;
+  		border-bottom: 3px solid $hx-color-primary;
   	}
 		input {
 			font-size: 1rem;
@@ -493,7 +493,7 @@
 			transition: .3s;
 		}
 		> .icon {
-			color: $color-primary;
+			color: $hx-color-primary;
 			&.animated {
 				animation-duration: 2s;
 			}
@@ -521,7 +521,7 @@
     content: '';
     border-left: .25em solid transparent;
     border-right: .25em solid transparent;
-    border-top: .375em solid $color-gray-lighter;
+    border-top: .375em solid $hx-color-gray-lighter;
     pointer-events: none;
   }
 }
@@ -586,7 +586,7 @@
 
 .#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
 .#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
-  border: 2px solid $color-gray-lighter;
+  border: 2px solid $hx-color-gray-lighter;
 }
 
 .#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
@@ -595,15 +595,15 @@
 
 /* Checked styles */
 .#{$namespace}-radio:checked + .#{$namespace}-label:before {
-  border: 2px solid $color-primary;
+  border: 2px solid $hx-color-primary;
 }
 
 .#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  border-color: $color-primary;
+  border-color: $hx-color-primary;
 }
 
 .#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  background-color: $color-primary;
+  background-color: $hx-color-primary;
 }
 
 .#{$namespace}-radio:checked + .#{$namespace}-label:after {
@@ -622,34 +622,34 @@
 //
 // /* Disabled Radio With gap */
 // .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:before {
-//   border: 2px solid $input-disabled;
+//   border: 2px solid $hx-input-disabled;
 // }
 //
 // .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:after {
 //   border: none;
-//   background-color: $input-disabled;
+//   background-color: $hx-input-disabled;
 // }
 
 /* Disabled style */
 .#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before,
 .#{$namespace}-radio:disabled:checked + .#{$namespace}-label:before {
   background-color: transparent;
-  border-color: $input-disabled;
-  cursor: $cursor-disabled;
+  border-color: $hx-input-disabled;
+  cursor: $hx-cursor-disabled;
 }
 
 .#{$namespace}-radio:disabled + .#{$namespace}-label {
-  color: $input-disabled;
-  cursor: $cursor-disabled;
+  color: $hx-input-disabled;
+  cursor: $hx-cursor-disabled;
 }
 
 .#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before {
-  border-color: $input-disabled;
+  border-color: $hx-input-disabled;
 }
 
 .#{$namespace}-radio:disabled:checked + .#{$namespace}-label:after {
-  background-color: $input-disabled;
-  border-color: $input-disabled;
+  background-color: $hx-input-disabled;
+  border-color: $hx-input-disabled;
 }
 
 // Checkbox container
@@ -698,20 +698,20 @@
     width: 20px;
     height: 20px;
     z-index: 1;
-    border: 2px solid $color-gray-lighter;
+    border: 2px solid $hx-color-gray-lighter;
     border-radius: 1px;
     margin-top: 2px;
     transition: .2s;
   }
 
   &:disabled + .#{$namespace}-label {
-    cursor: $cursor-disabled;
+    cursor: $hx-cursor-disabled;
   }
 
   &:not(:checked):disabled + .#{$namespace}-label:before {
     border: none;
-    background-color: $input-disabled;
-    cursor: $cursor-disabled;
+    background-color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
   }
 }
 
@@ -736,16 +736,16 @@
     top: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid $color-primary;
-    background-color: $color-primary;
+    border: 2px solid $hx-color-primary;
+    background-color: $hx-color-primary;
     z-index: 0;
   }
 
 
 
   &:disabled + .#{$namespace}-label:before {
-    border-right: 2px solid $input-disabled;
-    border-bottom: 2px solid $input-disabled;
+    border-right: 2px solid $hx-input-disabled;
+    border-bottom: 2px solid $hx-input-disabled;
 
   }
 }

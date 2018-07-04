@@ -18,12 +18,12 @@ html {
 
 body {
   margin: 0;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
-  line-height: $line-height-base;
-  color: $text;
-  background-color: $body-bg; // 2
+  font-family: $hx-font-family-base;
+  font-size: $hx-font-size-base;
+  font-weight: $hx-font-weight-base;
+  line-height: $hx-line-height-base;
+  color: $hx-text;
+  background-color: $hx-body-bg; // 2
   -webkit-font-smoothing: antialiased;
 }
 
@@ -88,21 +88,21 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   cursor: pointer;
-  color: $link-color;
-  text-decoration: $link-decoration;
+  color: $hx-link-color;
+  text-decoration: $hx-link-decoration;
   background-color: transparent; // Remove the gray background on active links in IE 10.
   -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
 
   @include hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    color: $hx-link-hover-color;
+    text-decoration: $hx-link-hover-decoration;
   }
 
   &.is-gray {
-    color: lighten($text, 30%);
+    color: lighten($hx-text, 30%);
 
     &:hover {
-      color: $text;
+      color: $hx-text;
       text-decoration: none;
     }
   }

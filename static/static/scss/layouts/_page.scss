@@ -25,15 +25,15 @@
 }
 
   &.has-blue-gradient{
-    @include radial-gradient(top, $color-green-light, $color-blue);
+    @include radial-gradient(top, $hx-color-green-light, $hx-color-blue);
     color:#fff;
   }
 
   &.has-orange-gradient{
-    @include radial-gradient(top, $color-yellow-light, $color-orange);
+    @include radial-gradient(top, $hx-color-yellow-light, $hx-color-orange);
   }
 
   &.has-purple-gradient{
-    @include radial-gradient(top, $color-red-light, $color-purple);
+    @include radial-gradient(top, $hx-color-red-light, $hx-color-purple);
   }
 }

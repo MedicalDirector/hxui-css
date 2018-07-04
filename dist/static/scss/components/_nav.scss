@@ -47,7 +47,7 @@
   text-transform: uppercase;
 
   h6{
-    color:$color-gray-lighter;
+    color:$hx-color-gray-lighter;
     font-weight: normal;
     margin: 1rem 1rem 1rem;
   }
@@ -63,45 +63,45 @@
   @extend .hx-flex-1;
   @extend .hx-flex-align-center;
   text-decoration: none;
-  padding:($spacer/2) $spacer;
+  padding:($hx-spacer/2) $hx-spacer;
   transition: all .2s ease-in-out;
-  color:$nav-link-color;
-  font-size: $nav-link-font-size;
-  font-weight: $nav-link-font-weight;
+  color:$hx-nav-link-color;
+  font-size: $hx-nav-link-font-size;
+  font-weight: $hx-nav-link-font-weight;
   border-radius: 2rem;
 
   @include hover-focus {
     text-decoration: none;
-    // background-color: $nav-link-hover-color;
-    color:$nav-link-active-color;
+    // background-color: $hx-nav-link-hover-color;
+    color:$hx-nav-link-active-color;
 
     i.icon{
-      color: $nav-link-active-color;
+      color: $hx-nav-link-active-color;
     }
   }
 
   // span:first-of-type{
-  //   padding-left:$spacer/2;
+  //   padding-left:$hx-spacer/2;
   // }
 
   &.is-active{
     background-color: rgba(0,0,0,.04);
-    color: $nav-link-active-color;
-    // border: 1px solid $color-gray-lighter;
+    color: $hx-nav-link-active-color;
+    // border: 1px solid $hx-color-gray-lighter;
 
     i.icon{
-      color: $nav-link-active-color;
+      color: $hx-nav-link-active-color;
     }
   }
 
   // Disabled state lightens text and removes hover/tab effects
   &.is-disabled {
     opacity: .3;
-    // color: $nav-disabled-link-color;
+    // color: $hx-nav-disabled-link-color;
 
     @include plain-hover-focus {
-      // color: $nav-disabled-link-hover-color;
-      cursor: $cursor-disabled;
+      // color: $hx-nav-disabled-link-hover-color;
+      cursor: $hx-cursor-disabled;
       background-color: transparent;
     }
   }
@@ -109,8 +109,8 @@
 
   i.icon{
     font-size: 1.5rem;
-    color:$color-gray-light;
-    margin:0 ($spacer/2) 0 ($spacer/2);
+    color:$hx-color-gray-light;
+    margin:0 ($hx-spacer/2) 0 ($hx-spacer/2);
   }
 
 }
@@ -131,7 +131,7 @@
   .#{$namespace}-nav-item{
     @extend .hx-flex;
     @extend .hx-flex-justify-center;
-    margin:$spacer/3 0;
+    margin:$hx-spacer/3 0;
   }
   .#{$namespace}-nav-brand {
     margin-bottom: .5rem;
@@ -149,7 +149,7 @@
       display: none;
     }
     &.is-active{
-      background-color:$nav-link-active-color;
+      background-color:$hx-nav-link-active-color;
       color:#fff;
 
       i.icon{
