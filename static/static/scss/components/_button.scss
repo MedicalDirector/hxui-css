@@ -462,13 +462,13 @@ input[type="submit"].button {
 }
 
 .#{$namespace}-button-split{
-  display: flex;
+  display: inline-flex;
   .#{$namespace}-button:first-child{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right:none;
   }
-  .#{$namespace}-button:last-child{
+  .#{$namespace}-button:nth-child(2) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     width: 1rem;
