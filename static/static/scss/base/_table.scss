@@ -5,6 +5,11 @@
   margin-bottom: 1.5rem;
   width: 100%;
 
+  > tbody > tr > td.is-text-ellipsed,
+  > thead > tr > th.is-text-ellipsed {
+    max-width: 0;
+  }
+
   > thead {
     > tr > th {
       vertical-align: bottom;
@@ -51,9 +56,38 @@
       border: 2px solid $hx-table-border;
       border-width: 2px 0 0;
       color: $hx-table-head;
-      font-weight: $hx-font-weight-normal;
+      font-weight: $hx-font-weight-bolder;
+      padding: 0.9em 0.75em;
+    }
+    > tr > th {
+      padding: 1.3em 0.75em;
+      font-weight: $hx-font-weight-boldest;
+      font-size: $hx-font-size-xs;
+      text-transform: uppercase;
+    }
+    > tr > td.has-text-field {
+      > input[type=text] {
+        margin: 0;
+        padding: .6rem;
+        border-radius: .2rem;
+        border: 1px solid #d0d2d2;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: .3s;
+        transition: .3s;
+        font-weight: $hx-font-weight-bolder;
+      }
+
+      &.is-danger > input[type=text],
+      &.is-warning > input[type=text],
+      &.is-info > input[type=text],
+      &.is-success > input[type=text]{
+        background-color:#fff;
+      }
     }
   }
+
+
 
   > tbody:not(.hx-table-group) > tr > td,
   > tbody:not(.hx-table-group) > tr > th{
@@ -329,6 +363,26 @@
           }
         }
       }
+    }
+  }
+
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    &.is-danger {
+      background-color: rgba($hx-color-danger, 0.1);
+      color: $hx-color-danger;
+    }
+    &.is-warning {
+      background-color: rgba($hx-color-warning, 0.1);
+      color: $hx-color-warning;
+    }
+    &.is-success {
+      background-color: rgba($hx-color-success, 0.1);
+      color: $hx-color-success;
+    }
+    &.is-info {
+      background-color: rgba($hx-color-info, 0.1);
+      color: $hx-color-info;
     }
   }
 }

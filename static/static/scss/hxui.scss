@@ -55,12 +55,6 @@ html {
 
 .#{$hxui-reset} {
 
-display: flex;
-flex-direction: column;
-width: 100%;
-font-size: .92rem;
-
-
 // Font
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
 
@@ -102,6 +96,7 @@ font-size: .92rem;
 @import 'components/toggle';
 @import 'components/tooltip';
 @import 'components/toolbar';
+@import 'components/metadata';
 // layouts
 @import 'layouts/container';
 @import 'layouts/field';
