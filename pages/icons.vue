@@ -269,9 +269,7 @@ export default {
     }
   },
   mounted () {
-    if (this.searchTerm.length === 0) {
-      this.filterResults = this.icons
-    }
+    this.filterResults = this.icons
   },
   watch: {
     searchTerm () {

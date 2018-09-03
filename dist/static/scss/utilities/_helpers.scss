@@ -92,7 +92,8 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 }
 
 .is-elipsed,
-.is-text-elipsed{
+.is-text-elipsed,
+.is-text-ellipsed {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -102,7 +103,7 @@ table th,
 table td {
   &.is-text-elipsed,
   &.is-elipsed,
-  &.is-ellipsed{
+  &.is-text-ellipsed{
     position:relative;
     min-width:0;
   }

@@ -366,22 +366,24 @@
     }
   }
 
+
+  // todo - find a better way to do this. !important should not be used if it can be helped.
   > tbody > tr > td,
   > tfoot > tr > td {
     &.is-danger {
-      background-color: rgba($hx-color-danger, 0.1);
+      background-color: rgba($hx-color-danger, 0.1) !important;
       color: $hx-color-danger;
     }
     &.is-warning {
-      background-color: rgba($hx-color-warning, 0.1);
+      background-color: rgba($hx-color-warning, 0.1) !important;;
       color: $hx-color-warning;
     }
     &.is-success {
-      background-color: rgba($hx-color-success, 0.1);
+      background-color: rgba($hx-color-success, 0.1) !important;;
       color: $hx-color-success;
     }
     &.is-info {
-      background-color: rgba($hx-color-info, 0.1);
+      background-color: rgba($hx-color-info, 0.1) !important;;
       color: $hx-color-info;
     }
   }
