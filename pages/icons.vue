@@ -263,7 +263,8 @@ export default {
         { name: 'imaging' },
         { name: 'radiology-outline' },
         { name: 'radiology' },
-        { name: 'prescription' }
+        { name: 'prescription' },
+        { name: 'external-link' }
       ]
     }
   },

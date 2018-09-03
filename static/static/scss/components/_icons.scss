@@ -1,5 +1,3 @@
-
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'hxui' !important;
@@ -15,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-external-link:before {
+  content: "\e984";
+}
 .icon-prescription:before {
   content: "\e983";
 }
@@ -450,16 +451,16 @@
 .icon-speedometer:before {
   content: "\e972";
 }
-.icon-woman:before {
-  content: "\e973";
-}
-.icon-female:before {
+.icon-male:before {
   content: "\e973";
 }
 .icon-man:before {
+  content: "\e973";
+}
+.icon-woman:before {
   content: "\e974";
 }
-.icon-male:before {
+.icon-female:before {
   content: "\e974";
 }
 .icon-language:before {

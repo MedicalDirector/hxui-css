@@ -462,7 +462,7 @@ input[type="submit"].button {
 }
 
 .#{$namespace}-button-split{
-  display: flex;
+  display: inline-flex;
   .#{$namespace}-button:first-child{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -475,3 +475,4 @@ input[type="submit"].button {
     border-left-color: rgba(255,255,255,0.3);
   }
 }
+

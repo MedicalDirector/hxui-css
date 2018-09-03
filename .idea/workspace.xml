@@ -2,12 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static/scss/components/_metadata.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/components/_button.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/hxui.scss" afterPath="$PROJECT_DIR$/static/static/scss/hxui.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/static/scss/utilities/_helpers.scss" afterPath="$PROJECT_DIR$/static/static/scss/utilities/_helpers.scss" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dist/200.html" afterPath="$PROJECT_DIR$/dist/200.html" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/LICENSES" afterPath="$PROJECT_DIR$/dist/_nuxt/LICENSES" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/app.5e195f109577924c33f3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" afterPath="$PROJECT_DIR$/dist/_nuxt/css/hxui.css" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.03a25a6.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.6fe2725.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.7156fc9.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/fonts/hxui.d9350ab.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/img/hxui.d231f66.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/layouts_default.0da338c9bf0119378602.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.56418c7123ae9da960e5.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_accordions.7e273d2b7589e395e18d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_alerts.3fdc216e8d54183b15f3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_avatars.aba79808b201250be0e8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_badges.43f4ae018858d21970d2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_breadcrumbs.fe91e4ed9e652ab3fc87.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_buttons.9a35a01bb9bb4cee177b.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_cards.b3352c6e54ffea2d6169.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_colours.a9e3e0321b5723280e4a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_container-demo.d864057ddd7ee0932f28.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_containers.3d6517688119d21186aa.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_dividers.a4b3c00fbd1bec1b821a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_downloads.ce70893b6d2adf12b1a1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_dropdowns.fd02b788b4f10d6948d8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_elevation.cb6a6192055e3237b085.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_forms.5160bec5eb55435ca17d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_grid.fed2d2b294306fa15241.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_icons.7c63088948ae6a15b604.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_index.4ca94bebb89833618df6.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_install.a80666fa28024344ebd3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_lists.627d0b85d2ed0dd2ee1c.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_modals.eb9049878963b38bcf38.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_nav.8e4e5a5607661f0d1609.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_other.baefa97a619a8db06812.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_pages.e391bef056029c0b6cb4.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_pagination.94249ec30b5e34fdae6a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_progress-timeline.cabfed891f4f23dc2886.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_responsiveness.1442ee8b263089283bf2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_scrollable.66477b20ebd0126c385a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_sections.19fcf159f4f17b6052fa.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_sidebar.92b37fc1d5a78c573d2d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_snackbars-toasts.73ef6ce71e8a9acd030a.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_spacing.84f1d4ad5ece06000c00.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_steppers.bb9b947ccb6d5e2021e0.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tables.6544adde5ceea6041634.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tabs.9031a95601128f3c5138.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_text.90767efaf7d1fd683a74.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_toggle.b97fcedfcc5acccca884.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_toolbars.140b9cad3bf9d416a0ab.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_tooltips.b0da9d70a8eab8111dfc.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages_typography.96b16a01f28f4e8ba469.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/vendor.b25e92860dfc512491ae.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/accordions/index.html" afterPath="$PROJECT_DIR$/dist/accordions/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/alerts/index.html" afterPath="$PROJECT_DIR$/dist/alerts/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/avatars/index.html" afterPath="$PROJECT_DIR$/dist/avatars/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/badges/index.html" afterPath="$PROJECT_DIR$/dist/badges/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/breadcrumbs/index.html" afterPath="$PROJECT_DIR$/dist/breadcrumbs/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/buttons/index.html" afterPath="$PROJECT_DIR$/dist/buttons/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/cards/index.html" afterPath="$PROJECT_DIR$/dist/cards/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/colours/index.html" afterPath="$PROJECT_DIR$/dist/colours/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/container-demo/index.html" afterPath="$PROJECT_DIR$/dist/container-demo/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/containers/index.html" afterPath="$PROJECT_DIR$/dist/containers/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/dividers/index.html" afterPath="$PROJECT_DIR$/dist/dividers/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/downloads/index.html" afterPath="$PROJECT_DIR$/dist/downloads/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/dropdowns/index.html" afterPath="$PROJECT_DIR$/dist/dropdowns/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/elevation/index.html" afterPath="$PROJECT_DIR$/dist/elevation/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/forms/index.html" afterPath="$PROJECT_DIR$/dist/forms/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/grid/index.html" afterPath="$PROJECT_DIR$/dist/grid/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/icons/index.html" afterPath="$PROJECT_DIR$/dist/icons/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/install/index.html" afterPath="$PROJECT_DIR$/dist/install/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/lists/index.html" afterPath="$PROJECT_DIR$/dist/lists/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/modals/index.html" afterPath="$PROJECT_DIR$/dist/modals/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/nav/index.html" afterPath="$PROJECT_DIR$/dist/nav/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/other/index.html" afterPath="$PROJECT_DIR$/dist/other/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/index.html" afterPath="$PROJECT_DIR$/dist/pages/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/pagination/index.html" afterPath="$PROJECT_DIR$/dist/pagination/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/progress-timeline/index.html" afterPath="$PROJECT_DIR$/dist/progress-timeline/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/responsiveness/index.html" afterPath="$PROJECT_DIR$/dist/responsiveness/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/scrollable/index.html" afterPath="$PROJECT_DIR$/dist/scrollable/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/sections/index.html" afterPath="$PROJECT_DIR$/dist/sections/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/sidebar/index.html" afterPath="$PROJECT_DIR$/dist/sidebar/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" afterPath="$PROJECT_DIR$/dist/snackbars-toasts/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/spacing/index.html" afterPath="$PROJECT_DIR$/dist/spacing/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/hxui.css" afterPath="$PROJECT_DIR$/dist/static/css/hxui.css" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.eot" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.svg" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.ttf" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.woff" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/hxui.woff2" afterPath="$PROJECT_DIR$/dist/static/fonts/hxui.woff2" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" afterPath="$PROJECT_DIR$/dist/static/scss/base/_table.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_button.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/dist/static/scss/components/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/hxui.scss" afterPath="$PROJECT_DIR$/dist/static/scss/hxui.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/static/scss/utilities/_helpers.scss" afterPath="$PROJECT_DIR$/dist/static/scss/utilities/_helpers.scss" />
+      <change beforePath="$PROJECT_DIR$/dist/steppers/index.html" afterPath="$PROJECT_DIR$/dist/steppers/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/tables/index.html" afterPath="$PROJECT_DIR$/dist/tables/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/tabs/index.html" afterPath="$PROJECT_DIR$/dist/tabs/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/text/index.html" afterPath="$PROJECT_DIR$/dist/text/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/toggle/index.html" afterPath="$PROJECT_DIR$/dist/toggle/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/toolbars/index.html" afterPath="$PROJECT_DIR$/dist/toolbars/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/tooltips/index.html" afterPath="$PROJECT_DIR$/dist/tooltips/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/typography/index.html" afterPath="$PROJECT_DIR$/dist/typography/index.html" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/pages/icons.vue" afterPath="$PROJECT_DIR$/pages/icons.vue" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.eot" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.eot" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.svg" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.svg" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff" />
+      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff2" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff2" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +134,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="true" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -37,91 +144,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
+      <file leaf-file-name="_icon.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icon.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="207" column="19" lean-forward="false" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_table.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/base/_table.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="369" column="4" lean-forward="false" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_helpers.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_helpers.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainNav.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/MainNav.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_button.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_metadata.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_metadata.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/base/_base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-414">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hxui.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/static/scss/hxui.scss">
+      <file leaf-file-name="_icons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="98" column="30" lean-forward="false" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+            <state relative-caret-position="223">
+              <caret line="271" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/icons.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6049">
+              <caret line="263" column="38" lean-forward="false" selection-start-line="263" selection-start-column="38" selection-end-line="263" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -190,8 +237,6 @@
         <option value="$PROJECT_DIR$/static/static/scss/components/_badge.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_form.scss" />
-        <option value="$PROJECT_DIR$/pages/icons.vue" />
-        <option value="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
         <option value="$PROJECT_DIR$/pages/typography.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/utilities/_scrollable.scss" />
         <option value="$PROJECT_DIR$/pages/visibility.vue" />
@@ -226,6 +271,8 @@
         <option value="$PROJECT_DIR$/static/static/scss/hxui.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_metadata.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/base/_table.scss" />
+        <option value="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
+        <option value="$PROJECT_DIR$/pages/icons.vue" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -244,7 +291,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="width" value="2906" />
     <option name="height" value="1826" />
@@ -271,40 +318,6 @@
             <path>
               <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
               <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gethxui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gethxui" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,14 +354,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -405,6 +410,14 @@
       <test-directory />
       <recursive>false</recursive>
       <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -473,45 +486,35 @@
       <workItem from="1526940579354" duration="27171000" />
       <workItem from="1527720958855" duration="1045000" />
       <workItem from="1528342926122" duration="337000" />
+      <workItem from="1536010073472" duration="1984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197932000" />
+    <option name="totallyTimeSpent" value="200444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24841213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24834238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5012337" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26891893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2816594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5012337" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.4987663" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3846154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24841213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,34 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_transitions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/_flexbox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/NavContainer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-637">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/typography.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -652,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="292" column="164" lean-forward="false" selection-start-line="292" selection-start-column="164" selection-end-line="292" selection-end-column="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/mixins/_responsiveness.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -751,43 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3841">
           <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding>
-            <marker date="1527469918952" expanded="true" signature="605:1482" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="615:689" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="624:678" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="699:1473" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="707:890" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="900:1079" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1089:1270" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1279:1462" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1604:2532" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1614:1688" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1623:1677" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1698:2523" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1707:1896" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="1905:2094" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2103:2294" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2304:2512" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2650:3166" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2660:2734" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2669:2723" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2744:3157" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2753:2948" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="2957:3146" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3291:3991" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3301:3375" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3310:3364" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3385:3982" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3394:3591" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3600:3779" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="3788:3971" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4109:4625" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4119:4193" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4128:4182" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4203:4616" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4210:4405" ph="..." />
-            <marker date="1527469918952" expanded="true" signature="4414:4605" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,31 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5106">
           <caret line="326" column="25" lean-forward="false" selection-start-line="326" selection-start-column="25" selection-end-line="326" selection-end-column="25" />
-          <folding>
-            <element signature="e#140#1212#0" expanded="false" />
-            <element signature="e#1227#2296#0" expanded="false" />
-            <marker date="1534983675824" expanded="true" signature="78:2390" ph="{...}" />
-            <marker date="1534983675824" expanded="false" signature="2313:2390" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="2339:2390" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="2372:2390" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15508:15528" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15508:15530" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15613:16678" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15674:15700" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15750:16075" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="15803:15905" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16002:16071" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16082:16289" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16120:16156" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16185:16285" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16216:16279" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16309:16426" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16318:16422" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16358:16416" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16463:16676" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16499:16577" ph="{...}" />
-            <marker date="1534983675824" expanded="true" signature="16612:16672" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="477" column="0" lean-forward="false" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="98" column="30" lean-forward="false" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,15 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="207" column="19" lean-forward="false" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,6 +852,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="369" column="4" lean-forward="false" selection-start-line="369" selection-start-column="4" selection-end-line="369" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/utilities/mixins/_responsiveness.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="102" column="44" lean-forward="false" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/scss/components/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="271" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/icons.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6049">
+          <caret line="263" column="38" lean-forward="false" selection-start-line="263" selection-start-column="38" selection-end-line="263" selection-end-column="38" />
           <folding />
         </state>
       </provider>
