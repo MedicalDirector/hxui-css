@@ -263,14 +263,13 @@ export default {
         { name: 'imaging' },
         { name: 'radiology-outline' },
         { name: 'radiology' },
-        { name: 'prescription' }
+        { name: 'prescription' },
+        { name: 'external-link' }
       ]
     }
   },
   mounted () {
-    if (this.searchTerm.length === 0) {
-      this.filterResults = this.icons
-    }
+    this.filterResults = this.icons
   },
   watch: {
     searchTerm () {
