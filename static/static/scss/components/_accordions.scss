@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .3s;
 
     &:hover {
       color: $hx-text;
@@ -36,6 +37,7 @@
     }
 
     .header-icon {
+      transition: .3s;
       display: flex;
     }
   }
