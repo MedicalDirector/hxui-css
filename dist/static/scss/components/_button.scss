@@ -399,11 +399,7 @@ input[type="submit"].button {
   > .#{$namespace}-button {
     margin-right: 0;
     margin-left: -1px;
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
     border-radius: 0;
-    letter-spacing: -.01em;
-    font-weight: 300;
 
     &.is-light {
       border-left: 1px solid rgba($hx-color-white, 1);
@@ -462,16 +458,17 @@ input[type="submit"].button {
 }
 
 .#{$namespace}-button-split{
-  display: flex;
+  display: inline-flex;
   .#{$namespace}-button:first-child{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right:none;
   }
-  .#{$namespace}-button:last-child{
+  .#{$namespace}-button:nth-child(2) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     width: 1rem;
     border-left-color: rgba(255,255,255,0.3);
   }
 }
+

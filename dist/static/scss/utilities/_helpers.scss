@@ -92,7 +92,8 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 }
 
 .is-elipsed,
-.is-text-elipsed{
+.is-text-elipsed,
+.is-text-ellipsed {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -101,13 +102,35 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 table th,
 table td {
   &.is-text-elipsed,
-  &.is-elipsed {
+  &.is-elipsed,
+  &.is-text-ellipsed{
     position:relative;
     min-width:0;
   }
 }
 
-  // Visibility
+.is-inline-block {
+  display: inline-block !important;
+}
+
+.is-inline-flex {
+  display: inline-flex !important;
+}
+
+.is-vertical-align-bottom {
+  vertical-align: bottom !important;
+}
+
+.is-vertical-align-top {
+  vertical-align: top !important;
+}
+
+.is-vertical-align-middle {
+  vertical-align: middle !important;
+}
+
+
+// Visibility
 
   .is-hidden {
     display: none !important;

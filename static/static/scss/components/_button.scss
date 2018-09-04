@@ -399,11 +399,7 @@ input[type="submit"].button {
   > .#{$namespace}-button {
     margin-right: 0;
     margin-left: -1px;
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
     border-radius: 0;
-    letter-spacing: -.01em;
-    font-weight: 300;
 
     &.is-light {
       border-left: 1px solid rgba($hx-color-white, 1);
