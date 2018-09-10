@@ -96,7 +96,7 @@ export default {
   data () {
     return {
       searchTerm: '',
-      filterResults: [],
+      filterResults: this.icons,
       code: '<i class="hx-icon icon-helix"></i>',
       icons: [
         { name: 'helix' },
