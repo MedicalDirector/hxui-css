@@ -211,7 +211,7 @@
 
   > thead > tr,
   > tbody:not(.hx-table-group) > tr {
-    &.is-focused, &.is-focused:hover {
+    &.is-focused:not(.is-selected), &.is-focused:hover {
       > th, > td {
         background-color: $hx-table-row-even-hover-background !important;
       }
@@ -219,14 +219,6 @@
       > td,
       > th a:not(.hx-dropdown-item),
       > td a:not(.hx-dropdown-item) {
-      }
-    }
-    &.is-focused.is-selected, &.is-focused.is-selected:hover {
-      > th,
-      > td,
-      > th *:not(.hx-dropdown-item),
-      > td *:not(.hx-dropdown-item) {
-        color:$hx-color-primary;
       }
     }
   }
