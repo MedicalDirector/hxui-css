@@ -227,7 +227,7 @@ export default {
       <i class="hx-icon icon-email-outline"></i>
     </span>
   </a>
-  <a class="hx-button">
+  <a class="hx-button is-active">
     <span class="hx-icon-control">
       <i class="hx-icon icon-printer-outline"></i>
     </span>
@@ -242,12 +242,10 @@ export default {
   <a class="hx-button">
     Left
   </a>
-  <a class="hx-button">
+  <a class="hx-button is-active">
     Middle
   </a>
-  <a class="hx-button">
-    Right
-  </a>
+
 </div>
 <div class="hx-button-group has-text-centered">
   <a class="hx-button">
@@ -274,7 +272,7 @@ export default {
   <a class="hx-button is-info">
     Left
   </a>
-  <a class="hx-button is-info">
+  <a class="hx-button is-info is-active">
     Middle
   </a>
   <a class="hx-button is-info">

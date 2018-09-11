@@ -26,7 +26,13 @@
 .is-text-underline    { text-decoration: underline !important; }
 
 
-// Weight and italics
-.is-text-weight-normal  { font-weight: normal !important; }
+// Font styles
 .is-text-bold           { font-weight: bold !important; }
 .is-text-italic         { font-style: italic !important; }
+
+// Font weights
+.is-text-weight-light   {font-weight: 300 !important;};
+.is-text-weight-normal  { font-weight: normal !important; }
+.is-text-weight-bold  { font-weight: 400 !important; }
+.is-text-weight-bolder  { font-weight: 500 !important; }
+.is-text-weight-boldest  { font-weight: 600 !important; }

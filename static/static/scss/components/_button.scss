@@ -96,6 +96,7 @@
     box-shadow: $hx-button-shadow-inset;
     color: $hx-button-active;
     text-decoration: none;
+    background-color:rgba($hx-color-gray-lightest,0.3);
   }
 
   // Colors
@@ -258,7 +259,8 @@
     border: none;
     font-weight: 400;
 
-    &:hover {
+    &:hover,
+    &.is-active{
       background-color: rgba(black, .05);
     }
 
@@ -282,7 +284,8 @@
 
         &:active,
         &.is-active {
-          background-color: rgba($color, 0.35);
+          background-color: rgba($color, 0.1);
+          box-shadow: none;
         }
       }
     }
@@ -400,6 +403,10 @@ input[type="submit"].button {
     margin-right: 0;
     margin-left: -1px;
     border-radius: 0;
+
+    &.is-active {
+      z-index: 1;
+    }
 
     &.is-light {
       border-left: 1px solid rgba($hx-color-white, 1);
