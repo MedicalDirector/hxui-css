@@ -246,28 +246,36 @@
 
   > .#{$namespace}-icon,
   > .#{$namespace}-button,
-  > .#{$namespace}-button-group{
+  > .#{$namespace}-button-group,
+  > .#{$namespace}-loader{
     position:absolute;
     top:.5rem;
     z-index:1;
   }
 
+  > .#{$namespace}-loader {
+    top:.7rem;
+  }
+
   // select icon|button after hx-input-control
   .#{$namespace}-input-control + .#{$namespace}-icon,
   .#{$namespace}-input-control + .#{$namespace}-button,
-  .#{$namespace}-input-control + .#{$namespace}-button-group{
+  .#{$namespace}-input-control + .#{$namespace}-button-group,
+  .#{$namespace}-input-control + .#{$namespace}-loader{
     right:0;
   }
 
   /// select icon|button before hx-input-control
   .#{$namespace}-icon ~ .#{$namespace}-input-control,
-  .#{$namespace}-button ~ .#{$namespace}-input-control{
+  .#{$namespace}-button ~ .#{$namespace}-input-control,
+  .#{$namespace}-loader ~ .#{$namespace}-input-control{
     left:0;
   }
 
   // select hx-input-control after icon|button
   .#{$namespace}-icon + .#{$namespace}-input-control,
-  .#{$namespace}-button + .#{$namespace}-input-control {
+  .#{$namespace}-button + .#{$namespace}-input-control,
+  .#{$namespace}-loader + .#{$namespace}-input-control{
     .#{$namespace}-input{
         padding-left:1.8rem;
     }

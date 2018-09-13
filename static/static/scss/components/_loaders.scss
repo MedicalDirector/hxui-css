@@ -1,0 +1,76 @@
+.hx-loader {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    margin: 0.375rem;
+    border: 0.375rem solid $hx-color-gray;
+    border-radius: 50%;
+    animation: hxLoader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: $hx-color-gray transparent transparent transparent;
+
+    &:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    &:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    &:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+  }
+
+  &.is-small{
+    width: (4/3) + rem;
+    height: (4/3) + rem;
+
+    div {
+      width: (3.1875/3) + rem;
+      height: (3.1875/3) + rem;
+      margin: (0.375/3) + rem;
+      border-width: (0.375/3) + rem;
+    }
+  }
+
+  &.is-primary{
+    div {
+      border-color: $hx-color-primary transparent transparent transparent;
+    }
+  }
+  &.is-info{
+    div {
+      border-color: $hx-color-info transparent transparent transparent;
+    }
+  }
+  &.is-warning{
+    div {
+      border-color: $hx-color-warning transparent transparent transparent;
+    }
+  }
+  &.is-danger{
+    div {
+      border-color: $hx-color-danger transparent transparent transparent;
+    }
+  }
+  &.is-inverse{
+    div {
+      border-color: $hx-color-white transparent transparent transparent;
+    }
+  }
+}
+
+@keyframes hxLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

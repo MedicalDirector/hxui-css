@@ -87,6 +87,15 @@ export default {
   </div>
 </div>
 <div class="hx-input-group">
+  <i class="hx-loader is-small"><div></div><div></div><div></div><div></div></i>
+  <div class="hx-input-control">
+    <input class="hx-input" type="text" required>
+    <label class="hx-label">Search <sup>*</sup></label>
+    <div class="hx-help">Please search by patient name</div>
+  </div>
+ <i class="hx-loader is-small"><div></div><div></div><div></div><div></div></i>
+</div>
+<div class="hx-input-group">
  <i class="hx-icon icon-person"></i>
   <div class="hx-input-control">
     <input class="hx-input" type="text" value="JG001" required>
