@@ -396,7 +396,7 @@
   &.has-sticky-header {
     > thead > tr > th {
       position: sticky;
-      top: 0;  // positional attribute is required for position to take affect.
+      top: -1px;  // positional attribute is required for position to take affect.
       background-color: #fafafa;
       z-index: 10;
     }

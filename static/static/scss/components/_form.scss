@@ -244,8 +244,9 @@
 .#{$namespace}-input-group {
   position:relative;
 
-  .#{$namespace}-icon,
-  .#{$namespace}-button{
+  > .#{$namespace}-icon,
+  > .#{$namespace}-button,
+  > .#{$namespace}-button-group{
     position:absolute;
     top:.5rem;
     z-index:1;
@@ -253,7 +254,8 @@
 
   // select icon|button after hx-input-control
   .#{$namespace}-input-control + .#{$namespace}-icon,
-  .#{$namespace}-input-control + .#{$namespace}-button{
+  .#{$namespace}-input-control + .#{$namespace}-button,
+  .#{$namespace}-input-control + .#{$namespace}-button-group{
     right:0;
   }
 

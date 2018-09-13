@@ -81,6 +81,10 @@ export default {
     <label class="hx-label">Search <sup>*</sup></label>
     <div class="hx-help">Please search by patient name</div>
   </div>
+  <div class="hx-button-group">
+     <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
+     <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+  </div>
 </div>
 <div class="hx-input-group">
  <i class="hx-icon icon-person"></i>
