@@ -81,19 +81,21 @@ export default {
     <label class="hx-label">Search <sup>*</sup></label>
     <div class="hx-help">Please search by patient name</div>
   </div>
-  <div class="hx-button-group">
-     <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
-     <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+  <div class="hx-input-actions">
+    <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
+    <div class="hx-button-group">
+       <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
+       <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+    </div>
   </div>
 </div>
 <div class="hx-input-group">
-  <i class="hx-loader is-small"><div></div><div></div><div></div><div></div></i>
   <div class="hx-input-control">
     <input class="hx-input" type="text" required>
     <label class="hx-label">Search <sup>*</sup></label>
     <div class="hx-help">Please search by patient name</div>
   </div>
- <i class="hx-loader is-small"><div></div><div></div><div></div><div></div></i>
+  <div class="hx-input-actions"><div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div></div>
 </div>
 <div class="hx-input-group">
  <i class="hx-icon icon-person"></i>
@@ -110,7 +112,7 @@ export default {
     <label class="hx-label">Search <sup>*</sup></label>
     <div class="hx-help">Please enter a search term</div>
   </div>
-  <button class="hx-button is-transparent">GO</button>
+  <div class="hx-input-actions"><button class="hx-button is-transparent">GO</button></div>
 </div>
   `
         },
