@@ -41,6 +41,27 @@ export default {
           `
         },
         {
+          title: 'Contextual menu with icons',
+          code: `
+<div class="has-text-centered">
+  <div class="hx-dropdown is-open">
+    <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
+      Dropdown button
+    </button>
+    <div class="hx-dropdown-menu hx-dropdown-icon">
+    <div class="hx-dropdown-header">Actions</div>
+      <a class="hx-dropdown-item" href="#"><i class="hx-icon icon-clock-outline"></i> Book appointment</a>
+      <a class="hx-dropdown-item" href="#"><i class="hx-icon icon-doctor-outline"></i> Start consult</a>
+       <div class="hx-dropdown-divider"></div>
+      <a class="hx-dropdown-item" href="#"><i class="hx-icon icon-send"></i> Send letter</a>
+    </div>
+  </div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+          `
+        },
+        {
           title: 'Grouped contextual menu',
           code: `
 <div class="has-text-centered">
@@ -117,6 +138,34 @@ export default {
     </div>
   </div>
 </div>
+          `
+        },
+        {
+          title: 'Limit width and/or height',
+          code: `
+<div class="has-text-centered">
+  <div class="hx-dropdown is-open">
+    <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
+      Dropdown button
+    </button>
+    <div class="hx-dropdown-menu has-limited-width has-limited-height">
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 1</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 2</a>
+       <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 3</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 4</a>
+       <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 5</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 6</a>
+       <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 7</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 8</a>
+       <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 9</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#" title="Action 10 is really reaally really really reaally really really reaally really long">Action 10 is really reaally really really reaally really really reaally really long</a>
+       <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 11</a>
+      <a class="hx-dropdown-item is-text-ellipsed" href="#">Action 12</a>
+    </div>
+  </div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           `
         },
         {

@@ -115,6 +115,12 @@
 .icon-clock:before {
   content: "\e913";
 }
+.icon-clock-minus-outline:before {
+  content: "\e98a";
+}
+.icon-clock-minus:before {
+  content: "\e987";
+}
 .icon-close-empty:before {
   content: "\e914";
 }
@@ -229,6 +235,30 @@
 .icon-carrot:before {
   content: "\e936";
 }
+.icon-doctor-check-outline:before {
+  content: "\e93b";
+}
+.icon-doctor-check:before {
+  content: "\e93c";
+}
+.icon-doctor-outline:before {
+  content: "\e985";
+}
+.icon-doctor:before {
+  content: "\e986";
+}
+.icon-person-outline:before {
+   content: "\e989";
+ }
+.icon-person:before {
+  content: "\e988";
+}
+.icon-user-outline:before {
+  content: "\e989";
+}
+.icon-user:before {
+  content: "\e988";
+}
 .icon-patient-add-outline:before {
   content: "\e937";
 }
@@ -240,18 +270,6 @@
 }
 .icon-patient:before {
   content: "\e93a";
-}
-.icon-user-outline:before {
-  content: "\e93b";
-}
-.icon-person-outline:before {
-  content: "\e93b";
-}
-.icon-user:before {
-  content: "\e93c";
-}
-.icon-person:before {
-  content: "\e93c";
 }
 .icon-pie-outline:before {
   content: "\e93d";

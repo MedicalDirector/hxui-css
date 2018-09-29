@@ -40,6 +40,15 @@
   border: $hx-dropdown-border-width solid $hx-dropdown-border-color;
   //@include border-radius($hx-border-radius);
   box-shadow: 0 6px 12px rgba(0,0,0,.145);
+
+  &.has-limited-width{
+    max-width: 20rem;
+  }
+
+  &.has-limited-height{
+    overflow-y: auto;
+    max-height: 20rem;
+  }
 }
 
 // Dividers (basically an `<hr>`) within the dropdown
@@ -53,7 +62,7 @@
 .#{$namespace}-dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: 3px 14px;
+  padding: .3rem 1rem;
   clear: both;
   font-weight: normal;
   line-height: $hx-line-height;
@@ -128,16 +137,19 @@
 .#{$namespace}-dropdown-icon{
 
   .#{$namespace}-dropdown-item{
-    padding-left:2.4rem;
+    padding-left:2.8rem;
     position:relative;
+    display:flex;
+    align-items: center;
   }
 
   //icons
-  i.icon{
-    font-size: 1.1rem;
+  i.icon,
+  i.hx-icon{
+    //font-size: 1.1rem;
     position: absolute;
     left: .76rem;
-    top:.36rem;
+    top:.2rem;
   }
 }
 
