@@ -270,7 +270,8 @@ export default {
         { name: 'radiology-outline' },
         { name: 'radiology' },
         { name: 'prescription' },
-        { name: 'external-link' }
+        { name: 'external-link' },
+        { name: 'did-not-wait' }
       ]
     }
   },

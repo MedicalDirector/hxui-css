@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-did-not-wait:before {
+  content: "\e98b";
+}
 .icon-external-link:before {
   content: "\e984";
 }
@@ -248,15 +251,9 @@
   content: "\e986";
 }
 .icon-person-outline:before {
-   content: "\e989";
- }
-.icon-person:before {
-  content: "\e988";
-}
-.icon-user-outline:before {
   content: "\e989";
 }
-.icon-user:before {
+.icon-person:before {
   content: "\e988";
 }
 .icon-patient-add-outline:before {
