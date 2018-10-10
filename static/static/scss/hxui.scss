@@ -7,7 +7,7 @@
 // Mixins
 @import 'utilities/mixins/center';
 @import 'utilities/mixins/stripe';
-@import 'utilities/mixins/text-copy';
+@import 'utilities/mixins/text';
 @import 'utilities/mixins/delete';
 @import 'utilities/mixins/arrow';
 @import 'utilities/mixins/loader';
@@ -25,7 +25,6 @@
 @import 'utilities/mixins/clearfix';
 @import 'utilities/mixins/content';
 @import 'utilities/mixins/icons';
-@import 'utilities/mixins/text-truncate';
 
 html {
   box-sizing: border-box;
