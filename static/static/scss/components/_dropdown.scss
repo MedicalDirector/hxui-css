@@ -43,6 +43,16 @@
 
   &.has-limited-width{
     max-width: 20rem;
+    &.is-text-ellipsed{
+      .hx-dropdown-item {
+        @include text-truncate;
+      }
+    }
+    &.is-text-multiline{
+      .hx-dropdown-item {
+        @include multiline;
+      }
+    }
   }
 
   &.has-limited-height{
