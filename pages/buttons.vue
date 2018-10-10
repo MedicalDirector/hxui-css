@@ -355,6 +355,33 @@ export default {
                 </div>
             </div>
           `
+        },
+        {
+          title: 'Multiline button',
+          code: `
+            <div class="hx-columns">
+              <div class="hx-column is-one-third">
+                <a class="hx-button is-multiline">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                </a>
+              </div>
+
+              <div class="hx-column is-one-third">
+                <button class="hx-button is-multiline">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                <i class="icon icon-angle-down"></i>
+
+                </button>
+              </div>
+
+               <div class="hx-column is-one-third">
+                <button class="hx-button is-multiline is-primary">
+                <span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span>
+                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                </button>
+              </div>
+            </div>
+          `
         }
       ]
     }
