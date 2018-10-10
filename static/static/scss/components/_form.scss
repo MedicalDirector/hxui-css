@@ -231,9 +231,26 @@
   .#{$namespace}-textarea {
 
     & + .#{$namespace}-label {
-
       & + .#{$namespace}-help {
         margin-bottom: 3rem;
+      }
+    }
+
+    &.ng-invalid.ng-dirty {
+      & + .#{$namespace}-label {
+        color: $hx-color-danger;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $hx-color-danger;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $hx-color-danger;
+          }
+        }
       }
     }
   }
@@ -415,6 +432,15 @@
   &:-webkit-autofill  ~ .#{$namespace}-label{
     top: -1.3rem;
   }
+
+  ~ .#{$namespace}-label {
+    top: -1.3rem;
+    font-size: .75rem;
+    sup {
+      font-size: .4rem;
+    }
+  }
+
 }
 
 .#{$namespace}-select {

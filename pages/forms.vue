@@ -120,12 +120,28 @@ export default {
           title: 'Textarea',
           code: `
 <p>Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code>.hx-input-control</code> div wrapping your input and label.</p>
+<p>Add the 'required' attribute for mandatory fields.</p>
 <br />
+
 <div class="hx-input-control">
-  <textarea name="textarea-sample" class="hx-textarea" placeholder="Placeholder text... (mandatory)"></textarea>
-  <label for="textarea-sample" class="hx-label">Textarea with Placeholder </label>
-  <div class="hx-help">Textarea hint (if required)</div>
+  <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients"></textarea>
+  <label for="textarea-sample" class="hx-label">Ingredients</label>
+  <div class="hx-help">Please enter the recipe ingredients</div>
 </div>
+
+<div class="hx-input-control">
+  <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients" required></textarea>
+  <label for="textarea-sample" class="hx-label">Ingredients <sup>*</sup></label>
+  <div class="hx-help">Please enter the recipe ingredients</div>
+</div>
+
+<div class="hx-input-control">
+  <textarea name="textarea-sample" class="hx-textarea ng-invalid ng-dirty" placeholder="Enter ingredients" required></textarea>
+  <label for="textarea-sample" class="hx-label">Ingredients <sup>*</sup></label>
+  <div class="hx-help">Please enter the recipe ingredients</div>
+</div>
+
+
 <div class="hx-input-control is-info">
   <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
