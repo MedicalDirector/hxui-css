@@ -24,7 +24,7 @@ export default {
         {
           title: 'Contextual menu',
           code: `
-<div class="has-text-centered">
+<div>
   <div class="hx-dropdown is-open">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
       Dropdown button
@@ -43,7 +43,7 @@ export default {
         {
           title: 'Contextual menu with icons',
           code: `
-<div class="has-text-centered">
+<div>
   <div class="hx-dropdown is-open">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
       Dropdown button
@@ -64,7 +64,7 @@ export default {
         {
           title: 'Grouped contextual menu',
           code: `
-<div class="has-text-centered">
+<div>
   <p>Add a header to label sections of actions and/or dividers in any dropdown menu.</p>
   <div class="hx-flex hx-flex-justify-center">
   <div class="hx-dropdown is-open mr-4">
@@ -116,13 +116,13 @@ export default {
   </div>
 </div>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br />
           `
         },
         {
           title: 'Position',
           code: `
-<div class="has-text-centered">
+<div>
   <p>Position menu <code>.is-dropup</code>, <code>.is-left</code>, <code>.is-right</code>. Default is bottom left</p>
   <div class="hx-dropdown is-dropup is-open" style="margin-top:12rem;">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
@@ -143,7 +143,7 @@ export default {
         {
           title: 'Limit width and/or height',
           code: `
-<div class="has-text-centered">
+<div>
   <div class="hx-dropdown is-open">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
       Dropdown button
@@ -165,13 +165,13 @@ export default {
   </div>
 </div>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
           `
         },
         {
           title: 'Custom',
           code: `
-<div class="has-text-centered">
+<div>
   <p>Add any component within. No padding, no margins.<br>Styling should be controlled by the component.</p>
   <div class="hx-dropdown is-open">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
@@ -204,7 +204,7 @@ export default {
   </div>
 </div>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
           `
         }
       ]

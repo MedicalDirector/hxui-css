@@ -22,12 +22,7 @@
 
 // The dropdown menu
 .#{$namespace}-dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: $hx-zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
-  float: left;
   min-width: 160px;
   padding: 5px 0;
   margin: 0; // override default ul
@@ -181,6 +176,7 @@
 // Menu positioning
 .is-right{
   .#{$namespace}-dropdown-menu {
+    position:absolute;
     right: 0;
     left: auto;
   }
@@ -188,6 +184,7 @@
 
 .is-left {
   .#{$namespace}-dropdown-menu {
+    position:absolute;
     right: auto;
     left: 0;
   }
@@ -240,6 +237,7 @@ dropup{
 
   // Different positioning for bottom up menu
   .#{$namespace}-dropdown-menu {
+    position:absolute;
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;
