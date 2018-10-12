@@ -421,6 +421,17 @@
   }
 }
 
+.#{$namespace}-input {
+  &.ng-dirty ~ .#{$namespace}-label {
+    top: -.5rem;
+    font-size: .75rem;
+    sup {
+      top: -.3rem;
+      font-size: .4rem;
+    }
+  }
+}
+
 .#{$namespace}-textarea {
   // display: initial;
   padding: 0 0 .6rem 0;
