@@ -387,6 +387,26 @@
     }
   }
 
+  &.has-label-floating ~ .#{$namespace}-label {
+    top: -.5rem !important;
+    font-size: .75rem !important;
+    sup {
+      top: -.3rem !important;
+      font-size: .4rem !important;
+    }
+  }
+
+  &.has-label-placeholder ~ .#{$namespace}-label {
+    top: .7rem !important;
+    font-size: initial !important;
+    sup {
+        top: -.2rem initial !important;
+        font-size: .7rem initial !important;
+    }
+  }
+
+
+
   &:focus ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label {
     color: $hx-color-primary;
@@ -421,16 +441,6 @@
   }
 }
 
-.#{$namespace}-input {
-  &.ng-dirty ~ .#{$namespace}-label {
-    top: -.5rem;
-    font-size: .75rem;
-    sup {
-      top: -.3rem;
-      font-size: .4rem;
-    }
-  }
-}
 
 .#{$namespace}-textarea {
   // display: initial;
