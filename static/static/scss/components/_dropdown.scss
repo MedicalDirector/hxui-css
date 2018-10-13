@@ -22,7 +22,10 @@
 
 // The dropdown menu
 .#{$namespace}-dropdown-menu {
-  width:100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $hx-zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   min-width: 160px;
   padding: 5px 0;
@@ -39,21 +42,29 @@
 
   &.has-limited-width{
     max-width: 20rem;
-    &.is-text-ellipsed{
-      .hx-dropdown-item {
-        @include text-truncate;
-      }
-    }
-    &.is-text-multiline{
-      .hx-dropdown-item {
-        @include multiline;
-      }
-    }
   }
 
   &.has-limited-height{
     overflow-y: auto;
     max-height: 20rem;
+  }
+
+  &.is-text-ellipsed{
+    .hx-dropdown-item {
+      @include text-truncate;
+    }
+  }
+  &.is-text-multiline{
+    .hx-dropdown-item {
+      @include multiline;
+    }
+  }
+}
+
+// CDK specific
+.hxa-dropdown-panel{
+  .#{$namespace}-dropdown-menu{
+    position: initial;
   }
 }
 
