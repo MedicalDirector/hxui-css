@@ -22,6 +22,7 @@
 
 // The dropdown menu
 .#{$namespace}-dropdown-menu {
+  width:100%;
   display: none; // none by default, but block on "open" of the menu
   min-width: 160px;
   padding: 5px 0;
