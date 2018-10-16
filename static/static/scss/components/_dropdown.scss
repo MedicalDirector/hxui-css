@@ -62,11 +62,15 @@
 }
 
 // CDK specific
-.hxa-dropdown-panel{
+&.hxa-dropdown-panel{
   .#{$namespace}-dropdown-menu{
     position: initial;
   }
+  &.is-open > .#{$namespace}-dropdown-menu{
+    display:block;
+  }
 }
+
 
 // Dividers (basically an `<hr>`) within the dropdown
 .#{$namespace}-dropdown-divider {
