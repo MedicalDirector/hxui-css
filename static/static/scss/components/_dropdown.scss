@@ -66,6 +66,11 @@
   .#{$namespace}-dropdown-menu{
     position: initial;
   }
+  &.is-fluid-min-width{
+    .#{$namespace}-dropdown-menu {
+      min-width: 100%;
+    }
+  }
 }
 
 // Dividers (basically an `<hr>`) within the dropdown
