@@ -361,13 +361,13 @@ export default {
           code: `
             <div class="hx-columns">
               <div class="hx-column is-one-third">
-                <a class="hx-button is-multiline">
+                <a class="hx-button is-text-multiline">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                 </a>
               </div>
 
               <div class="hx-column is-one-third">
-                <button class="hx-button is-multiline">
+                <button class="hx-button is-text-multiline">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                 <i class="icon icon-angle-down"></i>
 
@@ -375,7 +375,7 @@ export default {
               </div>
 
                <div class="hx-column is-one-third">
-                <button class="hx-button is-multiline is-primary">
+                <button class="hx-button is-text-multiline is-primary">
                 <span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span>
                 <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
                 </button>

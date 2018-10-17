@@ -117,6 +117,13 @@ export default {
 </div>
 
 <br /><br /><br /><br /><br /><br /><br />
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
           `
         },
         {
@@ -138,6 +145,7 @@ export default {
     </div>
   </div>
 </div>
+
           `
         },
         {
@@ -166,6 +174,21 @@ export default {
 </div>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
           `
         },
         {
@@ -204,7 +227,18 @@ export default {
   </div>
 </div>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
           `
         }
       ]

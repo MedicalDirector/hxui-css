@@ -107,6 +107,10 @@ table td {
   }
 }
 
+.is-text-multiline {
+  @include multiline;
+}
+
 .is-inline-block {
   display: inline-block !important;
 }
