@@ -77,8 +77,12 @@ export default {
       <td class="is-text-capitalise">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
      <tr>
-      <td><code>.is-text-elipsed</code></td>
-      <td><div class="is-text-elipsed elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+      <td><code>.is-text-ellipsed</code></td>
+      <td><div class="is-text-ellipsed elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-multiline</code></td>
+      <td><div class="is-text-multiline elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
     </tr>
   </tbody>
 </table>

@@ -231,9 +231,26 @@
   .#{$namespace}-textarea {
 
     & + .#{$namespace}-label {
-
       & + .#{$namespace}-help {
         margin-bottom: 3rem;
+      }
+    }
+
+    &.ng-invalid.ng-dirty {
+      & + .#{$namespace}-label {
+        color: $hx-color-danger;
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+          color: $hx-color-danger;
+
+          &:before,
+          &:after {
+            width: 50%;
+            background-color: $hx-color-danger;
+          }
+        }
       }
     }
   }
@@ -370,6 +387,26 @@
     }
   }
 
+  &.has-label-floating ~ .#{$namespace}-label {
+    top: -.5rem !important;
+    font-size: .75rem !important;
+    sup {
+      top: -.3rem !important;
+      font-size: .4rem !important;
+    }
+  }
+
+  &.has-label-placeholder ~ .#{$namespace}-label {
+    top: .7rem !important;
+    font-size: initial !important;
+    sup {
+        top: -.2rem initial !important;
+        font-size: .7rem initial !important;
+    }
+  }
+
+
+
   &:focus ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label {
     color: $hx-color-primary;
@@ -404,6 +441,7 @@
   }
 }
 
+
 .#{$namespace}-textarea {
   // display: initial;
   padding: 0 0 .6rem 0;
@@ -415,6 +453,15 @@
   &:-webkit-autofill  ~ .#{$namespace}-label{
     top: -1.3rem;
   }
+
+  ~ .#{$namespace}-label {
+    top: -1.3rem;
+    font-size: .75rem;
+    sup {
+      font-size: .4rem;
+    }
+  }
+
 }
 
 .#{$namespace}-select {
