@@ -80,6 +80,7 @@
 
       &.is-danger > input[type=text],
       &.is-warning > input[type=text],
+      &.is-caution > input[type=text],
       &.is-info > input[type=text],
       &.is-success > input[type=text]{
         background-color:#fff;
@@ -132,7 +133,7 @@
 
   // Always striped
   > tbody:not(.hx-table-group) {
-    > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info) {
+    > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
       &:nth-child(even) {
         > th, > td {
           background-color: $hx-table-row-even-background;
@@ -300,6 +301,16 @@
         background-color: rgba($hx-color-warning, 0.1);
       }
     }
+    &.is-caution{
+      > td,
+      > th{
+        color: $hx-color-caution;
+        > div, > span:not(.hx-badge) {color: $hx-color-caution;}
+      }
+      > td {
+        background-color: rgba($hx-color-caution, 0.1);
+      }
+    }
     &.is-success{
       > td,
       > th{
@@ -331,6 +342,10 @@
 
     &.has-stripe-warning {
       @include table-stripe($hx-color-warning);
+    }
+
+    &.has-stripe-caution {
+      @include table-stripe($hx-color-caution);
     }
 
     &.has-stripe-danger {
@@ -381,6 +396,10 @@
     &.is-warning {
       background-color: rgba($hx-color-warning, 0.1) !important;;
       color: $hx-color-warning;
+    }
+    &.is-caution {
+      background-color: rgba($hx-color-caution, 0.1) !important;;
+      color: $hx-color-caution;
     }
     &.is-success {
       background-color: rgba($hx-color-success, 0.1) !important;;

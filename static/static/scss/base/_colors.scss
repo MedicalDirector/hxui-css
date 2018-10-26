@@ -126,6 +126,31 @@
   }
 }
 
+
+.#{$namespace}-bg {
+  background-color: $hx-body-bg !important;
+}
+
+.#{$namespace}-bg-grey-dark {
+  background-color: $hx-color-gray-dark !important;
+}
+
+.#{$namespace}-bg-grey {
+  background-color: $hx-color-gray !important;
+}
+
+.#{$namespace}-bg-grey-light {
+  background-color: $hx-color-gray-light !important;
+}
+
+.#{$namespace}-bg-grey-lighter {
+  background-color: $hx-color-gray-lighter !important;
+}
+
+.#{$namespace}-bg-grey-lightest {
+  background-color: $hx-color-gray-lightest !important;
+}
+
 @keyframes fade {
   0% { opacity: 0; }
   10% { opacity: 0; }

@@ -86,6 +86,7 @@ export default {
     <ul>
       <li><code>is-info</code></li>
       <li><code>is-success</code></li>
+      <li><code>is-caution</code></li>
       <li><code>is-warning</code></li>
       <li><code>is-danger</code></li>
     </ul>
@@ -118,6 +119,18 @@ export default {
       </div>
       <div class="hx-column is-half">
         <div class="hx-card is-border-highlighted is-warning">
+          <div class="hx-card-content">
+            <div class="">
+              <div><strong>Choi</strong></div>
+              <div>Ella</div>
+              <br>
+              <small>11:09 PM - 1 Jan 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hx-column is-half">
+        <div class="hx-card is-border-highlighted is-caution">
           <div class="hx-card-content">
             <div class="">
               <div><strong>Choi</strong></div>

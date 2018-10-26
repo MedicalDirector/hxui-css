@@ -64,6 +64,7 @@ $hx-color-gray-lightest:             hsl(240, 1%, 88%) !default;
 $hx-color-success:             $hx-color-green-light !default;
 $hx-color-info:                $hx-color-blue !default;
 $hx-color-warning:             $hx-color-orange-light !default;
+$hx-color-caution:             $hx-color-yellow-light !default;
 $hx-color-danger:              $hx-color-red !default;
 $hx-color-inverse:             $hx-color-gray-dark !default;
 
@@ -86,6 +87,7 @@ $hx-color-primary-invert: $hx-color-green-invert !default;
 $hx-color-info-invert: $hx-color-info-invert !default;
 $hx-color-success-invert: $hx-color-green-invert !default;
 $hx-color-warning-invert: $hx-color-orange-invert !default;
+$hx-color-caution-invert: $hx-color-yellow-invert !default;
 $hx-color-danger-invert: $hx-color-red-invert !default;
 $hx-color-light-invert: $hx-color-dark !default;
 $hx-color-dark-invert: $hx-color-light !default;
@@ -103,6 +105,7 @@ $hx-colors: (
   'info': ($hx-color-info, $hx-color-info-invert),
   'success': ($hx-color-success, $hx-color-success-invert),
   'warning': ($hx-color-warning, $hx-color-warning-invert),
+  'caution': ($hx-color-caution, $hx-color-caution-invert),
   'danger': ($hx-color-danger, $hx-color-danger-invert),
   'purple': ($hx-color-purple, findColorInvert($hx-color-purple)),
   'red': ($hx-color-red, findColorInvert($hx-color-red)),

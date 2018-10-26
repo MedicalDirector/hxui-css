@@ -134,6 +134,10 @@
       border-left: 5px solid $hx-color-success;
     }
 
+    &.is-caution {
+      border-left: 5px solid $hx-color-caution;
+    }
+
     &.is-warning {
       border-left: 5px solid $hx-color-warning;
     }
