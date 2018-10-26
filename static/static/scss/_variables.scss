@@ -73,6 +73,8 @@ $hx-color-dark: $hx-color-gray-dark !default;
 $hx-color-white-ter: hsl(0, 0%, 96%) !default;
 $hx-color-white-bis: hsl(0, 0%, 99%) !default;
 
+$hx-color-footer-bg: #f5f5f5;
+
 // Invert colors
 $hx-color-orange-invert: findColorInvert($hx-color-orange-light) !default;
 $hx-color-yellow-invert: findColorInvert($hx-color-yellow) !default;
