@@ -38,14 +38,20 @@
       <div class="hx-modal-card">
         <header class="hx-modal-card-head">
           <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
-          <button class="hx-delete" @click="demoTrad = false"></button>
+
+          <a class="hx-button is-round is-small is-white"  @click="demoTrad = false">
+            <span class="hx-icon-control">
+              <i class="icon icon-close-empty is-large"></i>
+            </span>
+          </a>
+
         </header>
         <section class="hx-modal-card-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
         </section>
         <footer class="hx-modal-card-foot">
-          <a class="hx-button is-primary" @click="demoTrad = false">Save changes</a>
           <a class="hx-button" @click="demoTrad = false">Cancel</a>
+          <a class="hx-button is-primary" @click="demoTrad = false">Save changes</a>
         </footer>
       </div>
     </div>
@@ -138,7 +144,11 @@ export default {
   <div class="hx-modal-card">
     <header class="hx-modal-card-head">
       <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
-      <button class="delete"></button>
+      <a class="hx-button is-round is-small is-white">
+            <span class="hx-icon-control">
+              <i class="icon icon-close-empty is-large"></i>
+            </span>
+       </a>
     </header>
     <section class="hx-modal-card-content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
