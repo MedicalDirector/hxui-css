@@ -71,6 +71,7 @@
 
 .#{$namespace}-modal-card-foot {
   justify-content: flex-end;
+  border-top: 1px solid $hx-border-color;
   background-color: $hx-color-footer-bg;
   border-bottom-left-radius: $hx-border-radius;
   border-bottom-right-radius: $hx-border-radius;
