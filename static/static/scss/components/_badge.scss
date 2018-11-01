@@ -94,6 +94,12 @@
     font-weight: 400;
   }
 
+  &.is-caution {
+    background-color: $hx-color-caution;
+    color: $hx-color-black;
+    font-weight: 400;
+  }
+
   &.is-danger {
     background-color: $hx-color-danger;
     color: $hx-color-white;
