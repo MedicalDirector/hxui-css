@@ -93,7 +93,9 @@
   }
 }
 
-.#{$namespace}-modal-content {
+.#{$namespace}-modal-content,
+.#{$namespace}-modal-card-content
+{
   -webkit-overflow-scrolling: touch;
   background-color: $hx-color-white;
   flex-grow: 1;
