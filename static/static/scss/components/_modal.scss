@@ -43,7 +43,9 @@
 }
 
 .#{$namespace}-modal-card-head,
-.#{$namespace}-modal-card-foot {
+.#{$namespace}-modal-header,
+.#{$namespace}-modal-card-foot,
+.#{$namespace}-modal-footer{
   align-items: center;
   background-color: $hx-color-white;
   display: flex;
@@ -52,18 +54,21 @@
   position: relative;
 }
 
-.#{$namespace}-modal-card-foot{
+.#{$namespace}-modal-card-foot,
+.#{$namespace}-modal-footer{
   justify-content: flex-end;
  }
 
-.#{$namespace}-modal-card-head {
+.#{$namespace}-modal-card-head,
+.#{$namespace}-modal-header{
   justify-content: flex-start;
   border-top-left-radius: $hx-border-radius;
   border-top-right-radius: $hx-border-radius;
   padding: 20px 20px 10px;
 }
 
-.#{$namespace}-modal-card-title {
+.#{$namespace}-modal-card-title,
+.#{$namespace}-modal-title{
   color: $hx-headings-color;
   flex-grow: 1;
   flex-shrink: 0;
@@ -73,7 +78,8 @@
   margin: 0;
 }
 
-.#{$namespace}-modal-card-foot {
+.#{$namespace}-modal-card-foot,
+.#{$namespace}-modal-footer{
   border-bottom-left-radius: $hx-border-radius;
   border-bottom-right-radius: $hx-border-radius;
   border-top: 1px solid $hx-border-color;
@@ -85,7 +91,7 @@
   }
 }
 
-.#{$namespace}-modal-card-content {
+.#{$namespace}-modal-content {
   -webkit-overflow-scrolling: touch;
   background-color: $hx-color-white;
   flex-grow: 1;
@@ -93,8 +99,6 @@
   overflow: auto;
   padding: 0 20px 20px;
   font-size: $hx-font-size-sm;
-
-
 }
 
 .#{$namespace}-modal {
@@ -106,7 +110,7 @@
   justify-content: center;
   overflow: hidden;
   position: fixed;
-  z-index: 1986;
+  z-index: 999;
   opacity: 0;
 
   .delete {
