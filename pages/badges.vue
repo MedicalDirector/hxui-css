@@ -49,6 +49,9 @@ export default {
   <span class="hx-badge is-warning">
     <span class="hx-badge-content">Warning</span>
   </span>
+  <span class="hx-badge is-caution">
+    <span class="hx-badge-content">Caution</span>
+  </span>
   <span class="hx-badge is-danger">
     <span class="hx-badge-content">Danger</span>
   </span>
@@ -67,6 +70,7 @@ export default {
   <span class="hx-badge is-primary"><span class="hx-badge-content">99+</span></span>
   <span class="hx-badge is-info"><span class="hx-badge-content">3</span></span>
   <span class="hx-badge is-warning"><span class="hx-badge-content">6</span></span>
+  <span class="hx-badge is-caution"><span class="hx-badge-content">7</span></span>
   <span class="hx-badge is-danger"><span class="hx-badge-content">2</span></span>
 </div>
           `

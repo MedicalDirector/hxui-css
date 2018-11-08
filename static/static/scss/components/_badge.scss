@@ -47,6 +47,8 @@
   .hx-delete {
     margin-left: 0.5em;
     margin-right: -0.5em;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &.is-white, &.is-outlined {
@@ -91,6 +93,12 @@
   &.is-warning {
     background-color: $hx-color-warning;
     color: $hx-color-white;
+    font-weight: 400;
+  }
+
+  &.is-caution {
+    background-color: $hx-color-caution;
+    color: $hx-color-black;
     font-weight: 400;
   }
 

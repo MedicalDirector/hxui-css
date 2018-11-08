@@ -229,32 +229,20 @@
               hx-bg-grey
             </div>
           </div>
-          <div class="hx-card hx-bg-grey lighten-5">
-            <div class="hx-card-content">hx-bg-grey lighten-5</div>
+          <div class="hx-card hx-bg">
+            <div class="hx-card-content">hx-bg</div>
           </div>
-          <div class="hx-card hx-bg-grey lighten-4">
-            <div class="hx-card-content">hx-bg-grey lighten-4</div>
+          <div class="hx-card hx-bg-grey-lightest">
+            <div class="hx-card-content">hx-bg-grey-lightest</div>
           </div>
-          <div class="hx-card hx-bg-grey lighten-3">
-            <div class="hx-card-content">hx-bg-grey lighten-3</div>
+          <div class="hx-card hx-bg-grey-lighter">
+            <div class="hx-card-content">hx-bg-grey-lighter</div>
           </div>
-          <div class="hx-card hx-bg-grey lighten-2">
-            <div class="hx-card-content">hx-bg-grey lighten-2</div>
+          <div class="hx-card hx-bg-grey-light">
+            <div class="hx-card-content">hx-bg-grey-light</div>
           </div>
-          <div class="hx-card hx-bg-grey lighten-1">
-            <div class="hx-card-content">hx-bg-grey lighten-1</div>
-          </div>
-          <div class="hx-card hx-bg-grey darken-1">
-            <div class="hx-card-content">hx-bg-grey darken-1</div>
-          </div>
-          <div class="hx-card hx-bg-grey darken-2">
-            <div class="hx-card-content">hx-bg-grey darken-2</div>
-          </div>
-          <div class="hx-card hx-bg-grey darken-3">
-            <div class="hx-card-content">hx-bg-grey darken-3</div>
-          </div>
-          <div class="hx-card hx-bg-grey darken-4">
-            <div class="hx-card-content">hx-bg-grey darken-4</div>
+          <div class="hx-card hx-bg-grey-dark">
+            <div class="hx-card-content is-white">hx-bg-grey-dark</div>
           </div>
         </div>
       </div>
@@ -345,6 +333,10 @@ export default {
     <tr>
       <td><code>.is-info</code></td>
       <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-caution</code></td>
+      <td class="is-caution">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
     <tr>
       <td><code>.is-warning</code></td>

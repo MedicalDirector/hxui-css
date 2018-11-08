@@ -267,6 +267,10 @@ export default {
                   <td>Danger</td>
                    <td><i class="hx-icon icon-exclamation"></i></td>
                 </tr>
+                <tr class="is-caution">
+                  <td>Caution</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
+                </tr>
                 <tr class="is-warning">
                   <td>Warning</td>
                    <td><i class="hx-icon icon-exclamation-outline"></i></td>
@@ -302,6 +306,10 @@ export default {
                 <tr class="has-stripe-danger">
                   <td>Danger</td>
                    <td><i class="hx-icon icon-exclamation"></i></td>
+                </tr>
+                <tr class="has-stripe-caution">
+                  <td>Caution</td>
+                   <td><i class="hx-icon icon-exclamation-outline"></i></td>
                 </tr>
                 <tr class="has-stripe-warning">
                   <td>Warning</td>

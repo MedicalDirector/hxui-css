@@ -50,7 +50,7 @@
   background-color: $hx-color-white;
   display: flex;
   flex-shrink: 0;
-  padding: 20px;
+  padding: 1.25rem;
   position: relative;
 }
 
@@ -64,7 +64,7 @@
   justify-content: flex-start;
   border-top-left-radius: $hx-border-radius;
   border-top-right-radius: $hx-border-radius;
-  padding: 20px 20px 10px;
+  padding: 1.25rem;
 }
 
 .#{$namespace}-modal-card-title,
@@ -80,9 +80,11 @@
 
 .#{$namespace}-modal-card-foot,
 .#{$namespace}-modal-footer{
+  justify-content: flex-end;
+  border-top: 1px solid $hx-border-color;
+  background-color: $hx-color-footer-bg;
   border-bottom-left-radius: $hx-border-radius;
   border-bottom-right-radius: $hx-border-radius;
-  border-top: 1px solid $hx-border-color;
 
   .#{$namespace}-button {
     &:not(:last-child) {
@@ -97,7 +99,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   overflow: auto;
-  padding: 0 20px 20px;
+  padding: 0 1.25rem 1.25rem;
   font-size: $hx-font-size-sm;
 }
 
