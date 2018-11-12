@@ -271,7 +271,8 @@ export default {
         { name: 'radiology' },
         { name: 'prescription' },
         { name: 'external-link' },
-        { name: 'did-not-wait' }
+        { name: 'did-not-wait' },
+        { name: 'linked' }
       ]
     }
   },

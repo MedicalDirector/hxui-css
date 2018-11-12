@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-linked:before {
+  content: "\e993";
+}
 .icon-did-not-wait:before {
   content: "\e98b";
 }
