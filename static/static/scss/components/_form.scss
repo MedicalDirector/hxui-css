@@ -593,6 +593,24 @@
           padding-left: 1.7rem;
     }
   }
+
+  &.is-small {
+    $small: 0.8;
+
+    .#{$namespace}-radio:not(:checked)+.#{$namespace}-label,
+    .#{$namespace}-radio:checked+.#{$namespace}-label {
+      padding-left: (35px * $small);
+    }
+
+    .#{$namespace}-radio+.#{$namespace}-label:before,
+    .#{$namespace}-radio+.#{$namespace}-label:after {
+      left: 2px;
+      top: 2px;
+      margin: (4px * $small);
+      width: (18px * $small);
+      height: (18px * $small);
+    }
+  }
 }
 
 // Radio buttons
