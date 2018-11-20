@@ -258,6 +258,37 @@ export default {
       </div>
     </div>
   </div>
+  <div class="hx-column is-2">
+    <strong>Small Variation</strong>
+    <div class="hx-input-control">
+      <div class="hx-radio-control is-inline is-small">
+        <input name="radioGroup5" type="radio" class="hx-radio" id="left" checked/>
+        <label for="left" class="hx-label">Left</label>
+      </div>
+      <div class="hx-radio-control is-inline is-small">
+        <input name="radioGroup5" type="radio" class="hx-radio" id="right"/>
+        <label for="right" class="hx-label">Right</label>
+      </div>
+    </div>
+    <div class="hx-input-control">
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="top" checked/>
+        <label for="top" class="hx-label">Top</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="left" disabled />
+        <label for="left" class="hx-label">Disabled</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="bottom"/>
+        <label for="bottom" class="hx-label">Bottom</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="right" disabled />
+        <label for="right" class="hx-label">Disabled</label>
+      </div>
+    </div>
+  </div>
 </div>
           `
         },
