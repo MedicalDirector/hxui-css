@@ -3,44 +3,47 @@
 // =========
 
 // Resets
-$hxui-reset: 'hxui-reset';
+$framework-wrap: false !default;
+
+// Resets
+$hxui-reset: 'hxui-reset' !default;
 
 // Namespace
-$namespace: 'hx';
+$namespace: 'hx' !default;
 
 // Icon path
 $icons-path: '../fonts/' !default;
 
 // Colors
-$hx-color-purple: hsl(256, 49%, 38%);
-$hx-color-purple-light: hsl(256, 31%, 49%);
-$hx-color-purple-lighter: hsl(258, 31%, 59%);
-$hx-color-purple-lightest: hsl(261, 31%, 74%);
+$hx-color-purple: hsl(256, 49%, 38%) !default;
+$hx-color-purple-light: hsl(256, 31%, 49%) !default;
+$hx-color-purple-lighter: hsl(258, 31%, 59%) !default;
+$hx-color-purple-lightest: hsl(261, 31%, 74%) !default;
 
-$hx-color-red: hsl(341, 72%, 42%);
-$hx-color-red-light: hsl(339, 85%, 53%);
-$hx-color-red-lighter: hsl(335, 82%, 62%);
-$hx-color-red-lightest: hsl(333, 80%, 81%);
+$hx-color-red: hsl(341, 72%, 42%) !default;
+$hx-color-red-light: hsl(339, 85%, 53%) !default;
+$hx-color-red-lighter: hsl(335, 82%, 62%) !default;
+$hx-color-red-lightest: hsl(333, 80%, 81%) !default;
 
-$hx-color-blue: hsl(204, 81%, 26%);
-$hx-color-blue-light: hsl(205, 52%, 40%);
-$hx-color-blue-lighter: hsl(202, 51%, 51%);
-$hx-color-blue-lightest: hsl(200, 54%, 65%);
+$hx-color-blue: hsl(204, 81%, 26%) !default;
+$hx-color-blue-light: hsl(205, 52%, 40%) !default;
+$hx-color-blue-lighter: hsl(202, 51%, 51%) !default;
+$hx-color-blue-lightest: hsl(200, 54%, 65%) !default;
 
-$hx-color-green: hsl(164, 96%, 21%);
-$hx-color-green-light: hsl(155, 48%, 49%);
-$hx-color-green-lighter: hsl(153, 42%, 61%);
-$hx-color-green-lightest: hsl(148, 39%, 72%);
+$hx-color-green: hsl(164, 96%, 21%) !default;
+$hx-color-green-light: hsl(155, 48%, 49%) !default;
+$hx-color-green-lighter: hsl(153, 42%, 61%) !default;
+$hx-color-green-lightest: hsl(148, 39%, 72%) !default;
 
-$hx-color-orange: hsl(22, 87%, 53%);
-$hx-color-orange-light: hsl(27, 92%, 58%);
-$hx-color-orange-lighter: hsl(24, 92%, 77%);
-$hx-color-orange-lightest: hsl(24, 96%, 87%);
+$hx-color-orange: hsl(22, 87%, 53%) !default;
+$hx-color-orange-light: hsl(27, 92%, 58%) !default;
+$hx-color-orange-lighter: hsl(24, 92%, 77%) !default;
+$hx-color-orange-lightest: hsl(24, 96%, 87%) !default;
 
-$hx-color-yellow: hsl(41, 97%, 49%);
-$hx-color-yellow-light: hsl(39, 100%, 69%);
-$hx-color-yellow-lighter: hsl(38, 100%, 76%);
-$hx-color-yellow-lightest: hsl(37, 100%, 85%);
+$hx-color-yellow: hsl(41, 97%, 49%) !default;
+$hx-color-yellow-light: hsl(39, 100%, 69%) !default;
+$hx-color-yellow-lighter: hsl(38, 100%, 76%) !default;
+$hx-color-yellow-lightest: hsl(37, 100%, 85%) !default;
 
 $hx-color-white:  hsl(0, 0%, 100%) !default;
 $hx-color-black:  hsl(0, 0%, 0%) !default;
@@ -50,8 +53,8 @@ $hx-color-pink:   hsl(349, 100%, 67%) !default;
 $hx-color-primary: $hx-color-green-light !default;
 $hx-color-accent: $hx-color-blue !default;
 
-$hx-color-gradient-green: #1cffa5;
-$hx-color-gradient-blue: #00216b;
+$hx-color-gradient-green: #1cffa5 !default;
+$hx-color-gradient-blue: #00216b !default;
 
 // Grayscale
 $hx-color-gray-dark:                 hsl(200, 3%, 17%) !default;
