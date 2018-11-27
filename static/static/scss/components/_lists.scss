@@ -244,7 +244,9 @@
       transition: .3s;
 			border-bottom: 1px solid rgba(0,0,0,.05);
 			cursor: pointer;
-			&:hover {
+			&:hover,
+      &.is-hover,
+      &.is-active {
 				background-color: rgba(0,0,0,.02);
 				text-decoration: none;
 				color: $hx-color-primary;
