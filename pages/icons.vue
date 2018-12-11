@@ -184,8 +184,6 @@ export default {
         { name: 'patient-outline' },
         { name: 'patient-add' },
         { name: 'patient-add-outline' },
-        { name: 'user' },
-        { name: 'user-outline' },
         { name: 'person' },
         { name: 'person-outline' },
         { name: 'doctor' },
@@ -272,7 +270,13 @@ export default {
         { name: 'prescription' },
         { name: 'external-link' },
         { name: 'did-not-wait' },
-        { name: 'linked' }
+        { name: 'linked' },
+        { name: 'dropdown' },
+        { name: 'textarea' },
+        { name: 'textbox' },
+        { name: 'radio-button' },
+        { name: 'checkbox' }
+
       ]
     }
   },
