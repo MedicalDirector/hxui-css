@@ -241,7 +241,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
             </div>
             <div class="hx-list-content">Cras justo odio</div>
             <div class="hx-list-action">
-              <button class="hx-delete is-small"></button>
+              <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
             </div>
           </a>
         </li>
@@ -252,7 +252,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
             </div>
             <div class="hx-list-content">Dapibus ac facilisis in</div>
             <div class="hx-list-action">
-              <button class="hx-delete is-small"></button>
+              <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
             </div>
           </a>
         </li>
@@ -263,7 +263,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
             </div>
             <div class="hx-list-content">Morbi leo risus</div>
             <div class="hx-list-action">
-              <button class="hx-delete is-small"></button>
+              <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
             </div>
           </a>
         </li>
@@ -274,7 +274,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
             </div>
             <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
             <div class="hx-list-action">
-              <button class="hx-delete is-small"></button>
+              <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
             </div>
           </a>
         </li>
@@ -285,7 +285,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
             </div>
             <div class="hx-list-content">Vestibulum at eros</div>
             <div class="hx-list-action">
-              <button class="hx-delete is-small"></button>
+              <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
             </div>
           </a>
         </li>
