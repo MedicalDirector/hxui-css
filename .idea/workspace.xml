@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/lists.vue" afterPath="$PROJECT_DIR$/pages/lists.vue" />
-    </list>
+    <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -43,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lists.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/lists.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="221">
               <caret line="243" column="126" lean-forward="false" selection-start-line="243" selection-start-column="126" selection-end-line="243" selection-end-column="126" />
               <folding>
                 <marker date="1544571756360" expanded="true" signature="880:1064" ph="..." />
@@ -312,8 +309,8 @@
         <option value="$PROJECT_DIR$/static/static/scss/components/_modal.scss" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_icons.scss" />
         <option value="$PROJECT_DIR$/pages/icons.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/pages/lists.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -597,12 +594,12 @@
       <workItem from="1541887489748" duration="587000" />
       <workItem from="1541997209756" duration="563000" />
       <workItem from="1544057177665" duration="44000" />
-      <workItem from="1544569818426" duration="1169000" />
+      <workItem from="1544569818426" duration="1234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259709000" />
+    <option name="totallyTimeSpent" value="259774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
@@ -1020,14 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/static/scss/components/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1048,7 +1037,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/lists.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="221">
           <caret line="243" column="126" lean-forward="false" selection-start-line="243" selection-start-column="126" selection-end-line="243" selection-end-column="126" />
           <folding>
             <marker date="1544571756360" expanded="true" signature="880:1064" ph="..." />
@@ -1133,6 +1122,14 @@
             <marker date="1544571756360" expanded="true" signature="11520:11675" ph="..." />
             <marker date="1544571756360" expanded="true" signature="11559:11661" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
