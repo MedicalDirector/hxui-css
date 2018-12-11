@@ -30,12 +30,13 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
-
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  &.#{$hxui-reset} {
+  @if $framework-wrap {
+    &.#{$hxui-reset} { font-size: 16px; }
+  } @else {
     font-size: 16px;
   }
 }
@@ -52,57 +53,13 @@ html {
   font-style: normal;
 }
 
-.#{$hxui-reset} {
 
-// Font
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
-
-// Utilities
-@import 'utilities/flexbox';
-@import 'utilities/helpers';
-@import 'utilities/scrollable';
-@import 'utilities/text';
-// Core Styles
-@import 'base/base';
-@import 'base/code';
-@import 'base/colors';
-@import 'base/content';
-@import 'base/image';
-@import 'base/table';
-// icons
-@import 'components/icon';
-@import 'components/icons';
-// Components
-@import 'components/accordions';
-@import 'components/alerts';
-@import 'components/avatars';
-@import 'components/badge';
-@import 'components/breadcrumb';
-@import 'components/button';
-@import 'components/card';
-@import 'components/dropdown';
-@import 'components/form';
-@import 'components/grid';
-@import 'components/lists';
-@import 'components/modal';
-@import 'components/nav';
-@import 'components/navbar';
-@import 'components/pagination';
-@import 'components/progress-timeline';
-@import 'components/snackbar';
-@import 'components/steppers';
-@import 'components/tab';
-@import 'components/toggle';
-@import 'components/tooltip';
-@import 'components/toolbar';
-@import 'components/metadata';
-@import 'components/loaders';
-// layouts
-@import 'layouts/container';
-@import 'layouts/field';
-@import 'layouts/page';
-@import 'layouts/section';
-@import 'layouts/sidebar';
-@import 'layouts/dividers';
-
+@if $framework-wrap {
+  .#{$hxui-reset} {
+    @import 'imports';
+  }
+} @else {
+  html {
+    @import 'imports';
+  }
 }

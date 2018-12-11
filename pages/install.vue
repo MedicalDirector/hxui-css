@@ -69,15 +69,9 @@ $icons-path: '../fonts/';
     </code></pre>
     <br>
 
-    <h3 class="h5">Designed to work in parallel with other frameworks</h3>
-    <p>In order for HxUI to work with other frameworks, the <code>.hxui-reset</code> class is required to be the parent class for any HxUi specific styles to work. </p>
-    <br>
-    <p>For apps that only require HxUI, add this class to the html tag.</p>
-    <pre v-highlightjs><code class="html">
-&#x3C;html class=&#x22;hxui-reset&#x22;&#x3E;
-...
-    </code></pre>
-
+    <h3 class="h5">Designed to optionally work in parallel with other frameworks</h3>
+    <p>In order for HxUI to work with other frameworks, you will need to set <code>$framework-wrap</code> to <code>true</code>.<br>
+      Once enabled, the <code>.hxui-reset</code> class is required to be the parent class for any HxUi specific styles to work. </p>
     <p>For apps that wish to use multiple frameworks, add this class to any container that is HxUi specific.</p>
     <pre v-highlightjs><code class="html">
 &#x3C;div class=&#x22;hxui-reset&#x22;&#x3E;

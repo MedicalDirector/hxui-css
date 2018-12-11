@@ -13,6 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dropdown:before {
+  content: "\e996";
+}
+.icon-textarea:before {
+  content: "\e997";
+}
+.icon-textbox:before {
+  content: "\e998";
+}
+.icon-radio-button:before {
+  content: "\e994";
+}
+.icon-checkbox:before {
+  content: "\e995";
+}
 .icon-linked:before {
   content: "\e993";
 }
