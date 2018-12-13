@@ -59,7 +59,7 @@ html {
     @import 'imports';
   }
 } @else {
-  html {
+  * {
     @import 'imports';
   }
 }
