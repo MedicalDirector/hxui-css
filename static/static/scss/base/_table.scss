@@ -413,7 +413,8 @@
 
 
   &.has-sticky-header {
-    > thead > tr > th {
+    > thead > tr > th,
+    > thead > tr > td{
       position: sticky;
       top: -1px;  // positional attribute is required for position to take affect.
       background-color: #fafafa;
