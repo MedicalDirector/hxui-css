@@ -145,19 +145,19 @@ table td {
   }
 
   .is-hidden-tablet {
-    @media screen and (min-width: $hx-desktop - 1) {
+    @media screen and (max-width: $hx-desktop - 1) {
       display: none !important;
     }
   }
 
   .is-hidden-desktop {
-    @media screen and (min-width: $hx-widescreen - 1) {
+    @media screen and (max-width: $hx-widescreen - 1) {
       display: none !important;
     }
   }
 
   .is-hidden-widescreen {
-    @media screen and (min-width: $hx-fullhd - 1) {
+    @media screen and (max-width: $hx-fullhd - 1) {
       display: none !important;
     }
   }
