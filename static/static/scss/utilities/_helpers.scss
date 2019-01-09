@@ -135,7 +135,7 @@ table td {
 // Visibility
 
   .is-hidden {
-    display: none !important;
+    display: none;
   }
 
   .is-hidden-mobile {
@@ -145,19 +145,19 @@ table td {
   }
 
   .is-hidden-tablet {
-    @include tablet {
+    @media screen and (min-width: $hx-desktop - 1) {
       display: none !important;
     }
   }
 
   .is-hidden-desktop {
-    @include desktop {
+    @media screen and (min-width: $hx-widescreen - 1) {
       display: none !important;
     }
   }
 
   .is-hidden-widescreen {
-    @include widescreen {
+    @media screen and (min-width: $hx-fullhd - 1) {
       display: none !important;
     }
   }
