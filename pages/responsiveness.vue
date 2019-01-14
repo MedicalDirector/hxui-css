@@ -97,9 +97,8 @@ export default {
        <li><code>.is-hidden-tablet</code></li>
        <li><code>.is-hidden-desktop</code></li>
        <li><code>.is-hidden-widescreen</code></li>
-       <li><code>.is-hidden-fullhd</code></li>
     </ul>
-
+    <p>These classes will hide for all breakpoints the breakpoint in the class name, for example if is-hidden-tablet is applied to an element, the element will be hidden for tablet and mobile.</p>
   </div>
 </div>
 
