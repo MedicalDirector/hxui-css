@@ -199,6 +199,12 @@ export default {
           ]
         },
         {
+          title: 'Organisms',
+          items: [
+            { name: 'Panel header', path: '/panel-header' }
+          ]
+        },
+        {
           title: 'Resources',
           items: [
             { name: 'Downloads', path: '/downloads' }
