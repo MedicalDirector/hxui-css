@@ -15,15 +15,17 @@
 
           <div class="hx-panel-header has-fixed-height">
             <div class="hx-panel-header-row">
-              <div class="hx-panel-back">
+              <a class="hx-button hx-panel-back is-flat is-small pl-1">
                 <i class="hx-icon icon-angle-left"></i>
                 <div class="hx-panel-back-text">
-                  Back
+                Back
                 </div>
-              </div>
+              </a>
               <div class="hx-panel-header-row-actions">
                 <a class="hx-button is-small">Action</a>
-                <i class="hx-icon icon-close-empty icon-close-empty--larger"></i>
+                <a class="hx-button is-small is-white px-1">
+                  <i class="hx-icon is-medium icon-close-empty"></i>
+                </a>
               </div>
             </div>
             <div class="hx-panel-header-row">
@@ -70,14 +72,16 @@
         <div class="hx-panel mock-panel">
           <div class="hx-panel-header has-fixed-height">
             <div class="hx-panel-header-row">
-              <div class="hx-panel-back">
+              <a class="hx-button hx-panel-back is-flat is-small pl-1">
                 <i class="hx-icon icon-angle-left"></i>
                 <div class="hx-panel-back-text">
-                  Letter Creator
+                  Letter Generator
                 </div>
-              </div>
+              </a>
               <div class="hx-panel-header-row-actions">
-                <i class="hx-icon icon-external-link"></i>
+                <a class="hx-button is-small is-white px-1">
+                  <i class="hx-icon icon-external-link"></i>
+                </a>
               </div>
             </div>
             <div class="hx-panel-header-row">
@@ -220,7 +224,9 @@
                 </div>
               </div>
               <div class="hx-panel-header-row-actions">
-                <i class="hx-icon icon-close-empty icon-close-empty--larger"></i>
+                <a class="hx-button is-small is-white px-1">
+                  <i class="hx-icon is-medium icon-close-empty"></i>
+                </a>
               </div>
             </div>
             <div class="hx-panel-header-row has-search hx-flex-column">
@@ -251,18 +257,19 @@ export default {
   data () {
     return {
       headerA: `
-       <div class="hx-panel">
-          <div class="hx-panel-header has-fixed-height">
+       <div class="hx-panel-header has-fixed-height">
             <div class="hx-panel-header-row">
-              <div class="hx-panel-back">
+              <a class="hx-button hx-panel-back is-flat is-small pl-1">
                 <i class="hx-icon icon-angle-left"></i>
                 <div class="hx-panel-back-text">
-                  Go back
+                Back
                 </div>
-              </div>
+              </a>
               <div class="hx-panel-header-row-actions">
                 <a class="hx-button is-small">Action</a>
-                <i class="hx-icon icon-close-empty icon-close-empty--larger"></i>
+                <a class="hx-button is-small is-white px-1">
+                  <i class="hx-icon is-medium icon-close-empty"></i>
+                </a>
               </div>
             </div>
             <div class="hx-panel-header-row">
@@ -279,7 +286,6 @@ export default {
               </div>
             </div>
           </div>
-        </div>
       `,
       headerB: `
         <div class="hx-panel">
