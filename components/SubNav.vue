@@ -205,6 +205,12 @@ export default {
           ]
         },
         {
+          title: 'Templates',
+          items: [
+            { name: 'Panel', path: '/panel' }
+          ]
+        },
+        {
           title: 'Resources',
           items: [
             { name: 'Downloads', path: '/downloads' }
