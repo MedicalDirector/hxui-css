@@ -183,22 +183,22 @@ $hx-text-strong: $hx-color-gray-dark !default;
 // Headings
 $hx-headings-margin-bottom: ($hx-spacer / 2) !default;
 $hx-headings-font-family:   inherit !default;
-$hx-headings-font-weight:   400 !default;
+$hx-headings-font-weight:   500 !default;
 $hx-headings-line-height:   1.1 !default;
 $hx-headings-color:         darken($hx-color-blue, 10) !default;
 $hx-headings-letter-spacing: -.01em !default;
 
 // Font sizes
-$hx-font-size-h1: 2.3rem !default;
-$hx-font-size-h2: 2rem !default;
-$hx-font-size-h3: 1.75rem !default;
-$hx-font-size-h4: 1.35rem !default;
-$hx-font-size-h5: 1.25rem !default;
-$hx-font-size-h6: .95rem !default;
+$hx-font-size-h1: 2rem !default;
+$hx-font-size-h2: 1.5rem !default;
+$hx-font-size-h3: 1.25rem !default;
+$hx-font-size-h4: 1.066rem !default;
+$hx-font-size-h5: 0.95rem !default;
+$hx-font-size-h6: 0.675rem !default;
 
 // Titles
 $hx-title-size: $hx-font-size-h1;
-$hx-title-font-weight: 300;
+$hx-title-font-weight: $hx-headings-font-weight;
 
 $hx-subtitle-size: $hx-font-size-h5;
 $hx-subtitle-font-weight: 200;
@@ -382,3 +382,6 @@ $hx-zindex-navbar-sticky:     1030 !default;
 $hx-zindex-modal-bg:          1040 !default;
 $hx-zindex-modal:             1050 !default;
 $hx-zindex-tooltip:           1070 !default;
+
+$unit-padding-margins: 0.25;
+$hx-flex-accordion-bg-color: #fafafa;

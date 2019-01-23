@@ -57,6 +57,139 @@ export default {
           `
         },
         {
+          title: 'Heading examples - Product information and Monograph',
+          code: `
+<div class="hx-columns">
+  <div class="hx-column">
+    <h1>FLAGYL® (METRONIDAZOLE)</h1>
+    <div class="pihead">Product Information</div>
+    <div>
+      <h2 class="is-text-capitalise">1 NAME OF THE MEDICINE</h2>
+      <p>Flagyl (metronidazole) 200 mg and 400 mg tablets</p>
+      <p>Flagyl (metronidazole) 500 mg suppositories</p>
+    </div>
+    <div>
+      <h2>2 QUALITATIVE AND QUANTITATIVE COMPOSITION</h2>
+      <p>Flagyl tablets contain 200 mg or 400 mg metronidazole.</p>
+      <p>Flagyl suppositories contain 500 mg metronidazole.</p>
+      <p>Metronidazole is a 1-(2-hydroxyethyl)-2-methyl-5-nitroimidazole. It appears as white to brownish cream crystals with melting point of 159 to 162°C. Metronidazole in a saturated aqueous solution has a pH of between 6 and 7.5. Solubility at 20°C (g/100 mL): 1 in water; 0.5 in ethanol; 0.4 in chloroform; slightly soluble in ether, soluble in dilute acids.</p><p>For the full list of excipients, see Section 6.1 List of excipients.</p>
+    </div>
+    <div><h2>4 CLINICAL PARTICULARS</h2>
+      <h3>4.1 THERAPEUTIC INDICATIONS</h3><h4>Anaerobic Infections</h4><a></a><h5>Oral</h5>
+      <p>Treatment of infections in which anaerobic bacteria have been identified or are suspected as pathogens,
+        particularly <i>Bacteroides fragilis</i> and other species of bacteroides, and other species such as fusobacteria,
+        eubacteria, clostridia and anaerobic streptococci. Flagyl has been used successfully in septicaemia; bacteraemia;
+        brain abscess; necrotising pneumonia; osteomyelitis; puerperal sepsis; pelvic abscess; pelvic cellulitis;
+        postoperative wound infections.</p><a></a><h5>Suppositories</h5>
+      <p>Treatment of anaerobic infection in patients for whom oral medication is not possible or is contraindicated.
+        Prevention of anaerobic infection in high risk situations in patients for whom oral medication is not possible or is
+        contraindicated.</p>
+      <p>Metronidazole may be used prophylactically to prevent infection of the surgical site which may have been
+        contaminated or potentially contaminated with anaerobic organisms. Procedures in which this may be assumed to have
+        happened include appendicectomy, colonic surgery, vaginal hysterectomy, abdominal surgery in the presence of
+        anaerobes in the peritoneal cavity and surgery performed in the presence of anaerobic septicaemia.</p>
+      <p><b>Note:</b> Metronidazole is inactive against aerobic and facultative anaerobic bacteria.</p><a></a><h4>Other
+        Indications</h4>
+      <p>Oral treatment of urogenital trichomoniasis in the female (trichomonal vaginitis) and in the male, and for the
+        treatment of bacterial vaginosis. The male consort of females suffering from urogenital trichomoniasis should be
+        treated concurrently; all forms of amoebiasis (intestinal and extraintestinal disease and that of symptomless cyst
+        passers); giardiasis; acute ulcerative gingivitis.</p><a></a>
+      <h3>4.2 DOSE AND METHOD OF ADMINISTRATION</h3>
+
+        <h4>Suppositories</h4><a></a><h5>Treatment of Anaerobic Infections</h5>
+      <p>Adults and children over 12 years: two 500 mg suppositories inserted into the rectum every eight hours for 3 days.
+        If the rectal medication must be continued for more than 3 days the suppositories should be inserted every twelve
+        hours.</p>
+      <p>Children, 5 to 12 years: half the adult dosage using the 500 mg suppository.</p>
+      <p>Oral medication should be substituted as soon as possible.</p><a></a><h5>Prevention of Anaerobic Infections in High
+        Risk Situations</h5>
+      <p>A variety of dosage regimens have been tried, but the optimal variety of dosage regimen for prophylaxis against
+        anaerobic infection still remains to be established. Based on the generally accepted principles of prophylactic use
+        of antibiotics and the limited documented clinical experience on the prophylactic use of metronidazole, the
+        following dosage regimens are suggested.</p><a></a><h6>1. In Appendicectomy</h6>
+      <p>(Note: As prevention of infection requires that adequate tissue concentrations of the drug should be achieved at
+        the time of surgery and as it may take approximately 8 hours to achieve peak serum levels after the suppository, the
+        need for intravenous infusion of metronidazole should be considered if the interval between the first suppository
+        and surgery is less than 8 hours.)</p>
+      <p>Adults and children over 12 years: two 500 mg suppositories inserted into the rectum at diagnosis (ie. before
+        surgery) and thereafter every eight hours for 48 hours after surgery.</p>
+      <p><b>Note:</b> If infection has already spread, such as in cases of gangrenous or perforated appendix, the treatment
+        regimen shown above should be used.</p>
+      <p>Children, 5 to 12 years: half the adult dosage using the 500 mg suppository.</p><a></a><h6>2. In Elective Colonic
+        Surgery</h6>
+      <p>Adults and children over 12 years: In addition to proper bowel preparation, two 500 mg suppositories should be
+        inserted every eight hours for 48 hours before as well as after surgery in cases where oral medication is not
+        possible.</p>
+    </div>
+  </div>
+  <div class="hx-column">
+    <div class="prolog"><h1>Metronidazole (Systemic)</h1><p>For a listing of dosage forms and brand names, see <span class="iref">Dosage Forms</span> section(s).</p></div>
+    <div class="sect2"><div class="mono-anchor-top"><h2>Therapeutic Class</h2></div><div class="classgroup"><span class="class">Antibacterial</span><span class="drugs"></span></div><div class="classgroup"><span class="class">Antiprotozoal</span><span class="drugs"></span></div></div>
+    <div class="sect2"><div class="mono-anchor-top"><a></a><h2>Indications</h2></div><div class="note"><span class="title">Note:</span><p class="note-first">Bracketed information in the <i>Indications</i> section refers to uses that are not included in the Australian approved product information.</p></div><div class="sect3"><h3>■ General considerations</h3><p>Metronidazole is effective <i>in vitro</i> against several species of anaerobic bacteria, particularly <i>Bacteroides fragilis</i> and other species of bacteroides, and other species such as <i>Clostridia</i>, <i>Eubacteria</i>, <i>Fusobacteria</i>, and anaerobic <i>Streptococci</i>. The minimum inhibitory concentration (MIC) for most susceptible anaerobes is less than 6.2 micrograms per mL. Metronidazole is not effective against aerobic and facultative anaerobic bacteria.</p><p>Metronidazole is also active against a wide range of pathogenic microorganisms, notably <i>Trichomonas vaginalis</i> and other trichomonads, <i>Entamoeba histolytica</i>, <i>Giardia lamblia</i>, <i>Balantidium coli</i> and the causative organisms of acute ulcerative gingivitis.</p><p>Intravenous metronidazole is indicated when immediate anti-anaerobic chemotherapy is required. Intravenous, and rectal metronidazole, are indicated for treatment of anaerobic infections in patients when oral administration is not possible.</p></div><div class="sect3"><h3>■ Accepted</h3><div class="entry"><div class="indication"><span class="condition">Amoebiasis</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of all forms of amoebiasis (intestinal, extraintestinal, and that of symptomless cyst passers).</p></div><div class="entry"><div class="indication"><span class="condition">Bacteraemia</span><span class="intenduse"> (treatment)</span></div><div class="indication"><span class="condition">Septicaemia, bacterial</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of bacteraemia or bacterial septicaemia caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Bone infections</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of osteomyelitis caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Brain abscess</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of brain abscess caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Diarrhoea, antibiotic-associated</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of antibiotic-associated diarrhoea caused by <i>Clostridium difficile</i>.</p></div><div class="entry"><div class="indication"><span class="condition">Giardiasis</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of giardiasis.</p></div><div class="entry"><div class="indication"><span class="condition">Gingivitis, acute, ulcerative</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of acute ulcerative gingivitis caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Pelvic infections, female</span> <span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of female pelvic infections, including pelvic abscess, pelvic cellulitis and puerperal sepsis caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Perioperative infections</span> <span class="intenduse"> (prophylaxis)</span></div><p>Metronidazole is indicated for prophylaxis of infection of the surgical site which may have been potentially contaminated or contaminated with anaerobic organisms. These procedures include abdominal surgery in the presence of anaerobes in the peritoneal cavity, appendicectomy, colonic surgery, surgery performed in the presence of anaerobic septicaemia, and vaginal hysterectomy.</p></div><div class="entry"><div class="indication"><span class="condition">Postoperative infections</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of postoperative wound infections caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Pneumonia, necrotising</span> <span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of necrotising pneumonia caused by susceptible organisms.</p></div><div class="entry"><div class="indication"><span class="condition">Trichomoniasis, urogenital</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of symptomatic and asymptomatic trichomoniasis, in males and females.</p></div><div class="entry"><div class="indication"><span class="condition">Ulcer, peptic, associated with Helicobacter pylori</span><span class="intenduse"> (treatment adjunct)</span></div><p>Metronidazole is indicated in combination with omeprazole, and amoxicillin or clarithromycin, in the treatment of peptic ulcer disease associated with <i>Helicobacter pylori</i> infection.</p></div><div class="entry"><div class="indication"><span class="condition">Vaginosis, bacterial</span><span class="intenduse"> (treatment)</span></div><p>Metronidazole is indicated in the treatment of bacterial vaginosis.</p></div><div class="entry"><div class="indication"><span class="tgaind">[</span><span class="notapptga"><span class="condition">Balantidiasis</span><span class="intenduse"> (treatment)</span></span><span class="tgaind">]</span></div><p>The use of metronidazole in the treatment of balantidiasis is not approved by the Therapeutic Goods Administration (TGA) in Australia.</p></div></div></div>
+  </div>
+
+</div>
+          `
+        },
+        {
+          title: 'Heading examples - In a form and panel',
+          code: `
+<div class="hx-columns">
+  <div class="hx-column">
+    <h3>New Recipe</h3>
+    <div class="hx-input-control">
+      <input  class="hx-input" formcontrolname="Name" required="" type="text" tabindex="1">
+      <label  class="hx-label">Recipe Name <sup>*</sup></label>
+      <div class="hx-help">Please enter the recipe name</div>
+
+      <div class="hx-card mb-4"><div class="hx-card-content recipe-card"><div class="hx-columns mt-4"><div class="hx-column is-two-thirds"><div class="hx-input-control mb-0"><textarea class="hx-textarea ng-pristine ng-invalid ktm-0 ng-touched" formcontrolname="RecipeIngredients" name="textarea-sample" placeholder="Enter ingredients" required="" rows="4" tabindex="1"></textarea><label class="hx-label" for="textarea-sample">Ingredients <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Please enter the recipe ingredients</div></div></div><div class="hx-column is-one-third pt-0"><div class="hx-columns"><div class="hx-column"><div class="hx-input-control"><input class="hx-input ng-untouched ng-pristine ng-valid ktm-0" formcontrolname="Qty" required="" type="text" tabindex="1"><label class="hx-label">Qty <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Quantity</div></div></div><div class="hx-column"><div class="hx-input-control pt-0"><input class="hx-input ng-untouched ng-pristine ng-valid ktm-0" formcontrolname="Rpts" required="" type="text" tabindex="1"><label class="hx-label">Rpts <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Repeats</div></div></div></div></div></div></div></div>
+    </div>
+  </div>
+  <div class="hx-column">
+    <h3>Mental State Examination</h3>
+    <div class="hx-card">
+      <ul class="hx-list-group">
+        <li class="">
+          <a>Edinburgh Postnatal Depression Scale</a>
+        </li>
+        <li class="">
+          <a>Dapibus ac facilisis in</a>
+        </li>
+        <li class="">
+          <a>Morbi leo risus</a>
+        </li>
+        <li class="">
+          <a>Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque. </a>
+        </li>
+        <li class="">
+          <a>Vestibulum at eros</a>
+        </li>
+      </ul>
+    </div>
+     <h3>Other</h3>
+    <div class="hx-card">
+      <ul class="hx-list-group">
+        <li class="">
+          <a>AUSDRISK</a>
+        </li>
+        <li class="">
+          <a>Dapibus ac facilisis in</a>
+        </li>
+        <li class="">
+          <a>Morbi leo risus</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          `
+        },
+        {
+          title: 'Heading examples - In a panel header',
+          code: `
+          <p>See <a href="/panel-header/">Panel Header</a></p>`
+        },
+        {
           title: 'Paragraphs and Inline text elements',
           code: `
 <div class="hx-columns">
