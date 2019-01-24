@@ -1,12 +1,12 @@
 <template>
   <div id="panel-headers">
     <h1 class="hx-title">Panel Header</h1>
-    <h2 class="hx-subtitle">The panel header is a header organism that should be placed at the start of a vertical panel.</h2>
-    <p>The panel header consists of a main heading  (with icon, h2 title and optional h5 subtitle) and optional back link, action items and input field.</p>
+    <h2 class="hx-subtitle">The Panel Header is a header organism that is placed at the start of a <a href="/panel">Panel</a> template.</h2>
+    <p>The panel header consists of a main heading  (with icon, h2 heading and optional subheading) and optional back link, action items and input field.</p>
     <hr>
 
     <h3>Panel Header - Type 1</h3>
-    <p>This header starts with an optional top row that contains the back link and/or action items. The next row contains the main heading, which consists of an icon, h2 title and optional subtitle.</p>
+    <p>This header starts with an optional top row that contains the back link and/or action items. The next row contains the main heading, which consists of an icon, h2 subheading and optional subheading.</p>
     <p><small>Helix note: Add the has-fixed-height class to the hx-panel-header for a fixed header height of 110px. The base body/html font is 15px rather than 16px as used this document.</small></p>
     <h4>Examples</h4>
     <div class="hx-columns">
@@ -29,15 +29,15 @@
               </div>
             </div>
             <div class="hx-panel-header-row">
-              <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-medications is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
+              <div class="hx-flex-column">
+                <div class="hx-panel-header-heading">
+                  <i class="hx-icon icon-prescription is-heading-icon"></i>
                   <div class="h2">
-                    Medication
+                    Prescription
                   </div>
-                  <div class="h5">
-                    Subtitle subtitling
-                  </div>
+                </div>
+                <div class="hx-panel-header-subheading">
+                  Prescription subheading
                 </div>
               </div>
             </div>
@@ -52,12 +52,9 @@
 
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
-
                 <i class="hx-icon icon-pathology-outline is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Pathology Request
-                  </div>
+                <div class="h2">
+                  Pathology Request
                 </div>
               </div>
             </div>
@@ -87,10 +84,8 @@
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
                 <i class="hx-icon icon-file-outline is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Blank Letter
-                  </div>
+                <div class="h2">
+                  Blank Letter
                 </div>
               </div>
             </div>
@@ -103,15 +98,15 @@
 
           <div class="hx-panel-header has-fixed-height">
             <div class="hx-panel-header-row">
-              <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-woman is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
+              <div class="hx-flex-column">
+                <div class="hx-panel-header-heading">
+                  <i class="hx-icon icon-woman is-heading-icon"></i>
                   <div class="h2">
                     Obstetrics
                   </div>
-                  <div class="h5">
-                    No current pregnancy
-                  </div>
+                </div>
+                <div class="hx-panel-header-subheading">
+                  No current pregnancy
                 </div>
               </div>
             </div>
@@ -128,7 +123,7 @@
     </code></pre>
 
     <h3>Panel Header - Type 2</h3>
-    <p>This header consists of two rows - the first row contains the main heading (icon and h1 title, plus optional action buttons/icons) and the second row contains a full width input field.
+    <p>This header consists of two rows - the first row contains the main heading (icon and h2 heading, plus optional action buttons/icons) and the second row contains a full width input field.
       Each row takes up about half the height of the panel.</p>
     <div class="hx-columns">
       <div class="hx-column">
@@ -137,10 +132,8 @@
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
                 <i class="hx-icon icon-prescription is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Prescription
-                  </div>
+                <div class="h2">
+                  Prescription
                 </div>
               </div>
               <div class="hx-panel-header-row-actions">
@@ -173,10 +166,8 @@
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
                 <i class="hx-icon icon-injection is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Immunisation
-                  </div>
+                <div class="h2">
+                  Immunisation
                 </div>
               </div>
               <div class="hx-panel-header-row-actions">
@@ -217,10 +208,8 @@
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
                 <i class="hx-icon icon-file-outline is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Letter Creator
-                  </div>
+                <div class="h2">
+                  Letter Creator
                 </div>
               </div>
               <div class="hx-panel-header-row-actions">
@@ -273,15 +262,15 @@ export default {
               </div>
             </div>
             <div class="hx-panel-header-row">
-              <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-medications is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
+              <div class="hx-flex-column">
+                <div class="hx-panel-header-heading">
+                  <i class="hx-icon icon-prescription is-heading-icon"></i>
                   <div class="h2">
-                    Medication
+                    Prescription
                   </div>
-                  <div class="h5">
-                    Subtitle subtitling
-                  </div>
+                </div>
+                <div class="hx-panel-header-subheading">
+                  Prescription subheading
                 </div>
               </div>
             </div>
@@ -292,22 +281,15 @@ export default {
           <div class="hx-panel-header has-fixed-height">
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-injection is-heading-icon"></i>
-                <div class="hx-panel-header-heading-text">
-                  <div class="h2">
-                    Immunisation
-                  </div>
+                <i class="hx-icon icon-file-outline is-heading-icon"></i>
+                <div class="h2">
+                  Letter Creator
                 </div>
               </div>
               <div class="hx-panel-header-row-actions">
-                <div class="hx-button-group">
-                  <a class="hx-button is-small">
-                    Record Immunisation
-                  </a>
-                  <a class="hx-button is-small">
-                    View Schedule
-                  </a>
-                </div>
+                <a class="hx-button is-small is-white px-1">
+                  <i class="hx-icon is-medium icon-close-empty"></i>
+                </a>
               </div>
             </div>
             <div class="hx-panel-header-row has-search hx-flex-column">

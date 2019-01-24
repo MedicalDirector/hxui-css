@@ -23,16 +23,19 @@
     margin-top: 10px;
   }
 
+
   .#{$namespace}-panel-header-heading {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     .is-heading-icon {
       width: 21px;
       height: 21px;
+      margin-right: 10px;
     }
-    .#{$namespace}-panel-header-heading-text {
-      margin-left: 10px;
-    }
+  }
+  .#{$namespace}-panel-header-subheading {
+    margin-left: 31px;
+    font-size: 0.85rem;
   }
 
   .#{$namespace}-panel-header-row-actions {
