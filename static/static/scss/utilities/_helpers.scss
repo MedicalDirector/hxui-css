@@ -163,7 +163,7 @@ table td {
   }
 
   // margins & paddings
-  $unit: 0.25;
+  $unit: $unit-padding-margins;
   @for $i from 0 through 10 {
     .mt-#{$i} { margin-top: 1rem * ($i * $unit) !important; }
     .mr-#{$i} { margin-right: 1rem * ($i * $unit) !important; }
