@@ -120,8 +120,11 @@ a.#{$namespace}-button,
     }
   }
 
-  // is-primary, is-info, is-success, is-warning, is-danger
-  @each $name, $pair in $hx-colors {
+  // is-white, is-black, is-light ... is-info, is-success, is-warning ... is-red, is-blue ...
+  $transparent-inverted: ('transparent-inverted': (transparent, $hx-color-white));
+  $hx-colors-buttons: map-merge( $hx-colors, $transparent-inverted );
+
+  @each $name, $pair in $hx-colors-buttons {
     $color: nth($pair, 1);
     $hx-color-invert: nth($pair, 2);
 
@@ -176,6 +179,15 @@ a.#{$namespace}-button,
           }
         }
       }
+    }
+  }
+
+  &.is-transparent-inverted {
+    &:hover,
+    &.is-hovered {
+      background-color: rgba($hx-color-black, 0.1);
+      border-color: transparent;
+      color: rgba($hx-color-white, 0.85);
     }
   }
 

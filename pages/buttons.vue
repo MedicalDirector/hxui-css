@@ -37,6 +37,20 @@ export default {
   <a class="hx-button is-link">Link</a>
   <a class="hx-button is-transparent">Transparent</a>
 </div>
+<div class="hx-columns">
+<div class="hx-column">
+  <div class="has-text-centered hx-bg-blue my-3 py-3">
+  <a class="hx-button is-white">White</a>
+  <a class="hx-button is-transparent-inverted">Transparent inverted</a>
+</div>
+</div>
+<div class="hx-column">
+  <div class="has-text-centered hx-bg-primary my-3 py-3">
+  <a class="hx-button is-white">White</a>
+  <a class="hx-button is-transparent-inverted">Transparent inverted</a>
+</div>
+</div>
+</div>
           `
         },
         {
