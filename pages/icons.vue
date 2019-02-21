@@ -118,8 +118,6 @@ export default {
         { name: 'body-outline' },
         { name: 'box' },
         { name: 'box-outline' },
-        { name: 'calendar' },
-        { name: 'calendar-outline' },
         { name: 'chat-bubble' },
         { name: 'chat-bubble-outline' },
         { name: 'circle' },
