@@ -67,6 +67,11 @@ h6 {
   margin-bottom: 1rem  * .5;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .#{$namespace}-title {
   font-size: $hx-font-size-h1;
   font-weight: $hx-title-font-weight;
