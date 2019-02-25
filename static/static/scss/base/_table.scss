@@ -6,7 +6,9 @@
   width: 100%;
 
   > tbody > tr > td.is-text-ellipsed,
-  > thead > tr > th.is-text-ellipsed {
+  > thead > tr > th.is-text-ellipsed,
+  > tbody > tr > td.is-text-elipsed,
+  > thead > tr > th.is-text-elipsed {
     max-width: 0;
   }
 
