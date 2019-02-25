@@ -261,6 +261,7 @@ export default {
         { name: 'recalls' },
         { name: 'pathology-outline' },
         { name: 'pathology' },
+        { name: 'medications' },
         { name: 'imaging-outline' },
         { name: 'imaging' },
         { name: 'radiology-outline' },
@@ -273,8 +274,13 @@ export default {
         { name: 'textarea' },
         { name: 'textbox' },
         { name: 'radio-button' },
-        { name: 'checkbox' }
-
+        { name: 'checkbox' },
+        { name: 'clipboard' },
+        { name: 'clipboard-outline' },
+        { name: 'clipboard-heart' },
+        { name: 'clipboard-heart-outline' },
+        { name: 'clipboard-bullets' },
+        { name: 'clipboard-bullets-outline' }
       ]
     }
   },
