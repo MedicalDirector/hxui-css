@@ -545,10 +545,10 @@
   content: "\e902";
 }
 .icon-clipboard:before {
-  content: "\e99e";
+  content: "\e9a1";
 }
 .icon-clipboard-outline:before {
-  content: "\e99d";
+  content: "\e9a2";
 }
 .icon-clipboard-heart:before {
   content: "\e9a0";
@@ -557,8 +557,42 @@
   content: "\e99f";
 }
 .icon-clipboard-bullets:before {
-  content: "\e9a1";
+  content: "\e99e";
 }
 .icon-clipboard-bullets-outline:before {
+  content: "\e99d";
+}
+
+.icon-legacy-discharge:before {
+  content: "\e9a4";
+}
+.icon-legacy-pathology:before {
+  content: "\e9a5";
+}
+.icon-legacy-radiology:before {
+  content: "\e9a6";
+}
+.icon-legacy-letter-referral:before {
   content: "\e9a9";
+}
+.icon-legacy-letter-specialist:before {
+  content: "\e9a8";
+}
+.icon-legacy-workers-compensation:before {
+  content: "\e9a7";
+}
+.icon-legacy-letter-other:before {
+  content: "\e9ad";
+}
+.icon-legacy-letter-writer:before {
+  content: "\e9ad";
+}
+.icon-legacy-mhr:before {
+  content: "\e9ac";
+}
+.icon-legacy-smd:before {
+  content: "\e9ab";
+}
+.icon-legacy-cdm:before {
+  content: "\e9aa";
 }
