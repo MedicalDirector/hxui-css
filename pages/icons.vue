@@ -280,7 +280,19 @@ export default {
         { name: 'clipboard-heart' },
         { name: 'clipboard-heart-outline' },
         { name: 'clipboard-bullets' },
-        { name: 'clipboard-bullets-outline' }
+        { name: 'clipboard-bullets-outline' },
+
+        { name: 'legacy-discharge' },
+        { name: 'legacy-pathology' },
+        { name: 'legacy-radiology' },
+        { name: 'legacy-letter-referral' },
+        { name: 'legacy-letter-other' },
+        { name: 'legacy-workers-compensation' },
+        { name: 'legacy-letter-writer' },
+        { name: 'legacy-letter-specialist' },
+        { name: 'legacy-mhr' },
+        { name: 'legacy-smd' },
+        { name: 'legacy-cdm' }
       ]
     }
   },
