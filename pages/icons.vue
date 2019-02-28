@@ -281,7 +281,6 @@ export default {
         { name: 'clipboard-heart-outline' },
         { name: 'clipboard-bullets' },
         { name: 'clipboard-bullets-outline' },
-
         { name: 'legacy-discharge' },
         { name: 'legacy-pathology' },
         { name: 'legacy-radiology' },
@@ -292,7 +291,9 @@ export default {
         { name: 'legacy-letter-specialist' },
         { name: 'legacy-mhr' },
         { name: 'legacy-smd' },
-        { name: 'legacy-cdm' }
+        { name: 'legacy-cdm' },
+        { name: 'fullscreen' },
+        { name: 'fullscreen-close' }
       ]
     }
   },
