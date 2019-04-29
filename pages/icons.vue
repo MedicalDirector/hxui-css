@@ -293,7 +293,21 @@ export default {
         { name: 'legacy-smd' },
         { name: 'legacy-cdm' },
         { name: 'fullscreen' },
-        { name: 'fullscreen-close' }
+        { name: 'fullscreen-close' },
+        { name: 'letter' },
+        { name: 'letter-outline' },
+        { name: 'letter-tick' },
+        { name: 'letter-tick-outline' },
+        { name: 'letter-certificate' },
+        { name: 'letter-certificate-outline' },
+        { name: 'letter-signature' },
+        { name: 'letter-signature-outline' },
+        { name: 'buildings' },
+        { name: 'buildings-outline' },
+        { name: 'file-certificate' },
+        { name: 'file-certificate-outline' },
+        { name: 'signature' },
+        { name: 'signature-outline' }
       ]
     }
   },
