@@ -338,4 +338,9 @@
   li a {
     padding: .6rem .8rem;
   }
+
+  li a.hx-button,
+  li button.hx-button{
+    min-height: 2.25em;
+  }
 }
