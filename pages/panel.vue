@@ -2,7 +2,8 @@
 
   <div id="panel">
     <h1 class="hx-title">Panel</h1>
-    <h2 class="hx-subtitle">A Panel is a template that consists of a <a href="/panel-header">Panel Header</a>, body and footer. It usually takes up one third of the screen.</h2>
+    <h2 class="hx-subtitle">A Panel is a template that consists of a <a href="/panel-header">Panel Header</a>, body and footer. The panel-header and panel-footer elements are fixed, the panel-body section scrolls.
+      A panel takes up the width of its parent container (often one third of the screen)</h2>
     <p>To break out of the panel body's left and right padding, use a hx-panel-section with the is-fill-to-edges modifier class.</p>
     <hr>
     <div class="hx-columns">
