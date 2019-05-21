@@ -366,5 +366,6 @@
 .#{$namespace}-list-group.is-small {
   li a {
     padding: .6rem .8rem;
+    min-height: 2.25em;
   }
 }

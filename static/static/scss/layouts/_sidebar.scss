@@ -73,6 +73,7 @@ $sidebar-nav-hover-color: colour-gray-light;
 }
 
 .#{$namespace}-nav-drawer {
+  height:100%;
   .#{$namespace}-sidebar,
   .#{$namespace}-drawer {
     width: 17rem;
