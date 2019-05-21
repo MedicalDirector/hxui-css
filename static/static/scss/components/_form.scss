@@ -2,6 +2,12 @@
 // Form
 // =========
 
+// Container within hx-columns
+.#{$namespace}-columns {
+  .#{$namespace}-input-control {
+    margin-bottom: 0;
+  }
+}
 
 // Container
 .#{$namespace}-input-control {
@@ -14,11 +20,11 @@
     .#{$namespace}-input,
     .#{$namespace}-textarea {
       padding: (.8rem * $medium) 0 (.6rem * $medium);
-      font-size: (1rem * $medium);
+      font-size: ($hx-font-form-elements-size * $medium);
 
       & + .#{$namespace}-label {
         top: (.7rem * $medium);
-        font-size: (1rem * $medium);
+        font-size: ($hx-font-form-elements-size * $medium);
         sup {
           font-size: (.7rem * $medium);
         }
@@ -39,7 +45,7 @@
       &:valid ~ .#{$namespace}-label,
       &:-webkit-autofill  ~ .#{$namespace}-label{
         top: (-.6rem);
-        font-size: (1rem);
+        font-size: ($hx-font-form-elements-size);
         sup {
           font-size: (.4rem * $medium);
         }
@@ -66,11 +72,11 @@
     .#{$namespace}-input,
     .#{$namespace}-textarea {
       padding: (.8rem * $large) 0 (.6rem * $large);
-      font-size: (1rem * $large);
+      font-size: ($hx-font-form-elements-size * $large);
 
       & + .#{$namespace}-label {
         top: (.7rem * $large);
-        font-size: (1rem * $large);
+        font-size: ($hx-font-form-elements-size * $large);
         sup {
           font-size: (.7rem * $large);
         }
@@ -317,8 +323,8 @@
   width: 100%;
   padding: .8rem 0 .6rem;
   font-family: $hx-font-family-sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: $hx-font-form-elements-size;
+  font-weight: $hx-font-form-elements-weight;
   border: 1px solid $hx-input-border;
   border-radius: 0;
   border-width: 0 0 1px 0;
@@ -379,7 +385,7 @@
   &:focus ~ .#{$namespace}-label,
   &:valid ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label {
-    top: -.5rem;
+    top: $hx-font-form-label-focus-top;
     font-size: .75rem;
     sup {
       top: -.3rem;
@@ -388,7 +394,7 @@
   }
 
   &.has-label-floating ~ .#{$namespace}-label {
-    top: -.5rem !important;
+    top: $hx-font-form-label-focus-top;
     font-size: .75rem !important;
     sup {
       top: -.3rem !important;
@@ -398,7 +404,7 @@
 
   &.has-label-placeholder ~ .#{$namespace}-label {
     top: .7rem !important;
-    font-size: initial !important;
+    font-size: $hx-font-form-elements-size;
     sup {
         top: -.2rem initial !important;
         font-size: .7rem initial !important;
@@ -429,7 +435,7 @@
     cursor: $hx-cursor-disabled;
 
     &~ .#{$namespace}-label {
-      top: -.5rem;
+      top: $hx-font-form-label-focus-top;
       font-size: .75rem;
       color: $hx-input-disabled;
       cursor: $hx-cursor-disabled;
@@ -451,11 +457,11 @@
   &:focus ~ .#{$namespace}-label,
   &:valid ~ .#{$namespace}-label,
   &:-webkit-autofill  ~ .#{$namespace}-label{
-    top: -1.3rem;
+    top: -1.15rem;
   }
 
   ~ .#{$namespace}-label {
-    top: -1.3rem;
+    top: -1rem;
     font-size: .75rem;
     sup {
       font-size: .4rem;
@@ -471,8 +477,8 @@
   width: 100%;
   padding: .8rem 0 .6rem;
   background-color: transparent;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: $hx-font-form-elements-size;
+  font-weight: $hx-font-form-elements-weight;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 0;
   border-width: 0 0 1px 0;
@@ -495,7 +501,7 @@
     cursor: $hx-cursor-disabled;
 
     &~ .#{$namespace}-label {
-      top: -.5rem;
+      top: $hx-font-form-label-focus-top;
       left: 0;
       font-size: .75rem;
       color: $hx-input-disabled;
@@ -509,7 +515,7 @@
 
   & + .#{$namespace}-label {
     position: absolute;
-    top: -.55rem;
+    top: $hx-font-form-label-focus-top;
     left: 0;
     font-size: .75rem;
     z-index: 0;
@@ -599,7 +605,7 @@
 
     .#{$namespace}-radio:not(:checked)+.#{$namespace}-label,
     .#{$namespace}-radio:checked+.#{$namespace}-label {
-      padding-left: (35px * $small);
+      padding-left: (32px * $small);
     }
 
     .#{$namespace}-radio+.#{$namespace}-label:before,
@@ -624,12 +630,13 @@
 .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
 .#{$namespace}-radio:checked + .#{$namespace}-label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 32px;
   cursor: pointer;
   display: inline-block;
   height: 25px;
   line-height: 25px;
-  font-size: 1rem;
+  font-size: $hx-font-form-elements-size;
+  font-weight: $hx-font-form-elements-weight;
   transition: .28s ease;
 
   -khtml-user-select: none; /* webkit (konqueror) browsers */
@@ -642,7 +649,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin: 4px;
+  margin: 4px 4px 4px 0;
   width: 18px;
   height: 18px;
   z-index: 0;
@@ -680,7 +687,7 @@
 }
 
 .#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  transform: scale(1.02);
+  transform: scale(.5);
 }
 
 // /* Radio With gap */
@@ -727,7 +734,7 @@
 
 // Checkbox container
 .#{$namespace}-checkbox-control {
-  margin: .8rem 0;
+  margin: .4rem 0;
 }
 
 /* Remove default checkbox */
@@ -743,12 +750,12 @@
   // Text Label Style
   + .#{$namespace}-label {
     position: relative;
-    padding-left: 35px;
+    padding-left: 32px;
     cursor: pointer;
     display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    font-size: 1rem;
+    height: 23px;
+    line-height: 23px;
+    font-size: $hx-font-form-elements-size;
 
     font-weight:normal;
     white-space: nowrap;
@@ -768,8 +775,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     z-index: 1;
     border: 2px solid $hx-color-gray-lighter;
     border-radius: 1px;
@@ -792,8 +799,8 @@
   + .#{$namespace}-label:before {
     top: 2px;
     left: 1px;
-    width: 8px;
-    height: 13px;
+    width: 7px;
+    height: 12px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
     border-right: 2px solid white;
@@ -807,8 +814,8 @@
 
   + .#{$namespace}-label:after {
     top: 0;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 2px solid $hx-color-primary;
     background-color: $hx-color-primary;
     z-index: 0;

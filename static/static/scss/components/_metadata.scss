@@ -16,9 +16,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1;
   }
 
   .#{$namespace}-value {
     padding: .2rem 0;
+    line-height: 1.15;
   }
 }

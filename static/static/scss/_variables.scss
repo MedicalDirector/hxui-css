@@ -174,6 +174,11 @@ $hx-font-weight-boldest: 600 !default;
 $hx-font-weight-base: $hx-font-weight-normal !default;
 $hx-line-height-base: 1.5 !default;
 
+// Font elements
+$hx-font-form-elements-size: .92rem;
+$hx-font-form-elements-weight: 400;
+$hx-font-form-label-focus-top: -.25rem;
+
 // Text colors
 $hx-text: $hx-color-gray-dark !default;
 $hx-text-invert: findColorInvert($hx-text) !default;
@@ -224,7 +229,7 @@ $hx-border-radius-lg:       .4rem !default;
 $hx-border-radius-sm:       .25rem !default;
 
 // Links
-$hx-link-color:            $hx-color-primary !default;
+$hx-link-color:            $hx-color-blue-light !default;
 $hx-link-decoration:       none !default;
 $hx-link-hover-color:      darken($hx-link-color, 15%) !default;
 $hx-link-hover-decoration: underline !default;
