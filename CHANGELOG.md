@@ -1,3 +1,11 @@
+## [1.2.19](https://www.npmjs.com/package/@hxui/css/v/1.2.19) (2019-05-24)
+
+
+### Features
+
+* **Toolbars:** Added .hx-divider to which renders a dividing vertial line to seperate actions in the toolbar ([4ee526b04c40de10bfe8dd25cb1fbfd4528b07e5](https://bitbucket.org/md-design/gethxui/commits/4ee526b04c40de10bfe8dd25cb1fbfd4528b07e5))
+* **Toolbars:** Added complex examples to documentation to demonstrate how the toolbar can be used with labels, buttons and more complex components like the filter group ([4ee526b04c40de10bfe8dd25cb1fbfd4528b07e5](https://bitbucket.org/md-design/gethxui/commits/4ee526b04c40de10bfe8dd25cb1fbfd4528b07e5))
+
 ## [1.2.18](https://www.npmjs.com/package/@hxui/css/v/1.2.18) (2019-05-21)
 
 
