@@ -9,7 +9,7 @@
     padding:$hx-spacer;
     background-color:transparent;
 
-    span{
+  > span{
       color: $hx-color-gray-lighter;
       font-weight: normal;
       text-transform: uppercase;
@@ -19,7 +19,7 @@
     // Contextual themes
     &.is-primary{
       background-color:$hx-color-primary;
-      span{
+      > span{
         color:rgba(255,255,255,0.8);
       }
       button,a{
@@ -28,7 +28,7 @@
 
       &.is-inverted{
         background-color:transparent;
-        span{
+        > span{
           color:rgba($hx-color-primary,0.8);
         }
         button,a{
@@ -39,7 +39,7 @@
 
     &.is-warning{
       background-color:$hx-color-warning;
-      span{
+      > span{
         color:rgba(255,255,255,0.8);
       }
       button,a{
@@ -48,7 +48,7 @@
 
       &.is-inverted{
         background-color:transparent;
-        span{
+        > span{
           color:rgba($hx-color-warning,0.8);
         }
         button,a{
@@ -59,7 +59,7 @@
 
     &.is-danger{
       background-color:$hx-color-danger;
-      span{
+      > span{
         color:rgba(255,255,255,0.8);
       }
       button,a{
@@ -67,7 +67,7 @@
       }
       &.is-inverted{
         background-color:transparent;
-        span{
+        > span{
           color:rgba($hx-color-danger,0.8);
         }
         button,a{
@@ -78,7 +78,7 @@
 
     &.is-info{
       background-color:$hx-color-info;
-      span{
+      > span{
         color:rgba(255,255,255,0.8);
       }
       button,a{
@@ -86,7 +86,7 @@
       }
       &.is-inverted{
         background-color:transparent;
-        span{
+        > span{
           color:rgba($hx-color-info,0.8);
         }
         button,a{
@@ -105,5 +105,11 @@
     & > span{
       padding-left:.5rem;
     }
+  }
+
+  .#{$namespace}-divider{
+    padding:.5rem 0;
+    border-left:1px solid darken($hx-border-color,1.5);
+    margin:0 1rem;
   }
 }

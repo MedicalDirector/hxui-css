@@ -149,7 +149,7 @@ export default {
               path: '/forms'
             },
             {
-              name: 'Lists & list group',
+              name: 'Lists & List Group',
               path: '/lists'
             },
             {
@@ -165,7 +165,7 @@ export default {
               path: '/pagination'
             },
             {
-              name: 'Progress timeline',
+              name: 'Progress Timeline',
               path: '/progress-timeline'
             },
             {
@@ -173,7 +173,7 @@ export default {
               path: '/sidebar'
             },
             {
-              name: 'Snackbars & toasts',
+              name: 'Snackbars & Toasts',
               path: '/snackbars-toasts'
             },
             {
@@ -201,7 +201,8 @@ export default {
         {
           title: 'Organisms',
           items: [
-            { name: 'Panel header', path: '/panel-header' }
+            { name: 'Panel Header', path: '/panel-header' },
+            { name: 'Actions Toolbar', path: '/actions-toolbar' }
           ]
         },
         {
@@ -211,9 +212,10 @@ export default {
           ]
         },
         {
-          title: 'Resources',
+          title: 'Other',
           items: [
-            { name: 'Downloads', path: '/downloads' }
+            { name: 'Downloads', path: '/downloads' },
+            { name: 'Change Log', link: 'https://bitbucket.org/md-design/gethxui/src/master/CHANGELOG.md' }
           ]
         }
       ]
