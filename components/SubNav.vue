@@ -201,8 +201,7 @@ export default {
         {
           title: 'Organisms',
           items: [
-            { name: 'Panel Header', path: '/panel-header' },
-            { name: 'Actions Toolbar', path: '/actions-toolbar' }
+            { name: 'Panel Header', path: '/panel-header' }
           ]
         },
         {

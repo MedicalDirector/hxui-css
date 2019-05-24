@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/actions-toolbar.vue" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/components/ExpandingNavItem.vue" afterPath="$PROJECT_DIR$/components/ExpandingNavItem.vue" />
       <change beforePath="$PROJECT_DIR$/components/SubNav.vue" afterPath="$PROJECT_DIR$/components/SubNav.vue" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbars.vue" afterPath="$PROJECT_DIR$/pages/toolbars.vue" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainNav.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/MainNav.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="9" column="242" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="242" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavContainer.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/NavContainer.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubNav.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SubNav.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/SubNav.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1007">
-              <caret line="151" column="35" lean-forward="false" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
+            <state relative-caret-position="205">
+              <caret line="203" column="59" lean-forward="false" selection-start-line="203" selection-start-column="59" selection-end-line="203" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -238,11 +251,11 @@
         <option value="$PROJECT_DIR$/static/static/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/pages/install.vue" />
         <option value="$PROJECT_DIR$/components/ExpandingNavItem.vue" />
-        <option value="$PROJECT_DIR$/components/SubNav.vue" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
         <option value="$PROJECT_DIR$/pages/actions-toolbar.vue" />
         <option value="$PROJECT_DIR$/pages/toolbars.vue" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/components/SubNav.vue" />
       </list>
     </option>
   </component>
@@ -517,12 +530,12 @@
       <workItem from="1543651026507" duration="4000" />
       <workItem from="1543904285151" duration="67000" />
       <workItem from="1543905255767" duration="56000" />
-      <workItem from="1558654240163" duration="4852000" />
+      <workItem from="1558654240163" duration="4925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266546000" />
+    <option name="totallyTimeSpent" value="266619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -882,22 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/NavContainer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/MainNav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="9" column="242" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="242" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/ExpandingNavItem.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -936,14 +933,6 @@
             <marker date="1558654313051" expanded="true" signature="11485:11692" ph="..." />
             <marker date="1558654313051" expanded="true" signature="11540:11667" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/SubNav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="151" column="35" lean-forward="false" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,6 +1021,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MainNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="9" column="242" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="242" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/NavContainer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SubNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="203" column="59" lean-forward="false" selection-start-line="203" selection-start-column="59" selection-end-line="203" selection-end-column="59" />
           <folding />
         </state>
       </provider>
