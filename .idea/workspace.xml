@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbars.vue" afterPath="$PROJECT_DIR$/pages/toolbars.vue" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" afterPath="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -140,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="156" lean-forward="false" selection-start-line="6" selection-start-column="156" selection-end-line="6" selection-end-column="156" />
+            <state relative-caret-position="115">
+              <caret line="5" column="217" lean-forward="false" selection-start-line="5" selection-start-column="217" selection-end-line="5" selection-end-column="217" />
               <folding />
             </state>
           </provider>
@@ -251,10 +249,10 @@
         <option value="$PROJECT_DIR$/components/ExpandingNavItem.vue" />
         <option value="$PROJECT_DIR$/pages/actions-toolbar.vue" />
         <option value="$PROJECT_DIR$/components/SubNav.vue" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/static/static/scss/components/_toolbar.scss" />
         <option value="$PROJECT_DIR$/pages/toolbars.vue" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -525,12 +523,12 @@
       <workItem from="1543904285151" duration="67000" />
       <workItem from="1543905255767" duration="56000" />
       <workItem from="1558654240163" duration="5535000" />
-      <workItem from="1558677470735" duration="300000" />
+      <workItem from="1558677470735" duration="487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267529000" />
+    <option name="totallyTimeSpent" value="267716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1011,18 +1009,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="156" lean-forward="false" selection-start-line="6" selection-start-column="156" selection-end-line="6" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="217" lean-forward="false" selection-start-line="5" selection-start-column="217" selection-end-line="5" selection-end-column="217" />
           <folding />
         </state>
       </provider>

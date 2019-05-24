@@ -1,3 +1,11 @@
+## [1.2.20](https://www.npmjs.com/package/@hxui/css/v/1.2.20) (2019-05-24)
+
+
+### Minor updates
+
+* **Toolbars:** Update to toolbar vertical divider style by making it more prominent ([f683e1c4a0584f41730b90395ad9f2a8d2bc53f5](https://bitbucket.org/md-design/gethxui/commits/f683e1c4a0584f41730b90395ad9f2a8d2bc53f5))
+
+
 ## [1.2.19](https://www.npmjs.com/package/@hxui/css/v/1.2.19) (2019-05-24)
 
 
