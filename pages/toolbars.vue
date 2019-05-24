@@ -174,21 +174,13 @@
             <span  class="hx-icon-control"><i class="hx-icon icon-caret-down"></i></span>
           </a>
         </div>
-        <div class="hx-dropdown mx-1 expandedFilter ng-star-inserted" id="status">
+        <div class="hx-dropdown ml-1 expandedFilter ng-star-inserted" id="status">
           <a class="hx-button hx-button-dropdown expandedFilter__button"  id="status-trigger">
             <span class="is-text-weight-light">Status:&nbsp;</span>
             <span class="is-text-weight-bolder is-text-ellipsed" title="New">New</span>
             <span class="hx-icon-control"><i class="hx-icon icon-caret-down"></i></span>
           </a>
         </div>
-        <!--<div class="hx-input-group ml-4 ng-star-inserted" id="searchFilter">-->
-          <!--<i class="hx-icon icon-search mt-1"></i>-->
-          <!--<div class="hx-input-control my-0">-->
-            <!--<input class="hx-input" type="search" placeholder="Search patient by name">-->
-            <!--<label class="hx-label"></label>-->
-            <!--<div class="hx-help"></div>-->
-          <!--</div>-->
-        <!--</div>-->
       </div>
       <div class="hx-divider"></div>
       <button class="hx-button is-outlined is-primary">
@@ -217,7 +209,7 @@
             <span  class="hx-icon-control"><i class="hx-icon icon-caret-down"></i></span>
           </a>
         </div>
-        <div class="hx-dropdown mx-1 expandedFilter ng-star-inserted" id="status">
+        <div class="hx-dropdown ml-1 expandedFilter ng-star-inserted" id="status">
           <a class="hx-button hx-button-dropdown expandedFilter__button"  id="status-trigger">
             <span class="is-text-weight-light">Status:&nbsp;</span>
             <span class="is-text-weight-bolder is-text-ellipsed" title="New">New</span>
