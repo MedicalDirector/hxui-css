@@ -41,7 +41,7 @@
 
           <a class="hx-button is-round is-small is-white"  @click="demoTrad = false">
             <span class="hx-icon-control">
-              <i class="icon icon-close-empty is-large"></i>
+              <i class="hx-icon icon-close-empty is-large"></i>
             </span>
           </a>
 
@@ -146,7 +146,7 @@ export default {
       <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
       <a class="hx-button is-round is-small is-white">
             <span class="hx-icon-control">
-              <i class="icon icon-close-empty is-large"></i>
+              <i class="hx-icon icon-close-empty is-large"></i>
             </span>
        </a>
     </header>
