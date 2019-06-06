@@ -1,3 +1,10 @@
+## [1.2.21](https://www.npmjs.com/package/@hxui/css/v/1.2.20) (2019-05-24)
+
+
+### Minor updates
+
+* **Modals:** Heading font size increased. Footer border removed. Modal documentation icon markup updated ([7276a98f3c94a31d0bcd547d0556e10e502cff8b](https://bitbucket.org/md-design/gethxui/commits/7276a98f3c94a31d0bcd547d0556e10e502cff8b))
+
 ## [1.2.20](https://www.npmjs.com/package/@hxui/css/v/1.2.20) (2019-05-24)
 
 
