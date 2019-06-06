@@ -28,6 +28,7 @@ export default {
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
           `
         },
@@ -41,6 +42,7 @@ export default {
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <br />
 <p>To turn the bullets into <strong>Unchecked</strong> circles, simply add <code>.is-not-checked</code> to the list item.</p>
@@ -49,6 +51,7 @@ export default {
   <li class="is-not-checked is-success">Item two - success</li>
   <li class="is-not-checked is-warning">Item three - warning</li>
   <li class="is-not-checked is-danger">Item four - danger</li>
+  <li class="is-not-checked is-info">Item five - info</li>
 </ul>
 <br />
 <p>To turn the bullets into <strong>Checked</strong> circles, simply add <code>.is-checked</code> to the list item.</p>
@@ -57,6 +60,7 @@ export default {
   <li class="is-checked is-success">Item two - success</li>
   <li class="is-checked is-warning">Item three - warning</li>
   <li class="is-checked is-danger">Item four - danger</li>
+  <li class="is-checked is-info">Item five - info</li>
 </ul>
 
 
@@ -89,6 +93,7 @@ export default {
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <br />
 
@@ -97,6 +102,7 @@ export default {
   <li class="is-not-checked is-success">Item two - success</li>
   <li class="is-not-checked is-warning">Item three - warning</li>
   <li class="is-not-checked is-danger">Item four - danger</li>
+  <li class="is-not-checked is-info">Item five - info</li>
 </ul>
 <br />
 
@@ -105,6 +111,7 @@ export default {
   <li class="is-checked is-success">Item two - success</li>
   <li class="is-checked is-warning">Item three - warning</li>
   <li class="is-checked is-danger">Item four - danger</li>
+  <li class="is-checked is-info">Item five - info</li>
 </ul>
 <p>&nbsp;</p>
 <h5>Bordered</h5>
@@ -117,6 +124,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <br />
 <ul class="hx-list is-bordered has-status is-horizontal is-inverse">
@@ -124,6 +132,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <br />
 
@@ -132,6 +141,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   <li class="is-not-checked is-success">Item two - success</li>
   <li class="is-not-checked is-warning">Item three - warning</li>
   <li class="is-not-checked is-danger">Item four - danger</li>
+  <li class="is-not-checked is-info">Item five - info</li>
 </ul>
 <br />
 
@@ -140,6 +150,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   <li class="is-checked is-success">Item two - success</li>
   <li class="is-checked is-warning">Item three - warning</li>
   <li class="is-checked is-danger">Item four - danger</li>
+  <li class="is-checked is-info">Item five - info</li>
 </ul>
           `
         },

@@ -9,10 +9,11 @@
     <div class="navs" :style="{ height: ht + 'px' }" >
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">
         <li class="hx-nav-item" v-for="item in items">
-          <router-link class="hx-nav-link" :to="{ path: item.path }" exact-active-class="is-active" exact
+          <router-link v-if="item.path" class="hx-nav-link" :to="{ path: item.path }" exact-active-class="is-active" exact
           @click.native="closeNav">
             {{ item.name }}
           </router-link>
+          <a class="hx-nav-link" v-if="item.link" :href="item.link" target="_blank"> {{ item.name }}</a>
         </li>
       </ul>
     </div>
