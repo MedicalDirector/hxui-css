@@ -3,7 +3,9 @@
 
 ### Minor updates
 
-* **Modals:** Heading font size increased. Footer border removed. Modal documentation icon markup updated ([7276a98f3c94a31d0bcd547d0556e10e502cff8b](https://bitbucket.org/md-design/gethxui/commits/7276a98f3c94a31d0bcd547d0556e10e502cff8b))
+* **Modals:** Heading font size increased. Footer border removed. Modal documentation example - icon markup corrected ([7276a98f3c94a31d0bcd547d0556e10e502cff8b](https://bitbucket.org/md-design/gethxui/commits/7276a98f3c94a31d0bcd547d0556e10e502cff8b))
+* **Forms:** Placeholder font colour is now the same as the label colour ([2e84e366b454623f902f288b6009160a9e70efb0](https://bitbucket.org/md-design/gethxui/commits/2e84e366b454623f902f288b6009160a9e70efb0))
+* **Icons:** Imaging / radiology icon updated([66dab4a9e60850756b312a5900501b0840f03deb](https://bitbucket.org/md-design/gethxui/commits/66dab4a9e60850756b312a5900501b0840f03deb))
 
 ## [1.2.20](https://www.npmjs.com/package/@hxui/css/v/1.2.20) (2019-05-24)
 
