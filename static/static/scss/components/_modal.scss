@@ -72,7 +72,7 @@
   color: $hx-headings-color;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: $hx-font-size-h5;
+  font-size: $hx-font-size-h3;
   line-height: 1;
   font-weight: 500;
   margin: 0;
@@ -81,7 +81,6 @@
 .#{$namespace}-modal-card-foot,
 .#{$namespace}-modal-footer{
   justify-content: flex-end;
-  border-top: 1px solid $hx-border-color;
   background-color: $hx-color-footer-bg;
   border-bottom-left-radius: $hx-border-radius;
   border-bottom-right-radius: $hx-border-radius;

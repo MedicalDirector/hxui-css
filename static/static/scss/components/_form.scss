@@ -232,6 +232,19 @@
       }
     }
 
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color:  $hx-color-gray-lighter;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $hx-color-gray-lighter;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $hx-color-gray-lighter;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $hx-color-gray-lighter;
+    }
+
   }
 
   .#{$namespace}-textarea {
@@ -259,6 +272,20 @@
         }
       }
     }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color:  $hx-color-gray-lighter;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $hx-color-gray-lighter;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $hx-color-gray-lighter;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $hx-color-gray-lighter;
+    }
+
   }
 
 }
