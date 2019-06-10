@@ -1,3 +1,11 @@
+## [1.2.23](https://www.npmjs.com/package/@hxui/css/v/1.2.23) (2019-06-11)
+
+
+### Bugfix
+
+* **Text:** Added ignore autoprefixer flag for box orient as box orient property was being removed by angular cli ([6da641eccf5c680aca706b615b3a4450fc311da9](https://bitbucket.org/md-design/gethxui/commits/6da641eccf5c680aca706b615b3a4450fc311da9))
+
+
 ## [1.2.22](https://www.npmjs.com/package/@hxui/css/v/1.2.22) (2019-06-10)
 
 
