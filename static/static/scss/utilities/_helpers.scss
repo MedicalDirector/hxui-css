@@ -64,53 +64,6 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
   @include overlay;
 }
 
-// Text
-
-.has-text-centered,
-.is-text-centered {
-  text-align: center;
-}
-
-.has-text-left,
-.is-text-left{
-  text-align: left;
-}
-
-.has-text-right ,
-.is-text-right {
-  text-align: right;
-}
-
-.is-unselectable,
-.is-text-unselectable{
-  @include no-copy;
-}
-
-.is-selectall,
-.is-text-select-all{
-  @include all-copy;
-}
-
-.is-elipsed,
-.is-text-elipsed,
-.is-text-ellipsed {
-  @include text-truncate();
-}
-
-table th,
-table td {
-  &.is-text-elipsed,
-  &.is-elipsed,
-  &.is-text-ellipsed{
-    position:relative;
-    min-width:0;
-  }
-}
-
-.is-text-multiline {
-  @include multiline;
-}
-
 .is-inline-block {
   display: inline-block !important;
 }

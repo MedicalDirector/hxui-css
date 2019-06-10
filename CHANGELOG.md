@@ -1,4 +1,11 @@
-## [1.2.21](https://www.npmjs.com/package/@hxui/css/v/1.2.20) (2019-05-24)
+## [1.2.22](https://www.npmjs.com/package/@hxui/css/v/1.2.22) (2019-06-10)
+
+
+### Feature
+
+* **Text:** Added multi-line line clamping (ellipsis), from 1 to 6 lines ([7276a98f3c94a31d0bcd547d0556e10e502cff8b](https://bitbucket.org/md-design/gethxui/commits/7276a98f3c94a31d0bcd547d0556e10e502cff8b))
+
+## [1.2.21](https://www.npmjs.com/package/@hxui/css/v/1.2.21) (2019-05-24)
 
 
 ### Minor updates

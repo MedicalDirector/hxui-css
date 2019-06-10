@@ -36,3 +36,63 @@
 .is-text-weight-bold  { font-weight: 400 !important; }
 .is-text-weight-bolder  { font-weight: 500 !important; }
 .is-text-weight-boldest  { font-weight: 600 !important; }
+
+
+// Text
+
+.has-text-centered,
+.is-text-centered {
+  text-align: center;
+}
+
+.has-text-left,
+.is-text-left{
+  text-align: left;
+}
+
+.has-text-right ,
+.is-text-right {
+  text-align: right;
+}
+
+.is-unselectable,
+.is-text-unselectable{
+  @include no-copy;
+}
+
+.is-selectall,
+.is-text-select-all{
+  @include all-copy;
+}
+
+.is-elipsed,
+.is-text-elipsed,
+.is-text-ellipsed,
+.is-text-ellipsis{
+  @include text-truncate();
+}
+
+table th,
+table td {
+  &.is-text-elipsed,
+  &.is-elipsed,
+  &.is-text-ellipsed,
+  &.is-text-ellipsis{
+    position:relative;
+    min-width:0;
+  }
+}
+
+.is-text-multiline {
+  @include multiline;
+}
+
+.is-text-line-clamp-1{
+  @include line-clamp(1);
+}
+
+@for $i from 1 through 6 {
+  .is-text-line-clamp-#{$i}{
+    @include line-clamp($i);
+  }
+}

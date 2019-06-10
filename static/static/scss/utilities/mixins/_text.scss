@@ -27,3 +27,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@mixin line-clamp($line) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}

@@ -77,12 +77,47 @@ export default {
       <td class="is-text-capitalise">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
      <tr>
-      <td><code>.is-text-ellipsed</code></td>
+      <td><code>.is-text-ellipsis</code></td>
       <td><div class="is-text-ellipsed elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
     </tr>
+  </tbody>
+</table>
+          `
+        },
+        {
+          title: 'Line Clamping',
+          code: `
+<table class="hx-table is-striped">
+  <thead>
     <tr>
-      <td><code>.is-text-multiline</code></td>
-      <td><div class="is-text-multiline elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-line-clamp-1</code></td>
+      <td><div class="is-text-line-clamp-1 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-line-clamp-2</code></td>
+      <td><div class="is-text-line-clamp-2 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-line-clamp-3</code></td>
+      <td><div class="is-text-line-clamp-3 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-line-clamp-4</code></td>
+      <td><div class="is-text-line-clamp-4 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-line-clamp-5</code></td>
+      <td><div class="is-text-line-clamp-5 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
+    </tr>
+    <tr>
+      <td><code>.is-text-line-clamp-6</code></td>
+      <td><div class="is-text-line-clamp-6 elipsedText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div></td>
     </tr>
   </tbody>
 </table>
