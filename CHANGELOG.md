@@ -3,7 +3,7 @@
 
 ### Feature
 
-* **Text:** Added multi-line line clamping (ellipsis), from 1 to 6 lines ([7276a98f3c94a31d0bcd547d0556e10e502cff8b](https://bitbucket.org/md-design/gethxui/commits/7276a98f3c94a31d0bcd547d0556e10e502cff8b))
+* **Text:** Added multi-line line clamping (ellipsis), from 1 to 6 lines ([491817e57cc7980e25449f38560a5294e549d64f](https://bitbucket.org/md-design/gethxui/commits/491817e57cc7980e25449f38560a5294e549d64f))
 
 ## [1.2.21](https://www.npmjs.com/package/@hxui/css/v/1.2.21) (2019-05-24)
 
