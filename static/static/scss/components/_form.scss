@@ -793,6 +793,10 @@
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
     -ms-user-select: none; /* IE10+ */
+
+    &.is-text-multiline {
+      @include multiline;
+    }
   }
 
   /* checkbox aspect */
@@ -875,6 +879,10 @@
       height: 20px;
       line-height: 20px;
       font-size: .9rem;
+
+      &.is-text-multiline {
+        @include multiline;
+      }
     }
 
     /* checkbox aspect */

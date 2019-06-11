@@ -164,43 +164,7 @@ export default {
 </div>
           `
         },
-        {
-          title: 'Select list',
-          code: `
-<p>Select allows user input through specified options. Make sure you wrap it in a <code>.hx-select-control</code> for proper alignment with other text fields. </p>
-<br />
-<div class="hx-input-control">
-  <div class="hx-select-control">
-    <select class="hx-select" id="state">
-      <option value="">Please select</option>
-      <option>New South Wales</option>
-      <option>Victoria</option>
-      <option>South Australia</option>
-      <option>Tasmania</option>
-      <option>Northern Territory</option>
-      <option>Western Australia</option>
-      <option>Queensland</option>
-    </select>
-    <label for="state" class="hx-label">Suburb <sup>*</sup></label>
-  </div>
-</div>
-<div class="hx-input-control">
-  <div class="hx-select-control">
-    <select class="hx-select" disabled>
-      <option>This is disabled</option>
-      <option>New South Wales</option>
-      <option>Victoria</option>
-      <option>South Australia</option>
-      <option>Tasmania</option>
-      <option>Northern Territory</option>
-      <option>Western Australia</option>
-      <option>Queensland</option>
-    </select>
-    <label for="" class="hx-label">This is disabled <sup>*</sup></label>
-  </div>
-</div>
-          `
-        },
+
         {
           title: 'Radio buttons',
           code: `
@@ -317,6 +281,10 @@ export default {
     <div class="hx-input-control">
       <strong>Notification Settings</strong>
       <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email2" checked />
+        <label for="email2" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
+      </div>
+      <div class="hx-checkbox-control">
         <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email" checked />
         <label for="email" class="hx-label">Email</label>
       </div>
@@ -339,6 +307,10 @@ export default {
       <strong>Small Variation</strong>
       <div class="hx-checkbox-control">
         <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email2" checked />
+        <label for="email2" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email2" checked />
         <label for="email2" class="hx-label">Email</label>
       </div>
       <div class="hx-checkbox-control">
@@ -355,6 +327,7 @@ export default {
       </div>
     </div>
   </div>
+
 </div>
           `
         },
