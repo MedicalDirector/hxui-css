@@ -85,8 +85,25 @@ export default {
           `
         },
         {
-          title: 'Line Clamping',
+          title: 'Line Clamping / Multi-line Ellipsis',
           code: `
+  <div class="hx-alert is-info is-inverse">
+    <span class="hx-icon-control mr-2">
+      <i class="hx-icon is-medium icon-information"></i>
+    </span>
+    <span class="hx-flex-1">
+          Line clamping is possible via the <strong>-webkit-box-orient: vertical;</strong> css property which is non-standard and is not on a standards track.<br>
+          Chrome does currently support it and when a replacement property is set, we will make the appropriate change accordingly.
+    </span>
+  </div>
+  <div class="hx-alert is-warning is-inverse">
+    <span class="hx-icon-control mr-2">
+      <i class="hx-icon is-medium icon-exclamation"></i>
+    </span>
+    <span class="hx-flex-1">
+          Line clamping will only work with plain text and not html formatted text.
+    </span>
+  </div>
 <table class="hx-table is-striped">
   <thead>
     <tr>
