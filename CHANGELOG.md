@@ -3,7 +3,7 @@
 
 ### Enhancement
 
-* **Checkboxes:** Added multi-line support via .is-text-multiline css class, on checkbox labels ([6da641eccf5c680aca706b615b3a4450fc311da9](https://bitbucket.org/md-design/gethxui/commits/6da641eccf5c680aca706b615b3a4450fc311da9))
+* **Checkboxes:** Added multi-line support via .is-text-multiline css class, on checkbox labels ([1d325d8a526e290f33602ed780a7e083b385d1a9](https://bitbucket.org/md-design/gethxui/commits/1d325d8a526e290f33602ed780a7e083b385d1a9))
 
 
 ## [1.2.23](https://www.npmjs.com/package/@hxui/css/v/1.2.23) (2019-06-11)
