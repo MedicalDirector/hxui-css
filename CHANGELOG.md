@@ -1,5 +1,11 @@
-## [1.2.24](https://www.npmjs.com/package/@hxui/css/v/1.2.24) (2019-06-11)
+## [1.2.25](https://www.npmjs.com/package/@hxui/css/v/1.2.25) (2019-06-18)
 
+### Updates
+
+* **Icons:** Add allergy, allergy-outline, medications-alerts, medications-alerts-outline icons ([d855ed45f9a6401c89cc8800b2a385ceb0fc7a44](https://bitbucket.org/md-design/gethxui/commits/d855ed45f9a6401c89cc8800b2a385ceb0fc7a44))
+
+
+## [1.2.24](https://www.npmjs.com/package/@hxui/css/v/1.2.24) (2019-06-11)
 
 ### Enhancement
 
