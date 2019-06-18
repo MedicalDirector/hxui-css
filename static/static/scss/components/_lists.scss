@@ -278,7 +278,10 @@
       &.is-active {
 				background-color: rgba(0,0,0,.02);
 				text-decoration: none;
-				color: $hx-color-primary;
+				color: $hx-color-primary !important;
+        * {
+          color: $hx-color-primary !important;
+        }
 			}
 
       &.is-gray {

@@ -1,3 +1,10 @@
+## [1.2.26](https://www.npmjs.com/package/@hxui/css/v/1.2.26) (2019-06-18)
+
+### Minor update
+
+* **List:** Make list hover colour important ([cbc6a03a73a977a45008cb7fbca94a3237c24756](https://bitbucket.org/md-design/gethxui/commits/cbc6a03a73a977a45008cb7fbca94a3237c24756))
+
+
 ## [1.2.25](https://www.npmjs.com/package/@hxui/css/v/1.2.25) (2019-06-18)
 
 ### Updates
