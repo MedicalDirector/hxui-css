@@ -307,7 +307,11 @@ export default {
         { name: 'file-certificate' },
         { name: 'file-certificate-outline' },
         { name: 'signature' },
-        { name: 'signature-outline' }
+        { name: 'signature-outline' },
+        { name: 'allergy' },
+        { name: 'allergy-outline' },
+        { name: 'medications-alerts' },
+        { name: 'medications-alerts-outline' }
       ]
     }
   },
