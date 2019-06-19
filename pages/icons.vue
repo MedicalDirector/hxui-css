@@ -38,9 +38,7 @@
 
       <p>Usage</p>
 
-      <pre v-highlightjs><code class="html">
-{{ code }}
-      </code></pre>
+      <pre v-highlightjs><code class="html">{{ code }}</code></pre>
 
       <p>The <code>icon</code> container will take up exactly <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at <strong>21px</strong>.</p>
     </section>
@@ -62,25 +60,25 @@
         </thead>
         <tbody>
           <tr>
-            <td><code>icon is-small</code></td>
+            <td><code>hx-icon is-small</code></td>
             <td class="has-text-centered"><i class="hx-icon icon-helix is-small"></i></td>
             <td>14px</td>
             <td>1rem x 1rem</td>
           </tr>
           <tr>
-            <td><code>icon</code></td>
+            <td><code>hx-icon</code></td>
             <td class="has-text-centered"><i class="hx-icon icon-helix"></i></td>
             <td>21px</td>
             <td>1.5rem x 1.5rem</td>
           </tr>
           <tr>
-            <td><code>icon is-medium</code></td>
+            <td><code>hx-icon is-medium</code></td>
             <td class="has-text-centered"><i class="hx-icon icon-helix is-medium"></i></td>
             <td>28px</td>
             <td>2rem x 2rem</td>
           </tr>
           <tr>
-            <td><code>icon is-large</code></td>
+            <td><code>hx-icon is-large</code></td>
             <td class="has-text-centered"><i class="hx-icon icon-helix is-large"></i></td>
             <td>42px</td>
             <td>3rem x 3rem</td>
