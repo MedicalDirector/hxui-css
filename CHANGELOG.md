@@ -1,3 +1,11 @@
+## [1.2.27](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-06-19)
+
+### Minor update
+
+* **List:** Make list hover colour important except for buttons ([145a57b820c8a7c2cfc2a4e4a9665263e876633c](https://bitbucket.org/md-design/gethxui/commits/145a57b820c8a7c2cfc2a4e4a9665263e876633c))
+* **Buttons:** Reduce multiline button line spacing ([145a57b820c8a7c2cfc2a4e4a9665263e876633c](https://bitbucket.org/md-design/gethxui/commits/145a57b820c8a7c2cfc2a4e4a9665263e876633c))
+* **Buttons:** Modify icon font size in small buttons. Update icon markup in documentation. ([f9f482aa813d96946743a20c06014832fdbc0b3c](https://bitbucket.org/md-design/gethxui/commits/f9f482aa813d96946743a20c06014832fdbc0b3c)
+
 ## [1.2.26](https://www.npmjs.com/package/@hxui/css/v/1.2.26) (2019-06-18)
 
 ### Minor update
