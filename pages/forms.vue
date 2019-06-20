@@ -352,6 +352,46 @@ export default {
 <div class="hx-help">Please enter your full name</div>
 </div>
           `
+        },
+        {
+          title: 'Multiple form elements on one line',
+          code: `
+          <div class="hx-columns">
+  <div class="hx-column is-1">
+    <div class="hx-input-group">
+      <div class="hx-input-control">
+        <input class="hx-input" maxlength="2">
+        <label class="hx-label"></label>
+        <div class="hx-help"></div>
+      </div>
+      <div class="hx-input-actions">
+        h
+      </div>
+    </div>
+  </div>
+  <div class="hx-column is-1">
+    <div class="hx-input-group">
+      <div class="hx-input-control">
+        <input class="hx-input" maxlength="3">
+        <label class="hx-label"></label>
+        <div class="hx-help"></div>
+      </div>
+      <div class="hx-input-actions">
+        m
+      </div>
+    </div>
+  </div>
+  <div class="hx-divider"></div>
+  <div class="hx-column is-9">
+    <div class="hx-input-control mt-2">
+      <div class="hx-checkbox-control my-0">
+        <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option-multiline">
+        <label for="option-multiline" class="hx-label">Option 1</label>
+      </div>
+    </div>
+  </div>
+</div>
+          `
         }
       ]
     }
