@@ -221,22 +221,6 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
     <div class="hx-card">
       <ul class="hx-list-group">
         <li class="">
-          <a>
-            <div>
-            Cras justo odio
-            </div>
-            <div>
-              <button class="hx-button is-small">
-                <span>Button text should not change colour</span>
-                <span class="hx-icon-control"><i class="hx-icon icon-angle-right"></i></span>
-              </button>
-            </div>
-            <div><h6>QTY</h6></div>
-            <div class="is-text-blue">blue text</div>
-            <div><div class="is-text-blue">blue text in child div</div></div>
-          </a>
-        </li>
-        <li class="">
           <a>Dapibus ac facilisis in</a>
         </li>
         <li class="">

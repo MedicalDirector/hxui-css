@@ -30,7 +30,7 @@ export default {
           ]
         },
         {
-          title: 'Page layouts',
+          title: 'Layouts',
           items: [
             {
               name: 'Containers',
@@ -43,6 +43,10 @@ export default {
             {
               name: 'Elevation',
               path: '/elevation'
+            },
+            {
+              name: 'Flexbox',
+              path: '/flexbox'
             },
             {
               name: 'Grid',
@@ -155,6 +159,10 @@ export default {
             {
               name: 'Modals',
               path: '/modals'
+            },
+            {
+              name: 'Meta Data',
+              path: '/meta-data'
             },
             {
               name: 'Nav',
