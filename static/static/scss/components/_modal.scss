@@ -144,3 +144,9 @@
   }
 
 }
+
+.#{$namespace}-modal.is-small {
+  .#{$namespace}-modal-card {
+    max-width: 30rem;
+  }
+}
