@@ -1,3 +1,10 @@
+## [1.2.29](https://www.npmjs.com/package/@hxui/css/v/1.2.29) (2019-07-11)
+
+### Minor update
+
+* **Modal:** Add .is-small modifier to modal ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+
 ## [1.2.28](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-06-20)
 
 ### Minor update
