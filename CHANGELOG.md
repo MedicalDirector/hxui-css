@@ -1,8 +1,15 @@
-## [1.3.0](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-07-21)
+## [1.3.0 - 1.3.1](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-07-21)
 
 ### Minor update
 
 * **Framework:** Add support for Sass-Dart which Angular 8 now uses ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+
+## [1.2.29](https://www.npmjs.com/package/@hxui/css/v/1.2.29) (2019-07-11)
+
+### Minor update
+
+* **Modal:** Add .is-small modifier to modal ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
 
 ## [1.2.28](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-06-20)
 
