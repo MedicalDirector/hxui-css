@@ -1,4 +1,10 @@
-## [1.3.0 - 1.3.1](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-07-21)
+## [1.3.2](https://www.npmjs.com/package/@hxui/css/v/1.3.2) (2019-07-24)
+
+### Minor update
+
+* **Forms:** Add validation styles for in-table inputs, textareas, checkboxes & radios groups ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+## [1.3.0 - 1.3.1](https://www.npmjs.com/package/@hxui/css/v/1.3.1) (2019-07-21)
 
 ### Minor update
 
