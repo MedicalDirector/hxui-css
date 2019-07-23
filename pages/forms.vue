@@ -253,6 +253,37 @@ export default {
       </div>
     </div>
   </div>
+   <div class="hx-column is-danger is-2">
+    <strong>Contextual</strong>
+    <div class="hx-input-control">
+      <div class="hx-radio-control is-inline is-small">
+        <input name="radioGroup5" type="radio" class="hx-radio" id="left" checked/>
+        <label for="left" class="hx-label">Left</label>
+      </div>
+      <div class="hx-radio-control is-inline is-small">
+        <input name="radioGroup5" type="radio" class="hx-radio" id="right"/>
+        <label for="right" class="hx-label">Right</label>
+      </div>
+    </div>
+    <div class="hx-input-control">
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="top" checked/>
+        <label for="top" class="hx-label">Top</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="left" disabled />
+        <label for="left" class="hx-label">Disabled</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="bottom"/>
+        <label for="bottom" class="hx-label">Bottom</label>
+      </div>
+      <div class="hx-radio-control is-small">
+        <input name="radioGroup6" type="radio" class="hx-radio" id="right" disabled />
+        <label for="right" class="hx-label">Disabled</label>
+      </div>
+    </div>
+  </div>
 </div>
           `
         },
@@ -315,6 +346,32 @@ export default {
       </div>
       <div class="hx-checkbox-control">
         <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack2"/>
+        <label for="slack2" class="hx-label">Slack</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat2" disabled/>
+        <label for="hipchat2" class="hx-label">Hipchat</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms2" disabled />
+        <label for="sms2" class="hx-label">SMS</label>
+      </div>
+    </div>
+  </div>
+
+   <div class="hx-column is-2">
+    <div class="hx-input-control is-danger is-small">
+      <strong>Contextual</strong>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="email22" />
+        <label for="email2" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="email22"  />
+        <label for="email2" class="hx-label">Email</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack22"/>
         <label for="slack2" class="hx-label">Slack</label>
       </div>
       <div class="hx-checkbox-control">
