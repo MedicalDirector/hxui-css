@@ -1,3 +1,9 @@
+## [1.3.3](https://www.npmjs.com/package/@hxui/css/v/1.3.3) (2019-07-27)
+
+### Minor update
+
+* **Panel:** Modified min-height value for Chrome 76 changes to flexbox. ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
 ## [1.3.2](https://www.npmjs.com/package/@hxui/css/v/1.3.2) (2019-07-24)
 
 ### Minor update

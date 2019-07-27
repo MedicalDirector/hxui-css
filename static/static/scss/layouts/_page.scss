@@ -18,6 +18,7 @@
     @extend .hx-flex;
     @extend .hx-flex-1;
     @extend .hx-flex-align-self-stretch;
+    min-height:0;
   }
 
   .block {
