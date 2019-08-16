@@ -1,7 +1,40 @@
 ## [1.3.4](https://www.npmjs.com/package/@hxui/css/v/1.3.4)(2019-08-16)
-### Updates
+### Minor update
 * **Text Input / Text Area:** Update disabled styles
 * **Panel:** Implement panel header shadow without z-index styles. Clean up markup in panel examples. Add margins to panel footer hx-buttons.
+
+## [1.3.3](https://www.npmjs.com/package/@hxui/css/v/1.3.3) (2019-07-27)
+
+### Minor update
+
+* **Panel:** Modified min-height value for Chrome 76 changes to flexbox. ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+## [1.3.2](https://www.npmjs.com/package/@hxui/css/v/1.3.2) (2019-07-24)
+
+### Minor update
+
+* **Forms:** Add validation styles for in-table inputs, textareas, checkboxes & radios groups ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+## [1.3.0 - 1.3.1](https://www.npmjs.com/package/@hxui/css/v/1.3.1) (2019-07-21)
+
+### Minor update
+
+* **Framework:** Add support for Sass-Dart which Angular 8 now uses ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+
+## [1.2.29](https://www.npmjs.com/package/@hxui/css/v/1.2.29) (2019-07-11)
+
+### Minor update
+
+* **Modal:** Add .is-small modifier to modal ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
+## [1.2.28](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-06-20)
+
+### Minor update
+
+* **Dividers:** Add vertical divider, add examples ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+* **Forms:** Add multiline form example ([fe2594a039319aa735aa776974a236edfaea600a](https://bitbucket.org/md-design/gethxui/commits/fe2594a039319aa735aa776974a236edfaea600a))
+
 
 ## [1.2.27](https://www.npmjs.com/package/@hxui/css/v/1.2.27) (2019-06-19)
 

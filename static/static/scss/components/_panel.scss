@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 100%;
   background-color: $hx-flex-accordion-bg-color;
+  min-height:0;
 
   .#{$namespace}-panel-header {
     flex: 0 0 auto;

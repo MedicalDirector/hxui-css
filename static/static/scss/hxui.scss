@@ -54,13 +54,14 @@ html {
   font-style: normal;
 }
 
+@function set-selector($is-wrap) {
+  @if ($is-wrap) {
+    @return '.#{$hxui-reset}';
+  } @else {
+    @return '*';
+  }
+}
 
-@if $framework-wrap {
-  .#{$hxui-reset} {
-    @import 'imports';
-  }
-} @else {
-  * {
-    @import 'imports';
-  }
+#{set-selector($framework-wrap)} {
+  @import 'imports';
 }

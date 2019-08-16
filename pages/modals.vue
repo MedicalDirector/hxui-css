@@ -8,6 +8,7 @@
     <div class="has-text-centered my-5 py-5">
       <button class="hx-button is-large" @click="demoSimple = true">Open simple modal</button>
       <button class="hx-button is-large" @click="demoTrad = true">Open classic card modal</button>
+      <button class="hx-button is-large" @click="demoTradSmall = true">Open classic small card modal</button>
     </div>
 
     <expanding-code-example v-for="(example, i) in examples" :key="i"
@@ -33,13 +34,13 @@
       <button class="hx-modal-close" @click="demoSimple = false"></button>
     </div>
 
-    <div class="hx-modal" :class="{ 'is-active': demoTrad }">
+    <div class="hx-modal" :class="{ 'is-active': demoTrad || demoTradSmall, 'is-small': demoTradSmall }">
       <div class="hx-modal-background"></div>
       <div class="hx-modal-card">
         <header class="hx-modal-card-head">
-          <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
+          <h1 class="hx-modal-card-title">HxUI Modal Title {{ demoTradSmall ? 'Small': '' }}</h1>
 
-          <a class="hx-button is-round is-small is-white"  @click="demoTrad = false">
+          <a class="hx-button is-round is-small is-white"  @click="demoTrad = false; demoTradSmall = false;">
             <span class="hx-icon-control">
               <i class="hx-icon icon-close-empty is-large"></i>
             </span>
@@ -50,8 +51,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
         </section>
         <footer class="hx-modal-card-foot">
-          <a class="hx-button" @click="demoTrad = false">Cancel</a>
-          <a class="hx-button is-primary" @click="demoTrad = false">Save changes</a>
+          <a class="hx-button" @click="demoTrad = false; demoTradSmall = false;">Cancel</a>
+          <a class="hx-button is-primary" @click="demoTrad = false; demoTradSmall = false;">Save changes</a>
         </footer>
       </div>
     </div>
@@ -67,6 +68,7 @@ export default {
     return {
       demoSimple: false,
       demoTrad: false,
+      demoTradSmall: false,
       examples: [
         {
           title: 'Simple modal dialog',
@@ -144,6 +146,26 @@ export default {
   <div class="hx-modal-card">
     <header class="hx-modal-card-head">
       <h1 class="hx-modal-card-title">HxUI Modal Title</h1>
+      <a class="hx-button is-round is-small is-white">
+            <span class="hx-icon-control">
+              <i class="hx-icon icon-close-empty is-large"></i>
+            </span>
+       </a>
+    </header>
+    <section class="hx-modal-card-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+    </section>
+    <footer class="hx-modal-card-foot">
+      <a class="hx-button">Cancel</a>
+      <a class="hx-button is-primary">Save changes</a>
+    </footer>
+  </div>
+</div>
+<br />
+<div class="hx-modal is-small is-active is-demo">
+  <div class="hx-modal-card">
+    <header class="hx-modal-card-head">
+      <h1 class="hx-modal-card-title">HxUI Modal Title Small</h1>
       <a class="hx-button is-round is-small is-white">
             <span class="hx-icon-control">
               <i class="hx-icon icon-close-empty is-large"></i>

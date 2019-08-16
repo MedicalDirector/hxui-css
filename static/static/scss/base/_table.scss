@@ -79,14 +79,6 @@
         transition: .3s;
         font-weight: $hx-font-weight-bolder;
       }
-
-      &.is-danger > input[type=text],
-      &.is-warning > input[type=text],
-      &.is-caution > input[type=text],
-      &.is-info > input[type=text],
-      &.is-success > input[type=text]{
-        background-color:#fff;
-      }
     }
   }
 
@@ -261,6 +253,39 @@
       > td {
         padding: 0.25em 0.5em;
       }
+
+      > td {
+        &.has-text-field {
+          padding: .25rem;
+          > textarea {
+            height: 26.38px;
+          }
+          > input[type="text"],
+            textarea {
+            padding: .2rem;
+            &.is-danger {
+              border-color: $hx-color-danger;
+              color: $hx-color-danger;
+            }
+            &.is-warning {
+              border-color: $hx-color-warning;
+              color: $hx-color-warning;
+            }
+            &.is-caution {
+              border-color: $hx-color-caution;
+              color: $hx-color-caution;
+            }
+            &.is-success {
+              border-color: $hx-color-success;
+              color: $hx-color-success;
+            }
+            &.is-info {
+              border-color: $hx-color-info;
+              color: $hx-color-info;
+            }
+          }
+        }
+      }
     }
     > thead > tr {
       > th {
@@ -359,7 +384,10 @@
     > td {
       &.has-text-field {
         padding: .25rem;
-        > input[type="text"] {
+        > textarea{
+          height:39.19px;
+        }
+        > input[type="text"], textarea {
           margin: 0;
           padding: .6rem;
           border-radius: .2rem;
@@ -417,6 +445,7 @@
   &.has-sticky-header {
     > thead > tr > th,
     > thead > tr > td{
+      position: -webkit-sticky;
       position: sticky;
       top: -1px;  // positional attribute is required for position to take affect.
       background-color: #fafafa;
