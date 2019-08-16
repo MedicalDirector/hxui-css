@@ -62,9 +62,19 @@ export default {
   <div class="hx-help">Danger!</div>
 </div>
 <div class="hx-input-control">
-  <input class="hx-input" type="text" disabled placeholder="I am disabled" required>
+  <input class="hx-input" type="text" disabled placeholder="I am disabled" required value="Hello there what are you doing">
   <label class="hx-label">This is Disabled</label>
   <div class="hx-help">Danger!</div>
+</div>
+<div class="hx-input-control">
+  <input class="hx-input" type="text" disabled required placeholder="Hello there what are you doing">
+  <label class="hx-label">This is Disabled, placeholder</label>
+  <div class="hx-help">Danger!</div>
+</div>
+<div class="hx-input-control">
+  <input class="hx-input" type="text" disabled  >
+  <label class="hx-label">This is Disabled,  no placeholder, no value</label>
+  <div class="hx-help"></div>
 </div>
 <div class="hx-input-group">
   <div class="hx-input-control">
@@ -161,6 +171,12 @@ export default {
   <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
   <div class="hx-help">Danger!</div>
+</div>
+
+<div class="hx-input-control">
+  <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients" disabled></textarea>
+  <label for="textarea-sample" class="hx-label">Ingredients disabled</label>
+  <div class="hx-help">Please enter the recipe ingredients</div>
 </div>
           `
         },
