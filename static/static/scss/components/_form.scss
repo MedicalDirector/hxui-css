@@ -455,6 +455,11 @@
     }
   }
 
+}
+
+
+.#{$namespace}-input {
+
   &[disabled],
   &.is-disabled {
     border-color: $hx-input-disabled-border;
@@ -474,7 +479,6 @@
   }
 }
 
-
 .#{$namespace}-textarea {
   // display: initial;
   padding: 0 0 .6rem 0;
@@ -492,6 +496,18 @@
     font-size: .75rem;
     sup {
       font-size: .4rem;
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    border-color: $hx-input-disabled-border;
+    color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
+
+    &~ .#{$namespace}-label {
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
     }
   }
 

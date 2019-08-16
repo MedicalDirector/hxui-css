@@ -1,3 +1,8 @@
+## [1.3.4](https://www.npmjs.com/package/@hxui/css/v/1.3.4)(2019-08-16)
+### Minor update
+* **Text Input / Text Area:** Update disabled styles
+* **Panel:** Implement panel header shadow without z-index styles. Clean up markup in panel examples. Add margins to panel footer hx-buttons.
+
 ## [1.3.3](https://www.npmjs.com/package/@hxui/css/v/1.3.3) (2019-07-27)
 
 ### Minor update
