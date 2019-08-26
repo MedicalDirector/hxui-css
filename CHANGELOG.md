@@ -1,3 +1,7 @@
+## [1.3.5](https://www.npmjs.com/package/@hxui/css/v/1.3.5)(2019-08-26)
+### Minor update
+* **Icons:** New table icon
+
 ## [1.3.4](https://www.npmjs.com/package/@hxui/css/v/1.3.4)(2019-08-16)
 ### Minor update
 * **Text Input / Text Area:** Update disabled styles

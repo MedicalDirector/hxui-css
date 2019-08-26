@@ -309,7 +309,9 @@ export default {
         { name: 'allergy' },
         { name: 'allergy-outline' },
         { name: 'medications-alerts' },
-        { name: 'medications-alerts-outline' }
+        { name: 'medications-alerts-outline' },
+        { name: 'table' },
+        { name: 'table-outline' }
       ]
     }
   },
