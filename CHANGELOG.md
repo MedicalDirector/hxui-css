@@ -1,3 +1,9 @@
+## [1.3.6](https://www.npmjs.com/package/@hxui/css/v/1.3.6)(2019-09-05)
+### Minor update
+* **Tooltip:** New is-white tooltip style
+* **Checkboxes:** Add indeterminate state styling. Lighten disabled label font colour
+* **Panel header:** Remove margin from h2
+
 ## [1.3.5](https://www.npmjs.com/package/@hxui/css/v/1.3.5)(2019-08-26)
 ### Minor update
 * **Icons:** New table icon

@@ -1,6 +1,6 @@
 <template>
   <div id="tooltips">
-    <h1 class="hx-title">Tooltips</h1>
+    <h1 class="hx-title">Tooltips </h1>
     <h2 class="hx-subtitle">This component is used to display extra information to a user about an element by displaying a floating description.</h2>
 
     <hr>
@@ -78,7 +78,30 @@ export default {
         {
           title: 'Contextual',
           code: `
-<p>Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code> to the tooltip.</p>
+<p>Add contextual class modifiers <code>is-white</code>, <code>is-danger</code>, <code>is-warning</code> or  <code>is-success</code> to change the colour of the tooltip.</p>
+<br />
+<div class="hx-example has-text-centered">
+  <div class="hx-tooltip is-top is-white is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the top
+    </div>
+  </div>
+  <div class="hx-tooltip is-right is-white is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the right
+    </div>
+  </div>
+  <div class="hx-tooltip is-bottom is-white is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the bottom
+    </div>
+  </div>
+  <div class="hx-tooltip is-left is-white is-active">
+    <div class="hx-tooltip-content">
+      Tooltip on the left
+    </div>
+  </div>
+</div>
 <br />
 <div class="hx-example has-text-centered">
   <div class="hx-tooltip is-top is-success is-active">
