@@ -307,8 +307,12 @@ export default {
           title: 'Checkboxes',
           code: `
 <p>Use checkboxes when looking for yes or no answers. The <code>for</code> attribute is necessary to bind our custom checkbox with the input. Add the input's <code>id</code> as the value of the <code>for</code> attribute of the label.</p>
+<p>Checkboxes are in an <code>indeterminate</code> state when the
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate" target="_blank">indeterminate property of a checkbox is set to true by JavaScript</a>.
+Alternatively, you can add/remove the <code>is-indeterminate</code> class.</p>
+
 <div class="hx-columns">
-  <div class="hx-column is-2 is-offset-3">
+  <div class="hx-column is-3">
     <div class="hx-input-control">
       <div class="hx-checkbox-control">
         <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option1" />
@@ -322,9 +326,13 @@ export default {
         <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option3" disabled />
         <label for="option3" class="hx-label">Option 3</label>
       </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroup1" type="checkbox" class="hx-checkbox is-indeterminate" id="option4"/>
+        <label for="option4" class="hx-label">Option 4 Indeterminate</label>
+      </div>
     </div>
   </div>
-  <div class="hx-column is-2">
+  <div class="hx-column is-3">
     <div class="hx-input-control">
       <strong>Notification Settings</strong>
       <div class="hx-checkbox-control">
@@ -349,54 +357,58 @@ export default {
       </div>
     </div>
   </div>
-  <div class="hx-column is-2">
+  <div class="hx-column is-3">
     <div class="hx-input-control is-small">
       <strong>Small Variation</strong>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email2" checked />
-        <label for="email2" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox" id="s1" checked />
+        <label for="s1" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="email2" checked />
-        <label for="email2" class="hx-label">Email</label>
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox" id="s2" checked />
+        <label for="s2" class="hx-label">Email</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack2"/>
-        <label for="slack2" class="hx-label">Slack</label>
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox " id="s3"/>
+        <label for="s3" class="hx-label">Slack</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat2" disabled/>
-        <label for="hipchat2" class="hx-label">Hipchat</label>
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox " id="s4" disabled/>
+        <label for="s4" class="hx-label">Hipchat</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms2" disabled />
-        <label for="sms2" class="hx-label">SMS</label>
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox" id="s5" disabled />
+        <label for="s5" class="hx-label">SMS</label>
+      </div>
+      <div class="hx-checkbox-control">
+        <input name="checkboxGroupSmall" type="checkbox" class="hx-checkbox is-indeterminate" id="small-indetermindate"/>
+        <label for="small-indetermindate" class="hx-label">Small indeterminate</label>
       </div>
     </div>
   </div>
 
-   <div class="hx-column is-2">
+   <div class="hx-column is-3">
     <div class="hx-input-control is-danger is-small">
       <strong>Contextual</strong>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="email22" />
-        <label for="email2" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
+        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="c1" />
+        <label for="c1" class="hx-label is-text-multiline">You can have a multi-line label by applying the <strong>.is-text-multiline</strong> class</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="email22"  />
-        <label for="email2" class="hx-label">Email</label>
+        <input name="checkboxGroup22" type="checkbox" class="hx-checkbox" id="c2"  />
+        <label for="c2" class="hx-label">Email</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="slack22"/>
-        <label for="slack2" class="hx-label">Slack</label>
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="c3"/>
+        <label for="c3" class="hx-label">Slack</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="hipchat2" disabled/>
-        <label for="hipchat2" class="hx-label">Hipchat</label>
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox " id="c4" disabled/>
+        <label for="c4" class="hx-label">Hipchat</label>
       </div>
       <div class="hx-checkbox-control">
-        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="sms2" disabled />
-        <label for="sms2" class="hx-label">SMS</label>
+        <input name="checkboxGroup2" type="checkbox" class="hx-checkbox" id="c5" disabled />
+        <label for="c5" class="hx-label">SMS</label>
       </div>
     </div>
   </div>
