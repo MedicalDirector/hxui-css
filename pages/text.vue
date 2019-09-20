@@ -159,6 +159,10 @@ export default {
       <td><code>.is-text-underline</code></td>
       <td class="is-text-underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
+    <tr>
+      <td><code>.is-text-dotted</code></td>
+      <td class="is-text-dotted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
   </tbody>
 </table>
           `
