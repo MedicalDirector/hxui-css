@@ -39,7 +39,7 @@
     }
     &.is-info {
       &:before {
-        border-color: $hx-color-info;
+        background-color: $hx-color-info;
       }
     }
   }
@@ -168,8 +168,8 @@
           font-family: 'hxui';
           font-size: 1.2rem;
           color: $hx-color-white;
-          line-height: .8;
-          text-indent: -.1em;
+          line-height: .88;
+          text-indent: -.09em;
         }
       }
     }
@@ -370,10 +370,21 @@
 }
 
 
-/// List group sizes
-.#{$namespace}-list-group.is-small {
+/// Narrow list
+.#{$namespace}-list-group.is-small,
+.#{$namespace}-list-group.is-narrow{
   li a {
     padding: .6rem .8rem;
     min-height: 2.25em;
+  }
+}
+
+// Extra narrow list
+.#{$namespace}-list-group.is-xnarrow {
+  li a {
+    padding: 0.1rem .8rem;
+    min-height: 1.75em;
+    font-size: 0.85rem;
+    line-height: 1;
   }
 }
