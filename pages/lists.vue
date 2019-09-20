@@ -76,6 +76,7 @@ export default {
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <p>&nbsp;</p>
 <h5>Invert</h5>
@@ -86,6 +87,7 @@ export default {
   <li class="is-success">Item two - success</li>
   <li class="is-warning">Item three - warning</li>
   <li class="is-danger">Item four - danger</li>
+  <li class="is-info">Item five - info</li>
 </ul>
 <br />
 <ul class="hx-list has-status is-horizontal is-inverse">
@@ -216,8 +218,9 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
           title: 'List group',
           code: `
 <p>The most basic list group is an unordered list with list items and the proper classes</p>
-<div class="hx-columns mt-5">
-  <div class="hx-column is-4 is-offset-4">
+<div class="hx-columns">
+  <div class="hx-column">
+    <h6>Normal list</h6>
     <div class="hx-card">
       <ul class="hx-list-group">
         <li class="">
@@ -235,7 +238,49 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
       </ul>
     </div>
   </div>
+
+  <div class="hx-column">
+    <h6>Narrow list</h6>
+    <div class="hx-card">
+      <ul class="hx-list-group is-narrow">
+        <li class="">
+          <a>Dapibus ac facilisis in</a>
+        </li>
+        <li class="">
+          <a>Morbi leo risus</a>
+        </li>
+        <li class="">
+          <a>Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque. </a>
+        </li>
+        <li class="">
+          <a>Vestibulum at eros</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hx-column">
+  <h6>Extra narrow list</h6>
+    <div class="hx-card">
+      <ul class="hx-list-group is-xnarrow">
+        <li class="">
+          <a>Dapibus ac facilisis in</a>
+        </li>
+        <li class="">
+          <a>Morbi leo risus</a>
+        </li>
+        <li class="">
+          <a>Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque. </a>
+        </li>
+        <li class="">
+          <a>Vestibulum at eros</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </div>
+
 <br />
 <p>Adding actions into the list</p>
 <div class="hx-columns mt-5">

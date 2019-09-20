@@ -1,3 +1,9 @@
+## [1.3.7](https://www.npmjs.com/package/@hxui/css/v/1.3.7)(2019-09-20)
+
+* **Lists:** is-info corrected to display blue bullets
+* **Lists:** is-narrow and is-xnarrow modifiers added to list
+* **Text:** is-text-dotted modifier added
+
 ## [1.3.6](https://www.npmjs.com/package/@hxui/css/v/1.3.6)(2019-09-05)
 ### Minor update
 * **Tooltip:** New is-white tooltip style
