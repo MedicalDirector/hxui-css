@@ -1,0 +1,105 @@
+[class^="icon-card"], [class*=" icon-card"] {
+   position: relative;
+}
+
+.icon-card-medicare:before {
+  content: "\e9c6";
+  color: #008542;
+}
+
+.icon-card-medicare:after {
+  position: absolute;
+  content: "\e9c7";
+  color: #fdc82f;
+}
+
+.icon-card-dva:before {
+  content: "\e9c6";
+  color: #aeadad;
+}
+
+.icon-card-dva:after {
+  position: absolute;
+  content: "\e9c8";
+  color: #e0e0e1;
+}
+
+.icon-card-dva-gold:before {
+  content: "\e9c6";
+  color: #ffcb00;
+}
+
+.icon-card-dva-gold:after {
+  position: absolute;
+  content: "\e9c8";
+  color: #414141;
+}
+
+
+.icon-card-dva-orange:before {
+  content: "\e9c6";
+  color: #ff7000;
+}
+
+.icon-card-dva-orange:after {
+  position: absolute;
+  content: "\e9c8";
+  color: #414141;
+}
+
+
+.icon-card-dva-white:before {
+  content: "\e9c6";
+  color: #ffffff;
+}
+
+.icon-card-dva-white:after {
+  position: absolute;
+  content: "\e9c9";
+  color: #414141;
+}
+
+
+.icon-card-cc:before {
+  content: "\e9c6";
+  color: #aeadad;
+}
+
+.icon-card-cc:after {
+  position: absolute;
+  content: "\e9ca";
+  color: #e0e0e1;
+}
+
+.icon-card-hcc:before {
+  content: "\e9c6";
+  color: #fce680;
+}
+
+.icon-card-hcc:after {
+  position: absolute;
+  content: "\e9cd";
+  color: #a93b72;
+}
+
+.icon-card-scc:before {
+  content: "\e9c6";
+  color: #eef2c1;
+}
+
+.icon-card-scc:after {
+  position: absolute;
+  content: "\e9cb";
+  color: #2c844a;
+}
+
+.icon-card-pcc:before {
+  content: "\e9c6";
+  color: #aac6e6;
+}
+
+.icon-card-pcc:after {
+  position: absolute;
+  content: "\e9cc";
+  color: #723485;
+}

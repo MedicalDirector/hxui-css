@@ -31,6 +31,17 @@
       </div>
     </section>
 
+    <section class="hx-section content is-small">
+      <h3>Legacy Icons</h3>
+      <div class="hx-columns is-mobile">
+        <div class="hx-column is-2 has-text-centered" v-for="icon in iconsLegacy">
+          <i class="hx-icon is-large" :class="'icon-' + icon.name"></i>
+          <p v-text="icon.name"></p>
+        </div>
+
+      </div>
+    </section>
+
     <hr>
 
     <section class="hx-section">
@@ -104,10 +115,6 @@ export default {
         { name: 'logout' },
         { name: 'navicon' },
         { name: 'language' },
-        { name: 'html-css' },
-        { name: 'angular' },
-        { name: 'react' },
-        { name: 'vue' },
         { name: 'batch' },
         { name: 'batch-outline' },
         { name: 'bell' },
@@ -279,17 +286,6 @@ export default {
         { name: 'clipboard-heart-outline' },
         { name: 'clipboard-bullets' },
         { name: 'clipboard-bullets-outline' },
-        { name: 'legacy-discharge' },
-        { name: 'legacy-pathology' },
-        { name: 'legacy-radiology' },
-        { name: 'legacy-letter-referral' },
-        { name: 'legacy-letter-other' },
-        { name: 'legacy-workers-compensation' },
-        { name: 'legacy-letter-writer' },
-        { name: 'legacy-letter-specialist' },
-        { name: 'legacy-mhr' },
-        { name: 'legacy-smd' },
-        { name: 'legacy-cdm' },
         { name: 'fullscreen' },
         { name: 'fullscreen-close' },
         { name: 'letter' },
@@ -311,7 +307,29 @@ export default {
         { name: 'medications-alerts' },
         { name: 'medications-alerts-outline' },
         { name: 'table' },
-        { name: 'table-outline' }
+        { name: 'table-outline' },
+        { name: 'card-medicare' },
+        { name: 'card-dva' },
+        { name: 'card-dva-gold' },
+        { name: 'card-dva-orange' },
+        { name: 'card-dva-white' },
+        { name: 'card-cc' },
+        { name: 'card-hcc' },
+        { name: 'card-scc' },
+        { name: 'card-pcc' }
+      ],
+      iconsLegacy: [
+        { name: 'legacy-discharge' },
+        { name: 'legacy-pathology' },
+        { name: 'legacy-radiology' },
+        { name: 'legacy-letter-referral' },
+        { name: 'legacy-letter-other' },
+        { name: 'legacy-workers-compensation' },
+        { name: 'legacy-letter-writer' },
+        { name: 'legacy-letter-specialist' },
+        { name: 'legacy-mhr' },
+        { name: 'legacy-smd' },
+        { name: 'legacy-cdm' }
       ]
     }
   },
