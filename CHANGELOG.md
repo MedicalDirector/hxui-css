@@ -1,20 +1,24 @@
-## [1.3.7](https://www.npmjs.com/package/@hxui/css/v/1.3.7)(2019-09-20)
+## [1.3.8](https://www.npmjs.com/package/@hxui/css/v/1.3.7) (2019-09-20)
+
+* **Icons:** Health card icons added (coloured icons). Icon page updated.
+
+## [1.3.7](https://www.npmjs.com/package/@hxui/css/v/1.3.7) (2019-09-20)
 
 * **Lists:** is-info corrected to display blue bullets
 * **Lists:** is-narrow and is-xnarrow modifiers added to list
 * **Text:** is-text-dotted modifier added
 
-## [1.3.6](https://www.npmjs.com/package/@hxui/css/v/1.3.6)(2019-09-05)
+## [1.3.6](https://www.npmjs.com/package/@hxui/css/v/1.3.6) (2019-09-05)
 ### Minor update
 * **Tooltip:** New is-white tooltip style
 * **Checkboxes:** Add indeterminate state styling. Lighten disabled label font colour
 * **Panel header:** Remove margin from h2
 
-## [1.3.5](https://www.npmjs.com/package/@hxui/css/v/1.3.5)(2019-08-26)
+## [1.3.5](https://www.npmjs.com/package/@hxui/css/v/1.3.5) (2019-08-26)
 ### Minor update
 * **Icons:** New table icon
 
-## [1.3.4](https://www.npmjs.com/package/@hxui/css/v/1.3.4)(2019-08-16)
+## [1.3.4](https://www.npmjs.com/package/@hxui/css/v/1.3.4) (2019-08-16)
 ### Minor update
 * **Text Input / Text Area:** Update disabled styles
 * **Panel:** Implement panel header shadow without z-index styles. Clean up markup in panel examples. Add margins to panel footer hx-buttons.
