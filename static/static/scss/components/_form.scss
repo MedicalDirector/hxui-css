@@ -202,6 +202,19 @@
     }
   }
 
+  &.is-help-visible {
+    input,
+    textarea {
+      & + .#{$namespace}-label {
+
+        & + .#{$namespace}-help {
+          position: relative;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   &.has-text-centered {
     .hx-label {
       left: 50%;
