@@ -57,9 +57,14 @@ export default {
   <div class="hx-help">Warning!</div>
 </div>
 <div class="hx-input-control is-danger">
-  <input class="hx-input" type="text" value="joe.chan@medicaldirector.c">
+  <input class="hx-input" type="text" value="joe.chan@medicaldirector.com">
   <label class="hx-label">Email <sup>*</sup></label>
   <div class="hx-help">Danger!</div>
+</div>
+<div class="hx-input-control is-help-visible">
+  <input class="hx-input" type="text" ">
+  <label class="hx-label">Quantity <sup>*</sup></label>
+  <div class="hx-help">Help text always visible</div>
 </div>
 <div class="hx-input-control">
   <input class="hx-input" type="text" disabled placeholder="I am disabled" required value="Hello there what are you doing">
@@ -171,6 +176,11 @@ export default {
   <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
   <div class="hx-help">Danger!</div>
+</div>
+<div class="hx-input-control is-help-visible">
+  <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
+  <label for="textarea-sample" class="hx-label">Textarea - help always visible</label>
+  <div class="hx-help">Help text always visible</div>
 </div>
 
 <div class="hx-input-control">
