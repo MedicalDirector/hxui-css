@@ -1,7 +1,13 @@
+## [1.3.10](https://www.npmjs.com/package/@hxui/css/v/1.3.9) (2019-10-15)
+
+* **Forms:** Change implementation of label css to use pointer-events rather than z-index
+
+
 ## [1.3.9](https://www.npmjs.com/package/@hxui/css/v/1.3.9) (2019-10-01)
 
 * **Forms:** Add is-help-visible  to input, textarea form elements
 modifier
+
 ## [1.3.8](https://www.npmjs.com/package/@hxui/css/v/1.3.8) (2019-09-20)
 
 * **Icons:** Health card icons added (coloured icons). Icon page updated.
