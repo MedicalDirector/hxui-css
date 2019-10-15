@@ -370,7 +370,6 @@
   border-width: 0 0 1px 0;
   background-color: $hx-input-background;
   position: relative;
-  z-index: 1;
 
   & + .#{$namespace}-label {
     position: absolute;
@@ -381,6 +380,7 @@
     left: 0;
     transition: .3s;
     z-index: 0;
+    pointer-events: none;
 
     sup {
       top: -.2rem;
