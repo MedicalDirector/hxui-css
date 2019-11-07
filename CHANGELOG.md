@@ -1,3 +1,7 @@
+## [1.3.11](https://www.npmjs.com/package/@hxui/css/v/1.3.11) (2019-11-08)
+
+* **Icon:** Added solid send icon to icon set
+
 ## [1.3.10](https://www.npmjs.com/package/@hxui/css/v/1.3.9) (2019-10-15)
 
 * **Forms:** Change implementation of label css to use pointer-events rather than z-index

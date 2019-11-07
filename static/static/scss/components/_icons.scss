@@ -13,6 +13,162 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-card-cc:before {
+  content: "\e9ca";
+}
+.icon-card-scc:before {
+  content: "\e9cb";
+}
+.icon-card-pcc:before {
+  content: "\e9cc";
+}
+.icon-card-hcc:before {
+  content: "\e9cd";
+}
+.icon-card-dva-outlined:before {
+  content: "\e9c9";
+}
+.icon-card-dva:before {
+  content: "\e9c8";
+}
+.icon-card-medicare-m:before {
+  content: "\e9c7";
+}
+.icon-card-blank:before {
+  content: "\e9c6";
+}
+.icon-table-outline:before {
+  content: "\e9c5";
+}
+.icon-table:before {
+  content: "\e9c4";
+}
+.icon-medications-alerts:before {
+  content: "\e9c3";
+}
+.icon-medications-alerts-outline:before {
+  content: "\e9c2";
+}
+.icon-allergy-outline:before {
+  content: "\e9c0";
+}
+.icon-allergy:before {
+  content: "\e9c1";
+}
+.icon-address-book:before {
+  content: "\e9bf";
+}
+.icon-signature-outline:before {
+  content: "\e9bd";
+}
+.icon-signature:before {
+  content: "\e9be";
+}
+.icon-file-certificate-outline:before {
+  content: "\e9bb";
+}
+.icon-file-certificate:before {
+  content: "\e9bc";
+}
+.icon-letter-outline:before {
+  content: "\e9ba";
+}
+.icon-letter:before {
+  content: "\e9b9";
+}
+.icon-buildings-outline:before {
+  content: "\e9b7";
+}
+.icon-buildings:before {
+  content: "\e9b8";
+}
+.icon-letter-signature:before {
+  content: "\e9b5";
+}
+.icon-letter-signature-outline:before {
+  content: "\e9b6";
+}
+.icon-letter-certificate:before {
+  content: "\e9b3";
+}
+.icon-letter-certificate-outline:before {
+  content: "\e9b4";
+}
+.icon-letter-tick:before {
+  content: "\e9b1";
+}
+.icon-letter-tick-outline:before {
+  content: "\e9b2";
+}
+.icon-plus-empty:before {
+  content: "\e9b0";
+}
+.icon-claim-dollar-circle:before {
+  content: "\e9af";
+}
+.icon-fullscreen-close:before {
+  content: "\e9a3";
+}
+.icon-fullscreen:before {
+  content: "\e9ae";
+}
+.icon-legacy-cdm:before {
+  content: "\e9aa";
+}
+.icon-legacy-smd:before {
+  content: "\e9ab";
+}
+.icon-legacy-mhr:before {
+  content: "\e9ac";
+}
+.icon-legacy-letter-other:before {
+  content: "\e9ad";
+}
+.icon-legacy-letter-writer:before {
+  content: "\e9ad";
+}
+.icon-legacy-workers-compensation:before {
+  content: "\e9a7";
+}
+.icon-legacy-letter-specialist:before {
+  content: "\e9a8";
+}
+.icon-legacy-letter-referral:before {
+  content: "\e9a9";
+}
+.icon-legacy-radiology:before {
+  content: "\e9a6";
+}
+.icon-legacy-pathology:before {
+  content: "\e9a5";
+}
+.icon-legacy-discharge:before {
+  content: "\e9a4";
+}
+.icon-clipboard-bullets-outline:before {
+  content: "\e99d";
+}
+.icon-clipboard-bullets:before {
+  content: "\e99e";
+}
+.icon-clipboard-heart-outline:before {
+  content: "\e99f";
+}
+.icon-clipboard-heart:before {
+  content: "\e9a0";
+}
+.icon-clipboard:before {
+  content: "\e9a1";
+}
+.icon-clipboard-outline:before {
+  content: "\e9a2";
+}
+.icon-clone-outline:before {
+  content: "\e999";
+}
+.icon-re-print:before {
+  content: "\e99a";
+}
 .icon-dropdown:before {
   content: "\e996";
 }
@@ -172,7 +328,13 @@
 .icon-exclamation-outline:before {
   content: "\e91d";
 }
+.icon-alert-outline:before {
+  content: "\e91d";
+}
 .icon-exclamation:before {
+  content: "\e91e";
+}
+.icon-alert:before {
   content: "\e91e";
 }
 .icon-file-outline:before {
@@ -291,9 +453,6 @@
 }
 .icon-pie:before {
   content: "\e93e";
-}
-.icon-plus-empty:before {
-  content: "\e9b0";
 }
 .icon-plus-outline:before {
   content: "\e940";
@@ -541,125 +700,11 @@
 .icon-lock:before {
   content: "\e901";
 }
-.icon-send:before {
+.icon-send-outline:before {
   content: "\e902";
 }
-.icon-clipboard:before {
-  content: "\e9a1";
-}
-.icon-clipboard-outline:before {
-  content: "\e9a2";
-}
-.icon-clipboard-heart:before {
-  content: "\e9a0";
-}
-.icon-clipboard-heart-outline:before {
-  content: "\e99f";
-}
-.icon-clipboard-bullets:before {
-  content: "\e99e";
-}
-.icon-clipboard-bullets-outline:before {
-  content: "\e99d";
+.icon-send:before {
+  content: "\e9ce";
 }
 
-.icon-legacy-discharge:before {
-  content: "\e9a4";
-}
-.icon-legacy-pathology:before {
-  content: "\e9a5";
-}
-.icon-legacy-radiology:before {
-  content: "\e9a6";
-}
-.icon-legacy-letter-referral:before {
-  content: "\e9a9";
-}
-.icon-legacy-letter-specialist:before {
-  content: "\e9a8";
-}
-.icon-legacy-workers-compensation:before {
-  content: "\e9a7";
-}
-.icon-legacy-letter-other:before {
-  content: "\e9ad";
-}
-.icon-legacy-letter-writer:before {
-  content: "\e9ad";
-}
-.icon-legacy-mhr:before {
-  content: "\e9ac";
-}
-.icon-legacy-smd:before {
-  content: "\e9ab";
-}
-.icon-legacy-cdm:before {
-  content: "\e9aa";
-}
-.icon-fullscreen:before {
-  content: "\e9ae";
-}
-.icon-fullscreen-close:before {
-  content: "\e9a3";
-}
-.icon-letter:before {
-  content: "\e9b9";
-}
-.icon-letter-outline:before {
-  content: "\e9ba";
-}
-.icon-letter-tick:before {
-  content: "\e9b1";
-}
-.icon-letter-tick-outline:before {
-  content: "\e9b2";
-}
-.icon-letter-certificate:before {
-  content: "\e9b3";
-}
-.icon-letter-certificate-outline:before {
-  content: "\e9b4";
-}
-.icon-letter-signature:before {
-  content: "\e9b5";
-}
-.icon-letter-signature-outline:before {
-  content: "\e9b6";
-}
-.icon-buildings:before {
-  content: "\e9b8";
-}
-.icon-buildings-outline:before {
-  content: "\e9b7";
-}
-.icon-file-certificate:before {
-  content: "\e9bc";
-}
-.icon-file-certificate-outline:before {
-  content: "\e9bb";
-}
-.icon-signature:before {
-  content: "\e9be";
-}
-.icon-signature-outline:before {
-  content: "\e9bd";
-}
-.icon-allergy:before {
-  content: "\e9c1";
-}
-.icon-allergy-outline:before {
-  content: "\e9c0";
-}
-.icon-medications-alerts-outline:before {
-  content: "\e9c2";
-}
-.icon-medications-alerts:before {
-  content: "\e9c3";
-}
-.icon-table-outline:before {
-  content: "\e9c5";
-}
-.icon-table:before {
-  content: "\e9c4";
-}
 
