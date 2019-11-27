@@ -1,3 +1,8 @@
+
+## [1.3.12](https://www.npmjs.com/package/@hxui/css/v/1.3.12) (2019-11-27)
+
+* **Table:** Cleaned up table styles and forced action icons to render as hx-color-gray
+
 ## [1.3.11](https://www.npmjs.com/package/@hxui/css/v/1.3.11) (2019-11-08)
 
 * **Icon:** Added solid send icon to icon set

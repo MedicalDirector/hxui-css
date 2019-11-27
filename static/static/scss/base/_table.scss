@@ -4,6 +4,7 @@
   color: $hx-table;
   margin-bottom: 1.5rem;
   width: 100%;
+  border-collapse: collapse;
 
   > tbody > tr > td.is-text-ellipsed,
   > thead > tr > th.is-text-ellipsed,
@@ -15,7 +16,7 @@
   > thead {
     > tr > th {
       vertical-align: bottom;
-      border: 1px solid $hx-color-gray-lighter;
+      border: 1px solid $hx-color-gray-light;
       border-width: 0 0 1px;
       color: $hx-table-head;
 
@@ -182,6 +183,12 @@
   > tbody > tr > td,
   > tbody > tr > th {
     border-color: $hx-table-border;
+  }
+
+  > tbody > tr > td {
+    button.hx-button .hx-icon{
+      color: $hx-color-black;
+    }
   }
 
   > thead > tr > th {
