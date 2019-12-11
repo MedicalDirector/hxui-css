@@ -1,3 +1,6 @@
+## [1.3.13](https://www.npmjs.com/package/@hxui/css/v/1.3.13) (2019-12-12)
+
+* **Inspector:** Added experimental inspector component
 
 ## [1.3.12](https://www.npmjs.com/package/@hxui/css/v/1.3.12) (2019-11-27)
 

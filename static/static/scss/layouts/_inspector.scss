@@ -1,0 +1,63 @@
+.#{$namespace}-inspector {
+  height: 100vh;
+  background:#fff;
+  width:100%;
+  transition: .3s ease-in-out;
+
+  @include mobile {
+
+    width: 340px;
+
+    &.is-medium,
+    &.is-large {
+      width: 340px;
+    }
+  }
+
+  @include tablet {
+
+    width: 340px;
+
+    &.is-medium,
+    &.is-large{
+      width: 592px;
+    }
+  }
+
+  @include desktop {
+
+    width: 340px;
+
+    &.is-medium,
+    &.is-large{
+      width: 644px;
+    }
+  }
+
+  @include  widescreen {
+
+    width: 340px;
+
+    &.is-medium {
+      width: 644px;
+    }
+
+    &.is-large{
+      width: 95%;
+    }
+  }
+
+  @include  fullhd {
+
+    width: 340px;
+
+    &.is-medium {
+      width: 644px;
+    }
+
+    &.is-large{
+      width: 95%;
+    }
+
+  }
+}

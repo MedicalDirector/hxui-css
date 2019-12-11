@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/static/scss/layouts/_inspector.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tables.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/base/_table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/base/_table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/_imports.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/_imports.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,47 +19,6 @@
     <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>$color-green-light</find>
-      <find>gethxui.com</find>
-      <find>bolder</find>
-      <find>$hx-color-gray-lighter</find>
-      <find>font</find>
-      <find>is-selected</find>
-      <find>button-group</find>
-      <find>section</find>
-      <find>is-foc</find>
-      <find>button-shadow</find>
-      <find>input-group</find>
-      <find>person</find>
-      <find>doctor</find>
-      <find>icon</find>
-      <find>is-left</find>
-      <find>$hx-color-warning</find>
-      <find>$hx-color-success-invert</find>
-      <find>res</find>
-      <find>space</find>
-      <find>footer</find>
-      <find>hx-label</find>
-      <find>-label</find>
-      <find>-checkbox</find>
-      <find>is-small</find>
-      <find>input</find>
-      <find>is-narrow</find>
-      <find>input[type=&quot;text&quot;]</find>
-      <find>checkbox</find>
-      <find>has-stick</find>
-      <find>hxa-dropdown-control</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>:-webkit-autofill</replace>
-      <replace>icon-edit</replace>
-      <replace>icon</replace>
-      <replace>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -70,10 +29,6 @@
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="2880" />
-    <option name="height" value="1800" />
   </component>
   <component name="ProjectId" id="1UAxI3NdpuskyhaAbtzkgHrU2rD" />
   <component name="ProjectViewState">
@@ -91,6 +46,9 @@
     <property name="nodejs_interpreter_path" value="node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Repos\gethxui\static\static\scss\layouts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="C:\gitRepo\gethxui\pages" />
@@ -248,7 +206,10 @@
       <workItem from="1566120459815" duration="107000" />
       <workItem from="1569888996845" duration="44000" />
       <workItem from="1573169462957" duration="1374000" />
-      <workItem from="1574813120225" duration="2831000" />
+      <workItem from="1574813120225" duration="3286000" />
+      <workItem from="1575956017206" duration="343000" />
+      <workItem from="1576037396536" duration="5200000" />
+      <workItem from="1576044185863" duration="1742000" />
     </task>
     <servers />
   </component>
@@ -267,5 +228,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="398" y="152" width="643" height="554" key="find.popup" timestamp="1575956340547">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="398" y="152" width="643" height="554" key="find.popup/0.0.1440.860/-489.-2160.2560.1400@0.0.1440.860" timestamp="1575956340547" />
   </component>
 </project>
