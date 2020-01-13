@@ -2,8 +2,8 @@
 //
 .#{$namespace}-avatar {
   display: inline-block;
-  min-height: 38px;
-  min-width: 38px;
+  min-height: 30px;
+  min-width: 30px;
   background-size: cover;
   background-color: $hx-color-gray-lightest;
   text-align: center;
@@ -19,11 +19,11 @@
   &.is-small {
     width: 30px;
     height: 30px;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 1.2rem;
 
     &.has-icon {
-      line-height: 42px;
+      line-height: 34px;
       .hx-icon {
         font-size: 1.25rem;
       }

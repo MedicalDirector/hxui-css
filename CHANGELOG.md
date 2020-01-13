@@ -1,3 +1,7 @@
+## [1.3.15](https://www.npmjs.com/package/@hxui/css/v/1.3.15) (2020-01-13)
+
+* **Avatar:** Fixed is-small modifier
+
 ## [1.3.13](https://www.npmjs.com/package/@hxui/css/v/1.3.13) (2019-12-12)
 
 * **Inspector:** Added experimental inspector component

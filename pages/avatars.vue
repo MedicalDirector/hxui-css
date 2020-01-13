@@ -77,9 +77,9 @@ export default {
   <div class="hx-example is-flex hx-flex-justify-center">
     <div class="hx-avatar mx-1 is-small" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
     <div class="hx-avatar mx-1 is-small" style="background-image: url(static/assets/images/0223.jpg)"></div>
-    <div class="hx-avatar mx-1 is-small" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+    <div class="hx-avatar mx-1 is-small is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
     <div class="hx-avatar mx-1 is-small hx-bg-white">JP</div>
-    <div class="hx-avatar mx-1 is-small hx-bg-light">CB</div>
+    <div class="hx-avatar mx-1 is-small is-tile hx-bg-light">CB</div>
     <div class="hx-avatar mx-1 is-small hx-bg-black">J</div>
     <div class="hx-avatar mx-1 is-small hx-bg-danger has-icon">
       <i class="hx-icon icon-pulse"></i>
@@ -87,7 +87,7 @@ export default {
     <div class="hx-avatar mx-1 is-small hx-bg-warning has-icon">
       <i class="hx-icon icon-wine"></i>
     </div>
-    <div class="hx-avatar mx-1 is-small hx-bg-success has-icon">
+    <div class="hx-avatar mx-1 is-small is-tile hx-bg-success has-icon">
       <i class="hx-icon icon-medications"></i>
     </div>
     <div class="hx-avatar mx-1 is-small hx-bg-info has-icon">

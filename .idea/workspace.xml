@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/static/scss/layouts/_inspector.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/avatars.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/avatars.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/static/scss/_imports.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/_imports.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_avatars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/components/_avatars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/hxui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/hxui.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +212,13 @@
       <workItem from="1575956017206" duration="343000" />
       <workItem from="1576037396536" duration="5200000" />
       <workItem from="1576044185863" duration="1742000" />
+      <workItem from="1576099391878" duration="457000" />
+      <workItem from="1576101771205" duration="3202000" />
+      <workItem from="1576110632983" duration="172000" />
+      <workItem from="1576122710389" duration="862000" />
+      <workItem from="1576185288697" duration="598000" />
+      <workItem from="1578892332155" duration="312000" />
+      <workItem from="1578899764857" duration="689000" />
     </task>
     <servers />
   </component>
@@ -234,5 +243,9 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="398" y="152" width="643" height="554" key="find.popup/0.0.1440.860/-489.-2160.2560.1400@0.0.1440.860" timestamp="1575956340547" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1578900136131">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1578900136131" />
   </component>
 </project>
