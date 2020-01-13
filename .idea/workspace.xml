@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/components/_modal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +222,9 @@
       <workItem from="1578909863442" duration="31000" />
       <workItem from="1578909916574" duration="11000" />
       <workItem from="1578909941829" duration="9000" />
-      <workItem from="1578910618771" duration="15000" />
+      <workItem from="1578910618771" duration="37000" />
+      <workItem from="1578910807238" duration="135000" />
+      <workItem from="1578953282951" duration="326000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,7 @@
+## [1.3.17](https://www.npmjs.com/package/@hxui/css/v/1.3.17) (2020-01-14)
+
+* **Modal:** Changed default font size
+
 ## [1.3.15-1.3.16](https://www.npmjs.com/package/@hxui/css/v/1.3.15) (2020-01-13)
 
 * **Avatar:** Fixed is-small modifier
