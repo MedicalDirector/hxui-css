@@ -993,7 +993,7 @@ export default {
 
             <div class="tableContainer">
               <div class="tableContainer__scrollable">
-                <table class="hx-table is-hover is-sticky-left is-sticky-right">
+                <table class="hx-table is-hover is-sticky-left is-sticky-right is-light">
               <thead>
                 <tr>
                   <th width="1"><div class="hx-checkbox-control">
