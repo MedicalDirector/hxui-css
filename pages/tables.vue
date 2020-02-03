@@ -969,6 +969,218 @@ export default {
               </tbody>
             </table>
           `
+        },
+        {
+          title: 'Sticky table columns',
+          code: `
+            <p>Add <code>class="is-sticky-left"</code> or <code>class="is-sticky-right"</code> modifier to table.<br>
+            You will need to make sure that the scrollable areas parent container has <code>position: relative</code> set.<p>
+
+            <p>In addition add a theme modifier, as the sticky columns have transparent backgrounds.<br>
+             Choose either <code>is-light</code> for white backgrounds or <code>is-dark</code> for grey backgrounds.</p>
+
+            <div class="hx-toolbar is-xsmall py-4 is-perforated">
+              <button class="hx-button is-outlined mr-1">
+                <div class="hx-icon-control"><i class="hx-icon icon-send"></i></div>
+                <div>Resubmit</div>
+              </button>
+              <button class="hx-button is-outlined">
+                <div class="hx-icon-control"><i class="hx-icon icon-printer-outline"></i></div>
+                <div>Print</div>
+              </button>
+              <div class="hx-spacer"></div>
+            </div>
+
+            <div class="tableContainer">
+              <div class="tableContainer__scrollable">
+                <table class="hx-table is-hover is-sticky-left is-sticky-right">
+              <thead>
+                <tr>
+                  <th width="1"><div class="hx-checkbox-control">
+                      <input id="checkbox-all" name="all-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-all" class="hx-label">ID</label>
+                    </div></th>
+                  <th>User Code</th>
+                  <th>Firstname</th>
+                  <th>Surname</th>
+                  <th class="actions is-text-center">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr class="is-danger">
+                  <td>
+                  <div class="hx-checkbox-control">
+                      <input id="checkbox-19" name="19-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-19" class="hx-label">19</label>
+                  </div>
+                  </td>
+                  <td>TS001</td>
+                  <td>Tupac</td>
+                  <td>Shakur</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr  class="is-caution">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-20" name="20-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-20" class="hx-label">20</label>
+                    </div></td>
+                  <td>BP001</td>
+                  <td>Brian</td>
+                  <td>Pulliese</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="is-warning">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-21" name="21-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-21" class="hx-label">21</label>
+                    </div></td>
+                  <td>JS001</td>
+                  <td>John</td>
+                  <td>Smith</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="is-success">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-1" name="1-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-1" class="hx-label">1</label>
+                    </div></td>
+                  <td>BR001</td>
+                  <td>Branda</td>
+                  <td>Reed</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="is-info">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-2" name="2-checkbox" type="checkbox" class="hx-checkbox" checked title="Select All" />
+                      <label for="checkbox-2" class="hx-label">2</label>
+                    </div></td>
+                  <td>MR001</td>
+                  <td>Mercedes</td>
+                  <td>Mendez</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-3" name="3-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-3" class="hx-label">3</label>
+                    </div></td>
+                  <td>HS001</td>
+                  <td>Harry</td>
+                  <td>Sechi</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="has-stripe-danger">
+                  <td ><div class="hx-checkbox-control">
+                      <input id="checkbox-4" name="4-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-4" class="hx-label">4</label>
+                    </div></td>
+                  <td>CY001</td>
+                  <td>Chris</td>
+                  <td>Yap</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="has-stripe-caution">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-5" name="5-checkbox" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-5" class="hx-label">5</label>
+                    </div></td>
+                  <td>KL001</td>
+                  <td>Kevin</td>
+                  <td>Liang</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="has-stripe-warning">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-6" name="checkbox-6" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-6" class="hx-label">6</label>
+                    </div></td>
+                  <td>BS001</td>
+                  <td>Biggie</td>
+                  <td>Smalls</td>
+                  <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="has-stripe-success">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-7" name="checkbox-7" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-7" class="hx-label">7</label>
+                    </div></td>
+                  <td>JS001</td>
+                  <td>Julia</td>
+                  <td>Sampson</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                <tr class="has-stripe-info">
+                  <td><div class="hx-checkbox-control">
+                      <input id="checkbox-8" name="checkbox-8" type="checkbox" class="hx-checkbox" title="Select All" />
+                      <label for="checkbox-8" class="hx-label">8</label>
+                    </div></td>
+                  <td>GP001</td>
+                  <td>John</td>
+                  <td>Pipps</td>
+                   <td>
+                  <div class="hx-flex">
+                    <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
+                    <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+                  </div>
+                  </td>
+                </tr>
+                </tbody>
+
+            </table>
+              </div>
+            </div>
+          `
         }
       ]
     }
@@ -982,5 +1194,13 @@ export default {
 <style lang="scss">
   .actions{
     width:5%;
+  }
+
+  .tableContainer{
+    position:relative;
+  }
+
+  .tableContainer__scrollable{
+    overflow-x: scroll; overflow-y: visible; padding-bottom: 5px; width: 100%;
   }
 </style>

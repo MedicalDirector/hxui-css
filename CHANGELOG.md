@@ -1,3 +1,7 @@
+## [1.3.19](https://www.npmjs.com/package/@hxui/css/v/1.3.19) (2020-02-03)
+
+* **Tables:** Added sticky column support with additional dark/light theme
+
 ## [1.3.17](https://www.npmjs.com/package/@hxui/css/v/1.3.17) (2020-01-14)
 
 * **Modal:** Changed default font size
