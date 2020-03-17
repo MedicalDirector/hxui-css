@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-virus:before {
+  content: "\e9cf";
+}
 .icon-card-cc:before {
   content: "\e9ca";
 }
@@ -706,5 +709,3 @@
 .icon-send:before {
   content: "\e9ce";
 }
-
-

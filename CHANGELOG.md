@@ -1,3 +1,7 @@
+## [1.3.20](https://www.npmjs.com/package/@hxui/css/v/1.3.20) (2020-03-17)
+
+* **Icon:** Added virus icon for covid-19
+
 ## [1.3.19](https://www.npmjs.com/package/@hxui/css/v/1.3.19) (2020-02-03)
 
 * **Tables:** Added sticky column support with additional dark/light theme
