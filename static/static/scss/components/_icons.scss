@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-video-outline:before {
+  content: "\e9d0";
+}
+.icon-video:before {
+  content: "\e9d1";
+}
 .icon-virus:before {
   content: "\e9cf";
 }

@@ -317,7 +317,9 @@ export default {
         { name: 'card-cc' },
         { name: 'card-hcc' },
         { name: 'card-scc' },
-        { name: 'virus' }
+        { name: 'virus' },
+        { name: 'video' },
+        { name: 'video-outline' }
       ],
       iconsLegacy: [
         { name: 'legacy-discharge' },

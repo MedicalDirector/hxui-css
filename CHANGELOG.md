@@ -1,3 +1,7 @@
+## [1.3.21](https://www.npmjs.com/package/@hxui/css/v/1.3.20) (2020-03-25)
+
+* **Icon:** Added video icons for telehealth
+
 ## [1.3.20](https://www.npmjs.com/package/@hxui/css/v/1.3.20) (2020-03-17)
 
 * **Icon:** Added virus icon for covid-19
