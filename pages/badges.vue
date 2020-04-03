@@ -24,38 +24,67 @@ export default {
         {
           title: 'Badges for text',
           code: `
-<div class="has-text-centered">
-  <span class="hx-badge">
-    <span class="hx-badge-content">Default</span>
-  </span>
-  <span class="hx-badge is-white">
-    <span class="hx-badge-content">White</span>
-  </span>
-  <span class="hx-badge is-outlined">
-    <span class="hx-badge-content">Outlined</span>
-  </span>
-  <span class="hx-badge is-dark">
-    <span class="hx-badge-content">Dark</span>
-  </span>
-  <span class="hx-badge is-black">
-    <span class="hx-badge-content">Black</span>
-  </span>
-  <span class="hx-badge is-primary">
-    <span class="hx-badge-content">Primary</span>
-  </span>
-  <span class="hx-badge is-info">
-    <span class="hx-badge-content">Info</span>
-  </span>
-  <span class="hx-badge is-warning">
-    <span class="hx-badge-content">Warning</span>
-  </span>
-  <span class="hx-badge is-caution">
-    <span class="hx-badge-content">Caution</span>
-  </span>
-  <span class="hx-badge is-danger">
-    <span class="hx-badge-content">Danger</span>
-  </span>
-</div>
+            <div class="has-text-centered">
+              <span class="hx-badge">
+                <span class="hx-badge-content">Default</span>
+              </span>
+              <span class="hx-badge is-white">
+                <span class="hx-badge-content">White</span>
+              </span>
+              <span class="hx-badge is-dark">
+                <span class="hx-badge-content">Dark</span>
+              </span>
+              <span class="hx-badge is-black">
+                <span class="hx-badge-content">Black</span>
+              </span>
+              <span class="hx-badge is-primary">
+                <span class="hx-badge-content">Success</span>
+              </span>
+              <span class="hx-badge is-info">
+                <span class="hx-badge-content">Info</span>
+              </span>
+              <span class="hx-badge is-warning">
+                <span class="hx-badge-content">Warning</span>
+              </span>
+              <span class="hx-badge is-caution">
+                <span class="hx-badge-content">Caution</span>
+              </span>
+              <span class="hx-badge is-danger">
+                <span class="hx-badge-content">Danger</span>
+              </span>
+            </div>
+          `
+        },
+        {
+          title: 'Outlined',
+          code: `
+            <div class="has-text-centered">
+              <span class="hx-badge is-outlined">
+                <span class="hx-badge-content">Default</span>
+              </span>
+
+              <span class="hx-badge is-dark is-outlined">
+                <span class="hx-badge-content">Dark</span>
+              </span>
+              <span class="hx-badge is-black is-outlined">
+                <span class="hx-badge-content">Black</span>
+              </span>
+              <span class="hx-badge is-primary is-outlined">
+                <span class="hx-badge-content">Success</span>
+              </span>
+              <span class="hx-badge is-info is-outlined">
+                <span class="hx-badge-content">Info</span>
+              </span>
+              <span class="hx-badge is-warning is-outlined">
+                <span class="hx-badge-content">Warning</span>
+              </span>
+              <span class="hx-badge is-caution is-outlined">
+                <span class="hx-badge-content">Caution</span>
+              </span>
+              <span class="hx-badge is-danger is-outlined">
+                <span class="hx-badge-content">Danger</span>
+              </span>
+            </div>
           `
         },
         {

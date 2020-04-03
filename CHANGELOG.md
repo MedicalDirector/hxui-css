@@ -1,4 +1,8 @@
-## [1.3.21](https://www.npmjs.com/package/@hxui/css/v/1.3.20) (2020-03-25)
+## [1.3.22](https://www.npmjs.com/package/@hxui/css/v/1.3.22) (2020-04-03)
+
+* **Badges:** Added outline variations to badges
+
+## [1.3.21](https://www.npmjs.com/package/@hxui/css/v/1.3.21) (2020-03-25)
 
 * **Icon:** Added video icons for telehealth
 

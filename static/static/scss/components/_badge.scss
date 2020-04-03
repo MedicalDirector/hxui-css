@@ -59,18 +59,34 @@
   }
 
   &.is-primary {
-    background-color: $hx-color-primary;
+    background-color: $hx-color-success;
     color: $hx-color-white;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-success;
+      background-color: transparent;
+      color: $hx-color-success;
+    }
   }
 
   &.is-info {
     background-color: $hx-color-info;
     color: $hx-color-white;
+    font-wight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-info;
+      background-color: transparent;
+      color: $hx-color-info;
+    }
   }
 
   &.is-white {
     background-color: $hx-color-white;
+    &.is-outlined {
+      border: 1px solid $hx-color-white;
+      background-color: transparent;
+      color: $hx-color-white;
+    }
   }
 
   &.is-outlined {
@@ -82,30 +98,55 @@
     background-color: $hx-color-gray;
     color: $hx-color-white;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-gray;
+      background-color: transparent;
+      color: $hx-color-gray;
+    }
   }
 
   &.is-black {
     background-color: $hx-color-black;
     color: $hx-color-white;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-black;
+      background-color: transparent;
+      color: $hx-color-black;
+    }
   }
 
   &.is-warning {
     background-color: $hx-color-warning;
     color: $hx-color-white;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-warning;
+      background-color: transparent;
+      color: $hx-color-warning;
+    }
   }
 
   &.is-caution {
     background-color: $hx-color-caution;
     color: $hx-color-black;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-caution;
+      background-color: transparent;
+      color: $hx-color-caution;
+    }
   }
 
   &.is-danger {
     background-color: $hx-color-danger;
     color: $hx-color-white;
     font-weight: 400;
+    &.is-outlined {
+      border: 1px solid $hx-color-danger;
+      background-color: transparent;
+      color: $hx-color-danger;
+    }
   }
 
   &.is-small {
