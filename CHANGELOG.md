@@ -1,3 +1,8 @@
+## [1.3.23](https://www.npmjs.com/package/@hxui/css/v/1.3.23) (2020-05-14)
+
+* **Modal:** Added is-large modifier
+* **Icon:** Added re-send icon
+
 ## [1.3.22](https://www.npmjs.com/package/@hxui/css/v/1.3.22) (2020-04-03)
 
 * **Badges:** Added outline variations to badges

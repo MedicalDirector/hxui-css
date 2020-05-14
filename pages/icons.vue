@@ -258,6 +258,7 @@ export default {
         { name: 'bin-outline' },
         { name: 'send' },
         { name: 'send-outline' },
+        { name: 're-send' },
         { name: 'home' },
         { name: 'home-outline' },
         { name: 'compass-outline' },

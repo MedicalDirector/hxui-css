@@ -12,7 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-re-send:before {
+  content: "\e9d2";
+}
 .icon-video-outline:before {
   content: "\e9d0";
 }

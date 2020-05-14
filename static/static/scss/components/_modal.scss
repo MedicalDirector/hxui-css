@@ -149,3 +149,9 @@
     max-width: 30rem;
   }
 }
+
+.#{$namespace}-modal.is-large {
+  .#{$namespace}-modal-card {
+    width: 57.81rem;
+  }
+}
