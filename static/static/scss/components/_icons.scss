@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-invisible:before {
+  content: "\e9d3";
+}
+.icon-visible:before {
+  content: "\e9d4";
+}
 .icon-re-send:before {
   content: "\e9d2";
 }

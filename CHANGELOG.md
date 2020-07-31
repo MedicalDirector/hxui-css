@@ -1,3 +1,12 @@
+## [1.3.25](https://www.npmjs.com/package/@hxui/css/v/1.3.25) (2020-07-31)
+
+* **Icon:** Added visible & invisble icons
+* **Colour:** Added contextual background patterns
+
+## [1.3.24](https://www.npmjs.com/package/@hxui/css/v/1.3.24) (2020-06-26)
+
+* **Form Input:** Support for checkboxes in help text container
+
 ## [1.3.23](https://www.npmjs.com/package/@hxui/css/v/1.3.23) (2020-05-14)
 
 * **Modal:** Added is-large modifier

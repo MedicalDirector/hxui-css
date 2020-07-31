@@ -320,7 +320,9 @@ export default {
         { name: 'card-scc' },
         { name: 'virus' },
         { name: 'video' },
-        { name: 'video-outline' }
+        { name: 'video-outline' },
+        { name: 'visible' },
+        { name: 'invisible' }
       ],
       iconsLegacy: [
         { name: 'legacy-discharge' },

@@ -184,13 +184,17 @@
   &.is-danger {
     input,
     textarea {
-      & + .#{$namespace}-label {
+      & + .#{$namespace}-label:not(.no-context) {
         color: $hx-color-danger;
 
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
           color: $hx-color-danger;
+
+          .#{$namespace}-label {
+            color: $hx-color-gray;
+          }
 
           &:before,
           &:after {

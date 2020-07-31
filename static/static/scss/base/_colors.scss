@@ -151,6 +151,23 @@
   background-color: $hx-color-gray-lightest !important;
 }
 
+/* Background Patterns */
+.#{$namespace}-bg-success-pattern {
+  background: repeating-linear-gradient( 45deg, #41b987, #41b987 10px, #369c71 10px, #369c71 20px );
+}
+
+.#{$namespace}-bg-warning-pattern {
+  background: repeating-linear-gradient( 45deg, #f68a31, #f68a31 10px, #ef6b1f 10px, #ef6b1f 20px );
+}
+
+.#{$namespace}-bg-danger-pattern {
+  background: repeating-linear-gradient( 45deg, #bd1e50, #bd1e50 10px, #9e1944 10px, #9e1944 20px );
+}
+
+.#{$namespace}-bg-info-pattern {
+  background: repeating-linear-gradient( 45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px );
+}
+
 @keyframes fade {
   0% { opacity: 0; }
   10% { opacity: 0; }

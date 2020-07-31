@@ -59,7 +59,15 @@ export default {
 <div class="hx-input-control is-danger">
   <input class="hx-input" type="text" value="joe.chan@medicaldirector.com">
   <label class="hx-label">Email <sup>*</sup></label>
-  <div class="hx-help">Danger!</div>
+  <div class="hx-help hx-flex hx-flex-justify-between">
+    <span>Danger!</span>
+    <div class="hx-input-control is-small">
+      <div class="hx-checkbox-control my-0">
+        <input name="saveEmail"  type="checkbox" class="hx-checkbox" id="saveEmail">
+        <label for="saveEmail" class="hx-label no-context">Save email?</label>
+      </div>
+   </div>
+   </div>
 </div>
 <div class="hx-input-control is-help-visible">
   <input class="hx-input" type="text" ">

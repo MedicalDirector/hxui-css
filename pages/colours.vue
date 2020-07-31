@@ -272,6 +272,41 @@
           </div>
         </div>
       </div>
+    <!-- patterns -->
+    <div class="hx-columns">
+      <div class="hx-column is-3">
+        <div class="hx-card hx-bg-success-pattern is-text-white">
+          <div class="hx-card-content">
+            <strong>Success</strong><br />
+            hx-bg-success-pattern
+          </div>
+        </div>
+      </div>
+      <div class="hx-column is-3">
+        <div class="hx-card hx-bg-warning-pattern is-text-white">
+          <div class="hx-card-content">
+            <strong>Warning</strong><br />
+            hx-bg-warning-pattern
+          </div>
+        </div>
+      </div>
+      <div class="hx-column is-3">
+        <div class="hx-card hx-bg-danger-pattern">
+          <div class="hx-card-content is-text-white">
+            <strong>Danger</strong><br />
+            hx-bg-danger-pattern
+          </div>
+        </div>
+      </div>
+      <div class="hx-column is-3">
+        <div class="hx-card hx-bg-info-pattern is-text-white">
+          <div class="hx-card-content">
+            <strong>Info</strong><br />
+            hx-bg-info-pattern
+          </div>
+        </div>
+      </div>
+    </div>
 
       <hr class="mb-6">
 
