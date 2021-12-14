@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/colours.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/colours.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/forms.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/forms.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/icons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/icons.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/fonts/hxui.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/fonts/hxui.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/base/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/components/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/static/scss/components/_icons.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +38,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="C:/gitRepo/gethxui/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,6 +73,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -235,11 +228,12 @@
       <workItem from="1585869815854" duration="3025000" />
       <workItem from="1593136766303" duration="1951000" />
       <workItem from="1596177112552" duration="1118000" />
+      <workItem from="1639523953381" duration="465000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -252,11 +246,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="598" y="299" width="596" height="522" key="find.popup" timestamp="1596177484849">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="598" y="299" width="596" height="522" key="find.popup/-418.-1440.2560.1440/0.0.1792.1120@0.0.1792.1120" timestamp="1596177484849" />
   </component>
 </project>

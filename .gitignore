@@ -11,7 +11,7 @@ npm-debug.log
 dist
 
 .idea
-.idea/workspace.xml
+.idea/*
 .DS_Store
 sh.exe.stackdump
 
