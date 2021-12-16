@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb8187-45b7-4de0-a261-549b0ea7a5e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +228,11 @@
       <workItem from="1585869815854" duration="3025000" />
       <workItem from="1593136766303" duration="1951000" />
       <workItem from="1596177112552" duration="1118000" />
-      <workItem from="1639523953381" duration="465000" />
+      <workItem from="1639523953381" duration="886000" />
+      <workItem from="1639526385586" duration="2339000" />
+      <workItem from="1639629252110" duration="28000" />
+      <workItem from="1639629340709" duration="29000" />
+      <workItem from="1639629394629" duration="67000" />
     </task>
     <servers />
   </component>

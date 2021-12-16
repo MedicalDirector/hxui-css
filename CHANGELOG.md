@@ -1,4 +1,4 @@
-## [1.3.25](https://www.npmjs.com/package/@hxui/css/v/1.3.25) (2020-07-31)
+## [1.3.25 - 1.3.26 - 1.3.27](https://www.npmjs.com/package/@hxui/css/v/1.3.25) (2020-07-31)
 
 * **Icon:** Added visible & invisble icons
 * **Colour:** Added contextual background patterns
