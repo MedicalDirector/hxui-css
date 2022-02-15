@@ -1,3 +1,8 @@
+## [1.3.28](https://www.npmjs.com/package/@hxui/css/v/1.3.28) (2022-02-15)
+
+* **Icon:** Added intray, outtray, task and person-multiple icons
+* **Table:** Removed redundant and conflicting styling to text in bottom row of table
+
 ## [1.3.25 - 1.3.26 - 1.3.27](https://www.npmjs.com/package/@hxui/css/v/1.3.25) (2020-07-31)
 
 * **Icon:** Added visible & invisble icons
