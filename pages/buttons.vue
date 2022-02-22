@@ -78,8 +78,8 @@ export default {
           title: 'Outlined',
           code: `
 <div class="has-text-centered">
-  <a class="hx-button is-outlined">Outlined</a>
-  <a class="hx-button is-primary is-outlined">Outlined</a>
+  <a class="hx-button is-outlined is-large">Outlined</a>
+  <a class="hx-button is-primary is-outlined is-small">Outlined</a>
   <a class="hx-button is-info is-outlined">Outlined</a>
   <a class="hx-button is-danger is-outlined">Outlined</a>
 </div>

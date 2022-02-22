@@ -1,9 +1,223 @@
+<script>
+  import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+  export default {
+    data: () => ({
+      examples: [
+        {
+          title: 'Basic avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar hx-bg-white">JP</div>
+              <div class="hx-avatar hx-bg-light">CB</div>
+              <div class="hx-avatar hx-bg-black">J</div>
+            </div>
+          `
+        },
+        {
+          title: 'Icon avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar hx-bg-danger has-icon">
+                <i class="hx-icon icon-pulse"></i>
+              </div>
+              <div class="hx-avatar hx-bg-warning has-icon">
+                <i class="hx-icon icon-wine"></i>
+              </div>
+              <div class="hx-avatar hx-bg-success has-icon">
+                <i class="hx-icon icon-medications"></i>
+              </div>
+              <div class="hx-avatar hx-bg-info has-icon">
+                <i class="hx-icon icon-carrot"></i>
+              </div>
+            </div>
+          `
+        },
+        {
+          title: 'Outlined avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar is-primary is-outlined" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-caution is-outlined is-text-black">J</div>
+              <div class="hx-avatar is-outlined is-lighter">CB</div>
+              <div class="hx-avatar is-primary is-outlined has-icon">
+                <i class="hx-icon icon-pulse"></i>
+              </div>
+              <div class="hx-avatar is-danger is-outlined has-icon">
+                <i class="hx-icon icon-wine"></i>
+              </div>
+              <div class="hx-avatar is-warning is-outlined has-icon">
+                <i class="hx-icon icon-medications"></i>
+              </div>
+              <div class="hx-avatar is-caution is-outlined has-icon">
+                <i class="hx-icon icon-carrot"></i>
+              </div>
+            </div>
+          `
+        },
+        {
+          title: 'Tiled avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-tile hx-bg-white">JP</div>
+              <div class="hx-avatar is-tile hx-bg-light">CB</div>
+              <div class="hx-avatar is-tile hx-bg-black">J</div>
+              <div class="hx-avatar hx-bg-danger is-tile has-icon">
+                <i class="hx-icon icon-pulse"></i>
+              </div>
+              <div class="hx-avatar hx-bg-warning is-tile has-icon">
+                <i class="hx-icon icon-wine"></i>
+              </div>
+              <div class="hx-avatar hx-bg-success is-tile has-icon">
+                <i class="hx-icon icon-medications"></i>
+              </div>
+              <div class="hx-avatar is-info is-tile is-outlined has-icon">
+                <i class="hx-icon icon-carrot"></i>
+              </div>
+            </div>
+          `
+        },
+        {
+          title: 'Small avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar is-small" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-small" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-small is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-small hx-bg-white">JP</div>
+              <div class="hx-avatar is-small is-tile hx-bg-light">CB</div>
+              <div class="hx-avatar is-small hx-bg-black">J</div>
+              <div class="hx-avatar is-small hx-bg-danger has-icon">
+                <i class="hx-icon icon-pulse"></i>
+              </div>
+              <div class="hx-avatar is-small hx-bg-warning has-icon">
+                <i class="hx-icon icon-wine"></i>
+              </div>
+              <div class="hx-avatar is-small is-tile hx-bg-success has-icon">
+                <i class="hx-icon icon-medications"></i>
+              </div>
+              <div class="hx-avatar is-small is-info is-outlined has-icon">
+                <i class="hx-icon icon-carrot"></i>
+              </div>
+            </div>
+          `
+        },
+        {
+          title: 'Large avatar',
+          code: `
+            <div class="container">
+              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-large hx-bg-white">JP</div>
+              <div class="hx-avatar is-large hx-bg-light">CB</div>
+              <div class="hx-avatar is-large hx-bg-black">J</div>
+              <div class="hx-avatar is-large hx-bg-danger has-icon">
+                <i class="hx-icon icon-pulse"></i>
+              </div>
+              <div class="hx-avatar is-large hx-bg-warning has-icon">
+                <i class="hx-icon icon-wine"></i>
+              </div>
+              <div class="hx-avatar is-large hx-bg-success has-icon">
+                <i class="hx-icon icon-medications"></i>
+              </div>
+              <div class="hx-avatar is-large is-info is-outlined has-icon">
+                <i class="hx-icon icon-carrot"></i>
+              </div>
+            </div>
+          `
+        }
+      ]
+    }),
+    components: {
+      ExpandingCodeExample
+    }
+  }
+</script>
+
 <template>
   <div id="tooltips">
     <h1 class="hx-title">Avatars</h1>
     <h2 class="hx-subtitle">The avatar component is used to control the size and border radius of responsive images, typically used to show profile pictures.</h2>
 
     <hr>
+
+    <table class="hx-table is-narrow">
+      <thead>
+        <tr>
+          <th>Class name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>hx-avatar</code></td>
+          <td>
+            <span class="hx-badge is-outlined">
+              <span class="hx-badge-content">Component</span>
+            </span>
+          </td>
+          <td>Container element</td>
+        </tr>
+        <tr>
+          <td><code>has-icon</code></td>
+          <td>
+            <span class="hx-badge is-primary">
+              <span class="hx-badge-content">Modifier</span>
+            </span>
+          </td>
+          <td>For usage with icons</td>
+        </tr>
+        <tr>
+          <td><code>is-outlined</code></td>
+          <td>
+            <span class="hx-badge is-primary">
+              <span class="hx-badge-content">Modifier</span>
+            </span>
+          </td>
+          <td>Colored border with transparent background</td>
+        </tr>
+        <tr>
+          <td><code>is-tile</code></td>
+          <td>
+            <span class="hx-badge is-primary">
+              <span class="hx-badge-content">Modifier</span>
+            </span>
+          </td>
+          <td>Square</td>
+        </tr>
+        <tr>
+          <td><code>is-small</code></td>
+          <td>
+            <span class="hx-badge is-primary">
+              <span class="hx-badge-content">Modifier</span>
+            </span>
+          </td>
+          <td>Small size</td>
+        </tr>
+        <tr>
+          <td><code>is-large</code></td>
+          <td>
+            <span class="hx-badge is-primary">
+              <span class="hx-badge-content">Modifier</span>
+            </span>
+          </td>
+          <td>Large size</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="mt-6 mb-6">
+      Refer to
+      <router-link class="is-text-underline" :to="{ path: '/colours' }" exact>Colours</router-link>
+      section to apply background and text colours.
+    </p>
 
     <expanding-code-example v-for="(example, i) in examples" :key="i"
       :title="example.title"
@@ -16,116 +230,14 @@
   </div>
 </template>
 
-<script>
-import ExpandingCodeExample from '@/components/ExpandingCodeExample'
-export default {
-  data: () => ({
-    examples: [
-      {
-        title: 'Examples',
-        code: `
-<div class="hx-example has-text-centered">
-  <p>Using images with default <code>.hx-avatar</code> class.</p>
-  <div class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-  <div class="hx-avatar" style="background-image: url(static/assets/images/0223.jpg)"></div>
-  <div class="hx-avatar" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+<style lang="scss">
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  <p class="mt-10">Using text.</p>
-  <div class="hx-avatar hx-bg-white">JP</div>
-  <div class="hx-avatar hx-bg-light">CB</div>
-  <div class="hx-avatar hx-bg-black">J</div>
-
-  <p class="mt-10">To use icon, just add <code>.has-icon</code> class.</p>
-  <div class="hx-avatar hx-bg-danger has-icon">
-    <i class="hx-icon icon-pulse"></i>
-  </div>
-  <div class="hx-avatar hx-bg-warning has-icon">
-    <i class="hx-icon icon-wine"></i>
-  </div>
-  <div class="hx-avatar hx-bg-success has-icon">
-    <i class="hx-icon icon-medications"></i>
-  </div>
-  <div class="hx-avatar hx-bg-info has-icon">
-    <i class="hx-icon icon-carrot"></i>
-  </div>
-
-  <p class="mt-10">A tile variation is available for displaying an avatar without border radius. Just add class <code>is-tile</code></p>
-  <div class="hx-example is-flex hx-flex-justify-center">
-    <div class="hx-avatar mx-1 is-tile" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-    <div class="hx-avatar mx-1 is-tile" style="background-image: url(static/assets/images/0223.jpg)"></div>
-    <div class="hx-avatar mx-1 is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
-    <div class="hx-avatar mx-1 is-tile hx-bg-white">JP</div>
-    <div class="hx-avatar mx-1 is-tile hx-bg-light">CB</div>
-    <div class="hx-avatar mx-1 is-tile hx-bg-black">J</div>
-    <div class="hx-avatar hx-bg-danger mx-1 is-tile has-icon">
-      <i class="hx-icon icon-pulse"></i>
-    </div>
-    <div class="hx-avatar hx-bg-warning mx-1 is-tile has-icon">
-      <i class="hx-icon icon-wine"></i>
-    </div>
-    <div class="hx-avatar hx-bg-success mx-1 is-tile has-icon">
-      <i class="hx-icon icon-medications"></i>
-    </div>
-    <div class="hx-avatar hx-bg-info mx-1 is-tile has-icon">
-      <i class="hx-icon icon-carrot"></i>
-    </div>
-  </div>
-
-  <p class="mt-10">There are 2 more sizes available. Adjust them with class <code>is-small</code> or <code>is-large</code>.</p>
-
-  <p class="mb-2"><strong>Small</strong></p>
-  <div class="hx-example is-flex hx-flex-justify-center">
-    <div class="hx-avatar mx-1 is-small" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-    <div class="hx-avatar mx-1 is-small" style="background-image: url(static/assets/images/0223.jpg)"></div>
-    <div class="hx-avatar mx-1 is-small is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
-    <div class="hx-avatar mx-1 is-small hx-bg-white">JP</div>
-    <div class="hx-avatar mx-1 is-small is-tile hx-bg-light">CB</div>
-    <div class="hx-avatar mx-1 is-small hx-bg-black">J</div>
-    <div class="hx-avatar mx-1 is-small hx-bg-danger has-icon">
-      <i class="hx-icon icon-pulse"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-small hx-bg-warning has-icon">
-      <i class="hx-icon icon-wine"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-small is-tile hx-bg-success has-icon">
-      <i class="hx-icon icon-medications"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-small hx-bg-info has-icon">
-      <i class="hx-icon icon-carrot"></i>
-    </div>
-  </div>
-
-  <p class="mt-5 mb-2"><strong>Large</strong></p>
-  <div class="hx-example mb-4 is-flex hx-flex-justify-center">
-    <div class="hx-avatar mx-1 is-large" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-    <div class="hx-avatar mx-1 is-large" style="background-image: url(static/assets/images/0223.jpg)"></div>
-    <div class="hx-avatar mx-1 is-large" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
-    <div class="hx-avatar mx-1 is-large hx-bg-white">JP</div>
-    <div class="hx-avatar mx-1 is-large hx-bg-light">CB</div>
-    <div class="hx-avatar mx-1 is-large hx-bg-black">J</div>
-    <div class="hx-avatar mx-1 is-large hx-bg-danger has-icon">
-      <i class="hx-icon icon-pulse"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-large hx-bg-warning has-icon">
-      <i class="hx-icon icon-wine"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-large hx-bg-success has-icon">
-      <i class="hx-icon icon-medications"></i>
-    </div>
-    <div class="hx-avatar mx-1 is-large hx-bg-info has-icon">
-      <i class="hx-icon icon-carrot"></i>
-    </div>
-  </div>
-</div>
-        `
-      }
-    ]
-  }),
-  components: {
-    ExpandingCodeExample
+    div:not(:last-child) {
+      margin-right: 4px;
+    }
   }
-}
-</script>
-
-<style lang="css">
 </style>

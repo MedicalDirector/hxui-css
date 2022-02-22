@@ -1,3 +1,7 @@
+## [1.4.0](https://www.npmjs.com/package/@hxui/css/v/1.4.0) (2022-02-23)
+
+* **Avatar:** Added support for outlined avatars
+
 ## [1.3.28](https://www.npmjs.com/package/@hxui/css/v/1.3.28) (2022-02-15)
 
 * **Icon:** Added intray, outtray, task and person-multiple icons
