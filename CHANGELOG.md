@@ -1,3 +1,7 @@
+## [1.4.1](https://www.npmjs.com/package/@hxui/css/v/1.4.1) (2022-02-25)
+
+* **Avatar:** Updated border width for outlined avatars
+
 ## [1.4.0](https://www.npmjs.com/package/@hxui/css/v/1.4.0) (2022-02-23)
 
 * **Avatar:** Added support for outlined avatars
