@@ -361,7 +361,9 @@ export default {
         { name: 'outtray' },
         { name: 'outtray-outline' },
         { name: 'task-outline' },
-        { name: 'person-multiple' }
+        { name: 'person-multiple' },
+        { name: 'light-bulb' },
+        { name: 'light-bulb-outline' }
       ],
       iconsLegacy: [
         { name: 'legacy-discharge' },
