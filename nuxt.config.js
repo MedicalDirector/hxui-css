@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /*
   ** Headers of the page
   */
@@ -11,12 +11,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', media: 'all', href: '/'}
+      { rel: 'stylesheet', media: 'all', href: '/' }
     ],
     htmlAttrs: {
       class: 'hxui-reset'
     }
   },
+  target: 'static',
   /*
   ** Customize the progress bar color
   */
@@ -38,9 +39,19 @@ module.exports = {
         })
       }
     },
-    extractCSS: true,
-    filenames: {
-      css: 'css/hxui.css'
+    extractCSS: true
+  },
+  /**
+   * Fonts
+   *
+   * Note: Needed for nuxt website
+   */
+  buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
+  googleFonts: {
+    families: {
+      Roboto: [300, 400, 500, 600, 700]
     }
   },
   /*
