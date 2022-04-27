@@ -89,7 +89,6 @@ export default {
       <a class="hx-dropdown-item is-active" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-up"></i>Ascending</div></a>
       <a class="hx-dropdown-item" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-down"></i>Descending</div></a>
 
-
       <div class="hx-dropdown-divider"></div>
       <div class="hx-dropdown-header">Filter <a href="">clear filters</a></div>
       <div class="hx-flex hx-flex-column pl-4 pr-4 mt-4">
@@ -172,7 +171,6 @@ export default {
     </div>
   </div>
 </div>
-
 
 <br>
 <br>

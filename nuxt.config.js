@@ -26,9 +26,10 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    /**
+     * Run ESLint on save
+     * TODO: remove after implementing husky and lint-staged
+     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -39,16 +40,25 @@ export default {
         })
       }
     },
-    extractCSS: true
+    extractCSS: true,
+    babel: {
+      babelrc: false,
+      cacheDirectory: undefined,
+      presets: [
+        ['@nuxt/babel-preset-app', {
+          corejs: { version: 3 }
+        }]
+      ]
+    }
   },
-  /**
-   * Fonts
-   *
-   * Note: Needed for nuxt website
-   */
   buildModules: [
     '@nuxtjs/google-fonts'
   ],
+  /**
+   * Fonts
+   *
+   * **Note:** Needed for nuxt website
+   */
   googleFonts: {
     families: {
       Roboto: [300, 400, 500, 600, 700]

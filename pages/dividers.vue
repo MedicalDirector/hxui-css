@@ -31,9 +31,6 @@
                             :visible="false"
     ></expanding-code-example>
 
-
-
-
   </div>
 </template>
 
@@ -65,7 +62,6 @@ export default {
   </div>
 </div>
 
-
 <h5 class="mb-4">Vertical divider examples</h5>
 
 <div class="hx-columns">
@@ -91,7 +87,6 @@ export default {
   <div class="hx-divider"></div>
   <a href="">Link 2</a>
 </div>
-
 
           `
         }]

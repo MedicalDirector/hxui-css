@@ -1,22 +1,27 @@
-# gethxui-nuxt
+# HXUI CSS
 
-> Nuxt.js project
+A pure css library based on the [HXUI design system](https://hxui.io).
 
-## Build Setup
+## Installation
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+```bash
+npm i @hxui/css
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Usage
+
+Import uncompiled sass file to your project's style entry file.
+
+```scss
+// path/to/hxui-icon-font is required
+$icons-path: "~@hxui/css/static/static/fonts/";
+@import "~@hxui/css/static/static/scss/hxui.scss";
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

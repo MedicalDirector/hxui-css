@@ -1,18 +1,46 @@
-# dependencies
+# Dependency directories
 node_modules
 
-# logs
-npm-debug.log
+# Logs
+logs
+*.log
+npm-debug.log*
 
-# Nuxt build
+# Nuxt.js build / generate output
 .nuxt
-
-# Nuxt generate
 dist
 static/static/css
 
-.idea
-.idea/*
-.DS_Store
-sh.exe.stackdump
+# IntelliJ project files 
+*.iml
+*.iws
+*.ipr
+.idea/
 
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Optional eslint cache
+.eslintcache
+
+# other
+sh.exe.stackdump
+.DS_Store

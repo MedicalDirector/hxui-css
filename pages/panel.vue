@@ -88,7 +88,6 @@
               </tbody>
             </table>
 
-
             <h3>Favourites</h3>
             <div class="hx-card">
               <ul class="hx-list-group">
@@ -141,8 +140,6 @@
                 <i class="hx-icon is-medium icon-angle-right"></i>
               </div>
             </h3>
-
-
           </div>
         </div>
           `

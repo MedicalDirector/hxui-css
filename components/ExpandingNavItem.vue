@@ -8,7 +8,7 @@
     </div>
     <div class="navs" :style="{ height: ht + 'px' }" >
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">
-        <li class="hx-nav-item" v-for="item in items">
+        <li class="hx-nav-item" v-for="item in items" v-bind:key="item.name">
           <router-link v-if="item.path" class="hx-nav-link" :to="{ path: item.path }" exact-active-class="is-active" exact
           @click.native="closeNav">
             {{ item.name }}

@@ -1,3 +1,7 @@
+## [1.4.3](https://www.npmjs.com/package/@hxui/css/v/1.4.3) (2022-03-29)
+
+* **Icon:** Added additional icons
+
 ## [1.4.2](https://www.npmjs.com/package/@hxui/css/v/1.4.2) (2022-03-08)
 
 * **Icon:** Added light-bulb icons

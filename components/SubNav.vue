@@ -222,7 +222,7 @@ export default {
           title: 'Other',
           items: [
             { name: 'Downloads', path: '/downloads' },
-            { name: 'Change Log', link: 'https://bitbucket.org/md-design/gethxui/src/master/CHANGELOG.md' }
+            { name: 'Changelog', link: 'https://github.com/MedicalDirector/hxui-css/blob/master/CHANGELOG.md' }
           ]
         }
       ]
