@@ -7,9 +7,9 @@
           title: 'Basic avatar',
           code: `
             <div class="container">
-              <div class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-              <div class="hx-avatar" style="background-image: url(static/assets/images/0223.jpg)"></div>
-              <div class="hx-avatar" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar" style="background-image: url(~/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar" style="background-image: url(~/assets/images/frenchie.jpg)"></div>
               <div class="hx-avatar hx-bg-white">JP</div>
               <div class="hx-avatar hx-bg-light">CB</div>
               <div class="hx-avatar hx-bg-black">J</div>
@@ -39,7 +39,7 @@
           title: 'Outlined avatar',
           code: `
             <div class="container">
-              <div class="hx-avatar is-primary is-outlined" style="background-image: url(static/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-primary is-outlined" style="background-image: url(~/assets/images/0223.jpg)"></div>
               <div class="hx-avatar is-caution is-outlined is-text-black">J</div>
               <div class="hx-avatar is-outlined is-lighter">CB</div>
               <div class="hx-avatar is-primary is-outlined has-icon">
@@ -61,9 +61,9 @@
           title: 'Tiled avatar',
           code: `
             <div class="container">
-              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/0223.jpg)"></div>
-              <div class="hx-avatar is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-tile" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-tile" style="background-image: url(~/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-tile" style="background-image: url(~/assets/images/frenchie.jpg)"></div>
               <div class="hx-avatar is-tile hx-bg-white">JP</div>
               <div class="hx-avatar is-tile hx-bg-light">CB</div>
               <div class="hx-avatar is-tile hx-bg-black">J</div>
@@ -86,9 +86,9 @@
           title: 'Small avatar',
           code: `
             <div class="container">
-              <div class="hx-avatar is-small" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-              <div class="hx-avatar is-small" style="background-image: url(static/assets/images/0223.jpg)"></div>
-              <div class="hx-avatar is-small is-tile" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-small" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-small" style="background-image: url(~/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-small is-tile" style="background-image: url(~/assets/images/frenchie.jpg)"></div>
               <div class="hx-avatar is-small hx-bg-white">JP</div>
               <div class="hx-avatar is-small is-tile hx-bg-light">CB</div>
               <div class="hx-avatar is-small hx-bg-black">J</div>
@@ -111,9 +111,9 @@
           title: 'Large avatar',
           code: `
             <div class="container">
-              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></div>
-              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/0223.jpg)"></div>
-              <div class="hx-avatar is-large" style="background-image: url(static/assets/images/frenchie.jpg)"></div>
+              <div class="hx-avatar is-large" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></div>
+              <div class="hx-avatar is-large" style="background-image: url(~/assets/images/0223.jpg)"></div>
+              <div class="hx-avatar is-large" style="background-image: url(~/assets/images/frenchie.jpg)"></div>
               <div class="hx-avatar is-large hx-bg-white">JP</div>
               <div class="hx-avatar is-large hx-bg-light">CB</div>
               <div class="hx-avatar is-large hx-bg-black">J</div>

@@ -397,7 +397,7 @@ export default {
     searchTerm () {
       if (this.searchTerm.length > 0) {
         this.filterResults = []
-        for (let icon of this.icons) {
+        for (const icon of this.icons) {
           if (
             icon.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) >= 0
           ) {

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /*
   ** Headers of the page
   */
@@ -11,12 +11,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', media: 'all', href: '/'}
+      { rel: 'stylesheet', media: 'all', href: '/' }
     ],
     htmlAttrs: {
       class: 'hxui-reset'
     }
   },
+  target: 'static',
   /*
   ** Customize the progress bar color
   */
@@ -25,9 +26,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    /**
+     * Run ESLint on save
+     * TODO: remove after implementing husky and lint-staged
+     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -39,8 +41,27 @@ module.exports = {
       }
     },
     extractCSS: true,
-    filenames: {
-      css: 'css/hxui.css'
+    babel: {
+      babelrc: false,
+      cacheDirectory: undefined,
+      presets: [
+        ['@nuxt/babel-preset-app', {
+          corejs: { version: 3 }
+        }]
+      ]
+    }
+  },
+  buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
+  /**
+   * Fonts
+   *
+   * **Note:** Needed for nuxt website
+   */
+  googleFonts: {
+    families: {
+      Roboto: [300, 400, 500, 600, 700]
     }
   },
   /*

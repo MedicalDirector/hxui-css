@@ -102,10 +102,6 @@ export default {
   </div>
 </div>
 
-
-
-
-
           `
         },
         {
@@ -169,4 +165,3 @@ export default {
     padding:1rem;
   }
 </style>
-

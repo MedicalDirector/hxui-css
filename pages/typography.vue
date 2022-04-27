@@ -376,7 +376,6 @@ export default {
       <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
 
-
       <tr>
       <td><code>.is-lightest</code></td>
       <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>

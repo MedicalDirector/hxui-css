@@ -163,7 +163,7 @@ export default {
   <p>
     <span class="hx-badge">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
         Default
         <button class="hx-delete is-small"></button>
       </span>
@@ -188,7 +188,7 @@ export default {
   <p>
     <span class="hx-badge is-primary is-medium">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
         Medium
         <button class="hx-delete is-small"></button>
       </span>
@@ -213,7 +213,7 @@ export default {
   <p>
     <span class="hx-badge is-large">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(static/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
         Large
         <button class="hx-delete"></button>
       </span>

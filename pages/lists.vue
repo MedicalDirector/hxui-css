@@ -7,8 +7,6 @@
 
     <expanding-code-example v-for="(example, i) in examples" :key="i" :title="example.title" :code="example.code" :example="example.code" :visible="false" :background="example.bg"></expanding-code-example>
 
-
-
   </div>
 </template>
 
@@ -62,7 +60,6 @@ export default {
   <li class="is-checked is-danger">Item four - danger</li>
   <li class="is-checked is-info">Item five - info</li>
 </ul>
-
 
           `
         },

@@ -117,7 +117,6 @@
       </div>
     </div>
 
-
     <pre v-highlightjs ref="code"><code class="html">
       {{ headerA }}
     </code></pre>

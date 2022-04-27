@@ -12,7 +12,7 @@
             <div class="hx-card">
               <div class="hx-card-content">
                 <div class="hx-flex">
-                  <img src="/static/assets/images/sketch-logo.png" class="doc-resources-image mr-5" />
+                  <img src="~/assets/images/sketch-logo.png" class="doc-resources-image mr-5" />
                   <div>
                     <h5 class="doc-resources-heading mb-0">HxUI Stencil</h5>
                     <p class="doc-resources-body">A Sketch template to turn ideas into products faster.</p>

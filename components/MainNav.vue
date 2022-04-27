@@ -3,10 +3,10 @@
     <ul class="hx-nav hx-nav-vertical hx-flex-auto">
       <li class="hx-nav-item hx-nav-brand">
         <svg class="hxui-logo is-white">
-          <use xlink:href="/static/assets/images/hxui.svg#hxui"></use>
+          <use xlink:href="~/assets/images/hxui.svg#hxui"></use>
         </svg>
       </li>
-      <li class="hx-nav-item" v-for="item in mainNavItems">
+      <li class="hx-nav-item" v-for="item in mainNavItems" v-bind:key="item.name">
         <a class="hx-nav-link" :href="item.link" :class="{ 'is-active': item.link === 'http://gethxui.com', 'is-disabled' : item.status === 'disabled' }"><i class="hx-icon" :class="item.icon"></i> <span class="ml-1">{{ item.name }}</span></a>
       </li>
     </ul>

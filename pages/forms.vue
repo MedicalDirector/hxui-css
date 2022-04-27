@@ -164,7 +164,6 @@ export default {
   <div class="hx-help">Please enter the recipe ingredients</div>
 </div>
 
-
 <div class="hx-input-control is-info">
   <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
   <label for="textarea-sample" class="hx-label">Textarea</label>
