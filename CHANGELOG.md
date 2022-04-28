@@ -1,3 +1,7 @@
+## [1.4.4](https://www.npmjs.com/package/@hxui/css/v/1.4.4) (2022-04-28)
+
+* **Security:** Provided security fixes
+
 ## [1.4.3](https://www.npmjs.com/package/@hxui/css/v/1.4.3) (2022-03-29)
 
 * **Icon:** Added additional icons
