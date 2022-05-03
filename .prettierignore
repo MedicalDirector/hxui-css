@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules
+
+# Logs
+logs
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Do not apply prettier formatting to sass files
+static
+**/*.scss
+**/*.css

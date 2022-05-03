@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
+  // "editor.codeActionsOnSave": [
+  //   "source.fixAll.eslint"
+  //   "source.fixAll.stylelint"
+  //   "source.formatDocument",
+  // ],
+  "eslint.validate": ["javascript", "vue"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  }
+}

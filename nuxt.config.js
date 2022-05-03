@@ -1,7 +1,7 @@
 export default {
   /*
-  ** Headers of the page
-  */
+   * Headers of the page
+   */
   head: {
     title: 'HxUI - A health care focused UI Library',
     meta: [
@@ -19,41 +19,28 @@ export default {
   },
   target: 'static',
   /*
-  ** Customize the progress bar color
-  */
+   * Customize the progress bar color
+   */
   loading: { color: '#3B8070' },
   /*
-  ** Build configuration
-  */
+   * Build configuration
+   */
   build: {
-    /**
-     * Run ESLint on save
-     * TODO: remove after implementing husky and lint-staged
-     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
     extractCSS: true,
     babel: {
       babelrc: false,
       cacheDirectory: undefined,
       presets: [
-        ['@nuxt/babel-preset-app', {
-          corejs: { version: 3 }
-        }]
+        [
+          '@nuxt/babel-preset-app',
+          {
+            corejs: { version: 3 }
+          }
+        ]
       ]
     }
   },
-  buildModules: [
-    '@nuxtjs/google-fonts'
-  ],
+  buildModules: ['@nuxtjs/google-fonts'],
   /**
    * Fonts
    *
@@ -65,18 +52,15 @@ export default {
     }
   },
   /*
-  ** CSS
-  */
+   * CSS
+   */
   css: [
     // SCSS file in the project
     '@/static/static/scss/hxui.scss',
     'highlight.js/styles/atom-one-dark.css'
   ],
   /*
-  ** Plug-ins
-  */
-  plugins: [
-    '~/plugins/vue-highlightjs',
-    { src: '~/plugins/ga.js', ssr: false }
-  ]
+   * Plug-ins
+   */
+  plugins: ['~/plugins/vue-highlightjs', { src: '~/plugins/ga.js', ssr: false }]
 }
