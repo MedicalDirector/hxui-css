@@ -57,7 +57,7 @@ export default {
   css: [
     // SCSS file in the project
     '@/static/static/scss/hxui.scss',
-    'highlight.js/styles/atom-one-dark.css'
+    'highlight.js/styles/github-dark.css'
   ],
   /*
    * Plug-ins

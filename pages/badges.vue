@@ -1,96 +1,94 @@
 <template>
   <div id="badges">
     <h1 class="hx-title">Badges</h1>
-    <h2 class="hx-subtitle">Small and adaptive tag for adding context to just about any content.</h2>
+    <h2 class="hx-subtitle">
+      Small and adaptive tag for adding context to just about any content.
+    </h2>
 
-    <hr>
+    <hr />
 
-    <expanding-code-example v-for="(example, i) in examples" :key="i"
+    <expanding-code-example
+      v-for="(example, i) in examples"
+      :key="i"
       :title="example.title"
       :code="example.code"
       :example="example.code"
       :visible="false"
     ></expanding-code-example>
-
   </div>
 </template>
 
 <script>
 import ExpandingCodeExample from '@/components/ExpandingCodeExample'
 export default {
-  data () {
+  data() {
     return {
       examples: [
         {
           title: 'Badges for text',
-          code: `
-            <div class="has-text-centered">
-              <span class="hx-badge">
-                <span class="hx-badge-content">Default</span>
-              </span>
-              <span class="hx-badge is-white">
-                <span class="hx-badge-content">White</span>
-              </span>
-              <span class="hx-badge is-dark">
-                <span class="hx-badge-content">Dark</span>
-              </span>
-              <span class="hx-badge is-black">
-                <span class="hx-badge-content">Black</span>
-              </span>
-              <span class="hx-badge is-primary">
-                <span class="hx-badge-content">Success</span>
-              </span>
-              <span class="hx-badge is-info">
-                <span class="hx-badge-content">Info</span>
-              </span>
-              <span class="hx-badge is-warning">
-                <span class="hx-badge-content">Warning</span>
-              </span>
-              <span class="hx-badge is-caution">
-                <span class="hx-badge-content">Caution</span>
-              </span>
-              <span class="hx-badge is-danger">
-                <span class="hx-badge-content">Danger</span>
-              </span>
-            </div>
-          `
+          code: `<div class="has-text-centered">
+  <span class="hx-badge">
+    <span class="hx-badge-content">Default</span>
+  </span>
+  <span class="hx-badge is-white">
+    <span class="hx-badge-content">White</span>
+  </span>
+  <span class="hx-badge is-dark">
+    <span class="hx-badge-content">Dark</span>
+  </span>
+  <span class="hx-badge is-black">
+    <span class="hx-badge-content">Black</span>
+  </span>
+  <span class="hx-badge is-primary">
+    <span class="hx-badge-content">Success</span>
+  </span>
+  <span class="hx-badge is-info">
+    <span class="hx-badge-content">Info</span>
+  </span>
+  <span class="hx-badge is-warning">
+    <span class="hx-badge-content">Warning</span>
+  </span>
+  <span class="hx-badge is-caution">
+    <span class="hx-badge-content">Caution</span>
+  </span>
+  <span class="hx-badge is-danger">
+    <span class="hx-badge-content">Danger</span>
+  </span>
+</div>`
         },
         {
           title: 'Outlined',
-          code: `
-            <div class="has-text-centered">
-              <span class="hx-badge is-outlined">
-                <span class="hx-badge-content">Default</span>
-              </span>
+          code: `<div class="has-text-centered">
+  <span class="hx-badge is-outlined">
+    <span class="hx-badge-content">Default</span>
+  </span>
 
-              <span class="hx-badge is-dark is-outlined">
-                <span class="hx-badge-content">Dark</span>
-              </span>
-              <span class="hx-badge is-black is-outlined">
-                <span class="hx-badge-content">Black</span>
-              </span>
-              <span class="hx-badge is-primary is-outlined">
-                <span class="hx-badge-content">Success</span>
-              </span>
-              <span class="hx-badge is-info is-outlined">
-                <span class="hx-badge-content">Info</span>
-              </span>
-              <span class="hx-badge is-warning is-outlined">
-                <span class="hx-badge-content">Warning</span>
-              </span>
-              <span class="hx-badge is-caution is-outlined">
-                <span class="hx-badge-content">Caution</span>
-              </span>
-              <span class="hx-badge is-danger is-outlined">
-                <span class="hx-badge-content">Danger</span>
-              </span>
-            </div>
-          `
+  <span class="hx-badge is-dark is-outlined">
+    <span class="hx-badge-content">Dark</span>
+  </span>
+  <span class="hx-badge is-black is-outlined">
+    <span class="hx-badge-content">Black</span>
+  </span>
+  <span class="hx-badge is-primary is-outlined">
+    <span class="hx-badge-content">Success</span>
+  </span>
+  <span class="hx-badge is-info is-outlined">
+    <span class="hx-badge-content">Info</span>
+  </span>
+  <span class="hx-badge is-warning is-outlined">
+    <span class="hx-badge-content">Warning</span>
+  </span>
+  <span class="hx-badge is-caution is-outlined">
+    <span class="hx-badge-content">Caution</span>
+  </span>
+  <span class="hx-badge is-danger is-outlined">
+    <span class="hx-badge-content">Danger</span>
+  </span>
+</div>`
         },
         {
           title: 'Badges for numerical values',
-          code: `
-<div class="has-text-centered">
+          code: `<div class="has-text-centered">
   <span class="hx-badge"><span class="hx-badge-content">0</span></span>
   <span class="hx-badge is-white"><span class="hx-badge-content">34</span></span>
   <span class="hx-badge is-outlined"><span class="hx-badge-content">83</span></span>
@@ -101,13 +99,11 @@ export default {
   <span class="hx-badge is-warning"><span class="hx-badge-content">6</span></span>
   <span class="hx-badge is-caution"><span class="hx-badge-content">7</span></span>
   <span class="hx-badge is-danger"><span class="hx-badge-content">2</span></span>
-</div>
-          `
+</div>`
         },
         {
           title: 'Sizes',
-          code: `
-<div class="has-text-centered">
+          code: `<div class="has-text-centered">
   <p>There are 4 additional sizes</p>
   <p>
     <span class="hx-badge is-outlined is-small"><span class="hx-badge-content">Small</span></span>
@@ -121,13 +117,11 @@ export default {
   <p>
     <span class="hx-badge is-danger is-large"><span class="hx-badge-content">Large</span></span>
   </p>
-</div>
-          `
+</div>`
         },
         {
           title: 'Add a delete button',
-          code: `
-<div class="has-text-centered">
+          code: `<div class="has-text-centered">
   <p>Add a delete button</p>
   <p>
     <span class="hx-badge is-outlined">
@@ -153,17 +147,16 @@ export default {
       </span>
     </span>
   </p>
-</div>
-          `
+</div>`
         },
         {
           title: 'With avatar & icons',
-          code: `
-<div class="has-text-centered">
+          language: 'javascript',
+          code: `<div class="has-text-centered">
   <p>
     <span class="hx-badge">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"></span>
         Default
         <button class="hx-delete is-small"></button>
       </span>
@@ -188,7 +181,7 @@ export default {
   <p>
     <span class="hx-badge is-primary is-medium">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"></span>
         Medium
         <button class="hx-delete is-small"></button>
       </span>
@@ -213,7 +206,7 @@ export default {
   <p>
     <span class="hx-badge is-large">
       <span class="hx-badge-content">
-        <span class="hx-avatar" style="background-image: url(~/assets/images/default-avatar-business-bear.png)"></span>
+        <span class="hx-avatar" style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"></span>
         Large
         <button class="hx-delete"></button>
       </span>
@@ -235,8 +228,7 @@ export default {
       </span>
     </span>
   </p>
-</div>
-          `
+</div>`
         }
       ]
     }
@@ -247,5 +239,4 @@ export default {
 }
 </script>
 
-<style lang="css">
-</style>
+<style lang="css"></style>
