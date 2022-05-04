@@ -24,9 +24,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext js,vue .",
+    "lint": "eslint --cache --ext js,vue .",
     "lint:fix": "eslint --fix --ext js,vue .",
-    "lint-style": "npx stylelint **/*.scss",
+    "lint-style": "npx stylelint --cache **/*.scss",
     "lint-style:fix": "npx stylelint --fix **/*.scss",
     "format": "npx prettier --write .",
     "css-compile": "sass static/static/scss/hxui.scss:static/static/css/hxui.css --error-css --no-source-map --style=compressed",
@@ -68,8 +68,15 @@
     "defaults"
   ],
   "lint-staged": {
-    "**/*.{js,vue}": [
+    "*.{js,vue,html}": [
       "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --cache",
+      "prettier --write"
+    ],
+    "*.{md}": [
       "prettier --write"
     ]
   }
