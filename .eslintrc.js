@@ -13,25 +13,23 @@ module.exports = {
     browser: true,
     node: true
   },
+  ignorePatterns: ['node_modules/', '.nuxt/', 'dist/', 'static/'],
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: [
     'standard',
     'plugin:nuxt/recommended',
     'plugin:vue/base',
-    'plugin:vue/essential'
+    'plugin:vue/essential',
+    'prettier'
   ],
   // required to lint *.vue files
-  plugins: [
-    'vue'
-  ],
+  plugins: ['vue'],
   // add your custom rules here
   rules: {
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
     // allow async-await
-    'generator-star-spacing': 0,
+    'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
   // TODO: temporary overrides - reinstate when implementing prettier
   overrides: [

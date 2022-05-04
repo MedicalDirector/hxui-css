@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "ignoreFiles": ["**/*.{js,vue,md}", ".nuxt", "dist"],
+  "rules": {
+    "property-no-vendor-prefix": null
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}
