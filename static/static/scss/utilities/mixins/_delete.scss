@@ -3,7 +3,7 @@
 
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: rgba($hx-color-black, 0.2);
+  background-color: rgba($hx-color-black, 20%);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -15,8 +15,8 @@
   vertical-align: top;
   width: 20px;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     background-color: $hx-color-white;
     content: "";
     display: block;
@@ -27,23 +27,23 @@
     transform-origin: center center;
   }
 
-  &:before {
+  &::before {
     height: 2px;
     width: 50%;
   }
 
-  &:after {
+  &::after {
     height: 50%;
     width: 2px;
   }
 
   &:hover,
   &:focus {
-    background-color: rgba($hx-color-black, 0.3);
+    background-color: rgb($hx-color-black, 30%);
   }
 
   &:active {
-    background-color: rgba($hx-color-black, 0.4);
+    background-color: rgb($hx-color-black, 40%);
   }
 
   // Sizes

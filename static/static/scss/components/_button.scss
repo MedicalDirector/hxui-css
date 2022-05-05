@@ -20,6 +20,7 @@ a.#{$namespace}-button,
 .#{$namespace}-button {
   @include control;
   @include no-copy;
+
   border-radius: $hx-border-radius-sm;
   background-color: $hx-button-background;
   border: 1px solid $hx-button-border;
@@ -31,6 +32,7 @@ a.#{$namespace}-button,
   text-align: center;
   white-space: nowrap;
   transition: all .15s ease-in-out;
+
   // text-transform: uppercase;
   font-weight: 400;
   font-family: $hx-font-family-base;
@@ -40,7 +42,6 @@ a.#{$namespace}-button,
   }
 
   .#{$namespace}-icon-control {
-
     &:first-child:not(:last-child) {
       margin-left: calc(-0.1rem - 1px);
       margin-right: 0.3rem;
@@ -156,7 +157,7 @@ a.#{$namespace}-button,
       }
 
       &.is-loading {
-        &:after {
+        &::after {
           border-color: transparent transparent $hx-color-invert $hx-color-invert !important;
         }
       }
@@ -174,7 +175,7 @@ a.#{$namespace}-button,
         }
 
         &.is-loading {
-          &:after {
+          &::after {
             border-color: transparent transparent $color $color !important;
           }
         }
@@ -193,13 +194,14 @@ a.#{$namespace}-button,
 
   &.is-transparent {
     &:hover {
-      background-color: rgba(0,0,0,.05);
+      background-color: rgb(0 0 0 / 5%);
     }
   }
 
   // Sizes
   &.is-small {
     @include button-small;
+
     &:not(.is-round) {
       .#{$namespace}-icon-control {
         * {
@@ -232,7 +234,7 @@ a.#{$namespace}-button,
     color: transparent !important;
     pointer-events: none;
 
-    &:after {
+    &::after {
       @include loader;
       @include center(1em);
 
@@ -276,7 +278,7 @@ a.#{$namespace}-button,
 
     &:hover,
     &.is-active{
-      background-color: rgba(black, .05);
+      background-color: rgb(0 0 0 / 5%);
     }
 
     @each $name, $pair in $hx-colors {
@@ -312,67 +314,48 @@ a.#{$namespace}-button,
 }
 
 .#{$namespace}-delete {
-  background-color: rgba(10,10,10,0.2);
-  border: none;
-  border-radius: 290486px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  height: 20px;
-  width: 20px;
-  max-height: 20px;
-  max-width: 20px;
-  min-height: 20px;
-  min-width: 20px;
-  transition: .3s;
-  &:before, &:after {
-		content: "";
-		background-color: white;
-    display: block;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform-origin: center center;
-    transition: .3s;
-	}
+  @include delete;
+
+  &.#{$namespace}-icon-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      height: 0;
+      width: 0;
+      transition: 0;
+    }
+  }
+
   &.is-transparent {
     background-color: transparent;
-    &:before, &:after {
-      background-color: rgba(0,0,0,.5);
+
+    &::before, &::after {
+      background-color: rgb(0 0 0 / 50%);
     }
+
     &:hover {
-      &:before, &:after {
+      &::before, &::after {
         background-color: white;
       }
     }
   }
-	&:before {
-		width: 50%;
-		height: 2px;
-	}
-	&:after {
-		height: 50%;
-		width: 2px;
-	}
-	&:hover {
-		background-color: rgba(10,10,10,0.4);
-	}
+
 	&.is-small {
-		height: 16px;
-    width: 16px;
-    max-height: 16px;
-    max-width: 16px;
-    min-height: 16px;
-    min-width: 16px;
+    // specific to accommodate small delete circle
+    // can be abstracted to -icon.is-xsmall
+    &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
+      height: 0.75rem;
+      width: 0.75rem;
+      font-size: 0.75rem;
+    }
 	}
+
 	&.is-large {
 		height: 36px;
     width: 36px;
-    max-height: 36px;
-    max-width: 36px;
-    min-height: 36px;
-    min-width: 36px;
 	}
 }
 
@@ -382,22 +365,25 @@ a.#{$namespace}-button,
 	border-radius: 100%;
 	margin-left: -.5em;
 	margin-right: .5em;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgb(255 255 255 / 80%);
 	border: 1px solid transparent;
 	position: relative;
   outline: none;
   transition: .3s;
   color: $hx-color-black;
+
   &:hover {
-	  background-color: rgba(0,0,0,.1);
+    background-color: rgb(0 0 0 / 10%);
   }
+
   &.is-small {
-  	width: 16px;
-  	height: 16px;
+    width: 16px;
+    height: 16px;
   }
-	&:before {
+
+	&::before {
 		content: '\e94f';
-		font-family: 'hxui';
+		font-family: hxui;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -430,6 +416,7 @@ input[type="submit"].button {
     &.is-light {
       border-left: 1px solid rgba($hx-color-white, 1);
     }
+
     &.is-dark,
     &.is-black,
     &.is-success,
@@ -456,25 +443,31 @@ input[type="submit"].button {
       }
 
     }
+
     &:last-child {
       border-top-right-radius: $hx-border-radius-sm;
       border-bottom-right-radius: $hx-border-radius-sm;
     }
+
     &:hover {
       z-index: 1;
     }
 
   }
+
   &.has-text-centered {
     justify-content: center;
   }
+
   &.has-text-right {
     justify-content: flex-end;
   }
+
   &.is-fullwidth {
     > .#{$namespace}-button {
       flex: 1 0 auto;
     }
+
     &.is-justified {
       > .#{$namespace}-button {
         flex: 1;
@@ -494,7 +487,7 @@ input[type="submit"].button {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     width: 1rem;
-    border-left-color: rgba(255,255,255,0.3);
+    border-left-color: rgb(255 255 255 / 30%);
   }
 }
 

@@ -73,10 +73,10 @@
       "prettier --write"
     ],
     "*.{css,scss}": [
-      "stylelint --cache",
+      "stylelint --cache --fix",
       "prettier --write"
     ],
-    "*.{md}": [
+    "*.md": [
       "prettier --write"
     ]
   }

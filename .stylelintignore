@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules
+
+# Logs
+logs
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Do not apply stylelint formatting to sass files
+**/*.js
+**/*.vue
+**/*.md
