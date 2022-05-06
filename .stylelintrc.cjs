@@ -24,6 +24,7 @@ module.exports = {
     'font-family-no-duplicate-names': null,
     'scss/double-slash-comment-whitespace-inside': null,
     'scss/at-extend-no-missing-placeholder': null,
+    'scss/double-slash-comment-empty-line-before': null,
     //
     'no-descending-specificity': [
       true,

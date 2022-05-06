@@ -11,48 +11,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Bagde] Support for icon swapping of delete action
-- [Icons] Refresh icon
+- [Bagde] Support for icon swapping of delete action ([75f95e9](https://github.com/MedicalDirector/hxui-css/commit/75f95e986dbe01903f0849981a60874b83cce8be))
+- [Icons] Refresh icon ([75f95e9](https://github.com/MedicalDirector/hxui-css/commit/75f95e986dbe01903f0849981a60874b83cce8be))
 
 ## [1.4.4](https://github.com/MedicalDirector/hxui-angular/compare/v1.4.3...v1.4.4) - 2022-04-28
 
 ### Security
 
-- Provided security fixes
+- Provided security fixes ([01c6fea](https://github.com/MedicalDirector/hxui-css/commit/01c6fea0a810be653ea8a40b6d4d80fbf245b2e0), [e6d72ef](https://github.com/MedicalDirector/hxui-css/commit/e6d72efd2e596c2fce702be90c674a01c30f8cf7))
 
 ## [1.4.3](https://github.com/MedicalDirector/hxui-angular/compare/v1.4.2...v1.4.3) - 2022-03-29
 
 ### Added
 
-- [Icon] Additional icons
+- [Icon] Additional icons ([e4773e8](https://github.com/MedicalDirector/hxui-css/commit/e4773e8355765752cbff4bd3d434dc724765cf94))
 
 ## [1.4.2](https://github.com/MedicalDirector/hxui-angular/compare/v1.4.1...v1.4.2) - 2022-03-08
 
 ### Added
 
-- [Icon] Light-bulb icons
+- [Icon] Light-bulb icons ([4fdbe24](https://github.com/MedicalDirector/hxui-css/commit/4fdbe243dbde0f994dd2bac184f7438e147b47d6))
 
 ## [1.4.1](https://github.com/MedicalDirector/hxui-angular/compare/v1.4.0...v1.4.1) - 2022-02-25
 
 ### Changed
 
-- [Avatar] Updated border width for outlined avatars
+- [Avatar] Updated border width for outlined avatars ([d491bd8](https://github.com/MedicalDirector/hxui-css/commit/d491bd8db3813a3749165831802a97ea9c405399))
 
 ## [1.4.0](https://github.com/MedicalDirector/hxui-angular/compare/v1.3.28...v1.4.0) - 2022-02-23
 
 ### Added
 
-- [Avatar] Support for outlined avatars
+- [Avatar] Support for outlined avatars ([adb8f49](https://github.com/MedicalDirector/hxui-css/commit/adb8f496659ad5907f48ff4d427d0494da7ad635))
 
 ## [1.3.28](https://github.com/MedicalDirector/hxui-angular/compare/v1.3.27...v1.3.28) - 2022-02-15
 
 ### Added
 
-- [Icon] Added intray, outtray, task and person-multiple icons
+- [Icon] Added intray, outtray, task and person-multiple icons ([d8db8a8](https://github.com/MedicalDirector/hxui-css/commit/d8db8a8e7ca86190bdfafa16cb431399cd5428c6))
 
-### Removed
+### Fixed
 
-- [Table] Removed redundant and conflicting styling to text in bottom row of table
+- [Table] Removed redundant and conflicting styling to text in bottom row of table ([7ca9f46](https://github.com/MedicalDirector/hxui-css/commit/7ca9f467e6e01225dcbc84baaea122050aaf7d22))
 
 ## [1.3.25 - 1.3.26 - 1.3.27](https://github.com/MedicalDirector/hxui-angular/compare/v1.3.24...v1.3.27) - 2020-07-31
 

@@ -1,4 +1,3 @@
-
 .#{$namespace}-table {
   background-color: $hx-table-background;
   color: $hx-table;
@@ -13,45 +12,66 @@
     max-width: 0;
   }
 
+  // TABLE HEAD
   > thead {
     > tr > th {
       vertical-align: bottom;
       border: 1px solid $hx-color-gray-light;
       border-width: 0 0 1px;
       color: $hx-table-head;
-
       text-transform: uppercase;
-      font-size: $hx-font-size-sm;
+      padding: 0.6em 0.75em;
+      font-weight: $hx-font-weight-boldest;
+      font-size: $hx-font-size-xs;
+      @include transition(0.3s);
 
-      .hx-icon {
-        font-size: .75rem;
-        height: .75rem;
-        width: .75rem;
-        line-height: .75rem;
+      strong {
+        font-weight: $hx-font-weight-boldest;
+      }
+
+      // Modifiers
+      &.is-narrow {
+        white-space: nowrap;
+        width: 1%;
+      }
+
+      .#{$namespace}-icon {
+        font-size: 0.75rem;
+        height: 0.75rem;
+        width: 0.75rem;
+        line-height: 0.75rem;
       }
 
       a {
         cursor: pointer;
-        &:link, &:visited, &:active {
+
+        &:link,
+        &:visited,
+        &:active {
           color: $hx-color-info;
         }
+
         &:hover {
           text-decoration: none;
           color: lighten($hx-color-info, 20%);
         }
       }
-    }
-    > tr > th > .hx-checkbox-control {
-      margin-bottom: -3px !important;
-      > .hx-checkbox + label {
-        padding-top: 5px !important;
-        font-weight:  $hx-font-weight-boldest !important;
-        text-transform: uppercase;
-        font-size: .8rem;
+
+      .#{$namespace}-checkbox-control {
+        margin-bottom: -3px !important;
+        margin-left: 0.18rem;
+
+        > .#{$namespace}-checkbox + label {
+          padding-top: 5px !important;
+          font-weight: $hx-font-weight-boldest !important;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
       }
     }
   }
 
+  // TABLE FOOT
   > tfoot {
     > tr > td,
     > tr > th {
@@ -62,40 +82,37 @@
       font-weight: $hx-font-weight-bolder;
       padding: 0.9em 0.75em;
     }
+
     > tr > th {
       padding: 1.3em 0.75em;
       font-weight: $hx-font-weight-boldest;
       font-size: $hx-font-size-xs;
       text-transform: uppercase;
     }
+
     > tr > td.has-text-field {
-      > input[type=text] {
+      > input[type="text"] {
         margin: 0;
-        padding: .6rem;
-        border-radius: .2rem;
+        padding: 0.6rem;
+        border-radius: 0.2rem;
         border: 1px solid #d0d2d2;
         -webkit-box-shadow: none;
         box-shadow: none;
-        -webkit-transition: .3s;
-        transition: .3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
         font-weight: $hx-font-weight-bolder;
       }
     }
   }
 
-
-
-  > tbody:not(.hx-table-group) > tr > td,
-  > tbody:not(.hx-table-group) > tr > th{
-    border-bottom:1px solid $hx-table-border;
-  }
-
-  > tbody:not(.hx-table-group) > tr > td,
-  > tbody:not(.hx-table-group) > tr > th,
-  > thead > tr > th {
+  // TABLE BODY
+  > tbody:not(.#{$namespace}-table-group) > tr > td,
+  > tbody:not(.#{$namespace}-table-group) > tr > th {
+    border-bottom: 1px solid $hx-table-border;
     padding: 0.9em 0.75em;
-    font-weight:  $hx-font-weight-bolder;
-    @include transition (.3s);
+    font-weight: $hx-font-weight-bolder;
+    @include transition(0.3s);
+
     strong {
       font-weight: $hx-font-weight-boldest;
     }
@@ -110,9 +127,10 @@
   > tbody > tr > td,
   > tbody > tr > th,
   > thead > tr > th {
-    .hx-checkbox-control {
+    .#{$namespace}-checkbox-control {
       margin: 0;
-      .hx-checkbox + .hx-label {
+
+      .#{$namespace}-checkbox + .#{$namespace}-label {
         padding-top: 2px;
         display: initial;
         font-weight: $hx-font-weight-normal;
@@ -120,17 +138,12 @@
     }
   }
 
-  > thead > tr > th {
-    .hx-checkbox-control {
-      margin-left: 0.18rem;
-    }
-  }
-
   // Always striped
-  > tbody:not(.hx-table-group) {
+  > tbody:not(.#{$namespace}-table-group) {
     > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
       &:nth-child(even) {
-        > th, > td {
+        > th,
+        > td {
           background-color: $hx-table-row-even-background;
         }
       }
@@ -138,12 +151,13 @@
   }
 
   // Groups
-  > tbody.hx-table-group > tr > td,
-  > tbody.hx-table-group > tr > th {
-    @include transition (.3s);
+  > tbody.#{$namespace}-table-group > tr > td,
+  > tbody.#{$namespace}-table-group > tr > th {
+    @include transition(0.3s);
+
     font-weight: $hx-font-weight-bold;
     background-color: #fff;
-    padding: .9rem 0.75em;
+    padding: 0.9rem 0.75em;
     border-top: 1px solid #e5e5e5;
     text-transform: uppercase;
     color: $hx-color-info;
@@ -151,29 +165,79 @@
     > div {
       display: flex;
       align-items: center;
-      width:100%;
+      width: 100%;
       color: $hx-color-info;
-       > small {
-         flex: 1;
-         margin-left: 1rem;
+
+      > small {
+        flex: 1;
+        margin-left: 1rem;
       }
     }
   }
 
-  &.is-narrow{
-    > tbody.hx-table-group > tr > th {
-      padding: .6rem 0.5em;
+  &.is-narrow {
+    > thead > tr > th {
+      padding: 0.3em 0.5em;
+
+      .#{$namespace}-checkbox-control {
+        margin-left: 0.09rem;
+      }
     }
-    > thead > tr > th .hx-checkbox-control {
-      margin-left: 0.09rem;
+
+    > tbody {
+      &.#{$namespace}-table-group > tr > th {
+        padding: 0.6rem 0.5em;
+      }
+
+      > tr > td {
+        padding: 0.25em 0.5em;
+
+        &.has-text-field {
+          padding: 0.25rem;
+
+          > textarea {
+            height: 26.38px;
+          }
+
+          > input[type="text"],
+          textarea {
+            padding: 0.2rem;
+
+            &.is-danger {
+              border-color: $hx-color-danger;
+              color: $hx-color-danger;
+            }
+
+            &.is-warning {
+              border-color: $hx-color-warning;
+              color: $hx-color-warning;
+            }
+
+            &.is-caution {
+              border-color: $hx-color-caution;
+              color: $hx-color-caution;
+            }
+
+            &.is-success {
+              border-color: $hx-color-success;
+              color: $hx-color-success;
+            }
+
+            &.is-info {
+              border-color: $hx-color-info;
+              color: $hx-color-info;
+            }
+          }
+        }
+      }
     }
   }
 
-  > tbody.hx-table-group {
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.03), 0 4px 8px 0 rgba(0,0,0,.03);
+  > tbody.#{$namespace}-table-group {
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 3%), 0 4px 8px 0 rgb(0 0 0 / 3%);
   }
 
-  > thead + tbody.hx-table-group{
+  > thead + tbody.#{$namespace}-table-group {
     > tr > td,
     > tr > th {
       border-top: transparent;
@@ -185,182 +249,150 @@
     border-color: $hx-table-border;
   }
 
-  > tbody > tr > td {
-    button.hx-button .hx-icon{
-      color: $hx-color-black;
-    }
-  }
-
-  > thead > tr > th {
-    padding: 0.6em 0.75em;
-    font-weight: $hx-font-weight-boldest;
-    font-size: $hx-font-size-xs;
-  }
-
   > thead > tr,
-  > tbody:not(.hx-table-group) > tr {
-    &.is-selected, &.is-selected:hover {
-      > th, > td {
+  > tbody:not(.#{$namespace}-table-group) > tr {
+    &.is-selected,
+    &.is-selected:hover {
+      > th,
+      > td {
         background-color: rgba($hx-color-success, 0.1);
       }
-      > th,
-      > td,
-      > th a:not(.hx-dropdown-item),
-      > td a:not(.hx-dropdown-item) {
-      }
     }
-  }
 
-  > thead > tr,
-  > tbody:not(.hx-table-group) > tr {
-    &.is-focused:not(.is-selected), &.is-focused:hover {
-      > th, > td {
+    &.is-focused:not(.is-selected),
+    &.is-focused:hover {
+      > th,
+      > td {
         background-color: $hx-table-row-even-hover-background !important;
       }
-      > th,
+    }
+  }
+
+  > tbody > tr {
+    > td {
+      button.#{$namespace}-button .#{$namespace}-icon {
+        color: $hx-color-black;
+      }
+
+      &.has-text-field {
+        padding: 0.25rem;
+
+        > textarea {
+          height: 39.19px;
+        }
+
+        > input[type="text"],
+        textarea {
+          margin: 0;
+          padding: 0.6rem;
+          border-radius: 0.2rem;
+          border: 1px solid lighten($hx-text, 65%);
+          box-shadow: none;
+          transition: 0.3s;
+
+          &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: lighten($hx-text, 60%);
+          }
+
+          &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: lighten($hx-text, 60%);
+          }
+
+          &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: lighten($hx-text, 60%);
+          }
+
+          &:-moz-placeholder {
+            /* Firefox 18- */
+            color: lighten($hx-text, 60%);
+          }
+
+          &:focus {
+            background-color: rgb(255 255 255 / 50%);
+            box-shadow: inset 0 0 0 1px lighten($hx-text, 65%), inset 0 0 3px 1px rgb(0 0 0 / 10%);
+          }
+        }
+      }
+    }
+
+    &.is-danger {
       > td,
-      > th a:not(.hx-dropdown-item),
-      > td a:not(.hx-dropdown-item) {
-      }
-    }
-  }
-
-  > tbody {
-    > tr {
-      &:last-child {
-        > td,
-        > th {
-          border-bottom-width: 0;
-          // color: $hx-text;
-        }
-      }
-    }
-  }
-
-  // Modifiers
-  // &.is-bordered {
-  //   border: 1px solid $hx-table-border;
-  //   td,
-  //   th {
-  //     border-width: 0 1px 1px 0;
-  //     &:last-child {
-  //       border-right-width: 0;
-  //     }
-  //   }
-  //   thead {
-  //     td,
-  //     th {
-  //       border-bottom-width: 2px;
-  //     }
-  //   }
-  // }
-
-  &.is-narrow {
-    > tbody > tr {
-      > td {
-        padding: 0.25em 0.5em;
-      }
-
-      > td {
-        &.has-text-field {
-          padding: .25rem;
-          > textarea {
-            height: 26.38px;
-          }
-          > input[type="text"],
-            textarea {
-            padding: .2rem;
-            &.is-danger {
-              border-color: $hx-color-danger;
-              color: $hx-color-danger;
-            }
-            &.is-warning {
-              border-color: $hx-color-warning;
-              color: $hx-color-warning;
-            }
-            &.is-caution {
-              border-color: $hx-color-caution;
-              color: $hx-color-caution;
-            }
-            &.is-success {
-              border-color: $hx-color-success;
-              color: $hx-color-success;
-            }
-            &.is-info {
-              border-color: $hx-color-info;
-              color: $hx-color-info;
-            }
-          }
-        }
-      }
-    }
-    > thead > tr {
       > th {
-        padding: 0.3em 0.5em;
-      }
-    }
-  }
+        color: $hx-color-danger;
 
-  &.is-hover {
-    > tbody:not(.hx-table-group) {
-      > tr:not(.is-selected) {
-        &:hover {
-           > td {
-            background-color: $hx-table-row-even-hover-background !important;
-             cursor: pointer;
-          }
+        div,
+        span {
+          color: $hx-color-danger;
         }
       }
-    }
-  }
 
-  > tbody > tr{
-    &.is-danger{
-      > td,
-      > th{
-        color: $hx-color-danger;
-        div,span {color: $hx-color-danger;}
-      }
-      > td{
+      > td {
         background-color: rgba($hx-color-danger, 0.1);
       }
     }
-    &.is-warning{
+
+    &.is-warning {
       > td,
-      > th{
+      > th {
         color: $hx-color-warning;
-       > div, > span:not(.hx-badge) {color: $hx-color-warning;}
+
+        > div,
+        > span:not(.#{$namespace}-badge) {
+          color: $hx-color-warning;
+        }
       }
+
       > td {
         background-color: rgba($hx-color-warning, 0.1);
       }
     }
-    &.is-caution{
+
+    &.is-caution {
       > td,
-      > th{
+      > th {
         color: $hx-color-caution;
-        > div, > span:not(.hx-badge) {color: $hx-color-caution;}
+
+        > div,
+        > span:not(.#{$namespace}-badge) {
+          color: $hx-color-caution;
+        }
       }
+
       > td {
         background-color: rgba($hx-color-caution, 0.1);
       }
     }
-    &.is-success{
+
+    &.is-success {
       > td,
-      > th{
+      > th {
         color: $hx-color-success;
-        div,span {color: $hx-color-success;}
+
+        div,
+        span {
+          color: $hx-color-success;
+        }
       }
+
       > td {
         background-color: rgba($hx-color-success, 0.1);
       }
     }
-    &.is-info{
+
+    &.is-info {
       > td,
-      > th{
+      > th {
         color: $hx-color-info;
-        div,span {color: $hx-color-info;}
+
+        div,
+        span {
+          color: $hx-color-info;
+        }
       }
+
       > td {
         background-color: rgba($hx-color-info, 0.1);
       }
@@ -386,42 +418,44 @@
       @include table-stripe($hx-color-danger);
     }
 
+    &:last-child {
+      > td,
+      > th {
+        border-bottom-width: 0;
+      }
+    }
+  }
 
+  // Modifiers
+  // &.is-bordered {
+  //   border: 1px solid $hx-table-border;
+  //   td,
+  //   th {
+  //     border-width: 0 1px 1px 0;
+  //     &:last-child {
+  //       border-right-width: 0;
+  //     }
+  //   }
+  //   thead {
+  //     td,
+  //     th {
+  //       border-bottom-width: 2px;
+  //     }
+  //   }
+  // }
 
-    > td {
-      &.has-text-field {
-        padding: .25rem;
-        > textarea{
-          height:39.19px;
-        }
-        > input[type="text"], textarea {
-          margin: 0;
-          padding: .6rem;
-          border-radius: .2rem;
-          border: 1px solid lighten($hx-text, 65%);
-          box-shadow: none;
-          transition: .3s;
-          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: lighten($hx-text, 60%);
-          }
-          &::-moz-placeholder { /* Firefox 19+ */
-            color: lighten($hx-text, 60%);
-          }
-          &:-ms-input-placeholder { /* IE 10+ */
-            color: lighten($hx-text, 60%);
-          }
-          &:-moz-placeholder { /* Firefox 18- */
-            color: lighten($hx-text, 60%);
-          }
-          &:focus {
-            background-color: rgba(255,255,255,.5);
-            box-shadow: inset 0 0 0 1px lighten($hx-text, 65%), inset 0 0 3px 1px rgba(0,0,0,.1);
+  &.is-hover {
+    > tbody:not(.#{$namespace}-table-group) {
+      > tr:not(.is-selected) {
+        &:hover {
+          > td {
+            background-color: $hx-table-row-even-hover-background !important;
+            cursor: pointer;
           }
         }
       }
     }
   }
-
 
   // todo - find a better way to do this. !important should not be used if it can be helped.
   > tbody > tr > td,
@@ -430,77 +464,84 @@
       background-color: rgba($hx-color-danger, 0.1) !important;
       color: $hx-color-danger;
     }
+
     &.is-warning {
-      background-color: rgba($hx-color-warning, 0.1) !important;;
+      background-color: rgba($hx-color-warning, 0.1) !important;
       color: $hx-color-warning;
     }
+
     &.is-caution {
-      background-color: rgba($hx-color-caution, 0.1) !important;;
+      background-color: rgba($hx-color-caution, 0.1) !important;
       color: $hx-color-caution;
     }
+
     &.is-success {
-      background-color: rgba($hx-color-success, 0.1) !important;;
+      background-color: rgba($hx-color-success, 0.1) !important;
       color: $hx-color-success;
     }
+
     &.is-info {
-      background-color: rgba($hx-color-info, 0.1) !important;;
+      background-color: rgba($hx-color-info, 0.1) !important;
       color: $hx-color-info;
     }
   }
 
-
   &.has-sticky-header {
     > thead > tr > th,
-    > thead > tr > td{
+    > thead > tr > td {
       position: -webkit-sticky;
-      position: sticky !important;
-      top: -1px;  // positional attribute is required for position to take affect.
+      position: sticky;
+      top: -1px; // positional attribute is required for position to take affect.
       background-color: #fafafa;
       z-index: 10;
     }
   }
 
-  &.is-sticky-left{
+  &.is-sticky-left {
     > thead > tr > th:first-child,
     > thead > tr > td:first-child,
     > tbody > tr > th:first-child,
-    > tbody > tr > td:first-child{
-      position: sticky !important;
+    > tbody > tr > td:first-child {
+      position: -webkit-sticky;
+      position: sticky;
       left: 0;
       z-index: 10;
-      box-shadow: 10px 0px 14px -13px rgb(211, 211, 214);
+      box-shadow: 10px 0 14px -13px rgb(211 211 214);
     }
   }
 
-  &.is-sticky-right{
+  &.is-sticky-right {
     > thead > tr > th:last-child,
     > thead > tr > td:last-child,
     > tbody > tr > th:last-child,
-    > tbody > tr > td:last-child{
-      position: sticky !important;
+    > tbody > tr > td:last-child {
+      position: -webkit-sticky;
+      position: sticky;
       right: 0;
       z-index: 10;
-      box-shadow: -10px 0px 14px -13px rgb(211, 211, 214);
+      box-shadow: -10px 0 14px -13px rgb(211 211 214);
     }
   }
 
   &.is-sticky-left,
   &.is-sticky-right {
-    &.is-light{
-
+    &.is-light {
       > thead > tr > th {
         background-color: #fff;
       }
 
-      > tbody:not(.hx-table-group) {
+      > tbody:not(.#{$namespace}-table-group) {
         > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
           &:nth-child(even) {
-            > th, > td {
+            > th,
+            > td {
               background-color: #fafafa;
             }
           }
+
           &:nth-child(odd) {
-            > th, > td {
+            > th,
+            > td {
               background-color: #fff;
             }
           }
@@ -508,27 +549,31 @@
       }
 
       > tbody > tr {
-        &.is-danger{
-          > td{
+        &.is-danger {
+          > td {
             background-color: #f7e8ed;
           }
         }
-        &.is-warning{
+
+        &.is-warning {
           > td {
             background-color: #fef3e9;
           }
         }
-        &.is-caution{
+
+        &.is-caution {
           > td {
             background-color: #fffaef;
           }
         }
-        &.is-success{
+
+        &.is-success {
           > td {
             background-color: #ebf8f3;
           }
         }
-        &.is-info{
+
+        &.is-info {
           > td {
             background-color: #e7edf1;
           }
@@ -536,7 +581,7 @@
       }
 
       &.is-hover {
-        > tbody:not(.hx-table-group) {
+        > tbody:not(.#{$namespace}-table-group) {
           > tr:not(.is-selected) {
             &:hover {
               > td {
@@ -547,24 +592,25 @@
           }
         }
       }
-
     }
 
-    &.is-dark{
-
+    &.is-dark {
       > thead > tr > th {
         background-color: #f6f6f9;
       }
 
-      > tbody:not(.hx-table-group) {
+      > tbody:not(.#{$namespace}-table-group) {
         > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
           &:nth-child(even) {
-            > th, > td {
+            > th,
+            > td {
               background-color: #f1f1f4;
             }
           }
+
           &:nth-child(odd) {
-            > th, > td {
+            > th,
+            > td {
               background-color: #f6f6f9;
             }
           }
@@ -572,27 +618,31 @@
       }
 
       > tbody > tr {
-        &.is-danger{
-          > td{
+        &.is-danger {
+          > td {
             background-color: #f7e8ed;
           }
         }
-        &.is-warning{
+
+        &.is-warning {
           > td {
             background-color: #fef3e9;
           }
         }
-        &.is-caution{
+
+        &.is-caution {
           > td {
             background-color: #fffaef;
           }
         }
-        &.is-success{
+
+        &.is-success {
           > td {
             background-color: #ebf8f3;
           }
         }
-        &.is-info{
+
+        &.is-info {
           > td {
             background-color: #e7edf1;
           }
@@ -600,7 +650,7 @@
       }
 
       &.is-hover {
-        > tbody:not(.hx-table-group) {
+        > tbody:not(.#{$namespace}-table-group) {
           > tr:not(.is-selected) {
             &:hover {
               > td {
@@ -611,7 +661,6 @@
           }
         }
       }
-
     }
   }
 }
