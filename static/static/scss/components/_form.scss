@@ -1,6 +1,6 @@
-// =========
-// Form
-// =========
+////////////
+//  FORM  //
+////////////
 
 // Container within hx-columns
 .#{$namespace}-columns {
@@ -19,42 +19,42 @@
 
     .#{$namespace}-input,
     .#{$namespace}-textarea {
-      padding: (.8rem * $medium) 0 (.6rem * $medium);
+      padding: (0.8rem * $medium) 0 (0.6rem * $medium);
       font-size: ($hx-font-form-elements-size * $medium);
 
       & + .#{$namespace}-label {
-        top: (.7rem * $medium);
+        top: (0.7rem * $medium);
         font-size: ($hx-font-form-elements-size * $medium);
+
         sup {
-          font-size: (.7rem * $medium);
+          font-size: (0.7rem * $medium);
         }
 
         & + .#{$namespace}-help {
-          font-size: (.75rem * $medium);
-          margin-top: (.25rem * $medium);
+          font-size: (0.75rem * $medium);
+          margin-top: (0.25rem * $medium);
 
-          &:before,
-          &:after {
-            top: (-.35rem * $medium);
-            // height: (3px * $large);
+          &::before,
+          &::after {
+            top: (-0.35rem * $medium);
           }
         }
       }
 
       &:focus ~ .#{$namespace}-label,
       &:valid ~ .#{$namespace}-label,
-      &:-webkit-autofill  ~ .#{$namespace}-label{
-        top: (-.6rem);
+      &:-webkit-autofill ~ .#{$namespace}-label {
+        top: (-0.6rem);
         font-size: ($hx-font-form-elements-size);
+
         sup {
-          font-size: (.4rem * $medium);
+          font-size: (0.4rem * $medium);
         }
       }
 
       &[disabled],
       &.is-disabled {
-
-        &~ .#{$namespace}-label {
+        & ~ .#{$namespace}-label {
           // top: -.5rem;
           // font-size: .75rem;
 
@@ -71,23 +71,25 @@
 
     .#{$namespace}-input,
     .#{$namespace}-textarea {
-      padding: (.8rem * $large) 0 (.6rem * $large);
+      padding: (0.8rem * $large) 0 (0.6rem * $large);
       font-size: ($hx-font-form-elements-size * $large);
 
       & + .#{$namespace}-label {
-        top: (.7rem * $large);
+        top: (0.7rem * $large);
         font-size: ($hx-font-form-elements-size * $large);
+
         sup {
-          font-size: (.7rem * $large);
+          font-size: (0.7rem * $large);
         }
 
         & + .#{$namespace}-help {
-          font-size: (.75rem * $large);
-          margin-top: (.25rem * $large);
+          font-size: (0.75rem * $large);
+          margin-top: (0.25rem * $large);
 
-          &:before,
-          &:after {
-            top: (-.35rem * $large);
+          &::before,
+          &::after {
+            top: (-0.35rem * $large);
+
             // height: (3px * $large);
           }
         }
@@ -95,18 +97,18 @@
 
       &:focus ~ .#{$namespace}-label,
       &:valid ~ .#{$namespace}-label,
-      &:-webkit-autofill  ~ .#{$namespace}-label {
-        top: (-.5rem);
+      &:-webkit-autofill ~ .#{$namespace}-label {
+        top: (-0.5rem);
         font-size: (2rem / $large);
+
         sup {
-          font-size: (.4rem * $large);
+          font-size: (0.4rem * $large);
         }
       }
 
       &[disabled],
       &.is-disabled {
-
-        &~ .#{$namespace}-label {
+        & ~ .#{$namespace}-label {
           // top: -.5rem;
           // font-size: .75rem;
 
@@ -129,8 +131,8 @@
           opacity: 1;
           color: $hx-color-success;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-success;
           }
@@ -150,8 +152,8 @@
           opacity: 1;
           color: $hx-color-info;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-info;
           }
@@ -171,8 +173,8 @@
           opacity: 1;
           color: $hx-color-warning;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-warning;
           }
@@ -196,8 +198,8 @@
             color: $hx-color-gray;
           }
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-danger;
           }
@@ -210,7 +212,6 @@
     input,
     textarea {
       & + .#{$namespace}-label {
-
         & + .#{$namespace}-help {
           position: relative;
           opacity: 1;
@@ -220,17 +221,17 @@
   }
 
   &.has-text-centered {
-    .hx-label {
+    .#{$namespace}-label {
       left: 50%;
       transform: translateX(-50%);
     }
-    .hx-input {
+
+    .#{$namespace}-input {
       text-align: center;
     }
   }
 
   .#{$namespace}-input {
-
     &.ng-invalid.ng-dirty {
       & + .#{$namespace}-label {
         color: $hx-color-danger;
@@ -240,8 +241,8 @@
           opacity: 1;
           color: $hx-color-danger;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-danger;
           }
@@ -249,23 +250,28 @@
       }
     }
 
-    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color:  $hx-color-gray-lighter;
-    }
-    &::-moz-placeholder { /* Firefox 19+ */
-      color: $hx-color-gray-lighter;
-    }
-    &:-ms-input-placeholder { /* IE 10+ */
-      color: $hx-color-gray-lighter;
-    }
-    &:-moz-placeholder { /* Firefox 18- */
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
       color: $hx-color-gray-lighter;
     }
 
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $hx-color-gray-lighter;
+    }
+
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $hx-color-gray-lighter;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $hx-color-gray-lighter;
+    }
   }
 
   .#{$namespace}-textarea {
-
     & + .#{$namespace}-label {
       & + .#{$namespace}-help {
         margin-bottom: 3rem;
@@ -281,8 +287,8 @@
           opacity: 1;
           color: $hx-color-danger;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             width: 50%;
             background-color: $hx-color-danger;
           }
@@ -290,73 +296,72 @@
       }
     }
 
-    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color:  $hx-color-gray-lighter;
-    }
-    &::-moz-placeholder { /* Firefox 19+ */
-      color: $hx-color-gray-lighter;
-    }
-    &:-ms-input-placeholder { /* IE 10+ */
-      color: $hx-color-gray-lighter;
-    }
-    &:-moz-placeholder { /* Firefox 18- */
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
       color: $hx-color-gray-lighter;
     }
 
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $hx-color-gray-lighter;
+    }
+
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $hx-color-gray-lighter;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $hx-color-gray-lighter;
+    }
   }
-
 }
 
 // Group Container
 .#{$namespace}-input-group {
-  position:relative;
+  position: relative;
 
   > .#{$namespace}-icon,
-  > .#{$namespace}-input-actions{
-    position:absolute;
-    top:.5rem;
-    z-index:1;
+  > .#{$namespace}-input-actions {
+    position: absolute;
+    top: 0.5rem;
+    z-index: 1;
 
     > .#{$namespace}-loader {
       position: absolute;
-      right: .325rem;
-      top: .326rem;
-      z-index:1
+      right: 0.325rem;
+      top: 0.326rem;
+      z-index: 1;
     }
   }
 
-
   // select icon|button after hx-input-control
   .#{$namespace}-input-control + .#{$namespace}-icon,
-  .#{$namespace}-input-control + .#{$namespace}-input-actions{
-    right:0;
+  .#{$namespace}-input-control + .#{$namespace}-input-actions {
+    right: 0;
   }
 
   /// select icon|button before hx-input-control
   .#{$namespace}-icon ~ .#{$namespace}-input-control,
-  .#{$namespace}-input-actions ~ .#{$namespace}-input-control{
-    left:0;
+  .#{$namespace}-input-actions ~ .#{$namespace}-input-control {
+    left: 0;
+    .#{$namespace}-input {
+      padding-right: 1.8rem;
+    }
+    .#{$namespace}-label {
+      margin-right: 1.8rem;
+    }
   }
 
   // select hx-input-control after icon|button
   .#{$namespace}-icon + .#{$namespace}-input-control,
-  .#{$namespace}-actions + .#{$namespace}-input-control{
-    .#{$namespace}-input{
-        padding-left:1.8rem;
+  .#{$namespace}-actions + .#{$namespace}-input-control {
+    .#{$namespace}-input {
+      padding-left: 1.8rem;
     }
-    .#{$namespace}-label{
-      margin-left:1.8rem;
-    }
-  }
-
-  // select hx-input-control after icon|button
-  .#{$namespace}-icon ~ .#{$namespace}-input-control,
-  .#{$namespace}-input-actions ~ .#{$namespace}-input-control {
-    .#{$namespace}-input{
-      padding-right:1.8rem;
-    }
-    .#{$namespace}-label{
-      margin-right:1.8rem;
+    .#{$namespace}-label {
+      margin-left: 1.8rem;
     }
   }
 }
@@ -365,61 +370,62 @@
 .#{$namespace}-textarea {
   display: block;
   width: 100%;
-  padding: .8rem 0 .6rem;
+  padding: 0.8rem 0 0.6rem;
   font-family: $hx-font-family-sans-serif;
   font-size: $hx-font-form-elements-size;
   font-weight: $hx-font-form-elements-weight;
   border: 1px solid $hx-input-border;
   border-radius: 0;
-  border-width: 0 0 1px 0;
+  border-width: 0 0 1px;
   background-color: $hx-input-background;
   position: relative;
 
   & + .#{$namespace}-label {
     position: absolute;
-    top: .7rem;
+    top: 0.7rem;
     margin: 0;
     font-weight: normal;
     color: $hx-color-gray-lighter;
     left: 0;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 0;
     pointer-events: none;
 
     sup {
-      top: -.2rem;
+      top: -0.2rem;
       color: $hx-color-danger;
-      font-size: .7rem;
-      transition: .3s;
+      font-size: 0.7rem;
+      transition: 0.3s;
     }
 
     & + .#{$namespace}-help {
-      font-size: .75rem;
-      margin-top: .25rem;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
       color: $hx-color-gray-light;
-      transition: .3s;
+      transition: 0.3s;
       opacity: 0;
       position: relative;
 
-      &:before,
-      &:after {
-        content: '';
+      &::before,
+      &::after {
+        content: "";
         position: absolute;
-        top: -.4rem;
+        top: -0.4rem;
         width: 0%;
         height: 3px;
         background-color: $hx-input-focus-border;
-        transition: .3s;
+        transition: 0.3s;
         z-index: 1;
       }
-      &:before {
+
+      &::before {
         left: 50%;
       }
-      &:after {
+
+      &::after {
         right: 50%;
       }
     }
-
   }
 
   &:focus {
@@ -428,37 +434,38 @@
 
   &:focus ~ .#{$namespace}-label,
   &:valid ~ .#{$namespace}-label,
-  &:-webkit-autofill  ~ .#{$namespace}-label {
+  &:-webkit-autofill ~ .#{$namespace}-label {
     top: $hx-font-form-label-focus-top;
-    font-size: .75rem;
+    font-size: 0.75rem;
+
     sup {
-      top: -.3rem;
-      font-size: .4rem;
+      top: -0.3rem;
+      font-size: 0.4rem;
     }
   }
 
   &.has-label-floating ~ .#{$namespace}-label {
     top: $hx-font-form-label-focus-top;
-    font-size: .75rem !important;
+    font-size: 0.75rem !important;
+
     sup {
-      top: -.3rem !important;
-      font-size: .4rem !important;
+      top: -0.3rem !important;
+      font-size: 0.4rem !important;
     }
   }
 
   &.has-label-placeholder ~ .#{$namespace}-label {
-    top: .7rem !important;
+    top: 0.7rem !important;
     font-size: $hx-font-form-elements-size;
+
     sup {
-        top: -.2rem initial !important;
-        font-size: .7rem initial !important;
+      top: -0.2rem initial !important;
+      font-size: 0.7rem initial !important;
     }
   }
 
-
-
   &:focus ~ .#{$namespace}-label,
-  &:-webkit-autofill  ~ .#{$namespace}-label {
+  &:-webkit-autofill ~ .#{$namespace}-label {
     color: $hx-color-primary;
   }
 
@@ -466,31 +473,29 @@
   // &:valid ~ .#{$namespace}-help,
   &:-webkit-autofill  ~ .#{$namespace}-label {
     opacity: 1;
-    &:before,
-    &:after {
+
+    &::before,
+    &::after {
       width: 50%;
     }
   }
-
 }
 
-
 .#{$namespace}-input {
-
   &[disabled],
   &.is-disabled {
     border-color: $hx-input-disabled-border;
     color: $hx-input-disabled;
     cursor: $hx-cursor-disabled;
 
-    &~ .#{$namespace}-label {
+    & ~ .#{$namespace}-label {
       top: $hx-font-form-label-focus-top;
-      font-size: .75rem;
+      font-size: 0.75rem;
       color: $hx-input-disabled;
       cursor: $hx-cursor-disabled;
 
       sup {
-        font-size: .4rem;
+        font-size: 0.4rem;
       }
     }
   }
@@ -498,21 +503,22 @@
 
 .#{$namespace}-textarea {
   // display: initial;
-  padding: 0 0 .6rem 0;
+  padding: 0 0 0.6rem;
   resize: vertical;
   min-height: 3.5rem;
   line-height: 1.3;
   &:focus ~ .#{$namespace}-label,
   &:valid ~ .#{$namespace}-label,
-  &:-webkit-autofill  ~ .#{$namespace}-label{
+  &:-webkit-autofill ~ .#{$namespace}-label {
     top: -1.15rem;
   }
 
   ~ .#{$namespace}-label {
     top: -1rem;
-    font-size: .75rem;
+    font-size: 0.75rem;
+
     sup {
-      font-size: .4rem;
+      font-size: 0.4rem;
     }
   }
 
@@ -522,26 +528,25 @@
     color: $hx-input-disabled;
     cursor: $hx-cursor-disabled;
 
-    &~ .#{$namespace}-label {
+    & ~ .#{$namespace}-label {
       color: $hx-input-disabled;
       cursor: $hx-cursor-disabled;
     }
   }
-
 }
 
 .#{$namespace}-select {
   -webkit-appearance: none;
-  -moz-appearance:none;
+  -moz-appearance: none;
   appearance: none;
   width: 100%;
-  padding: .8rem 0 .6rem;
+  padding: 0.8rem 0 0.6rem;
   background-color: transparent;
   font-size: $hx-font-form-elements-size;
   font-weight: $hx-font-form-elements-weight;
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 1px solid rgb(0 0 0 / 20%);
   border-radius: 0;
-  border-width: 0 0 1px 0;
+  border-width: 0 0 1px;
   position: relative;
   outline: none;
 
@@ -560,15 +565,15 @@
     color: $hx-input-disabled;
     cursor: $hx-cursor-disabled;
 
-    &~ .#{$namespace}-label {
+    & ~ .#{$namespace}-label {
       top: $hx-font-form-label-focus-top;
       left: 0;
-      font-size: .75rem;
+      font-size: 0.75rem;
       color: $hx-input-disabled;
       cursor: $hx-cursor-disabled;
 
       sup {
-        font-size: .4rem;
+        font-size: 0.4rem;
       }
     }
   }
@@ -577,99 +582,106 @@
     position: absolute;
     top: $hx-font-form-label-focus-top;
     left: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     z-index: 0;
+
     sup {
       color: $hx-color-red;
-      font-size: .6rem;
+      font-size: 0.6rem;
     }
     & + .#{$namespace}-help {
-      font-size: .75rem;
-      margin-top: .25rem;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
       color: gray;
-      transition: .3s;
+      transition: 0.3s;
     }
   }
+
   .option {
-    &:before, &:after {
-      content: '1';
+    &::before,
+    &::after {
+      content: "1";
       right: 0;
       top: 0;
     }
   }
 
   &.has-badges {
-    transition: .3s;
-  	&.is-active {
-  		border-bottom: 3px solid $hx-color-primary;
-  	}
-		input {
-			font-size: 1rem;
-			outline: none;
-			background-color: transparent;
-			display: block;
-			border: none;
-			line-height: 32px;
-			height: 32px;
-			transition: .3s;
-		}
-		> .icon {
-			color: $hx-color-primary;
-			&.animated {
-				animation-duration: 2s;
-			}
-		}
-		&.is-not-focus {
-			input {
-				height: 0;
-				padding: 0;
-				overflow: auto;
-			}
-			border-bottom-color: transparent;
-		}
-	}
+    transition: 0.3s;
 
+    &.is-active {
+      border-bottom: 3px solid $hx-color-primary;
+    }
+
+    input {
+      font-size: 1rem;
+      outline: none;
+      background-color: transparent;
+      display: block;
+      border: none;
+      line-height: 32px;
+      height: 32px;
+      transition: 0.3s;
+    }
+
+    > .icon {
+      color: $hx-color-primary;
+
+      &.animated {
+        animation-duration: 2s;
+      }
+    }
+
+    &.is-not-focus {
+      input {
+        height: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .#{$namespace}-select-control {
-  &:after {
+  &::after {
     position: absolute;
     top: 1.35em;
     right: 0.5em;
     width: 0;
     height: 0;
     padding: 0;
-    content: '';
-    border-left: .25em solid transparent;
-    border-right: .25em solid transparent;
-    border-top: .375em solid $hx-color-gray-lighter;
+    content: "";
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-top: 0.375em solid $hx-color-gray-lighter;
     pointer-events: none;
   }
 }
 
 // Radio button container
 .#{$namespace}-radio-control {
-
   &.is-inline {
     display: inline-block;
     margin-right: 0.7rem;
 
     .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
     .#{$namespace}-radio:checked + .#{$namespace}-label {
-          padding-left: 1.7rem;
+      padding-left: 1.7rem;
     }
   }
 
   &.is-small {
     $small: 0.8;
 
-    .#{$namespace}-radio:not(:checked)+.#{$namespace}-label,
-    .#{$namespace}-radio:checked+.#{$namespace}-label {
+    .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+    .#{$namespace}-radio:checked + .#{$namespace}-label {
       padding-left: (32px * $small);
     }
 
-    .#{$namespace}-radio+.#{$namespace}-label:before,
-    .#{$namespace}-radio+.#{$namespace}-label:after {
+    .#{$namespace}-radio + .#{$namespace}-label:before,
+    .#{$namespace}-radio + .#{$namespace}-label:after {
       left: 2px;
       top: 2px;
       margin: (4px * $small);
@@ -697,15 +709,14 @@
   line-height: 25px;
   font-size: $hx-font-form-elements-size;
   font-weight: $hx-font-form-elements-weight;
-  transition: .28s ease;
-
+  transition: 0.28s ease;
   -khtml-user-select: none; /* webkit (konqueror) browsers */
   user-select: none;
 }
 
 .#{$namespace}-radio + .#{$namespace}-label:before,
 .#{$namespace}-radio + .#{$namespace}-label:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -713,7 +724,7 @@
   width: 18px;
   height: 18px;
   z-index: 0;
-  transition: .28s ease;
+  transition: 0.28s ease;
 }
 
 /* Unchecked styles */
@@ -740,31 +751,25 @@
 
 .#{$namespace}-radio:checked + .#{$namespace}-label:after {
   border-color: $hx-color-primary;
-}
-
-.#{$namespace}-radio:checked + .#{$namespace}-label:after {
   background-color: $hx-color-primary;
-}
-
-.#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  transform: scale(.5);
+  transform: scale(0.5);
 }
 
 // /* Radio With gap */
 // [type="radio"].with-gap:checked + .#{$namespace}-label:after {
 //   transform: scale(.5);
 // }
-//
+
 // /* Focused styles */
 // [type="radio"].tabbed:focus + .#{$namespace}-label:before {
 //   box-shadow: 0 0 0 10px rgba(0,0,0,.1);
 // }
-//
+
 // /* Disabled Radio With gap */
 // .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:before {
 //   border: 2px solid $hx-input-disabled;
 // }
-//
+
 // .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:after {
 //   border: none;
 //   background-color: $hx-input-disabled;
@@ -794,7 +799,7 @@
 
 // Checkbox container
 .#{$namespace}-checkbox-control {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
 }
 
 /* Remove default checkbox */
@@ -816,12 +821,10 @@
     height: 23px;
     line-height: 23px;
     font-size: $hx-font-form-elements-size;
-
-    font-weight:normal;
+    font-weight: normal;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
@@ -834,8 +837,8 @@
 
   /* checkbox aspect */
   + .#{$namespace}-label:before,
-  + .#{$namespace}-label:after  {
-    content: '';
+  + .#{$namespace}-label:after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -845,7 +848,7 @@
     border: 2px solid $hx-color-gray-lighter;
     border-radius: 1px;
     margin-top: 2px;
-    transition: .2s;
+    transition: 0.2s;
   }
 
   &:disabled + .#{$namespace}-label {
@@ -867,7 +870,7 @@
       width: 13px;
       height: 8px;
       border-bottom: 2px solid white;
-      border-width: 0 0 2px 0;
+      border-width: 0 0 2px;
     }
 
     + .#{$namespace}-label:after {
@@ -882,47 +885,43 @@
 }
 
 .#{$namespace}-checkbox:checked {
-   + .#{$namespace}-label:before {
-     top: 2px;
-     left: 1px;
-     width: 7px;
-     height: 12px;
-     border-top: 2px solid transparent;
-     border-left: 2px solid transparent;
-     border-right: 2px solid white;
-     border-bottom: 2px solid white;
-     -webkit-transform: rotateZ(37deg);
-     transform: rotateZ(37deg);
+  + .#{$namespace}-label:before {
+    top: 2px;
+    left: 1px;
+    width: 7px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
 
-     -webkit-transform-origin: 100% 100%;
-     transform-origin: 100% 100%;
-   }
+  + .#{$namespace}-label:after {
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $hx-color-primary;
+    background-color: $hx-color-primary;
+    z-index: 0;
+  }
 
-   + .#{$namespace}-label:after {
-     top: 0;
-     width: 18px;
-     height: 18px;
-     border: 2px solid $hx-color-primary;
-     background-color: $hx-color-primary;
-     z-index: 0;
-   }
-
-   &:disabled + .#{$namespace}-label:before {
-     border-right: 2px solid $hx-input-disabled;
-     border-bottom: 2px solid $hx-input-disabled;
-
-   }
- }
+  &:disabled + .#{$namespace}-label:before {
+    border-right: 2px solid $hx-input-disabled;
+    border-bottom: 2px solid $hx-input-disabled;
+  }
+}
 
 /// is-small checkbox
 .#{$namespace}-input-control.is-small,
-.hx-table.is-narrow {
-
+.#{$namespace}-table.is-narrow {
   // Checkbox container
   .#{$namespace}-checkbox-control {
-    margin: .4rem 0;
+    margin: 0.4rem 0;
   }
-
 
   // Checkbox Styles
   .#{$namespace}-checkbox {
@@ -931,7 +930,7 @@
       padding-left: 25px;
       height: 20px;
       line-height: 20px;
-      font-size: .9rem;
+      font-size: 0.9rem;
 
       &.is-text-multiline {
         @include multiline;
@@ -940,7 +939,7 @@
 
     /* checkbox aspect */
     + .#{$namespace}-label:before,
-    + .#{$namespace}-label:after  {
+    + .#{$namespace}-label:after {
       width: 16px;
       height: 16px;
       margin-top: 2px;
@@ -960,7 +959,7 @@
 
   th {
     .#{$namespace}-checkbox-control {
-      padding-bottom: .1rem;
+      padding-bottom: 0.1rem;
     }
     .#{$namespace}-checkbox {
       + .#{$namespace}-label {
@@ -970,15 +969,14 @@
     }
   }
 
-  .hx-table-group {
+  .#{$namespace}-table-group {
     th {
       .#{$namespace}-checkbox-control {
         padding: 0;
-        margin-top: -.01rem;
+        margin-top: -0.01rem;
       }
     }
   }
-
 
   .#{$namespace}-checkbox:checked {
     + .#{$namespace}-label:before {

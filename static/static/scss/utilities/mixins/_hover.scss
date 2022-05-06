@@ -1,15 +1,21 @@
 @mixin hover {
-  &:hover { @content }
+  &:hover {
+    @content;
+  }
 }
 
 @mixin hover-focus {
   @if $hx-enable-hover-media-query {
-    &:focus { @content }
-    @include hover { @content }
+    &:focus {
+      @content;
+    }
+    @include hover {
+      @content;
+    }
   } @else {
     &:focus,
     &:hover {
-      @content
+      @content;
     }
   }
 }
@@ -18,14 +24,16 @@
   @if $hx-enable-hover-media-query {
     &,
     &:focus {
-      @content
+      @content;
     }
-    @include hover { @content }
+    @include hover {
+      @content;
+    }
   } @else {
     &,
     &:focus,
     &:hover {
-      @content
+      @content;
     }
   }
 }
@@ -34,14 +42,16 @@
   @if $hx-enable-hover-media-query {
     &:focus,
     &:active {
-      @content
+      @content;
     }
-    @include hover { @content }
+    @include hover {
+      @content;
+    }
   } @else {
     &:focus,
     &:active,
     &:hover {
-      @content
+      @content;
     }
   }
 }

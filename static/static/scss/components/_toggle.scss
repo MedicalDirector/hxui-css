@@ -1,22 +1,20 @@
-// =========
-// Toggle
-// =========
+//////////////
+//  TOGGLE  //
+//////////////
 
 .#{$namespace}-toggle,
 .#{$namespace}-toggle * {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-  margin: .7rem 0;
+  @include no-copy;
+
+  margin: 0.7rem 0;
 }
 
 .#{$namespace}-toggle label {
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.#{$namespace}-toggle label input[type=checkbox] {
+.#{$namespace}-toggle label input[type="checkbox"] {
   opacity: 0;
   width: 0;
   height: 0;
@@ -24,7 +22,7 @@
   &:checked + .lever {
     background-color: $hx-color-primary;
 
-    &:after {
+    &::after {
       background-color: $hx-color-white;
       left: 21px;
     }
@@ -39,12 +37,11 @@
   height: 15px;
   background-color: $hx-color-gray-light;
   border-radius: 15px;
-  margin-right: 10px;
   transition: background 0.3s ease;
   vertical-align: middle;
   margin: 0 16px;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -52,33 +49,33 @@
     height: 21px;
     background-color: $hx-color-gray-lightest;
     border-radius: 21px;
-    box-shadow: 0 1px 3px 1px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%);
     left: -5px;
     top: -3px;
-    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
   }
 }
 
 // Switch active style
-input[type=checkbox]:checked:not(:disabled) ~ .lever:active::after,
-input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,.4), 0 0 0 15px rgba(65, 185, 135, .2);
+input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::after,
+input[type="checkbox"]:checked:not(:disabled).tabbed:focus ~ .lever::after {
+  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%), 0 0 0 15px rgb(65 185 135 / 20%);
 }
 
-input[type=checkbox]:not(:disabled) ~ .lever:active:after,
-input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,.4), 0 0 0 15px rgba(0, 0, 0, .08);
+input[type="checkbox"]:not(:disabled) ~ .lever:active::after,
+input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::after {
+  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%), 0 0 0 15px rgb(0 0 0 / 8%);
 }
 
 // Disabled Styles
-.#{$namespace}-toggle input[type=checkbox][disabled] + .lever {
+.#{$namespace}-toggle input[type="checkbox"][disabled] + .lever {
   cursor: $hx-cursor-disabled;
   background-color: darken($hx-color-gray-lightest, 10);
 }
 
-.#{$namespace}-toggle label input[type=checkbox][disabled] + .lever:after,
-.#{$namespace}-toggle label input[type=checkbox][disabled]:checked + .lever:after {
+.#{$namespace}-toggle label input[type="checkbox"][disabled] + .lever:after,
+.#{$namespace}-toggle label input[type="checkbox"][disabled]:checked + .lever:after {
   background-color: darken($hx-color-gray-lightest, 2);
   cursor: $hx-cursor-disabled;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0,.2);
+  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 20%);
 }

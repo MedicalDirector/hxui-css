@@ -1,11 +1,10 @@
 .#{$namespace}-inspector {
   height: 100vh;
-  background:#fff;
-  width:100%;
-  transition: .3s ease-in-out;
+  background: #fff;
+  width: 100%;
+  transition: 0.3s ease-in-out;
 
   @include mobile {
-
     width: 340px;
 
     &.is-medium,
@@ -15,49 +14,44 @@
   }
 
   @include tablet {
-
     width: 340px;
 
     &.is-medium,
-    &.is-large{
+    &.is-large {
       width: 592px;
     }
   }
 
   @include desktop {
-
     width: 340px;
 
     &.is-medium,
-    &.is-large{
+    &.is-large {
       width: 644px;
     }
   }
 
-  @include  widescreen {
-
+  @include widescreen {
     width: 340px;
 
     &.is-medium {
       width: 644px;
     }
 
-    &.is-large{
+    &.is-large {
       width: 95%;
     }
   }
 
-  @include  fullhd {
-
+  @include fullhd {
     width: 340px;
 
     &.is-medium {
       width: 644px;
     }
 
-    &.is-large{
+    &.is-large {
       width: 95%;
     }
-
   }
 }

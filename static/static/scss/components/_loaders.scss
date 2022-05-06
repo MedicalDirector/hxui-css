@@ -1,4 +1,8 @@
-.hx-loader {
+//////////////
+// LOADERS  //
+//////////////
+
+.#{$namespace}-loader {
   display: inline-block;
   position: relative;
   width: 4rem;
@@ -19,15 +23,17 @@
     &:nth-child(1) {
       animation-delay: -0.45s;
     }
+
     &:nth-child(2) {
       animation-delay: -0.3s;
     }
+
     &:nth-child(3) {
       animation-delay: -0.15s;
     }
   }
 
-  &.is-small{
+  &.is-small {
     width: (4/3) + rem;
     height: (4/3) + rem;
 
@@ -39,27 +45,31 @@
     }
   }
 
-  &.is-primary{
+  &.is-primary {
     div {
       border-color: $hx-color-primary transparent transparent transparent;
     }
   }
-  &.is-info{
+
+  &.is-info {
     div {
       border-color: $hx-color-info transparent transparent transparent;
     }
   }
-  &.is-warning{
+
+  &.is-warning {
     div {
       border-color: $hx-color-warning transparent transparent transparent;
     }
   }
-  &.is-danger{
+
+  &.is-danger {
     div {
       border-color: $hx-color-danger transparent transparent transparent;
     }
   }
-  &.is-inverse{
+
+  &.is-inverse {
     div {
       border-color: $hx-color-white transparent transparent transparent;
     }
@@ -70,6 +80,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

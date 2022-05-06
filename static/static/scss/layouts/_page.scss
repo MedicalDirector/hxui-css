@@ -2,39 +2,42 @@
 // Page
 // =========
 
-.#{$namespace}-page{
-  @extend .hx-flex;
-  @extend .hx-flex-column;
-  height:100vh;
-  width:100vw;
+.#{$namespace}-page {
+  @extend .#{$namespace}-flex;
+  @extend .#{$namespace}-flex-column;
 
-  &-header{
-    width:100%;
-    min-height:1rem;
-    background:transparent;
+  height: 100vh;
+  width: 100vw;
+
+  &-header {
+    width: 100%;
+    min-height: 1rem;
+    background: transparent;
   }
 
-  &-body{
-    @extend .hx-flex;
-    @extend .hx-flex-1;
-    @extend .hx-flex-align-self-stretch;
-    min-height:0;
+  &-body {
+    @extend .#{$namespace}-flex;
+    @extend .#{$namespace}-flex-1;
+    @extend .#{$namespace}-flex-align-self-stretch;
+
+    min-height: 0;
   }
 
   .block {
-  @include block;
-}
-
-  &.has-blue-gradient{
-    @include radial-gradient(top, $hx-color-green-light, $hx-color-blue);
-    color:#fff;
+    @include block;
   }
 
-  &.has-orange-gradient{
+  &.has-blue-gradient {
+    @include radial-gradient(top, $hx-color-green-light, $hx-color-blue);
+
+    color: #fff;
+  }
+
+  &.has-orange-gradient {
     @include radial-gradient(top, $hx-color-yellow-light, $hx-color-orange);
   }
 
-  &.has-purple-gradient{
+  &.has-purple-gradient {
     @include radial-gradient(top, $hx-color-red-light, $hx-color-purple);
   }
 }

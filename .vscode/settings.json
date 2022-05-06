@@ -7,9 +7,9 @@
   //   "source.formatDocument",
   // ],
   "eslint.validate": ["javascript", "vue"],
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
   "stylelint.validate": ["css", "scss"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  }
 }

@@ -1,4 +1,6 @@
-// Progress Timeline
+/////////////////////////
+//  PROGRESS TIMELINE  //
+/////////////////////////
 
 .#{$namespace}-progress-timeline-status {
   position: relative;
@@ -12,15 +14,15 @@
     border: 4px solid transparent;
     vertical-align: middle;
     display: inline-block;
-    margin-right: .4rem;
-    transition: all .2s ease-in-out;
+    margin-right: 0.4rem;
+    transition: all 0.2s ease-in-out;
     bottom: 1px;
     text-align: center;
     color: $hx-color-white;
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 2px 9px rgba(0,0,0, .2);
+      box-shadow: 0 2px 9px rgb(0 0 0 / 20%);
     }
 
     &.is-success {
@@ -28,7 +30,7 @@
       border: 1px solid $hx-color-primary;
       width: 15px;
       height: 15px;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &.is-danger {
@@ -36,7 +38,7 @@
       width: 15px;
       height: 15px;
       background: transparent;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &.is-warning {
@@ -44,7 +46,7 @@
       width: 15px;
       height: 15px;
       background: transparent;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &.is-animated {
@@ -67,13 +69,12 @@
       top: -3px;
       color: $hx-color-white;
     }
-
   }
 
   .#{$namespace}-popover {
     background: $hx-color-white;
     border: 1px solid $hx-color-gray-lightest;
-    box-shadow: 0 6px 12px rgba(0,0,0,.145);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 14.5%);
     border-radius: 5px;
     position: absolute;
     min-width: 320px;
@@ -82,7 +83,7 @@
     padding-bottom: 0;
     z-index: 9;
     opacity: 0.01;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     max-height: 200px;
     transform: translateY(-5px);
     overflow: hidden;
@@ -90,18 +91,18 @@
     &.is-opened {
       display: block;
       opacity: 1;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       transform: translateY(5px);
       max-height: 500px;
       overflow-y: scroll;
     }
 
-    &.is-right{
-      right:0;
+    &.is-right {
+      right: 0;
     }
 
-    &.is-left{
-      left:0;
+    &.is-left {
+      left: 0;
     }
   }
 }
@@ -113,7 +114,7 @@
 
   ul {
     list-style: none;
-    margin: .9rem 0 .3rem 0;
+    margin: 0.9rem 0 0.3rem;
     padding: 0;
   }
 
@@ -122,41 +123,42 @@
     padding: 0 0 12px;
     list-style: none;
     margin: 0;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     z-index: 1;
 
-    &:after {
+    &::after {
       position: absolute;
       left: 5px;
       top: 0;
       height: 100%;
       border-left: 2px solid $hx-progress-timeline-tail-color;
-      transition: all .4s ease-in-out;
-      content: '';
+      transition: all 0.4s ease-in-out;
+      content: "";
       z-index: -1;
     }
 
     &.is-success {
-      .hx-head {
+      .#{$namespace}-head {
         background-color: $hx-color-primary;
       }
-      .hx-tail {
+      .#{$namespace}-tail {
         border-color: $hx-color-primary;
       }
     }
 
     &.is-next {
-      .hx-head {
+      .#{$namespace}-head {
         border-color: $hx-color-primary;
         background-color: $hx-color-white;
       }
     }
 
     &.is-warning {
-      .hx-head {
+      .#{$namespace}-head {
         border-color: $hx-color-warning;
         background-color: $hx-color-white;
       }
+
       strong {
         font-weight: bold;
         color: $hx-color-warning;
@@ -164,10 +166,11 @@
     }
 
     &.is-danger {
-      .hx-head {
+      .#{$namespace}-head {
         border-color: $hx-color-red-light;
         background-color: $hx-color-white;
       }
+
       strong {
         font-weight: bold;
         color: $hx-color-red-light;
@@ -182,7 +185,7 @@
     background-color: $hx-progress-timeline-head-color;
     border-radius: 100px;
     border: 3px solid transparent;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     .icon {
       font-size: 1rem;
@@ -207,7 +210,7 @@
     }
 
     small {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
 
     .icon {
@@ -219,15 +222,14 @@
   }
 }
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
   0% {
-    background: rgba(65,186,137,.8);
-    box-shadow: inset 0px 0px 8px 2px rgba(65,186,137,0.8),
-                      0px 0px 5px 2px rgba(65,186,137,0.5);
+    background: rgb(65 186 137 / 80%);
+    box-shadow: inset 0 0 8px 2px rgb(65 186 137 / 80%), 0 0 5px 2px rgb(65 186 137 / 50%);
   }
+
   100% {
-    background: rgba(65,186,137,1);
-    box-shadow: inset 0px 0px 6px 2px rgba(65,186,137,0.4),
-                      0px 0px 15px 3px rgba(65,186,137, .8);
+    background: rgb(65 186 137 / 100%);
+    box-shadow: inset 0 0 6px 2px rgb(65 186 137 / 40%), 0 0 15px 3px rgb(65 186 137 / 80%);
   }
 }

@@ -156,7 +156,7 @@ export default {
     <span class="hx-badge-content">
       Large
       <button class="hx-delete is-medium hx-icon-control">
-        <i class="hx-icon icon-refresh is-white"></i>
+        <i class="hx-icon icon-refresh is-small is-white"></i>
       </button>
     </span>
   </span>
@@ -251,5 +251,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css"></style>

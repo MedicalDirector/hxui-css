@@ -1,3 +1,7 @@
+////////////////////
+//  PANEL HEADER  //
+////////////////////
+
 .#{$namespace}-panel-header {
   padding: 1rem;
   background-color: $hx-color-white;
@@ -10,10 +14,12 @@
 
   .#{$namespace}-panel-header-row {
     display: flex;
+
     &:first-child {
       justify-content: space-between;
       align-items: center;
     }
+
     &:only-child {
       margin-top: 27px;
     }
@@ -23,10 +29,10 @@
     margin-top: 10px;
   }
 
-
   .#{$namespace}-panel-header-heading {
     display: flex;
     align-items: center;
+
     .is-heading-icon {
       width: 25px;
       height: 25px;
@@ -38,6 +44,7 @@
       margin: 0;
     }
   }
+
   .#{$namespace}-panel-header-subheading {
     margin-left: 31px;
     font-size: 0.85rem;
@@ -46,29 +53,35 @@
   .#{$namespace}-panel-header-row-actions {
     > * {
       margin-right: 0.5rem;
+
       &:last-child {
         margin-right: 0;
       }
     }
-    .hx-icon {
+
+    .#{$namespace}-icon {
       max-width: 1.4rem;
       max-height: 1.4rem;
     }
-    .icon-close-empty--larger {
-      font-size: 32px;
+
+    .icon-close-empty {
+      &--larger {
+        font-size: 32px;
+      }
     }
   }
 
   .#{$namespace}-panel-back {
     display: flex;
     align-items: center;
-      .hx-icon {
-        height: 14px;
-        width: 14px;
-      }
+
+    .#{$namespace}-icon {
+      height: 14px;
+      width: 14px;
+    }
+
     .#{$namespace}-panel-back-text {
       margin-left: 7px;
     }
   }
-
 }

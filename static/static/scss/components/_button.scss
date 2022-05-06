@@ -1,6 +1,6 @@
-// =========
-// Button
-// =========
+///////////////
+//  BUTTONS  //
+///////////////
 
 @mixin button-small {
   border-radius: $hx-border-radius-sm;
@@ -27,11 +27,11 @@ a.#{$namespace}-button,
   color: $hx-button;
   cursor: pointer;
   justify-content: center;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   text-align: center;
   white-space: nowrap;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 
   // text-transform: uppercase;
   font-weight: 400;
@@ -81,14 +81,14 @@ a.#{$namespace}-button,
   // States
   &:hover,
   &.is-hovered {
-    border-color: rgba($hx-button-hover-border, .5);
+    border-color: rgba($hx-button-hover-border, 0.5);
     color: $hx-button-hover;
     text-decoration: none;
   }
 
   &:focus,
   &.is-focused {
-    border-color: rgba($hx-button-focus-border, .5);
+    border-color: rgba($hx-button-focus-border, 0.5);
     box-shadow: 0 0 0.5em rgba($hx-button-focus-border, 0.35);
     color: $hx-button-focus;
     text-decoration: none;
@@ -96,11 +96,11 @@ a.#{$namespace}-button,
 
   &:active,
   &.is-active {
-    border-color: rgba($hx-button-active-border, .5);
+    border-color: rgba($hx-button-active-border, 0.5);
     box-shadow: $hx-button-shadow-inset;
     color: $hx-button-active;
     text-decoration: none;
-    background-color:rgba($hx-color-gray-lightest,0.3);
+    background-color: rgba($hx-color-gray-lightest, 0.3);
   }
 
   // Colors
@@ -122,8 +122,13 @@ a.#{$namespace}-button,
   }
 
   // is-white, is-black, is-light ... is-info, is-success, is-warning ... is-red, is-blue ...
-  $transparent-inverted: ('transparent-inverted': (transparent, $hx-color-white));
-  $hx-colors-buttons: map-merge( $hx-colors, $transparent-inverted );
+  $transparent-inverted: (
+    "transparent-inverted": (
+      transparent,
+      $hx-color-white,
+    ),
+  );
+  $hx-colors-buttons: map-merge($hx-colors, $transparent-inverted);
 
   @each $name, $pair in $hx-colors-buttons {
     $color: nth($pair, 1);
@@ -164,13 +169,13 @@ a.#{$namespace}-button,
 
       &.is-outlined {
         background-color: transparent;
-        border-color: rgba($color, .5);
+        border-color: rgba($color, 0.5);
         color: $color;
 
         &:hover,
         &:focus {
           background-color: $color;
-          border-color: rgba($color, .5);
+          border-color: rgba($color, 0.5);
           color: $hx-color-invert;
         }
 
@@ -222,7 +227,7 @@ a.#{$namespace}-button,
   // Modifiers
   &[disabled],
   &.is-disabled {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &.is-fullwidth {
@@ -247,8 +252,8 @@ a.#{$namespace}-button,
     height: 3.5rem;
     border-radius: 50%;
     text-align: center;
-    margin-left: .25rem;
-    margin-right: .25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 
     .#{$namespace}-icon-control {
       margin-top: 1px;
@@ -264,7 +269,7 @@ a.#{$namespace}-button,
       height: 4.5rem;
     }
 
-    .hx-icon {
+    .#{$namespace}-icon {
       &.is-large {
         height: 3rem;
       }
@@ -277,7 +282,7 @@ a.#{$namespace}-button,
     font-weight: 400;
 
     &:hover,
-    &.is-active{
+    &.is-active {
       background-color: rgb(0 0 0 / 5%);
     }
 
@@ -290,7 +295,7 @@ a.#{$namespace}-button,
 
         &:hover,
         &.is-hovered {
-          background-color: rgba($color, .1);
+          background-color: rgba($color, 0.1);
           color: $color;
         }
 
@@ -332,18 +337,20 @@ a.#{$namespace}-button,
   &.is-transparent {
     background-color: transparent;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       background-color: rgb(0 0 0 / 50%);
     }
 
     &:hover {
-      &::before, &::after {
+      &::before,
+      &::after {
         background-color: white;
       }
     }
   }
 
-	&.is-small {
+  &.is-small {
     // specific to accommodate small delete circle
     // can be abstracted to -icon.is-xsmall
     &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
@@ -351,25 +358,25 @@ a.#{$namespace}-button,
       width: 0.75rem;
       font-size: 0.75rem;
     }
-	}
+  }
 
-	&.is-large {
-		height: 36px;
+  &.is-large {
+    height: 36px;
     width: 36px;
-	}
+  }
 }
 
 .#{$namespace}-info {
   width: 20px;
   height: 20px;
-	border-radius: 100%;
-	margin-left: -.5em;
-	margin-right: .5em;
-	background-color: rgb(255 255 255 / 80%);
-	border: 1px solid transparent;
-	position: relative;
+  border-radius: 100%;
+  margin-left: -0.5em;
+  margin-right: 0.5em;
+  background-color: rgb(255 255 255 / 80%);
+  border: 1px solid transparent;
+  position: relative;
   outline: none;
-  transition: .3s;
+  transition: 0.3s;
   color: $hx-color-black;
 
   &:hover {
@@ -381,15 +388,15 @@ a.#{$namespace}-button,
     height: 16px;
   }
 
-	&::before {
-		content: '\e94f';
-		font-family: hxui;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		font-size: 1rem;
-	}
+  &::before {
+    content: "\e94f";
+    font-family: hxui;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
 }
 
 // Adjustment for vertical spacing
@@ -424,7 +431,7 @@ input[type="submit"].button {
     &.is-info,
     &.is-warning,
     &.is-danger {
-      border-left: 1px solid rgba($hx-color-white, .3);
+      border-left: 1px solid rgba($hx-color-white, 0.3);
     }
 
     &:first-child {
@@ -441,7 +448,6 @@ input[type="submit"].button {
       &.is-danger {
         border-left-color: transparent;
       }
-
     }
 
     &:last-child {
@@ -452,7 +458,6 @@ input[type="submit"].button {
     &:hover {
       z-index: 1;
     }
-
   }
 
   &.has-text-centered {
@@ -476,12 +481,12 @@ input[type="submit"].button {
   }
 }
 
-.#{$namespace}-button-split{
+.#{$namespace}-button-split {
   display: inline-flex;
-  .#{$namespace}-button:first-child{
+  .#{$namespace}-button:first-child {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    border-right:none;
+    border-right: none;
   }
   .#{$namespace}-button:nth-child(2) {
     border-bottom-left-radius: 0;
@@ -490,4 +495,3 @@ input[type="submit"].button {
     border-left-color: rgb(255 255 255 / 30%);
   }
 }
-

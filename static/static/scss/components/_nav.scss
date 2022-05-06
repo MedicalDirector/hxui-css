@@ -1,24 +1,27 @@
-// =========
-// Nav
-// =========
+///////////
+//  NAV  //
+///////////
 
 .#{$namespace}-nav {
-  @extend .hx-flex;
-  @extend .hx-flex-align-center;
+  @extend .#{$namespace}-flex;
+  @extend .#{$namespace}-flex-align-center;
+
   padding: 0;
   margin: 0;
   list-style: none;
   flex-shrink: 0;
 
-  &.#{$namespace}-nav-vertical, &.is-vertical {
-    @extend .hx-flex-column;
-    @extend .hx-flex-start;
+  &.#{$namespace}-nav-vertical,
+  &.is-vertical {
+    @extend .#{$namespace}-flex-column;
+    @extend .#{$namespace}-flex-start;
+
     max-width: 18em;
 
     .#{$namespace}-nav-item,
     .#{$namespace}-nav-heading,
     .#{$namespace}-nav-spacer {
-      width:100%;
+      width: 100%;
     }
 
     &.is-bottom {
@@ -27,55 +30,57 @@
       width: 100%;
       padding-bottom: 1rem;
     }
-
   }
 
   &.is-left {
     justify-content: flex-start;
   }
+
   &.is-centered {
     justify-content: center;
   }
+
   &.is-right {
     justify-content: flex-end;
   }
-
 }
 
-
-.#{$namespace}-nav-heading{
+.#{$namespace}-nav-heading {
   text-transform: uppercase;
 
-  h6{
-    color:$hx-color-gray-lighter;
+  h6 {
+    color: $hx-color-gray-lighter;
     font-weight: normal;
-    margin: 1rem 1rem 1rem;
+    margin: 1rem;
   }
 }
 
-.#{$namespace}-nav-item{
-  @extend .hx-flex;
+.#{$namespace}-nav-item {
+  @extend .#{$namespace}-flex;
+
   margin-top: 0;
 }
 
 .#{$namespace}-nav-link {
-  @extend .hx-flex;
-  @extend .hx-flex-1;
-  @extend .hx-flex-align-center;
+  @extend .#{$namespace}-flex;
+  @extend .#{$namespace}-flex-1;
+  @extend .#{$namespace}-flex-align-center;
+
   text-decoration: none;
-  padding:($hx-spacer/2) $hx-spacer;
-  transition: all .2s ease-in-out;
-  color:$hx-nav-link-color;
+  padding: ($hx-spacer/2) $hx-spacer;
+  transition: all 0.2s ease-in-out;
+  color: $hx-nav-link-color;
   font-size: $hx-nav-link-font-size;
   font-weight: $hx-nav-link-font-weight;
   border-radius: 2rem;
 
   @include hover-focus {
     text-decoration: none;
-    // background-color: $hx-nav-link-hover-color;
-    color:$hx-nav-link-active-color;
 
-    i.icon{
+    // background-color: $hx-nav-link-hover-color;
+    color: $hx-nav-link-active-color;
+
+    i.icon {
       color: $hx-nav-link-active-color;
     }
   }
@@ -84,19 +89,21 @@
   //   padding-left:$hx-spacer/2;
   // }
 
-  &.is-active{
-    background-color: rgba(0,0,0,.04);
+  &.is-active {
+    background-color: rgb(0 0 0 / 4%);
     color: $hx-nav-link-active-color;
+
     // border: 1px solid $hx-color-gray-lighter;
 
-    i.icon{
+    i.icon {
       color: $hx-nav-link-active-color;
     }
   }
 
   // Disabled state lightens text and removes hover/tab effects
   &.is-disabled {
-    opacity: .3;
+    opacity: 0.3;
+
     // color: $hx-nav-disabled-link-color;
 
     @include plain-hover-focus {
@@ -106,89 +113,97 @@
     }
   }
 
-
-  i.icon{
+  i.icon {
     font-size: 1.5rem;
-    color:$hx-color-gray-light;
-    margin:0 ($hx-spacer/2) 0 ($hx-spacer/2);
+    color: $hx-color-gray-light;
+    margin: 0 ($hx-spacer/2) 0 ($hx-spacer/2);
   }
-
 }
 
 .#{$namespace}-nav-brand {
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0rem .75rem .25rem;
-  margin-bottom: .5rem;
-  > svg, img , a, .icon {
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  padding: 0 0.75rem 0.25rem;
+  margin-bottom: 0.5rem;
+
+  > svg,
+  img,
+  a,
+  .icon {
     max-width: 5rem;
     margin: 0 auto 1rem;
   }
 }
 
 // minified behaviour
-.is-minified{
-  .#{$namespace}-nav-item{
-    @extend .hx-flex;
-    @extend .hx-flex-justify-center;
-    margin:$hx-spacer/3 0;
+.is-minified {
+  .#{$namespace}-nav-item {
+    @extend .#{$namespace}-flex;
+    @extend .#{$namespace}-flex-justify-center;
+
+    margin: $hx-spacer/3 0;
   }
   .#{$namespace}-nav-brand {
-    margin-bottom: .5rem;
-    > svg, img, a, .icon {
+    margin-bottom: 0.5rem;
+
+    > svg,
+    img,
+    a,
+    .icon {
       max-width: 2rem;
       max-height: 2rem;
     }
   }
-  .#{$namespace}-nav-link{
-    @extend .hx-flex;
-    @extend .hx-flex-justify-center;
+  .#{$namespace}-nav-link {
+    @extend .#{$namespace}-flex;
+    @extend .#{$namespace}-flex-justify-center;
     @include border-radius(50%);
-    max-width:40px;
-    span{
+
+    max-width: 40px;
+
+    span {
       display: none;
     }
-    &.is-active{
-      background-color:$hx-nav-link-active-color;
-      color:#fff;
 
-      i.icon{
+    &.is-active {
+      background-color: $hx-nav-link-active-color;
+      color: #fff;
+
+      i.icon {
         color: #fff;
       }
     }
   }
-  .#{$namespace}-nav-heading{
+  .#{$namespace}-nav-heading {
     text-align: center;
   }
 }
 
-
-//themed
+// themed
 .has-blue-gradient,
 .has-purple-gradient,
-.has-orange-gradient{
+.has-orange-gradient {
+  .#{$namespace}-nav-link {
+    color: #fff;
 
-  .#{$namespace}-nav-link{
-    color:#fff;
-
-    i.icon{
-      color:#fff;
+    i.icon {
+      color: #fff;
     }
 
     @include hover-focus {
-      background-color: rgba(0,0,0,0.5);
-      color:#fff;
+      background-color: rgb(0 0 0 / 50%);
+      color: #fff;
 
-      i.icon{
+      i.icon {
         color: #fff;
       }
     }
 
-    &.is-active{
-      background-color:rgba(0,0,0,0.5);
-      color:#fff;
+    &.is-active {
+      background-color: rgb(0 0 0 / 50%);
+      color: #fff;
 
-      i.icon{
+      i.icon {
         color: #fff;
       }
     }
@@ -202,11 +217,13 @@
     position: fixed;
     z-index: 100;
   }
+
   > span {
     display: flex;
     height: 100vh;
     z-index: 1;
-    > .hx-nav {
+
+    > .#{$namespace}-nav {
       height: 100vh;
     }
   }
@@ -217,7 +234,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(black,.8);
+    background-color: rgb(0 0 0 / 80%);
     z-index: 0;
   }
 }
@@ -230,17 +247,20 @@
   height: 3rem;
   color: white;
   text-align: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   z-index: 2;
+
   &.is-closed {
     left: 0;
     color: gray;
   }
+
   @media (max-width: 344px) {
     display: none;
   }
+
   @media (min-width: 1264px) {
     color: gray;
-    background-color: rgba(#f6f6f9, .6);
+    background-color: rgba(#f6f6f9, 0.6);
   }
 }

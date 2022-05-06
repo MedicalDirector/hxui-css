@@ -5,8 +5,7 @@
     @for $i from 1 through $exp {
       $value: $value * $number;
     }
-  }
-  @else if $exp < 0 {
+  } @else if $exp < 0 {
     @for $i from 1 through -$exp {
       $value: $value / $number;
     }
@@ -16,49 +15,57 @@
 }
 
 @function colorLuminance($color) {
-  $hx-color-rgb: ("red": red($color), "green": green($color), "blue": blue($color));
+  $hx-color-rgb: (
+    "red": red($color),
+    "green": green($color),
+    "blue": blue($color),
+  );
 
   @each $name, $value in $hx-color-rgb {
     $adjusted: 0;
     $value: $value / 255;
 
-    @if $value < 0.03928 {
+    @if $value < 0.0393 {
       $value: $value / 12.92;
-    }
-    @else {
+    } @else {
       $value: ($value + 0.055) / 1.055;
       $value: powerNumber($value, 2);
     }
 
-    $hx-color-rgb: map-merge($hx-color-rgb, ($name: $value));
+    $hx-color-rgb: map-merge(
+      $hx-color-rgb,
+      (
+        $name: $value,
+      )
+    );
   }
 
-  @return map-get($hx-color-rgb, "red") * 0.2126 + map-get($hx-color-rgb, "green") * 0.7152 + map-get($hx-color-rgb, "blue") * 0.0722;
+  @return map-get($hx-color-rgb, "red") * 0.2126 + map-get($hx-color-rgb, "green") * 0.7152 +
+    map-get($hx-color-rgb, "blue") * 0.0722;
 }
 
 @function findColorInvert($color) {
   @if colorLuminance($color) > 0.55 {
-    @return rgba(#000, 0.7);
-  }
-  @else {
-    @return #fff;
+    @return rgb(0 0 0 / 70%);
+  } @else {
+    @return rgb(255 255 255);
   }
 }
 
-/// Slightly lighten a color
-/// @access public
-/// @param {Color} $color - color to tint
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
+// Slightly lighten a color
+// @access public
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
 
-/// Slightly darken a color
-/// @access public
-/// @param {Color} $color - color to shade
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
+// Slightly darken a color
+// @access public
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }

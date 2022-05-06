@@ -6,76 +6,89 @@
 $framework-wrap: false !default;
 
 // Resets
-$hxui-reset: 'hxui-reset' !default;
+$hxui-reset: "hxui-reset" !default;
 
 // Namespace
-$namespace: 'hx' !default;
+$namespace: "hx" !default;
 
 // Icon path
-$icons-path: '../fonts/' !default;
+$icons-path: "../fonts/" !default;
 
-// Colors
-$hx-color-purple: hsl(256, 49%, 38%) !default;
-$hx-color-purple-light: hsl(256, 31%, 49%) !default;
-$hx-color-purple-lighter: hsl(258, 31%, 59%) !default;
-$hx-color-purple-lightest: hsl(261, 31%, 74%) !default;
+// COLORS
+// Purples
+$hx-color-purple: hsl(256deg 49% 38%) !default;
+$hx-color-purple-light: hsl(256deg 31% 49%) !default;
+$hx-color-purple-lighter: hsl(258deg 31% 59%) !default;
+$hx-color-purple-lightest: hsl(261deg 31% 74%) !default;
 
-$hx-color-red: hsl(341, 72%, 42%) !default;
-$hx-color-red-light: hsl(339, 85%, 53%) !default;
-$hx-color-red-lighter: hsl(335, 82%, 62%) !default;
-$hx-color-red-lightest: hsl(333, 80%, 81%) !default;
+// Reds
+$hx-color-red: hsl(341deg 72% 42%) !default;
+$hx-color-red-light: hsl(339deg 85% 53%) !default;
+$hx-color-red-lighter: hsl(335deg 82% 62%) !default;
+$hx-color-red-lightest: hsl(333deg 80% 81%) !default;
 
-$hx-color-blue: hsl(204, 81%, 26%) !default;
-$hx-color-blue-light: hsl(205, 52%, 40%) !default;
-$hx-color-blue-lighter: hsl(202, 51%, 51%) !default;
-$hx-color-blue-lightest: hsl(200, 54%, 65%) !default;
+// Blues
+$hx-color-blue: hsl(204deg 81% 26%) !default;
+$hx-color-blue-light: hsl(205deg 52% 40%) !default;
+$hx-color-blue-lighter: hsl(202deg 51% 51%) !default;
+$hx-color-blue-lightest: hsl(200deg 54% 65%) !default;
 
-$hx-color-green: hsl(164, 96%, 21%) !default;
-$hx-color-green-light: hsl(155, 48%, 49%) !default;
-$hx-color-green-lighter: hsl(153, 42%, 61%) !default;
-$hx-color-green-lightest: hsl(148, 39%, 72%) !default;
+// Greens
+$hx-color-green: hsl(164deg 96% 21%) !default;
+$hx-color-green-light: hsl(155deg 48% 49%) !default;
+$hx-color-green-lighter: hsl(153deg 42% 61%) !default;
+$hx-color-green-lightest: hsl(148deg 39% 72%) !default;
 
-$hx-color-orange: hsl(22, 87%, 53%) !default;
-$hx-color-orange-light: hsl(27, 92%, 58%) !default;
-$hx-color-orange-lighter: hsl(24, 92%, 77%) !default;
-$hx-color-orange-lightest: hsl(24, 96%, 87%) !default;
+// Oranges
+$hx-color-orange: hsl(22deg 87% 53%) !default;
+$hx-color-orange-light: hsl(27deg 92% 58%) !default;
+$hx-color-orange-lighter: hsl(24deg 92% 77%) !default;
+$hx-color-orange-lightest: hsl(24deg 96% 87%) !default;
 
-$hx-color-yellow: hsl(41, 97%, 49%) !default;
-$hx-color-yellow-light: hsl(39, 100%, 69%) !default;
-$hx-color-yellow-lighter: hsl(38, 100%, 76%) !default;
-$hx-color-yellow-lightest: hsl(37, 100%, 85%) !default;
+// Yellows
+$hx-color-yellow: hsl(41deg 97% 49%) !default;
+$hx-color-yellow-light: hsl(39deg 100% 69%) !default;
+$hx-color-yellow-lighter: hsl(38deg 100% 76%) !default;
+$hx-color-yellow-lightest: hsl(37deg 100% 85%) !default;
 
-$hx-color-white:  hsl(0, 0%, 100%) !default;
-$hx-color-black:  hsl(0, 0%, 0%) !default;
-$hx-color-teal:   hsl(193, 66%, 61%) !default;
-$hx-color-pink:   hsl(349, 100%, 67%) !default;
+// Teals
+$hx-color-teal: hsl(193deg 66% 61%) !default;
 
+// Pinks
+$hx-color-pink: hsl(349deg 100% 67%) !default;
+
+// Primary
 $hx-color-primary: $hx-color-green-light !default;
+
+// Accent
 $hx-color-accent: $hx-color-blue !default;
 
+// Gradient
 $hx-color-gradient-green: #1cffa5 !default;
 $hx-color-gradient-blue: #00216b !default;
 
 // Grayscale
-$hx-color-gray-dark:                 hsl(200, 3%, 17%) !default;
-$hx-color-gray:                      hsl(0, 0%, 23%) !default;
-$hx-color-gray-light:                hsl(15, 2%, 38%) !default;
-$hx-color-gray-lighter:              hsl(340, 1%, 68%) !default;
-$hx-color-gray-lightest:             hsl(240, 1%, 88%) !default;
+$hx-color-white: hsl(0deg 0% 100%) !default;
+$hx-color-black: hsl(0deg 0% 0%) !default;
+$hx-color-gray-dark: hsl(200deg 3% 17%) !default;
+$hx-color-gray: hsl(0deg 0% 23%) !default;
+$hx-color-gray-light: hsl(15deg 2% 38%) !default;
+$hx-color-gray-lighter: hsl(340deg 1% 68%) !default;
+$hx-color-gray-lightest: hsl(240deg 1% 88%) !default;
 
 // Other colors
-$hx-color-success:             $hx-color-green-light !default;
-$hx-color-info:                $hx-color-blue !default;
-$hx-color-warning:             $hx-color-orange-light !default;
-$hx-color-caution:             $hx-color-yellow-light !default;
-$hx-color-danger:              $hx-color-red !default;
-$hx-color-inverse:             $hx-color-gray-dark !default;
+$hx-color-success: $hx-color-green-light !default;
+$hx-color-info: $hx-color-blue !default;
+$hx-color-warning: $hx-color-orange-light !default;
+$hx-color-caution: $hx-color-yellow-light !default;
+$hx-color-danger: $hx-color-red !default;
+$hx-color-inverse: $hx-color-gray-dark !default;
 
 $hx-color-light: $hx-color-gray-lightest !default;
 $hx-color-dark: $hx-color-gray-dark !default;
 
-$hx-color-white-ter: hsl(0, 0%, 96%) !default;
-$hx-color-white-bis: hsl(0, 0%, 99%) !default;
+$hx-color-white-ter: hsl(0deg 0% 96%) !default;
+$hx-color-white-bis: hsl(0deg 0% 99%) !default;
 
 $hx-color-footer-bg: #f5f5f5;
 
@@ -98,39 +111,104 @@ $hx-color-light-invert: $hx-color-dark !default;
 $hx-color-dark-invert: $hx-color-light !default;
 
 $hx-colors: (
-  'white': ($hx-color-white, $hx-color-black),
-  'black': ($hx-color-black, $hx-color-white),
-  'light': ($hx-color-gray-light, $hx-color-white),
-  'lighter': ($hx-color-gray-lighter, $hx-color-gray-lighter),
-  'lightest': ($hx-color-gray-lightest, $hx-color-gray-light),
-  'transparent': (transparent, $hx-color-black),
-  'dark': ($hx-color-dark, $hx-color-dark-invert),
-  'grey': ($hx-color-dark, $hx-color-dark-invert),
-  'primary': ($hx-color-primary, $hx-color-primary-invert),
-  'info': ($hx-color-info, $hx-color-info-invert),
-  'success': ($hx-color-success, $hx-color-success-invert),
-  'warning': ($hx-color-warning, $hx-color-warning-invert),
-  'caution': ($hx-color-caution, $hx-color-caution-invert),
-  'danger': ($hx-color-danger, $hx-color-danger-invert),
-  'purple': ($hx-color-purple, findColorInvert($hx-color-purple)),
-  'red': ($hx-color-red, findColorInvert($hx-color-red)),
-  'blue': ($hx-color-blue, findColorInvert($hx-color-blue)),
-  'green': ($hx-color-green, findColorInvert($hx-color-green)),
-  'orange': ($hx-color-orange, findColorInvert($hx-color-orange)),
-  'yellow': ($hx-color-yellow, findColorInvert($hx-color-yellow)),
-  'teal': ($hx-color-teal, findColorInvert($hx-color-teal)),
-  'pink': ($hx-color-pink, findColorInvert($hx-color-pink))
+  "white": (
+    $hx-color-white,
+    $hx-color-black,
+  ),
+  "black": (
+    $hx-color-black,
+    $hx-color-white,
+  ),
+  "light": (
+    $hx-color-gray-light,
+    $hx-color-white,
+  ),
+  "lighter": (
+    $hx-color-gray-lighter,
+    $hx-color-gray-lighter,
+  ),
+  "lightest": (
+    $hx-color-gray-lightest,
+    $hx-color-gray-light,
+  ),
+  "transparent": (
+    transparent,
+    $hx-color-black,
+  ),
+  "dark": (
+    $hx-color-dark,
+    $hx-color-dark-invert,
+  ),
+  "grey": (
+    $hx-color-dark,
+    $hx-color-dark-invert,
+  ),
+  "primary": (
+    $hx-color-primary,
+    $hx-color-primary-invert,
+  ),
+  "info": (
+    $hx-color-info,
+    $hx-color-info-invert,
+  ),
+  "success": (
+    $hx-color-success,
+    $hx-color-success-invert,
+  ),
+  "warning": (
+    $hx-color-warning,
+    $hx-color-warning-invert,
+  ),
+  "caution": (
+    $hx-color-caution,
+    $hx-color-caution-invert,
+  ),
+  "danger": (
+    $hx-color-danger,
+    $hx-color-danger-invert,
+  ),
+  "purple": (
+    $hx-color-purple,
+    findColorInvert($hx-color-purple),
+  ),
+  "red": (
+    $hx-color-red,
+    findColorInvert($hx-color-red),
+  ),
+  "blue": (
+    $hx-color-blue,
+    findColorInvert($hx-color-blue),
+  ),
+  "green": (
+    $hx-color-green,
+    findColorInvert($hx-color-green),
+  ),
+  "orange": (
+    $hx-color-orange,
+    findColorInvert($hx-color-orange),
+  ),
+  "yellow": (
+    $hx-color-yellow,
+    findColorInvert($hx-color-yellow),
+  ),
+  "teal": (
+    $hx-color-teal,
+    findColorInvert($hx-color-teal),
+  ),
+  "pink": (
+    $hx-color-pink,
+    findColorInvert($hx-color-pink),
+  ),
 ) !default;
 
-
 // Options
-$hx-enable-rounded:            true !default;
-$hx-enable-shadows:            true !default;
-$hx-enable-hover-media-query:  false !default;
+$hx-enable-rounded: true !default;
+$hx-enable-shadows: true !default;
+$hx-enable-hover-media-query: false !default;
 
 // Body
-$hx-body-bg:       hsla(240,20%,97%,1) !default;
-$hx-body-color:    $hx-color-gray-dark !default;
+$hx-body-bg: hsl(240deg 20% 97% / 100%) !default;
+$hx-body-color: $hx-color-gray-dark !default;
 
 // General colors
 $hx-background-color: $hx-body-bg !default;
@@ -139,45 +217,48 @@ $hx-background-color: $hx-body-bg !default;
 $hx-spacer: 1rem !default;
 
 // Borders
-$hx-border-color:           rgba($hx-color-black,.1) !default;
-$hx-border-width:               1px !default;
-$hx-border-radius:          .25rem !default;
-$hx-border-radius-lg:       .3rem !default;
-$hx-border-radius-sm:       .1rem !default;
+$hx-border-color: rgba($hx-color-black, 0.1) !default;
+$hx-border-width: 1px !default;
+$hx-border-radius: 0.25rem !default;
+$hx-border-radius-lg: 0.3rem !default;
+$hx-border-radius-sm: 0.1rem !default;
 
-$hr-border-color:             rgba(0,0,0,.1) !default;
-$hr-border-width:             $hx-border-width !default;
+// Dividers
+$hr-border-color: rgb(0 0 0 / 10%) !default;
+$hr-border-width: $hx-border-width !default;
 
 // Cursors
-$hx-cursor-disabled:                not-allowed !default;
+$hx-cursor-disabled: not-allowed !default;
 
 // Caret
-$hx-caret-width:            .3em !default;
+$hx-caret-width: 0.3em !default;
 
-// Fonts
-$hx-font-family-sans-serif: 'Roboto', sans-serif !default;
-$hx-font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$hx-font-family-base:       $hx-font-family-sans-serif !default;
+// FONTS
+// Family
+$hx-font-family-sans-serif: "Roboto", sans-serif !default;
+$hx-font-family-monospace: "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace !default;
+$hx-font-family-base: $hx-font-family-sans-serif !default;
 
-$hx-font-size-base: .92rem !default;
-$hx-font-size-lg:   1.25rem !default;
-$hx-font-size-sm:   .85rem !default;
-$hx-font-size-xs:   .75rem !default;
+// Size
+$hx-font-size-base: 0.92rem !default;
+$hx-font-size-lg: 1.25rem !default;
+$hx-font-size-sm: 0.85rem !default;
+$hx-font-size-xs: 0.75rem !default;
 
+// Weight
 $hx-font-weight-normal: 300 !default;
 $hx-font-weight-bolder: 400 !default;
 $hx-font-weight-bold: 500 !default;
 $hx-font-weight-boldest: 600 !default;
-
-
-
 $hx-font-weight-base: $hx-font-weight-normal !default;
+
+// Line Height
 $hx-line-height-base: 1.5 !default;
 
 // Font elements
-$hx-font-form-elements-size: .92rem;
+$hx-font-form-elements-size: 0.92rem;
 $hx-font-form-elements-weight: 400;
-$hx-font-form-label-focus-top: -.25rem;
+$hx-font-form-label-focus-top: -0.25rem;
 
 // Text colors
 $hx-text: $hx-color-gray-dark !default;
@@ -187,11 +268,11 @@ $hx-text-strong: $hx-color-gray-dark !default;
 
 // Headings
 $hx-headings-margin-bottom: ($hx-spacer / 2) !default;
-$hx-headings-font-family:   inherit !default;
-$hx-headings-font-weight:   500 !default;
-$hx-headings-line-height:   1.1 !default;
-$hx-headings-color:         darken($hx-color-blue, 10) !default;
-$hx-headings-letter-spacing: -.01em !default;
+$hx-headings-font-family: inherit !default;
+$hx-headings-font-weight: 500 !default;
+$hx-headings-line-height: 1.1 !default;
+$hx-headings-color: darken($hx-color-blue, 10) !default;
+$hx-headings-letter-spacing: -0.01em !default;
 
 // Font sizes
 $hx-font-size-h1: 2rem !default;
@@ -208,33 +289,33 @@ $hx-title-font-weight: $hx-headings-font-weight;
 $hx-subtitle-size: $hx-font-size-h5;
 $hx-subtitle-font-weight: 200;
 
-$hx-lead-font-size:   1.25rem !default;
+$hx-lead-font-size: 1.25rem !default;
 $hx-lead-font-weight: 300 !default;
 
-$hx-small-font-size: .75rem !default;
+$hx-small-font-size: 0.75rem !default;
 $hx-medium-font-size: 1.25rem !default;
 $hx-large-font-size: 1.5rem !default;
 
-$hx-mark-padding: .2em !default;
+$hx-mark-padding: 0.2em !default;
 
-$hx-kbd-box-shadow:         inset 0 -.1rem 0 rgba($hx-color-black,.25) !default;
+$hx-kbd-box-shadow: inset 0 -0.1rem 0 rgba($hx-color-black, 0.25) !default;
 $hx-kbd-nested-font-weight: $hx-font-weight-bold !default;
 
-$hx-line-height-base:           1.5 !default;
-$hx-line-height:                $hx-line-height-base !default;
+$hx-line-height-base: 1.5 !default;
+$hx-line-height: $hx-line-height-base !default;
 
 // Border
-$hx-border-radius:          .25rem !default;
-$hx-border-radius-lg:       .4rem !default;
-$hx-border-radius-sm:       .25rem !default;
+$hx-border-radius: 0.25rem !default;
+$hx-border-radius-lg: 0.4rem !default;
+$hx-border-radius-sm: 0.25rem !default;
 
 // Links
-$hx-link-color:            $hx-color-blue-light !default;
-$hx-link-decoration:       none !default;
-$hx-link-hover-color:      darken($hx-link-color, 15%) !default;
+$hx-link-color: $hx-color-blue-light !default;
+$hx-link-decoration: none !default;
+$hx-link-hover-color: darken($hx-link-color, 15%) !default;
 $hx-link-hover-decoration: underline !default;
 $hx-link-hover-border-color: $hx-color-gray-light;
-$hx-link-focus:  $hx-color-gray-dark;
+$hx-link-focus: $hx-color-gray-dark;
 $hx-link-focus-border-color: $hx-color-primary;
 $hx-link-active: $hx-color-gray-dark;
 $hx-link-active-border-color: $hx-color-gray;
@@ -242,7 +323,7 @@ $hx-link-active-border-color: $hx-color-gray;
 // Buttons
 $hx-button: $hx-color-gray-dark !default;
 $hx-button-background: $hx-color-white !default;
-$hx-button-border: rgba($hx-color-gray-light,.3) !default;
+$hx-button-border: rgba($hx-color-gray-light, 0.3) !default;
 
 $hx-button-hover: $hx-color-gray !default;
 $hx-button-hover-border: $hx-link-hover-border-color !default;
@@ -258,135 +339,135 @@ $hx-button-shadow-inset: inset 0 1px 2px rgba($hx-color-black, 0.2) !default;
 // Responsiveness
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 $hx-tablet: 768px !default;
+
 // 960px container + 40px
 $hx-desktop: 1000px !default;
+
 // 1152px container + 40
 $hx-widescreen: 1340px !default;
+
 // 1344px container + 40
 $hx-fullhd: 1640px !default;
 
 // Form states and alerts colours
-$hx-state-success-text:             #3c763d !default;
-$hx-state-success-bg:               #dff0d8 !default;
-$hx-state-success-border-color:     darken($hx-state-success-bg, 5%) !default;
+$hx-state-success-text: #3c763d !default;
+$hx-state-success-bg: #dff0d8 !default;
+$hx-state-success-border-color: darken($hx-state-success-bg, 5%) !default;
 
-$hx-state-info-text:                #31708f !default;
-$hx-state-info-bg:                  #d9edf7 !default;
-$hx-state-info-border-color:        darken($hx-state-info-bg, 7%) !default;
+$hx-state-info-text: #31708f !default;
+$hx-state-info-bg: #d9edf7 !default;
+$hx-state-info-border-color: darken($hx-state-info-bg, 7%) !default;
 
-$hx-state-warning-text:             #8a6d3b !default;
-$hx-state-warning-bg:               #fcf8e3 !default;
-$hx-mark-bg:                        $hx-state-warning-bg !default;
-$hx-state-warning-border-color:     darken($hx-state-warning-bg, 5%) !default;
+$hx-state-warning-text: #8a6d3b !default;
+$hx-state-warning-bg: #fcf8e3 !default;
+$hx-mark-bg: $hx-state-warning-bg !default;
+$hx-state-warning-border-color: darken($hx-state-warning-bg, 5%) !default;
 
-$hx-state-danger-text:              #a94442 !default;
-$hx-state-danger-bg:                #f2dede !default;
-$hx-state-danger-border-color:      darken($hx-state-danger-bg, 5%) !default;
-
+$hx-state-danger-text: #a94442 !default;
+$hx-state-danger-bg: #f2dede !default;
+$hx-state-danger-border-color: darken($hx-state-danger-bg, 5%) !default;
 
 // Code
-$hx-code-font-size:              80% !default;
-$hx-code-padding-y:              .2rem !default;
-$hx-code-padding-x:              .4rem !default;
-$hx-code-color:                  $hx-color-red-light !default;
-$hx-code-bg:                     darken($hx-color-gray-lightest, 2) !default;
+$hx-code-font-size: 80% !default;
+$hx-code-padding-y: 0.2rem !default;
+$hx-code-padding-x: 0.4rem !default;
+$hx-code-color: $hx-color-red-light !default;
+$hx-code-bg: darken($hx-color-gray-lightest, 2) !default;
 
-$hx-kbd-color:                   $hx-color-white !default;
-$hx-kbd-bg:                      $hx-color-gray-dark !default;
+$hx-kbd-color: $hx-color-white !default;
+$hx-kbd-bg: $hx-color-gray-dark !default;
 
-$hx-pre-color:                   $hx-color-gray-dark !default;
-$hx-pre-scrollable-max-height:   340px !default;
-$hx-pre-margin:                  0 0 1rem 0;
+$hx-pre-color: $hx-color-gray-dark !default;
+$hx-pre-scrollable-max-height: 340px !default;
+$hx-pre-margin: 0 0 1rem 0;
 
 // Form
-$hx-input:                     $hx-color-gray-dark !default;
-$hx-input-background:          transparent !default;
-$hx-input-border:              rgba(0, 0, 0, .2) !default;
+$hx-input: $hx-color-gray-dark !default;
+$hx-input-background: transparent !default;
+$hx-input-border: rgb(0 0 0 / 20%) !default;
 
-$hx-input-hover:               $hx-color-gray-dark !default;
-$hx-input-hover-border:        $hx-color-gray-light !default;
+$hx-input-hover: $hx-color-gray-dark !default;
+$hx-input-hover-border: $hx-color-gray-light !default;
 
-$hx-input-focus:               $hx-color-gray-dark !default;
-$hx-input-focus-border:        $hx-color-primary !default;
+$hx-input-focus: $hx-color-gray-dark !default;
+$hx-input-focus-border: $hx-color-primary !default;
 
-$hx-input-disabled:            $hx-color-gray-lighter !default;
+$hx-input-disabled: $hx-color-gray-lighter !default;
 $hx-input-disabled-background: $hx-color-gray-lighter !default;
-$hx-input-disabled-border:     $hx-input-border;
+$hx-input-disabled-border: $hx-input-border;
 
-$hx-input-arrow:               $hx-color-gray !default;
+$hx-input-arrow: $hx-color-gray !default;
 
-$hx-input-icon:                $hx-color-gray-lighter !default;
-$hx-input-icon-active:         $hx-color-gray !default;
+$hx-input-icon: $hx-color-gray-lighter !default;
+$hx-input-icon-active: $hx-color-gray !default;
 
-$hx-input-radius:              $hx-border-radius-sm !default;
+$hx-input-radius: $hx-border-radius-sm !default;
 
 // Table
 $hx-table: $hx-color-gray !default;
 $hx-table-background: transparent !default;
-$hx-table-border: rgba($hx-color-black, .08) !default;
+$hx-table-border: rgba($hx-color-black, 0.08) !default;
 $hx-table-head: $hx-color-dark !default;
 
-$hx-table-row-hover-background: rgba($hx-color-black, .03) !default;
-$hx-table-row-even-background: rgba($hx-color-black, .02) !default;
-$hx-table-row-even-hover-background: rgba($hx-color-black, .05) !default;
+$hx-table-row-hover-background: rgba($hx-color-black, 0.03) !default;
+$hx-table-row-even-background: rgba($hx-color-black, 0.02) !default;
+$hx-table-row-even-hover-background: rgba($hx-color-black, 0.05) !default;
 
 // =========
 // Components
 // =========
 
 // Grid
-$hx-column-padding: .75rem;
-$hx-columns-margin: .75rem;
-
+$hx-column-padding: 0.75rem;
+$hx-columns-margin: 0.75rem;
 
 // Navbar
 $hx-navbar-height: 3.25rem !default;
-$hx-navbar-item-padding: .5rem .75rem !default;
+$hx-navbar-item-padding: 0.5rem 0.75rem !default;
 
 // Nav
 $hx-nav-disabled-link-color: $hx-color-gray-lightest;
-$hx-nav-disabled-link-hover-color:$hx-color-gray-lightest;
-$hx-nav-link-hover-color: rgba(0,0,0,.02);
+$hx-nav-disabled-link-hover-color: $hx-color-gray-lightest;
+$hx-nav-link-hover-color: rgb(0 0 0 / 2%);
 $hx-nav-link-active-color: $hx-color-green-light;
-$hx-nav-link-color:$hx-color-gray;
+$hx-nav-link-color: $hx-color-gray;
 $hx-nav-link-font-size: $hx-font-size-sm;
 $hx-nav-link-font-weight: $hx-font-weight-bolder;
 
 // Dropdown
-$hx-dropdown-bg:                    #fff !default;
-$hx-dropdown-border-color:          $hx-border-color !default;
-$hx-dropdown-border-width:          $hx-border-width !default;
-$hx-dropdown-divider-bg:            $hx-border-color !default;
+$hx-dropdown-bg: #fff !default;
+$hx-dropdown-border-color: $hx-border-color !default;
+$hx-dropdown-border-width: $hx-border-width !default;
+$hx-dropdown-divider-bg: $hx-border-color !default;
 
-$hx-dropdown-link-color:            $hx-color-gray !default;
-$hx-dropdown-link-hover-color:      #fff !default;
-$hx-dropdown-link-hover-bg:         $hx-color-green-light !default;
+$hx-dropdown-link-color: $hx-color-gray !default;
+$hx-dropdown-link-hover-color: #fff !default;
+$hx-dropdown-link-hover-bg: $hx-color-green-light !default;
 
-$hx-dropdown-link-active-color:     #fff !default;
-$hx-dropdown-link-active-bg:        $hx-color-green-light !default;
+$hx-dropdown-link-active-color: #fff !default;
+$hx-dropdown-link-active-bg: $hx-color-green-light !default;
 
-$hx-dropdown-link-disabled-color:   $hx-color-gray-lighter !default;
+$hx-dropdown-link-disabled-color: $hx-color-gray-lighter !default;
 
-$hx-dropdown-header-color:          $hx-color-gray-lighter !default;
+$hx-dropdown-header-color: $hx-color-gray-lighter !default;
 
 // Progress Timeline
-$hx-progress-timeline-head-color:		hsl(0, 0, 80%) !default;
-$hx-progress-timeline-tail-color:		hsl(0, 0, 91%) !default;
-$hx-progress-timeline-content-body-color:		hsl(0, 0, 52%) !default;
-
+$hx-progress-timeline-head-color: hsl(0deg 0 80%) !default;
+$hx-progress-timeline-tail-color: hsl(0deg 0 91%) !default;
+$hx-progress-timeline-content-body-color: hsl(0deg 0 52%) !default;
 
 /**
  * Z-index master list
  * A bird's eye view of each components z-index order.
  */
 
-$hx-zindex-navbar:            1000 !default;
-$hx-zindex-dropdown:          1000 !default;
-$hx-zindex-navbar-fixed:      1030 !default;
-$hx-zindex-navbar-sticky:     1030 !default;
-$hx-zindex-modal-bg:          1040 !default;
-$hx-zindex-modal:             1050 !default;
-$hx-zindex-tooltip:           1070 !default;
+$hx-zindex-navbar: 1000 !default;
+$hx-zindex-dropdown: 1000 !default;
+$hx-zindex-navbar-fixed: 1030 !default;
+$hx-zindex-navbar-sticky: 1030 !default;
+$hx-zindex-modal-bg: 1040 !default;
+$hx-zindex-modal: 1050 !default;
+$hx-zindex-tooltip: 1070 !default;
 
 $unit-padding-margins: 0.25;
 $hx-flex-accordion-bg-color: #fafafa;

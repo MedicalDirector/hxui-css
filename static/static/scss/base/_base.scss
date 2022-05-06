@@ -1,19 +1,18 @@
 // =========
 // Helix base style based on normalize.css
-//
 // normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css
 // =========
+/* stylelint-disable */
 
 // Document
 html {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
-
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 body {
@@ -35,7 +34,9 @@ body {
 
 // IE10+ doesn't honor `<meta name="viewport">` in some cases.
 @at-root {
-  @-ms-viewport { width: device-width; }
+  @-ms-viewport {
+    width: device-width;
+  }
 }
 
 // Sections
@@ -77,8 +78,10 @@ samp {
 pre {
   // Remove browser default top margin
   margin-top: 0;
+
   // Reset browser default of `1em` to use `rem`s
   margin-bottom: 1rem;
+
   // Don't allow content to break outside
   overflow: auto;
 }
@@ -106,12 +109,11 @@ a {
       text-decoration: none;
     }
   }
-
 }
 
 p {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 abbr[title] {
@@ -146,7 +148,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-
 
 // Add the correct font style in Android 4.3-.
 dfn {
@@ -188,7 +189,6 @@ sup {
   top: -0.5em;
 }
 
-
 // Embedded content
 /**
 * Add the correct display in IE 9-.
@@ -198,7 +198,6 @@ video {
   display: inline-block;
 }
 
-
 /**
 * Add the correct display in iOS 4-7.
 */
@@ -206,7 +205,6 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 
 /**
 * Remove the border on images inside links in IE 10-.
@@ -234,7 +232,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-
 // Forms
 /**
 * Remove the margin in Firefox and Safari.
@@ -247,7 +244,6 @@ textarea {
   margin: 0;
 }
 
-
 /**
 * Show the overflow in IE.
 * 1. Show the overflow in Edge.
@@ -258,7 +254,6 @@ input {
   overflow: visible;
 }
 
-
 /**
 * Remove the inheritance of text transform in Edge, Firefox, and IE.
 * 1. Remove the inheritance of text transform in Firefox.
@@ -268,7 +263,6 @@ select {
   /* 1 */
   text-transform: none;
 }
-
 
 /**
 * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -282,7 +276,6 @@ html [type="button"],
   -webkit-appearance: button;
 }
 
-
 /**
 * Remove the inner border and padding in Firefox.
 */
@@ -294,7 +287,6 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-
 /**
 * Restore the focus styles unset by the previous rule.
 */
@@ -304,7 +296,6 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 
 /**
 * 1. Correct the text wrapping in Edge and IE.
@@ -347,7 +338,6 @@ textarea {
   overflow: auto;
 }
 
-
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -358,7 +348,6 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 
 /**
 * 1. Correct the odd appearance in Chrome and Safari.
@@ -372,7 +361,6 @@ textarea {
   /* 2 */
 }
 
-
 /**
 * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
 */
@@ -381,7 +369,6 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 
 /**
 * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -394,7 +381,6 @@ textarea {
   /* 2 */
 }
 
-
 // Interactive
 /*
 * Add the correct display in IE 9-.
@@ -405,14 +391,12 @@ menu {
   display: block;
 }
 
-
 /*
 * Add the correct display in all browsers.
 */
 summary {
   display: list-item;
 }
-
 
 // Scripting
 /**
@@ -422,14 +406,12 @@ canvas {
   display: inline-block;
 }
 
-
 /**
 * Add the correct display in IE.
 */
 template {
   display: none;
 }
-
 
 // Hidden
 /**
@@ -439,10 +421,11 @@ template {
   display: none;
 }
 
-.#{$namespace}-divider{
-  padding:.6rem 0;
-  border-left:1px solid rgba(0,0,0,.3);
-  margin:0 1rem;
+.#{$namespace}-divider {
+  padding: 0.6rem 0;
+  border-left: 1px solid rgb(0 0 0 / 30%);
+  margin: 0 1rem;
   height: 20px;
   align-self: center;
 }
+/* stylelint-enable */

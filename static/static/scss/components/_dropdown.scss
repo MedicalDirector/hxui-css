@@ -1,3 +1,7 @@
+////////////////
+//  DROPDOWN  //
+////////////////
+
 // The dropdown wrapper (`<div>`)
 .is-dropup,
 .dropup,
@@ -16,9 +20,8 @@
 }
 
 .#{$namespace}-dropdown {
-  display:inline-block;
+  display: inline-block;
 }
-
 
 // The dropdown menu
 .#{$namespace}-dropdown-menu {
@@ -37,46 +40,46 @@
   background-color: $hx-dropdown-bg;
   background-clip: padding-box;
   border: $hx-dropdown-border-width solid $hx-dropdown-border-color;
-  //@include border-radius($hx-border-radius);
-  box-shadow: 0 6px 12px rgba(0,0,0,.145);
-  overflow-y:auto;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 14.5%);
+  overflow-y: auto;
 
-  &.has-limited-width{
+  &.has-limited-width {
     max-width: 20rem;
   }
 
-  &.has-limited-height{
+  &.has-limited-height {
     overflow-y: auto;
     max-height: 20rem;
   }
 
-  &.is-text-ellipsed{
-    .hx-dropdown-item {
+  &.is-text-ellipsed {
+    .#{$namespace}-dropdown-item {
       @include text-truncate;
     }
   }
-  &.is-text-multiline{
-    .hx-dropdown-item {
+
+  &.is-text-multiline {
+    .#{$namespace}-dropdown-item {
       @include multiline;
     }
   }
 }
 
 // CDK specific
-&.hxa-dropdown-panel{
-  .#{$namespace}-dropdown-menu{
+&.hxa-dropdown-panel {
+  .#{$namespace}-dropdown-menu {
     position: initial;
   }
-  &.is-fluid-min-width{
+
+  &.is-fluid-min-width {
     .#{$namespace}-dropdown-menu {
       min-width: 100%;
     }
   }
-  &.is-open > .#{$namespace}-dropdown-menu{
-    display:block;
+  &.is-open > .#{$namespace}-dropdown-menu {
+    display: block;
   }
 }
-
 
 // Dividers (basically an `<hr>`) within the dropdown
 .#{$namespace}-dropdown-divider {
@@ -84,12 +87,11 @@
 }
 
 // Links, buttons, and more within the dropdown menu
-//
 // `<button>`-specific styles are denoted with `// For <button>s`
 .#{$namespace}-dropdown-item {
   display: block;
   width: 100%; // For `<button>`s
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   clear: both;
   font-weight: normal;
   line-height: $hx-line-height;
@@ -117,7 +119,7 @@
 
   &.is-active {
     @include plain-hover-focus {
-      color:  $hx-dropdown-link-active-bg;
+      color: $hx-dropdown-link-active-bg;
       text-decoration: none;
       background-color: $hx-dropdown-link-active-color;
       outline: 0;
@@ -125,7 +127,7 @@
   }
 
   // temporary for Helix clashing with bootstrap
-  button.hx-button.is-link{
+  button.#{$namespace}-button.is-link {
     text-decoration: none;
     text-align: left;
     padding: 0;
@@ -139,8 +141,7 @@
     }
   }
 
-  // Disabled state
-  //
+  // DISABLED STATE
   // Gray out text and ensure the hover/focus state remains gray
   &.disabled {
     @include plain-hover-focus {
@@ -153,37 +154,31 @@
       cursor: $hx-cursor-disabled;
       background-color: transparent;
       background-image: none; // Remove CSS gradient
-      //@include reset-filter();
     }
   }
 }
 
-//
 // Iconised dropdown item
-//
-.#{$namespace}-dropdown-icon{
-
-  .#{$namespace}-dropdown-item{
-    padding-left:2.8rem;
-    position:relative;
-    display:flex;
+.#{$namespace}-dropdown-icon {
+  .#{$namespace}-dropdown-item {
+    padding-left: 2.8rem;
+    position: relative;
+    display: flex;
     align-items: center;
   }
 
-  //icons
+  // icons
   i.icon,
-  i.hx-icon{
-    //font-size: 1.1rem;
+  i.#{$namespace}-icon {
     position: absolute;
-    left: .76rem;
-    top:.2rem;
+    left: 0.76rem;
+    top: 0.2rem;
   }
 }
 
-
 // Open state for the dropdown
 .is-open,
-.open{
+.open {
   // Show the menu
   > .#{$namespace}-dropdown-menu {
     display: block;
@@ -196,9 +191,9 @@
 }
 
 // Menu positioning
-.is-right{
+.is-right {
   .#{$namespace}-dropdown-menu {
-    position:absolute;
+    position: absolute;
     right: 0;
     left: auto;
   }
@@ -206,7 +201,7 @@
 
 .is-left {
   .#{$namespace}-dropdown-menu {
-    position:absolute;
+    position: absolute;
     right: auto;
     left: 0;
   }
@@ -218,16 +213,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 6px 14px;
-  //font-size: $hx-font-size-sm;
-  font-size:0.675rem;
-  //line-height: $hx-line-height;
+  font-size: 0.675rem;
   color: $hx-dropdown-header-color;
   white-space: nowrap; // as with > li > a
   text-transform: uppercase;
-  font-weight:bold;
+  font-weight: bold;
 
   > a {
-    font-weight:normal;
+    font-weight: normal;
     text-transform: capitalize;
   }
 }
@@ -242,14 +235,10 @@
   z-index: ($hx-zindex-dropdown - 10);
 }
 
-
-
 // Allow for dropdowns to go bottom up (aka, is-dropup)
-//
 // Just add .hx-dropup after the standard .hx-dropdown class and you're set.
-
 .is-dropup,
-dropup{
+.#{$namespace}-dropup {
   // Reverse the caret
   .caret {
     content: "";
@@ -259,7 +248,7 @@ dropup{
 
   // Different positioning for bottom up menu
   .#{$namespace}-dropdown-menu {
-    position:absolute;
+    position: absolute;
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;

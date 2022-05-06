@@ -1,24 +1,24 @@
 @mixin mobile {
-  @media screen and (max-width: $hx-tablet - 1px) {
-    @content
+  @media screen and (max-width: calc($hx-tablet - 1px)) {
+    @content;
   }
 }
 
 @mixin tablet {
   @media screen and (min-width: $hx-tablet) {
-    @content
+    @content;
   }
 }
 
 @mixin desktop {
   @media screen and (min-width: $hx-desktop) {
-    @content
+    @content;
   }
 }
 
 @mixin widescreen {
   @media screen and (min-width: $hx-widescreen) {
-    @content
+    @content;
   }
 }
 

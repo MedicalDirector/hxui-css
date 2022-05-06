@@ -1,39 +1,34 @@
-// stepper-step
-//
+///////////////
+//  STEPPER  //
+///////////////
+
 .#{$namespace}-stepper {
-
   &.is-vertical {
-
     .#{$namespace}-stepper {
-
       &-step {
         padding: 1.5rem 1.5rem 1rem;
       }
 
       &-content {
-
         &:not(:last-child) {
-          border-left: 1px solid rgba(0,0,0,.1);
+          border-left: 1px solid rgb(0 0 0 / 10%);
         }
 
-        margin: -.5rem -2.25rem -1rem 2.25rem;
+        margin: -0.5rem -2.25rem -1rem 2.25rem;
         padding: 1rem 3.75rem 1rem 1.43rem;
         width: auto;
-
       }
 
       &-wrapper {
         margin: 0;
         padding: 0;
       }
-
     }
-
   }
 
   &-header {
     border-bottom: none;
-    box-shadow: 0 1px 0 0 rgba(0,0,0,.1), 0 4px 10px -5px rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%), 0 4px 10px -5px rgb(0 0 0 / 10%);
     display: flex;
     align-items: center;
 
@@ -51,7 +46,7 @@
         flex-basis: 190px;
 
         &-step {
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
           margin-right: 0;
         }
 
@@ -59,9 +54,7 @@
           text-align: center;
           line-height: 1.2;
         }
-
       }
-
     }
 
     .divider {
@@ -70,9 +63,7 @@
       &:last-child {
         display: none;
       }
-
     }
-
   }
 
   .#{$namespace}-stepper-step {
@@ -83,32 +74,27 @@
       cursor: pointer;
 
       &:hover {
-        background-color: rgba(0,0,0,.05);
+        background-color: rgb(0 0 0 / 5%);
       }
     }
 
     &.has-error {
-
       .#{$namespace}-stepper-step {
-
         &-step {
           background-color: transparent;
 
-          .hx-icon {
+          .#{$namespace}-icon {
             color: $hx-color-danger;
           }
-
         }
 
         &-label {
           color: $hx-color-danger;
         }
       }
-
     }
 
     @media only screen and (max-width: 959px) {
-
       &-step {
         margin-right: 0;
       }
@@ -116,7 +102,6 @@
       &-label {
         display: none;
       }
-
     }
 
     &-step {
@@ -125,25 +110,23 @@
       line-height: 1.5rem;
       border-radius: 50%;
       text-align: center;
-      background-color: rgba(0,0,0,.38);
+      background-color: rgb(0 0 0 / 38%);
       color: $hx-color-white;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
 
       .hx-icon {
         font-size: 1.8rem;
         line-height: 1.8;
       }
-
     }
 
     &-label {
-      color: rgba(0,0,0,.38);
+      color: rgb(0 0 0 / 38%);
     }
 
-    &.is-active, &.is-complete {
-
+    &.is-active,
+    &.is-complete {
       .#{$namespace}-stepper-step {
-
         &-step {
           background-color: $hx-color-primary;
         }
@@ -151,28 +134,17 @@
         &-label {
           color: $hx-color-black;
         }
-
       }
-
     }
-
   }
 
   .#{$namespace}-stepper {
-
-    &-content {
-
-    }
-
     &-wrapper {
       padding: 1.5rem;
 
       > *:first-of-type {
         margin-top: 0;
       }
-
     }
-
   }
-
 }

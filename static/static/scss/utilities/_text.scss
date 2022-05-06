@@ -1,43 +1,86 @@
-
 // Text colour modifiers
 @each $label, $colour in $hx-colors {
-  .is-#{$label}{
+  .is-#{$label} {
     color: nth($colour, 1);
   }
 
-  .is-text-#{$label}{
+  .is-text-#{$label} {
     color: nth($colour, 1) !important;
   }
 }
 
 // Alignment
-.is-text-justify        { text-align: justify !important; }
-.is-text-nowrap         { white-space: nowrap !important; }
-.is-text-truncate       { @include text-truncate; }
-.is-text-center         { text-align:center !important;}
+.is-text-justify {
+  text-align: justify !important;
+}
+
+.is-text-nowrap {
+  white-space: nowrap !important;
+}
+
+.is-text-truncate {
+  @include text-truncate;
+}
+
+.is-text-center {
+  text-align: center !important;
+}
 
 // Transformation
-.is-text-lowercase      { text-transform: lowercase !important; }
-.is-text-uppercase      { text-transform: uppercase !important; }
-.is-text-capitalise     { text-transform: capitalize !important; }
+.is-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.is-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.is-text-capitalise {
+  text-transform: capitalize !important;
+}
 
 // Dedcoration
-.is-text-line-through { text-decoration: line-through !important; }
-.is-text-underline    { text-decoration: underline !important; }
-.is-text-dotted       { text-decoration: underline dotted !important; }
+.is-text-line-through {
+  text-decoration: line-through !important;
+}
 
+.is-text-underline {
+  text-decoration: underline !important;
+}
+
+.is-text-dotted {
+  text-decoration: underline dotted !important;
+}
 
 // Font styles
-.is-text-bold           { font-weight: bold !important; }
-.is-text-italic         { font-style: italic !important; }
+.is-text-bold {
+  font-weight: bold !important;
+}
+
+.is-text-italic {
+  font-style: italic !important;
+}
 
 // Font weights
-.is-text-weight-light   {font-weight: 300 !important;};
-.is-text-weight-normal  { font-weight: normal !important; }
-.is-text-weight-bold  { font-weight: 400 !important; }
-.is-text-weight-bolder  { font-weight: 500 !important; }
-.is-text-weight-boldest  { font-weight: 600 !important; }
+.is-text-weight-light {
+  font-weight: 300 !important;
+}
 
+.is-text-weight-normal {
+  font-weight: normal !important;
+}
+
+.is-text-weight-bold {
+  font-weight: 400 !important;
+}
+
+.is-text-weight-bolder {
+  font-weight: 500 !important;
+}
+
+.is-text-weight-boldest {
+  font-weight: 600 !important;
+}
 
 // Text
 
@@ -47,30 +90,30 @@
 }
 
 .has-text-left,
-.is-text-left{
+.is-text-left {
   text-align: left;
 }
 
-.has-text-right ,
+.has-text-right,
 .is-text-right {
   text-align: right;
 }
 
 .is-unselectable,
-.is-text-unselectable{
+.is-text-unselectable {
   @include no-copy;
 }
 
 .is-selectall,
-.is-text-select-all{
+.is-text-select-all {
   @include all-copy;
 }
 
 .is-elipsed,
 .is-text-elipsed,
 .is-text-ellipsed,
-.is-text-ellipsis{
-  @include text-truncate();
+.is-text-ellipsis {
+  @include text-truncate;
 }
 
 table th,
@@ -78,9 +121,9 @@ table td {
   &.is-text-elipsed,
   &.is-elipsed,
   &.is-text-ellipsed,
-  &.is-text-ellipsis{
-    position:relative;
-    min-width:0;
+  &.is-text-ellipsis {
+    position: relative;
+    min-width: 0;
   }
 }
 
@@ -88,12 +131,12 @@ table td {
   @include multiline;
 }
 
-.is-text-line-clamp-1{
+.is-text-line-clamp-1 {
   @include line-clamp(1);
 }
 
 @for $i from 1 through 6 {
-  .is-text-line-clamp-#{$i}{
+  .is-text-line-clamp-#{$i} {
     @include line-clamp($i);
   }
 }

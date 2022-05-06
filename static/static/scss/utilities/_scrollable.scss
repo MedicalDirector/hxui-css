@@ -1,29 +1,29 @@
 .scrollable-y,
-.is-scrollable-y{
-  overflow-y:auto !important;
+.is-scrollable-y {
+  overflow-y: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
 
 .scrollable-x,
-.is-scrollable-x{
-  overflow-x:auto !important;
+.is-scrollable-x {
+  overflow-x: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
 
 .scrollable,
-.is-scrollable{
-  overflow:auto !important;
+.is-scrollable {
+  overflow: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
 
 .not-scrollable-y {
-  overflow-y:initial !important;
+  overflow-y: initial !important;
 }
 
 .not-scrollable-x {
-  overflow-x:initial !important;
+  overflow-x: initial !important;
 }
 
 .not-scrollable {
-  overflow:initial !important;
+  overflow: initial !important;
 }

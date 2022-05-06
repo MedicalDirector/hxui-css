@@ -22,6 +22,9 @@ module.exports = {
     'custom-property-empty-line-before': null,
     'scss/dollar-variable-empty-line-before': null,
     'font-family-no-duplicate-names': null,
+    'scss/double-slash-comment-whitespace-inside': null,
+    'scss/at-extend-no-missing-placeholder': null,
+    //
     'no-descending-specificity': [
       true,
       {

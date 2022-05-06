@@ -1,109 +1,135 @@
-// =========
-// Navbar
-// =========
+///////////////
+//  TOOLBAR  //
+///////////////
 
 .#{$namespace}-toolbar {
+  display: flex;
+  align-items: center;
+  padding: $hx-spacer;
+  background-color: transparent;
 
-    display: flex;
-    align-items: center;
-    padding:$hx-spacer;
-    background-color:transparent;
-
-  > span{
-      color: $hx-color-gray-lighter;
-      font-weight: normal;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
-
-    // Contextual themes
-    &.is-primary{
-      background-color:$hx-color-primary;
-      > span{
-        color:rgba(255,255,255,0.8);
-      }
-      button,a{
-        color:#fff;
-      }
-
-      &.is-inverted{
-        background-color:transparent;
-        > span{
-          color:rgba($hx-color-primary,0.8);
-        }
-        button,a{
-          color:$hx-color-primary;
-        }
-      }
-    }
-
-    &.is-warning{
-      background-color:$hx-color-warning;
-      > span{
-        color:rgba(255,255,255,0.8);
-      }
-      button,a{
-        color:#fff;
-      }
-
-      &.is-inverted{
-        background-color:transparent;
-        > span{
-          color:rgba($hx-color-warning,0.8);
-        }
-        button,a{
-          color:$hx-color-warning;
-        }
-      }
-    }
-
-    &.is-danger{
-      background-color:$hx-color-danger;
-      > span{
-        color:rgba(255,255,255,0.8);
-      }
-      button,a{
-        color:#fff;
-      }
-      &.is-inverted{
-        background-color:transparent;
-        > span{
-          color:rgba($hx-color-danger,0.8);
-        }
-        button,a{
-          color:$hx-color-danger;
-        }
-      }
-    }
-
-    &.is-info{
-      background-color:$hx-color-info;
-      > span{
-        color:rgba(255,255,255,0.8);
-      }
-      button,a{
-        color:#fff;
-      }
-      &.is-inverted{
-        background-color:transparent;
-        > span{
-          color:rgba($hx-color-info,0.8);
-        }
-        button,a{
-          color:$hx-color-info;
-        }
-      }
-    }
-
-  // size
-  &.is-small{
-    padding:.5rem;
+  > span {
+    color: $hx-color-gray-lighter;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.85rem;
   }
 
-  &.is-xsmall{
-    padding:0;
-    & > span{
-      padding-left:.5rem;
+  // Contextual themes
+  &.is-primary {
+    background-color: $hx-color-primary;
+
+    > span {
+      color: rgb(255 255 255 / 80%);
+    }
+
+    button,
+    a {
+      color: #fff;
+    }
+
+    &.is-inverted {
+      background-color: transparent;
+
+      > span {
+        color: rgba($hx-color-primary, 0.8);
+      }
+
+      button,
+      a {
+        color: $hx-color-primary;
+      }
+    }
+  }
+
+  &.is-warning {
+    background-color: $hx-color-warning;
+
+    > span {
+      color: rgb(255 255 255 / 80%);
+    }
+
+    button,
+    a {
+      color: #fff;
+    }
+
+    &.is-inverted {
+      background-color: transparent;
+
+      > span {
+        color: rgba($hx-color-warning, 0.8);
+      }
+
+      button,
+      a {
+        color: $hx-color-warning;
+      }
+    }
+  }
+
+  &.is-danger {
+    background-color: $hx-color-danger;
+
+    > span {
+      color: rgb(255 255 255 / 80%);
+    }
+
+    button,
+    a {
+      color: #fff;
+    }
+
+    &.is-inverted {
+      background-color: transparent;
+
+      > span {
+        color: rgba($hx-color-danger, 0.8);
+      }
+
+      button,
+      a {
+        color: $hx-color-danger;
+      }
+    }
+  }
+
+  &.is-info {
+    background-color: $hx-color-info;
+
+    > span {
+      color: rgb(255 255 255 / 80%);
+    }
+
+    button,
+    a {
+      color: #fff;
+    }
+
+    &.is-inverted {
+      background-color: transparent;
+
+      > span {
+        color: rgba($hx-color-info, 0.8);
+      }
+
+      button,
+      a {
+        color: $hx-color-info;
+      }
+    }
+  }
+
+  // size
+  &.is-small {
+    padding: 0.5rem;
+  }
+
+  &.is-xsmall {
+    padding: 0;
+
+    & > span {
+      padding-left: 0.5rem;
     }
   }
 }

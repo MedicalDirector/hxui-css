@@ -1,9 +1,10 @@
-// =========
-// Tooltips
-// =========
+////////////////
+//  TOOLTIPS  //
+////////////////
 
 .#{$namespace}-tooltip {
-  @include transition(.15s);
+  @include transition(0.15s);
+
   z-index: $hx-zindex-tooltip;
   display: block;
   font-style: normal;
@@ -18,13 +19,13 @@
   white-space: normal;
   word-break: normal;
   word-spacing: normal;
-  font-size: .875rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0;
-  position:relative;
+  position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -39,7 +40,7 @@
     color: $hx-color-white;
     text-align: center;
     background-color: $hx-color-info;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
   }
 
   &.is-top {
@@ -84,9 +85,8 @@
   }
 
   &.is-white {
-
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 0;
       height: 0;
@@ -98,7 +98,7 @@
       color: $hx-text;
       background-color: $hx-color-white;
       border: 1px solid $hx-color-gray-lightest;
-      box-shadow: 2px 2px 4px -2px rgba(200,200,200,1);;
+      box-shadow: 2px 2px 4px -2px rgb(200 200 200 / 100%);
     }
 
     &.is-top {
@@ -179,107 +179,99 @@
         border-right: 6px solid transparent;
       }
     }
-
-
   }
 
   &.is-success {
-
     .#{$namespace}-tooltip-content {
       background-color: $hx-color-success;
     }
 
     &.is-top {
-        &::before {
-          border-top-color: $hx-color-success;
-        }
+      &::before {
+        border-top-color: $hx-color-success;
+      }
     }
 
     &.is-bottom {
-        &::before {
-          border-bottom-color: $hx-color-success;
-        }
+      &::before {
+        border-bottom-color: $hx-color-success;
+      }
     }
 
     &.is-left {
-        &::before {
-          border-left-color: $hx-color-success;
-        }
+      &::before {
+        border-left-color: $hx-color-success;
+      }
     }
 
     &.is-right {
-        &::before {
-          border-right-color: $hx-color-success;
-        }
+      &::before {
+        border-right-color: $hx-color-success;
+      }
     }
   }
 
   &.is-warning {
-
     .#{$namespace}-tooltip-content {
       background-color: $hx-color-warning;
     }
 
     &.is-top {
-        &::before {
-          border-top-color: $hx-color-warning;
-        }
+      &::before {
+        border-top-color: $hx-color-warning;
+      }
     }
 
     &.is-bottom {
-        &::before {
-          border-bottom-color: $hx-color-warning;
-        }
+      &::before {
+        border-bottom-color: $hx-color-warning;
+      }
     }
 
     &.is-left {
-        &::before {
-          border-left-color: $hx-color-warning;
-        }
+      &::before {
+        border-left-color: $hx-color-warning;
+      }
     }
 
     &.is-right {
-        &::before {
-          border-right-color: $hx-color-warning;
-        }
+      &::before {
+        border-right-color: $hx-color-warning;
+      }
     }
   }
 
   &.is-danger {
-
     .#{$namespace}-tooltip-content {
       background-color: $hx-color-danger;
     }
 
     &.is-top {
-        &::before {
-          border-top-color: $hx-color-danger;
-        }
+      &::before {
+        border-top-color: $hx-color-danger;
+      }
     }
 
     &.is-bottom {
-        &::before {
-          border-bottom-color: $hx-color-danger;
-        }
+      &::before {
+        border-bottom-color: $hx-color-danger;
+      }
     }
 
     &.is-left {
-        &::before {
-          border-left-color: $hx-color-danger;
-        }
+      &::before {
+        border-left-color: $hx-color-danger;
+      }
     }
 
     &.is-right {
-        &::before {
-          border-right-color: $hx-color-danger;
-        }
+      &::before {
+        border-right-color: $hx-color-danger;
+      }
     }
-
   }
 
   &.is-active {
-    opacity:1;
+    opacity: 1;
   }
-
 }
-

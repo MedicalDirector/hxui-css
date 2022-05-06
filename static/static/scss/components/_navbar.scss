@@ -1,9 +1,10 @@
-// =========
-// Navbar
-// =========
+//////////////
+//  NAVBAR  //
+//////////////
 
 .#{$namespace}-navbar {
-  @extend .hx-flex;
+  @extend .#{$namespace}-flex;
+
   position: relative;
   text-align: center;
   align-items: stretch;
@@ -44,7 +45,6 @@
       flex-shrink: 0;
       color: $hx-color-white;
     }
-
   }
 
   // Logo/Brand
@@ -76,5 +76,4 @@
     background: -webkit-linear-gradient(left, $hx-color-primary, $hx-color-accent);
     background: linear-gradient(to right, $hx-color-primary, $hx-color-accent);
   }
-
 }

@@ -1,6 +1,6 @@
-// =========
-// Modal
-// =========
+//////////////
+//  MODALS  //
+//////////////
 
 .#{$namespace}-modal-background {
   @include overlay;
@@ -45,7 +45,7 @@
 .#{$namespace}-modal-card-head,
 .#{$namespace}-modal-header,
 .#{$namespace}-modal-card-foot,
-.#{$namespace}-modal-footer{
+.#{$namespace}-modal-footer {
   align-items: center;
   background-color: $hx-color-white;
   display: flex;
@@ -55,31 +55,7 @@
 }
 
 .#{$namespace}-modal-card-foot,
-.#{$namespace}-modal-footer{
-  justify-content: flex-end;
- }
-
-.#{$namespace}-modal-card-head,
-.#{$namespace}-modal-header{
-  justify-content: flex-start;
-  border-top-left-radius: $hx-border-radius;
-  border-top-right-radius: $hx-border-radius;
-  padding: 1.25rem;
-}
-
-.#{$namespace}-modal-card-title,
-.#{$namespace}-modal-title{
-  color: $hx-headings-color;
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-size: $hx-font-size-h3;
-  line-height: 1;
-  font-weight: 500;
-  margin: 0;
-}
-
-.#{$namespace}-modal-card-foot,
-.#{$namespace}-modal-footer{
+.#{$namespace}-modal-footer {
   justify-content: flex-end;
   background-color: $hx-color-footer-bg;
   border-bottom-left-radius: $hx-border-radius;
@@ -92,9 +68,27 @@
   }
 }
 
+.#{$namespace}-modal-card-head,
+.#{$namespace}-modal-header {
+  justify-content: flex-start;
+  border-top-left-radius: $hx-border-radius;
+  border-top-right-radius: $hx-border-radius;
+  padding: 1.25rem;
+}
+
+.#{$namespace}-modal-card-title,
+.#{$namespace}-modal-title {
+  color: $hx-headings-color;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: $hx-font-size-h3;
+  line-height: 1;
+  font-weight: 500;
+  margin: 0;
+}
+
 .#{$namespace}-modal-content,
-.#{$namespace}-modal-card-content
-{
+.#{$namespace}-modal-card-content {
   -webkit-overflow-scrolling: touch;
   background-color: $hx-color-white;
   flex-grow: 1;
@@ -105,7 +99,7 @@
 
 .#{$namespace}-modal {
   @include overlay;
-  @include transition(.2);
+  @include transition(0.2);
 
   align-items: center;
   display: none;
@@ -121,7 +115,8 @@
 
   // Modifiers
   &.is-active {
-    @include transition(.2s);
+    @include transition(0.2s);
+
     display: flex;
     opacity: 1;
   }
@@ -141,7 +136,6 @@
     height: calc(100% - 120px);
     overflow-y: auto;
   }
-
 }
 
 .#{$namespace}-modal.is-small {

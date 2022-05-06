@@ -1,11 +1,14 @@
 <template>
-  <div class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white">
-
-    <expanding-nav-item v-for="(section, i) in sections" :key="i"
+  <div
+    class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white"
+  >
+    <expanding-nav-item
+      v-for="(section, i) in sections"
+      :key="i"
       :title="section.title"
-      :items="section.items">
+      :items="section.items"
+    >
     </expanding-nav-item>
-
   </div>
 </template>
 
@@ -13,7 +16,7 @@
 import ExpandingNavItem from '@/components/ExpandingNavItem'
 
 export default {
-  data () {
+  data() {
     return {
       sections: [
         {
@@ -208,21 +211,20 @@ export default {
         },
         {
           title: 'Organisms',
-          items: [
-            { name: 'Panel Header', path: '/panel-header' }
-          ]
+          items: [{ name: 'Panel Header', path: '/panel-header' }]
         },
         {
           title: 'Templates',
-          items: [
-            { name: 'Panel', path: '/panel' }
-          ]
+          items: [{ name: 'Panel', path: '/panel' }]
         },
         {
           title: 'Other',
           items: [
             { name: 'Downloads', path: '/downloads' },
-            { name: 'Changelog', link: 'https://github.com/MedicalDirector/hxui-css/blob/master/CHANGELOG.md' }
+            {
+              name: 'Changelog',
+              link: 'https://github.com/MedicalDirector/hxui-css/blob/master/CHANGELOG.md'
+            }
           ]
         }
       ]
@@ -233,6 +235,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-</style>

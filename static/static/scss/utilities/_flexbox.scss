@@ -1,156 +1,153 @@
-&.hx-flex,
-.hx-flex{
+&.#{$namespace}-flex,
+.#{$namespace}-flex {
   display: flex;
 }
 
-.hx-flex-inline {
+.#{$namespace}-flex-inline {
   display: inline-flex;
 }
 
-.hx-flex-row {
+.#{$namespace}-flex-row {
   flex-direction: row;
 }
 
-.hx-flex-row-reverse {
+.#{$namespace}-flex-row-reverse {
   flex-direction: row-reverse;
 }
 
-.hx-flex-column {
+.#{$namespace}-flex-column {
   flex-direction: column;
 }
 
-.hx-flex-column-reverse {
+.#{$namespace}-flex-column-reverse {
   flex-direction: column-reverse;
 }
 
-.hx-flex-wrap {
+.#{$namespace}-flex-wrap {
   flex-wrap: wrap;
 }
 
-.hx-flex-wrap-reverse {
+.#{$namespace}-flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
-.hx-flex-auto {
+.#{$namespace}-flex-auto {
   flex: 1 1 auto;
 }
 
-.hx-flex-none {
+.#{$namespace}-flex-none {
   flex: none !important;
 }
 
-.hx-flex-fill,
-.hx-flex-1 {
+.#{$namespace}-flex-fill,
+.#{$namespace}-flex-1 {
   flex: 1 !important;
 }
 
-.hx-flex-2 {
+.#{$namespace}-flex-2 {
   flex: 2 !important;
 }
 
-.hx-flex-3 {
+.#{$namespace}-flex-3 {
   flex: 3 !important;
 }
 
-.hx-flex-4 {
+.#{$namespace}-flex-4 {
   flex: 4 !important;
 }
 
-.hx-flex-5 {
+.#{$namespace}-flex-5 {
   flex: 5 !important;
 }
 
-.hx-flex-6 {
+.#{$namespace}-flex-6 {
   flex: 6 !important;
 }
 
-.hx-flex-7 {
+.#{$namespace}-flex-7 {
   flex: 7 !important;
 }
 
-.hx-flex-8 {
+.#{$namespace}-flex-8 {
   flex: 8 !important;
 }
 
-.hx-flex-9 {
+.#{$namespace}-flex-9 {
   flex: 9 !important;
 }
 
-.hx-flex-10 {
+.#{$namespace}-flex-10 {
   flex: 10 !important;
 }
 
-.hx-flex-11 {
+.#{$namespace}-flex-11 {
   flex: 11 !important;
 }
 
-.hx-flex-12 {
+.#{$namespace}-flex-12 {
   flex: 12 !important;
 }
 
 // alignment in cross axis
-.hx-flex-start {
+.#{$namespace}-flex-start {
   align-items: flex-start;
 }
 
-.hx-flex-align-center {
+.#{$namespace}-flex-align-center {
   align-items: center;
 }
 
-.hx-flex-align-end {
+.#{$namespace}-flex-align-end {
   align-items: flex-end;
 }
 
-.hx-flex-align-stretch {
+.#{$namespace}-flex-align-stretch {
   align-items: stretch;
 }
 
-
 // alignment in main axis
-.hx-flex-justify-start {
+.#{$namespace}-flex-justify-start {
   justify-content: flex-start;
 }
 
-.hx-flex-justify-center {
+.#{$namespace}-flex-justify-center {
   justify-content: center;
 }
 
-.hx-flex-justify-end {
+.#{$namespace}-flex-justify-end {
   justify-content: flex-end;
 }
 
-.hx-flex-justify-around{
+.#{$namespace}-flex-justify-around {
   justify-content: space-around;
 }
 
-.hx-flex-justify-between {
+.#{$namespace}-flex-justify-between {
   justify-content: space-between;
 }
 
-.hx-flex-justify-evenly {
+.#{$namespace}-flex-justify-evenly {
   justify-content: space-evenly;
 }
 
-
-
 // self alignment
-.hx-flex-align-self-start {
+.#{$namespace}-flex-align-self-start {
   align-self: flex-start;
 }
 
-.hx-flex-align-self-center {
+.#{$namespace}-flex-align-self-center {
   align-self: center;
 }
 
-.hx-flex-align-self-end {
+.#{$namespace}-flex-align-self-end {
   align-self: flex-end;
 }
 
-.hx-flex-align-self-stretch {
+.#{$namespace}-flex-align-self-stretch {
   align-self: stretch;
 }
 
 // spacer utility
-.hx-spacer{
-  flex:1;
+.#{$namespace}-spacer {
+  flex: 1;
 }

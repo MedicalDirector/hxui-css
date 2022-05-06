@@ -5,7 +5,7 @@
 
 .#{$namespace}-field {
   &:not(:last-child) {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
   // For element grouping such as button group
@@ -18,7 +18,7 @@
 
       &:not(:last-child) {
         margin-bottom: 0;
-        margin-right: .75rem;
+        margin-right: 0.75rem;
       }
 
       &.is-expanded {
@@ -36,7 +36,6 @@
     &.is-grouped-right {
       justify-content: flex-end;
     }
-
   }
 
   // button group with addons
@@ -47,13 +46,11 @@
     .#{$namespace}-control {
       margin-right: -1px;
 
-
       &:first-child .#{$namespace}-button,
       .#{$namespace}-input,
       .#{$namespace}-select select {
         border-bottom-left-radius: $hx-border-radius-sm;
         border-top-left-radius: $hx-border-radius-sm;
-
       }
 
       &:last-child .#{$namespace}-button,
@@ -95,7 +92,6 @@
       &.is-expanded {
         flex-grow: 1;
       }
-
     }
 
     // center addons
@@ -109,7 +105,7 @@
     }
 
     // full width addons
-    &.has-addons-fullwidth  {
+    &.has-addons-fullwidth {
       .#{$namespace}-control {
         flex-grow: 1;
         flex-shrink: 0;

@@ -65,27 +65,28 @@ pre {
 */
 
 code {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 2.5rem;
+
   &:not(.hljs) {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgb(0 0 0 / 5%);
     border-radius: 3px;
-    padding: .1rem .5rem;
+    padding: 0.1rem 0.5rem;
     color: $hx-color-danger;
   }
 }
 
 .#{$namespace}-code {
   max-height: 38rem;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   overflow: auto;
 }
+
 // slideToggle
-.slide-enter-active, .slide-leave-active {
+.slide-enter-active,
+.slide-leave-active {
   max-height: 38rem;
 }
+
 .slide-enter, .slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  max-height: 0
+  max-height: 0;
 }

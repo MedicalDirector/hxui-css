@@ -1,10 +1,13 @@
-.hx-snackbar {
+////////////////
+//  SNACKBAR  //
+////////////////
+
+.#{$namespace}-snackbar {
   position: fixed;
   bottom: 0;
   left: 50%;
-  transition: .3s;
+  transition: 0.3s;
   transform: translate3D(-50%, 100%, 0);
-
   opacity: 0;
   min-width: 288px;
 
@@ -19,7 +22,7 @@
   }
 
   &.is-right {
-    padding: .5rem;
+    padding: 0.5rem;
     right: 0;
     left: auto;
     transform: translate3D(0%, 100%, 0);
@@ -30,7 +33,7 @@
   }
 
   &.is-left {
-    padding: .5rem;
+    padding: 0.5rem;
     left: 0;
     transform: translate3D(0%, 100%, 0);
 
@@ -43,35 +46,9 @@
     transform: translate3D(-50%, 0, 0);
     opacity: 1;
 
-    &.is-right, &.is-left {
+    &.is-right,
+    &.is-left {
       transform: translate3D(0, 0, 0);
-    }
-  }
-
-  &.is-success {
-    .hx-snackbar-content {
-      background-color: $hx-color-success;
-      color: $hx-color-success-invert;
-    }
-  }
-
-  &.is-info {
-    .hx-snackbar-content {
-      background-color: $hx-color-info;
-      color: $hx-color-success-invert;
-    }
-  }
-
-  &.is-warning {
-    .hx-snackbar-content {
-      background-color: $hx-color-warning;
-      color: $hx-color-warning-invert;
-    }
-  }
-
-  &.is-error {
-    .hx-snackbar-content {
-      background-color: $hx-color-danger;
     }
   }
 
@@ -81,17 +58,43 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
-    background: rgba(black, .8);
-    box-shadow: 0 0 2rem .5rem rgba(black, .2);
+    background: rgb(0 0 0 / 80%);
+    box-shadow: 0 0 2rem 0.5rem rgb(0 0 0 / 20%);
     color: white;
     font-weight: 400;
     min-width: 18rem;
     max-width: 35.5rem;
     border-radius: $hx-border-radius-sm;
 
-    .hx-button {
+    .#{$namespace}-button {
       margin: 0 0 0 3rem;
     }
   }
 
+  &.is-success {
+    .#{$namespace}-snackbar-content {
+      background-color: $hx-color-success;
+      color: $hx-color-success-invert;
+    }
+  }
+
+  &.is-info {
+    .#{$namespace}-snackbar-content {
+      background-color: $hx-color-info;
+      color: $hx-color-success-invert;
+    }
+  }
+
+  &.is-warning {
+    .#{$namespace}-snackbar-content {
+      background-color: $hx-color-warning;
+      color: $hx-color-warning-invert;
+    }
+  }
+
+  &.is-error {
+    .#{$namespace}-snackbar-content {
+      background-color: $hx-color-danger;
+    }
+  }
 }

@@ -22,6 +22,7 @@
   @include fullhd {
     width: $hx-fullhd - 40px;
   }
+
   position: relative;
 }
 
@@ -31,6 +32,7 @@
   top: 0;
   height: 100vh;
   width: 100vw;
+
   > div {
     z-index: 1;
   }

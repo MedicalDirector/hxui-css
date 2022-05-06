@@ -1,13 +1,14 @@
-//
-// Tabbable tabs
-//
-.#{$namespace}-nav-tabs {
-  border-bottom: 1px solid rgba(0,0,0,.1);
+////////////
+//  TABS  //
+////////////
 
-  .#{$namespace}-nav-link{
+.#{$namespace}-nav-tabs {
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+
+  .#{$namespace}-nav-link {
     border-bottom: 1px solid transparent;
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       box-shadow: 0 1px 0 0 $hx-color-gray-lighter;
@@ -21,40 +22,44 @@
   }
 
   &.is-justified {
-    .hx-nav-item, .hx-nav-link {
+    .#{$namespace}-nav-item,
+    .#{$namespace}-nav-link {
       display: block;
       flex-grow: 1;
     }
   }
 
   &.has-info {
-    .hx-nav-link {
-      .hx-columns {
-        border-top: 1px solid rgba(0,0,0,.1);
+    .#{$namespace}-nav-link {
+      .#{$namespace}-columns {
+        border-top: 1px solid rgb(0 0 0 / 10%);
         color: #555;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
+
         > * {
-          padding-top: .5rem;
+          padding-top: 0.5rem;
           justify-content: center;
-          opacity: .75;
+          opacity: 0.75;
         }
       }
 
       &:hover {
-        .hx-columns {
-          border-top: 1px solid rgba(0,0,0,.3);
+        .#{$namespace}-columns {
+          border-top: 1px solid rgb(0 0 0 / 30%);
         }
       }
     }
   }
 }
+
 // Hide tabbable panes to start, show them when `.is-active`
 .#{$namespace}-tab-content {
-  padding:$hx-spacer;
+  padding: $hx-spacer;
 
-  > .hx-tab-pane {
+  > .#{$namespace}-tab-pane {
     display: none;
   }
+
   > .is-active {
     display: block;
   }
