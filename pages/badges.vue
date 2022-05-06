@@ -104,49 +104,62 @@ export default {
         {
           title: 'Sizes',
           code: `<div class="has-text-centered">
-  <p>There are 4 additional sizes</p>
-  <p>
-    <span class="hx-badge is-outlined is-small"><span class="hx-badge-content">Small</span></span>
-  </p>
-  <p>
-    <span class="hx-badge is-outlined"><span class="hx-badge-content">Default</span></span>
-  </p>
-  <p>
-    <span class="hx-badge is-outlined is-medium"><span class="hx-badge-content">Medium</span></span>
-  </p>
-  <p>
-    <span class="hx-badge is-danger is-large"><span class="hx-badge-content">Large</span></span>
-  </p>
+  <span class="hx-badge is-outlined is-small"><span class="hx-badge-content">Small</span></span>
+  <span class="hx-badge is-outlined"><span class="hx-badge-content">Default</span></span>
+  <span class="hx-badge is-outlined is-medium"><span class="hx-badge-content">Medium</span></span>
+  <span class="hx-badge is-danger is-large"><span class="hx-badge-content">Large</span></span>
 </div>`
         },
         {
-          title: 'Add a delete button',
+          title: 'Standard delete button',
           code: `<div class="has-text-centered">
-  <p>Add a delete button</p>
-  <p>
-    <span class="hx-badge is-outlined">
-      <span class="hx-badge-content">
-        Default
-        <button class="hx-delete is-small"></button>
-      </span>
+  <span class="hx-badge is-outlined">
+    <span class="hx-badge-content">
+      Default
+      <button class="hx-delete is-small"></button>
     </span>
-  </p>
-  <p>
-    <span class="hx-badge is-warning is-medium">
-      <span class="hx-badge-content">
-        Medium
-        <button class="hx-delete is-small"></button>
-      </span>
+  </span>
+  <span class="hx-badge is-warning is-medium">
+    <span class="hx-badge-content">
+      Medium
+      <button class="hx-delete is-small"></button>
     </span>
-  </p>
-  <p>
-    <span class="hx-badge is-danger is-large">
-      <span class="hx-badge-content">
-        Large
-        <button class="hx-delete"></button>
-      </span>
+  </span>
+  <span class="hx-badge is-danger is-large">
+    <span class="hx-badge-content">
+      Large
+      <button class="hx-delete"></button>
     </span>
-  </p>
+  </span>
+</div>`
+        },
+        {
+          title: 'Custom action button',
+          code: `<div class="has-text-centered">
+  <span class="hx-badge is-outlined">
+    <span class="hx-badge-content">
+      Default
+      <button class="hx-delete is-small hx-icon-control">
+        <i class="hx-icon icon-refresh is-white is-small"></i>
+      </button>
+    </span>
+  </span>
+  <span class="hx-badge is-warning is-medium">
+    <span class="hx-badge-content">
+      Medium
+      <button class="hx-delete hx-icon-control">
+        <i class="hx-icon icon-refresh is-white is-small"></i>
+      </button>
+    </span>
+  </span>
+  <span class="hx-badge is-danger is-large">
+    <span class="hx-badge-content">
+      Large
+      <button class="hx-delete is-medium hx-icon-control">
+        <i class="hx-icon icon-refresh is-white"></i>
+      </button>
+    </span>
+  </span>
 </div>`
         },
         {
