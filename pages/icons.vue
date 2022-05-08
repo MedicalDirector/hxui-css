@@ -124,7 +124,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     const listIcons = [
       { name: 'lock-outline' },
       { name: 'lock' },
@@ -363,7 +363,8 @@ export default {
       { name: 'zoom-minus' },
       { name: 'zoom-minus-outline' },
       { name: 'zoom-plus' },
-      { name: 'zoom-plus-outline' }
+      { name: 'zoom-plus-outline' },
+      { name: 'refresh' }
     ]
 
     const listIconsLegacy = [
@@ -380,7 +381,7 @@ export default {
       { name: 'legacy-letter-writer' }
     ]
 
-    const compare = (a, b) => (a.name > b.name) ? 1 : -1
+    const compare = (a, b) => (a.name > b.name ? 1 : -1)
 
     return {
       searchTerm: '',
@@ -390,11 +391,11 @@ export default {
       iconsLegacy: listIconsLegacy.sort(compare)
     }
   },
-  mounted () {
+  mounted() {
     this.filterResults = this.icons
   },
   watch: {
-    searchTerm () {
+    searchTerm() {
       if (this.searchTerm.length > 0) {
         this.filterResults = []
         for (const icon of this.icons) {
@@ -411,6 +412,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css">
-</style>
