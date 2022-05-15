@@ -68,7 +68,7 @@ code {
   padding: 0 2.5rem;
 
   &:not(.hljs) {
-    background-color: rgb(0 0 0 / 5%);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 3px;
     padding: 0.1rem 0.5rem;
     color: $hx-color-danger;

@@ -16,46 +16,46 @@ $icons-path: "../fonts/" !default;
 
 // COLORS
 // Purples
-$hx-color-purple: hsl(256deg 49% 38%) !default;
-$hx-color-purple-light: hsl(256deg 31% 49%) !default;
-$hx-color-purple-lighter: hsl(258deg 31% 59%) !default;
-$hx-color-purple-lightest: hsl(261deg 31% 74%) !default;
+$hx-color-purple: hsl(256, 49%, 38%) !default;
+$hx-color-purple-light: hsl(256, 31%, 49%) !default;
+$hx-color-purple-lighter: hsl(258, 31%, 59%) !default;
+$hx-color-purple-lightest: hsl(261, 31%, 74%) !default;
 
 // Reds
-$hx-color-red: hsl(341deg 72% 42%) !default;
-$hx-color-red-light: hsl(339deg 85% 53%) !default;
-$hx-color-red-lighter: hsl(335deg 82% 62%) !default;
-$hx-color-red-lightest: hsl(333deg 80% 81%) !default;
+$hx-color-red: hsl(341, 72%, 42%) !default;
+$hx-color-red-light: hsl(339, 85%, 53%) !default;
+$hx-color-red-lighter: hsl(335, 82%, 62%) !default;
+$hx-color-red-lightest: hsl(333, 80%, 81%) !default;
 
 // Blues
-$hx-color-blue: hsl(204deg 81% 26%) !default;
-$hx-color-blue-light: hsl(205deg 52% 40%) !default;
-$hx-color-blue-lighter: hsl(202deg 51% 51%) !default;
-$hx-color-blue-lightest: hsl(200deg 54% 65%) !default;
+$hx-color-blue: hsl(204, 81%, 26%) !default;
+$hx-color-blue-light: hsl(205, 52%, 40%) !default;
+$hx-color-blue-lighter: hsl(202, 51%, 51%) !default;
+$hx-color-blue-lightest: hsl(200, 54%, 65%) !default;
 
 // Greens
-$hx-color-green: hsl(164deg 96% 21%) !default;
-$hx-color-green-light: hsl(155deg 48% 49%) !default;
-$hx-color-green-lighter: hsl(153deg 42% 61%) !default;
-$hx-color-green-lightest: hsl(148deg 39% 72%) !default;
+$hx-color-green: hsl(164, 96%, 21%) !default;
+$hx-color-green-light: hsl(155, 48%, 49%) !default;
+$hx-color-green-lighter: hsl(153, 42%, 61%) !default;
+$hx-color-green-lightest: hsl(148, 39%, 72%) !default;
 
 // Oranges
-$hx-color-orange: hsl(22deg 87% 53%) !default;
-$hx-color-orange-light: hsl(27deg 92% 58%) !default;
-$hx-color-orange-lighter: hsl(24deg 92% 77%) !default;
-$hx-color-orange-lightest: hsl(24deg 96% 87%) !default;
+$hx-color-orange: hsl(22, 87%, 53%) !default;
+$hx-color-orange-light: hsl(27, 92%, 58%) !default;
+$hx-color-orange-lighter: hsl(24, 92%, 77%) !default;
+$hx-color-orange-lightest: hsl(24, 96%, 87%) !default;
 
 // Yellows
-$hx-color-yellow: hsl(41deg 97% 49%) !default;
-$hx-color-yellow-light: hsl(39deg 100% 69%) !default;
-$hx-color-yellow-lighter: hsl(38deg 100% 76%) !default;
-$hx-color-yellow-lightest: hsl(37deg 100% 85%) !default;
+$hx-color-yellow: hsl(41, 97%, 49%) !default;
+$hx-color-yellow-light: hsl(39, 100%, 69%) !default;
+$hx-color-yellow-lighter: hsl(38, 100%, 76%) !default;
+$hx-color-yellow-lightest: hsl(37, 100%, 85%) !default;
 
 // Teals
-$hx-color-teal: hsl(193deg 66% 61%) !default;
+$hx-color-teal: hsl(193, 66%, 61%) !default;
 
 // Pinks
-$hx-color-pink: hsl(349deg 100% 67%) !default;
+$hx-color-pink: hsl(349, 100%, 67%) !default;
 
 // Primary
 $hx-color-primary: $hx-color-green-light !default;
@@ -68,13 +68,13 @@ $hx-color-gradient-green: #1cffa5 !default;
 $hx-color-gradient-blue: #00216b !default;
 
 // Grayscale
-$hx-color-white: hsl(0deg 0% 100%) !default;
-$hx-color-black: hsl(0deg 0% 0%) !default;
-$hx-color-gray-dark: hsl(200deg 3% 17%) !default;
-$hx-color-gray: hsl(0deg 0% 23%) !default;
-$hx-color-gray-light: hsl(15deg 2% 38%) !default;
-$hx-color-gray-lighter: hsl(340deg 1% 68%) !default;
-$hx-color-gray-lightest: hsl(240deg 1% 88%) !default;
+$hx-color-white: hsl(0, 0%, 100%) !default;
+$hx-color-black: hsl(0, 0%, 0%) !default;
+$hx-color-gray-dark: hsl(200, 3%, 17%) !default;
+$hx-color-gray: hsl(0, 0%, 23%) !default;
+$hx-color-gray-light: hsl(15, 2%, 38%) !default;
+$hx-color-gray-lighter: hsl(340, 1%, 68%) !default;
+$hx-color-gray-lightest: hsl(240, 1%, 88%) !default;
 
 // Other colors
 $hx-color-success: $hx-color-green-light !default;
@@ -87,8 +87,8 @@ $hx-color-inverse: $hx-color-gray-dark !default;
 $hx-color-light: $hx-color-gray-lightest !default;
 $hx-color-dark: $hx-color-gray-dark !default;
 
-$hx-color-white-ter: hsl(0deg 0% 96%) !default;
-$hx-color-white-bis: hsl(0deg 0% 99%) !default;
+$hx-color-white-ter: hsl(0, 0%, 96%) !default;
+$hx-color-white-bis: hsl(0, 0%, 99%) !default;
 
 $hx-color-footer-bg: #f5f5f5;
 
@@ -207,7 +207,7 @@ $hx-enable-shadows: true !default;
 $hx-enable-hover-media-query: false !default;
 
 // Body
-$hx-body-bg: hsl(240deg 20% 97% / 100%) !default;
+$hx-body-bg: hsl(240, 20%, 97%) !default;
 $hx-body-color: $hx-color-gray-dark !default;
 
 // General colors
@@ -224,7 +224,7 @@ $hx-border-radius-lg: 0.3rem !default;
 $hx-border-radius-sm: 0.1rem !default;
 
 // Dividers
-$hr-border-color: rgb(0 0 0 / 10%) !default;
+$hr-border-color: rgba(0, 0, 0, 0.1) !default;
 $hr-border-width: $hx-border-width !default;
 
 // Cursors
@@ -267,7 +267,8 @@ $hx-text-light: $hx-color-gray !default;
 $hx-text-strong: $hx-color-gray-dark !default;
 
 // Headings
-$hx-headings-margin-bottom: ($hx-spacer / 2) !default;
+/* stylelint-disable-next-line function-calc-no-unspaced-operator */
+$hx-headings-margin-bottom: calc($hx-spacer / 2) !default;
 $hx-headings-font-family: inherit !default;
 $hx-headings-font-weight: 500 !default;
 $hx-headings-line-height: 1.1 !default;
@@ -384,7 +385,7 @@ $hx-pre-margin: 0 0 1rem 0;
 // Form
 $hx-input: $hx-color-gray-dark !default;
 $hx-input-background: transparent !default;
-$hx-input-border: rgb(0 0 0 / 20%) !default;
+$hx-input-border: rgba(0, 0, 0, 0.2) !default;
 
 $hx-input-hover: $hx-color-gray-dark !default;
 $hx-input-hover-border: $hx-color-gray-light !default;
@@ -428,7 +429,7 @@ $hx-navbar-item-padding: 0.5rem 0.75rem !default;
 // Nav
 $hx-nav-disabled-link-color: $hx-color-gray-lightest;
 $hx-nav-disabled-link-hover-color: $hx-color-gray-lightest;
-$hx-nav-link-hover-color: rgb(0 0 0 / 2%);
+$hx-nav-link-hover-color: rgba(0, 0, 0, 0.02);
 $hx-nav-link-active-color: $hx-color-green-light;
 $hx-nav-link-color: $hx-color-gray;
 $hx-nav-link-font-size: $hx-font-size-sm;
@@ -452,9 +453,9 @@ $hx-dropdown-link-disabled-color: $hx-color-gray-lighter !default;
 $hx-dropdown-header-color: $hx-color-gray-lighter !default;
 
 // Progress Timeline
-$hx-progress-timeline-head-color: hsl(0deg 0 80%) !default;
-$hx-progress-timeline-tail-color: hsl(0deg 0 91%) !default;
-$hx-progress-timeline-content-body-color: hsl(0deg 0 52%) !default;
+$hx-progress-timeline-head-color: hsl(0, 0%, 80%) !default;
+$hx-progress-timeline-tail-color: hsl(0, 0%, 91%) !default;
+$hx-progress-timeline-content-body-color: hsl(0, 0%, 52%) !default;
 
 /**
  * Z-index master list

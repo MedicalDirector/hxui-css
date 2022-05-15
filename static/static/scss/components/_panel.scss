@@ -29,7 +29,7 @@
   .#{$namespace}-panel-footer {
     flex: 0 0 50px;
     border-top: none;
-    background-color: rgb(0 0 0 / 2%);
+    background-color: rgba(0, 0, 0, 0.02);
     padding: 1rem;
 
     .#{$namespace}-button {

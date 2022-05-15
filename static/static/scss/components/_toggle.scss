@@ -49,7 +49,7 @@
     height: 21px;
     background-color: $hx-color-gray-lightest;
     border-radius: 21px;
-    box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
     left: -5px;
     top: -3px;
     transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
@@ -59,12 +59,12 @@
 // Switch active style
 input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::after,
 input[type="checkbox"]:checked:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%), 0 0 0 15px rgb(65 185 135 / 20%);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(65, 185, 135, 0.2);
 }
 
 input[type="checkbox"]:not(:disabled) ~ .lever:active::after,
 input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 40%), 0 0 0 15px rgb(0 0 0 / 8%);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 // Disabled Styles
@@ -77,5 +77,5 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::after {
 .#{$namespace}-toggle label input[type="checkbox"][disabled]:checked + .lever:after {
   background-color: darken($hx-color-gray-lightest, 2);
   cursor: $hx-cursor-disabled;
-  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
 }

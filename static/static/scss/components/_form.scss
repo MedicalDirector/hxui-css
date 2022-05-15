@@ -99,7 +99,7 @@
       &:valid ~ .#{$namespace}-label,
       &:-webkit-autofill ~ .#{$namespace}-label {
         top: (-0.5rem);
-        font-size: (2rem / $large);
+        font-size: calc(2rem / $large);
 
         sup {
           font-size: (0.4rem * $large);
@@ -544,7 +544,7 @@
   background-color: transparent;
   font-size: $hx-font-form-elements-size;
   font-weight: $hx-font-form-elements-weight;
-  border: 1px solid rgb(0 0 0 / 20%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
   border-width: 0 0 1px;
   position: relative;

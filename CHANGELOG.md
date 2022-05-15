@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/MedicalDirector/hxui-css/compare/v1.5.0...HEAD)
 
+- Resolve most deprecation warnings
+- Revert colors to legacy definition
+
 ## [1.5.0](https://github.com/MedicalDirector/hxui-angular/compare/v1.4.4...v1.5.0) - 2022-05-06
 
 ### Added

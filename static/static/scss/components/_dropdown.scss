@@ -40,7 +40,7 @@
   background-color: $hx-dropdown-bg;
   background-clip: padding-box;
   border: $hx-dropdown-border-width solid $hx-dropdown-border-color;
-  box-shadow: 0 6px 12px rgb(0 0 0 / 14.5%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.145);
   overflow-y: auto;
 
   &.has-limited-width {

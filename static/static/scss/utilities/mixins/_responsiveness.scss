@@ -1,5 +1,7 @@
+$hx-lt-tablet: $hx-tablet - 1px;
+
 @mixin mobile {
-  @media screen and (max-width: calc($hx-tablet - 1px)) {
+  @media screen and (max-width: $hx-lt-tablet) {
     @content;
   }
 }

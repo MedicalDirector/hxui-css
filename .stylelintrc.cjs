@@ -24,6 +24,10 @@ module.exports = {
     'font-family-no-duplicate-names': null,
     'scss/double-slash-comment-whitespace-inside': null,
     'scss/at-extend-no-missing-placeholder': null,
+    'hue-degree-notation': 'number',
+    // TODO: need to advise in future major update to use modern sass compilers
+    'color-function-notation': 'legacy',
+    'alpha-value-notation': 'number',
     //
     'no-descending-specificity': [
       true,
