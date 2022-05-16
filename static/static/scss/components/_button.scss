@@ -199,7 +199,7 @@ a.#{$namespace}-button,
 
   &.is-transparent {
     &:hover {
-      background-color: rgb(0 0 0 / 5%);
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 
@@ -283,7 +283,7 @@ a.#{$namespace}-button,
 
     &:hover,
     &.is-active {
-      background-color: rgb(0 0 0 / 5%);
+      background-color: rgba(0, 0, 0, 0.05);
     }
 
     @each $name, $pair in $hx-colors {
@@ -339,7 +339,7 @@ a.#{$namespace}-button,
 
     &::before,
     &::after {
-      background-color: rgb(0 0 0 / 50%);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     &:hover {
@@ -372,7 +372,7 @@ a.#{$namespace}-button,
   border-radius: 100%;
   margin-left: -0.5em;
   margin-right: 0.5em;
-  background-color: rgb(255 255 255 / 80%);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid transparent;
   position: relative;
   outline: none;
@@ -380,7 +380,7 @@ a.#{$namespace}-button,
   color: $hx-color-black;
 
   &:hover {
-    background-color: rgb(0 0 0 / 10%);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   &.is-small {
@@ -492,6 +492,6 @@ input[type="submit"].button {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     width: 1rem;
-    border-left-color: rgb(255 255 255 / 30%);
+    border-left-color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -10,7 +10,7 @@
 }
 
 .#{$namespace}-badge {
-  background-color: rgb(0 0 0 / 5%);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 290486px;
   color: $hx-color-gray-dark;
   font-size: $hx-font-size-xs;
@@ -55,8 +55,8 @@
   &.is-white,
   &.is-outlined {
     .#{$namespace}-info {
-      background-color: rgb(255 255 255 / 80%);
-      border: 1px solid rgb(0 0 0 / 10%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -95,7 +95,7 @@
   }
 
   &.is-outlined {
-    border: 1px solid rgb(10 10 10 / 15%);
+    border: 1px solid rgba(10, 10, 10, 0.15);
     background-color: $hx-color-white;
   }
 

@@ -34,14 +34,14 @@
   }
 
   &.is-small {
-    width: (4/3) + rem;
-    height: (4/3) + rem;
+    width: calc(4 / 3) + rem;
+    height: calc(4 / 3) + rem;
 
     div {
-      width: (3.1875/3) + rem;
-      height: (3.1875/3) + rem;
-      margin: (0.375/3) + rem;
-      border-width: (0.375/3) + rem;
+      width: calc(3.1875 / 3) + rem;
+      height: calc(3.1875 / 3) + rem;
+      margin: calc(0.375 / 3) + rem;
+      border-width: calc(0.375 / 3) + rem;
     }
   }
 

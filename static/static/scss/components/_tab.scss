@@ -3,7 +3,7 @@
 ////////////
 
 .#{$namespace}-nav-tabs {
-  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .#{$namespace}-nav-link {
     border-bottom: 1px solid transparent;
@@ -32,7 +32,7 @@
   &.has-info {
     .#{$namespace}-nav-link {
       .#{$namespace}-columns {
-        border-top: 1px solid rgb(0 0 0 / 10%);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
         color: #555;
         transition: 0.3s ease-in-out;
 
@@ -45,7 +45,7 @@
 
       &:hover {
         .#{$namespace}-columns {
-          border-top: 1px solid rgb(0 0 0 / 30%);
+          border-top: 1px solid rgba(0, 0, 0, 0.3);
         }
       }
     }

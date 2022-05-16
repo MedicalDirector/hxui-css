@@ -11,7 +11,7 @@
 
       &-content {
         &:not(:last-child) {
-          border-left: 1px solid rgb(0 0 0 / 10%);
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         margin: -0.5rem -2.25rem -1rem 2.25rem;
@@ -28,7 +28,7 @@
 
   &-header {
     border-bottom: none;
-    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%), 0 4px 10px -5px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 4px 10px -5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
 
@@ -74,7 +74,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: rgb(0 0 0 / 5%);
+        background-color: rgba(0, 0, 0, 0.05);
       }
     }
 
@@ -110,7 +110,7 @@
       line-height: 1.5rem;
       border-radius: 50%;
       text-align: center;
-      background-color: rgb(0 0 0 / 38%);
+      background-color: rgba(0, 0, 0, 0.38);
       color: $hx-color-white;
       margin-right: 0.5rem;
 
@@ -121,7 +121,7 @@
     }
 
     &-label {
-      color: rgb(0 0 0 / 38%);
+      color: rgba(0, 0, 0, 0.38);
     }
 
     &.is-active,

@@ -1,3 +1,5 @@
+// TODO: need to advise in future major update to use modern sass compilers
+// and update remaining deprecated slash div warnings
 @function powerNumber($number, $exp) {
   $value: 1;
 
@@ -7,7 +9,7 @@
     }
   } @else if $exp < 0 {
     @for $i from 1 through -$exp {
-      $value: $value / $number;
+      $value: calc($value / $number);
     }
   }
 
@@ -46,9 +48,9 @@
 
 @function findColorInvert($color) {
   @if colorLuminance($color) > 0.55 {
-    @return rgb(0 0 0 / 70%);
+    @return rgba(0, 0, 0, 0.7);
   } @else {
-    @return rgb(255 255 255);
+    @return rgb(255, 255, 255);
   }
 }
 

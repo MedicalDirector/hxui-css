@@ -85,6 +85,9 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 }
 
 // Visibility
+$hx-lt-desktop: $hx-desktop - 1px;
+$hx-lt-widescreen: $hx-widescreen - 1px;
+$hx-lt-fullhd: $hx-fullhd - 1px;
 
 .is-hidden {
   display: none;
@@ -97,19 +100,19 @@ $displays: "block" "flex" "inline" "inline-block" "inline-flex";
 }
 
 .is-hidden-tablet {
-  @media screen and (max-width: calc($hx-desktop - 1px)) {
+  @media screen and (max-width: $hx-lt-desktop) {
     display: none !important;
   }
 }
 
 .is-hidden-desktop {
-  @media screen and (max-width: calc($hx-widescreen - 1px)) {
+  @media screen and (max-width: $hx-lt-widescreen) {
     display: none !important;
   }
 }
 
 .is-hidden-widescreen {
-  @media screen and (max-width: calc($hx-fullhd - 1px)) {
+  @media screen and (max-width: $hx-lt-fullhd) {
     display: none !important;
   }
 }
@@ -181,7 +184,7 @@ $unit: $unit-padding-margins;
 
 @for $i from 0 through 24 {
   .is-elevate-#{$i} {
-    box-shadow: 0 (($i * $unit) * 5px) ($i * 2px) ($i * 0.1px) rgb(0 0 0 / 8%);
+    box-shadow: 0 (($i * $unit) * 5px) ($i * 2px) ($i * 0.1px) rgba(0, 0, 0, 0.08);
   }
 }
 

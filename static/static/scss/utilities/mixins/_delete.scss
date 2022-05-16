@@ -3,7 +3,7 @@
 
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: rgba($hx-color-black, 20%);
+  background-color: rgba($hx-color-black, 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -39,11 +39,11 @@
 
   &:hover,
   &:focus {
-    background-color: rgb($hx-color-black, 30%);
+    background-color: rgba($hx-color-black, 0.3);
   }
 
   &:active {
-    background-color: rgb($hx-color-black, 40%);
+    background-color: rgba($hx-color-black, 0.4);
   }
 
   // Sizes
