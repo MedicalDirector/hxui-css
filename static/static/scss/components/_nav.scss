@@ -68,7 +68,7 @@
 
   text-decoration: none;
   /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-  padding: calc($hx-spacer / 2) $hx-spacer;
+  padding: calc(#{$hx-spacer} / 2) $hx-spacer;
   transition: all 0.2s ease-in-out;
   color: $hx-nav-link-color;
   font-size: $hx-nav-link-font-size;
@@ -118,7 +118,7 @@
     font-size: 1.5rem;
     color: $hx-color-gray-light;
     /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-    margin: 0 calc($hx-spacer / 2) 0 calc($hx-spacer / 2);
+    margin: 0 calc(#{$hx-spacer} / 2) 0 calc(#{$hx-spacer} / 2);
   }
 }
 
@@ -144,7 +144,7 @@
     @extend .#{$namespace}-flex-justify-center;
 
     /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-    margin: calc($hx-spacer / 3) 0;
+    margin: calc(#{$hx-spacer} / 3) 0;
   }
   .#{$namespace}-nav-brand {
     margin-bottom: 0.5rem;

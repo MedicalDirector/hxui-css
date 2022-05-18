@@ -1,7 +1,7 @@
 @mixin center($size) {
   left: 50%;
-  margin-left: calc(-1 * $size / 2);
-  margin-top: calc(-1 * $size / 2);
+  margin-left: calc(-1 * #{$size} / 2);
+  margin-top: calc(-1 * #{$size} / 2);
   position: absolute;
   top: 50%;
 }

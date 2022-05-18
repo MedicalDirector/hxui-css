@@ -99,7 +99,7 @@
       &:valid ~ .#{$namespace}-label,
       &:-webkit-autofill ~ .#{$namespace}-label {
         top: (-0.5rem);
-        font-size: calc(2rem / $large);
+        font-size: calc(2rem / #{$large});
 
         sup {
           font-size: (0.4rem * $large);
