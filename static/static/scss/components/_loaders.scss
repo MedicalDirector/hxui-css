@@ -34,14 +34,14 @@
   }
 
   &.is-small {
-    width: calc(4 / 3) + rem;
-    height: calc(4 / 3) + rem;
+    width: calc(4rem / 3);
+    height: calc(4rem / 3);
 
     div {
-      width: calc(3.1875 / 3) + rem;
-      height: calc(3.1875 / 3) + rem;
-      margin: calc(0.375 / 3) + rem;
-      border-width: calc(0.375 / 3) + rem;
+      width: calc(3.1875rem / 3);
+      height: calc(3.1875rem / 3);
+      margin: calc(0.375rem / 3);
+      border-width: calc(0.375rem / 3);
     }
   }
 
