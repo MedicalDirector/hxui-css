@@ -9,7 +9,7 @@
     }
   } @else if $exp < 0 {
     @for $i from 1 through -$exp {
-      $value: calc($value / $number);
+      $value: $value / $number;
     }
   }
 

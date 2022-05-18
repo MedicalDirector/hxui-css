@@ -268,7 +268,7 @@ $hx-text-strong: $hx-color-gray-dark !default;
 
 // Headings
 /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-$hx-headings-margin-bottom: calc($hx-spacer / 2) !default;
+$hx-headings-margin-bottom: calc(#{$hx-spacer} / 2) !default;
 $hx-headings-font-family: inherit !default;
 $hx-headings-font-weight: 500 !default;
 $hx-headings-line-height: 1.1 !default;

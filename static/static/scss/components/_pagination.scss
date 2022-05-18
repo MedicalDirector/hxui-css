@@ -29,7 +29,7 @@ $pagination-color: $hx-color-gray-dark;
       text-decoration: none;
       color: $pagination-color;
       /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-      padding: calc($hx-spacer / 4) calc($hx-spacer / 2);
+      padding: calc(#{$hx-spacer} / 4) calc(#{$hx-spacer} / 2);
       transition: all 0.2s ease-in-out;
       cursor: pointer;
       border-bottom: 1px solid transparent;
@@ -57,7 +57,7 @@ $pagination-color: $hx-color-gray-dark;
 
       color: $pagination-disabled-link-color;
       /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-      padding: calc($hx-spacer / 4) calc($hx-spacer / 2);
+      padding: calc(#{$hx-spacer} / 4) calc(#{$hx-spacer} / 2);
     }
   }
 
