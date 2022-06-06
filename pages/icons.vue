@@ -364,7 +364,9 @@ export default {
       { name: 'zoom-minus-outline' },
       { name: 'zoom-plus' },
       { name: 'zoom-plus-outline' },
-      { name: 'refresh' }
+      { name: 'refresh' },
+      { name: 'shuffle-outline' },
+      { name: 'shuffle' },
     ]
 
     const listIconsLegacy = [
@@ -378,7 +380,7 @@ export default {
       { name: 'legacy-smd' },
       { name: 'legacy-mhr' },
       { name: 'legacy-letter-other' },
-      { name: 'legacy-letter-writer' }
+      { name: 'legacy-letter-writer' },
     ]
 
     const compare = (a, b) => (a.name > b.name ? 1 : -1)
@@ -388,7 +390,7 @@ export default {
       filterResults: this.icons,
       code: '<i class="hx-icon icon-helix"></i>',
       icons: listIcons.sort(compare),
-      iconsLegacy: listIconsLegacy.sort(compare)
+      iconsLegacy: listIconsLegacy.sort(compare),
     }
   },
   mounted() {
@@ -408,7 +410,7 @@ export default {
       } else {
         this.filterResults = this.icons
       }
-    }
-  }
+    },
+  },
 }
 </script>
