@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/MedicalDirector/hxui-css/compare/v1.5.3...HEAD)
 
+### Added
+
+- [Icons] Shuffle icon
+
 ## [1.5.3](https://github.com/MedicalDirector/hxui-css/compare/v1.5.2...v1.5.3) - 2022-05-18
 
 ### Fixed
