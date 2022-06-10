@@ -7,15 +7,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', media: 'all', href: '/' }
+      { rel: 'stylesheet', media: 'all', href: '/' },
     ],
     htmlAttrs: {
-      class: 'hxui-reset'
-    }
+      class: 'hxui-reset',
+    },
   },
   target: 'static',
   /*
@@ -34,11 +34,11 @@ export default {
         [
           '@nuxt/babel-preset-app',
           {
-            corejs: { version: 3 }
-          }
-        ]
-      ]
-    }
+            corejs: { version: 3 },
+          },
+        ],
+      ],
+    },
   },
   buildModules: ['@nuxtjs/google-fonts'],
   /**
@@ -48,8 +48,8 @@ export default {
    */
   googleFonts: {
     families: {
-      Roboto: [300, 400, 500, 600, 700]
-    }
+      Roboto: [300, 400, 500, 700],
+    },
   },
   /*
    * CSS
@@ -57,10 +57,13 @@ export default {
   css: [
     // SCSS file in the project
     '@/static/static/scss/hxui.scss',
-    'highlight.js/styles/github-dark.css'
+    'highlight.js/styles/github-dark.css',
   ],
   /*
    * Plug-ins
    */
-  plugins: ['~/plugins/vue-highlightjs', { src: '~/plugins/ga.js', ssr: false }]
+  plugins: [
+    '~/plugins/vue-highlightjs',
+    { src: '~/plugins/ga.js', ssr: false },
+  ],
 }
