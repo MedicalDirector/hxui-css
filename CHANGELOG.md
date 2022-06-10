@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/MedicalDirector/hxui-css/compare/v1.5.4...HEAD)
 
+### Fixed
+
+- Relocate fonts import to main file, support Google Fonts CSS API v2, change font weight from 600 (non-existent) to 700
+
 ## [1.5.4](https://github.com/MedicalDirector/hxui-css/compare/v1.5.3...v1.5.4) - 2022-06-06
 
 ### Added
