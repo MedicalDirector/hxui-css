@@ -15,6 +15,7 @@
   },
   "bugs": "https://github.com/MedicalDirector/hxui-css/issues",
   "files": [
+    "CHANGELOG.md",
     "/static/static/fonts",
     "/static/static/scss",
     "/static/static/css"
