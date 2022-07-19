@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/MedicalDirector/hxui-css/compare/v1.5.5...HEAD)
 
+### Fixed
+
+- [Nav] Fix nav styling for usage with buttons
+
 ## [1.5.5](https://github.com/MedicalDirector/hxui-css/compare/v1.5.4...v1.5.5) - 2022-06-10
 
 ### Fixed

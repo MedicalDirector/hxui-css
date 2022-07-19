@@ -75,6 +75,12 @@
   font-weight: $hx-nav-link-font-weight;
   border-radius: 2rem;
 
+  &:where(button) {
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
   @include hover-focus {
     text-decoration: none;
 
@@ -85,10 +91,6 @@
       color: $hx-nav-link-active-color;
     }
   }
-
-  // span:first-of-type{
-  //   padding-left:$hx-spacer/2;
-  // }
 
   &.is-active {
     background-color: rgba(0, 0, 0, 0.04);
@@ -102,6 +104,7 @@
   }
 
   // Disabled state lightens text and removes hover/tab effects
+  &:disabled,
   &.is-disabled {
     opacity: 0.3;
 
