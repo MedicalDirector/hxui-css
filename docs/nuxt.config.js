@@ -43,7 +43,8 @@ export default {
   buildModules: ['@nuxtjs/google-fonts'],
   buildDir: '../.nuxt',
   generate: {
-    dir: '../dist/docs',
+    // TODO move to ./dist
+    dir: '../dist',
   },
   /**
    * Fonts
@@ -59,8 +60,9 @@ export default {
    * CSS
    */
   css: [
+    // node modules (from the workspace, symlinked)
+    '@hxui/css/src/hxui.scss',
     // SCSS file in the project
-    '../static/static/scss/hxui.scss',
     'highlight.js/styles/github-dark.css',
   ],
   /*
