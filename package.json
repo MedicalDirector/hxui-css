@@ -11,13 +11,16 @@
     "url": "https://github.com/MedicalDirector/hxui-css/issues"
   },
   "scripts": {
+    "dev:docs": "npm run dev --workspace=docs",
     "build:docs": "npm run build --workspace=docs",
-    "build:css": "npm run css-compile --workspace=sass",
+    "build:css": "npm run css-compile --workspace=packages/scss",
+    "build:tokens": "npm run build --workspace=packages/tokens",
     "format": "npx prettier --write .",
     "prepare": "husky install"
   },
   "engines": {
-    "node": "^14 || ^16"
+    "node": "^14 || ^16",
+    "npm": "^7"
   },
   "devDependencies": {
     "husky": "^7.0.0",
@@ -38,7 +41,7 @@
     ]
   },
   "workspaces": [
-    "docs",
-    "sass"
+    "./docs",
+    "./packages/*"
   ]
 }
