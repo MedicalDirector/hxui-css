@@ -1,0 +1,47 @@
+{
+  "name": "@hxui/css",
+  "version": "1.5.5",
+  "description": "Helix User Interface Library - Pure CSS Framework",
+  "author": "Design @ MD <design@medicaldirector.com>",
+  "keywords": [
+    "css",
+    "sass"
+  ],
+  "style": "dist/css/hxui.css",
+  "sass": "src/hxui.scss",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MedicalDirector/hxui-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MedicalDirector/hxui-css/issues"
+  },
+  "homepage": "https://hxui.io/",
+  "files": [
+    "./CHANGELOG.md",
+    "./dist/",
+    "./src/**/*.scss"
+  ],
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "build": "npm run copy:fonts && npm run compile:css",
+    "lint": "npx stylelint --cache **/*.scss",
+    "lint:fix": "npx stylelint --fix **/*.scss",
+    "format": "npx prettier --write .",
+    "copy:fonts": "npx cpy . ../dist/fonts/ --cwd=fonts",
+    "compile:css": "sass ./src/hxui.scss:./dist/css/hxui.css --error-css --no-source-map --style=compressed"
+  },
+  "devDependencies": {
+    "cpy-cli": "^4.1.0",
+    "postcss": "^8.4.13",
+    "postcss-scss": "^4.0.4",
+    "sass": "^1.51.0",
+    "stylelint": "^14.8.1",
+    "stylelint-config-prettier-scss": "0.0.1",
+    "stylelint-config-standard-scss": "^3.0.0"
+  }
+}

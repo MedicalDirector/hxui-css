@@ -1,73 +1,32 @@
 {
-  "name": "@hxui/css",
-  "version": "1.5.5",
-  "description": "Helix User Interface Library - Pure CSS Framework",
-  "author": "Design @ MD <design@medicaldirector.com>",
-  "keywords": [
-    "css",
-    "sass"
-  ],
+  "name": "@hxui/css-workspace",
+  "private": true,
+  "version": "0.0.0",
   "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/MedicalDirector/hxui-css.git"
+    "url": "git+https://github.com/MedicalDirector/hxui-css.git"
   },
-  "bugs": "https://github.com/MedicalDirector/hxui-css/issues",
-  "files": [
-    "CHANGELOG.md",
-    "/static/static/fonts",
-    "/static/static/scss",
-    "/static/static/css"
-  ],
+  "bugs": {
+    "url": "https://github.com/MedicalDirector/hxui-css/issues"
+  },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --cache --ext js,vue .",
-    "lint:fix": "eslint --fix --ext js,vue .",
-    "lint-style": "npx stylelint --cache **/*.scss",
-    "lint-style:fix": "npx stylelint --fix **/*.scss",
+    "dev:docs": "npm run dev --workspace=docs",
+    "build:docs": "npm run build --workspace=docs",
+    "build:css": "npm run css-compile --workspace=packages/scss",
+    "build:tokens": "npm run build --workspace=packages/tokens",
     "format": "npx prettier --write .",
-    "css-compile": "sass static/static/scss/hxui.scss:static/static/css/hxui.css --error-css --no-source-map --style=compressed",
     "prepare": "husky install"
   },
   "engines": {
-    "node": "^12 || ^14 || ^16"
+    "node": "^14 || ^16",
+    "npm": "^7"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/runtime-corejs3": "^7.17.9",
-    "@nuxtjs/google-fonts": "^1.3.0",
-    "core-js": "^3.22.2",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-vue": "^8.7.1",
-    "highlight.js": "^11.5.1",
     "husky": "^7.0.0",
     "lint-staged": "^12.4.1",
-    "nuxt": "^2.15.8",
-    "postcss": "^8.4.13",
-    "postcss-scss": "^4.0.4",
-    "prettier": "^2.6.2",
-    "sass": "^1.51.0",
-    "sass-loader": "^10.2.1",
-    "stylelint": "^14.8.1",
-    "stylelint-config-prettier-scss": "0.0.1",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "vue-eslint-parser": "^8.3.0",
-    "vue-highlightjs": "^1.3.3"
+    "prettier": "^2.6.2"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "lint-staged": {
     "*.{js,vue,html}": [
       "eslint --cache --fix",
@@ -80,5 +39,9 @@
     "*.md": [
       "prettier --write"
     ]
-  }
+  },
+  "workspaces": [
+    "./docs",
+    "./packages/*"
+  ]
 }

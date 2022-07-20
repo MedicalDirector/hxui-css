@@ -1,0 +1,16 @@
+{
+  "name": "@hxui/tokens",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MedicalDirector/hxui-css.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MedicalDirector/hxui-css/issues"
+  },
+  "homepage": "https://github.com/MedicalDirector/hxui-css#readme"
+}
