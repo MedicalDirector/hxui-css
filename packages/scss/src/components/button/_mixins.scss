@@ -1,47 +1,244 @@
+/* stylelint-disable scss/dollar-variable-pattern */
 @use "../../variables" as *;
 
-$control-radius: $hx-border-radius !default;
-$control-radius-small: $hx-border-radius-sm !default;
+@use "../../mixins/transition";
+@use "../../mixins/text";
+@use "../../mixins/position";
+@use "../../mixins/state";
+@use "../../mixins/loader" as *;
+@use "../../mixins/size" as msize;
+@use "../../mixins/context";
+@use "../../functions/size";
 
-// TODO: remove
-@mixin control {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  align-items: center;
-  box-shadow: none;
-  display: inline-flex;
-  font-size: $hx-font-size-base;
-  height: 2.25em;
-  justify-content: flex-start;
-  line-height: 1.25;
-  padding: 0.5em 0.625em;
-  position: relative;
-  vertical-align: top;
+$component: "button";
+$_properties-filled: ("background-color" "background-color", "color" "color", "border-color" "border-color");
+$states: "default" "hover" "focus" "active";
+$sizes: ("sm" "small", "md" "medium", "lg" "large");
+$priorities: "primary" "secondary" "tertiary" "success" "danger" "info" "warning" "caution";
+$border-width-default: 1;
 
-  // States
-  &:focus,
-  &.is-focused,
-  &:active,
-  &.is-active {
-    outline: none;
+/////////////
+// Helpers //
+/////////////
+
+@mixin get-rules($component, $type: "normal", $priority, $state, $properties) {
+  & {
+    @each $key, $value, $fallback in $properties {
+      @if $fallback {
+        @if $type == "normal" {
+          #{$key}: var(
+            --#{$component}-#{$priority}-#{$state}-#{$value},
+            --#{$component}-#{$priority}-#{$state}-#{$fallback}
+          );
+        } @else {
+          #{$key}: var(
+            --#{$component}-#{$type}-#{$priority}-#{$state}-#{$value},
+            --#{$component}-#{$type}-#{$priority}-#{$state}-#{$fallback}
+          );
+        }
+      } @else {
+        @if $type == "normal" {
+          #{$key}: var(--#{$component}-#{$priority}-#{$state}-#{$value});
+        } @else {
+          #{$key}: var(--#{$component}-#{$type}-#{$priority}-#{$state}-#{$value});
+        }
+      }
+    }
+  }
+}
+
+@mixin get-priority($component, $type: "normal", $priority, $properties) {
+  & {
+    @each $s in $states {
+      @include state.add($s) {
+        @include get-rules($component, $type, $priority, $s, $properties);
+
+        @if $s == "active" {
+          box-shadow: $hx-button-shadow-inset;
+        }
+      }
+    }
+  }
+}
+
+////////////////////
+// Variant - Size //
+////////////////////
+
+@mixin label-padding {
+  > span,
+  > div {
+    &:not(.#{$namespace}-icon-control),
+    &:not(.#{$namespace}-icon-container),
+    &:not(.#{$namespace}-icon),
+    &:not(.icon) {
+      @content;
+    }
   }
 
-  &[disabled],
-  &.is-disabled {
+  .#{$namespace}-button-label {
+    @content;
+  }
+}
+
+@mixin get-size($size) {
+  $bw: size.px(--button-#{$size}-border-width, $border-width-default);
+  $py: size.rem(--button-#{$size}-padding-y);
+  $px: size.px(--button-#{$size}-padding-x);
+  $icon-lh: size.rem(--button-#{$size}-icon-size);
+
+  font: var(--button-#{$size}-typography, inherit);
+  border-radius: size.px(--button-#{$size}-border-radius);
+  border-width: $bw;
+  border-style: solid;
+  gap: size.px(--button-#{$size}-gap);
+  padding: $py $px;
+
+  &.icon {
+    width: calc($py * 2 + $icon-lh + 2 * $bw);
+  }
+
+  @include label-padding {
+    padding: 0 size.px(--button-#{$size}-padding-label, 4);
+  }
+}
+
+@mixin variant-size {
+  & {
+    @each $short, $long in $sizes {
+      @include msize.add($short, $long) {
+        @include get-size($short);
+      }
+    }
+  }
+}
+
+@mixin size-medium {
+  @include get-size("md");
+}
+
+///////////////////////
+// Variant - Default //
+///////////////////////
+/// Filled / Outlined
+
+@mixin variant-normal-priority-secondary {
+  @include get-priority($component, "normal", "secondary", $_properties-filled);
+}
+
+@mixin priority-disabled {
+  cursor: not-allowed;
+  @include get-rules($component, "normal", "disabled", "default", $_properties-filled);
+}
+
+@mixin variant-normal {
+  & {
+    @each $p in $priorities {
+      @include context.add($p) {
+        @include get-priority($component, "normal", $p, $_properties-filled);
+      }
+    }
+  }
+}
+
+////////////////////
+// Variant - Flat //
+////////////////////
+
+@mixin variant-flat-priority-secondary {
+  & {
+    @each $s in $states {
+      @include state.add($s) {
+        @if $s == "default" {
+          $properties-flat-default: ("color" "color");
+
+          background-color: transparent;
+          border-color: transparent;
+
+          @include get-rules($component, "flat", "secondary", $s, $properties-flat-default);
+        } @else {
+          @include get-rules($component, "flat", "secondary", $s, $_properties-filled);
+        }
+
+        @if $s == "active" {
+          box-shadow: $hx-button-shadow-inset;
+        }
+      }
+    }
+  }
+}
+
+@mixin variant-flat {
+  & {
+    @each $p in $priorities {
+      @include context.add($p) {
+        @include get-priority($component, "flat", $p, $_properties-filled);
+      }
+    }
+  }
+}
+
+///////////////////////
+// Variant - Loading //
+///////////////////////
+
+@mixin variant-loading {
+  &.is-loading,
+  &.loading {
+    color: transparent;
     pointer-events: none;
+    width: 80px;
+
+    @each $s in $states {
+      @include state.add($s) {
+        color: transparent;
+      }
+    }
+
+    &::after {
+      $bc: var(--button-secondary-default-color);
+      @include loader;
+      @include position.center(1em);
+
+      border-color: transparent transparent $bc $bc;
+    }
+
+    @each $p in $priorities {
+      &.is-#{$p},
+      &.#{$p} {
+        &::after {
+          $bc: var(--button-#{$p}-default-color);
+
+          border-color: transparent transparent $bc $bc;
+        }
+      }
+    }
   }
 }
 
-// The controls sizes use mixins so they can be used at different breakpoints
-@mixin control-small {
-  border-radius: $control-radius-small;
-  font-size: $hx-font-size-sm;
-}
+/////////////
+// Control //
+/////////////
 
-@mixin control-medium {
-  font-size: $hx-font-size-base;
-}
+@mixin control {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 
-@mixin control-large {
-  font-size: $hx-font-size-lg;
+  @include text.no-copy;
+  @include transition.colors;
+
+  @include state.active {
+    transition: none;
+  }
+  @include state.focus {
+    transition: none;
+  }
+
+  @include state.disable {
+    @include priority-disabled;
+  }
 }

@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 @use "../variables" as *;
 
 @keyframes spin-around {
@@ -10,10 +12,17 @@
   }
 }
 
-@mixin loader {
+@mixin loader($color: $hx-border-color) {
+  @if meta.type-of($color) == "string" and string.slice($color, 1, 2) == "--" {
+    border-color: var(#{$color});
+  } @else {
+    border-color: $color;
+  }
+
+  border-width: 2px;
+  border-style: solid;
   animation: spin-around 500ms infinite linear;
-  border: 2px solid $hx-border-color;
-  border-radius: 290486px;
+  border-radius: 999px;
   border-right-color: transparent;
   border-top-color: transparent;
   content: "";

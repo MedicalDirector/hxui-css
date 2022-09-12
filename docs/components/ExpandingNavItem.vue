@@ -9,7 +9,8 @@
         ></i>
       </span>
     </div>
-    <div class="navs" :style="{ height: ht + 'px' }">
+    <!-- <div class="navs" :style="{ height: ht + 'px' }"> -->
+    <div class="navs">
       <ul class="hx-nav hx-nav-vertical py-4" ref="navs">
         <li class="hx-nav-item" v-for="item in items" v-bind:key="item.name">
           <router-link
@@ -48,28 +49,28 @@ export default {
   methods: {
     toggleItem() {
       this.show = !this.show
-      if (this.ht === 0) {
-        this.getHeight()
-      } else {
-        this.ht = 0
-      }
+      // if (this.ht === 0) {
+      //   this.getHeight()
+      // } else {
+      //   this.ht = 0
+      // }
     },
-    getHeight() {
-      this.ht = this.$refs.navs.clientHeight
-    },
+    // getHeight() {
+    //   this.ht = this.$refs.navs.clientHeight
+    // },
     closeNav() {
       this.$emit('toggleNav')
     },
   },
-  mounted() {
-    this.getHeight()
-  },
+  // mounted() {
+  //   this.getHeight()
+  // },
 }
 </script>
 
 <style lang="scss">
 .navs {
-  transition: 0.3s ease-in-out;
+  // transition: 0.3s ease-in-out;
   overflow: hidden;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
 }

@@ -1,10 +1,10 @@
 <template>
   <div class="hx-nav-drawer">
-    <transition name="slide-left">
-      <span v-if="showNav">
-        <slot></slot>
-      </span>
-    </transition>
+    <!-- <transition name="slide-left"> -->
+    <span v-if="showNav">
+      <slot></slot>
+    </span>
+    <!-- </transition> -->
     <transition name="fade">
       <div class="hx-overlay" v-if="showNav" @click="showNav = false"></div>
     </transition>
@@ -45,15 +45,16 @@ export default {
 }
 </script>
 
+//
 <style lang="scss">
-.slide-left-enter-active,
-.slide-left-leave-active {
-  transition: 0.5s ease-in-out;
-}
-.slide-left-enter,
-.slide-left-leave-to {
-  transform: translateX(-100%);
-}
+// .slide-left-enter-active,
+// .slide-left-leave-active {
+//   transition: 0.5s ease-in-out;
+// }
+// .slide-left-enter,
+// .slide-left-leave-to {
+//   transform: translateX(-100%);
+// }
 
 .fade-enter-active,
 .fade-leave-active {

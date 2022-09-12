@@ -32,3 +32,10 @@
     @content;
   }
 }
+
+@mixin add($short, $long: $short) {
+  &.is-#{$long},
+  &.#{$short} {
+    @content;
+  }
+}

@@ -6,34 +6,24 @@
 
 /// Converts unitless pixel to rem
 /// @param {Number|String} $number - Number to remove unit from
+/// @param {Number|String} $fallback - Number to remove unit from
 /// @param {Number} $root-font-size - Document root size
-@function rem($number, $root-font-size: 16) {
+@function rem($number, $fallback: 0, $root-font-size: 16) {
   @if meta.type-of($number) == "string" and string.slice($number, 1, 2) == "--" {
-    @return math.div(var(#{$number}), $root-font-size) * 1rem;
+    @return calc(var(#{$number}, #{$fallback}) / #{$root-font-size} * 1rem);
   }
   @return math.div($number, $root-font-size) * 1rem;
 }
 
-/// Converts unitless pixel to rem
-/// @param {Number} $number - Number to remove unit from
-/// @param {Number} $root-font-size - Document root size
-@function rem-var($number, $root-font-size: 16) {
-  @return math.div(var(#{$number}), $root-font-size) * 1rem;
-}
-
 /// Adds px to a number
 /// @param {Number|String} $number - Number to remove unit from
-@function px($number) {
+/// @param {Number|String} $fallback - Number to remove unit from
+@function px($number, $fallback: 0) {
   @if meta.type-of($number) == "string" and string.slice($number, 1, 2) == "--" {
-    @return var(#{$number}) * 1px;
+    @return calc(var(#{$number}, #{$fallback}) * 1px);
+  } @else {
+    @return $number * 1px;
   }
-  @return $number * 1px;
-}
-
-/// Adds px to a number
-/// @param {Number} $number - Number to remove unit from
-@function px-var($number) {
-  @return var(#{$number}) * 1px;
 }
 
 /// Remove the unit of a length

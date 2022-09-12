@@ -1,92 +1,139 @@
+/* stylelint-disable scss/dollar-variable-pattern */
+
 ////////////////////
 //  BUTTON GROUP  //
 ////////////////////
 
+@use "sass:map";
 @use "../../variables" as *;
 
-.#{$namespace}-button-group {
-  display: flex;
-  flex-direction: row;
+@use "../../functions/size";
+@use "../../mixins/size" as msize;
+@use "../../mixins/state";
+@use "../../mixins/context";
+@use "./mixins" as button;
 
-  > .#{$namespace}-button {
-    margin-right: 0;
-    margin-left: -1px;
-    border-radius: 0;
+@use "../../mixins/deprecate" as *;
 
-    ////////////
-    // States //
-    ////////////
+$_no-borders: "secondary" "tertiary";
 
-    &:hover,
-    &.is-hovered {
-      z-index: 1;
+/// check whether value is contained in list
+@function contains($list, $var) {
+  $_out: false;
+  @each $item in $list {
+    @if $item == $var {
+      $_out: true;
     }
+  }
+  @return $_out;
+}
 
-    &.is-active,
-    &:active {
-      z-index: 1;
+/// adds border to either "left", "right" or "both sides
+@mixin border($side: "both") {
+  @each $p in button.$priorities {
+    @if not contains($_no-borders, $p) {
+      @include context.add($p) {
+        @each $s in button.$states {
+          @include state.add($s) {
+            @if $side == "left" or $side == "both" {
+              border-left-color: var(--button-#{$p}-#{$s}-color);
+            }
+            @if $side == "right" or $side == "both" {
+              border-right-color: var(--button-#{$p}-#{$s}-color);
+            }
+          }
+        }
+      }
     }
+  }
+}
 
-    ////////////////
-    // Priorities //
-    ////////////////
+/// core rules for .button-group and .button-split
+@mixin grouping {
+  display: inline-flex;
 
-    &.is-light {
-      border-left: 1px solid rgba($hx-color-white, 1);
-    }
-
-    &.is-dark,
-    &.is-black,
-    &.is-success,
-    &.is-primary,
-    &.is-info,
-    &.is-warning,
-    &.is-danger {
-      border-left: 1px solid rgba($hx-color-white, 0.3);
-    }
-
+  .#{$namespace}-button {
     &:first-child {
-      border-top-left-radius: $hx-border-radius-sm;
-      border-bottom-left-radius: $hx-border-radius-sm;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      @include border($side: "right");
+    }
 
-      &.is-light,
-      &.is-dark,
-      &.is-black,
-      &.is-primary,
-      &.is-success,
-      &.is-info,
-      &.is-warning,
-      &.is-danger {
-        border-left-color: transparent;
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+      @include border($side: "both");
+    }
+
+    @each $p in button.$priorities {
+      @if contains($_no-borders, $p) {
+        @include state.hover {
+          z-index: 1;
+        }
+
+        @include state.active {
+          z-index: 1;
+        }
+
+        @include state.focus($visible: true) {
+          z-index: 1;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      $bw-d: button.$border-width-default;
+
+      // default
+      margin-right: calc((-1) * size.px(--button-medium-border-width, $bw-d));
+
+      @each $s, $l in button.$sizes {
+        @include msize.add($s, $l) {
+          margin-right: calc((-1) * size.px(--button-#{$s}-border-width, $bw-d));
+        }
       }
     }
 
     &:last-child {
-      border-top-right-radius: $hx-border-radius-sm;
-      border-bottom-right-radius: $hx-border-radius-sm;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      @include border($side: "left");
     }
   }
+}
+
+.#{$namespace}-button-group {
+  @include grouping;
 
   ///////////////
   // Modifiers //
   ///////////////
 
-  &.has-text-centered {
-    justify-content: center;
-  }
-
-  &.has-text-right {
-    justify-content: flex-end;
-  }
-
-  &.is-fullwidth {
-    > .#{$namespace}-button {
-      flex: 1 0 auto;
+  @include deprecate("2.0.0", "Use custom css") {
+    &.has-text-centered,
+    &.text-center {
+      justify-content: center;
     }
 
-    &.is-justified {
-      > .#{$namespace}-button {
-        flex: 1;
+    &.has-text-right,
+    &.text-right {
+      justify-content: flex-end;
+    }
+  }
+
+  &.is-fullwidth,
+  &.fullwidth {
+    display: flex; // for when inside flex container
+    width: 100%; // for when inside block container
+
+    > .#{$namespace}-button {
+      flex: 1 1 0%;
+    }
+
+    @include deprecate("2.0.0", "Use .fullwidth only") {
+      &.is-justified {
+        > .#{$namespace}-button {
+          flex: 1;
+        }
       }
     }
   }
@@ -97,20 +144,5 @@
 ////////////////////
 
 .#{$namespace}-button-split {
-  display: inline-flex;
-
-  // first button
-  .#{$namespace}-button:first-child {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-right: none;
-  }
-
-  // last button
-  .#{$namespace}-button:nth-child(2) {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    width: 1rem;
-    border-left-color: rgba(255, 255, 255, 0.3);
-  }
+  @include grouping;
 }

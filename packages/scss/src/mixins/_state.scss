@@ -60,12 +60,17 @@
   }
 }
 
-@mixin focus($enable: false) {
+@mixin focus($enable: true, $visible: false) {
   @if $enable {
     &:focus,
     &.is-focused,
     &.focus {
       @content;
+    }
+    @if $visible {
+      &:focus-visible {
+        @content;
+      }
     }
   }
 }
@@ -83,5 +88,23 @@
   &.is-disabled,
   &.disable {
     @content;
+  }
+}
+
+@mixin add($state) {
+  @if $state == "default" {
+    @content;
+  } @else if $state == "disabled" {
+    &[disabled],
+    &[aria-disabled="true"] &.is-#{$state},
+    &.#{$state} {
+      @content;
+    }
+  } @else {
+    &:#{$state},
+    &.is-#{$state},
+    &.#{$state} {
+      @content;
+    }
   }
 }

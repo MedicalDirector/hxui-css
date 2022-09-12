@@ -27,382 +27,408 @@ export default {
         {
           title: 'Button colours',
           code: `<div class="has-text-centered">
-  <button class="hx-button">Button</button>
-  <button class="hx-button is-white">White</button>
-  <button class="hx-button is-light">Light</button>
-  <button class="hx-button is-dark">Dark</button>
-  <button class="hx-button is-black">Black</button>
-  <button class="hx-button is-primary">Primary</button>
-  <button class="hx-button is-info">Info</button>
-  <button class="hx-button is-warning">Warning</button>
-  <button class="hx-button is-danger">Danger</button>
-  <button class="hx-button is-link">Link</button>
-  <button class="hx-button is-transparent">Transparent</button>
+  <button class="hx-button">
+    <span>Default</span>
+  </button>
+  <button class="hx-button primary">
+    <span>Primary</span>
+  </button>
+  <button class="hx-button secondary">
+    <span>Secondary</span>
+  </button>
+  <button class="hx-button tertiary">
+    <span>Tertiary</span>
+  </button>
+  <button class="hx-button success">
+    <span>Success</span>
+  </button>
+  <button class="hx-button danger">
+    <span>Danger</span>
+  </button>
+  <button class="hx-button info">
+    <span>Info</span>
+  </button>
+  <button class="hx-button warning">
+    <span>Warning</span>
+  </button>
+  <button class="hx-button caution">
+    <span>Caution</span>
+  </button>
+  <button class="hx-button link">
+    <span>Link</span>
+  </button>
 </div>
 
 <div class="hx-columns">
   <div class="hx-column">
     <div class="has-text-centered hx-bg-blue my-3 py-3">
-      <button class="hx-button is-white">White</button>
-      <button class="hx-button is-transparent-inverted">Transparent inverted</button>
+      <button class="hx-button is-white">
+        <span>White</span>
+      </button>
+      <button class="hx-button is-transparent-inverted">
+        <span>Transparent inverted</span>
+      </button>
     </div>
   </div>
   <div class="hx-column">
     <div class="has-text-centered hx-bg-primary my-3 py-3">
-      <button class="hx-button is-white">White</button>
-      <button class="hx-button is-transparent-inverted">Transparent inverted</button>
+      <button class="hx-button is-white">
+        <span>White</span>
+      </button>
+      <button class="hx-button is-transparent-inverted">
+        <span>Transparent inverted</span>
+      </button>
     </div>
   </div>
 </div>`,
         },
         {
           title: 'Sizes',
-          code: `<div class="has-text-centered">
-  <button class="hx-button is-small">Small</button>
-  <button class="hx-button">Normal</button>
-  <button class="hx-button is-large">Large</button>
+          code: `<div class="flex items-center justify-center gap-2">
+  <button class="hx-button">
+    <span>Default</span>
+  </button>
+  <button class="hx-button sm">
+    <span>Small</span>
+  </button>
+  <button class="hx-button md">
+    <span>Medium</span>
+  </button>
+  <button class="hx-button lg">
+    <span>Large</span>
+  </button>
 </div>`,
         },
         {
           title: 'Flat',
-          code: `<div class="has-text-centered">
-  <button class="hx-button is-flat">Flat</button>
-  <button class="hx-button is-primary is-flat">Flat</button>
-  <button class="hx-button is-info is-flat">Flat</button>
-  <button class="hx-button is-danger is-flat">Flat</button>
-</div>`,
-        },
-        {
-          title: 'Outlined',
-          code: `<div class="has-text-centered">
-  <button class="hx-button is-outlined is-large">Outlined</button>
-  <button class="hx-button is-primary is-outlined is-small">Outlined</button>
-  <button class="hx-button is-info is-outlined">Outlined</button>
-  <button class="hx-button is-danger is-outlined">Outlined</button>
+          code: `<div class="flex items-center justify-center gap-2">
+  <button class="hx-button flat">
+    <span>Default</span>
+  </button>
+  <button class="hx-button primary flat">
+    <span>Primary</span>
+  </button>
+  <button class="hx-button secondary flat">
+    <span>Secondary</span>
+  </button>
+  <button class="hx-button info flat">
+    <span>Info</span>
+  </button>
+  <button class="hx-button danger flat">
+    <span>Danger</span>
+  </button>
 </div>`,
         },
         {
           title: 'States',
-          code: `<div class="has-text-centered">
-  <p>Hover</p>
-  <button class="hx-button is-hovered">Hover</button>
-  <button class="hx-button is-primary is-hovered">Hover</button>
-  <button class="hx-button is-info is-hovered">Hover</button>
-  <button class="hx-button is-warning is-hovered">Hover</button>
-  <button class="hx-button is-danger is-hovered">Hover</button>
+          code: `<div class="block">
+  <p class="text-center">Hover</p>
+  <div class="flex items-center justify-center gap-2">
+    <button class="hx-button hover">
+      <span>Hover</span>
+    </button>
+    <button class="hx-button primary hover">
+      <span>Hover</span>
+    </button>
+    <button class="hx-button info hover">
+      <span>Hover</span>
+    </button>
+    <button class="hx-button warning hover">
+      <span>Hover</span>
+    </button>
+    <button class="hx-button danger hover">
+      <span>Hover</span>
+    </button>
+  </div>
 
-  <p class="mt-5">Focus</p>
+  <p class="text-center">Focus</p>
+  <div class="flex items-center justify-center gap-2">
+    <button class="hx-button focus">
+      <span>Focus</span>
+    </button>
+    <button class="hx-button primary focus">
+      <span>Focus</span>
+    </button>
+    <button class="hx-button info focus">
+      <span>Focus</span>
+    </button>
+    <button class="hx-button warning focus">
+      <span>Focus</span>
+    </button>
+    <button class="hx-button danger focus">
+      <span>Focus</span>
+    </button>
+  </div>
 
-  <button class="hx-button is-focused">Focus</button>
-  <button class="hx-button is-primary is-focused">Focus</button>
-  <button class="hx-button is-info is-focused">Focus</button>
-  <button class="hx-button is-warning is-focused">Focus</button>
-  <button class="hx-button is-danger is-focused">Focus</button>
-
-  <p class="mt-5">Active</p>
-  
-  <button class="hx-button is-active">Active</button>
-  <button class="hx-button is-primary is-active">Active</button>
-  <button class="hx-button is-info is-active">Active</button>
-  <button class="hx-button is-warning is-active">Active</button>
-  <button class="hx-button is-danger is-active">Active</button>
+  <p class="text-center">Active</p>
+  <div class="flex items-center justify-center gap-2">
+    <button class="hx-button active">
+      <span>Active</span>
+    </button>
+    <button class="hx-button primary active">
+      <span>Active</span>
+    </button>
+    <button class="hx-button info active">
+      <span>Active</span>
+    </button>
+    <button class="hx-button warning active">
+      <span>Active</span>
+    </button>
+    <button class="hx-button danger active">
+      <span>Active</span>
+    </button>
+  </div>
 </div>`,
         },
         {
           title: 'Loading',
-          code: `<div class="has-text-centered">
-  <button class="hx-button is-loading">Loading</button>
-  <button class="hx-button is-primary is-loading">Loading</button>
-  <button class="hx-button is-info is-loading">Loading</button>
-  <button class="hx-button is-warning is-loading">Loading</button>
-  <button class="hx-button is-danger is-loading">Loading</button>
+          code: `<div class="flex items-center justify-center gap-2">
+  <button class="hx-button loading">
+    <span>Loading</span>
+  </button>
+  <button class="hx-button primary loading">
+    <span>Loading</span>
+  </button>
+  <button class="hx-button info loading">
+    <span>Loading</span>
+  </button>
+  <button class="hx-button warning loading">
+    <span>Loading</span>
+  </button>
+  <button class="hx-button danger loading">
+    <span>Loading</span>
+  </button>
 </div>
 `,
         },
         {
           title: 'Disabled',
-          code: `<div class="has-text-centered">
+          code: `<div class="flex items-center justify-center gap-2">
   <button class="hx-button" disabled>Disabled</button>
-  <button class="hx-button is-primary" disabled>Disabled</button>
-  <button class="hx-button is-info" disabled>Disabled</button>
-  <button class="hx-button is-warning" disabled>Disabled</button>
-  <button class="hx-button is-danger" disabled>Disabled</button>
 </div>`,
         },
         {
           title: 'With icons',
-          code: `<div class="has-text-centered">
-  <p>
+          code: `<div class="flex flex-col items-center justify-center gap-2">
+  <div class="flex items-center justify-center gap-2">
     <button class="hx-button">
       <span class="hx-icon-control">
-        <i class="icon icon-helix"></i>
+        <i class="hx-icon icon-helix"></i>
       </span>
       <span>Helix</span>
     </button>
-    <button class="hx-button">
+    <button class="hx-button primary">
       <span>Helix</span>
       <span class="hx-icon-control">
-        <i class="icon icon-helix"></i>
+        <i class="hx-icon icon-helix"></i>
       </span>
     </button>
-    <button class="hx-button is-success">
+    <button class="hx-button success">
       <span class="hx-icon-control">
-        <i class="icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty"></i>
       </span>
       <span>Add</span>
     </button>
-    <button class="hx-button is-info">
+    <button class="hx-button info">
       <span>More</span>
       <span class="hx-icon-control">
-        <i class="icon icon-more"></i>
+        <i class="hx-icon icon-more"></i>
       </span>
     </button>
-    <button class="hx-button is-danger">
+    <button class="hx-button danger">
       <span class="hx-icon-control">
-        <i class="icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty"></i>
       </span>
       <span>Remove</span>
     </button>
-  </p>
-  <p>
-    <button class="hx-button is-primary is-outlined">
+  </div>
+
+  <div class="flex items-center justify-center gap-2">
+    <button class="hx-button primary icon">
       <span class="hx-icon-control">
-        <i class="icon icon-helix"></i>
+        <i class="hx-icon icon-helix"></i>
       </span>
     </button>
-    <button class="hx-button is-warning">
+    <button class="hx-button warning icon">
       <span class="hx-icon-control">
-        <i class="icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty"></i>
       </span>
     </button>
-    <button class="hx-button is-dark">
+    <button class="hx-button success icon">
       <span class="hx-icon-control">
-        <i class="icon icon-angle-left"></i>
+        <i class="hx-icon icon-angle-right"></i>
       </span>
     </button>
-    <button class="hx-button is-success">
+    <button class="hx-button danger icon">
       <span class="hx-icon-control">
-        <i class="icon icon-angle-right"></i>
+        <i class="hx-icon icon-heart"></i>
       </span>
     </button>
-    <button class="hx-button is-danger">
-      <span class="hx-icon-control">
-        <i class="icon icon-heart"></i>
-      </span>
-    </button>
-  </p>
-  <p>
-    <button class="hx-button is-small">
+  </div>
+
+  <div class="flex items-center justify-center gap-2">
+    <button class="hx-button sm">
       <span>Small</span>
-      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
     <button class="hx-button">
       <span>Medium</span>
-      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
-    <button class="hx-button is-large">
+    <button class="hx-button lg">
       <span>Large</span>
-      <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
-  </p>
-</div>`,
-        },
-        {
-          title: 'Round icon buttons',
-          code: `<div class="has-text-centered">
-  <button class="hx-button is-round is-light is-small">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-minus-empty"></i>
-    </span>
-  </button>
-  <button class="hx-button is-round is-danger is-small">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-heart"></i>
-    </span>
-  </button>
-  <button class="hx-button is-round">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-plus-empty is-medium"></i>
-    </span>
-  </button>
-  <button class="hx-button is-info is-round">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-medications is-medium"></i>
-    </span>
-  </button>
-  <button class="hx-button is-round is-light is-large">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-email-outline is-large"></i>
-    </span>
-  </button>
-  <button class="hx-button is-round is-black is-large">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-paperclip is-large"></i>
-    </span>
-  </button>
+  </div>
 </div>`,
         },
         {
           title: 'Button group',
-          code: `<p class="has-text-centered">These are examples of the Button Group.</p>
+          code: `<div class="flex flex-col items-center justify-center gap-2">
+  <p class="text-center">These are examples of the Button Group.</p>
+  <div class="hx-button-group">
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-email-outline"></i>
+      </span>
+    </button>
+    <button class="hx-button active">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-printer-outline"></i>
+      </span>
+    </button>
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-credit-card"></i>
+      </span>
+    </button>
+  </div>
 
-<div class="hx-button-group mb-3 has-text-centered">
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-email-outline"></i>
-    </span>
-  </button>
-  <button class="hx-button is-active">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-printer-outline"></i>
-    </span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-credit-card"></i>
-    </span>
-  </button>
-</div>
+  <div class="hx-button-group">
+    <button class="hx-button">
+      Left
+    </button>
+    <button class="hx-button active">
+      Middle
+    </button>
+  </div>
 
-<div class="hx-button-group mb-3 has-text-centered">
-  <button class="hx-button">
-    Left
-  </button>
-  <button class="hx-button is-active">
-    Middle
-  </button>
-</div>
+  <div class="hx-button-group">
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-email-outline"></i>
+      </span>
+      <span>Email</span>
+    </button>
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-printer-outline"></i>
+      </span>
+      <span>Print</span>
+    </button>
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-credit-card"></i>
+      </span>
+      <span>Pay</span>
+    </button>
+  </div>
 
-<div class="hx-button-group has-text-centered">
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-email-outline"></i>
-    </span>
-    <span>Email</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-printer-outline"></i>
-    </span>
-    <span>Print</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-credit-card"></i>
-    </span>
-    <span>Pay</span>
-  </button>
-</div>
+  <p class="has-text-center">
+    You can change the button style in button group addons using the 
+    button modifiers such as <code>.info</code> or <code>.primary</code>, etc.
+  </p>
 
-<p class="mt-5 has-text-centered">
-  You can change the button style in button group addons using the 
-  button modifiers such as <code>.is-info</code> or <code>.is-primary</code>, etc.
-</p>
+  <div class="hx-button-group">
+    <button class="hx-button info">
+      <span>Left</span>
+    </button>
+    <button class="hx-button info active">
+      <span>Middle</span>
+    </button>
+    <button class="hx-button info">
+      <span>Right</span>
+    </button>
+  </div>
 
-<div class="hx-button-group mb-3 has-text-centered">
-  <button class="hx-button is-info">
-    Left
-  </button>
-  <button class="hx-button is-info is-active">
-    Middle
-  </button>
-  <button class="hx-button is-info">
-    Right
-  </button>
-</div>
+  <div class="hx-button-group">
+    <button class="hx-button primary">
+      <span>Left</span>
+    </button>
+    <button class="hx-button primary active">
+      <span>Middle</span>
+    </button>
+    <button class="hx-button primary">
+      <span>Right</span>
+    </button>
+  </div>
 
-<div class="hx-button-group has-text-centered">
-  <button class="hx-button is-primary">
-    Left
-  </button>
-  <button class="hx-button is-primary">
-    Middle
-  </button>
-  <button class="hx-button is-primary">
-    Right
-  </button>
-</div>
+  <br />
 
-<br />
+  <p class="text-center">
+    Make the group of buttons stretch to the entire width of its parent. 
+    Just add class <code>is-fullwidth</code> to the group.
+  </p>
 
-<p class="has-text-centered">
-  Make the group of buttons stretch to the entire width of its parent. 
-  Just add class <code>is-fullwidth</code> to the group.
-</p>
-
-<div class="hx-button-group has-text-centered is-fullwidth">
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-email-outline"></i>
-    </span>
-    <span>Email to the patient</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-printer-outline"></i>
-    </span>
-    <span>Print invoice</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-credit-card"></i>
-    </span>
-    <span>Pay bill with credit card</span>
-  </button>
-</div>
-
-<br />
-
-<p class="has-text-centered">
-  Make a group of buttons stretch at equal sizes to span the entire 
-  width of its parent. Add another class <code>is-justified</code> to the group.</p>
-
-<div class="hx-button-group has-text-centered is-fullwidth is-justified">
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-email-outline"></i>
-    </span>
-    <span>Email to the patient</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-printer-outline"></i>
-    </span>
-    <span>Print invoice</span>
-  </button>
-  <button class="hx-button">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-credit-card"></i>
-    </span>
-    <span>Pay bill with credit card</span>
-  </button>
+  <div class="hx-button-group fullwidth">
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-email-outline"></i>
+      </span>
+      <span>Email to the patient</span>
+    </button>
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-printer-outline"></i>
+      </span>
+      <span>Print invoice</span>
+    </button>
+    <button class="hx-button">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-credit-card"></i>
+      </span>
+      <span>Pay bill with credit card</span>
+    </button>
+  </div>
 </div>`,
         },
         {
           title: 'Split buttons',
-          code: `<div class="hx-flex hx-flex-justify-around">
+          code: `<div class="flex justify-center items-center gap-2">
   <div class="hx-button-split">
-    <button type="button" class="hx-button is-primary is-small">
-      Create recall
+    <button class="hx-button primary sm">
+      <span>Create recall</span>
     </button>
-    <button type="button" class="hx-button is-primary is-small">
-      <i class="icon icon-angle-down"></i>
+    <button class="hx-button primary sm icon">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
   </div>
   <div class="hx-button-split">
-    <button type="button" class="hx-button is-primary">
-      Create recall
+    <button class="hx-button primary">
+      <span>Create recall</span>
     </button>
-    <button type="button" class="hx-button is-primary">
-      <i class="icon icon-angle-down"></i>
+    <button class="hx-button primary icon">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
   </div>
   <div class="hx-button-split">
-    <button type="button" class="hx-button is-primary is-large">
-      Create recall
+    <button class="hx-button primary lg">
+      <span>Create recall</span>
     </button>
-    <button type="button" class="hx-button is-primary is-large">
-      <i class="icon icon-angle-down"></i>
+    <button class="hx-button primary lg icon">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
     </button>
   </div>
 </div>`,
@@ -411,24 +437,30 @@ export default {
           title: 'Multiline button',
           code: `<div class="hx-columns">
   <div class="hx-column is-one-third">
-    <button class="hx-button is-text-multiline">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-      accusantium doloremque laudantium
+    <button class="hx-button multiline">
+      <span>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium
+      </span>
     </button>
   </div>
 
   <div class="hx-column is-one-third">
-    <button class="hx-button is-text-multiline">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-      accusantium doloremque laudantium
-      <i class="icon icon-angle-down"></i>
-    </button>
-  </div>
-
-  <div class="hx-column is-one-third">
-    <button class="hx-button is-text-multiline is-primary">
+    <button class="hx-button multiline">
+      <span>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium
+      </span>
       <span class="hx-icon-control">
-        <i class="icon icon-plus-empty"></i>
+        <i class="hx-icon icon-angle-down"></i>
+      </span>
+    </button>
+  </div>
+
+  <div class="hx-column is-one-third">
+    <button class="hx-button multiline is-primary">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-plus-empty"></i>
       </span>
       <span>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
