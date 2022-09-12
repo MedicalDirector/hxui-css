@@ -31,6 +31,8 @@ Working on a marketing or documentation site? Import the following:
 
 It is expected that you provide your own css resets and fonts.
 
+It is also expected you make use of `browserslist`, and use `autoprefixer` in your build step. This is handled automagically in modern JS frameworks.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

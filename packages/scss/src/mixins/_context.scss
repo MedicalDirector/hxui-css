@@ -53,3 +53,10 @@
     @content;
   }
 }
+
+@mixin add($ctx) {
+  &.is-#{$ctx},
+  &.#{$ctx} {
+    @content;
+  }
+}
