@@ -9,9 +9,9 @@
 
         <div class="hx-section scrollable-y">
           <div class="hx-section is-comfortable">
-            <transition name="slide-x" mode="out-in">
-              <nuxt />
-            </transition>
+            <!-- <transition name="slide-x" mode="out-in"> -->
+            <nuxt />
+            <!-- </transition> -->
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="scss" global>
+<style lang="scss">
 /* html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;

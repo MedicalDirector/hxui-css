@@ -3,7 +3,7 @@
     <div class="hx-card-header">
       <h4 class="hx-card-header-title my-2">{{ title }}</h4>
       <button
-        class="hx-button is-round is-transparent is-small is-pulled-right mx-4"
+        class="hx-button flat icon is-pulled-right mx-4"
         v-on:click="toggleCode"
         v-if="code !== '<h1>Code here</h1>'"
         :aria-expanded="`${!!codeVisible}`"
@@ -11,7 +11,7 @@
         aria-label="Toggle code snippet"
       >
         <span class="hx-icon-control">
-          <i class="hx-icon icon-code is-medium"></i>
+          <i class="hx-icon icon-code"></i>
         </span>
       </button>
     </div>

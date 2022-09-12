@@ -2,19 +2,22 @@
 // ICONS  //
 ////////////
 
-@use "../../mixins/deprecate" as *;
 @use "../../variables" as *;
 
+@use "../../mixins/deprecate" as *;
+
+@use "../../mixins/size";
+
 @mixin icon-sm {
-  font-size: 14px;
-  width: 1.5rem;
-  height: 1.5rem;
+  font-size: 1rem; // TODO: unhard
+  // width: 1.25rem;
+  // height: 1.25rem;
 }
 
 @mixin icon-md {
-  font-size: 21px;
-  width: 1.5rem;
-  height: 1.5rem;
+  font-size: 1.25rem; // TODO: unhard
+  // width: 1.5rem;
+  // height: 1.5rem;
 }
 
 /// @usage nested inside .hx-button
@@ -23,19 +26,23 @@
 :where(.#{$namespace}-button) {
   .#{$namespace}-icon {
     @include icon-md;
+
+    line-height: 1.5rem; // TODO: unhard
   }
 
-  &.is-medium,
-  &.md {
+  @include size.md {
     .#{$namespace}-icon {
       @include icon-md;
+
+      line-height: 1.5rem; // TODO: unhard
     }
   }
 
-  &.is-small,
-  &.sm {
+  @include size.sm {
     .#{$namespace}-icon {
       @include icon-sm;
+
+      line-height: 1.25rem; // TODO: unhard
     }
   }
 }
@@ -58,14 +65,6 @@
     }
   }
 
-  &.sm {
-    @include icon-sm;
-  }
-
-  &.md {
-    @include icon-md;
-  }
-
   @include deprecate("3.0.0", "Use custom css") {
     &.is-medium {
       font-size: 28px;
@@ -81,9 +80,17 @@
       height: 3rem;
     }
   }
+
+  @include size.sm {
+    @include icon-sm;
+  }
+
+  @include size.md {
+    @include icon-md;
+  }
 }
 
-@include deprecate("3.0.0", "Use .hx-icon") {
+@include deprecate("2.0.0", "Use .hx-icon") {
   .icon {
     font-size: 21px;
 
