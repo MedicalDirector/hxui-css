@@ -45,3 +45,5 @@ coverage
 # other
 sh.exe.stackdump
 .DS_Store
+test
+figma-tokens-test.json
