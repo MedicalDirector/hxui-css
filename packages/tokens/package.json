@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/MedicalDirector/hxui-css.git"
   },
+  "files": [
+    "./dist/",
+    "./CHANGELOG.md"
+  ],
   "license": "MIT",
   "private": false,
   "bugs": {

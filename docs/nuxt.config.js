@@ -24,6 +24,7 @@ export default {
    */
   build: {
     extractCSS: true,
+    postcss: null,
     babel: {
       babelrc: false,
       cacheDirectory: undefined,
