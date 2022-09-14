@@ -2,17 +2,17 @@
 // Helix Theme and Variables
 // =========
 
-// Resets
-$framework-wrap: false !default;
+@use "sass:color";
+@use "./functions/color" as c;
 
-// Resets
-$hxui-reset: "hxui-reset" !default;
-
-// Namespace
+/// @type String
 $namespace: "hx" !default;
 
-// Icon path
-$icons-path: "../fonts/" !default;
+/// @type String
+$framework-root: "#root" !default;
+
+/// @type Number
+$root-font-size: 16 !default;
 
 // COLORS
 // Purples
@@ -93,13 +93,13 @@ $hx-color-white-bis: hsl(0, 0%, 99%) !default;
 $hx-color-footer-bg: #f5f5f5;
 
 // Invert colors
-$hx-color-orange-invert: findColorInvert($hx-color-orange-light) !default;
-$hx-color-yellow-invert: findColorInvert($hx-color-yellow) !default;
-$hx-color-green-invert: findColorInvert($hx-color-green) !default;
-$hx-color-blue-invert: findColorInvert($hx-color-teal) !default;
-$hx-color-info-invert: findColorInvert($hx-color-blue) !default;
-$hx-color-purple-invert: findColorInvert($hx-color-purple) !default;
-$hx-color-red-invert: findColorInvert($hx-color-red) !default;
+$hx-color-orange-invert: c.invert($hx-color-orange-light) !default;
+$hx-color-yellow-invert: c.invert($hx-color-yellow) !default;
+$hx-color-green-invert: c.invert($hx-color-green) !default;
+$hx-color-blue-invert: c.invert($hx-color-teal) !default;
+$hx-color-info-invert: c.invert($hx-color-blue) !default;
+$hx-color-purple-invert: c.invert($hx-color-purple) !default;
+$hx-color-red-invert: c.invert($hx-color-red) !default;
 
 $hx-color-primary-invert: $hx-color-green-invert !default;
 $hx-color-info-invert: $hx-color-info-invert !default;
@@ -169,35 +169,35 @@ $hx-colors: (
   ),
   "purple": (
     $hx-color-purple,
-    findColorInvert($hx-color-purple),
+    c.invert($hx-color-purple),
   ),
   "red": (
     $hx-color-red,
-    findColorInvert($hx-color-red),
+    c.invert($hx-color-red),
   ),
   "blue": (
     $hx-color-blue,
-    findColorInvert($hx-color-blue),
+    c.invert($hx-color-blue),
   ),
   "green": (
     $hx-color-green,
-    findColorInvert($hx-color-green),
+    c.invert($hx-color-green),
   ),
   "orange": (
     $hx-color-orange,
-    findColorInvert($hx-color-orange),
+    c.invert($hx-color-orange),
   ),
   "yellow": (
     $hx-color-yellow,
-    findColorInvert($hx-color-yellow),
+    c.invert($hx-color-yellow),
   ),
   "teal": (
     $hx-color-teal,
-    findColorInvert($hx-color-teal),
+    c.invert($hx-color-teal),
   ),
   "pink": (
     $hx-color-pink,
-    findColorInvert($hx-color-pink),
+    c.invert($hx-color-pink),
   ),
 ) !default;
 
@@ -262,7 +262,7 @@ $hx-font-form-label-focus-top: -0.25rem;
 
 // Text colors
 $hx-text: $hx-color-gray-dark !default;
-$hx-text-invert: findColorInvert($hx-text) !default;
+$hx-text-invert: c.invert($hx-text) !default;
 $hx-text-light: $hx-color-gray !default;
 $hx-text-strong: $hx-color-gray-dark !default;
 
@@ -272,7 +272,7 @@ $hx-headings-margin-bottom: calc(#{$hx-spacer} / 2) !default;
 $hx-headings-font-family: inherit !default;
 $hx-headings-font-weight: 500 !default;
 $hx-headings-line-height: 1.1 !default;
-$hx-headings-color: darken($hx-color-blue, 10) !default;
+$hx-headings-color: color.scale($hx-color-blue, $lightness: -10%) !default;
 $hx-headings-letter-spacing: -0.01em !default;
 
 // Font sizes
@@ -313,7 +313,7 @@ $hx-border-radius-sm: 0.25rem !default;
 // Links
 $hx-link-color: $hx-color-blue-light !default;
 $hx-link-decoration: none !default;
-$hx-link-hover-color: darken($hx-link-color, 15%) !default;
+$hx-link-hover-color: color.scale($hx-link-color, $lightness: -15%) !default;
 $hx-link-hover-decoration: underline !default;
 $hx-link-hover-border-color: $hx-color-gray-light;
 $hx-link-focus: $hx-color-gray-dark;
@@ -353,27 +353,27 @@ $hx-fullhd: 1640px !default;
 // Form states and alerts colours
 $hx-state-success-text: #3c763d !default;
 $hx-state-success-bg: #dff0d8 !default;
-$hx-state-success-border-color: darken($hx-state-success-bg, 5%) !default;
+$hx-state-success-border-color: color.scale($hx-state-success-bg, $lightness: -5%) !default;
 
 $hx-state-info-text: #31708f !default;
 $hx-state-info-bg: #d9edf7 !default;
-$hx-state-info-border-color: darken($hx-state-info-bg, 7%) !default;
+$hx-state-info-border-color: color.scale($hx-state-info-bg, $lightness: -7%) !default;
 
 $hx-state-warning-text: #8a6d3b !default;
 $hx-state-warning-bg: #fcf8e3 !default;
 $hx-mark-bg: $hx-state-warning-bg !default;
-$hx-state-warning-border-color: darken($hx-state-warning-bg, 5%) !default;
+$hx-state-warning-border-color: color.scale($hx-state-warning-bg, $lightness: -5%) !default;
 
 $hx-state-danger-text: #a94442 !default;
 $hx-state-danger-bg: #f2dede !default;
-$hx-state-danger-border-color: darken($hx-state-danger-bg, 5%) !default;
+$hx-state-danger-border-color: color.scale($hx-state-danger-bg, $lightness: -5%) !default;
 
 // Code
 $hx-code-font-size: 80% !default;
 $hx-code-padding-y: 0.2rem !default;
 $hx-code-padding-x: 0.4rem !default;
 $hx-code-color: $hx-color-red-light !default;
-$hx-code-bg: darken($hx-color-gray-lightest, 2) !default;
+$hx-code-bg: color.scale($hx-color-gray-lightest, $lightness: -2%) !default;
 
 $hx-kbd-color: $hx-color-white !default;
 $hx-kbd-bg: $hx-color-gray-dark !default;

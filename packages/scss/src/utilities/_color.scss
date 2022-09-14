@@ -1,0 +1,203 @@
+// BACKGROUND COLORS
+
+@use "sass:list";
+
+@use "../variables" as *;
+@use "../functions/color";
+@use "../mixins/gradient";
+
+.#{$namespace}-bg {
+  // is-primary, is-info, is-success, is-warning, is-danger
+  @each $name, $pair in $hx-colors {
+    $color: list.nth($pair, 1);
+    $hx-color-invert: list.nth($pair, 2);
+
+    &-#{$name} {
+      background-color: $color !important;
+      border-color: transparent !important;
+      color: $hx-color-invert !important;
+
+      &.lighten-5 {
+        $tint: color.tint($color, 80%);
+
+        background-color: $tint !important;
+        color: color.invert($tint) !important;
+      }
+
+      &.lighten-4 {
+        $tint: color.tint($color, 64%);
+
+        background-color: $tint !important;
+        color: color.invert($tint) !important;
+      }
+
+      &.lighten-3 {
+        $tint: color.tint($color, 48%);
+
+        background-color: $tint !important;
+        color: color.invert($tint) !important;
+      }
+
+      &.lighten-2 {
+        $tint: color.tint($color, 32%);
+
+        background-color: $tint !important;
+        color: color.invert($tint) !important;
+      }
+
+      &.lighten-1 {
+        $tint: color.tint($color, 16%);
+
+        background-color: $tint !important;
+        color: color.invert($tint) !important;
+      }
+
+      &.darken-1 {
+        $shade: color.shade($color, 12%);
+
+        background-color: $shade !important;
+        color: color.invert($shade) !important;
+      }
+
+      &.darken-2 {
+        $shade: color.shade($color, 24%);
+
+        background-color: $shade !important;
+        color: color.invert($shade) !important;
+      }
+
+      &.darken-3 {
+        $shade: color.shade($color, 36%);
+
+        background-color: $shade !important;
+        color: color.invert($shade) !important;
+      }
+
+      &.darken-4 {
+        $shade: color.shade($color, 48%);
+
+        background-color: $shade !important;
+        color: color.invert($shade) !important;
+      }
+    }
+  }
+
+  &-light {
+    background-color: $hx-color-gray-light !important;
+    color: $hx-color-white;
+
+    code:not(.hljs) {
+      background-color: $hx-color-red;
+      color: $hx-color-white;
+    }
+  }
+
+  &-gradient {
+    &.has-animation {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        animation-name: fade;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        transform: translateZ(0);
+      }
+    }
+
+    &.is-green-blue {
+      @include gradient.radial(top, $hx-color-gradient-green, $hx-color-gradient-blue);
+
+      color: white;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+      .#{$namespace}-button.is-loading {
+        font-size: 3rem;
+
+        &::after {
+          border-color: transparent transparent white white !important;
+        }
+      }
+
+      &.has-animation {
+        &::before {
+          animation-delay: 10s;
+          @include gradient.radial(bottom left, $hx-color-gradient-green, $hx-color-gradient-blue);
+        }
+
+        &::after {
+          animation-delay: 20s;
+          @include gradient.radial(bottom right, $hx-color-gradient-green, $hx-color-gradient-blue);
+        }
+      }
+    }
+  }
+
+  background-color: $hx-body-bg !important;
+}
+
+.#{$namespace}-bg-grey-dark {
+  background-color: $hx-color-gray-dark !important;
+}
+
+.#{$namespace}-bg-grey {
+  background-color: $hx-color-gray !important;
+}
+
+.#{$namespace}-bg-grey-light {
+  background-color: $hx-color-gray-light !important;
+}
+
+.#{$namespace}-bg-grey-lighter {
+  background-color: $hx-color-gray-lighter !important;
+}
+
+.#{$namespace}-bg-grey-lightest {
+  background-color: $hx-color-gray-lightest !important;
+}
+
+/* Background Patterns */
+.#{$namespace}-bg-success-pattern {
+  background: repeating-linear-gradient(45deg, #41b987, #41b987 10px, #369c71 10px, #369c71 20px);
+}
+
+.#{$namespace}-bg-warning-pattern {
+  background: repeating-linear-gradient(45deg, #f68a31, #f68a31 10px, #ef6b1f 10px, #ef6b1f 20px);
+}
+
+.#{$namespace}-bg-danger-pattern {
+  background: repeating-linear-gradient(45deg, #bd1e50, #bd1e50 10px, #9e1944 10px, #9e1944 20px);
+}
+
+.#{$namespace}-bg-info-pattern {
+  background: repeating-linear-gradient(45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -2,6 +2,8 @@
 //  PANEL  //
 /////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-panel {
   display: flex;
   flex-direction: column;

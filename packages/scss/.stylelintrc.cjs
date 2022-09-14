@@ -9,10 +9,10 @@ module.exports = {
     'at-rule-no-vendor-prefix': null,
     'selector-no-vendor-prefix': null,
     // TODO: remove and resolve following at next major release
-    'keyframes-name-pattern': null,
-    'function-name-case': null,
-    'scss/at-function-pattern': null,
-    'scss/no-global-function-names': null,
+    // 'keyframes-name-pattern': null,
+    // 'function-name-case': null,
+    // 'scss/at-function-pattern': null,
+    // 'scss/no-global-function-names': null,
     /**
      * @see {@link https://stylelint.io/user-guide/rules/list#stylistic-issues}
      */
@@ -32,20 +32,20 @@ module.exports = {
     'no-descending-specificity': [
       true,
       {
-        ignore: ['selectors-within-list']
-      }
+        ignore: ['selectors-within-list'],
+      },
     ],
     'font-family-no-missing-generic-family-keyword': [
       true,
       {
-        ignoreFontFamilies: ['hxui']
-      }
-    ]
+        ignoreFontFamilies: ['hxui'],
+      },
+    ],
   },
   overrides: [
     {
       files: ['**/*.scss'],
-      customSyntax: 'postcss-scss'
-    }
-  ]
+      customSyntax: 'postcss-scss',
+    },
+  ],
 }

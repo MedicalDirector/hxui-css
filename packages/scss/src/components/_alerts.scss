@@ -2,6 +2,9 @@
 //  ALERTS  //
 //////////////
 
+@use "../variables" as *;
+@use "../functions/color" as c;
+
 .#{$namespace}-alert {
   background-color: #333;
   border-radius: 2px;
@@ -61,7 +64,7 @@
     text-shadow: none;
 
     a {
-      color: shade($hx-color-gray-dark, 10%);
+      color: c.shade($hx-color-gray-dark, 10%);
       text-decoration: none;
       border-bottom: 1px solid $hx-color-gray-dark;
       border-bottom-color: $hx-color-gray-dark;
@@ -77,12 +80,12 @@
     }
 
     &.is-info {
-      background-color: tint($hx-color-info, 85%);
-      color: shade($hx-color-info, 10%);
+      background-color: c.tint($hx-color-info, 85%);
+      color: c.shade($hx-color-info, 10%);
 
       a {
-        color: shade($hx-color-info, 10%);
-        border-bottom-color: shade($hx-color-info, 10%);
+        color: c.shade($hx-color-info, 10%);
+        border-bottom-color: c.shade($hx-color-info, 10%);
 
         &:hover {
           color: $hx-color-gray;
@@ -91,17 +94,17 @@
       }
 
       .#{$namespace}-icon {
-        color: shade($hx-color-info, 10%);
+        color: c.shade($hx-color-info, 10%);
       }
     }
 
     &.is-success {
-      background-color: tint($hx-color-success, 85%);
-      color: shade($hx-color-success, 10%);
+      background-color: c.tint($hx-color-success, 85%);
+      color: c.shade($hx-color-success, 10%);
 
       a {
-        color: shade($hx-color-success, 10%);
-        border-bottom-color: shade($hx-color-success, 10%);
+        color: c.shade($hx-color-success, 10%);
+        border-bottom-color: c.shade($hx-color-success, 10%);
 
         &:hover {
           color: $hx-color-gray;
@@ -110,17 +113,17 @@
       }
 
       .#{$namespace}-icon {
-        color: shade($hx-color-success, 10%);
+        color: c.shade($hx-color-success, 10%);
       }
     }
 
     &.is-warning {
-      background-color: tint($hx-color-warning, 85%);
-      color: shade($hx-color-warning, 10%);
+      background-color: c.tint($hx-color-warning, 85%);
+      color: c.shade($hx-color-warning, 10%);
 
       a {
-        color: shade($hx-color-warning, 10%);
-        border-bottom-color: shade($hx-color-warning, 10%);
+        color: c.shade($hx-color-warning, 10%);
+        border-bottom-color: c.shade($hx-color-warning, 10%);
 
         &:hover {
           color: $hx-color-gray;
@@ -129,17 +132,17 @@
       }
 
       .#{$namespace}-icon {
-        color: shade($hx-color-warning, 10%);
+        color: c.shade($hx-color-warning, 10%);
       }
     }
 
     &.is-danger {
-      background-color: tint($hx-color-danger, 85%);
-      color: shade($hx-color-danger, 10%);
+      background-color: c.tint($hx-color-danger, 85%);
+      color: c.shade($hx-color-danger, 10%);
 
       a {
-        color: shade($hx-color-danger, 10%);
-        border-bottom-color: shade($hx-color-danger, 10%);
+        color: c.shade($hx-color-danger, 10%);
+        border-bottom-color: c.shade($hx-color-danger, 10%);
 
         &:hover {
           color: $hx-color-gray;
@@ -148,7 +151,7 @@
       }
 
       .#{$namespace}-icon {
-        color: shade($hx-color-danger, 10%);
+        color: c.shade($hx-color-danger, 10%);
       }
     }
     /* stylelint-enable no-descending-specificity */

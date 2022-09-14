@@ -1,3 +1,5 @@
+@use "../mixins/position";
+
 $dimensions: 16 24 32 48 64 96 128;
 
 .image {
@@ -18,7 +20,7 @@ $dimensions: 16 24 32 48 64 96 128;
   &.is-16by9,
   &.is-2by1 {
     img {
-      @include overlay;
+      @include position.overlay;
 
       height: 100%;
       width: 100%;

@@ -2,9 +2,14 @@
 //  TOGGLE  //
 //////////////
 
+@use "sass:color";
+
+@use "../variables" as *;
+@use "../mixins/text";
+
 .#{$namespace}-toggle,
 .#{$namespace}-toggle * {
-  @include no-copy;
+  @include text.no-copy;
 
   margin: 0.7rem 0;
 }
@@ -70,12 +75,12 @@ input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::after {
 // Disabled Styles
 .#{$namespace}-toggle input[type="checkbox"][disabled] + .lever {
   cursor: $hx-cursor-disabled;
-  background-color: darken($hx-color-gray-lightest, 10);
+  background-color: color.scale($hx-color-gray-lightest, $lightness: -10%);
 }
 
 .#{$namespace}-toggle label input[type="checkbox"][disabled] + .lever:after,
 .#{$namespace}-toggle label input[type="checkbox"][disabled]:checked + .lever:after {
-  background-color: darken($hx-color-gray-lightest, 2);
+  background-color: color.scale($hx-color-gray-lightest, $lightness: -2%);
   cursor: $hx-cursor-disabled;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
 }

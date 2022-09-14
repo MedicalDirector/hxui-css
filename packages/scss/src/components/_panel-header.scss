@@ -2,11 +2,14 @@
 //  PANEL HEADER  //
 ////////////////////
 
+@use "../variables" as *;
+@use "../mixins/shadow" as *;
+
 .#{$namespace}-panel-header {
   padding: 1rem;
   background-color: $hx-color-white;
   border-bottom: 1px solid $hx-color-gray-lightest;
-  @include hx-box-shadow(2);
+  @include shadow(2);
 
   &.has-fixed-height {
     height: 110px;

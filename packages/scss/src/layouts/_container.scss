@@ -1,9 +1,12 @@
-// =========
-// Container
-// =========
+///////////////
+// CONTAINER //
+///////////////
+
+@use "../variables" as *;
+@use "../mixins/breakpoint";
 
 .#{$namespace}-container {
-  @include desktop {
+  @include breakpoint.desktop {
     margin: 0 auto;
     width: $hx-desktop - 40px;
 
@@ -15,11 +18,11 @@
     }
   }
 
-  @include widescreen {
+  @include breakpoint.widescreen {
     width: $hx-widescreen - 40px;
   }
 
-  @include fullhd {
+  @include breakpoint.fullhd {
     width: $hx-fullhd - 40px;
   }
 

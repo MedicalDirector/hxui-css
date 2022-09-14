@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins/gradient";
+
 $sidebar-nav-hover-color: colour-gray-light;
 
 .#{$namespace}-sidebar,
@@ -44,7 +47,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-blue-gradient {
-    @include radial-gradient(top, $hx-color-green-light, $hx-color-blue);
+    @include gradient.radial(top, $hx-color-green-light, $hx-color-blue);
 
     color: #fff;
 
@@ -54,7 +57,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-orange-gradient {
-    @include radial-gradient(top, $hx-color-yellow-light, $hx-color-orange);
+    @include gradient.radial(top, $hx-color-yellow-light, $hx-color-orange);
 
     color: #fff;
 
@@ -64,7 +67,7 @@ $sidebar-nav-hover-color: colour-gray-light;
   }
 
   &.has-purple-gradient {
-    @include radial-gradient(top, $hx-color-red-light, $hx-color-purple);
+    @include gradient.radial(top, $hx-color-red-light, $hx-color-purple);
 
     color: #fff;
 

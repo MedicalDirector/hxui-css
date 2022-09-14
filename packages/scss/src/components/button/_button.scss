@@ -1,0 +1,370 @@
+//////////////
+//  BUTTON  //
+//////////////
+
+@use "sass:list";
+@use "sass:map";
+@use "sass:color";
+
+@use "../../variables" as *;
+@use "../../functions/color" as c;
+
+@use "./mixins" as button;
+@use "../../mixins/position";
+@use "../../mixins/transition";
+@use "../../mixins/text";
+@use "../../mixins/loader" as *;
+
+@use "../../mixins/deprecate" as *;
+
+@mixin button-small {
+  border-radius: $hx-border-radius-sm;
+  font-size: $hx-font-size-xs;
+}
+
+@mixin button-medium {
+  font-size: $hx-font-size-base;
+}
+
+@mixin button-large {
+  font-size: $hx-font-size-lg;
+}
+
+.#{$namespace}-button {
+  @include button.control;
+  @include text.no-copy;
+
+  border-radius: $hx-border-radius-sm;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0.35em 0.75rem 0.4em;
+  text-align: center;
+  white-space: nowrap;
+  @include transition.colors;
+
+  font-weight: 400;
+  line-height: 1;
+  font-family: $hx-font-family-base;
+
+  // Priority: Secondary is default
+  background-color: $hx-button-background;
+  border: 1px solid $hx-button-border;
+  color: $hx-button;
+
+  // Size: Medium is default
+  @include button-medium;
+
+  ////////////
+  // States //
+  ////////////
+
+  &:hover,
+  &.is-hovered {
+    border-color: rgba($hx-button-hover-border, 0.5);
+    color: $hx-button-hover;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.is-focused {
+    border-color: rgba($hx-button-focus-border, 0.5);
+    box-shadow: 0 0 0.5em rgba($hx-button-focus-border, 0.35);
+    color: $hx-button-focus;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.is-active {
+    border-color: rgba($hx-button-active-border, 0.5);
+    box-shadow: $hx-button-shadow-inset;
+    color: $hx-button-active;
+    text-decoration: none;
+    background-color: rgba($hx-color-gray-lightest, 0.3);
+  }
+
+  &[disabled],
+  &.is-disabled {
+    opacity: 0.5;
+  }
+
+  //////////////
+  // Priority //
+  //////////////
+
+  // TODO: refactor
+  $transparent-inverted: (
+    "transparent-inverted": (
+      transparent,
+      $hx-color-white,
+    ),
+  );
+  $hx-colors-buttons: map.merge($hx-colors, $transparent-inverted);
+
+  @each $name, $pair in $hx-colors-buttons {
+    $color: list.nth($pair, 1);
+    $hx-color-invert: list.nth($pair, 2);
+
+    &.is-#{$name} {
+      background-color: $color;
+      border-color: transparent;
+      color: $hx-color-invert;
+
+      &:hover,
+      &.is-hovered {
+        background-color: color.scale($color, $lightness: -10%);
+        border-color: transparent;
+        color: c.invert(color.scale($color, $lightness: -10%));
+      }
+
+      &:focus,
+      &.is-focused {
+        border-color: transparent;
+        box-shadow: 0 0 0.5em rgba($color, 0.35);
+        color: $hx-color-invert;
+      }
+
+      &:active,
+      &.is-active {
+        background-color: color.scale($color, $lightness: -5%);
+        border-color: transparent;
+        box-shadow: $hx-button-shadow-inset;
+        color: c.invert(color.scale($color, $lightness: -5%));
+      }
+
+      &.is-loading {
+        &::after {
+          border-color: transparent transparent $hx-color-invert $hx-color-invert !important;
+        }
+      }
+
+      &.is-outlined,
+      &.outlined {
+        background-color: transparent;
+        border-color: rgba($color, 0.5);
+        color: $color;
+
+        &:hover,
+        &:focus {
+          background-color: $color;
+          border-color: rgba($color, 0.5);
+          color: $hx-color-invert;
+        }
+
+        &.is-loading {
+          &::after {
+            border-color: transparent transparent $color $color !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include deprecate("3.0.0", "Use .is-flat instead") {
+    &.is-transparent-inverted {
+      &:hover,
+      &.is-hovered {
+        background-color: rgba($hx-color-black, 0.1);
+        border-color: transparent;
+        color: rgba($hx-color-white, 0.85);
+      }
+    }
+
+    &.is-transparent {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+  ///////////
+  // Sizes //
+  ///////////
+
+  &.is-small,
+  &.is-sm {
+    @include button-small;
+
+    &:not(.is-round) {
+      .#{$namespace}-icon-control {
+        * {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // TODO: deprecate
+  &.is-medium,
+  &.is-md {
+    @include button-medium;
+  }
+
+  &.is-large,
+  &.is-lg {
+    @include button-large;
+  }
+
+  ////////////////
+  // With icons //
+  ////////////////
+
+  .#{$namespace}-icon-control {
+    // start icon
+    &:first-child:not(:last-child) {
+      margin-left: calc(-0.1rem - 1px);
+      margin-right: 0.3rem;
+    }
+
+    // end icon
+    &:last-child:not(:first-child) {
+      margin-left: 0.3rem;
+      margin-right: calc(-0.1rem - 1px);
+    }
+
+    // icon only
+    &:first-child:last-child {
+      margin-left: calc(-0.375em - 1px);
+      margin-right: calc(-0.375em - 1px);
+    }
+
+    &,
+    &.is-small,
+    &.is-medium,
+    &.is-large {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      font-style: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      height: auto;
+      width: auto;
+      .#{$namespace}-icon {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+
+  //////////////
+  // Variants //
+  //////////////
+
+  // Round
+  @include deprecate("3.0.0", "No longer part of HXUI") {
+    &.is-round {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+
+      .#{$namespace}-icon-control {
+        margin-top: 1px;
+      }
+
+      &.is-small {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      &.is-large {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+
+      .#{$namespace}-icon {
+        &.is-large {
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  // Flat
+  &.is-flat,
+  &.flat {
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &.is-active {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    @each $name, $pair in $hx-colors {
+      $color: list.nth($pair, 1);
+      $hx-color-invert: list.nth($pair, 2);
+
+      &.is-#{$name} {
+        color: $color;
+
+        &:hover,
+        &.is-hovered {
+          background-color: rgba($color, 0.1);
+          color: $color;
+        }
+
+        &:focus,
+        &.is-focused {
+          background-color: rgba($color, 0.35);
+        }
+
+        &:active,
+        &.is-active {
+          background-color: rgba($color, 0.1);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  // Link
+  &.is-link,
+  &.link {
+    background-color: transparent;
+    border-color: transparent;
+    color: $hx-text;
+    text-decoration: underline;
+
+    &:hover,
+    &.is-hovered,
+    &:focus,
+    &.is-focused,
+    &:active,
+    &.is-active {
+      background-color: $hx-background-color;
+      color: $hx-text-strong;
+    }
+  }
+
+  // Loading
+  &.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+
+    &::after {
+      @include loader;
+      @include position.center(1em);
+
+      position: absolute !important;
+    }
+  }
+
+  ///////////////
+  // Modifiers //
+  ///////////////
+
+  &.is-text-multiline,
+  &.multiline {
+    @include text.multiline;
+  }
+
+  &.is-fullwidth,
+  &.fullwidth {
+    display: flex;
+    width: 100%;
+  }
+}

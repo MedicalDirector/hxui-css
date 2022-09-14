@@ -2,6 +2,8 @@
 //  BREADCRUMBS  //
 ///////////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-breadcrumb {
   list-style: none;
 

@@ -1,0 +1,87 @@
+@use "../variables" as *;
+
+@mixin hover {
+  &:hover,
+  &.is-hovered,
+  &.hover {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  @if $hx-enable-hover-media-query {
+    &:focus {
+      @content;
+    }
+    @include hover {
+      @content;
+    }
+  } @else {
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin plain-hover-focus {
+  @if $hx-enable-hover-media-query {
+    &,
+    &:focus {
+      @content;
+    }
+    @include hover {
+      @content;
+    }
+  } @else {
+    &,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin hover-focus-active {
+  @if $hx-enable-hover-media-query {
+    &:focus,
+    &:active {
+      @content;
+    }
+    @include hover {
+      @content;
+    }
+  } @else {
+    &:focus,
+    &:active,
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin focus($enable: false) {
+  @if $enable {
+    &:focus,
+    &.is-focused,
+    &.focus {
+      @content;
+    }
+  }
+}
+
+@mixin active {
+  &:active,
+  &.is-active,
+  &.active {
+    @content;
+  }
+}
+
+@mixin disable {
+  &[disabled],
+  &.is-disabled,
+  &.disable {
+    @content;
+  }
+}

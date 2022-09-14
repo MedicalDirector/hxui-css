@@ -1,0 +1,33 @@
+@mixin custom-properties {
+  :root {
+    @content;
+  }
+}
+
+// https://github.com/primer/css/blob/main/src/support/mixins/color-modes.scss
+@mixin color-mode-theme($theme, $include-root: false) {
+  @if $include-root {
+    :root,
+    [data-mode="light"][data-theme="#{$theme}"],
+    [data-mode="dark"][data-theme="#{$theme}"] {
+      @content;
+    }
+  } @else {
+    [data-mode="light"][data-theme="#{$theme}"],
+    [data-mode="dark"][data-theme="#{$theme}"] {
+      @content;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    [data-mode="auto"][data-theme="#{$theme}"] {
+      @content;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    [data-mode="auto"][data-theme="#{$theme}"] {
+      @content;
+    }
+  }
+}

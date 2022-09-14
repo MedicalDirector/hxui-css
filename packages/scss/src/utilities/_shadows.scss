@@ -1,0 +1,10 @@
+@use "../variables" as *;
+
+/* stylelint-disable-next-line scss/dollar-variable-pattern */
+$_unit: $unit-padding-margins;
+
+@for $i from 0 through 24 {
+  .is-elevate-#{$i} {
+    box-shadow: 0 (($i * $_unit) * 5px) ($i * 2px) ($i * 0.1px) rgba(0, 0, 0, 0.08);
+  }
+}
