@@ -1,0 +1,53 @@
+{
+  "color": {
+    "semantic": {
+      "foreground": {
+        "default": {
+          "value": "{color.global.gray.80}",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "{color.global.gray.60}",
+          "type": "color"
+        },
+        "muted": {
+          "value": "{color.global.gray.30}",
+          "type": "color"
+        },
+        "contrast": {
+          "value": "{color.global.gray.0}",
+          "type": "color"
+        },
+        "primary": {
+          "value": "hsl(164, 96%, 21%)",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.global.blue.70}",
+          "type": "color"
+        },
+        "success": {
+          "value": "hsl(164, 96%, 21%)",
+          "type": "color"
+        },
+        "danger": {
+          "value": "{color.global.red.60}",
+          "type": "color"
+        },
+        "caution": {
+          "value": "{color.global.yellow.40}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.global.orange.40}",
+          "type": "color"
+        },
+        "info": {
+          "value": "{color.global.blue.70}",
+          "type": "color"
+        }
+      }
+    },
+    "type": "color"
+  }
+}

@@ -16,10 +16,15 @@ const { component: nameComponent } = require('../transforms/name.cjs')
 // const sizePX = require('../transforms/size-px.cjs')
 const sizePxToRem = require('../transforms/size-px-to-rem.cjs')
 const sizeLetterSpacing = require('../transforms/size-letter-spacing.cjs')
-const shadowShorthand = require('../transforms/shadow-shorthand.cjs')
+const {
+  shorthand: shadowShorthand,
+} = require('../transforms/shadow-shorthand.cjs')
 const typeFontWeight = require('../transforms/type-font-weight.cjs')
 const resolveMath = require('../transforms/resolve-math.cjs')
-const colorHEXRGBA = require('../transforms/color-hex-rgba.cjs')
+const {
+  hslRgba: colorHslRgba,
+  hexRgba: colorHexRgba,
+} = require('../transforms/color-rgba.cjs')
 const {
   shorthand: typeShorthand,
   classes: typeClasses,
@@ -39,7 +44,8 @@ StyleDictionary.registerTransform(sizePxToRem)
 StyleDictionary.registerTransform(sizeLetterSpacing)
 StyleDictionary.registerTransform(shadowShorthand)
 StyleDictionary.registerTransform(resolveMath)
-StyleDictionary.registerTransform(colorHEXRGBA)
+StyleDictionary.registerTransform(colorHexRgba)
+StyleDictionary.registerTransform(colorHslRgba)
 StyleDictionary.registerTransform(typeFontWeight)
 StyleDictionary.registerTransform(typeShorthand)
 StyleDictionary.registerTransform(typeClasses)
@@ -70,6 +76,7 @@ StyleDictionary.registerTransformGroup({
     'size/letterSpacing',
     'type/fontWeight',
     'color/hexrgba',
+    'color/hslrgba',
     'size/pxToRem',
     // 'size/px',
   ],

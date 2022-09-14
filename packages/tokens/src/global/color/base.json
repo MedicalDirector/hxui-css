@@ -1,0 +1,205 @@
+{
+  "color": {
+    "global": {
+      "blue": {
+        "10": {
+          "value": "hsl(206, 29%, 89%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(200, 54%, 65%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(202, 51%, 51%)",
+          "type": "color"
+        },
+        "60": {
+          "value": "hsl(205, 52%, 40%)",
+          "type": "color"
+        },
+        "70": {
+          "value": "hsl(204, 81%, 26%)",
+          "type": "color"
+        },
+        "80": {
+          "value": "hsl(205, 80%, 16%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "200",
+          "type": "color"
+        }
+      },
+      "green": {
+        "10": {
+          "value": "hsl(157, 45%, 92%)",
+          "type": "color"
+        },
+        "30": {
+          "value": "hsl(148, 39%, 72%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(153, 42%, 61%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(155, 48%, 49%)",
+          "type": "color"
+        },
+        "60": {
+          "value": "hsl(155, 48%, 44%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "155",
+          "type": "color"
+        }
+      },
+      "purple": {
+        "30": {
+          "value": "hsl(261, 31%, 74%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(258, 31%, 59%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(256, 31%, 49%)",
+          "type": "color"
+        },
+        "60": {
+          "value": "hsl(256, 49%, 38%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "256",
+          "type": "color"
+        }
+      },
+      "red": {
+        "10": {
+          "value": "hsl(339, 51%, 91%)",
+          "type": "color"
+        },
+        "20": {
+          "value": "hsl(333, 80%, 81%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(335, 82%, 62%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(339, 85%, 53%)",
+          "type": "color"
+        },
+        "60": {
+          "value": "hsl(341, 72%, 42%)",
+          "type": "color"
+        },
+        "70": {
+          "value": "hsl(341, 72%, 32%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "341",
+          "type": "color"
+        }
+      },
+      "orange": {
+        "10": {
+          "value": "hsl(26, 94%, 94%)",
+          "type": "color"
+        },
+        "20": {
+          "value": "hsl(24, 96%, 87%)",
+          "type": "color"
+        },
+        "30": {
+          "value": "hsl(24, 92%, 77%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(27, 92%, 58%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(22, 87%, 53%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "24",
+          "type": "color"
+        }
+      },
+      "yellow": {
+        "10": {
+          "value": "hsl(40, 100%, 95%)",
+          "type": "color"
+        },
+        "20": {
+          "value": "hsl(37, 100%, 85%)",
+          "type": "color"
+        },
+        "30": {
+          "value": "hsl(38, 100%, 76%)",
+          "type": "color"
+        },
+        "40": {
+          "value": "hsl(39, 100%, 69%)",
+          "type": "color"
+        },
+        "50": {
+          "value": "hsl(41, 97%, 49%)",
+          "type": "color"
+        },
+        "_hue": {
+          "value": "39",
+          "type": "color"
+        }
+      },
+      "gray": {
+        "0": {
+          "value": "hsl(0, 0%, 100%)",
+          "type": "color"
+        },
+        "5": {
+          "value": "hsl(0, 0%, 98%)",
+          "type": "color"
+        },
+        "10": {
+          "value": "hsl(0, 0%, 96%)",
+          "type": "color"
+        },
+        "15": {
+          "value": "hsl(240, 1%, 88%)",
+          "type": "color"
+        },
+        "30": {
+          "value": "hsl(340, 1%, 68%)",
+          "type": "color"
+        },
+        "60": {
+          "value": "hsl(15, 2%, 38%)",
+          "type": "color"
+        },
+        "70": {
+          "value": "hsl(0, 0%, 23%)",
+          "type": "color"
+        },
+        "80": {
+          "value": "hsl(200, 3%, 17%)",
+          "type": "color"
+        },
+        "100": {
+          "value": "hsl(0, 0%, 0%)",
+          "type": "color"
+        }
+      }
+    },
+    "type": "color"
+  }
+}

@@ -1,7 +1,9 @@
-const StyleDictionary = require('style-dictionary')
-const formattedVariables = StyleDictionary.formatHelpers.formattedVariables
+const formattedVariables = require('../utils/formatted-variables-mod.cjs')
+const {
+  transformResolvedShadows,
+} = require('../transforms/shadow-shorthand.cjs')
 
-/** Format for css variables */
+/** Format for scss variables as a mixin */
 module.exports = {
   name: 'scss/variables-mixin',
   formatter: function ({ dictionary, options = {} }) {
@@ -15,6 +17,10 @@ module.exports = {
         format: 'css',
         dictionary,
         outputReferences,
+        transform: (value, token, dictionary) => {
+          const result = transformResolvedShadows(value, token, dictionary)
+          return result
+        },
       }) +
       `}\n}\n`
     )
