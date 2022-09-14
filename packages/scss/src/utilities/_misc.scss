@@ -1,0 +1,27 @@
+//////////
+// MISC //
+//////////
+
+@use "../mixins/deprecate" as *;
+
+@include deprecate("3.0.0", "Rely on component styling or use custom css") {
+  .has-pointer {
+    cursor: pointer;
+  }
+
+  .is-disabled {
+    pointer-events: none;
+  }
+}
+
+@include deprecate("3.0.0", "Use .m-0") {
+  .is-marginless {
+    margin: 0 !important;
+  }
+}
+
+@include deprecate("3.0.0", "Use .p-0") {
+  .is-paddingless {
+    padding: 0 !important;
+  }
+}

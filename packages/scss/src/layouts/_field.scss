@@ -3,6 +3,8 @@
 // .hx-field element is the block container for .hx-control elements
 // =========
 
+@use "../variables" as *;
+
 .#{$namespace}-field {
   &:not(:last-child) {
     margin-bottom: 0.75rem;

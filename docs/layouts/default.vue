@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="hxui-reset">
+  <div id="app">
     <div class="hx-page">
       <div class="hx-page-body">
         <nav-container>
@@ -32,8 +32,8 @@ export default {
 }
 </script>
 
-<style>
-html {
+<style lang="scss" global>
+/* html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -43,13 +43,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+} */
+// *,
+// *:before,
+// *:after {
+//   box-sizing: border-box;
+//   margin: 0;
+// }
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

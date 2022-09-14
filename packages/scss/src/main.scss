@@ -1,0 +1,31 @@
+// Font
+// TODO: make responsibility of consuming app
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@forward "theme"; // needs to be lowest priority than reset
+@forward "reset"; // consumes from theme
+
+// TODO: move to own package
+@forward "icons";
+
+@use "sass:meta";
+@forward "layouts/side-panel";
+
+/// Resets
+/// @type String
+$framework-wrap: false !default;
+
+/// @type String
+$hxui-reset: "hxui-reset" !default;
+
+@function set-selector($is-wrap) {
+  @if $is-wrap {
+    @return ".#{$hxui-reset}";
+  } @else {
+    @return "*";
+  }
+}
+
+#{set-selector($framework-wrap)} {
+  @include meta.load-css("hxui");
+}

@@ -2,10 +2,14 @@
 //  NAV  //
 ///////////
 
-.#{$namespace}-nav {
-  @extend .#{$namespace}-flex;
-  @extend .#{$namespace}-flex-align-center;
+@use "../variables" as *;
+@use "../mixins/border-radius" as round;
+@use "../mixins/state";
+@use "../mixins/transition";
 
+.#{$namespace}-nav {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -13,9 +17,8 @@
 
   &.#{$namespace}-nav-vertical,
   &.is-vertical {
-    @extend .#{$namespace}-flex-column;
-    @extend .#{$namespace}-flex-start;
-
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 18em;
 
     .#{$namespace}-nav-item,
@@ -56,26 +59,25 @@
 }
 
 .#{$namespace}-nav-item {
-  @extend .#{$namespace}-flex;
-
+  display: flex;
   margin-top: 0;
 }
 
 .#{$namespace}-nav-link {
-  @extend .#{$namespace}-flex;
-  @extend .#{$namespace}-flex-1;
-  @extend .#{$namespace}-flex-align-center;
-
+  display: flex;
+  align-items: center;
+  flex: 1;
   text-decoration: none;
   /* stylelint-disable-next-line function-calc-no-unspaced-operator */
   padding: calc(#{$hx-spacer} / 2) $hx-spacer;
-  transition: all 0.2s ease-in-out;
+  @include transition.colors;
+
   color: $hx-nav-link-color;
   font-size: $hx-nav-link-font-size;
   font-weight: $hx-nav-link-font-weight;
   border-radius: 2rem;
 
-  @include hover-focus {
+  @include state.hover-focus {
     text-decoration: none;
 
     // background-color: $hx-nav-link-hover-color;
@@ -107,7 +109,7 @@
 
     // color: $hx-nav-disabled-link-color;
 
-    @include plain-hover-focus {
+    @include state.plain-hover-focus {
       // color: $hx-nav-disabled-link-hover-color;
       cursor: $hx-cursor-disabled;
       background-color: transparent;
@@ -140,8 +142,8 @@
 // minified behaviour
 .is-minified {
   .#{$namespace}-nav-item {
-    @extend .#{$namespace}-flex;
-    @extend .#{$namespace}-flex-justify-center;
+    display: flex;
+    justify-content: center;
 
     /* stylelint-disable-next-line function-calc-no-unspaced-operator */
     margin: calc(#{$hx-spacer} / 3) 0;
@@ -158,9 +160,10 @@
     }
   }
   .#{$namespace}-nav-link {
-    @extend .#{$namespace}-flex;
-    @extend .#{$namespace}-flex-justify-center;
-    @include border-radius(50%);
+    display: flex;
+    justify-content: center;
+
+    @include round.border-radius(50%);
 
     max-width: 40px;
 
@@ -193,7 +196,7 @@
       color: #fff;
     }
 
-    @include hover-focus {
+    @include state.hover-focus {
       background-color: rgba(0, 0, 0, 0.5);
       color: #fff;
 

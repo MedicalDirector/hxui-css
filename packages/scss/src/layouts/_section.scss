@@ -1,10 +1,12 @@
-// =========
-// Section
-// =========
+/////////////
+// SECTION //
+/////////////
+
+@use "../variables" as *;
+@use "../mixins/breakpoint";
 
 .#{$namespace}-section {
-  @extend .#{$namespace}-flex-1;
-
+  flex: 1;
   padding: ($hx-spacer + 0.5);
 
   .#{$namespace}-section {
@@ -16,7 +18,7 @@
     max-width: 1280px;
     margin: 0 auto;
   }
-  @include desktop {
+  @include breakpoint.desktop {
     &.is-medium {
       padding: 5rem 1.5rem;
     }

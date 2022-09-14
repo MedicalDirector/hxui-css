@@ -2,8 +2,11 @@
 //  TOOLTIPS  //
 ////////////////
 
+@use "../variables" as *;
+@use "../mixins/transition";
+
 .#{$namespace}-tooltip {
-  @include transition(0.15s);
+  @include transition.opacity;
 
   z-index: $hx-zindex-tooltip;
   display: block;

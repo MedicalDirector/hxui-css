@@ -1,0 +1,34 @@
+@mixin xs {
+  &.is-xsmall,
+  &.xs {
+    @content;
+  }
+}
+
+@mixin sm {
+  &.is-small,
+  &.sm {
+    @content;
+  }
+}
+
+@mixin md {
+  &.is-medium,
+  &.md {
+    @content;
+  }
+}
+
+@mixin lg {
+  &.is-large,
+  &.lg {
+    @content;
+  }
+}
+
+@mixin xl {
+  &.is-xlarge,
+  &.xl {
+    @content;
+  }
+}

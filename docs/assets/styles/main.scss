@@ -1,0 +1,10 @@
+@use "modern-normalize/modern-normalize";
+
+@use "@hxui/css" with (
+  $icons-path: "~@hxui/css/dist/fonts/",
+  $framework-wrap: false
+);
+
+@use "@hxui/css/src/marketing";
+
+@use "highlight.js/styles/github-dark";

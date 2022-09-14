@@ -1,0 +1,182 @@
+@use "../variables" as *;
+
+@use "../mixins/deprecate" as *;
+
+.#{$namespace}-flex,
+.flex {
+  display: flex;
+}
+
+.#{$namespace}-flex-inline,
+.flex-inline {
+  display: inline-flex;
+}
+
+.#{$namespace}-flex-row,
+.flex-row {
+  flex-direction: row;
+}
+
+.#{$namespace}-flex-row-reverse,
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.#{$namespace}-flex-column,
+.flex-col {
+  flex-direction: column;
+}
+
+.#{$namespace}-flex-column-reverse,
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.#{$namespace}-flex-wrap,
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.#{$namespace}-flex-wrap-reverse,
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.#{$namespace}-flex-auto,
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.#{$namespace}-flex-none,
+.flex-none {
+  flex: none !important;
+}
+
+.#{$namespace}-flex-fill,
+.#{$namespace}-flex-1 {
+  flex: 1 !important;
+}
+
+@include deprecate("3.0.0", "Use .flex-1 or custom css instead") {
+  .#{$namespace}-flex-2 {
+    flex: 2 !important;
+  }
+
+  .#{$namespace}-flex-3 {
+    flex: 3 !important;
+  }
+
+  .#{$namespace}-flex-4 {
+    flex: 4 !important;
+  }
+
+  .#{$namespace}-flex-5 {
+    flex: 5 !important;
+  }
+
+  .#{$namespace}-flex-6 {
+    flex: 6 !important;
+  }
+
+  .#{$namespace}-flex-7 {
+    flex: 7 !important;
+  }
+
+  .#{$namespace}-flex-8 {
+    flex: 8 !important;
+  }
+
+  .#{$namespace}-flex-9 {
+    flex: 9 !important;
+  }
+
+  .#{$namespace}-flex-10 {
+    flex: 10 !important;
+  }
+
+  .#{$namespace}-flex-11 {
+    flex: 11 !important;
+  }
+
+  .#{$namespace}-flex-12 {
+    flex: 12 !important;
+  }
+}
+
+// alignment in cross axis
+.#{$namespace}-flex-start,
+.flex-start {
+  align-items: flex-start;
+}
+
+.#{$namespace}-flex-align-center,
+.items-center {
+  align-items: center;
+}
+
+.#{$namespace}-flex-align-end,
+.items-end {
+  align-items: flex-end;
+}
+
+.#{$namespace}-flex-align-stretch,
+.items-stretch {
+  align-items: stretch;
+}
+
+// alignment in main axis
+.#{$namespace}-flex-justify-start,
+.justify-start {
+  justify-content: flex-start;
+}
+
+.#{$namespace}-flex-justify-center,
+.justify-center {
+  justify-content: center;
+}
+
+.#{$namespace}-flex-justify-end,
+.justify-end {
+  justify-content: flex-end;
+}
+
+.#{$namespace}-flex-justify-around,
+.justify-around {
+  justify-content: space-around;
+}
+
+.#{$namespace}-flex-justify-between,
+.justify-between {
+  justify-content: space-between;
+}
+
+.#{$namespace}-flex-justify-evenly,
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+// self alignment
+.#{$namespace}-flex-align-self-start,
+.self-start {
+  align-self: flex-start;
+}
+
+.#{$namespace}-flex-align-self-center,
+.self-center {
+  align-self: center;
+}
+
+.#{$namespace}-flex-align-self-end,
+.self-end {
+  align-self: flex-end;
+}
+
+.#{$namespace}-flex-align-self-stretch,
+.self-stretch {
+  align-self: stretch;
+}
+
+// spacer utility
+.#{$namespace}-spacer {
+  flex: 1;
+}

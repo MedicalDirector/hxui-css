@@ -1,0 +1,5 @@
+@use "../variables" as *;
+
+@mixin shadow($i) {
+  box-shadow: 0 (($i * $unit-padding-margins) * 5px) ($i * 2px) ($i * 0.1px) rgba(0, 0, 0, 0.08);
+}

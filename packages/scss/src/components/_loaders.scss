@@ -2,6 +2,18 @@
 // LOADERS  //
 //////////////
 
+@use "../variables" as *;
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .#{$namespace}-loader {
   display: inline-block;
   position: relative;
@@ -17,7 +29,7 @@
     margin: 0.375rem;
     border: 0.375rem solid $hx-color-gray;
     border-radius: 50%;
-    animation: hxLoader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: $hx-color-gray transparent transparent transparent;
 
     &:nth-child(1) {
@@ -73,15 +85,5 @@
     div {
       border-color: $hx-color-white transparent transparent transparent;
     }
-  }
-}
-
-@keyframes hxLoader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }

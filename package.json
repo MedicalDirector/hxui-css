@@ -13,7 +13,8 @@
   "scripts": {
     "dev:docs": "npm run dev --workspace=docs",
     "build:docs": "npm run build --workspace=docs",
-    "build:css": "npm run css-compile --workspace=packages/scss",
+    "build:css": "npm run compile:css --workspace=packages/scss",
+    "build:scss": "npm run build --workspace=packages/scss",
     "build:tokens": "npm run build --workspace=packages/tokens",
     "format": "npx prettier --write .",
     "prepare": "husky install"
