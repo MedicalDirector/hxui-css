@@ -189,6 +189,7 @@ $border-width-default: 1;
     pointer-events: none;
     width: 80px;
 
+    // dont't allow text to be visible in any state for normal button
     @each $s in $states {
       @include state.add($s) {
         color: transparent;
@@ -210,6 +211,27 @@ $border-width-default: 1;
           $bc: var(--button-#{$p}-default-color);
 
           border-color: transparent transparent $bc $bc;
+        }
+      }
+    }
+
+    &.is-flat,
+    &.flat {
+      // dont't allow text to be visible in any state for flat button
+      @each $s in $states {
+        @include state.add($s) {
+          color: transparent;
+        }
+      }
+
+      @each $p in $priorities {
+        &.is-#{$p},
+        &.#{$p} {
+          &::after {
+            $bc: var(--button-flat-#{$p}-default-color);
+
+            border-color: transparent transparent $bc $bc;
+          }
         }
       }
     }

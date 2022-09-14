@@ -9,111 +9,120 @@
 @use "../mixins/state";
 
 // Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: $hx-headings-font-family;
-  font-weight: $hx-headings-font-weight;
-  line-height: $hx-headings-line-height;
-  letter-spacing: $hx-headings-letter-spacing;
+@mixin marketing-content($and: false) {
+  $a: if($and, ".content", "");
+
+  h1#{$a},
+  h2#{$a},
+  h3#{$a},
+  h4#{$a},
+  h5#{$a},
+  h6#{$a},
+  .h1#{$a},
+  .h2#{$a},
+  .h3#{$a},
+  .h4#{$a},
+  .h5#{$a},
+  .h6#{$a} {
+    font-family: $hx-headings-font-family;
+    font-weight: $hx-headings-font-weight;
+    line-height: $hx-headings-line-height;
+    letter-spacing: $hx-headings-letter-spacing;
+  }
+
+  h1#{$a},
+  .h1#{$a} {
+    font-size: $hx-font-size-h1;
+    font-weight: $hx-font-weight-bold;
+    color: $hx-color-info;
+  }
+
+  h2#{$a},
+  .h2#{$a} {
+    font-size: $hx-font-size-h2;
+  }
+
+  h3#{$a},
+  .h3#{$a} {
+    font-size: $hx-font-size-h3;
+    font-weight: $hx-font-weight-bolder;
+    color: $hx-color-info;
+  }
+
+  h4#{$a},
+  .h4#{$a} {
+    font-size: $hx-font-size-h4;
+    font-weight: $hx-font-weight-bold;
+  }
+
+  h5#{$a},
+  .h5#{$a} {
+    font-size: $hx-font-size-h5;
+    font-weight: $hx-font-weight-bolder;
+  }
+
+  h6#{$a},
+  .h6#{$a} {
+    font-size: $hx-font-size-h6;
+    font-weight: $hx-font-weight-boldest;
+    color: $hx-color-gray-lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.01rem;
+  }
+
+  // Margins apply to the heading elements eg h1, h2, h3
+  // Other styles apply to the class .h1, .h2, .h3
+
+  h1#{$a} {
+    margin-bottom: 1rem * 1; // no top as h1 should only be used once
+  }
+
+  h2#{$a} {
+    margin-top: 1rem * 1.35;
+    margin-bottom: 1rem * 0.75;
+  }
+
+  h3#{$a} {
+    margin-top: 1rem * 1.25;
+    margin-bottom: 1rem * 0.5;
+  }
+
+  h4#{$a} {
+    margin-top: 1rem * 1.1;
+    margin-bottom: 1rem * 0.35;
+  }
+
+  h5#{$a} {
+    margin-top: 1rem * 1.1;
+    margin-bottom: 1rem * 0.25;
+  }
+
+  h6#{$a} {
+    margin-top: 1rem * 0.5;
+    margin-bottom: 1rem * 0.5;
+  }
+
+  .h1#{$a},
+  .h2#{$a},
+  .h3#{$a},
+  .h4#{$a},
+  .h5#{$a},
+  .h6#{$a} {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p#{$a} {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
-h1,
-.h1 {
-  font-size: $hx-font-size-h1;
-  font-weight: $hx-font-weight-bold;
-  color: $hx-color-info;
+:where(.content):not(:where([class~="not-content"] *)) {
+  @include marketing-content;
 }
 
-h2,
-.h2 {
-  font-size: $hx-font-size-h2;
-}
-
-h3,
-.h3 {
-  font-size: $hx-font-size-h3;
-  font-weight: $hx-font-weight-bolder;
-  color: $hx-color-info;
-}
-
-h4,
-.h4 {
-  font-size: $hx-font-size-h4;
-  font-weight: $hx-font-weight-bold;
-}
-
-h5,
-.h5 {
-  font-size: $hx-font-size-h5;
-  font-weight: $hx-font-weight-bolder;
-}
-
-h6,
-.h6 {
-  font-size: $hx-font-size-h6;
-  font-weight: $hx-font-weight-boldest;
-  color: $hx-color-gray-lighter;
-  text-transform: uppercase;
-  letter-spacing: 0.01rem;
-}
-
-// Margins apply to the heading elements eg h1, h2, h3
-// Other styles apply to the class .h1, .h2, .h3
-
-h1 {
-  margin-bottom: 1rem * 1; // no top as h1 should only be used once
-}
-
-h2 {
-  margin-top: 1rem * 1.35;
-  margin-bottom: 1rem * 0.75;
-}
-
-h3 {
-  margin-top: 1rem * 1.25;
-  margin-bottom: 1rem * 0.5;
-}
-
-h4 {
-  margin-top: 1rem * 1.1;
-  margin-bottom: 1rem * 0.35;
-}
-
-h5 {
-  margin-top: 1rem * 1.1;
-  margin-bottom: 1rem * 0.25;
-}
-
-h6 {
-  margin-top: 1rem * 0.5;
-  margin-bottom: 1rem * 0.5;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-p {
-  // TODO: move to marketing typography
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
+@include marketing-content(true);
 
 .#{$namespace}-title {
   font-size: $hx-font-size-h1;

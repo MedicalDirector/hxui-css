@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/MedicalDirector/hxui-css/compare/v1.5.5...HEAD)
 
+### Added
+
+- Incorporated design token usage from `@hxui/tokens`.
+
+### Changed
+
+- **BREAKING:** Changed import path to `@hxui/css`. Upgraded all remaining andsoon-to-be-removed sass methods.
+- **BREAKING:** [Typography] Separate base "marketing" typography from "product" typography to core lib. Requires separate and deliberate import.
+- **BREAKING:** [Button] Updated styles to utilise css variables.
+- **BREAKING:** [Icon] Updated styles to utilise css variables.
+- [Reset] Update css reset file to account only for evergreen (modern) browsers
+
 ## [1.5.5](https://github.com/MedicalDirector/hxui-css/compare/v1.5.4...v1.5.5) - 2022-06-10
 
 ### Fixed
