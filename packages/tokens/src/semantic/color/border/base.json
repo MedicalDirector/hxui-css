@@ -1,0 +1,105 @@
+{
+  "color": {
+    "semantic": {
+      "border": {
+        "default": {
+          "value": "rgba({color.global.gray.60}, {opacity.global.50})",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "rgba({color.global.gray.60}, {opacity.global.30})",
+          "type": "color"
+        },
+        "emphasis": {
+          "value": "rgba({color.global.gray.70}, {opacity.global.50})",
+          "type": "color"
+        },
+        "none": {
+          "value": "none",
+          "type": "color"
+        },
+        "accent": {
+          "emphasis": {
+            "value": "{color.global.green.50}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.green.40}",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "emphasis": {
+            "value": "{color.global.green.50}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.green.40}",
+            "type": "color"
+          }
+        },
+        "tertiary": {
+          "emphasis": {
+            "value": "{color.global.blue.70}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.blue.40}",
+            "type": "color"
+          }
+        },
+        "success": {
+          "emphasis": {
+            "value": "{color.global.green.50}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.green.40}",
+            "type": "color"
+          }
+        },
+        "danger": {
+          "emphasis": {
+            "value": "{color.global.red.60}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.red.20}",
+            "type": "color"
+          }
+        },
+        "caution": {
+          "emphasis": {
+            "value": "{color.global.yellow.40}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.yellow.20}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "emphasis": {
+            "value": "{color.global.orange.40}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.orange.30}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "emphasis": {
+            "value": "{color.global.blue.70}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.global.blue.40}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "type": "color"
+  }
+}

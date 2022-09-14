@@ -1,0 +1,95 @@
+{
+  "size": {
+    "global": {
+      "spacing": {
+        "1": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 0.25"
+        },
+        "2": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 0.5"
+        },
+        "3": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 0.75"
+        },
+        "4": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 1"
+        },
+        "5": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 1.25"
+        },
+        "6": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 1.5"
+        },
+        "8": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 2"
+        },
+        "12": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 3"
+        },
+        "_base": {
+          "value": "16",
+          "type": "spacing"
+        }
+      },
+      "length": {
+        "1": {
+          "value": "{size.global.length._base} * 0.25",
+          "type": "sizing"
+        },
+        "2": {
+          "value": "{size.global.length._base} * 0.5",
+          "type": "sizing"
+        },
+        "3": {
+          "value": "{size.global.length._base} * 0.75",
+          "type": "sizing"
+        },
+        "4": {
+          "value": "{size.global.length._base} * 1",
+          "type": "sizing"
+        },
+        "5": {
+          "value": "{size.global.length._base} * 1.25",
+          "type": "sizing"
+        },
+        "6": {
+          "value": "{size.global.length._base} * 1.5",
+          "type": "sizing"
+        },
+        "8": {
+          "value": "{size.global.length._base} * 2",
+          "type": "sizing"
+        },
+        "10": {
+          "value": "{size.global.length._base} * 2.5",
+          "type": "sizing"
+        },
+        "12": {
+          "value": "{size.global.length._base} * 3",
+          "type": "sizing"
+        },
+        "14": {
+          "value": "{size.global.length._base} * 3.5",
+          "type": "sizing"
+        },
+        "16": {
+          "value": "{size.global.length._base} * 4",
+          "type": "sizing"
+        },
+        "_base": {
+          "value": "16",
+          "type": "sizing"
+        }
+      }
+    },
+    "type": "sizing"
+  }
+}

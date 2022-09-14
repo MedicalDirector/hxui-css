@@ -1,0 +1,21 @@
+{
+  "size": {
+    "global": {
+      "spacing": {
+        "[2px]": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 0.125"
+        },
+        "[6px]": {
+          "type": "spacing",
+          "value": "{size.global.spacing._base} * 0.375"
+        },
+        "[10px]": {
+          "value": "{size.global.spacing.1} * 2.5",
+          "type": "spacing"
+        }
+      }
+    },
+    "type": "sizing"
+  }
+}

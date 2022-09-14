@@ -2,9 +2,9 @@
   "name": "@hxui/tokens",
   "version": "0.1.0",
   "scripts": {
-    "build": "node scripts/build.cjs ./test ../../dist/primitives md light",
-    "convert:sd": "node scripts/convert-figma-to-sd.cjs ./figma-tokens.json ./test set-legacy,global",
-    "generate:figma": "node scripts/generate-figma-tokens.cjs ./test ./figma-tokens-test.json global,semantic,component md,cc",
+    "build": "node scripts/build.cjs ./src ./dist md light",
+    "convert:sd": "node scripts/convert-figma-to-sd.cjs ./figma-tokens.json ./src set-legacy,global",
+    "generate:figma": "node scripts/generate-figma-tokens.cjs ./src ./figma-tokens.json global,semantic,component md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

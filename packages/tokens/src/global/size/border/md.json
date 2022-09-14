@@ -1,0 +1,14 @@
+{
+  "size": {
+    "global": {
+      "border-radius": {
+        "[2px]": {
+          "value": "{size.global.border-radius._base} / 2.5",
+          "type": "borderRadius"
+        },
+        "type": "borderRadius"
+      }
+    },
+    "type": "sizing"
+  }
+}
