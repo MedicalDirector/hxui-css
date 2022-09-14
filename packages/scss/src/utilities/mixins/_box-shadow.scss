@@ -1,5 +1,0 @@
-@mixin box-shadow($shadow...) {
-  @if $hx-enable-shadows {
-    box-shadow: $shadow;
-  }
-}

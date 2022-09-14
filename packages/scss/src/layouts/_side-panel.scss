@@ -1,0 +1,62 @@
+@use "../variables" as *;
+@use "../mixins/transition";
+@use "../mixins/breakpoint";
+
+.#{$namespace}-side-panel,
+.#{$namespace}-inspector {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  @include transition.dimensions;
+
+  @include breakpoint.mobile {
+    width: 340px;
+
+    &.is-medium,
+    &.is-large {
+      width: 340px;
+    }
+  }
+
+  @include breakpoint.tablet {
+    width: 340px;
+
+    &.is-medium,
+    &.is-large {
+      width: 592px;
+    }
+  }
+
+  @include breakpoint.desktop {
+    width: 340px;
+
+    &.is-medium,
+    &.is-large {
+      width: 644px;
+    }
+  }
+
+  @include breakpoint.widescreen {
+    width: 340px;
+
+    &.is-medium {
+      width: 644px;
+    }
+
+    &.is-large {
+      width: 95%;
+    }
+  }
+
+  @include breakpoint.fullhd {
+    width: 340px;
+
+    &.is-medium {
+      width: 644px;
+    }
+
+    &.is-large {
+      width: 95%;
+    }
+  }
+}

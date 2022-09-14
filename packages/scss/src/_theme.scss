@@ -1,0 +1,12 @@
+@use "@hxui/tokens/dist/scss/colors/light" as *;
+@use "@hxui/tokens/dist/scss/mixin" as *;
+
+@use "./mixins/theme";
+
+@include theme.custom-properties {
+  @include variables-base;
+}
+
+@include theme.color-mode-theme(normal, true) {
+  @include variables-light;
+}

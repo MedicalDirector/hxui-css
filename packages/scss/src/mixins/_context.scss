@@ -1,0 +1,55 @@
+@mixin primary {
+  &.is-primary,
+  &.primary {
+    @content;
+  }
+}
+
+@mixin secondary {
+  &.is-secondary,
+  &.secondary {
+    @content;
+  }
+}
+
+@mixin tertiary {
+  &.is-tertiary,
+  &.tertiary {
+    @content;
+  }
+}
+
+@mixin success {
+  &.is-success,
+  &.success {
+    @content;
+  }
+}
+
+@mixin danger {
+  &.is-danger,
+  &.danger {
+    @content;
+  }
+}
+
+@mixin info {
+  &.is-info,
+  &.info {
+    @content;
+  }
+}
+
+@mixin warning {
+  &.is-warning,
+  &.warning {
+    @content;
+  }
+}
+
+@mixin caution {
+  &.is-caution,
+  &.caution {
+    @content;
+  }
+}

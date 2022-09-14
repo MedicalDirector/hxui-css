@@ -1,0 +1,35 @@
+@use "../variables" as *;
+
+@mixin border-radius($radius: $hx-border-radius) {
+  @if $hx-enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+@mixin border-top-radius($radius) {
+  @if $hx-enable-rounded {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+}
+
+@mixin border-right-radius($radius) {
+  @if $hx-enable-rounded {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}
+
+@mixin border-bottom-radius($radius) {
+  @if $hx-enable-rounded {
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+}
+
+@mixin border-left-radius($radius) {
+  @if $hx-enable-rounded {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+}

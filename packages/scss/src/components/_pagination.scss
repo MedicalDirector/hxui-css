@@ -2,6 +2,10 @@
 // PAGINATION  //
 /////////////////
 
+@use "../variables" as *;
+@use "../mixins/state";
+@use "../mixins/transition";
+
 // TOKENS
 $pagination-disabled-link-color: $hx-color-gray-lighter;
 $pagination-disabled-link-hover-color: $hx-color-gray-lightest;
@@ -22,19 +26,19 @@ $pagination-color: $hx-color-gray-dark;
     margin-top: 0;
 
     a {
-      @extend .#{$namespace}-flex;
-      @extend .#{$namespace}-flex-1;
-      @extend .#{$namespace}-flex-align-center;
-
+      display: flex;
+      flex: 1;
+      align-items: center;
       text-decoration: none;
       color: $pagination-color;
       /* stylelint-disable-next-line function-calc-no-unspaced-operator */
       padding: calc(#{$hx-spacer} / 4) calc(#{$hx-spacer} / 2);
-      transition: all 0.2s ease-in-out;
+      @include transition.colors;
+
       cursor: pointer;
       border-bottom: 1px solid transparent;
 
-      @include hover-focus {
+      @include state.hover-focus {
         text-decoration: none;
         border-bottom: 1px solid $hx-color-gray-lighter;
         color: $pagination-hover-color;
@@ -52,9 +56,8 @@ $pagination-color: $hx-color-gray-dark;
     }
 
     span {
-      @extend .#{$namespace}-flex;
-      @extend .#{$namespace}-flex-align-center;
-
+      display: flex;
+      align-items: center;
       color: $pagination-disabled-link-color;
       /* stylelint-disable-next-line function-calc-no-unspaced-operator */
       padding: calc(#{$hx-spacer} / 4) calc(#{$hx-spacer} / 2);

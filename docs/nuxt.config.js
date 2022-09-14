@@ -13,9 +13,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', media: 'all', href: '/' },
     ],
-    htmlAttrs: {
-      class: 'hxui-reset',
-    },
   },
   target: 'static',
   /*
@@ -59,12 +56,7 @@ export default {
   /*
    * CSS
    */
-  css: [
-    // node modules (from the workspace, symlinked)
-    '@hxui/css/src/hxui.scss',
-    // SCSS file in the project
-    'highlight.js/styles/github-dark.css',
-  ],
+  css: ['~/assets/styles/main.scss'],
   /*
    * Plug-ins
    */

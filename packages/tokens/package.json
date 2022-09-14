@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/MedicalDirector/hxui-css#readme",
   "devDependencies": {
+    "color2k": "^2.0.0",
+    "expr-eval": "^2.0.2",
     "fs-extra": "^10.1.0",
     "style-dictionary": "^3.7.1",
-    "yargs": "^17.5.1",
-    "expr-eval": "^2.0.2",
-    "color2k": "^2.0.0"
+    "yargs": "^17.5.1"
   }
 }

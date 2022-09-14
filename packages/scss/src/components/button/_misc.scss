@@ -1,0 +1,87 @@
+////////////
+//  MISC  //
+////////////
+
+@use "../../variables" as *;
+@use "../../mixins/delete" as *;
+
+.#{$namespace}-delete {
+  @include delete;
+
+  &.#{$namespace}-icon-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      height: 0;
+      width: 0;
+      transition: 0;
+    }
+  }
+
+  &.is-transparent {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+
+  &.is-small {
+    // specific to accommodate small delete circle
+    // can be abstracted to -icon.is-xsmall
+    &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
+      height: 0.75rem;
+      width: 0.75rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  &.is-large {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.#{$namespace}-info {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-left: -0.5em;
+  margin-right: 0.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid transparent;
+  position: relative;
+  outline: none;
+  transition: 0.3s;
+  color: $hx-color-black;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &.is-small {
+    width: 16px;
+    height: 16px;
+  }
+
+  &::before {
+    content: "\e94f";
+    font-family: hxui;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+}

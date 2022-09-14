@@ -1,0 +1,17 @@
+@forward "../../../../node_modules/sass-deprecate" with (
+  /// Application version
+  /// @type String
+  $app-version: "2.0.0" !default,
+
+  /// Deprecation mode
+  ///
+  /// ### Available modes:
+  /// - `disabled`: output all the code, even if deprecated
+  /// - `silent`: disable all warnings but don't output deprecated code
+  /// - `verbose`: show all warnings, even for code that is *about* to be deprecated
+  /// - `sensible` (default): output warnings when deprecated code is detected
+  /// - `fail`: prevent compilation when deprecated code is found
+  ///
+  /// @type String
+  $deprecate-mode: "sensible" !default
+);

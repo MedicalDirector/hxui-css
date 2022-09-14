@@ -2,9 +2,10 @@
 //  NAVBAR  //
 //////////////
 
-.#{$namespace}-navbar {
-  @extend .#{$namespace}-flex;
+@use "../variables" as *;
 
+.#{$namespace}-navbar {
+  display: flex;
   position: relative;
   text-align: center;
   align-items: stretch;

@@ -215,6 +215,17 @@ function getTypographyConfig(
           },
         ],
       },
+      scss: {
+        transformGroup: 'css/typeClasses',
+        buildPath: outputPath,
+        files: [
+          {
+            destination: `scss/_typography.scss`,
+            format: 'css/typographyClasses',
+            filter: token => token.type === 'typography',
+          },
+        ],
+      },
     },
   }
 }

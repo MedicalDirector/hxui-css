@@ -2,6 +2,11 @@
 //  AVATARS  //
 ///////////////
 
+@use "sass:list";
+@use "sass:map";
+
+@use "../variables" as *;
+
 .#{$namespace}-avatar {
   min-height: 30px;
   min-width: 30px;
@@ -71,11 +76,11 @@
       $hx-color-white,
     ),
   );
-  $hx-colors-buttons: map-merge($hx-colors, $transparent-inverted);
+  $hx-colors-buttons: map.merge($hx-colors, $transparent-inverted);
 
   @each $name, $pair in $hx-colors-buttons {
-    $color: nth($pair, 1);
-    $hx-color-invert: nth($pair, 2);
+    $color: list.nth($pair, 1);
+    $hx-color-invert: list.nth($pair, 2);
 
     &.is-#{$name} {
       background-color: $color;

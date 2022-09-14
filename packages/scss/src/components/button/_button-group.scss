@@ -1,0 +1,116 @@
+////////////////////
+//  BUTTON GROUP  //
+////////////////////
+
+@use "../../variables" as *;
+
+.#{$namespace}-button-group {
+  display: flex;
+  flex-direction: row;
+
+  > .#{$namespace}-button {
+    margin-right: 0;
+    margin-left: -1px;
+    border-radius: 0;
+
+    ////////////
+    // States //
+    ////////////
+
+    &:hover,
+    &.is-hovered {
+      z-index: 1;
+    }
+
+    &.is-active,
+    &:active {
+      z-index: 1;
+    }
+
+    ////////////////
+    // Priorities //
+    ////////////////
+
+    &.is-light {
+      border-left: 1px solid rgba($hx-color-white, 1);
+    }
+
+    &.is-dark,
+    &.is-black,
+    &.is-success,
+    &.is-primary,
+    &.is-info,
+    &.is-warning,
+    &.is-danger {
+      border-left: 1px solid rgba($hx-color-white, 0.3);
+    }
+
+    &:first-child {
+      border-top-left-radius: $hx-border-radius-sm;
+      border-bottom-left-radius: $hx-border-radius-sm;
+
+      &.is-light,
+      &.is-dark,
+      &.is-black,
+      &.is-primary,
+      &.is-success,
+      &.is-info,
+      &.is-warning,
+      &.is-danger {
+        border-left-color: transparent;
+      }
+    }
+
+    &:last-child {
+      border-top-right-radius: $hx-border-radius-sm;
+      border-bottom-right-radius: $hx-border-radius-sm;
+    }
+  }
+
+  ///////////////
+  // Modifiers //
+  ///////////////
+
+  &.has-text-centered {
+    justify-content: center;
+  }
+
+  &.has-text-right {
+    justify-content: flex-end;
+  }
+
+  &.is-fullwidth {
+    > .#{$namespace}-button {
+      flex: 1 0 auto;
+    }
+
+    &.is-justified {
+      > .#{$namespace}-button {
+        flex: 1;
+      }
+    }
+  }
+}
+
+////////////////////
+//  SPLIT BUTTON  //
+////////////////////
+
+.#{$namespace}-button-split {
+  display: inline-flex;
+
+  // first button
+  .#{$namespace}-button:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: none;
+  }
+
+  // last button
+  .#{$namespace}-button:nth-child(2) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 1rem;
+    border-left-color: rgba(255, 255, 255, 0.3);
+  }
+}

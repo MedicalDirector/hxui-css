@@ -2,6 +2,8 @@
 //  TABS  //
 ////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-nav-tabs {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 

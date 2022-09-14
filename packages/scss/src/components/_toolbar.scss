@@ -2,6 +2,8 @@
 //  TOOLBAR  //
 ///////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-toolbar {
   display: flex;
   align-items: center;

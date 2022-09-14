@@ -2,6 +2,8 @@
 //  ACCORDIONS  //
 //////////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-accordion {
   list-style: none;
   background-color: $hx-color-white;

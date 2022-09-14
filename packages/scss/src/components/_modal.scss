@@ -2,8 +2,14 @@
 //  MODALS  //
 //////////////
 
+@use "../variables" as *;
+@use "../mixins/position";
+@use "../mixins/breakpoint";
+@use "../mixins/delete" as *;
+@use "../mixins/transition";
+
 .#{$namespace}-modal-background {
-  @include overlay;
+  @include position.overlay;
 
   background-color: rgba($hx-color-black, 0.5);
 }
@@ -17,7 +23,7 @@
   width: 100%;
 
   // Responsiveness
-  @include tablet {
+  @include breakpoint.tablet {
     margin: 0 auto;
     max-height: calc(100vh - 40px);
     width: 640px;
@@ -98,8 +104,8 @@
 }
 
 .#{$namespace}-modal {
-  @include overlay;
-  @include transition(0.2);
+  @include position.overlay;
+  @include transition.opacity;
 
   align-items: center;
   display: none;
@@ -115,8 +121,6 @@
 
   // Modifiers
   &.is-active {
-    @include transition(0.2s);
-
     display: flex;
     opacity: 1;
   }

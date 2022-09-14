@@ -1,0 +1,141 @@
+/* stylelint-disable selector-class-pattern */
+/////////////
+// DISPLAY //
+/////////////
+
+@use "../variables" as *;
+@use "../mixins/position";
+@use "../mixins/breakpoint";
+
+///////////
+// Float //
+///////////
+
+.is-clearfix {
+  &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
+
+.is-pulled-left {
+  float: left;
+}
+
+.is-pulled-right {
+  float: right;
+}
+
+//////////////
+// Overflow //
+//////////////
+
+.is-clipped {
+  overflow: hidden !important;
+}
+
+/////////////
+// Display //
+/////////////
+
+.is-overlay {
+  @include position.overlay;
+}
+
+.is-vertical-align-bottom {
+  vertical-align: bottom !important;
+}
+
+.is-vertical-align-top {
+  vertical-align: top !important;
+}
+
+.is-vertical-align-middle {
+  vertical-align: middle !important;
+}
+
+$displays: "block" "flex" "inline" "inline-block" "inline-flex";
+
+@each $display in $displays {
+  .is-#{$display},
+  .#{$display} {
+    display: #{$display} !important;
+  }
+
+  .is-#{$display}-mobile,
+  .mobile\:#{$display} {
+    @include breakpoint.mobile {
+      display: #{$display} !important;
+    }
+  }
+
+  .is-#{$display}-tablet,
+  .tablet\:#{$display} {
+    @include breakpoint.tablet {
+      display: #{$display} !important;
+    }
+  }
+
+  .is-#{$display}-desktop,
+  .desktop\:#{$display} {
+    @include breakpoint.desktop {
+      display: #{$display} !important;
+    }
+  }
+
+  .is-#{$display}-widescreen,
+  .widescreen\:#{$display} {
+    @include breakpoint.widescreen {
+      display: #{$display} !important;
+    }
+  }
+
+  .is-#{$display}-fullhd,
+  .fullhd\:#{$display} {
+    @include breakpoint.fullhd {
+      display: #{$display} !important;
+    }
+  }
+}
+
+////////////////
+// Visibility //
+////////////////
+
+$hx-lt-desktop: $hx-desktop - 1px;
+$hx-lt-widescreen: $hx-widescreen - 1px;
+$hx-lt-fullhd: $hx-fullhd - 1px;
+
+.is-hidden,
+.hidden {
+  display: none;
+}
+
+.is-hidden-mobile,
+.mobile\:hidden {
+  @include breakpoint.mobile {
+    display: none !important;
+  }
+}
+
+.is-hidden-tablet,
+.tablet\:hidden {
+  @media screen and (max-width: $hx-lt-desktop) {
+    display: none !important;
+  }
+}
+
+.is-hidden-desktop,
+.desktop\:hidden {
+  @media screen and (max-width: $hx-lt-widescreen) {
+    display: none !important;
+  }
+}
+
+.is-hidden-widescreen,
+.widescreen\:hidden {
+  @media screen and (max-width: $hx-lt-fullhd) {
+    display: none !important;
+  }
+}

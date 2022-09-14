@@ -2,6 +2,8 @@
 //  BADGES  //
 //////////////
 
+@use "../variables" as *;
+
 .#{$namespace}-badge,
 .#{$namespace}-badge-content {
   display: inline-flex;

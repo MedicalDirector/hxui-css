@@ -2,6 +2,11 @@
 //  DROPDOWN  //
 ////////////////
 
+@use "../variables" as *;
+@use "../mixins/text";
+@use "../mixins/state";
+@use "../mixins/nav-divider" as *;
+
 // The dropdown wrapper (`<div>`)
 .is-dropup,
 .dropup,
@@ -54,19 +59,19 @@
 
   &.is-text-ellipsed {
     .#{$namespace}-dropdown-item {
-      @include text-truncate;
+      @include text.text-truncate;
     }
   }
 
   &.is-text-multiline {
     .#{$namespace}-dropdown-item {
-      @include multiline;
+      @include text.multiline;
     }
   }
 }
 
 // CDK specific
-&.hxa-dropdown-panel {
+.hxa-dropdown-panel {
   .#{$namespace}-dropdown-menu {
     position: initial;
   }
@@ -101,7 +106,7 @@
   background: none; // For `<button>`s
   border: 0; // For `<button>`s
 
-  @include hover-focus {
+  @include state.hover-focus {
     color: $hx-dropdown-link-hover-color;
     text-decoration: none;
     background-color: $hx-dropdown-link-hover-bg;
@@ -109,7 +114,7 @@
 
   // Active state
   &.active {
-    @include plain-hover-focus {
+    @include state.plain-hover-focus {
       color: $hx-dropdown-link-active-color;
       text-decoration: none;
       background-color: $hx-dropdown-link-active-bg;
@@ -118,7 +123,7 @@
   }
 
   &.is-active {
-    @include plain-hover-focus {
+    @include state.plain-hover-focus {
       color: $hx-dropdown-link-active-bg;
       text-decoration: none;
       background-color: $hx-dropdown-link-active-color;
@@ -134,7 +139,7 @@
     width: 100%;
     justify-content: flex-start;
 
-    @include hover-focus {
+    @include state.hover-focus {
       color: $hx-dropdown-link-hover-color;
       text-decoration: none;
       background-color: transparent;
@@ -144,12 +149,12 @@
   // DISABLED STATE
   // Gray out text and ensure the hover/focus state remains gray
   &.disabled {
-    @include plain-hover-focus {
+    @include state.plain-hover-focus {
       color: $hx-dropdown-link-disabled-color;
     }
 
     // Nuke hover/focus effects
-    @include hover-focus {
+    @include state.hover-focus {
       text-decoration: none;
       cursor: $hx-cursor-disabled;
       background-color: transparent;

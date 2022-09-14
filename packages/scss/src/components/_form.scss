@@ -2,6 +2,9 @@
 //  FORM  //
 ////////////
 
+@use "../variables" as *;
+@use "../mixins/text";
+
 // Container within hx-columns
 .#{$namespace}-columns {
   .#{$namespace}-input-control {
@@ -831,7 +834,7 @@
     -ms-user-select: none; /* IE10+ */
 
     &.is-text-multiline {
-      @include multiline;
+      @include text.multiline;
     }
   }
 
@@ -933,7 +936,7 @@
       font-size: 0.9rem;
 
       &.is-text-multiline {
-        @include multiline;
+        @include text.multiline;
       }
     }
 

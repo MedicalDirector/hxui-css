@@ -1,0 +1,61 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+///
+@function tint($color, $percentage) {
+  @return color.mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+///
+@function shade($color, $percentage) {
+  @return color.mix(black, $color, $percentage);
+}
+
+@function luminance($color) {
+  $hx-color-rgb: (
+    "red": color.red($color),
+    "green": color.green($color),
+    "blue": color.blue($color),
+  );
+
+  @each $name, $value in $hx-color-rgb {
+    $adjusted: 0;
+    $value: math.div($value, 255);
+
+    @if $value < 0.0393 {
+      $value: math.div($value, 12.92);
+    } @else {
+      $value: math.div(($value + 0.055), 1.055);
+      $value: math.pow($value, 2);
+    }
+
+    $hx-color-rgb: map.merge(
+      $hx-color-rgb,
+      (
+        $name: $value,
+      )
+    );
+  }
+
+  @return map.get($hx-color-rgb, "red") * 0.2126 + map.get($hx-color-rgb, "green") * 0.7152 +
+    map.get($hx-color-rgb, "blue") * 0.0722;
+}
+
+@function invert($color) {
+  @if luminance($color) > 0.55 {
+    @return rgba(0, 0, 0, 0.7);
+  } @else {
+    @return rgb(255, 255, 255);
+  }
+}
