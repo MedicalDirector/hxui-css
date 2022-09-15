@@ -1,0 +1,201 @@
+////////////
+//  CARD  //
+////////////
+
+@use "sass:map";
+
+@use "../../variables" as *;
+
+@use "../../mixins/transition";
+@use "../../mixins/state";
+@use "../../mixins/context";
+@use "../../mixins/size" as msize;
+@use "../../mixins/deprecate" as *;
+
+$component: "card";
+$sizes: ("sm" "small", "md" "medium", "lg" "large");
+$border-width-default: 1;
+
+.#{$namespace}-card {
+  // TODO: @include card.control;
+
+  background-color: $hx-color-white;
+  border: 1px solid rgba($hx-color-black, 0.08);
+  border-radius: 2px;
+  color: $hx-text;
+  max-width: 100%;
+  position: relative;
+  overflow: auto;
+
+  .media:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  //////////////
+  // Variants //
+  //////////////
+
+  // HOVERABLE
+  &.raised {
+    @include transition.shadows;
+
+    @include state.hover {
+      box-shadow: var(--shadow-global-sm);
+    }
+
+    @include state.focus {
+      box-shadow: var(--shadow-global-md);
+    }
+
+    @include state.active {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-global-lg);
+    }
+  }
+
+  // STRIPPED
+  &.is-border-highlighted,
+  &.is-highlight,
+  &.highlight {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      // TODO: align with card-border-radius
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+
+      // default is success
+      background-color: var(--color-surface-success-emphasis);
+
+      // default is sm
+      width: 4px;
+    }
+    /* stylelint-disable-next-line scss/dollar-variable-pattern */
+    $_sizes: ("sm" "small" 4px, "lg" "large" 8px);
+
+    @include deprecate("2.0.0", "Review size modifiers") {
+      &.is-small::before {
+        content: "";
+        width: 2px;
+      }
+
+      &.is-medium::before {
+        content: "";
+        width: 12px;
+      }
+
+      &.is-large::before {
+        content: "";
+        width: 25px;
+      }
+    }
+
+    @each $short, $long, $value in $_sizes {
+      @include msize.add($short, $long) {
+        &::before {
+          content: "";
+          width: #{$value};
+        }
+      }
+    }
+
+    /* stylelint-disable-next-line scss/dollar-variable-pattern */
+    $_ctx: "success" "danger" "info" "warning" "caution";
+
+    @each $c, $v in $_ctx {
+      @include context.add($c) {
+        &::before {
+          content: "";
+          background-color: var(--color-surface-#{$c}-emphasis);
+        }
+      }
+    }
+  }
+}
+
+.#{$namespace}-card-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 16px;
+  box-shadow: 0 1px 0 $hx-border-color;
+}
+
+.#{$namespace}-card-header-title {
+  align-items: center;
+  color: $hx-text-strong;
+  display: flex;
+  flex-grow: 1;
+  font-weight: $hx-font-weight-normal;
+  padding: 0.75rem 1.25rem;
+}
+
+.#{$namespace}-card-header-icon {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.#{$namespace}-card-image {
+  display: block;
+  position: relative;
+}
+
+// TODO: should also apply to card-header and card-footer,
+// and be settable from card container
+.#{$namespace}-card-content {
+  padding: 1.25rem;
+
+  &.has-padding-small,
+  &.sm {
+    padding: 0.5rem;
+  }
+
+  &.is-medium,
+  &.md {
+    padding: 1.25rem;
+  }
+
+  &.has-padding-medium,
+  &.is-large,
+  &.lg {
+    padding: 1rem;
+  }
+
+  &.has-padding-large,
+  &.is-xlarge,
+  &.xl {
+    padding: 2.5rem;
+  }
+}
+
+@include deprecate("2.0.0", "Use .hx-button icon instead") {
+  .#{$namespace}-card-icon {
+    & > * {
+      padding: 0.5rem 0 0.5rem 0.8rem;
+    }
+  }
+}
+
+.#{$namespace}-card-footer {
+  border-top: 1px solid $hx-border-color;
+  align-items: stretch;
+  display: flex;
+}
+
+.#{$namespace}-card-footer-item {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: center;
+  padding: 0.75rem;
+
+  &:not(:last-child) {
+    border-right: 1px solid $hx-border-color;
+  }
+}

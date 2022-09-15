@@ -1,9 +1,9 @@
 <template>
-  <div class="hx-card example is-flat mb-3">
+  <div class="hx-card mb-3">
     <div class="hx-card-header">
-      <h4 class="hx-card-header-title my-2">{{ title }}</h4>
+      <h4 class="subheading-lg">{{ title }}</h4>
       <button
-        class="hx-button flat icon is-pulled-right mx-4"
+        class="hx-button flat icon"
         v-on:click="toggleCode"
         v-if="code !== '<h1>Code here</h1>'"
         :aria-expanded="`${!!codeVisible}`"
@@ -15,7 +15,7 @@
         </span>
       </button>
     </div>
-    <div class="hx-card-content pa-0 hx-code" :id="`${title} code snippet`">
+    <div class="hx-card-content p-0 hx-code" :id="`${title} code snippet`">
       <pre v-highlightjs ref="code" :class="{ open: codeVisible }">
         <code>{{ code }}</code>
       </pre>
@@ -49,7 +49,6 @@ export default {
 <style lang="scss" scoped>
 .hx-code {
   overflow: auto;
-  transition: 0.3s ease-in-out;
 
   pre {
     display: none;
