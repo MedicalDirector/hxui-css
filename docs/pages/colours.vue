@@ -1,6 +1,6 @@
 <template>
-  <div id="colours">
-    <h1 class="hx-title">Colours</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Colours</h1>
     <h2 class="hx-subtitle">
       Out of the box you get access to all colors in our HxUI spec. These values
       can be used within your style sheets, your component files and on actual
@@ -325,80 +325,79 @@
       :example="example.code"
       :visible="false"
     ></expanding-code-example>
-  </div>
+  </article>
 </template>
 
 <script>
-import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+
 export default {
+  components: {
+    ExpandingCodeExample,
+  },
   data: () => ({
     examples: [
       {
         title: 'Text colours',
         code: `
-<p>Easily colour text with text colour classes</p>
-<table class="hx-table is-striped">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>.is-black</code></td>
-      <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr class="hx-bg-black">
-      <td><code>.is-white</code></td>
-      <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-light</code></td>
-      <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-lighter</code></td>
-      <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-lightest</code></td>
-      <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-dark</code></td>
-      <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-primary</code></td>
-      <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-info</code></td>
-      <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-caution</code></td>
-      <td class="is-caution">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-warning</code></td>
-      <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-danger</code></td>
-      <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
-    </tr>
-  </tbody>
-</table>
-      `,
+  <p>Easily colour text with text colour classes</p>
+  <table class="hx-table is-striped">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>.is-black</code></td>
+        <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr class="hx-bg-black">
+        <td><code>.is-white</code></td>
+        <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-light</code></td>
+        <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-lighter</code></td>
+        <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-lightest</code></td>
+        <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-dark</code></td>
+        <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-primary</code></td>
+        <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-info</code></td>
+        <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-caution</code></td>
+        <td class="is-caution">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-warning</code></td>
+        <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+      </tr>
+      <tr>
+        <td><code>.is-danger</code></td>
+        <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
+      </tr>
+    </tbody>
+  </table>
+        `,
       },
     ],
   }),
-  components: {
-    ExpandingCodeExample,
-  },
 }
 </script>
-
-<style lang="css"></style>

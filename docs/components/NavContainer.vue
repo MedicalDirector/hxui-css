@@ -1,10 +1,8 @@
 <template>
-  <div class="hx-nav-drawer">
-    <!-- <transition name="slide-left"> -->
+  <aside class="hx-nav-drawer">
     <span v-if="showNav">
       <slot></slot>
     </span>
-    <!-- </transition> -->
     <transition name="fade">
       <div class="hx-overlay" v-if="showNav" @click="showNav = false"></div>
     </transition>
@@ -15,7 +13,7 @@
     >
       <i class="hx-icon icon-navicon"></i>
     </div>
-  </div>
+  </aside>
 </template>
 
 <script>
@@ -45,8 +43,14 @@ export default {
 }
 </script>
 
-//
-<style lang="scss">
+<style lang="scss" scoped>
+aside {
+  grid-area: sidebar;
+  position: sticky;
+  display: block;
+  max-height: 100vh;
+  top: 0;
+}
 // .slide-left-enter-active,
 // .slide-left-leave-active {
 //   transition: 0.5s ease-in-out;

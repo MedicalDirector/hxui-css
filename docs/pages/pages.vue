@@ -1,6 +1,6 @@
 <template>
-  <div id="pages">
-    <h1 class="hx-title">Pages</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Pages</h1>
     <h2 class="hx-subtitle">Common markup to produce Hx/UI page layouts.</h2>
     <hr />
 
@@ -9,20 +9,14 @@
 
     <div class="hx-columns">
       <div class="hx-column">
-        <pre v-highlightjs ref="code"><code class="html">
-{{ code }}
-      </code></pre>
-
-        <!-- <pre><code class="language-html"><xmp>
-      <div class="hx-page">
-          <header class="hx-page-header"> </header>
-          <main class="hx-page-body"></main>
-          <footer class="hx-page-footer"></footer>
-      </div>
-      </xmp></code></pre> -->
+        <pre v-highlightjs ref="code">
+          <code class="html">
+            {{ code }}
+          </code>
+        </pre>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -40,5 +34,3 @@ export default {
   },
 }
 </script>
-
-<style lang="css"></style>

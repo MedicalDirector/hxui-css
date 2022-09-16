@@ -1,6 +1,6 @@
 <template>
-  <div id="panel-headers">
-    <h1 class="hx-title">Panel Header</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Panel Header</h1>
     <h2 class="hx-subtitle">
       The Panel Header is a header organism that is placed at the start of a
       <a href="/panel">Panel</a> template.
@@ -232,7 +232,7 @@
     <pre v-highlightjs ref="code"><code class="html">
       {{ headerB }}
     </code></pre>
-  </div>
+  </article>
 </template>
 
 <script>

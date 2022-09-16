@@ -1,6 +1,6 @@
 <template>
-  <div class="install">
-    <h1 class="hx-title">Install Guide</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Install Guide</h1>
     <h2 class="hx-subtitle">Adding Hx/UI into a project</h2>
     <hr />
     <h3 class="h5">
@@ -11,21 +11,11 @@
       <div class="hx-column">
         <section>
           <p><span class="h5">1.</span> Use <strong>NPM</strong></p>
-          <!-- <p>You can run this command if you are using <strong>personal access tokens(https)</strong> method to access Visual Studio Team Services.</p> -->
 
           <pre v-highlightjs><code class="apache">
 npm install @hxui/css --save
           </code></pre>
         </section>
-        <!-- <p>For Mac users, you need to install <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md" target="_blank">Git Credential Manager for Mac</a> in order to access to Visual Studio Team Services properly.</p>
-        <br>
-        <section>
-          <p>You can run this command if you are using <strong>SSH</strong> method to access Visual Studio Team Services.</p>
-          <pre><code class="language-bash"><xmp>
-      npm install git+ssh://medicaldirector@medicaldirector.visualstudio.com:22/MD%20Design/_git/HxUi --save
-          </xmp></code></pre>
-          <p>You may need to add SSH public keys to Visual Studio Team Services in order to install HxUI using npm.</p>
-        </section> -->
         <br />
         <section>
           <p>
@@ -118,13 +108,16 @@ npm start
     <p>
       There're basic requirements to run the documentation locally. You will
       need to install
-      <a href="https://nodejs.org/en/" target="_blank"
+      <a href="https://nodejs.org/en/" target="_blank" rel="rereferrer noopener"
         >Node Package Manager(npm)</a
       >
-      and <a href="https://vuejs.org/" target="_blank">VueJS</a> in order to run
-      the documentation.
+      and
+      <a href="https://vuejs.org/" target="_blank" rel="noreferrer noopener"
+        >VueJS</a
+      >
+      in order to run the documentation.
     </p>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -137,5 +130,3 @@ export default {
   components: {},
 }
 </script>
-
-<style lang="scss"></style>

@@ -1,21 +1,12 @@
 <template>
-  <div id="app">
-    <div class="hx-page">
-      <div class="hx-page-body">
-        <nav-container>
-          <main-nav></main-nav>
-          <sub-nav></sub-nav>
-        </nav-container>
-
-        <div class="hx-section scrollable-y">
-          <div class="hx-section is-comfortable">
-            <!-- <transition name="slide-x" mode="out-in"> -->
-            <nuxt />
-            <!-- </transition> -->
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="app" class="main-wrapper">
+    <nav-container>
+      <main-nav></main-nav>
+      <sub-nav></sub-nav>
+    </nav-container>
+    <main>
+      <nuxt />
+    </main>
   </div>
 </template>
 
@@ -23,6 +14,7 @@
 import NavContainer from '@/components/NavContainer'
 import MainNav from '@/components/MainNav'
 import SubNav from '@/components/SubNav'
+
 export default {
   components: {
     NavContainer,
@@ -32,24 +24,19 @@ export default {
 }
 </script>
 
-<style lang="scss">
-/* html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-} */
-// *,
-// *:before,
-// *:after {
-//   box-sizing: border-box;
-//   margin: 0;
-// }
+<style lang="scss" scoped>
+.main-wrapper {
+  display: grid;
+  grid-template-areas: 'sidebar main';
+  grid-template-columns: auto 1fr;
+}
+
+main {
+  grid-area: main;
+  overflow: auto;
+  min-height: 100vh;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

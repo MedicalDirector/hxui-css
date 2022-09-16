@@ -1,6 +1,6 @@
 <template>
-  <div class="elevation">
-    <h1 class="hx-title">Elevation</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Elevation</h1>
     <h2 class="hx-subtitle">
       The elevation helpers allow you to control relative depth, or distance,
       between two surfaces along the z-axis.
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

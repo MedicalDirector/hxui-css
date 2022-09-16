@@ -1,6 +1,6 @@
 <template>
-  <div id="sections">
-    <h1 class="hx-title">Sections</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Sections</h1>
     <h2 class="hx-subtitle">
       A simple container to divide your page into sections, like the one you're
       currently reading.
@@ -21,29 +21,25 @@
       1280px), <code>.is-medium</code> and <code>.is-large</code> to change the
       spacing.
     </p>
-  </div>
+  </article>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      code: `
-<body>
+      code: `<body>
   <section class="hx-section">
     <div class="hx-container">
-      <h1 class="hx-title">Section</h1>
+      <h1 class="hx-title pt-4">Section</h1>
       <h2 class="hx-subtitle">
         A simple container to divide your page into <strong>sections</strong>,
         like the one you're currently reading.
       </h2>
     </div>
   </section>
-</body>
-      `,
+</body>`,
     }
   },
 }
 </script>
-
-<style lang="css"></style>

@@ -1,6 +1,6 @@
 <template>
-  <div id="icons">
-    <h1 class="hx-title">Icons</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Icons</h1>
     <h2 class="hx-subtitle">Hx/Ui comes with its own custom icons.</h2>
     <hr />
 
@@ -119,7 +119,7 @@
         </tbody>
       </table>
     </section>
-  </div>
+  </article>
 </template>
 
 <script>

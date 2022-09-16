@@ -1,6 +1,6 @@
 <template>
-  <div id="spacing">
-    <h1 class="hx-title">Spacing</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Spacing</h1>
     <h2 class="hx-subtitle">
       Update your layout without creating new classes. Spacing helpers are
       useful for modifying the padding and margin of an element.
@@ -73,24 +73,21 @@
     </ul>
 
     <h4 class="mt-10 mb-3">Usage</h4>
-    <pre v-highlightjs><code class="html">
-{{ code }}
-    </code></pre>
-  </div>
+    <pre v-highlightjs>
+      <code class="html">
+        {{ code }}
+      </code>
+    </pre>
+  </article>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      code: `
-<p class="mt-1">...</p>
-
-<li class="pb-2">...</li>
-      `,
+      code: `<p class="mt-1">...</p>
+<li class="pb-2">...</li>`,
     }
   },
 }
 </script>
-
-<style lang="css"></style>

@@ -1,6 +1,6 @@
 <template>
-  <div id="tables">
-    <h1 class="hx-title">Tables</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Tables</h1>
     <h2 class="hx-subtitle">
       The inevitable HTML table, with special case cells
     </h2>
@@ -15,13 +15,16 @@
       :example="example.code"
       :visible="false"
     ></expanding-code-example>
-  </div>
+  </article>
 </template>
 
 <script>
-import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
 
 export default {
+  components: {
+    ExpandingCodeExample,
+  },
   data() {
     return {
       examples: [
@@ -1187,9 +1190,6 @@ export default {
         },
       ],
     }
-  },
-  components: {
-    ExpandingCodeExample,
   },
 }
 </script>

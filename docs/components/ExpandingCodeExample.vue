@@ -1,7 +1,7 @@
 <template>
-  <div class="hx-card mb-3">
+  <div class="hx-card mb-4">
     <div class="hx-card-header">
-      <h4 class="subheading-lg">{{ title }}</h4>
+      <h4 class="subheading-lg grow-1">{{ title }}</h4>
       <button
         class="hx-button flat icon"
         v-on:click="toggleCode"

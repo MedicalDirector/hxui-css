@@ -1,6 +1,6 @@
 <template>
-  <div id="containers">
-    <h1 class="hx-title">Container</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Container</h1>
     <h2 class="hx-subtitle">
       A simple container to center your content horizontally
     </h2>
@@ -33,7 +33,11 @@
       by both 12 and 16.
     </p>
 
-    <a href="container-demo" class="hx-button is-primary" target="_blank"
+    <a
+      href="container-demo"
+      class="hx-button primary"
+      target="_blank"
+      rel="noreferrer noopener"
       >Container Demo</a
     >
 
@@ -45,14 +49,12 @@
       If you don't want to have a maximum width but want to keep the 20px margin
       on the left and right sides, add the <code>.is-fluid</code> modifier:
     </p>
-    <a href="fluid-container-demo" class="hx-button is-primary" target="_blank"
+    <a
+      href="fluid-container-demo"
+      class="hx-button primary"
+      target="_blank"
+      rel="noreferrer noopener"
       >Fluid container Demo</a
     >
-  </div>
+  </article>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style lang="css"></style>

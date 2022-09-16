@@ -1,6 +1,6 @@
 <template>
-  <div id="scrollable">
-    <h1 class="hx-title">Scrollable</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Scrollable</h1>
     <h2 class="hx-subtitle">Helpers when working with scrollable containers</h2>
 
     <hr />
@@ -13,75 +13,75 @@
       :example="example.code"
       :visible="false"
     ></expanding-code-example>
-  </div>
+  </article>
 </template>
 
 <script>
-import ExpandingCodeExample from '@/components/ExpandingCodeExample'
+import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
 
 export default {
+  components: {
+    ExpandingCodeExample,
+  },
   data() {
     return {
       examples: [
         {
           title: 'Set Scrolling',
           code: `
-<table class="hx-table is-striped">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-   <tr>
-      <td><code>.is-scrollable-y</code></td>
-      <td>Set scrolling on the y axis</td>
-    </tr>
+  <table class="hx-table is-striped">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
      <tr>
-      <td><code>.is-scrollable-x</code></td>
-      <td>Set scrolling on the x axis</td>
-    </tr>
-    <tr>
-      <td><code>.is-scrollable</code></td>
-      <td>Set scrolling on both the x & y axis</td>
-    </tr>
-  </tbody>
-</table>
-          `,
+        <td><code>.is-scrollable-y</code></td>
+        <td>Set scrolling on the y axis</td>
+      </tr>
+       <tr>
+        <td><code>.is-scrollable-x</code></td>
+        <td>Set scrolling on the x axis</td>
+      </tr>
+      <tr>
+        <td><code>.is-scrollable</code></td>
+        <td>Set scrolling on both the x & y axis</td>
+      </tr>
+    </tbody>
+  </table>
+            `,
         },
         {
           title: 'Unset Scrolling',
           code: `
-<table class="hx-table is-striped">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-     <tr>
-      <td><code>.not-scrollable-y</code></td>
-      <td>Unset scrolling on the y axis</td>
-    </tr>
-     <tr>
-      <td><code>.not-scrollable-x</code></td>
-      <td>Unset scrolling on the x axis</td>
-    </tr>
-    <tr>
-      <td><code>.not-scrollable</code></td>
-      <td>Unset scrolling on both the x & y axis</td>
-    </tr>
-  </tbody>
-</table>
-          `,
+  <table class="hx-table is-striped">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+        <td><code>.not-scrollable-y</code></td>
+        <td>Unset scrolling on the y axis</td>
+      </tr>
+       <tr>
+        <td><code>.not-scrollable-x</code></td>
+        <td>Unset scrolling on the x axis</td>
+      </tr>
+      <tr>
+        <td><code>.not-scrollable</code></td>
+        <td>Unset scrolling on both the x & y axis</td>
+      </tr>
+    </tbody>
+  </table>
+            `,
         },
       ],
     }
-  },
-  components: {
-    ExpandingCodeExample,
   },
 }
 </script>

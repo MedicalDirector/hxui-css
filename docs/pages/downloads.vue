@@ -1,6 +1,6 @@
 <template>
-  <div id="downloads">
-    <h1 class="hx-title">Download</h1>
+  <article class="hx-section scrollable-y">
+    <h1 class="hx-title pt-4">Download</h1>
     <h2 class="hx-subtitle">
       Please find below some of the design resources and tools about HxUI that
       we consider valuable. More of this is still being collected.
@@ -34,12 +34,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 .doc-resources-image {

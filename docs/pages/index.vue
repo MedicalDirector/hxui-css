@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <article class="hx-section scrollable-y">
     <div class="hx-columns">
       <div class="hx-column welcome">
         <h1>Welcome to HxUI</h1>
@@ -778,7 +778,7 @@
         </ol>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
