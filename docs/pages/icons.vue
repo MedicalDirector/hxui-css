@@ -1,124 +1,117 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Icons</h1>
-    <h2 class="hx-subtitle">Hx/Ui comes with its own custom icons.</h2>
+    <div class="content">
+      <h1 class="hx-title pt-4">Icons</h1>
+      <h2 class="hx-subtitle">Hx/Ui comes with its own custom icons.</h2>
+    </div>
+
     <hr />
 
-    <section class="hx-section">
-      <div class="hx-columns">
-        <div class="hx-column is-6-widescreen is-offset-3-widescreen">
-          <div class="hx-input-control has-text-centered">
-            <input class="hx-input" type="text" required v-model="searchTerm" />
-            <label class="hx-label">
-              <i class="hx-icon icon-search is-small"></i>
-              Search icons
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="hx-input-control">
+      <input class="hx-input" type="text" required v-model="searchTerm" />
+      <label class="hx-label">
+        <i class="hx-icon icon-search is-small"></i>
+        Search icons
+      </label>
+    </div>
 
-    <section class="hx-section content is-small">
-      <div class="hx-columns is-mobile">
-        <div
-          class="hx-column is-2 has-text-centered"
-          v-for="icon in filterResults"
-          :key="icon.name"
-        >
-          <i class="hx-icon is-large" :class="'icon-' + icon.name"></i>
-          <p v-text="icon.name"></p>
-        </div>
-      </div>
-    </section>
+    <h2 class="h2 content my-4">Standard Icons</h2>
 
-    <section class="hx-section content is-small">
-      <h3>Legacy Icons</h3>
-      <div class="hx-columns is-mobile">
-        <div
-          class="hx-column is-2 has-text-centered"
-          v-for="icon in iconsLegacy"
-          :key="icon.name"
-        >
-          <i class="hx-icon is-large" :class="'icon-' + icon.name"></i>
-          <p v-text="icon.name"></p>
-        </div>
+    <section
+      class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
+    >
+      <div class="text-center" v-for="icon in filterResults" :key="icon.name">
+        <i class="hx-icon" :class="'icon-' + icon.name"></i>
+        <p class="b1" v-text="icon.name"></p>
       </div>
     </section>
 
     <hr />
 
-    <section class="hx-section">
-      <p>
-        Because the icons can take a few seconds to load, and because you want
-        control over the space the icons will take, you can use the icon class
-        as a container:
-      </p>
+    <h2 class="h2 content mt-8 mb-4">Legacy Icons</h2>
 
-      <p>Usage</p>
-
-      <pre v-highlightjs><code class="html">{{ code }}</code></pre>
-
-      <p>
-        The <code>icon</code> container will take up exactly
-        <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at
-        <strong>21px</strong>.
-      </p>
+    <section
+      class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
+    >
+      <div class="text-center" v-for="icon in iconsLegacy" :key="icon.name">
+        <i class="hx-icon" :class="'icon-' + icon.name"></i>
+        <p class="b1" v-text="icon.name"></p>
+      </div>
     </section>
 
     <hr />
 
-    <section class="hx-section">
-      <h3>Sizes</h3>
-      <p>
-        Font Awesome icons use a font-size of 28px by default, and are best
-        rendered when using multiples of 7. The icon container is always
-        slightly bigger than the font-size used:
-      </p>
-      <table class="hx-table is-striped">
-        <thead>
-          <tr>
-            <th>Class</th>
-            <th></th>
-            <th>Font-size</th>
-            <th>Container size</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>hx-icon is-small</code></td>
-            <td class="has-text-centered">
-              <i class="hx-icon icon-helix is-small"></i>
-            </td>
-            <td>14px</td>
-            <td>1rem x 1rem</td>
-          </tr>
-          <tr>
-            <td><code>hx-icon</code></td>
-            <td class="has-text-centered">
-              <i class="hx-icon icon-helix"></i>
-            </td>
-            <td>21px</td>
-            <td>1.5rem x 1.5rem</td>
-          </tr>
-          <tr>
-            <td><code>hx-icon is-medium</code></td>
-            <td class="has-text-centered">
-              <i class="hx-icon icon-helix is-medium"></i>
-            </td>
-            <td>28px</td>
-            <td>2rem x 2rem</td>
-          </tr>
-          <tr>
-            <td><code>hx-icon is-large</code></td>
-            <td class="has-text-centered">
-              <i class="hx-icon icon-helix is-large"></i>
-            </td>
-            <td>42px</td>
-            <td>3rem x 3rem</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <h2 class="content">Usage</h2>
+
+    <p class="content">
+      Because the icons can take a few seconds to load, and because you want
+      control over the space the icons will take, you can use the icon class as
+      a container:
+    </p>
+
+    <pre v-highlightjs>
+      <code ref="code" class="html">{{ code }}</code>
+    </pre>
+
+    <p class="content">
+      The <code>icon</code> container will take up exactly
+      <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at
+      <strong>21px</strong>.
+    </p>
+
+    <hr />
+
+    <h2 class="content">Sizes</h2>
+    <p class="content">
+      Font Awesome icons use a font-size of 28px by default, and are best
+      rendered when using multiples of 7. The icon container is always slightly
+      bigger than the font-size used:
+    </p>
+
+    <table class="hx-table is-striped">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th></th>
+          <th>Font-size</th>
+          <th>Container size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>hx-icon is-small</code></td>
+          <td class="has-text-centered">
+            <i class="hx-icon icon-helix is-small"></i>
+          </td>
+          <td>14px</td>
+          <td>1rem x 1rem</td>
+        </tr>
+        <tr>
+          <td><code>hx-icon</code></td>
+          <td class="has-text-centered">
+            <i class="hx-icon icon-helix"></i>
+          </td>
+          <td>21px</td>
+          <td>1.5rem x 1.5rem</td>
+        </tr>
+        <tr>
+          <td><code>hx-icon is-medium</code></td>
+          <td class="has-text-centered">
+            <i class="hx-icon icon-helix is-medium"></i>
+          </td>
+          <td>28px</td>
+          <td>2rem x 2rem</td>
+        </tr>
+        <tr>
+          <td><code>hx-icon is-large</code></td>
+          <td class="has-text-centered">
+            <i class="hx-icon icon-helix is-large"></i>
+          </td>
+          <td>42px</td>
+          <td>3rem x 3rem</td>
+        </tr>
+      </tbody>
+    </table>
   </article>
 </template>
 
@@ -414,3 +407,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+pre {
+  margin: 0;
+
+  code {
+    border-radius: 2px;
+  }
+}
+</style>

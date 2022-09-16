@@ -1,21 +1,26 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Meta Data</h1>
-    <h2 class="hx-subtitle">
-      This <code>hx-metadata</code> component displays read-only values, with a
-      similar look and feel as form inputs.
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Meta Data</h1>
+      <h2 class="hx-subtitle">
+        This <code>hx-metadata</code> component displays read-only values, with
+        a similar look and feel as form inputs.
+      </h2>
+    </div>
 
     <hr />
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

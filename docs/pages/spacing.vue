@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y">
+  <article class="hx-section scrollable-y content">
     <h1 class="hx-title pt-4">Spacing</h1>
     <h2 class="hx-subtitle">
       Update your layout without creating new classes. Spacing helpers are
@@ -91,3 +91,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+pre {
+  white-space: pre-line;
+
+  code {
+    border-radius: 2px;
+  }
+}
+</style>

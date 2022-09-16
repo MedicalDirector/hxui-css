@@ -1,22 +1,27 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Nav</h1>
-    <h2 class="hx-subtitle">
-      A responsive horizontal nav bar that can contain links, tabs, buttons,
-      icons, and a logo
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Nav</h1>
+      <h2 class="hx-subtitle">
+        A responsive horizontal nav bar that can contain links, tabs, buttons,
+        icons, and a logo
+      </h2>
+    </div>
 
     <hr />
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-      :background="example.bg"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+        :background="ex.bg"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

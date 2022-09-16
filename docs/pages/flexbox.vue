@@ -1,13 +1,15 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Flexbox</h1>
-    <h2 class="hx-subtitle">
-      The <code>hx-flexbox</code> component is an abstraction of the flexbox
-      layout.<br />
-      It aims at providing a more efficient way to lay out, align and distribute
-      space among items in a container, even when their size is unknown and/or
-      dynamic.
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Flexbox</h1>
+      <h2 class="hx-subtitle">
+        The <code>hx-flexbox</code> component is an abstraction of the flexbox
+        layout.<br />
+        It aims at providing a more efficient way to lay out, align and
+        distribute space among items in a container, even when their size is
+        unknown and/or dynamic.
+      </h2>
+    </div>
 
     <hr />
 
@@ -42,14 +44,17 @@
       </span>
     </div>
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

@@ -1,52 +1,26 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Steppers</h1>
-    <h2 class="hx-subtitle">
-      The <code>hx-stepper</code> component displays progress through numbered
-      steps.
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Steppers</h1>
+      <h2 class="hx-subtitle">
+        The <code>hx-stepper</code> component displays progress through numbered
+        steps.
+      </h2>
+    </div>
 
     <hr />
 
-    <!-- <h4 class="mb-3">Example</h4>
-    <div class="hx-card mb-10">
-      <div class="hx-stepper">
-
-        <div class="hx-stepper-header">
-          <template v-for="(step, s) in defaultExample">
-            <div class="hx-stepper-step">
-              <span class="hx-stepper-step-step">{{ s + 1 }}</span>
-              <div class="hx-stepper-step-label">{{ step.label }}</div>
-            </div>
-            <hr class="divider" />
-          </template>
-        </div>
-
-        <div class="hx-stepper-items">
-          <transition name="fade">
-            <div class="hx-stepper-content" v-for="(step, s) in defaultExample">
-              <div class="hx-stepper-wrapper">
-                <div class="mb-5" v-html="step.content"></div>
-                <p class="has-text-right">
-                  <button class="hx-button is-flat">Cancel</button>
-                  <button class="hx-button is-primary">Continue</button>
-                </p>
-              </div>
-            </div>
-          </transition>
-        </div>
-
-      </div>
-    </div> -->
-
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

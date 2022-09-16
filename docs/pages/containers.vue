@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y">
+  <article class="hx-section scrollable-y content">
     <h1 class="hx-title pt-4">Container</h1>
     <h2 class="hx-subtitle">
       A simple container to center your content horizontally
@@ -35,7 +35,7 @@
 
     <a
       href="container-demo"
-      class="hx-button primary"
+      class="hx-button link"
       target="_blank"
       rel="noreferrer noopener"
       >Container Demo</a
@@ -51,7 +51,7 @@
     </p>
     <a
       href="fluid-container-demo"
-      class="hx-button primary"
+      class="hx-button link"
       target="_blank"
       rel="noreferrer noopener"
       >Fluid container Demo</a

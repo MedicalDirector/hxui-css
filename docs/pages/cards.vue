@@ -1,7 +1,7 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="content contents">
-      <h1 class="hx-title pt-4">Card</h1>
+      <h1 class="hx-title pt-4">Cards</h1>
       <h2 class="hx-subtitle">
         An all-around flexible and composable component
       </h2>
@@ -115,7 +115,7 @@ export default {
       <li><code>.highlight-danger</code></li>
     </ul>
   </div>
-  
+
   <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4">
     <div class="hx-card highlight highlight-info">
       <div class="hx-card-content">

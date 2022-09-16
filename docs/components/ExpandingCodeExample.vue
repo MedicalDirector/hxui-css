@@ -1,5 +1,5 @@
 <template>
-  <div class="hx-card">
+  <section class="hx-card">
     <div class="hx-card-header">
       <h2 class="h3 grow-1">{{ title }}</h2>
       <button
@@ -32,7 +32,7 @@
       v-html="example"
       :class="background"
     ></div>
-  </div>
+  </section>
 </template>
 
 <script>

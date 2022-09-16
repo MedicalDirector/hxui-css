@@ -1,20 +1,19 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Pages</h1>
-    <h2 class="hx-subtitle">Common markup to produce Hx/UI page layouts.</h2>
-    <hr />
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Pages</h1>
+      <h2 class="hx-subtitle">Common markup to produce Hx/UI page layouts.</h2>
 
-    <h4>Standard Layout</h4>
-    <p>This UI doc is using this layout.</p>
+      <hr />
 
-    <div class="hx-columns">
-      <div class="hx-column">
-        <pre v-highlightjs ref="code">
-          <code class="html">
-            {{ code }}
-          </code>
-        </pre>
-      </div>
+      <h4>Standard Layout</h4>
+      <p>This UI doc is using this layout.</p>
+    </div>
+
+    <div class="grid gap-4">
+      <pre v-highlightjs ref="code">
+        <code class="html">{{ code }}</code>
+      </pre>
     </div>
   </article>
 </template>

@@ -1,20 +1,26 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Snackbars & toasts</h1>
-    <h2 class="hx-subtitle">
-      The snackbar/toast component is used to display a quick message to a user.
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Snackbars & toasts</h1>
+      <h2 class="hx-subtitle">
+        The snackbar/toast component is used to display a quick message to a
+        user.
+      </h2>
+    </div>
 
     <hr />
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

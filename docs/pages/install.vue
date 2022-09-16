@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y">
+  <article class="hx-section scrollable-y content">
     <h1 class="hx-title pt-4">Install Guide</h1>
     <h2 class="hx-subtitle">Adding Hx/UI into a project</h2>
     <hr />
@@ -7,58 +7,56 @@
       You only need <strong>1 CSS or SCSS file</strong> to use Hx/UI
     </h3>
 
-    <div class="hx-columns">
-      <div class="hx-column">
-        <section>
-          <p><span class="h5">1.</span> Use <strong>NPM</strong></p>
+    <section>
+      <p><span class="h5">1.</span> Use <strong>NPM</strong></p>
 
-          <pre v-highlightjs><code class="apache">
-npm install @hxui/css --save
-          </code></pre>
-        </section>
-        <br />
-        <section>
-          <p>
-            <span class="h5">2. </span
-            ><strong>Import the compiled css</strong> into a index.html file.
-          </p>
+      <pre v-highlightjs>
+        <code class="shell">{{ code[0] }}</code>
+      </pre>
+    </section>
 
-          <pre v-highlightjs><code class="html">
-{{ code }}
-          </code></pre>
-        </section>
-        <br />
-        <section>
-          <p>
-            <span class="h5">3. </span>Alternatively
-            <strong>import the uncompiled .scss file</strong> into an existing
-            projects scss.
-          </p>
+    <section>
+      <p>
+        <span class="h5">2. </span><strong>Import the compiled css</strong> into
+        a index.html file.
+      </p>
 
-          <pre v-highlightjs><code class="scss">
-@import "/node_modules/@hxui/css/static/static/scss/hxui.scss";
-          </code></pre>
-        </section>
-        <br />
-        <p>
-          Please note that by importing the scss file, icons
-          <strong>may not</strong> work due to the icon font files path.<br />
-          To change the path simply override it via the
-          <code>$icons-path: '../fonts/';</code> scss variable.
-        </p>
+      <pre v-highlightjs>
+        <code class="html">{{ code[1] }}</code>
+      </pre>
+    </section>
 
-        <pre v-highlightjs><code class="scss">
-// set the icon path before you import
-$icons-path: '../fonts/';
-@import "/node_modules/@hxui/css/static/static/scss/hxui.scss";
-        </code></pre>
-      </div>
-    </div>
+    <section>
+      <p>
+        <span class="h5">3. </span>Alternatively
+        <strong>import the uncompiled .scss file</strong> into an existing
+        projects scss.
+      </p>
+
+      <pre v-highlightjs>
+        <code class="scss">{{ code[2] }}</code>
+      </pre>
+    </section>
+
+    <p>
+      Please note that by importing the scss file, icons
+      <strong>may not</strong> work due to the icon font files path.<br />
+      To change the path simply override it via the
+      <code>$icons-path: '../fonts/';</code> scss variable.
+    </p>
+
+    <pre v-highlightjs>
+      <code class="scss">{{ code[3] }}</code>
+    </pre>
+
     <br />
+
     <h1 class="hx-title">Modular</h1>
     <h2 class="hx-subtitle">Just import what you need</h2>
+
     <hr />
-    <h3 class="h5">You can import components individually.</h3>
+
+    <strong>You can import components individually.</strong>
     <p>
       For example, let's say you only want the HxUI <strong>grid</strong>. The
       file is located in the HxUI/scss/components/grid folder. <br />
@@ -66,15 +64,13 @@ $icons-path: '../fonts/';
       directly:
     </p>
 
-    <pre v-highlightjs><code class="scss">
-@import "/node_modules/@hxui/css/static/static/scss/utilities/_all";
-@import "/node_modules/@hxui/css/static/static/scss/components/grid";
-    </code></pre>
-    <br />
+    <pre v-highlightjs>
+      <code class="scss">{{ code[4] }}</code>
+    </pre>
 
-    <h3 class="h5">
+    <strong>
       Designed to optionally work in parallel with other frameworks
-    </h3>
+    </strong>
     <p>
       In order for HxUI to work with other frameworks, you will need to set
       <code>$framework-wrap</code> to <code>true</code>.<br />
@@ -85,38 +81,10 @@ $icons-path: '../fonts/';
       For apps that wish to use multiple frameworks, add this class to any
       container that is HxUi specific.
     </p>
-    <pre v-highlightjs><code class="html">
-&#x3C;div class=&#x22;hxui-reset&#x22;&#x3E;
-...
-    </code></pre>
-    <br />
-    <br />
 
-    <h1 class="hx-title">Documentation</h1>
-    <h2 class="hx-subtitle">Running documentation locally</h2>
-    <hr />
-    <h3 class="h5">One command to load them all.</h3>
-    <p>
-      You can easily run the documentation locally by running the following
-      command in terminal or command prompt.
-    </p>
-
-    <pre v-highlightjs><code class="apache">
-npm start
-    </code></pre>
-
-    <p>
-      There're basic requirements to run the documentation locally. You will
-      need to install
-      <a href="https://nodejs.org/en/" target="_blank" rel="rereferrer noopener"
-        >Node Package Manager(npm)</a
-      >
-      and
-      <a href="https://vuejs.org/" target="_blank" rel="noreferrer noopener"
-        >VueJS</a
-      >
-      in order to run the documentation.
-    </p>
+    <pre v-highlightjs>
+      <code class="html">{{ code[5] }}</code>
+    </pre>
   </article>
 </template>
 
@@ -124,9 +92,31 @@ npm start
 export default {
   data() {
     return {
-      code: '<link rel="stylesheet" href="/node_modules/@hxui/css/dist/static/css/hxui.css">',
+      code: [
+        'npm i @hxui/css',
+        '<link rel="stylesheet" href="/node_modules/@hxui/css/dist/static/css/hxui.css">',
+        '@import "/node_modules/@hxui/css/static/static/scss/hxui.scss";',
+        `// set the icon path before you import
+        $icons-path: '../fonts/';
+        @import "/node_modules/@hxui/css/static/static/scss/hxui.scss";`,
+        `@import "/node_modules/@hxui/css/static/static/scss/utilities/_all";
+        @import "/node_modules/@hxui/css/static/static/scss/components/grid";`,
+        `<div class="hxui-reset">
+          <!-- ... -->
+        </div>`,
+      ],
     }
   },
   components: {},
 }
 </script>
+
+<style lang="scss" scoped>
+pre {
+  margin: 0;
+
+  code {
+    border-radius: 2px;
+  }
+}
+</style>

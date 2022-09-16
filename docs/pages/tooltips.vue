@@ -1,22 +1,27 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Tooltips</h1>
-    <h2 class="hx-subtitle">
-      This component is used to display extra information to a user about an
-      element by displaying a floating description.
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Tooltips</h1>
+      <h2 class="hx-subtitle">
+        This component is used to display extra information to a user about an
+        element by displaying a floating description.
+      </h2>
+    </div>
 
     <hr />
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-      :background="example.bg"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+        :background="ex.bg"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

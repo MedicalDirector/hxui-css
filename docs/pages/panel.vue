@@ -1,36 +1,43 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Panel</h1>
-    <h2 class="hx-subtitle">
-      A Panel is a template that consists of a
-      <a href="/panel-header">Panel Header</a>, body and footer. The
-      panel-header and panel-footer elements will be placed at the top and
-      bottom of the parent container, and the middle panel-body section grows to
-      fill the container, and scrolls if required. A panel takes up the width
-      and height of its parent container and is intended to be used in full
-      height layouts.
-    </h2>
-    <p>
-      To break out of the panel body's left and right padding, use a
-      hx-panel-section with the is-fill-to-edges modifier class.
-    </p>
-    <p>The panel footer adds margins to any hx-buttons within in the footer.</p>
-    <h2>Examples</h2>
-    <p>
-      These examples do not illustrate the scrollable panel body
-      (hx-panel-body). The panel body will scroll if the contents of the panel
-      body exceeds the parent container (minus the header and footer)
-    </p>
-
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Panel</h1>
+      <h2 class="hx-subtitle">
+        A Panel is a template that consists of a
+        <a href="/panel-header">Panel Header</a>, body and footer. The
+        panel-header and panel-footer elements will be placed at the top and
+        bottom of the parent container, and the middle panel-body section grows
+        to fill the container, and scrolls if required. A panel takes up the
+        width and height of its parent container and is intended to be used in
+        full height layouts.
+      </h2>
+      <p>
+        To break out of the panel body's left and right padding, use a
+        hx-panel-section with the is-fill-to-edges modifier class.
+      </p>
+      <p>
+        The panel footer adds margins to any hx-buttons within in the footer.
+      </p>
+      <h2>Examples</h2>
+      <p>
+        These examples do not illustrate the scrollable panel body
+        (hx-panel-body). The panel body will scroll if the contents of the panel
+        body exceeds the parent container (minus the header and footer)
+      </p>
+    </div>
     <hr />
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-    ></expanding-code-example>
+
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
   </article>
 </template>
 

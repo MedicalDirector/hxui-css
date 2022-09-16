@@ -1,19 +1,22 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Elevation</h1>
-    <h2 class="hx-subtitle">
-      The elevation helpers allow you to control relative depth, or distance,
-      between two surfaces along the z-axis.
-    </h2>
-    <hr />
-    <h3 class="mt-10 mb-2">Variants</h3>
-    <p>
-      There's a total of 25 elevation levels. You can set an element's elevation
-      by using the class <code>is-elevate-N</code>, where N is a integer between
-      0-24 corresponding to the desired elevation.
-    </p>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Elevation</h1>
+      <h2 class="hx-subtitle">
+        The elevation helpers allow you to control relative depth, or distance,
+        between two surfaces along the z-axis.
+      </h2>
+      <hr />
+      <h3 class="mt-10 mb-2">Variants</h3>
+      <p>
+        There's a total of 25 elevation levels. You can set an element's
+        elevation by using the class <code>is-elevate-N</code>, where N is a
+        integer between 0-24 corresponding to the desired elevation.
+      </p>
 
-    <h3 class="mt-10">Playground</h3>
+      <h3 class="mt-10">Playground</h3>
+    </div>
+
     <div class="hx-columns">
       <div class="hx-column">
         <input

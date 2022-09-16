@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y">
+  <article class="hx-section scrollable-y content">
     <h1 class="hx-title pt-4">Sections</h1>
     <h2 class="hx-subtitle">
       A simple container to divide your page into sections, like the one you're
@@ -10,9 +10,9 @@
       Simply add <code>.hx-section</code> to divide your page into sections.
     </p>
 
-    <pre v-highlightjs ref="code"><code class="html">
-    {{ code }}
-    </code></pre>
+    <pre v-highlightjs ref="code">
+      <code class="html">{{ code }}</code>
+    </pre>
 
     <br />
     <h1 class="h4">Modifiers</h1>

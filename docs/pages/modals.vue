@@ -1,36 +1,41 @@
 <template>
   <article class="hx-section scrollable-y">
-    <h1 class="hx-title pt-4">Modal Dialog</h1>
-    <h2 class="hx-subtitle">
-      A classic modal overlay, in which you can include any content you want
-    </h2>
+    <div class="content contents">
+      <h1 class="hx-title pt-4">Modal Dialog</h1>
+      <h2 class="hx-subtitle">
+        A classic modal overlay, in which you can include any content you want
+      </h2>
+    </div>
 
     <hr />
 
-    <div class="has-text-centered my-5 py-5">
-      <button class="hx-button is-large" @click="demoSimple = true">
-        Open simple modal
+    <div class="flex gap-4 p-4 items-center justify-center">
+      <button class="hx-button lg" @click="demoSimple = true">
+        <span>Open simple modal</span>
       </button>
-      <button class="hx-button is-large" @click="demoTrad = true">
-        Open classic modal
+      <button class="hx-button lg" @click="demoTrad = true">
+        <span>Open classic modal</span>
       </button>
-      <button class="hx-button is-large" @click="demoTradSmall = true">
-        Open classic small modal
+      <button class="hx-button lg" @click="demoTradSmall = true">
+        <span>Open classic small modal</span>
       </button>
-      <button class="hx-button is-large" @click="demoTradLarge = true">
-        Open classic large modal
+      <button class="hx-button lg" @click="demoTradLarge = true">
+        <span>Open classic large modal</span>
       </button>
     </div>
 
-    <expanding-code-example
-      v-for="(example, i) in examples"
-      :key="i"
-      :title="example.title"
-      :code="example.code"
-      :example="example.code"
-      :visible="false"
-      :background="example.bg"
-    ></expanding-code-example>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :background="ex.bg"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
+    </div>
 
     <div class="hx-modal" :class="{ 'is-active': demoSimple }">
       <div class="hx-modal-background"></div>
@@ -68,15 +73,16 @@
             HxUI Modal Title {{ demoTradSmall ? 'Small' : '' }}
           </h1>
 
-          <a
-            class="hx-button is-round is-small is-white"
+          <button
+            class="hx-button flat icon"
             @click="demoTrad = demoTradSmall = demoTradLarge = false"
           >
             <span class="hx-icon-control">
-              <i class="hx-icon icon-close-empty is-large"></i>
+              <i class="hx-icon icon-close-empty"></i>
             </span>
-          </a>
+          </button>
         </header>
+
         <section class="hx-modal-card-content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -85,17 +91,20 @@
             odio, sollicitudin vel erat vel, interdum mattis neque.
           </p>
         </section>
+
         <footer class="hx-modal-card-foot">
-          <a
+          <button
             class="hx-button"
             @click="demoTrad = demoTradSmall = demoTradLarge = false"
-            >Cancel</a
           >
-          <a
-            class="hx-button is-primary"
+            <span>Cancel</span>
+          </button>
+          <button
+            class="hx-button primary"
             @click="demoTrad = demoTradSmall = demoTradLarge = false"
-            >Save changes</a
           >
+            <span>Save changes</span>
+          </button>
         </footer>
       </div>
     </div>
