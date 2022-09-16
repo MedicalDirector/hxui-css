@@ -1,0 +1,17 @@
+{
+  "font": {
+    "global": {
+      "size": {
+        "18": {
+          "type": "fontSizes",
+          "value": "{font.global.size._base} * 1.125"
+        },
+        "30": {
+          "type": "fontSizes",
+          "value": "{font.global.size._base} * 1.875"
+        },
+        "type": "fontSizes"
+      }
+    }
+  }
+}

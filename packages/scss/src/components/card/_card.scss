@@ -6,6 +6,8 @@
 
 @use "../../variables" as *;
 
+@use "../../functions/spacing";
+
 @use "../../mixins/transition";
 @use "../../mixins/state";
 @use "../../mixins/context";
@@ -16,19 +18,28 @@ $component: "card";
 $sizes: ("sm" "small", "md" "medium", "lg" "large");
 $border-width-default: 1;
 
-.#{$namespace}-card {
-  // TODO: @include card.control;
+// TODO: tokens - BASE
+// container - background-color, color, border-radius, border-width, border-color
+// header - padding-x, padding-y, gap, min-height
+// content - padding-x, padding-y
+// footer - padding-x, padding-y, gap, min-height
 
+// TODO: tokens - VARIANTS
+// raised: hover, focus, active - box-shadow
+// highlight: context - background; size - width
+
+.#{$namespace}-card {
   background-color: $hx-color-white;
   border: 1px solid rgba($hx-color-black, 0.08);
   border-radius: 2px;
   color: $hx-text;
   max-width: 100%;
   position: relative;
-  overflow: auto;
 
-  .media:not(:last-child) {
-    margin-bottom: 0.75rem;
+  @include deprecate("3.0.0", "No longer part of HXUI") {
+    .media:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
   }
 
   //////////////
@@ -74,8 +85,6 @@ $border-width-default: 1;
       // default is sm
       width: 4px;
     }
-    /* stylelint-disable-next-line scss/dollar-variable-pattern */
-    $_sizes: ("sm" "small" 4px, "lg" "large" 8px);
 
     @include deprecate("2.0.0", "Review size modifiers") {
       &.is-small::before {
@@ -94,51 +103,75 @@ $border-width-default: 1;
       }
     }
 
-    @each $short, $long, $value in $_sizes {
-      @include msize.add($short, $long) {
-        &::before {
-          content: "";
-          width: #{$value};
-        }
-      }
-    }
-
     /* stylelint-disable-next-line scss/dollar-variable-pattern */
     $_ctx: "success" "danger" "info" "warning" "caution";
 
     @each $c, $v in $_ctx {
-      @include context.add($c) {
+      @include context.add($c, "-") {
         &::before {
           content: "";
           background-color: var(--color-surface-#{$c}-emphasis);
         }
       }
     }
+
+    /* stylelint-disable-next-line scss/dollar-variable-pattern */
+    $_sizes: ("sm" "small" 4px, "lg" "large" 8px);
+
+    @each $short, $long, $value in $_sizes {
+      @include msize.add($short, $long, "-") {
+        &::before {
+          content: "";
+          width: #{$value};
+        }
+      }
+    }
   }
 }
 
+/////////////////
+// CARD HEADER //
+/////////////////
+
 .#{$namespace}-card-header {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 16px;
+  // border-bottom: 1px solid $hx-border-color;
   box-shadow: 0 1px 0 $hx-border-color;
+  display: flex;
+  align-items: center;
+  padding: spacing.rem(2) spacing.px(4);
+  gap: spacing.px(2);
+  min-height: spacing.rem(12);
 }
 
-.#{$namespace}-card-header-title {
-  align-items: center;
-  color: $hx-text-strong;
-  display: flex;
+.#{$namespace}-card-header-start,
+.#{$namespace}-card-header-main,
+.#{$namespace}-card-header-end {
+  gap: spacing.px(2);
+}
+
+.#{$namespace}-card-header-main {
   flex-grow: 1;
-  font-weight: $hx-font-weight-normal;
-  padding: 0.75rem 1.25rem;
 }
 
-.#{$namespace}-card-header-icon {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 0.75rem;
+@include deprecate("3.0.0", "Use .h4 contained inside .hx-card-header-title") {
+  .#{$namespace}-card-header-title {
+    align-items: center;
+    color: $hx-text-strong;
+    display: flex;
+    flex-grow: 1;
+    font-weight: $hx-font-weight-normal;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+@include deprecate("3.0.0", "Use .hx-button for actions contained inside .hx-card-header-end") {
+  .#{$namespace}-card-header-icon {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+  }
 }
 
 .#{$namespace}-card-image {
@@ -146,31 +179,36 @@ $border-width-default: 1;
   position: relative;
 }
 
+//////////////////
+// CARD CONTENT //
+//////////////////
+
 // TODO: should also apply to card-header and card-footer,
 // and be settable from card container
 .#{$namespace}-card-content {
-  padding: 1.25rem;
+  padding: spacing.rem(4) spacing.px(4);
 
-  &.has-padding-small,
-  &.sm {
-    padding: 0.5rem;
+  @include deprecate("2.0.0", "Remove modifier") {
+    &.has-padding-small {
+      padding: 0.5rem;
+    }
+
+    &.has-padding-medium {
+      padding: 1rem;
+    }
+  }
+  @include deprecate("2.0.0", "Use .lg modifier") {
+    &.has-padding-large {
+      padding: 2.5rem;
+    }
   }
 
-  &.is-medium,
-  &.md {
-    padding: 1.25rem;
+  @include msize.add("sm", "small") {
+    padding: 0;
   }
 
-  &.has-padding-medium,
-  &.is-large,
-  &.lg {
-    padding: 1rem;
-  }
-
-  &.has-padding-large,
-  &.is-xlarge,
-  &.xl {
-    padding: 2.5rem;
+  @include msize.add("lg", "large") {
+    padding: spacing.rem(6) spacing.px(6);
   }
 }
 
@@ -182,20 +220,30 @@ $border-width-default: 1;
   }
 }
 
+/////////////////
+// CARD FOOTER //
+/////////////////
+
 .#{$namespace}-card-footer {
-  border-top: 1px solid $hx-border-color;
-  align-items: stretch;
+  // border-top: 1px solid $hx-border-color;
+  box-shadow: 0 -1px 0 $hx-border-color;
   display: flex;
+  align-items: center;
+  padding: spacing.rem(2) spacing.px(4);
+  gap: spacing.px(2);
+  min-height: spacing.rem(12);
 }
 
-.#{$namespace}-card-footer-item {
-  align-items: center;
-  display: flex;
-  flex: 1 0 0;
-  justify-content: center;
-  padding: 0.75rem;
+@include deprecate("3.0.0", "No longer part of HXUI") {
+  .#{$namespace}-card-footer-item {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+    justify-content: center;
+    padding: 0.75rem;
 
-  &:not(:last-child) {
-    border-right: 1px solid $hx-border-color;
+    &:not(:last-child) {
+      border-right: 1px solid $hx-border-color;
+    }
   }
 }

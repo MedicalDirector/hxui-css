@@ -1,7 +1,7 @@
 <template>
-  <div class="hx-card mb-4">
+  <div class="hx-card">
     <div class="hx-card-header">
-      <h4 class="subheading-lg grow-1">{{ title }}</h4>
+      <h2 class="h3 grow-1">{{ title }}</h2>
       <button
         class="hx-button flat icon"
         v-on:click="toggleCode"
@@ -20,7 +20,18 @@
         <code>{{ code }}</code>
       </pre>
     </div>
-    <div class="hx-card-content" v-html="example" :class="background"></div>
+    <div
+      class="hx-card-content"
+      v-if="!!withContent"
+      v-html="example"
+      :class="background"
+    ></div>
+    <div
+      class="contents"
+      v-if="!withContent"
+      v-html="example"
+      :class="background"
+    ></div>
   </div>
 </template>
 
@@ -32,6 +43,7 @@ export default {
     example: { default: 'Example goes here', type: String },
     background: { default: '', type: String },
     visible: { default: false, type: Boolean },
+    withContent: { default: true, type: Boolean },
   },
   data() {
     return {
