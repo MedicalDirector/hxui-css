@@ -4,29 +4,22 @@
 
 @use "../variables" as *;
 
-code {
-  padding: 0 2.5rem;
+@use "../mixins/deprecate" as *;
 
-  &:not(.hljs) {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
-    padding: 0.1rem 0.5rem;
-    color: $hx-color-danger;
+@include deprecate("3.0.0", "No longer part of HXUI") {
+  code {
+    padding: 0 2.5rem;
+
+    &:not(.hljs) {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 3px;
+      padding: 0.1rem 0.5rem;
+      color: $hx-color-danger;
+    }
   }
 }
 
 .#{$namespace}-code {
   max-height: 38rem;
-  // transition: 0.5s ease-in-out;
   overflow: auto;
-}
-
-// slideToggle
-.slide-enter-active,
-.slide-leave-active {
-  max-height: 38rem;
-}
-
-.slide-enter, .slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  max-height: 0;
 }
