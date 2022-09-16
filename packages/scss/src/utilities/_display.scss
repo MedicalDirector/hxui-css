@@ -7,6 +7,8 @@
 @use "../mixins/position";
 @use "../mixins/breakpoint";
 
+@use "../mixins/deprecate" as *;
+
 ///////////
 // Float //
 ///////////
@@ -55,82 +57,76 @@
   vertical-align: middle !important;
 }
 
-$displays: "block" "flex" "inline" "inline-block" "inline-flex" "contents" "grid" "inline-grid";
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _displays($b: "") {
+  $displays: "hidden" "block" "flex" "inline" "inline-block" "inline-flex" "contents" "grid" "inline-grid";
 
-@each $display in $displays {
-  .is-#{$display},
-  .\!#{$display} {
-    display: #{$display} !important;
-  }
+  @if $b == "" {
+    @each $display in $displays {
+      .#{$display} {
+        @if $display == "hidden" {
+          display: none;
+        } @else {
+          display: #{$display};
+        }
+      }
 
-  .#{$display} {
-    display: #{$display};
-  }
+      .is-#{$display},
+      .\!#{$display} {
+        @if $display == "hidden" {
+          display: none !important;
+        } @else {
+          display: #{$display} !important;
+        }
+      }
+    }
+  } @else {
+    @each $display in $displays {
+      .#{$b}\:#{$display} {
+        @if $display == "hidden" {
+          display: none;
+        } @else {
+          display: #{$display};
+        }
+      }
 
-  .is-#{$display}-mobile,
-  .mobile\:\!#{$display} {
-    @include breakpoint.mobile {
-      display: #{$display} !important;
+      .#{$b}\:is-#{$display},
+      .#{$b}\:\!#{$display} {
+        @if $display == "hidden" {
+          display: none !important;
+        } @else {
+          display: #{$display} !important;
+        }
+      }
     }
   }
+}
 
-  .mobile\:#{$display} {
-    @include breakpoint.mobile {
-      display: #{$display};
-    }
-  }
+@include _displays;
 
-  .is-#{$display}-tablet,
-  .tablet\:\!#{$display} {
-    @include breakpoint.tablet {
-      display: #{$display} !important;
-    }
-  }
+/// mobile and above
+@include breakpoint.mobile {
+  @include _displays("mobile");
+}
 
-  .tablet\:#{$display} {
-    @include breakpoint.tablet {
-      display: #{$display};
-    }
-  }
+/// tablet and above
+@include breakpoint.tablet {
+  @include _displays("tablet");
+}
 
-  .is-#{$display}-desktop,
-  .desktop\:\!#{$display} {
-    @include breakpoint.desktop {
-      display: #{$display} !important;
-    }
-  }
+/// desktop and above
+@include breakpoint.desktop {
+  @include _displays("desktop");
+}
 
-  .desktop\:#{$display} {
-    @include breakpoint.desktop {
-      display: #{$display};
-    }
-  }
+/// widescreen and above
+@include breakpoint.widescreen {
+  @include _displays("widescreen");
+}
 
-  .is-#{$display}-widescreen,
-  .widescreen\:\!#{$display} {
-    @include breakpoint.widescreen {
-      display: #{$display} !important;
-    }
-  }
-
-  .widescreen\:#{$display} {
-    @include breakpoint.widescreen {
-      display: #{$display};
-    }
-  }
-
-  .is-#{$display}-fullhd,
-  .fullhd\:\!#{$display} {
-    @include breakpoint.fullhd {
-      display: #{$display} !important;
-    }
-  }
-
-  .fullhd\:#{$display} {
-    @include breakpoint.fullhd {
-      display: #{$display};
-    }
-  }
+/// fullhd and above
+@include breakpoint.fullhd {
+  @include _displays("fullhd");
 }
 
 ////////////////
@@ -141,63 +137,67 @@ $hx-lt-desktop: $hx-desktop - 1px;
 $hx-lt-widescreen: $hx-widescreen - 1px;
 $hx-lt-fullhd: $hx-fullhd - 1px;
 
-.is-hidden,
-.hidden {
-  display: none;
-}
+// TODO: reinstate and call as hidden-down - not best practice to design down; should design up
 
-.\!hidden {
-  display: none !important;
-}
+// @include deprecate("2.0.0", "Use other display utils instead") {
+//   .is-hidden,
+//   .hidden {
+//     display: none;
+//   }
 
-.is-hidden-mobile,
-.mobile\:\!hidden {
-  @include breakpoint.mobile {
-    display: none !important;
-  }
-}
+//   .\!hidden {
+//     display: none !important;
+//   }
 
-.mobile\:hidden {
-  @include breakpoint.mobile {
-    display: none;
-  }
-}
+//   .is-hidden-mobile,
+//   .mobile\:\!hidden {
+//     @include breakpoint.mobile {
+//       display: none !important;
+//     }
+//   }
 
-.is-hidden-tablet,
-.tablet\:\!hidden {
-  @media screen and (max-width: $hx-lt-desktop) {
-    display: none !important;
-  }
-}
+//   .mobile\:hidden {
+//     @include breakpoint.mobile {
+//       display: none;
+//     }
+//   }
 
-.tablet\:hidden {
-  @media screen and (max-width: $hx-lt-desktop) {
-    display: none;
-  }
-}
+//   .is-hidden-tablet,
+//   .tablet\:\!hidden {
+//     @media screen and (max-width: $hx-lt-desktop) {
+//       display: none !important;
+//     }
+//   }
 
-.is-hidden-desktop,
-.desktop\:\!hidden {
-  @media screen and (max-width: $hx-lt-widescreen) {
-    display: none !important;
-  }
-}
+//   .tablet\:hidden {
+//     @media screen and (max-width: $hx-lt-desktop) {
+//       display: none;
+//     }
+//   }
 
-.desktop\:hidden {
-  @media screen and (max-width: $hx-lt-widescreen) {
-    display: none;
-  }
-}
+//   .is-hidden-desktop,
+//   .desktop\:\!hidden {
+//     @media screen and (max-width: $hx-lt-widescreen) {
+//       display: none !important;
+//     }
+//   }
 
-.is-hidden-widescreen,
-.widescreen\:\!hidden {
-  @media screen and (max-width: $hx-lt-fullhd) {
-    display: none !important;
-  }
-}
+//   .desktop\:hidden {
+//     @media screen and (max-width: $hx-lt-widescreen) {
+//       display: none;
+//     }
+//   }
 
-.widescreen\:hidden {
-  @media screen and (max-width: $hx-lt-fullhd) {
-    display: none;
-  }
-}
+//   .is-hidden-widescreen,
+//   .widescreen\:\!hidden {
+//     @media screen and (max-width: $hx-lt-fullhd) {
+//       display: none !important;
+//     }
+//   }
+
+//   .widescreen\:hidden {
+//     @media screen and (max-width: $hx-lt-fullhd) {
+//       display: none;
+//     }
+//   }
+// }
