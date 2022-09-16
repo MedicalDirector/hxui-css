@@ -6,6 +6,28 @@
 @use "../functions/color";
 @use "../mixins/gradient";
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .#{$namespace}-bg {
   // is-primary, is-info, is-success, is-warning, is-danger
   @each $name, $pair in $hx-colors {
@@ -178,26 +200,4 @@
 
 .#{$namespace}-bg-info-pattern {
   background: repeating-linear-gradient(45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px);
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }

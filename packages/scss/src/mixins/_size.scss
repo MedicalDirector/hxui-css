@@ -33,9 +33,9 @@
   }
 }
 
-@mixin add($short, $long: $short) {
-  &.is-#{$long},
-  &.#{$short} {
+@mixin add($short, $long: $short, $sep: ".") {
+  &#{$sep}is-#{$long},
+  &#{$sep}#{$short} {
     @content;
   }
 }

@@ -6,6 +6,8 @@
 @use "../mixins/breakpoint";
 
 .#{$namespace}-container {
+  position: relative;
+
   @include breakpoint.desktop {
     margin: 0 auto;
     width: $hx-desktop - 40px;
@@ -25,8 +27,6 @@
   @include breakpoint.fullhd {
     width: $hx-fullhd - 40px;
   }
-
-  position: relative;
 }
 
 .is-fullscreen {

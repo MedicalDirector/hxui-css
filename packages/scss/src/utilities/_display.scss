@@ -55,46 +55,80 @@
   vertical-align: middle !important;
 }
 
-$displays: "block" "flex" "inline" "inline-block" "inline-flex";
+$displays: "block" "flex" "inline" "inline-block" "inline-flex" "contents" "grid" "inline-grid";
 
 @each $display in $displays {
   .is-#{$display},
-  .#{$display} {
+  .\!#{$display} {
     display: #{$display} !important;
   }
 
+  .#{$display} {
+    display: #{$display};
+  }
+
   .is-#{$display}-mobile,
-  .mobile\:#{$display} {
+  .mobile\:\!#{$display} {
     @include breakpoint.mobile {
       display: #{$display} !important;
     }
   }
 
+  .mobile\:#{$display} {
+    @include breakpoint.mobile {
+      display: #{$display};
+    }
+  }
+
   .is-#{$display}-tablet,
-  .tablet\:#{$display} {
+  .tablet\:\!#{$display} {
     @include breakpoint.tablet {
       display: #{$display} !important;
     }
   }
 
+  .tablet\:#{$display} {
+    @include breakpoint.tablet {
+      display: #{$display};
+    }
+  }
+
   .is-#{$display}-desktop,
-  .desktop\:#{$display} {
+  .desktop\:\!#{$display} {
     @include breakpoint.desktop {
       display: #{$display} !important;
     }
   }
 
+  .desktop\:#{$display} {
+    @include breakpoint.desktop {
+      display: #{$display};
+    }
+  }
+
   .is-#{$display}-widescreen,
-  .widescreen\:#{$display} {
+  .widescreen\:\!#{$display} {
     @include breakpoint.widescreen {
       display: #{$display} !important;
     }
   }
 
+  .widescreen\:#{$display} {
+    @include breakpoint.widescreen {
+      display: #{$display};
+    }
+  }
+
   .is-#{$display}-fullhd,
-  .fullhd\:#{$display} {
+  .fullhd\:\!#{$display} {
     @include breakpoint.fullhd {
       display: #{$display} !important;
+    }
+  }
+
+  .fullhd\:#{$display} {
+    @include breakpoint.fullhd {
+      display: #{$display};
     }
   }
 }
@@ -112,30 +146,58 @@ $hx-lt-fullhd: $hx-fullhd - 1px;
   display: none;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .is-hidden-mobile,
-.mobile\:hidden {
+.mobile\:\!hidden {
   @include breakpoint.mobile {
     display: none !important;
   }
 }
 
+.mobile\:hidden {
+  @include breakpoint.mobile {
+    display: none;
+  }
+}
+
 .is-hidden-tablet,
-.tablet\:hidden {
+.tablet\:\!hidden {
   @media screen and (max-width: $hx-lt-desktop) {
     display: none !important;
   }
 }
 
+.tablet\:hidden {
+  @media screen and (max-width: $hx-lt-desktop) {
+    display: none;
+  }
+}
+
 .is-hidden-desktop,
-.desktop\:hidden {
+.desktop\:\!hidden {
   @media screen and (max-width: $hx-lt-widescreen) {
     display: none !important;
   }
 }
 
+.desktop\:hidden {
+  @media screen and (max-width: $hx-lt-widescreen) {
+    display: none;
+  }
+}
+
 .is-hidden-widescreen,
-.widescreen\:hidden {
+.widescreen\:\!hidden {
   @media screen and (max-width: $hx-lt-fullhd) {
     display: none !important;
+  }
+}
+
+.widescreen\:hidden {
+  @media screen and (max-width: $hx-lt-fullhd) {
+    display: none;
   }
 }

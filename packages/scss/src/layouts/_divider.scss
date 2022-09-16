@@ -4,6 +4,10 @@
 
 @use "../variables" as *;
 
+// TODO: tokens - BASE
+// border-width, border-color
+
+// HORIZONTAL
 // to be used when dividing related content
 .is-perforated,
 hr.is-perforated {
@@ -22,6 +26,7 @@ hr.is-divided {
   border-top: 1px solid $hx-border-color;
 }
 
+// VERTICAL
 .#{$namespace}-divider {
   padding: 0.6rem 0;
   border-left: 1px solid rgba(0, 0, 0, 0.3);

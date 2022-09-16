@@ -7,11 +7,21 @@
 
 // Text colour modifiers
 @each $label, $colour in $hx-colors {
-  .is-#{$label} {
+  @include deprecate("3.0.0", "Use .text-{priority}") {
+    .is-#{$label} {
+      color: list.nth($colour, 1);
+    }
+
+    .is-text-#{$label} {
+      color: list.nth($colour, 1) !important;
+    }
+  }
+
+  .text-#{$label} {
     color: list.nth($colour, 1);
   }
 
-  .is-text-#{$label} {
+  .\!text-#{$label} {
     color: list.nth($colour, 1) !important;
   }
 }
@@ -21,25 +31,57 @@
 ///////////////
 
 .has-text-centered,
-.is-text-centered,
+.is-text-centered {
+  text-align: center !important;
+}
+
 .text-center {
+  text-align: center;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!text-center {
   text-align: center !important;
 }
 
 .has-text-left,
-.is-text-left,
+.is-text-left {
+  text-align: left !important;
+}
+
 .text-left {
+  text-align: left;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!text-left {
   text-align: left !important;
 }
 
 .has-text-right,
-.is-text-right,
-.text-right {
+.is-text-right {
   text-align: right !important;
 }
 
-.is-text-justify,
+.text-right {
+  text-align: right;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!text-right {
+  text-align: right !important;
+}
+
+.is-text-justify {
+  text-align: justify !important;
+}
+
 .text-justify {
+  text-align: justify;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!text-justify {
   text-align: justify !important;
 }
 
@@ -94,13 +136,33 @@
 }
 
 // Font weights
-.is-text-weight-light,
+@include deprecate("3.0.0", "Use .font-light or remove") {
+  .is-text-weight-light {
+    font-weight: 300 !important;
+  }
+}
+
 .font-light {
+  font-weight: 300;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!font-light {
   font-weight: 300 !important;
 }
 
-.is-text-weight-normal,
+@include deprecate("3.0.0", "Use .font-normal or remove") {
+  .is-text-weight-normal {
+    font-weight: 400 !important;
+  }
+}
+
 .font-normal {
+  font-weight: 400;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!font-normal {
   font-weight: 400 !important;
 }
 
@@ -116,8 +178,12 @@
   }
 }
 
-.is-text-weight-medium,
 .font-medium {
+  font-weight: 500;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!font-medium {
   font-weight: 500 !important;
 }
 
@@ -127,8 +193,27 @@
   }
 }
 
-.is-text-bold,
+.font-semibold {
+  font-weight: 600;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!font-semibold {
+  font-weight: 600 !important;
+}
+
+@include deprecate("3.0.0", "Use .font-bold") {
+  .is-text-bold {
+    font-weight: 700 !important;
+  }
+}
+
 .font-bold {
+  font-weight: 700;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!font-bold {
   font-weight: 700 !important;
 }
 

@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+@use "sass:math";
+
+/* stylelint-disable-next-line scss/dollar-variable-pattern */
+$_unit: $unit-padding-margins;
+
+@function rem($number, $root-font-size: 16) {
+  @return $number * $unit-padding-margins * math.div($root-font-size, 16) * 1rem;
+}
+
+@function px($number) {
+  @return math.div($number, $unit-padding-margins) * 1px;
+}

@@ -5,112 +5,116 @@
 
 @use "../variables" as *;
 
-.#{$namespace}-field {
-  &:not(:last-child) {
-    margin-bottom: 0.75rem;
-  }
+@use "../mixins/deprecate" as *;
 
-  // For element grouping such as button group
-  &.is-grouped {
-    display: flex;
-    justify-content: flex-start;
-
-    & > .#{$namespace}-control {
-      flex-shrink: 0;
-
-      &:not(:last-child) {
-        margin-bottom: 0;
-        margin-right: 0.75rem;
-      }
-
-      &.is-expanded {
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
+@include deprecate("3.0.0", "No longer part of HXUI") {
+  .#{$namespace}-field {
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
     }
 
-    // Center the group
-    &.is-grouped-centered {
-      justify-content: center;
-    }
+    // For element grouping such as button group
+    &.is-grouped {
+      display: flex;
+      justify-content: flex-start;
 
-    // Right aligh the group
-    &.is-grouped-right {
-      justify-content: flex-end;
-    }
-  }
+      & > .#{$namespace}-control {
+        flex-shrink: 0;
 
-  // button group with addons
-  &.has-addons {
-    display: flex;
-    justify-content: flex-start;
-
-    .#{$namespace}-control {
-      margin-right: -1px;
-
-      &:first-child .#{$namespace}-button,
-      .#{$namespace}-input,
-      .#{$namespace}-select select {
-        border-bottom-left-radius: $hx-border-radius-sm;
-        border-top-left-radius: $hx-border-radius-sm;
-      }
-
-      &:last-child .#{$namespace}-button,
-      .#{$namespace}-input,
-      .#{$namespace}-select select {
-        border-bottom-right-radius: $hx-border-radius-sm;
-        border-top-right-radius: $hx-border-radius-sm;
-      }
-
-      // buttons, input or select in middle
-      .#{$namespace}-button,
-      .#{$namespace}-input,
-      .#{$namespace}-select select {
-        border-radius: 0;
-        padding-left: 1.15rem;
-        padding-right: 1.15rem;
-
-        &:hover,
-        &.is-hovered {
-          z-index: 2;
+        &:not(:last-child) {
+          margin-bottom: 0;
+          margin-right: 0.75rem;
         }
 
-        &:focus,
-        &.is-focused,
-        &:active,
-        &.is-active {
-          z-index: 3;
+        &.is-expanded {
+          flex-grow: 1;
+          flex-shrink: 1;
+        }
+      }
 
-          &:hover {
-            z-index: 4;
+      // Center the group
+      &.is-grouped-centered {
+        justify-content: center;
+      }
+
+      // Right aligh the group
+      &.is-grouped-right {
+        justify-content: flex-end;
+      }
+    }
+
+    // button group with addons
+    &.has-addons {
+      display: flex;
+      justify-content: flex-start;
+
+      .#{$namespace}-control {
+        margin-right: -1px;
+
+        &:first-child .#{$namespace}-button,
+        .#{$namespace}-input,
+        .#{$namespace}-select select {
+          border-bottom-left-radius: $hx-border-radius-sm;
+          border-top-left-radius: $hx-border-radius-sm;
+        }
+
+        &:last-child .#{$namespace}-button,
+        .#{$namespace}-input,
+        .#{$namespace}-select select {
+          border-bottom-right-radius: $hx-border-radius-sm;
+          border-top-right-radius: $hx-border-radius-sm;
+        }
+
+        // buttons, input or select in middle
+        .#{$namespace}-button,
+        .#{$namespace}-input,
+        .#{$namespace}-select select {
+          border-radius: 0;
+          padding-left: 1.15rem;
+          padding-right: 1.15rem;
+
+          &:hover,
+          &.is-hovered {
+            z-index: 2;
+          }
+
+          &:focus,
+          &.is-focused,
+          &:active,
+          &.is-active {
+            z-index: 3;
+
+            &:hover {
+              z-index: 4;
+            }
           }
         }
+
+        .#{$namespace}-dropdown {
+          display: flex;
+        }
+
+        &.is-expanded {
+          flex-grow: 1;
+        }
       }
 
-      .#{$namespace}-dropdown {
-        display: flex;
+      // center addons
+      &.has-addons-centered {
+        justify-content: center;
       }
 
-      &.is-expanded {
-        flex-grow: 1;
+      // right align addons
+      &.has-addons-right {
+        justify-content: flex-end;
       }
-    }
 
-    // center addons
-    &.has-addons-centered {
-      justify-content: center;
-    }
-
-    // right align addons
-    &.has-addons-right {
-      justify-content: flex-end;
-    }
-
-    // full width addons
-    &.has-addons-fullwidth {
-      .#{$namespace}-control {
-        flex-grow: 1;
-        flex-shrink: 0;
+      // full width addons
+      &.has-addons-fullwidth {
+        .#{$namespace}-control {
+          flex-grow: 1;
+          flex-shrink: 0;
+        }
       }
     }
   }

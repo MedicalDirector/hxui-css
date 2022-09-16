@@ -3,7 +3,6 @@
 // =========
 
 @use "../variables" as *;
-@use "../mixins/content";
 @use "../mixins/gradient";
 
 .#{$namespace}-page {
@@ -26,7 +25,9 @@
   }
 
   .block {
-    @include content.block;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &.has-blue-gradient {

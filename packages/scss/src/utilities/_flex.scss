@@ -7,9 +7,19 @@
   display: flex;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex {
+  display: flex !important;
+}
+
 .#{$namespace}-flex-inline,
 .flex-inline {
   display: inline-flex;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-inline {
+  display: inline-flex !important;
 }
 
 .#{$namespace}-flex-row,
@@ -17,9 +27,19 @@
   flex-direction: row;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-row {
+  flex-direction: row !important;
+}
+
 .#{$namespace}-flex-row-reverse,
 .flex-row-reverse {
   flex-direction: row-reverse;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-row-reverse {
+  flex-direction: row-reverse !important;
 }
 
 .#{$namespace}-flex-column,
@@ -27,9 +47,19 @@
   flex-direction: column;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-col {
+  flex-direction: column !important;
+}
+
 .#{$namespace}-flex-column-reverse,
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-col-reverse {
+  flex-direction: column-reverse !important;
 }
 
 .#{$namespace}-flex-wrap,
@@ -37,9 +67,19 @@
   flex-wrap: wrap;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-wrap {
+  flex-wrap: wrap !important;
+}
+
 .#{$namespace}-flex-wrap-reverse,
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
 }
 
 .#{$namespace}-flex-auto,
@@ -47,14 +87,28 @@
   flex: 1 1 auto;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!flex-auto {
+  flex: 1 1 auto !important;
+}
+
 .#{$namespace}-flex-none,
-.flex-none {
+.\!flex-none {
   flex: none !important;
 }
 
+.flex-none {
+  flex: none;
+}
+
 .#{$namespace}-flex-fill,
-.#{$namespace}-flex-1 {
+.#{$namespace}-flex-1,
+.\!grow-1 {
   flex: 1 !important;
+}
+
+.grow-1 {
+  flex: 1;
 }
 
 @include deprecate("3.0.0", "Use .flex-1 or custom css instead") {
@@ -105,8 +159,13 @@
 
 // alignment in cross axis
 .#{$namespace}-flex-start,
-.flex-start {
+.items-start {
   align-items: flex-start;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!items-start {
+  align-items: flex-start !important;
 }
 
 .#{$namespace}-flex-align-center,
@@ -114,14 +173,29 @@
   align-items: center;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!items-center {
+  align-items: center !important;
+}
+
 .#{$namespace}-flex-align-end,
 .items-end {
   align-items: flex-end;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!items-end {
+  align-items: flex-end !important;
+}
+
 .#{$namespace}-flex-align-stretch,
 .items-stretch {
   align-items: stretch;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!items-stretch {
+  align-items: stretch !important;
 }
 
 // alignment in main axis
@@ -130,9 +204,19 @@
   justify-content: flex-start;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-start {
+  justify-content: flex-start !important;
+}
+
 .#{$namespace}-flex-justify-center,
 .justify-center {
   justify-content: center;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-center {
+  justify-content: center !important;
 }
 
 .#{$namespace}-flex-justify-end,
@@ -140,9 +224,19 @@
   justify-content: flex-end;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-end {
+  justify-content: flex-end !important;
+}
+
 .#{$namespace}-flex-justify-around,
 .justify-around {
   justify-content: space-around;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-around {
+  justify-content: space-around !important;
 }
 
 .#{$namespace}-flex-justify-between,
@@ -150,9 +244,19 @@
   justify-content: space-between;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-between {
+  justify-content: space-between !important;
+}
+
 .#{$namespace}-flex-justify-evenly,
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!justify-evenly {
+  justify-content: space-evenly !important;
 }
 
 // self alignment
@@ -161,9 +265,19 @@
   align-self: flex-start;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!self-start {
+  align-self: flex-start !important;
+}
+
 .#{$namespace}-flex-align-self-center,
 .self-center {
   align-self: center;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!self-center {
+  align-self: center !important;
 }
 
 .#{$namespace}-flex-align-self-end,
@@ -171,9 +285,19 @@
   align-self: flex-end;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.\!self-end {
+  align-self: flex-end !important;
+}
+
 .#{$namespace}-flex-align-self-stretch,
 .self-stretch {
   align-self: stretch;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.\!self-stretch {
+  align-self: stretch !important;
 }
 
 // spacer utility
