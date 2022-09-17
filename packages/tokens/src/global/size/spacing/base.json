@@ -2,6 +2,10 @@
   "size": {
     "global": {
       "spacing": {
+        "0": {
+          "type": "spacing",
+          "value": "0"
+        },
         "1": {
           "type": "spacing",
           "value": "{size.global.spacing._base} * 0.25"

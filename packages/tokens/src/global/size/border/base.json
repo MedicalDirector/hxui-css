@@ -3,7 +3,7 @@
     "global": {
       "border-radius": {
         "full": {
-          "value": "999",
+          "value": "9999",
           "type": "borderRadius"
         },
         "none": {

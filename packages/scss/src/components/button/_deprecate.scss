@@ -5,6 +5,12 @@
 /// @note
 /// duplicate of v1 button.scss in case of forking
 
+@use "sass:list";
+@use "sass:map";
+@use "sass:color";
+
+@use "../../functions/color" as c;
+
 @mixin button-small {
   border-radius: $hx-border-radius-sm;
   font-size: $hx-font-size-xs;
@@ -131,11 +137,11 @@ a.#{$namespace}-button,
       $hx-color-white,
     ),
   );
-  $hx-colors-buttons: map-merge($hx-colors, $transparent-inverted);
+  $hx-colors-buttons: map.merge($hx-colors, $transparent-inverted);
 
   @each $name, $pair in $hx-colors-buttons {
-    $color: nth($pair, 1);
-    $hx-color-invert: nth($pair, 2);
+    $color: list.nth($pair, 1);
+    $hx-color-invert: list.nth($pair, 2);
 
     &.is-#{$name} {
       background-color: $color;
@@ -144,9 +150,9 @@ a.#{$namespace}-button,
 
       &:hover,
       &.is-hovered {
-        background-color: darken($color, 10%);
+        background-color: color.scale($color, $lightness: -10%);
         border-color: transparent;
-        color: findColorInvert(darken($color, 10%));
+        color: c.invert(color.scale($color, $lightness: -10%));
       }
 
       &:focus,
@@ -158,10 +164,10 @@ a.#{$namespace}-button,
 
       &:active,
       &.is-active {
-        background-color: darken($color, 5%);
+        background-color: color.scale($color, $lightness: -5%);
         border-color: transparent;
         box-shadow: $hx-button-shadow-inset;
-        color: findColorInvert(darken($color, 5%));
+        color: c.invert(color.scale($color, $lightness: -5%));
       }
 
       &.is-loading {
@@ -290,8 +296,8 @@ a.#{$namespace}-button,
     }
 
     @each $name, $pair in $hx-colors {
-      $color: nth($pair, 1);
-      $hx-color-invert: nth($pair, 2);
+      $color: list.nth($pair, 1);
+      $hx-color-invert: list.nth($pair, 2);
 
       &.is-#{$name} {
         color: $color;

@@ -4,18 +4,20 @@
 
 @use "../../variables" as *;
 
+@use "../../functions/size";
+
 @use "../../mixins/deprecate" as *;
 
-@use "../../mixins/size";
+@use "../../mixins/size" as msize;
 
 @mixin icon-sm {
-  font-size: 1rem; // TODO: unhard
+  font-size: size.rem(16); // TODO: unhard
   // width: 1.25rem;
   // height: 1.25rem;
 }
 
 @mixin icon-md {
-  font-size: 1.25rem; // TODO: unhard
+  font-size: size.rem(20); // TODO: unhard
   // width: 1.5rem;
   // height: 1.5rem;
 }
@@ -27,23 +29,59 @@
   .#{$namespace}-icon {
     @include icon-md;
 
-    line-height: 1.5rem; // TODO: unhard
+    line-height: size.rem(24); // TODO: unhard
   }
 
-  @include size.md {
+  @include msize.md {
     .#{$namespace}-icon {
       @include icon-md;
 
-      line-height: 1.5rem; // TODO: unhard
+      line-height: size.rem(24); // TODO: unhard
     }
   }
 
-  @include size.sm {
+  @include msize.sm {
     .#{$namespace}-icon {
       @include icon-sm;
 
-      line-height: 1.25rem; // TODO: unhard
+      line-height: size.rem(20); // TODO: unhard
     }
+  }
+}
+
+:is(.#{$namespace}-badge) {
+  .#{$namespace}-icon {
+    font-size: size.rem(12);
+  }
+
+  @include msize.lg {
+    .#{$namespace}-icon {
+      @include icon-sm;
+    }
+  }
+}
+
+:where(.#{$namespace}-button.sm) {
+  .#{$namespace}-icon {
+    @include icon-sm;
+
+    line-height: 1.25rem; // TODO: unhard
+  }
+}
+
+:where(.#{$namespace}-button.md) {
+  .#{$namespace}-icon {
+    @include icon-md;
+
+    line-height: 1.5rem; // TODO: unhard
+  }
+}
+
+:where(.#{$namespace}-button.lg) {
+  .#{$namespace}-icon {
+    @include icon-md;
+
+    line-height: 1.5rem; // TODO: unhard
   }
 }
 
@@ -81,11 +119,11 @@
     }
   }
 
-  @include size.sm {
+  @include msize.sm {
     @include icon-sm;
   }
 
-  @include size.md {
+  @include msize.md {
     @include icon-md;
   }
 }

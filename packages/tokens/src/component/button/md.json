@@ -243,6 +243,48 @@
           "value": "{size.global.length.6}",
           "type": "sizing"
         }
+      },
+      "delete": {
+        "default": {
+          "background-color": {
+            "value": "rgba({color.semantic.foreground.default}, 0.2)",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.contrast}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "value": "rgba({color.semantic.foreground.default}, 0.3)",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.contrast}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "value": "rgba({color.semantic.foreground.default}, 0.3)",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.contrast}",
+            "type": "color"
+          }
+        },
+        "active": {
+          "background-color": {
+            "value": "rgba({color.semantic.foreground.default}, 0.4)",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.contrast}",
+            "type": "color"
+          }
+        }
       }
     }
   }

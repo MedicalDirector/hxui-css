@@ -37,7 +37,8 @@
     }
   }
 
-  &.is-small {
+  &.is-small,
+  &.sm {
     // specific to accommodate small delete circle
     // can be abstracted to -icon.is-xsmall
     &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
@@ -47,7 +48,8 @@
     }
   }
 
-  &.is-large {
+  &.is-large,
+  &.lg {
     height: 36px;
     width: 36px;
   }

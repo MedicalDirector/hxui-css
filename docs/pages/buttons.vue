@@ -329,10 +329,10 @@ export default {
     
     <div class="hx-button-group">
       <button class="hx-button">
-        Left
+        <span>Left</span>
       </button>
       <button class="hx-button active">
-        Middle
+        <span>Middle</span>
       </button>
     </div>
 

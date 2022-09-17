@@ -2,6 +2,9 @@
 //  BADGES  //
 //////////////
 
+/// @note
+/// duplicate of v1 badge.scss in case of forking
+
 @use "../variables" as *;
 
 .#{$namespace}-badge,

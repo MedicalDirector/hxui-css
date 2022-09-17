@@ -1,0 +1,317 @@
+//////////////
+//  BADGES  //
+//////////////
+
+@use "../../variables" as *;
+
+@use "../../functions/color";
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+@use "./mixins" as badge;
+
+@use "../../mixins/text";
+@use "../../mixins/deprecate" as *;
+
+.#{$namespace}-badge,
+.#{$namespace}-badge-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+:is(.#{$namespace}-badge) {
+  .#{$namespace}-badge-action,
+  .#{$namespace}-delete {
+    margin-right: spacing.px(1);
+  }
+}
+
+:is(.#{$namespace}-badge.sm) {
+  .#{$namespace}-badge-action,
+  .#{$namespace}-delete {
+    margin-right: spacing.px(0);
+  }
+}
+
+:is(.#{$namespace}-badge.md) {
+  .#{$namespace}-badge-action,
+  .#{$namespace}-delete {
+    margin-right: spacing.px(1);
+  }
+}
+
+:is(.#{$namespace}-badge.lg) {
+  .#{$namespace}-badge-action,
+  .#{$namespace}-delete {
+    margin-right: spacing.px(1.5);
+  }
+}
+
+.#{$namespace}-badge {
+  @include badge.control;
+
+  // Priority: Secondary flat is default
+  @include badge.variant-flat-priority-secondary;
+
+  // Size: Medium is default
+  @include badge.size-medium;
+
+  ///////////
+  // Sizes //
+  ///////////
+
+  @include deprecate("2.0.0", "Refer updated size modifiers") {
+    &.is-small {
+      font-size: 0.6rem;
+    }
+
+    &.is-medium {
+      font-size: 1rem;
+
+      .#{$namespace}-avatar {
+        height: 28px;
+        width: 28px;
+        font-size: 0.9rem;
+
+        .#{$namespace}-icon {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &.is-large {
+      font-size: $hx-font-size-lg;
+
+      .#{$namespace}-avatar {
+        height: 34px;
+        width: 34px;
+        margin-left: -15px;
+        margin-right: 0.5rem;
+        font-size: 1.1rem;
+
+        .#{$namespace}-icon {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  @include badge.variant-size;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// FILLED + OUTLINED
+  @include deprecate("2.0.0", "Refer updated style modifiers") {
+    &.is-white,
+    &.is-outlined {
+      .#{$namespace}-info {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.is-primary {
+      background-color: $hx-color-success;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-success;
+        background-color: transparent;
+        color: $hx-color-success;
+      }
+    }
+
+    &.is-info {
+      background-color: $hx-color-info;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-info;
+        background-color: transparent;
+        color: $hx-color-info;
+      }
+    }
+
+    &.is-white {
+      background-color: $hx-color-white;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-white;
+        background-color: transparent;
+        color: $hx-color-white;
+      }
+    }
+
+    &.is-outlined {
+      border: 1px solid rgba(10, 10, 10, 0.15);
+      background-color: $hx-color-white;
+    }
+
+    &.is-dark {
+      background-color: $hx-color-gray;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-gray;
+        background-color: transparent;
+        color: $hx-color-gray;
+      }
+    }
+
+    &.is-black {
+      background-color: $hx-color-black;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-black;
+        background-color: transparent;
+        color: $hx-color-black;
+      }
+    }
+
+    &.is-warning {
+      background-color: $hx-color-warning;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-warning;
+        background-color: transparent;
+        color: $hx-color-warning;
+      }
+    }
+
+    &.is-caution {
+      background-color: $hx-color-caution;
+      color: $hx-color-black;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-caution;
+        background-color: transparent;
+        color: $hx-color-caution;
+      }
+    }
+
+    &.is-danger {
+      background-color: $hx-color-danger;
+      color: $hx-color-white;
+      font-weight: 400;
+
+      &.is-outlined {
+        border: 1px solid $hx-color-danger;
+        background-color: transparent;
+        color: $hx-color-danger;
+      }
+    }
+  }
+
+  @include badge.variant-normal;
+
+  /// FLAT
+  &.is-flat,
+  &.flat {
+    // Priority: Secondary is default
+    @include badge.variant-flat-priority-secondary;
+
+    @include badge.variant-flat;
+  }
+
+  //////////////////
+  // With Avatars //
+  //////////////////
+
+  .#{$namespace}-avatar {
+    min-width: 24px;
+    min-height: 24px;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    margin-right: 0.4rem;
+    font-size: 0.75rem;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+
+    .#{$namespace}-icon {
+      font-size: 1rem;
+    }
+  }
+
+  /////////////////
+  // With Action //
+  /////////////////
+
+  .#{$namespace}-delete {
+    @include badge.delete;
+  }
+}
+
+.#{$namespace}-badge-action {
+  &:not(.delete) {
+    @include text.no-copy;
+
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 100%;
+    border-width: 0;
+    color: var(--button-delete-default-color);
+    background-color: var(--button-delete-default-background-color);
+    padding: spacing.px(0.5);
+
+    &:hover {
+      color: var(--button-delete-hover-color);
+      background-color: var(--button-delete-hover-background-color);
+    }
+
+    &:focus {
+      color: var(--button-delete-focus-color);
+      background-color: var(--button-delete-focus-background-color);
+    }
+
+    &:active {
+      color: var(--button-delete-active-color);
+      background-color: var(--button-delete-active-background-color);
+    }
+
+    margin: spacing.rem(0) spacing.px(0);
+    margin-right: spacing.px(1);
+
+    &.sm {
+      margin-right: spacing.px(0);
+    }
+
+    &.md {
+      margin-right: spacing.px(1);
+    }
+
+    &.sm,
+    &.md {
+      .#{$namespace}-icon {
+        font-size: size.rem(12);
+      }
+    }
+
+    &.lg {
+      margin-right: spacing.px(1.5);
+      padding: spacing.px(1);
+    }
+
+    .#{$namespace}-icon-control,
+    .#{$namespace}-icon-container {
+      display: contents;
+    }
+  }
+
+  &.delete {
+    @include badge.delete;
+  }
+}
