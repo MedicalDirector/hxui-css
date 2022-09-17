@@ -1,0 +1,139 @@
+{
+  "component": {
+    "avatar": {
+      "primary": {
+        "background-color": {
+          "value": "{color.semantic.surface.primary.emphasis}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{color.semantic.foreground.contrast}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{color.semantic.border.primary.default}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "background-color": {
+          "value": "{color.semantic.surface.neutral.muted}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{color.semantic.foreground.default}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{color.semantic.border.subdued}",
+          "type": "color"
+        }
+      },
+      "sm": {
+        "size": {
+          "value": "{size.global.length.6}",
+          "type": "sizing"
+        },
+        "border-radius": {
+          "value": "{size.global.border-radius.full}",
+          "type": "borderRadius"
+        },
+        "border-width": {
+          "value": "{size.global.border-width.1}",
+          "type": "borderWidth"
+        },
+        "typography": {
+          "value": {
+            "fontFamily": "{font.semantic.font-family.body}",
+            "fontWeight": "{font.global.font-weight.medium}",
+            "lineHeight": "{font.global.line-height.6}",
+            "fontSize": "{font.global.size.14}",
+            "letterSpacing": "{font.semantic.letter-spacing.body}",
+            "textCase": "{font.global.text-transform.uppercase}"
+          },
+          "type": "typography"
+        }
+      },
+      "md": {
+        "size": {
+          "value": "{size.global.length.8}",
+          "type": "sizing"
+        },
+        "border-radius": {
+          "value": "{size.global.border-radius.full}",
+          "type": "borderRadius"
+        },
+        "border-width": {
+          "value": "{size.global.border-width.1}",
+          "type": "borderWidth"
+        },
+        "typography": {
+          "value": {
+            "fontFamily": "{font.semantic.font-family.body}",
+            "fontWeight": "{font.global.font-weight.medium}",
+            "lineHeight": "{font.global.line-height.6}",
+            "fontSize": "{font.global.size.16}",
+            "letterSpacing": "{font.semantic.letter-spacing.body}",
+            "textCase": "{font.global.text-transform.normal-case}"
+          },
+          "type": "typography"
+        }
+      },
+      "lg": {
+        "size": {
+          "value": "{size.global.length.10}",
+          "type": "sizing"
+        },
+        "border-radius": {
+          "value": "{size.global.border-radius.full}",
+          "type": "borderRadius"
+        },
+        "border-width": {
+          "value": "{size.global.border-width.1}",
+          "type": "borderWidth"
+        },
+        "typography": {
+          "value": {
+            "fontFamily": "{font.semantic.font-family.body}",
+            "fontWeight": "{font.global.font-weight.medium}",
+            "lineHeight": "{font.global.line-height.8}",
+            "fontSize": "{font.global.size.16}",
+            "letterSpacing": "{font.semantic.letter-spacing.body}",
+            "textCase": "{font.global.text-transform.normal-case}"
+          },
+          "type": "typography"
+        }
+      },
+      "flat": {
+        "primary": {
+          "background-color": {
+            "value": "{color.semantic.surface.primary.muted}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.primary}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{color.semantic.surface.primary.muted}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "background-color": {
+            "value": "{color.semantic.surface.neutral.muted}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{color.semantic.foreground.default}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{color.semantic.surface.neutral.muted}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

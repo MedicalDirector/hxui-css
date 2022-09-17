@@ -2,10 +2,13 @@
 //  AVATARS  //
 ///////////////
 
+/// @note
+/// duplicate of v1 avatar.scss in case of forking
+
 @use "sass:list";
 @use "sass:map";
 
-@use "../variables" as *;
+@use "../../variables" as *;
 
 .#{$namespace}-avatar {
   min-height: 30px;
@@ -30,9 +33,14 @@
   height: 48px;
   font-size: 1.5rem;
 
-  // === Tiled Variation === //
-  &.is-tile {
-    border-radius: 0;
+  //////////////
+  // Variants //
+  //////////////
+
+  /// TILED
+  &.is-tile,
+  &.tile {
+    border-radius: 2px; // TODO: unhard
   }
 
   // === Icon Variation === //

@@ -13,7 +13,13 @@
           <code>{{ d.class }}</code>
         </td>
         <td>
-          <span class="hx-badge" :class="{ primary: d.type === 'component' }">
+          <span
+            class="hx-badge"
+            :class="{
+              primary: d.type === 'component',
+              secondary: d.type !== 'component',
+            }"
+          >
             <span class="hx-badge-content text-capitalise">{{ d.type }}</span>
           </span>
         </td>

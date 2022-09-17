@@ -14,28 +14,28 @@ export default {
         type: 'component',
         description: 'Container element',
       },
+      // {
+      //   class: ',
+      //   type: 'modifier',
+      //   description: 'For usage with icons',
+      // },
+      // {
+      //   class: 'outline',
+      //   type: 'modifier',
+      //   description: 'Colored border with transparent background',
+      // },
       {
-        class: 'has-icon',
-        type: 'modifier',
-        description: 'For usage with icons',
-      },
-      {
-        class: 'is-outlined',
-        type: 'modifier',
-        description: 'Colored border with transparent background',
-      },
-      {
-        class: 'is-tile',
+        class: 'tile',
         type: 'modifier',
         description: 'Square',
       },
       {
-        class: 'is-small',
+        class: 'sm',
         type: 'modifier',
         description: 'Small size',
       },
       {
-        class: 'is-large',
+        class: 'lg',
         type: 'modifier',
         description: 'Large size',
       },
@@ -45,57 +45,81 @@ export default {
         title: 'Basic avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div 
-    class="hx-avatar"
-    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})">
+  <div class="hx-avatar">
+    <img 
+      src="${require('~/assets/images/default-avatar-business-bear.png')}"
+      alt="portrait of cartoon bear"
+    />
   </div>
-  <div 
-    class="hx-avatar"
-    style="background-image: url(${require('~/assets/images/0223.jpg')})">
+  <div class="hx-avatar">
+    <img 
+      src="${require('~/assets/images/0223.jpg')}"
+      alt="portrait of person"
+    />
   </div>
-  <div 
-    class="hx-avatar"
-    style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
+  <div class="hx-avatar">
+    <img 
+      src="${require('~/assets/images/frenchie.jpg')}"
+      alt="portrait of dog"
+    />
   </div>
-  <div class="hx-avatar hx-bg-white">JP</div>
-  <div class="hx-avatar hx-bg-light">CB</div>
-  <div class="hx-avatar hx-bg-black">J</div>
+  <div class="hx-avatar">JP</div>
 </div>`,
       },
       {
         title: 'Icon avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div class="hx-avatar hx-bg-danger has-icon">
+  <div class="hx-avatar danger">
     <i class="hx-icon icon-pulse"></i>
   </div>
-  <div class="hx-avatar hx-bg-warning has-icon">
+  <div class="hx-avatar warning">
     <i class="hx-icon icon-wine"></i>
   </div>
-  <div class="hx-avatar hx-bg-success has-icon">
+  <div class="hx-avatar success">
     <i class="hx-icon icon-medications"></i>
   </div>
-  <div class="hx-avatar hx-bg-info has-icon">
+  <div class="hx-avatar info">
     <i class="hx-icon icon-carrot"></i>
   </div>
 </div>`,
       },
+      //       {
+      //         title: 'Outlined avatar',
+      //         withContent: false,
+      //         code: `<div class="hx-card-content flex justify-center items-center gap-2">
+      //   <div class="hx-avatar caution outline text-black">J</div>
+      //   <div class="hx-avatar outline">CB</div>
+      //   <div class="hx-avatar primary outline">
+      //     <i class="hx-icon icon-pulse"></i>
+      //   </div>
+      //   <div class="hx-avatar danger outline">
+      //     <i class="hx-icon icon-wine"></i>
+      //   </div>
+      //   <div class="hx-avatar warning outline">
+      //     <i class="hx-icon icon-medications"></i>
+      //   </div>
+      //   <div class="hx-avatar caution outline">
+      //     <i class="hx-icon icon-carrot"></i>
+      //   </div>
+      // </div>`,
+      //       },
       {
-        title: 'Outlined avatar',
+        title: 'Flat avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div class="hx-avatar is-caution is-outlined is-text-black">J</div>
-  <div class="hx-avatar is-outlined is-lighter">CB</div>
-  <div class="hx-avatar is-primary is-outlined has-icon">
+  <div class="hx-avatar flat caution outline text-black">J</div>
+  <div class="hx-avatar flat outline">CB</div>
+  <div class="hx-avatar flat primary outline">
     <i class="hx-icon icon-pulse"></i>
   </div>
-  <div class="hx-avatar is-danger is-outlined has-icon">
+  <div class="hx-avatar flat danger outline">
     <i class="hx-icon icon-wine"></i>
   </div>
-  <div class="hx-avatar is-warning is-outlined has-icon">
+  <div class="hx-avatar flat warning outline">
     <i class="hx-icon icon-medications"></i>
   </div>
-  <div class="hx-avatar is-caution is-outlined has-icon">
+  <div class="hx-avatar flat caution outline">
     <i class="hx-icon icon-carrot"></i>
   </div>
 </div>`,
@@ -104,31 +128,31 @@ export default {
         title: 'Tiled avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div 
-    class="hx-avatar is-tile" 
+  <div
+    class="hx-avatar tile"
     style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')}">
   </div>
-  <div 
-    class="hx-avatar is-tile" 
+  <div
+    class="hx-avatar tile"
     style="background-image: url(${require('~/assets/images/0223.jpg')})">
   </div>
-  <div 
-    class="hx-avatar is-tile" 
+  <div
+    class="hx-avatar tile"
     style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
   </div>
-  <div class="hx-avatar is-tile hx-bg-white">JP</div>
-  <div class="hx-avatar is-tile hx-bg-light">CB</div>
-  <div class="hx-avatar is-tile hx-bg-black">J</div>
-  <div class="hx-avatar hx-bg-danger is-tile has-icon">
+  <div class="hx-avatar tile hx-bg-white">JP</div>
+  <div class="hx-avatar tile hx-bg-light">CB</div>
+  <div class="hx-avatar tile hx-bg-black">J</div>
+  <div class="hx-avatar hx-bg-danger tile">
     <i class="hx-icon icon-pulse"></i>
   </div>
-  <div class="hx-avatar hx-bg-warning is-tile has-icon">
+  <div class="hx-avatar hx-bg-warning tile">
     <i class="hx-icon icon-wine"></i>
   </div>
-  <div class="hx-avatar hx-bg-success is-tile has-icon">
+  <div class="hx-avatar hx-bg-success tile">
     <i class="hx-icon icon-medications"></i>
   </div>
-  <div class="hx-avatar is-info is-tile is-outlined has-icon">
+  <div class="hx-avatar is-info tile is-outline">
     <i class="hx-icon icon-carrot"></i>
   </div>
 </div>`,
@@ -137,31 +161,37 @@ export default {
         title: 'Small avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div
-    class="hx-avatar is-small" 
-    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})">
+  <div class="hx-avatar sm">
+    <img 
+      src="${require('~/assets/images/default-avatar-business-bear.png')}"
+      alt="portrait of cartoon bear"
+    />
   </div>
-  <div 
-    class="hx-avatar is-small" 
-    style="background-image: url(${require('~/assets/images/0223.jpg')})">
+  <div class="hx-avatar sm">
+    <img 
+      src="${require('~/assets/images/0223.jpg')}"
+      alt="portrait of person"
+    />
   </div>
-  <div 
-    class="hx-avatar is-small is-tile" 
-    style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
+  <div class="hx-avatar sm">
+    <img 
+      src="${require('~/assets/images/frenchie.jpg')}"
+      alt="portrait of dog"
+    />
   </div>
-  <div class="hx-avatar is-small hx-bg-white">JP</div>
-  <div class="hx-avatar is-small is-tile hx-bg-light">CB</div>
-  <div class="hx-avatar is-small hx-bg-black">J</div>
-  <div class="hx-avatar is-small hx-bg-danger has-icon">
+  <div class="hx-avatar sm">JP</div>
+  <div class="hx-avatar sm tile flat primary">CB</div>
+  <div class="hx-avatar sm hx-bg-black">J</div>
+  <div class="hx-avatar sm hx-bg-danger">
     <i class="hx-icon icon-pulse"></i>
   </div>
-  <div class="hx-avatar is-small hx-bg-warning has-icon">
+  <div class="hx-avatar sm hx-bg-warning">
     <i class="hx-icon icon-wine"></i>
   </div>
-  <div class="hx-avatar is-small is-tile hx-bg-success has-icon">
+  <div class="hx-avatar sm tile hx-bg-success">
     <i class="hx-icon icon-medications"></i>
   </div>
-  <div class="hx-avatar is-small is-info is-outlined has-icon">
+  <div class="hx-avatar sm is-info is-outline">
     <i class="hx-icon icon-carrot"></i>
   </div>
 </div>`,
@@ -171,30 +201,27 @@ export default {
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
   <div
-    class="hx-avatar is-large" 
+    class="hx-avatar lg"
     style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})">
   </div>
-  <div 
-    class="hx-avatar is-large" 
+  <div
+    class="hx-avatar lg"
     style="background-image: url(${require('~/assets/images/0223.jpg')})">
   </div>
-  <div 
-    class="hx-avatar is-large" 
+  <div
+    class="hx-avatar lg"
     style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
   </div>
-  <div class="hx-avatar is-large hx-bg-white">JP</div>
-  <div class="hx-avatar is-large hx-bg-light">CB</div>
-  <div class="hx-avatar is-large hx-bg-black">J</div>
-  <div class="hx-avatar is-large hx-bg-danger has-icon">
+  <div class="hx-avatar lg danger">
     <i class="hx-icon icon-pulse"></i>
   </div>
-  <div class="hx-avatar is-large hx-bg-warning has-icon">
+  <div class="hx-avatar lg warning">
     <i class="hx-icon icon-wine"></i>
   </div>
-  <div class="hx-avatar is-large hx-bg-success has-icon">
+  <div class="hx-avatar lg success">
     <i class="hx-icon icon-medications"></i>
   </div>
-  <div class="hx-avatar is-large is-info is-outlined has-icon">
+  <div class="hx-avatar lg info outline">
     <i class="hx-icon icon-carrot"></i>
   </div>
 </div>`,

@@ -1,0 +1,162 @@
+/* stylelint-disable scss/dollar-variable-pattern */
+@use "../../variables" as *;
+
+@use "../../functions/size";
+@use "../../functions/spacing";
+
+@use "../../mixins/transition";
+@use "../../mixins/text";
+@use "../../mixins/position";
+@use "../../mixins/loader" as *;
+@use "../../mixins/size" as msize;
+@use "../../mixins/context";
+
+$component: "avatar";
+$_properties-filled: ("background-color" "background-color", "color" "color", "border-color" "border-color");
+$sizes: ("sm" "small", "md" "medium", "lg" "large");
+$priorities: "primary" "secondary" "tertiary" "success" "danger" "info" "warning" "caution";
+$border-width-default: 1;
+
+/////////////
+// Helpers //
+/////////////
+
+@mixin get-rules($component, $type: "normal", $priority, $properties) {
+  & {
+    @each $key, $value, $fallback in $properties {
+      @if $fallback {
+        @if $type == "normal" {
+          #{$key}: var(--#{$component}-#{$priority}-#{$value}, --#{$component}-#{$priority}-#{$fallback});
+        } @else {
+          #{$key}: var(
+            --#{$component}-#{$type}-#{$priority}-#{$value},
+            --#{$component}-#{$type}-#{$priority}-#{$fallback}
+          );
+        }
+      } @else {
+        @if $type == "normal" {
+          #{$key}: var(--#{$component}-#{$priority}-#{$value});
+        } @else {
+          #{$key}: var(--#{$component}-#{$type}-#{$priority}-#{$value});
+        }
+      }
+    }
+  }
+}
+
+@mixin get-priority($component, $type: "normal", $priority, $properties) {
+  @include get-rules($component, $type, $priority, $properties);
+}
+
+////////////////////
+// Variant - Size //
+////////////////////
+
+@mixin get-size($size) {
+  $bw: size.px(--#{$component}-#{$size}-border-width, $border-width-default);
+  $h: size.rem(--#{$component}-#{$size}-size);
+
+  border-radius: size.px(--#{$component}-#{$size}-border-radius);
+  border-width: $bw;
+  border-style: solid;
+  height: $h;
+  width: $h;
+  font: var(--#{$component}-#{$size}-typography, inherit);
+}
+
+@mixin variant-size {
+  & {
+    @each $short, $long in $sizes {
+      @include msize.add($short, $long) {
+        @include get-size($short);
+      }
+    }
+  }
+}
+
+@mixin size-medium {
+  @include get-size("md");
+}
+
+///////////////////////
+// Variant - Default //
+///////////////////////
+/// Filled / Outlined
+
+// @mixin variant-normal-priority-secondary {
+//   background-color: var(--color-surface-neutral-subdued);
+//   border-color: transparent;
+//   $_properties-normal-secondary: "color";
+
+//   @include get-priority($component, "normal", "secondary", $_properties-normal-secondary);
+// }
+
+@mixin variant-normal {
+  & {
+    @each $p in $priorities {
+      @include context.add($p) {
+        @include get-priority($component, "normal", $p, $_properties-filled);
+      }
+    }
+  }
+}
+
+////////////////////
+// Variant - Flat //
+////////////////////
+
+@mixin variant-flat-priority-secondary {
+  @include get-rules($component, "flat", "secondary", $_properties-filled);
+}
+
+@mixin variant-flat {
+  & {
+    @each $p in $priorities {
+      @include context.add($p) {
+        @include get-priority($component, "flat", $p, $_properties-filled);
+      }
+    }
+  }
+}
+
+/////////////
+// Control //
+/////////////
+
+@mixin control {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include text.no-copy;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@mixin delete {
+  @include d.delete;
+
+  margin: spacing.rem(0) spacing.px(0);
+  padding: spacing.rem(0) spacing.px(0);
+  margin-right: spacing.px(1);
+
+  &.sm {
+    margin-right: spacing.px(0);
+  }
+
+  &.md {
+    margin-right: spacing.px(1);
+  }
+
+  &.lg {
+    margin-right: spacing.px(1.5);
+  }
+}

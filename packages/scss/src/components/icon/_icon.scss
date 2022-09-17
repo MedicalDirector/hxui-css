@@ -85,6 +85,30 @@
   }
 }
 
+:is(.#{$namespace}-avatar) {
+  .#{$namespace}-icon {
+    @include icon-md;
+  }
+
+  @include msize.sm {
+    .#{$namespace}-icon {
+      @include icon-sm;
+    }
+  }
+
+  @include msize.md {
+    .#{$namespace}-icon {
+      @include icon-md;
+    }
+  }
+
+  @include msize.lg {
+    .#{$namespace}-icon {
+      @include icon-md;
+    }
+  }
+}
+
 .#{$namespace}-icon {
   display: inline-flex;
   justify-content: center;

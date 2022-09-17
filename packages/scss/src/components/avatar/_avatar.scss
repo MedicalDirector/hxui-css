@@ -1,0 +1,126 @@
+///////////////
+//  AVATARS  //
+///////////////
+
+@use "sass:list";
+@use "sass:map";
+
+@use "../../variables" as *;
+
+@use "./mixins" as avatar;
+
+@use "../../mixins/deprecate" as *;
+
+.#{$namespace}-avatar {
+  @include avatar.control;
+
+  background-size: cover;
+
+  // Priority: Secondary flat is default
+  @include avatar.variant-flat-priority-secondary;
+
+  // Size: Medium is default
+  @include avatar.size-medium;
+
+  ///////////
+  // Sizes //
+  ///////////
+
+  // // === Sizing Variation === //
+  // default (medium) sizing
+  @include deprecate("2.0.0", "Refer updated size modifiers") {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+
+    &.is-small {
+      width: 30px;
+      height: 30px;
+      font-size: 1.25rem;
+
+      &.has-icon {
+        .#{$namespace}-icon {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    &.is-large {
+      width: 64px;
+      height: 64px;
+      font-size: 2rem;
+
+      &.has-icon {
+        .#{$namespace}-icon {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  @include avatar.variant-size;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// TILED
+  &.is-tile,
+  &.tile {
+    border-radius: 2px; // TODO: unhard
+  }
+
+  // === Icon Variation === //
+  @include deprecate("2.0.0", "Refer updated style modifiers") {
+    &.has-icon {
+      // default (medium) sizing
+      .#{$namespace}-icon {
+        font-size: 1.65rem;
+      }
+    }
+  }
+
+  // === Color Variations === //
+  @include deprecate("2.0.0", "Refer updated style modifiers") {
+    // is-white, is-black, is-light ... is-info, is-success, is-warning ... is-red, is-blue ...
+    $transparent-inverted: (
+      "transparent-inverted": (
+        transparent,
+        $hx-color-white,
+      ),
+    );
+    $hx-colors-buttons: map.merge($hx-colors, $transparent-inverted);
+
+    @each $name, $pair in $hx-colors-buttons {
+      $color: list.nth($pair, 1);
+      $hx-color-invert: list.nth($pair, 2);
+
+      &.is-#{$name} {
+        background-color: $color;
+        border-color: transparent;
+        color: $hx-color-invert;
+
+        // === Outlined Variation === //
+        // must be used in combination with a color selector ^^^
+        &.is-outlined {
+          background-color: transparent;
+          color: $color;
+          border-color: rgba($color, 1);
+          border-width: 1px;
+          border-style: solid;
+        }
+      }
+    }
+  }
+
+  @include avatar.variant-normal;
+
+  /// FLAT
+  &.is-flat,
+  &.flat {
+    // Priority: Secondary is default
+    @include avatar.variant-flat-priority-secondary;
+
+    @include avatar.variant-flat;
+  }
+}
