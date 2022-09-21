@@ -1,6 +1,6 @@
 {
   "name": "@hxui/css",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Helix User Interface Library - Pure CSS Framework",
   "author": "Design @ MD <design@medicaldirector.com>",
   "keywords": [
@@ -15,6 +15,7 @@
   },
   "bugs": "https://github.com/MedicalDirector/hxui-css/issues",
   "files": [
+    "CHANGELOG.md",
     "/static/static/fonts",
     "/static/static/scss",
     "/static/static/css"
