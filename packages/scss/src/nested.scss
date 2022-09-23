@@ -8,12 +8,24 @@
 // TODO: move to own package
 @forward "icons";
 
-@forward "base";
-
-@forward "layouts";
+@use "sass:meta";
 @forward "layouts/side-panel";
 
-@forward "components";
+/// Resets
+/// @type String
+$framework-wrap: false !default;
 
-// Highest priority - should be loaded last
-@forward "utilities";
+/// @type String
+$hxui-reset: "hxui-reset" !default;
+
+@function set-selector($is-wrap) {
+  @if $is-wrap {
+    @return ".#{$hxui-reset}";
+  } @else {
+    @return "*";
+  }
+}
+
+#{set-selector($framework-wrap)} {
+  @include meta.load-css("hxui");
+}

@@ -11,13 +11,13 @@
 
     <div class="grid gap-4">
       <expanding-code-example
-        v-for="(example, i) in examples"
+        v-for="(ex, i) in examples"
         :key="i"
-        :title="example.title"
-        :code="example.code"
-        :example="example.code"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
         :visible="false"
-        :withContent="example.withContent"
+        :withContent="ex.withContent"
       ></expanding-code-example>
     </div>
   </article>

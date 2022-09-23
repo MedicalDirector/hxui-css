@@ -6,8 +6,14 @@
   //   "source.fixAll.stylelint"
   //   "source.formatDocument",
   // ],
-  "eslint.validate": ["javascript", "vue"],
-  "stylelint.validate": ["css", "scss"],
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[scss]": {
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"

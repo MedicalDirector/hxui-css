@@ -1,0 +1,203 @@
+////////////////
+//  CHECKBOX  //
+////////////////
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+
+// Checkbox container
+.#{$namespace}-checkbox-control {
+  margin: 0.4rem 0;
+}
+
+/* Remove default checkbox */
+.#{$namespace}-checkbox:not(:checked),
+.#{$namespace}-checkbox:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+// Checkbox Styles
+.#{$namespace}-checkbox {
+  // Text Label Style
+  + .#{$namespace}-label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    font-size: $hx-font-form-elements-size;
+    font-weight: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+
+    &.is-text-multiline {
+      @include text.multiline;
+    }
+  }
+
+  /* checkbox aspect */
+  + .#{$namespace}-label:before,
+  + .#{$namespace}-label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+    border: 2px solid $hx-color-gray-lighter;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: 0.2s;
+  }
+
+  &:disabled + .#{$namespace}-label {
+    cursor: $hx-cursor-disabled;
+    color: $hx-color-gray-lighter !important;
+  }
+
+  &:not(:checked):disabled + .#{$namespace}-label:before {
+    border: none;
+    background-color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
+  }
+
+  &:indeterminate,
+  &.is-indeterminate {
+    + .#{$namespace}-label:before {
+      top: 2px;
+      left: 2.5px;
+      width: 13px;
+      height: 8px;
+      border-bottom: 2px solid white;
+      border-width: 0 0 2px;
+    }
+
+    + .#{$namespace}-label:after {
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $hx-color-primary;
+      background-color: $hx-color-primary;
+      z-index: 0;
+    }
+  }
+}
+
+.#{$namespace}-checkbox:checked {
+  + .#{$namespace}-label:before {
+    top: 2px;
+    left: 1px;
+    width: 7px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+
+  + .#{$namespace}-label:after {
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $hx-color-primary;
+    background-color: $hx-color-primary;
+    z-index: 0;
+  }
+
+  &:disabled + .#{$namespace}-label:before {
+    border-right: 2px solid $hx-input-disabled;
+    border-bottom: 2px solid $hx-input-disabled;
+  }
+}
+
+/// is-small checkbox
+.#{$namespace}-input-control.is-small,
+.#{$namespace}-table.is-narrow {
+  // Checkbox container
+  .#{$namespace}-checkbox-control {
+    margin: 0.4rem 0;
+  }
+
+  // Checkbox Styles
+  .#{$namespace}-checkbox {
+    // Text Label Style
+    + .#{$namespace}-label {
+      padding-left: 25px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 0.9rem;
+
+      &.is-text-multiline {
+        @include text.multiline;
+      }
+    }
+
+    /* checkbox aspect */
+    + .#{$namespace}-label:before,
+    + .#{$namespace}-label:after {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+    }
+
+    /* small indeterminate checkbox */
+    &:indeterminate,
+    &.is-indeterminate:not(:checked) {
+      + .#{$namespace}-label:before {
+        top: 1px;
+        left: 2px;
+        width: 12px !important;
+        height: 8px;
+      }
+    }
+  }
+
+  th {
+    .#{$namespace}-checkbox-control {
+      padding-bottom: 0.1rem;
+    }
+    .#{$namespace}-checkbox {
+      + .#{$namespace}-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .#{$namespace}-table-group {
+    th {
+      .#{$namespace}-checkbox-control {
+        padding: 0;
+        margin-top: -0.01rem;
+      }
+    }
+  }
+
+  .#{$namespace}-checkbox:checked {
+    + .#{$namespace}-label:before {
+      top: 2px;
+      left: 2px;
+      width: 5px;
+      height: 10px;
+    }
+
+    + .#{$namespace}-label:after {
+      top: 0;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

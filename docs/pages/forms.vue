@@ -37,41 +37,91 @@ export default {
       examples: [
         {
           title: 'Input field',
+          withContent: false,
+          code: `<div class="hx-card-content grid gap-4">
+  <div class="hx-form-control modern fullwidth">
+    <label class="hx-label" for="input-2">Full Name</label>
+    <input class="hx-input" id="input-2" type="text" required>
+    <span class="hx-help">Please enter your full name</span>
+  </div>
+
+  <div class="hx-form-control modern fullwidth">
+    <label class="hx-label" for="input-3">Full Name</label>
+    <div class="hx-input-group">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-search"></i>
+      </span>
+      <input class="hx-input" id="input-3" type="text" required>
+      <button class="hx-button flat icon">
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-plus"></i>
+        </span>
+      </button>
+    </div>
+    <span class="hx-help">
+      Please enter your full name
+    </span>
+  </div>
+</div>`,
+        },
+        {
+          title: 'Input field',
           code: `
-  <p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a  <code>.hx-input-control</code> div wrapping your input and label.</p>
-  <br />
+  <div class="hx-input-group">
+    <i class="hx-icon icon-search"></i>
+    <div class="hx-input-control">
+      <input class="hx-input legacy" type="text" required>
+      <label class="hx-label">Search <sup>*</sup></label>
+      <div class="hx-help">Please search by patient name</div>
+    </div>
+    <div class="hx-input-actions">
+      <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
+      <div class="hx-button-group">
+        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+      </div>
+    </div>
+  </div>
   <div class="hx-input-control">
-    <input class="hx-input" type="text" required>
+    <input class="hx-input legacy" type="text" required>
     <label class="hx-label">Full Name <sup>*</sup></label>
     <div class="hx-help">Please enter your full name</div>
   </div>
+
+  <p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a  <code>.hx-input-control</code> div wrapping your input and label.</p>
+  <br />
   <div class="hx-input-control">
-    <input class="hx-input" type="password" required>
+    <label class="hx-label">Full Name <sup>*</sup></label>
+    <input class="hx-input legacy" type="text" required>
+    <span class="hx-help">Please enter your full name</span>
+  </div>
+  <div class="hx-input-control">
+    <input class="hx-input legacy" type="password" required>
     <label class="hx-label">Password <sup>*</sup></label>
     <div class="hx-help">Please enter your password</div>
   </div>
   <div class="hx-input-control">
-    <input class="hx-input" type="text" pattern= "[0-9]" required>
+    <input class="hx-input legacy" type="text" pattern= "[0-9]" required>
     <label class="hx-label">Phone Number <sup>*</sup></label>
     <div class="hx-help">Please enter your phone number</div>
   </div>
   <div class="hx-input-control is-info">
-    <input class="hx-input" type="email" required>
+    <input class="hx-input legacy" type="email" required>
     <label class="hx-label">Email <sup>*</sup></label>
     <div class="hx-help">Info!</div>
   </div>
   <div class="hx-input-control is-success">
-    <input class="hx-input" type="text" required>
+    <input class="hx-input legacy" type="text" required>
     <label class="hx-label">Email <sup>*</sup></label>
     <div class="hx-help">Success!</div>
   </div>
   <div class="hx-input-control is-warning">
-    <input class="hx-input" type="text" required>
+    <input class="hx-input legacy" type="text" required>
     <label class="hx-label">Email <sup>*</sup></label>
     <div class="hx-help">Warning!</div>
   </div>
   <div class="hx-input-control is-danger">
-    <input class="hx-input" type="text" value="joe.chan@medicaldirector.com">
+    <input class="hx-input legacy" type="text" value="joe.chan@medicaldirector.com">
     <label class="hx-label">Email <sup>*</sup></label>
     <div class="hx-help hx-flex hx-flex-justify-between">
       <span>Danger!</span>
@@ -80,55 +130,55 @@ export default {
           <input name="saveEmail"  type="checkbox" class="hx-checkbox" id="saveEmail">
           <label for="saveEmail" class="hx-label no-context">Save email?</label>
         </div>
-     </div>
-     </div>
+      </div>
+    </div>
   </div>
   <div class="hx-input-control is-help-visible">
-    <input class="hx-input" type="text" ">
+    <input class="hx-input legacy" type="text" ">
     <label class="hx-label">Quantity <sup>*</sup></label>
     <div class="hx-help">Help text always visible</div>
   </div>
   <div class="hx-input-control">
-    <input class="hx-input" type="text" disabled placeholder="I am disabled" required value="Hello there what are you doing">
+    <input class="hx-input legacy" type="text" disabled placeholder="I am disabled" required value="Hello there what are you doing">
     <label class="hx-label">This is Disabled</label>
     <div class="hx-help">Danger!</div>
   </div>
   <div class="hx-input-control">
-    <input class="hx-input" type="text" disabled required placeholder="Hello there what are you doing">
+    <input class="hx-input legacy" type="text" disabled required placeholder="Hello there what are you doing">
     <label class="hx-label">This is Disabled, placeholder</label>
     <div class="hx-help">Danger!</div>
   </div>
   <div class="hx-input-control">
-    <input class="hx-input" type="text" disabled  >
+    <input class="hx-input legacy" type="text" disabled  >
     <label class="hx-label">This is Disabled,  no placeholder, no value</label>
     <div class="hx-help"></div>
   </div>
   <div class="hx-input-group">
     <div class="hx-input-control">
-      <input class="hx-input" type="text" required>
+      <input class="hx-input legacy" type="text" required>
       <label class="hx-label">Date <sup>*</sup></label>
       <div class="hx-help">Please select a date</div>
     </div>
-     <i class="hx-icon icon-calendar"></i>
+    <i class="hx-icon icon-calendar"></i>
   </div>
   <div class="hx-input-group">
-   <i class="hx-icon icon-search"></i>
+    <i class="hx-icon icon-search"></i>
     <div class="hx-input-control">
-      <input class="hx-input" type="text" required>
+      <input class="hx-input legacy" type="text" required>
       <label class="hx-label">Search <sup>*</sup></label>
       <div class="hx-help">Please search by patient name</div>
     </div>
     <div class="hx-input-actions">
       <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
       <div class="hx-button-group">
-         <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
-         <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
       </div>
     </div>
   </div>
   <div class="hx-input-group">
     <div class="hx-input-control">
-      <input class="hx-input" type="text" required>
+      <input class="hx-input legacy" type="text" required>
       <label class="hx-label">Search <sup>*</sup></label>
       <div class="hx-help">Please search by patient name</div>
     </div>
@@ -137,7 +187,7 @@ export default {
   <div class="hx-input-group">
    <i class="hx-icon icon-person"></i>
     <div class="hx-input-control">
-      <input class="hx-input" type="text" value="JG001" required>
+      <input class="hx-input legacy" type="text" value="JG001" required>
       <label class="hx-label">Username <sup>*</sup></label>
       <div class="hx-help">Please enter your username</div>
     </div>
@@ -145,7 +195,7 @@ export default {
   </div>
   <div class="hx-input-group">
     <div class="hx-input-control">
-      <input class="hx-input" type="text"  required>
+      <input class="hx-input legacy" type="text"  required>
       <label class="hx-label">Search <sup>*</sup></label>
       <div class="hx-help">Please enter a search term</div>
     </div>
@@ -161,51 +211,51 @@ export default {
   <br />
   
   <div class="hx-input-control">
-    <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients"></textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" placeholder="Enter ingredients"></textarea>
     <label for="textarea-sample" class="hx-label">Ingredients</label>
     <div class="hx-help">Please enter the recipe ingredients</div>
   </div>
   
   <div class="hx-input-control">
-    <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients" required></textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" placeholder="Enter ingredients" required></textarea>
     <label for="textarea-sample" class="hx-label">Ingredients <sup>*</sup></label>
     <div class="hx-help">Please enter the recipe ingredients</div>
   </div>
   
   <div class="hx-input-control">
-    <textarea name="textarea-sample" class="hx-textarea ng-invalid ng-dirty" placeholder="Enter ingredients" required></textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy ng-invalid ng-dirty" placeholder="Enter ingredients" required></textarea>
     <label for="textarea-sample" class="hx-label">Ingredients <sup>*</sup></label>
     <div class="hx-help">Please enter the recipe ingredients</div>
   </div>
   
   <div class="hx-input-control is-info">
-    <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
     <label for="textarea-sample" class="hx-label">Textarea</label>
     <div class="hx-help">Info!</div>
   </div>
   <div class="hx-input-control is-success">
-    <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas. </textarea>
     <label for="textarea-sample" class="hx-label">Textarea</label>
     <div class="hx-help">Success!</div>
   </div>
   <div class="hx-input-control is-warning">
-    <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
     <label for="textarea-sample" class="hx-label">Textarea</label>
     <div class="hx-help">Warning!</div>
   </div>
   <div class="hx-input-control is-danger">
-    <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
     <label for="textarea-sample" class="hx-label">Textarea</label>
     <div class="hx-help">Danger!</div>
   </div>
   <div class="hx-input-control is-help-visible">
-    <textarea name="textarea-sample" class="hx-textarea" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis sem quis tincidunt egestas.</textarea>
     <label for="textarea-sample" class="hx-label">Textarea - help always visible</label>
     <div class="hx-help">Help text always visible</div>
   </div>
   
   <div class="hx-input-control">
-    <textarea name="textarea-sample" class="hx-textarea" placeholder="Enter ingredients" disabled></textarea>
+    <textarea name="textarea-sample" class="hx-textarea legacy" placeholder="Enter ingredients" disabled></textarea>
     <label for="textarea-sample" class="hx-label">Ingredients disabled</label>
     <div class="hx-help">Please enter the recipe ingredients</div>
   </div>
@@ -214,10 +264,12 @@ export default {
 
         {
           title: 'Radio buttons',
-          code: `
+          withContent: false,
+          code: `<div class="hx-card-content grid gap-4">
   <p>Radio Buttons are used when the user must make only one selection out of a group of items.</p>
-  <div class="hx-columns">
-    <div class="hx-column is-2 is-offset-4">
+
+  <div class="grid grid-cols-1 tablet:grid-cols-4 gap-4">
+    <div>
       <div class="hx-input-control">
         <div class="hx-radio-control">
           <input name="radioGroup1" type="radio" class="hx-radio" id="yes" checked />
@@ -239,7 +291,8 @@ export default {
         </div>
       </div>
     </div>
-    <div class="hx-column is-2">
+
+    <div>
       <div class="hx-input-control">
         <div class="hx-radio-control is-inline">
           <input name="radioGroup3" type="radio" class="hx-radio is-danger" id="male" checked/>
@@ -269,7 +322,8 @@ export default {
         </div>
       </div>
     </div>
-    <div class="hx-column is-2">
+
+    <div>
       <strong>Small Variation</strong>
       <div class="hx-input-control">
         <div class="hx-radio-control is-inline is-small">
@@ -300,7 +354,8 @@ export default {
         </div>
       </div>
     </div>
-     <div class="hx-column is-danger is-2">
+
+    <div>
       <strong>Contextual</strong>
       <div class="hx-input-control">
         <div class="hx-radio-control is-inline is-small">
@@ -331,19 +386,30 @@ export default {
         </div>
       </div>
     </div>
+
   </div>
-            `,
+</div>`,
         },
         {
           title: 'Checkboxes',
-          code: `
-  <p>Use checkboxes when looking for yes or no answers. The <code>for</code> attribute is necessary to bind our custom checkbox with the input. Add the input's <code>id</code> as the value of the <code>for</code> attribute of the label.</p>
-  <p>Checkboxes are in an <code>indeterminate</code> state when the
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate" target="_blank">indeterminate property of a checkbox is set to true by JavaScript</a>.
-  Alternatively, you can add/remove the <code>is-indeterminate</code> class.</p>
+          withContent: false,
+          code: `<div class="hx-card-content grid gap-4">
+  <p>
+    Use checkboxes when looking for yes or no answers. 
+    The <code>for</code> attribute is necessary to bind our custom checkbox with the input.
+    Add the input's <code>id</code> as the value of the <code>for</code> attribute of the label.
+  </p>
+  <p>
+    Checkboxes are in an <code>indeterminate</code> state when the
+    <a 
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate"
+      target="_blank"
+    >indeterminate property of a checkbox is set to true by JavaScript</a>.
+    Alternatively, you can add/remove the <code>is-indeterminate</code> class.
+  </p>
   
-  <div class="hx-columns">
-    <div class="hx-column is-3">
+  <div class="grid grid-cols-1 tablet:grid-cols-4 gap-4">
+    <div>
       <div class="hx-input-control">
         <div class="hx-checkbox-control">
           <input name="checkboxGroup1" type="checkbox" class="hx-checkbox" id="option1" />
@@ -363,7 +429,8 @@ export default {
         </div>
       </div>
     </div>
-    <div class="hx-column is-3">
+
+    <div>
       <div class="hx-input-control">
         <strong>Notification Settings</strong>
         <div class="hx-checkbox-control">
@@ -388,7 +455,8 @@ export default {
         </div>
       </div>
     </div>
-    <div class="hx-column is-3">
+
+    <div>
       <div class="hx-input-control is-small">
         <strong>Small Variation</strong>
         <div class="hx-checkbox-control">
@@ -418,7 +486,7 @@ export default {
       </div>
     </div>
   
-     <div class="hx-column is-3">
+    <div>
       <div class="hx-input-control is-danger is-small">
         <strong>Contextual</strong>
         <div class="hx-checkbox-control">
@@ -445,7 +513,7 @@ export default {
     </div>
   
   </div>
-            `,
+</div>`,
         },
         {
           title: 'Sizes',
@@ -454,7 +522,7 @@ export default {
   <p>Simply add class <code>.is-medium</code> to the base class <code>.hx-input-control</code>.</p>
   <br />
   <div class="hx-input-control is-medium">
-    <input class="hx-input" type="text" required>
+    <input class="hx-input legacy" type="text" required>
     <label class="hx-label">Full Name <sup>*</sup></label>
     <div class="hx-help">Please enter your full name</div>
   </div>
@@ -463,7 +531,7 @@ export default {
   <p>Simply add class <code>.is-large</code> to the base class <code>.hx-input-control</code>.</p>
   <br />
   <div class="hx-input-control is-large">
-  <input class="hx-input" type="text" required>
+  <input class="hx-input legacy" type="text" required>
   <label class="hx-label">Full Name <sup>*</sup></label>
   <div class="hx-help">Please enter your full name</div>
   </div>
@@ -476,7 +544,7 @@ export default {
     <div class="hx-column is-1">
       <div class="hx-input-group">
         <div class="hx-input-control">
-          <input class="hx-input" maxlength="2">
+          <input class="hx-input legacy" maxlength="2">
           <label class="hx-label"></label>
           <div class="hx-help"></div>
         </div>
@@ -488,7 +556,7 @@ export default {
     <div class="hx-column is-1">
       <div class="hx-input-group">
         <div class="hx-input-control">
-          <input class="hx-input" maxlength="3">
+          <input class="hx-input legacy" maxlength="3">
           <label class="hx-label"></label>
           <div class="hx-help"></div>
         </div>

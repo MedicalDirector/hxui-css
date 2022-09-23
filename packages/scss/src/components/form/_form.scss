@@ -1,0 +1,270 @@
+///////////
+// INPUT //
+///////////
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+/// MODERN
+.#{$namespace}-input {
+  @mixin input-control {
+    font: var(--b1, inherit);
+    position: relative;
+    padding: spacing.rem(1) spacing.px(2);
+    height: size.rem(32);
+    color: var(--color-foreground-default);
+
+    ///////////////
+    // MODIFIERS //
+    ///////////////
+
+    /// DEFAULT
+    &:not(.fullwidth) {
+      display: inline-flex;
+      min-width: 300px;
+    }
+
+    /// FULLWIDTH
+    &.fullwidth {
+      display: flex;
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  @mixin input-error {
+    border-color: var(--color-border-danger-emphasis);
+
+    &:focus {
+      border-color: var(--color-border-danger-emphasis);
+      outline-color: var(--color-border-danger-emphasis); //TODO: unhard
+    }
+  }
+
+  :where(.#{$namespace}-form-control).modern &,
+  &.modern {
+    @include input-control;
+
+    border-radius: 2px; //TODO: unhard
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2); //var(--color-border-default);
+    background-color: #fafafa; //TODO: unhard
+
+    &:focus {
+      border-color: var(--color-border-accent-emphasis);
+      outline-offset: 0;
+      outline: var(--color-border-accent-emphasis) solid 1px; //TODO: unhard
+    }
+
+    /// INVALID
+    /* not an error */
+    &:has(+ .#{$namespace}-input-group > .#{$namespace}-input:invalid),
+    &:has(+ .#{$namespace}-input:invalid) {
+      @include input-error;
+    }
+    /* not an error */
+  }
+
+  /// FULLWIDTH
+  :where(.#{$namespace}-form-control).fullwidth.modern &,
+  &.modern.fullwidth {
+    display: flex;
+    width: 100%;
+    min-width: unset;
+  }
+
+  /// INVALID
+  :where(.#{$namespace}-form-control).invalid.modern &,
+  &.modern.invalid {
+    @include input-error;
+  }
+
+  /// DISABLED
+  :where(.#{$namespace}-form-control).disabled.modern &,
+  :where(.#{$namespace}-form-control).modern &[disabled],
+  &.modern.disabled {
+    // @include input-error;
+    cursor: not-allowed;
+  }
+}
+
+/// LEGACY
+// :where(:not(.#{$namespace}-form-control.modern)) :not(.modern)
+.#{$namespace}-input,
+.#{$namespace}-textarea {
+  :where(.#{$namespace}-form-control):not(.modern) &,
+  :where(.#{$namespace}-input-control) & {
+    //,
+    // *:where(:not(.#{$namespace}-form-control)) & {
+    //},
+    // &:not(.modern) {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0 0.6rem;
+    font-family: $hx-font-family-sans-serif;
+    font-size: $hx-font-form-elements-size;
+    font-weight: $hx-font-form-elements-weight;
+    border: 1px solid $hx-input-border;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    background-color: $hx-input-background;
+    position: relative;
+
+    & + .#{$namespace}-label {
+      position: absolute;
+      top: 0.7rem;
+      margin: 0;
+      font-weight: normal;
+      color: $hx-color-gray-lighter;
+      left: 0;
+      transition: 0.3s;
+      z-index: 0;
+      pointer-events: none;
+
+      sup {
+        top: -0.2rem;
+        color: $hx-color-danger;
+        font-size: 0.7rem;
+        transition: 0.3s;
+      }
+
+      & + .#{$namespace}-help {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+        color: $hx-color-gray-light;
+        transition: 0.3s;
+        opacity: 0;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.4rem;
+          width: 0%;
+          height: 3px;
+          background-color: $hx-input-focus-border;
+          transition: 0.3s;
+          z-index: 1;
+        }
+
+        &::before {
+          left: 50%;
+        }
+
+        &::after {
+          right: 50%;
+        }
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .#{$namespace}-label,
+    &:valid ~ .#{$namespace}-label,
+    &:-webkit-autofill ~ .#{$namespace}-label {
+      top: $hx-font-form-label-focus-top;
+      font-size: 0.75rem;
+
+      sup {
+        top: -0.3rem;
+        font-size: 0.4rem;
+      }
+    }
+
+    &.has-label-floating ~ .#{$namespace}-label {
+      top: $hx-font-form-label-focus-top;
+      font-size: 0.75rem !important;
+
+      sup {
+        top: -0.3rem !important;
+        font-size: 0.4rem !important;
+      }
+    }
+
+    &.has-label-placeholder ~ .#{$namespace}-label {
+      top: 0.7rem !important;
+      font-size: $hx-font-form-elements-size;
+
+      sup {
+        top: -0.2rem initial !important;
+        font-size: 0.7rem initial !important;
+      }
+    }
+
+    &:focus ~ .#{$namespace}-label,
+    &:-webkit-autofill ~ .#{$namespace}-label {
+      color: $hx-color-primary;
+    }
+
+    &:focus ~ .#{$namespace}-help,
+  // &:valid ~ .#{$namespace}-help,
+  &:-webkit-autofill  ~ .#{$namespace}-label {
+      opacity: 1;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  .#{$namespace}-input {
+    &[disabled],
+    &.is-disabled {
+      border-color: $hx-input-disabled-border;
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
+
+      & ~ .#{$namespace}-label {
+        top: $hx-font-form-label-focus-top;
+        font-size: 0.75rem;
+        color: $hx-input-disabled;
+        cursor: $hx-cursor-disabled;
+
+        sup {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+
+  .#{$namespace}-textarea {
+    // display: initial;
+    padding: 0 0 0.6rem;
+    resize: vertical;
+    min-height: 3.5rem;
+    line-height: 1.3;
+    &:focus ~ .#{$namespace}-label,
+    &:valid ~ .#{$namespace}-label,
+    &:-webkit-autofill ~ .#{$namespace}-label {
+      top: -1.15rem;
+    }
+
+    ~ .#{$namespace}-label {
+      top: -1rem;
+      font-size: 0.75rem;
+
+      sup {
+        font-size: 0.4rem;
+      }
+    }
+
+    &[disabled],
+    &.is-disabled {
+      border-color: $hx-input-disabled-border;
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
+
+      & ~ .#{$namespace}-label {
+        color: $hx-input-disabled;
+        cursor: $hx-cursor-disabled;
+      }
+    }
+  }
+}

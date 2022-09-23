@@ -33,7 +33,10 @@ export default {
       examples: [
         {
           title: 'Toggle examples',
-          code: `<p>Default State</p>
+          withContent: false,
+          code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
+  <div class="flex items-center justify-center gap-2">
+  <p>Off</p>
   <div class="hx-toggle">
     <label>
       Off
@@ -43,7 +46,7 @@ export default {
     </label>
   </div>
   <br>
-  <p>Checked State</p>
+  <p>On</p>
   <div class="hx-toggle">
     <label>
       Off
@@ -53,7 +56,7 @@ export default {
     </label>
   </div>
   <br>
-  <p>Disabled State</p>
+  <p>Disabled</p>
   <div class="hx-toggle">
     <label>
       Off

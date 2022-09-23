@@ -1,0 +1,134 @@
+////////////
+// SELECT //
+////////////
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+/// LEGACY
+.#{$namespace}-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 0.8rem 0 0.6rem;
+  background-color: transparent;
+  font-size: $hx-font-form-elements-size;
+  font-weight: $hx-font-form-elements-weight;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  border-width: 0 0 1px;
+  position: relative;
+  outline: none;
+
+  &.ng-invalid.ng-dirty {
+    border-color: $hx-color-danger;
+    color: $hx-color-danger;
+
+    & + .#{$namespace}-label {
+      color: $hx-color-danger;
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    border-color: $hx-input-disabled-border;
+    color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
+
+    & ~ .#{$namespace}-label {
+      top: $hx-font-form-label-focus-top;
+      left: 0;
+      font-size: 0.75rem;
+      color: $hx-input-disabled;
+      cursor: $hx-cursor-disabled;
+
+      sup {
+        font-size: 0.4rem;
+      }
+    }
+  }
+
+  & + .#{$namespace}-label {
+    position: absolute;
+    top: $hx-font-form-label-focus-top;
+    left: 0;
+    font-size: 0.75rem;
+    z-index: 0;
+
+    sup {
+      color: $hx-color-red;
+      font-size: 0.6rem;
+    }
+    & + .#{$namespace}-help {
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      color: gray;
+      transition: 0.3s;
+    }
+  }
+
+  .option {
+    &::before,
+    &::after {
+      content: "1";
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &.has-badges {
+    transition: 0.3s;
+
+    &.is-active {
+      border-bottom: 3px solid $hx-color-primary;
+    }
+
+    input {
+      font-size: 1rem;
+      outline: none;
+      background-color: transparent;
+      display: block;
+      border: none;
+      line-height: 32px;
+      height: 32px;
+      transition: 0.3s;
+    }
+
+    > .icon {
+      color: $hx-color-primary;
+
+      &.animated {
+        animation-duration: 2s;
+      }
+    }
+
+    &.is-not-focus {
+      input {
+        height: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.#{$namespace}-select-control {
+  &::after {
+    position: absolute;
+    top: 1.35em;
+    right: 0.5em;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-top: 0.375em solid $hx-color-gray-lighter;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,59 @@
+///////////
+// LABEL //
+///////////
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+.#{$namespace}-label {
+  @mixin label-control {
+    font: var(--b2, inherit);
+    color: var(--color-foreground-default);
+    margin-bottom: spacing.rem(1);
+    display: flex;
+  }
+
+  @mixin label-required {
+    &::after {
+      content: "*";
+      color: var(--color-foreground-danger);
+      padding-left: 3px;
+    }
+  }
+
+  :where(.#{$namespace}-form-control).modern &,
+  &.modern {
+    @include label-control;
+
+    /// REQUIRED
+    /* not an error */
+    &:has(+ .#{$namespace}-input-group > .#{$namespace}-input:required),
+    &:has(+ .#{$namespace}-input:required) {
+      @include label-required;
+    }
+    /* not an error */
+  }
+
+  /// REQUIRED
+  :where(.#{$namespace}-form-control).required &,
+  &.required {
+    @include label-required;
+  }
+}
+
+//////////
+// HELP //
+//////////
+
+.#{$namespace}-help {
+  :where(.#{$namespace}-form-control).modern &,
+  &.modern {
+    font: var(--b2, inherit);
+    color: var(--color-foreground-subdued);
+    margin: spacing.rem(1) spacing.px(2) 0;
+    min-height: size.rem(20);
+    display: flex;
+  }
+}

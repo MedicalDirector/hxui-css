@@ -1,0 +1,142 @@
+///////////////////
+//  RADIO GROUP  //
+///////////////////
+
+@use "../../variables" as *;
+
+// Radio button container
+.#{$namespace}-radio-control {
+  &.is-inline {
+    display: inline-block;
+    margin-right: 0.7rem;
+
+    .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+    .#{$namespace}-radio:checked + .#{$namespace}-label {
+      padding-left: 1.7rem;
+    }
+  }
+
+  &.is-small {
+    $small: 0.8;
+
+    .#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+    .#{$namespace}-radio:checked + .#{$namespace}-label {
+      padding-left: (32px * $small);
+    }
+
+    .#{$namespace}-radio + .#{$namespace}-label:before,
+    .#{$namespace}-radio + .#{$namespace}-label:after {
+      left: 2px;
+      top: 2px;
+      margin: (4px * $small);
+      width: (18px * $small);
+      height: (18px * $small);
+    }
+  }
+}
+
+// Radio buttons
+.#{$namespace}-radio:not(:checked),
+.#{$namespace}-radio:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
+.#{$namespace}-radio:checked + .#{$namespace}-label {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: $hx-font-form-elements-size;
+  font-weight: $hx-font-form-elements-weight;
+  transition: 0.28s ease;
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  user-select: none;
+}
+
+.#{$namespace}-radio + .#{$namespace}-label:before,
+.#{$namespace}-radio + .#{$namespace}-label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px 4px 4px 0;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  transition: 0.28s ease;
+}
+
+/* Unchecked styles */
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after,
+.#{$namespace}-radio:checked + .#{$namespace}-label:before,
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  border-radius: 50%;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
+  border: 2px solid $hx-color-gray-lighter;
+}
+
+.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
+  transform: scale(0);
+}
+
+/* Checked styles */
+.#{$namespace}-radio:checked + .#{$namespace}-label:before {
+  border: 2px solid $hx-color-primary;
+}
+
+.#{$namespace}-radio:checked + .#{$namespace}-label:after {
+  border-color: $hx-color-primary;
+  background-color: $hx-color-primary;
+  transform: scale(0.5);
+}
+
+// /* Radio With gap */
+// [type="radio"].with-gap:checked + .#{$namespace}-label:after {
+//   transform: scale(.5);
+// }
+
+// /* Focused styles */
+// [type="radio"].tabbed:focus + .#{$namespace}-label:before {
+//   box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+// }
+
+// /* Disabled Radio With gap */
+// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:before {
+//   border: 2px solid $hx-input-disabled;
+// }
+
+// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:after {
+//   border: none;
+//   background-color: $hx-input-disabled;
+// }
+
+/* Disabled style */
+.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before,
+.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:before {
+  background-color: transparent;
+  border-color: $hx-input-disabled;
+  cursor: $hx-cursor-disabled;
+}
+
+.#{$namespace}-radio:disabled + .#{$namespace}-label {
+  color: $hx-input-disabled;
+  cursor: $hx-cursor-disabled;
+}
+
+.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before {
+  border-color: $hx-input-disabled;
+}
+
+.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:after {
+  background-color: $hx-input-disabled;
+  border-color: $hx-input-disabled;
+}

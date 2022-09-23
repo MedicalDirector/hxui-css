@@ -4,8 +4,8 @@
 
 @use "sass:color";
 
-@use "../variables" as *;
-@use "../mixins/text";
+@use "../../variables" as *;
+@use "../../mixins/text";
 
 .#{$namespace}-toggle,
 .#{$namespace}-toggle * {
