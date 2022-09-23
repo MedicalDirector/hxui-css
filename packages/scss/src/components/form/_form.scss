@@ -12,13 +12,17 @@
   @mixin input-control {
     font: var(--b1, inherit);
     position: relative;
-    padding: spacing.rem(1) spacing.px(2);
-    height: size.rem(32);
+    padding: size.rem(3) spacing.px(2);
     color: var(--color-foreground-default);
 
     ///////////////
     // MODIFIERS //
     ///////////////
+
+    /// Not TEXTAREA
+    &:not(textarea) {
+      height: size.rem(32);
+    }
 
     /// DEFAULT
     &:not(.fullwidth) {
@@ -43,14 +47,14 @@
     }
   }
 
-  :where(.#{$namespace}-form-control).modern &,
+  :where(.#{$namespace}-form-control) &,
   &.modern {
     @include input-control;
 
     border-radius: 2px; //TODO: unhard
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.2); //var(--color-border-default);
+    border-color: rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
     background-color: #fafafa; //TODO: unhard
 
     &:focus {
@@ -58,49 +62,54 @@
       outline-offset: 0;
       outline: var(--color-border-accent-emphasis) solid 1px; //TODO: unhard
     }
-
-    /// INVALID
-    /* not an error */
-    &:has(+ .#{$namespace}-input-group > .#{$namespace}-input:invalid),
-    &:has(+ .#{$namespace}-input:invalid) {
-      @include input-error;
-    }
-    /* not an error */
   }
 
+  ///////////////
+  // MODIFIERS //
+  ///////////////
+
   /// FULLWIDTH
-  :where(.#{$namespace}-form-control).fullwidth.modern &,
+  :where(.#{$namespace}-form-control).fullwidth &,
   &.modern.fullwidth {
     display: flex;
     width: 100%;
     min-width: unset;
   }
 
+  ////////////
+  // STATES //
+  ////////////
+
   /// INVALID
-  :where(.#{$namespace}-form-control).invalid.modern &,
-  &.modern.invalid {
+  :where(.#{$namespace}-form-control).invalid &,
+  &.modern.invalid,
+  :where(.#{$namespace}-form-control) &.ng-invalid.ng-dirty, // for Angular
+  &.modern.ng-invalid.ng-dirty {
+    // for Angular
     @include input-error;
   }
 
   /// DISABLED
-  :where(.#{$namespace}-form-control).disabled.modern &,
-  :where(.#{$namespace}-form-control).modern &[disabled],
+  :where(.#{$namespace}-form-control).disabled &,
+  :where(.#{$namespace}-form-control) &[disabled],
   &.modern.disabled {
-    // @include input-error;
     cursor: not-allowed;
   }
 }
 
-/// LEGACY
-// :where(:not(.#{$namespace}-form-control.modern)) :not(.modern)
+/// Is TEXTAREA
+:where(.#{$namespace}-form-control) textarea.#{$namespace}-input {
+  min-height: size.rem(80);
+  resize: vertical;
+}
+
+////////////
+// LEGACY //
+////////////
+
 .#{$namespace}-input,
 .#{$namespace}-textarea {
-  :where(.#{$namespace}-form-control):not(.modern) &,
   :where(.#{$namespace}-input-control) & {
-    //,
-    // *:where(:not(.#{$namespace}-form-control)) & {
-    //},
-    // &:not(.modern) {
     display: block;
     width: 100%;
     padding: 0.8rem 0 0.6rem;

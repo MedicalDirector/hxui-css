@@ -10,6 +10,7 @@
 .#{$namespace}-label {
   @mixin label-control {
     font: var(--b2, inherit);
+    font-weight: 500;
     color: var(--color-foreground-default);
     margin-bottom: spacing.rem(1);
     display: flex;
@@ -23,21 +24,14 @@
     }
   }
 
-  :where(.#{$namespace}-form-control).modern &,
+  :where(.#{$namespace}-form-control) &,
   &.modern {
     @include label-control;
-
-    /// REQUIRED
-    /* not an error */
-    &:has(+ .#{$namespace}-input-group > .#{$namespace}-input:required),
-    &:has(+ .#{$namespace}-input:required) {
-      @include label-required;
-    }
-    /* not an error */
   }
 
   /// REQUIRED
   :where(.#{$namespace}-form-control).required &,
+  :where(.#{$namespace}-form-control):has(.#{$namespace}-input:required) &,
   &.required {
     @include label-required;
   }
@@ -48,12 +42,18 @@
 //////////
 
 .#{$namespace}-help {
-  :where(.#{$namespace}-form-control).modern &,
+  :where(.#{$namespace}-form-control) &,
   &.modern {
     font: var(--b2, inherit);
     color: var(--color-foreground-subdued);
     margin: spacing.rem(1) spacing.px(2) 0;
     min-height: size.rem(20);
     display: flex;
+  }
+
+  /// INVALID
+  :where(.#{$namespace}-form-control):has(.#{$namespace}-input.ng-invalid.ng-dirty) &,
+  :where(.#{$namespace}-form-control).invalid & {
+    color: var(--color-foreground-danger);
   }
 }

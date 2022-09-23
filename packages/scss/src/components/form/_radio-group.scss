@@ -3,7 +3,110 @@
 ///////////////////
 
 @use "../../variables" as *;
+@use "../../functions/spacing";
+@use "../../functions/size";
 
+/// MODERN
+.#{$namespace}-radio {
+  :where(.#{$namespace}-form-control) & {
+    font: var(--b1, inherit);
+    align-items: center;
+    gap: spacing.px(2);
+    border-radius: 2px;
+    height: size.rem(32);
+    display: flex;
+
+    &:has(:focus-visible) {
+      outline-offset: 2px;
+      outline: var(--color-action-focus-ring) solid 2px; //TODO: unhard
+    }
+
+    &:not(input) {
+      font: var(--b1, inherit);
+    }
+
+    input[type="radio"] {
+      appearance: none;
+      margin: 0 0 0 spacing.rem(2);
+      color: $hx-color-gray-lighter;
+      width: size.rem(20);
+      height: size.rem(20);
+      border: 2px solid $hx-color-gray-lighter;
+      border-radius: 50%;
+      background-color: var(--form-background);
+      display: inline-grid;
+      place-content: center;
+
+      ////////////
+      // STATES //
+      ////////////
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+
+      /// UNCHECKED
+      &::before {
+        content: "";
+        width: size.rem(10);
+        height: size.rem(10);
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 150ms transform ease-in-out;
+        box-shadow: inset 1rem 1rem $hx-color-primary;
+      }
+
+      /// CHECKED
+      &:checked {
+        border: 2px solid $hx-color-primary;
+
+        &::before {
+          transform: scale(1);
+        }
+      }
+
+      /// DISABLED, UNCHECKED
+      &[disabled] {
+        border-color: $hx-input-disabled;
+        cursor: $hx-cursor-disabled;
+      }
+
+      /// DISABLED, CHECKED
+      &[disabled]:checked::before {
+        box-shadow: inset 1rem 1rem $hx-input-disabled;
+      }
+    }
+  }
+
+  ///////////////
+  // MODIFIERS //
+  ///////////////
+
+  :where(.#{$namespace}-form-control):not(.inline) > & {
+    display: flex;
+
+    &:not(:last-of-type) {
+      margin-bottom: spacing.rem(1);
+    }
+  }
+
+  :where(.#{$namespace}-form-control).inline > & {
+    display: inline-flex;
+
+    &:not(:last-of-type) {
+      margin-right: spacing.rem(4);
+    }
+  }
+
+  // TODO: invalid styles?
+}
+
+////////////
+// LEGACY //
+////////////
+
+// TODO: gracefully deprecate
 // Radio button container
 .#{$namespace}-radio-control {
   &.is-inline {
@@ -35,108 +138,94 @@
   }
 }
 
+// TODO: gracefully deprecate
 // Radio buttons
-.#{$namespace}-radio:not(:checked),
-.#{$namespace}-radio:checked {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-}
+/* stylelint-disable-next-line no-duplicate-selectors */
+.#{$namespace}-radio {
+  :where(.#{$namespace}-radio-control) & {
+    &:not(:checked),
+    &:checked {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+    }
 
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label,
-.#{$namespace}-radio:checked + .#{$namespace}-label {
-  position: relative;
-  padding-left: 32px;
-  cursor: pointer;
-  display: inline-block;
-  height: 25px;
-  line-height: 25px;
-  font-size: $hx-font-form-elements-size;
-  font-weight: $hx-font-form-elements-weight;
-  transition: 0.28s ease;
-  -khtml-user-select: none; /* webkit (konqueror) browsers */
-  user-select: none;
-}
+    &:not(:checked) + .#{$namespace}-label,
+    &:checked + .#{$namespace}-label {
+      position: relative;
+      padding-left: 32px;
+      cursor: pointer;
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      font-size: $hx-font-form-elements-size;
+      font-weight: $hx-font-form-elements-weight;
+      transition: 0.28s ease;
+      -khtml-user-select: none; /* webkit (konqueror) browsers */
+      user-select: none;
+    }
+  }
 
-.#{$namespace}-radio + .#{$namespace}-label:before,
-.#{$namespace}-radio + .#{$namespace}-label:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 4px 4px 4px 0;
-  width: 18px;
-  height: 18px;
-  z-index: 0;
-  transition: 0.28s ease;
-}
+  & + .#{$namespace}-label::before,
+  & + .#{$namespace}-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px 4px 4px 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    transition: 0.28s ease;
+  }
 
-/* Unchecked styles */
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after,
-.#{$namespace}-radio:checked + .#{$namespace}-label:before,
-.#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  border-radius: 50%;
-}
+  /* Unchecked styles */
+  &:not(:checked) + .#{$namespace}-label::before,
+  &:not(:checked) + .#{$namespace}-label::after,
+  &:checked + .#{$namespace}-label::before,
+  &:checked + .#{$namespace}-label::after {
+    border-radius: 50%;
+  }
 
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:before,
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
-  border: 2px solid $hx-color-gray-lighter;
-}
+  &:not(:checked) + .#{$namespace}-label::before,
+  &:not(:checked) + .#{$namespace}-label::after {
+    border: 2px solid $hx-color-gray-lighter;
+  }
 
-.#{$namespace}-radio:not(:checked) + .#{$namespace}-label:after {
-  transform: scale(0);
-}
+  &:not(:checked) + .#{$namespace}-label::after {
+    transform: scale(0);
+  }
 
-/* Checked styles */
-.#{$namespace}-radio:checked + .#{$namespace}-label:before {
-  border: 2px solid $hx-color-primary;
-}
+  /* Checked styles */
+  &:checked + .#{$namespace}-label::before {
+    border: 2px solid $hx-color-primary;
+  }
 
-.#{$namespace}-radio:checked + .#{$namespace}-label:after {
-  border-color: $hx-color-primary;
-  background-color: $hx-color-primary;
-  transform: scale(0.5);
-}
+  &:checked + .#{$namespace}-label::after {
+    border-color: $hx-color-primary;
+    background-color: $hx-color-primary;
+    transform: scale(0.5);
+  }
 
-// /* Radio With gap */
-// [type="radio"].with-gap:checked + .#{$namespace}-label:after {
-//   transform: scale(.5);
-// }
+  /* Disabled style */
+  &:disabled:not(:checked) + .#{$namespace}-label::before,
+  &:disabled:checked + .#{$namespace}-label::before {
+    background-color: transparent;
+    border-color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
+  }
 
-// /* Focused styles */
-// [type="radio"].tabbed:focus + .#{$namespace}-label:before {
-//   box-shadow: 0 0 0 10px rgba(0,0,0,.1);
-// }
+  &:disabled + .#{$namespace}-label {
+    color: $hx-input-disabled;
+    cursor: $hx-cursor-disabled;
+  }
 
-// /* Disabled Radio With gap */
-// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:before {
-//   border: 2px solid $hx-input-disabled;
-// }
+  &:disabled:not(:checked) + .#{$namespace}-label::before {
+    border-color: $hx-input-disabled;
+  }
 
-// .#{$namespace}-radio.with-gap:disabled:checked + .#{$namespace}-label:after {
-//   border: none;
-//   background-color: $hx-input-disabled;
-// }
-
-/* Disabled style */
-.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before,
-.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:before {
-  background-color: transparent;
-  border-color: $hx-input-disabled;
-  cursor: $hx-cursor-disabled;
-}
-
-.#{$namespace}-radio:disabled + .#{$namespace}-label {
-  color: $hx-input-disabled;
-  cursor: $hx-cursor-disabled;
-}
-
-.#{$namespace}-radio:disabled:not(:checked) + .#{$namespace}-label:before {
-  border-color: $hx-input-disabled;
-}
-
-.#{$namespace}-radio:disabled:checked + .#{$namespace}-label:after {
-  background-color: $hx-input-disabled;
-  border-color: $hx-input-disabled;
+  &:disabled:checked + .#{$namespace}-label::after {
+    background-color: $hx-input-disabled;
+    border-color: $hx-input-disabled;
+  }
 }

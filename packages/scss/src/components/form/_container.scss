@@ -31,7 +31,7 @@
 
 // Container
 // TODO: gracefully deprecate and rely on form control
-.#{$namespace}-input-control:not(.modern) {
+.#{$namespace}-input-control {
   position: relative;
   margin-bottom: 2rem;
 
@@ -391,25 +391,56 @@
 /////////////////
 // INPUT GROUP //
 /////////////////
-/// Not as substitute for wrapping label, input and help
+///
+/// Not a substitute for wrapping label, input and help
 /// For wrapping input directly and
-/// customising input with leading and lagging icons and actions
+/// customising input with leading and lagging icons and buttons
+///
+/// GOOD:
+/// <div class="hx-form-control">
+///   <label />
+///   <div class="hx-input-group">
+///     <i />
+///     <input />
+///     <button />
+///   </div>
+///   <span />
+/// </div>
+///
+/// GOOD:
+/// <div class="hx-form-control">
+///   <label />
+///   <input />
+///   <span />
+/// </div>
+///
+///
+/// BAD:
+/// <div class="hx-input-group">
+///   <label />
+///   <input />
+///   <span />
+/// </div>
+///
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .#{$namespace}-input-group {
-  :where(.#{$namespace}-form-control).modern &,
+  :where(.#{$namespace}-form-control) &,
   &.modern {
-    align-items: center;
-    flex-wrap: nowrap;
+    // for text inputs and textareas
+    &:has(.#{$namespace}-input) {
+      align-items: center;
+      flex-wrap: nowrap;
+      border-radius: 2px; //TODO: unhard
+      background-color: #fafafa; //TODO: unhard
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
 
-    &:focus-within {
-      box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
-      outline-offset: 0;
-      outline: var(--color-border-accent-emphasis) solid 2px; //TODO: unhard
+      &:focus-within {
+        box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
+        outline-offset: 0;
+        outline: var(--color-border-accent-emphasis) solid 2px; //TODO: unhard
+      }
     }
-
-    border-radius: 2px; //TODO: unhard
-    background-color: #fafafa; //TODO: unhard
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); //var(--color-border-default);
 
     // start icon, specifically not targeting buttons
     > .#{$namespace}-icon-control {
@@ -456,10 +487,23 @@
       flex-grow: 1;
       min-width: unset;
     }
+
+    /// INLINE (for radios and checkboxes)
+    &:not(.inline):has(.#{$namespace}-radio, .#{$namespace}-checkbox) {
+      display: flex;
+      flex-direction: column;
+      gap: spacing.rem(1);
+    }
+
+    &.inline {
+      display: flex;
+      flex-direction: row;
+      gap: spacing.rem(4);
+    }
   }
 
   /// FULLWIDTH
-  :where(.#{$namespace}-form-control).modern.fullwidth & {
+  :where(.#{$namespace}-form-control).fullwidth & {
     display: flex;
     flex-grow: 1;
   }
@@ -469,17 +513,23 @@
   ////////////
 
   /// DISABLED
-  :where(.#{$namespace}-form-control).modern &:has([disabled]) {
+  :where(.#{$namespace}-form-control) &:has([disabled]),
+  :where(.#{$namespace}-form-control).disabled {
     cursor: not-allowed;
   }
 
   /// INVALID
-  :where(.#{$namespace}-form-control).modern.invalid & {
-    box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
+  :where(.#{$namespace}-form-control).invalid &,
+  :where(.#{$namespace}-form-control) &:has(.ng-invalid.ng-dirty:not(.disabled, [disabled])) {
+    // for Angular
+    // for text inputs and textareas
+    &:has(.#{$namespace}-input) {
+      box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
 
-    &:focus-within {
-      outline-offset: 0;
-      outline: var(--color-border-danger-emphasis) solid 2px; //TODO: unhard
+      &:focus-within {
+        outline-offset: 0;
+        outline: var(--color-border-danger-emphasis) solid 2px; //TODO: unhard
+      }
     }
   }
 }
