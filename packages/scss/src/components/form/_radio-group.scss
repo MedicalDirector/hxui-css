@@ -23,19 +23,22 @@
 
     &:not(input) {
       font: var(--b1, inherit);
+      padding-right: spacing.rem(2);
     }
 
     input[type="radio"] {
       appearance: none;
       margin: 0 0 0 spacing.rem(2);
-      color: $hx-color-gray-lighter;
+      color: $hx-color-gray-lighter; //TODO: unhard
       width: size.rem(20);
       height: size.rem(20);
-      border: 2px solid $hx-color-gray-lighter;
-      border-radius: 50%;
-      background-color: var(--form-background);
+      border: 2px solid $hx-color-gray-lighter; //TODO: unhard
+      background-color: hsl(0, 0%, 100%); //TODO: unhard
       display: inline-grid;
       place-content: center;
+
+      /* stylelint-disable-next-line declaration-empty-line-before */
+      border-radius: 50%;
 
       ////////////
       // STATES //
@@ -51,15 +54,17 @@
         content: "";
         width: size.rem(10);
         height: size.rem(10);
-        border-radius: 50%;
         transform: scale(0);
         transition: 150ms transform ease-in-out;
         box-shadow: inset 1rem 1rem $hx-color-primary;
+
+        /* stylelint-disable-next-line declaration-empty-line-before */
+        border-radius: 50%;
       }
 
       /// CHECKED
       &:checked {
-        border: 2px solid $hx-color-primary;
+        border-color: $hx-color-primary;
 
         &::before {
           transform: scale(1);
@@ -83,19 +88,19 @@
   // MODIFIERS //
   ///////////////
 
-  :where(.#{$namespace}-form-control):not(.inline) > & {
+  :where(.#{$namespace}-form-control):not(.stack) > & {
+    display: inline-flex;
+
+    &:not(:last-of-type) {
+      margin-right: spacing.rem(2); // already effectively applying "2" from right item padding
+    }
+  }
+
+  :where(.#{$namespace}-form-control).stack > & {
     display: flex;
 
     &:not(:last-of-type) {
       margin-bottom: spacing.rem(1);
-    }
-  }
-
-  :where(.#{$namespace}-form-control).inline > & {
-    display: inline-flex;
-
-    &:not(:last-of-type) {
-      margin-right: spacing.rem(4);
     }
   }
 

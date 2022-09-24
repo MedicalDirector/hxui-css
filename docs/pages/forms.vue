@@ -38,7 +38,7 @@ export default {
         {
           title: 'Input field',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card-content grid tablet:grid-cols-2 gap-4">
   <div class="hx-form-control fullwidth">
     <label class="hx-label" for="input-2">Full Name</label>
     <input class="hx-input" id="input-2" type="text" required>
@@ -69,7 +69,7 @@ export default {
     <span class="hx-help">Please enter your full name</span>
   </div>
     
-  <div class="hx-form-control fullwidth">
+  <div class="hx-form-control stack fullwidth">
     <label class="hx-label" for="input-radio-1">
       Full Name
     </label>
@@ -135,6 +135,35 @@ export default {
         <input name="input-check-2" type="checkbox" id="no" />
         No
       </label>
+    </div>
+    <span class="hx-help">
+      Please enter your full name
+    </span>
+  </div>
+</div>
+
+<div 
+  class="hx-card-content grid tablet:grid-cols-2 gap-4" 
+  style="background-color: var(--color-surface-background-default); box-shadow: 0 -1px 0 rgb(0 0 0 / 10%);"
+>
+  <div class="hx-form-control fullwidth">
+    <label class="hx-label" for="input-2">Full Name</label>
+    <input class="hx-input contrast" id="input-2" type="text" required>
+    <span class="hx-help">Please enter your full name</span>
+  </div>
+
+  <div class="hx-form-control fullwidth">
+    <label class="hx-label" for="input-3">Full Name</label>
+    <div class="hx-input-group contrast">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-search"></i>
+      </span>
+      <input class="hx-input" id="input-3" type="text" required>
+      <button class="hx-button flat icon">
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-plus"></i>
+        </span>
+      </button>
     </div>
     <span class="hx-help">
       Please enter your full name

@@ -1,6 +1,12 @@
-// TODO: remove: insane perf issues!!
+@use "./deprecate" as *;
+
 @mixin all($time) {
-  transition: all $time ease-in-out;
+  @include deprecate(
+    "2.0.0",
+    "Use alternate mixin or be specific with transition property. 'All' has performance issues."
+  ) {
+    transition: all $time ease-in-out;
+  }
 }
 
 @mixin colors {

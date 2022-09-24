@@ -11,6 +11,7 @@
 // FORM CONTROL //
 //////////////////
 
+/// MODERN
 .#{$namespace}-form-control {
   &.block {
     margin-bottom: spacing.rem(4);
@@ -18,6 +19,14 @@
 
   &.fullwidth {
     width: 100%;
+  }
+
+  &:not(:has(.#{$namespace}-label)):not(.no-label) {
+    padding-top: size.rem(24);
+  }
+
+  &:not(:has(.#{$namespace}-help)):not(.no-help) {
+    padding-bottom: size.rem(24);
   }
 }
 
@@ -432,13 +441,20 @@
       align-items: center;
       flex-wrap: nowrap;
       border-radius: 2px; //TODO: unhard
-      background-color: #fafafa; //TODO: unhard
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
+      background-color: var(--color-surface-background-default); //TODO: unhard
+      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      height: size.rem(32);
+
+      &.contrast {
+        background-color: hsl(0, 0%, 100%); //TODO: unhard
+      }
 
       &:focus-within {
-        box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
+        // box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
+        border: 1px solid var(--color-border-accent-emphasis);
         outline-offset: 0;
-        outline: var(--color-border-accent-emphasis) solid 2px; //TODO: unhard
+        outline: var(--color-border-accent-emphasis) solid 1px; //TODO: unhard
       }
     }
 
@@ -457,6 +473,10 @@
       border: none;
       background-color: transparent;
 
+      &.contrast {
+        background-color: transparent;
+      }
+
       &:focus,
       &:focus-visible {
         outline: 0;
@@ -465,6 +485,17 @@
 
     // actions
     .#{$namespace}-button {
+      border-top-width: 0;
+      border-bottom-width: 0;
+
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active {
+        border-top-width: 0;
+        border-bottom-width: 0;
+      }
+
       &:focus-visible {
         outline-offset: 0;
         outline-color: var(--color-border-accent-emphasis);
@@ -478,7 +509,7 @@
     /// DEFAULT
     &:not(.fullwidth) {
       display: inline-flex;
-      min-width: 300px;
+      min-width: min(300px, 100%);
     }
 
     /// FULLWIDTH
@@ -488,17 +519,17 @@
       min-width: unset;
     }
 
-    /// INLINE (for radios and checkboxes)
-    &:not(.inline):has(.#{$namespace}-radio, .#{$namespace}-checkbox) {
-      display: flex;
-      flex-direction: column;
-      gap: spacing.rem(1);
-    }
-
-    &.inline {
+    /// STACKED (for radios and checkboxes)
+    &:not(.stack):has(.#{$namespace}-radio, .#{$namespace}-checkbox) {
       display: flex;
       flex-direction: row;
       gap: spacing.rem(4);
+    }
+
+    &.stack {
+      display: flex;
+      flex-direction: column;
+      gap: spacing.rem(1);
     }
   }
 
@@ -519,12 +550,13 @@
   }
 
   /// INVALID
-  :where(.#{$namespace}-form-control).invalid &,
+  :where(.#{$namespace}-form-control).invalid:not(:has(.disabled, [disabled])) &,
   :where(.#{$namespace}-form-control) &:has(.ng-invalid.ng-dirty:not(.disabled, [disabled])) {
     // for Angular
     // for text inputs and textareas
     &:has(.#{$namespace}-input) {
-      box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
+      // box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
+      border: 1px solid var(--color-border-danger-emphasis);
 
       &:focus-within {
         outline-offset: 0;

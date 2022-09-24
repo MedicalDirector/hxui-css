@@ -27,7 +27,7 @@
     /// DEFAULT
     &:not(.fullwidth) {
       display: inline-flex;
-      min-width: 300px;
+      min-width: min(300px, 100%);
     }
 
     /// FULLWIDTH
@@ -55,7 +55,11 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
-    background-color: #fafafa; //TODO: unhard
+    background-color: var(--color-surface-background-default); //TODO: unhard
+
+    &.contrast {
+      background-color: hsl(0, 0%, 100%); //TODO: unhard
+    }
 
     &:focus {
       border-color: var(--color-border-accent-emphasis);
@@ -99,7 +103,7 @@
 
 /// Is TEXTAREA
 :where(.#{$namespace}-form-control) textarea.#{$namespace}-input {
-  min-height: size.rem(80);
+  min-height: size.rem(68); // 2 radios / checkboxes stacked; else 80px for 3 lines without overflow
   resize: vertical;
 }
 
@@ -212,8 +216,8 @@
     }
 
     &:focus ~ .#{$namespace}-help,
-  // &:valid ~ .#{$namespace}-help,
-  &:-webkit-autofill  ~ .#{$namespace}-label {
+    // &:valid ~ .#{$namespace}-help,
+    &:-webkit-autofill  ~ .#{$namespace}-label {
       opacity: 1;
 
       &::before,
@@ -222,8 +226,11 @@
       }
     }
   }
+}
 
-  .#{$namespace}-input {
+/* stylelint-disable-next-line no-duplicate-selectors */
+.#{$namespace}-input {
+  :where(.#{$namespace}-input-control) & {
     &[disabled],
     &.is-disabled {
       border-color: $hx-input-disabled-border;
@@ -242,8 +249,10 @@
       }
     }
   }
+}
 
-  .#{$namespace}-textarea {
+.#{$namespace}-textarea {
+  :where(.#{$namespace}-input-control) & {
     // display: initial;
     padding: 0 0 0.6rem;
     resize: vertical;

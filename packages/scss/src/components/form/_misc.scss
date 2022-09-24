@@ -24,14 +24,13 @@
     }
   }
 
-  :where(.#{$namespace}-form-control) &,
-  &.modern {
+  :where(.#{$namespace}-form-control) & {
     @include label-control;
   }
 
   /// REQUIRED
   :where(.#{$namespace}-form-control).required &,
-  :where(.#{$namespace}-form-control):has(.#{$namespace}-input:required) &,
+  :where(.#{$namespace}-form-control):has(:required) &,
   &.required {
     @include label-required;
   }
@@ -42,8 +41,7 @@
 //////////
 
 .#{$namespace}-help {
-  :where(.#{$namespace}-form-control) &,
-  &.modern {
+  :where(.#{$namespace}-form-control) & {
     font: var(--b2, inherit);
     color: var(--color-foreground-subdued);
     margin: spacing.rem(1) spacing.px(2) 0;
@@ -52,8 +50,13 @@
   }
 
   /// INVALID
-  :where(.#{$namespace}-form-control):has(.#{$namespace}-input.ng-invalid.ng-dirty) &,
-  :where(.#{$namespace}-form-control).invalid & {
+  :where(.#{$namespace}-form-control):has(.ng-invalid.ng-dirty:not(.disabled, [disabled])) &,
+  :where(.#{$namespace}-form-control).invalid:not(:has(.disabled, [disabled])) & {
     color: var(--color-foreground-danger);
+  }
+
+  /// DISABLED
+  :where(.#{$namespace}-form-control):has(.disabled, [disabled]) & {
+    color: var(--color-foreground-muted);
   }
 }
