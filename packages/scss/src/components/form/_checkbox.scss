@@ -129,6 +129,7 @@
   // MODIFIERS //
   ///////////////
 
+  /// NOT STACKED
   :where(.#{$namespace}-form-control):not(.stack) > & {
     display: inline-flex;
 
@@ -137,6 +138,7 @@
     }
   }
 
+  /// STACKED
   :where(.#{$namespace}-form-control).stack > & {
     display: flex;
 

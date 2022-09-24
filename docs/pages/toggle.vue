@@ -35,7 +35,6 @@ export default {
           title: 'Toggle examples',
           withContent: false,
           code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
-  <div class="flex items-center justify-center gap-2">
   <p>Off</p>
   <div class="hx-toggle">
     <label>
@@ -45,7 +44,7 @@ export default {
       On
     </label>
   </div>
-  <br>
+
   <p>On</p>
   <div class="hx-toggle">
     <label>
@@ -55,16 +54,38 @@ export default {
       On
     </label>
   </div>
-  <br>
+  
   <p>Disabled</p>
   <div class="hx-toggle">
     <label>
-      Off
+      Enable option
       <input disabled type="checkbox">
       <span class="lever"></span>
       On
     </label>
-  </div>`,
+  </div>
+
+  <label class="hx-toggle">
+    <span>Off switch</span>
+    <input type="checkbox" role="switch">
+    <span class="on" aria-hidden="true">On</span>
+    <span class="off" aria-hidden="true">Off</span>
+  </label>
+
+  <label class="hx-toggle">
+    <span>On switch</span>
+    <input type="checkbox" role="switch" checked>
+    <span class="on" aria-hidden="true">On</span>
+    <span class="off" aria-hidden="true">Off</span>
+  </label>
+  
+  <label class="hx-toggle">
+    <span>Disabled switch</span>
+    <input disabled type="checkbox" role="switch">
+    <span class="on" aria-hidden="true">On</span>
+    <span class="off" aria-hidden="true">Off</span>
+  </label>
+</div>`,
         },
       ],
     }

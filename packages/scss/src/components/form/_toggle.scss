@@ -6,81 +6,213 @@
 
 @use "../../variables" as *;
 @use "../../mixins/text";
+@use "../../functions/size";
+@use "../../functions/spacing";
 
-.#{$namespace}-toggle,
-.#{$namespace}-toggle * {
+/// MODERN
+.#{$namespace}-toggle:has(input[type="checkbox"][role="switch"]) {
+  position: relative;
+  display: inline-flex;
+  gap: spacing.px(2);
+  font: var(--b1, inherit);
+  align-items: center;
+  height: size.rem(32);
+  cursor: pointer;
+
+  &:has([disabled], [aria-disabled="true"]) {
+    cursor: not-allowed;
+  }
+
+  ///////////////
+  // MODIFIERS //
+  ///////////////
+
+  /// FULLWIDTH
+  :where(.#{$namespace}-form-control).fullwidth & {
+    display: flex;
+  }
+
+  /////////////
+  // "LABEL" //
+  /////////////
+
+  span:not(.on, .off) {
+    flex: 1 0 0%;
+  }
+
+  ///////////
+  // LEVER //
+  ///////////
+
+  input[type="checkbox"][role="switch"] {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: size.rem(32);
+    padding: 0 spacing.rem(1);
+    border-radius: 2px;
+    transition: background-color 150ms ease;
+    margin: 0;
+
+    /// UNCHECKED
+    // track
+    &::before {
+      content: "";
+      position: relative;
+      width: size.rem(32);
+      height: size.rem(14);
+      background-color: $hx-color-gray-lightest; // TODO: unhard
+      border-radius: size.rem(16);
+      transition: background-color 150ms ease;
+    }
+
+    // thumb
+    &::after {
+      content: "";
+      position: absolute;
+      width: size.rem(20);
+      height: size.rem(20);
+      background-color: $hx-color-white;
+      border-radius: 50%;
+      border: 1px solid var(--color-border-default); // TODO: unhard
+      left: 0;
+      transition: left 150ms ease, background-color 150ms ease, box-shadow 75ms ease;
+    }
+
+    /// CHECKED
+    &:checked {
+      // track
+      &::before {
+        background-color: $hx-color-primary;
+      }
+
+      // thumb
+      &::after {
+        left: calc(100% - size.rem(20));
+      }
+    }
+
+    /// DISABLED
+    &[disabled],
+    &[aria-disabled="true"] {
+      cursor: not-allowed;
+
+      // track
+      &::before {
+        background-color: $hx-color-gray-lightest;
+      }
+
+      // thumb
+      &::after {
+        background-color: $hx-color-gray-lightest;
+      }
+    }
+  }
+
+  ///////////
+  // STATE //
+  ///////////
+
+  .on,
+  .off {
+    font: var(--b2, inherit);
+    color: var(--color-foreground-subdued);
+    @include text.no-copy;
+  }
+
+  &:has(:checked) {
+    .on:not([aria-hidden="true"]),
+    .off {
+      display: none;
+    }
+  }
+
+  &:not(:has(:checked)) {
+    .on,
+    .off:not([aria-hidden="true"]) {
+      display: none;
+    }
+  }
+}
+
+/// LEGACY
+.#{$namespace}-toggle:not(:has(input[role="switch"])),
+.#{$namespace}-toggle:not(:has(input[role="switch"])) * {
   @include text.no-copy;
 
   margin: 0.7rem 0;
 }
 
-.#{$namespace}-toggle label {
-  cursor: pointer;
-  font-size: 0.8rem;
-}
+.#{$namespace}-toggle:not(:has(input[role="switch"])) {
+  label {
+    cursor: pointer;
+    font-size: 0.8rem;
 
-.#{$namespace}-toggle label input[type="checkbox"] {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
 
-  &:checked + .lever {
-    background-color: $hx-color-primary;
+      // Switch active style
+      &:not(:disabled) ~ .lever:active::after,
+      &:not(:disabled).tabbed:focus ~ .lever::after {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
+      }
 
-    &::after {
-      background-color: $hx-color-white;
-      left: 21px;
+      &:checked + .lever {
+        background-color: $hx-color-primary;
+
+        &::after {
+          background-color: $hx-color-white;
+          left: 21px;
+        }
+      }
+
+      &:checked:not(:disabled) ~ .lever:active::after,
+      &:checked:not(:disabled).tabbed:focus ~ .lever::after {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(65, 185, 135, 0.2);
+      }
+
+      // Disabled Styles
+      &[disabled] + .lever {
+        cursor: $hx-cursor-disabled;
+        background-color: color.scale($hx-color-gray-lightest, $lightness: -10%);
+      }
+
+      &[disabled] + .lever::after,
+      &[disabled]:checked + .lever::after {
+        background-color: color.scale($hx-color-gray-lightest, $lightness: -2%);
+        cursor: $hx-cursor-disabled;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .lever {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 35px;
+      height: 15px;
+      background-color: $hx-color-gray-light;
+      border-radius: 15px;
+      transition: background 0.3s ease;
+      vertical-align: middle;
+      margin: 0 16px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        background-color: $hx-color-gray-lightest;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+        left: -5px;
+        top: -3px;
+        transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
+      }
     }
   }
-}
-
-.#{$namespace}-toggle label .lever {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 35px;
-  height: 15px;
-  background-color: $hx-color-gray-light;
-  border-radius: 15px;
-  transition: background 0.3s ease;
-  vertical-align: middle;
-  margin: 0 16px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 21px;
-    height: 21px;
-    background-color: $hx-color-gray-lightest;
-    border-radius: 21px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
-    left: -5px;
-    top: -3px;
-    transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
-  }
-}
-
-// Switch active style
-input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::after,
-input[type="checkbox"]:checked:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(65, 185, 135, 0.2);
-}
-
-input[type="checkbox"]:not(:disabled) ~ .lever:active::after,
-input[type="checkbox"]:not(:disabled).tabbed:focus ~ .lever::after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
-}
-
-// Disabled Styles
-.#{$namespace}-toggle input[type="checkbox"][disabled] + .lever {
-  cursor: $hx-cursor-disabled;
-  background-color: color.scale($hx-color-gray-lightest, $lightness: -10%);
-}
-
-.#{$namespace}-toggle label input[type="checkbox"][disabled] + .lever:after,
-.#{$namespace}-toggle label input[type="checkbox"][disabled]:checked + .lever:after {
-  background-color: color.scale($hx-color-gray-lightest, $lightness: -2%);
-  cursor: $hx-cursor-disabled;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
 }

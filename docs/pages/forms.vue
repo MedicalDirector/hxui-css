@@ -140,6 +140,33 @@ export default {
       Please enter your full name
     </span>
   </div>
+
+  <div class="hx-form-control fullwidth">
+    <label class="hx-toggle">
+      <span>Off switch</span>
+      <input type="checkbox" role="switch">
+      <span class="on" aria-hidden="true">On</span>
+      <span class="off" aria-hidden="true">Off</span>
+    </label>
+  </div>
+
+  <div class="hx-form-control fullwidth">
+    <label class="hx-toggle">
+      <span>On switch</span>
+      <span class="on" aria-hidden="true">On</span>
+      <span class="off" aria-hidden="true">Off</span>
+      <input type="checkbox" role="switch" checked>
+    </label>
+  </div>
+
+  <div class="hx-form-control fullwidth">
+    <label class="hx-toggle">
+      <span>Disabled switch</span>
+      <span class="on" aria-hidden="true">On</span>
+      <span class="off" aria-hidden="true">Off</span>
+      <input disabled type="checkbox" role="switch">
+    </label>
+  </div>
 </div>
 
 <div 
