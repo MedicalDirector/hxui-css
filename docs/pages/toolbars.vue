@@ -281,24 +281,36 @@ export default {
           title: 'Sizes',
           code: `<p>Toolbar supports 3 sizes.</p>
 <p class="prose">(default)</p>
-<div class="hx-toolbar--modern is-info">
+<div class="hx-toolbar--modern bg-info-emphasis fg-contrast">
   <span>Title</span>
   <div class="hx-spacer"></div>
-  <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  <button class="hx-button flat">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-more"></i>
+    </span>
+  </button>
 </div>
 
 <p class="prose"><code>.compact</code></p>
-<div class="hx-toolbar--modern is-info compact mt-2">
+<div class="hx-toolbar--modern bg-info-emphasis fg-contrast compact mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
-  <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  <button class="hx-button flat">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-more"></i>
+    </span>
+  </button>
 </div>
 
 <p class="prose"><code>.comfortable</code></p>
-<div class="hx-toolbar--modern is-info comfortable mt-2">
+<div class="hx-toolbar--modern bg-info-emphasis fg-contrast comfortable mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
-  <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
+  <button class="hx-button flat">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-more"></i>
+    </span>
+  </button>
 </div>
             `,
         },

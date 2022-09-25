@@ -3,6 +3,11 @@
 @use "sass:list";
 
 @use "../variables" as *;
+
+@forward "@hxui/tokens/dist/scss/color" with (
+  $namespace: $namespace
+);
+
 @use "../functions/color";
 @use "../mixins/gradient";
 
@@ -201,3 +206,35 @@
 .#{$namespace}-bg-info-pattern {
   background: repeating-linear-gradient(45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px);
 }
+
+// // --color startswith only
+
+// // --color-surface only
+// .#{$namespace}-bg-,
+// .bg- {
+//   background-color: var(--color-surface);
+// }
+// .\!#{$namespace}-bg-,
+// .\!bg- {
+//   background-color: var(--color-surface) !important;
+// }
+
+// // --color-border only
+// .#{$namespace}-bdr-,
+// .bdr- {
+//   border-color: var(--color-border);
+// }
+// .\!#{$namespace}-bdr-,
+// .\!bdr- {
+//   border-color: var(--color-border) !important;
+// }
+
+// // --color-foreground only
+// .#{$namespace}-fg-,
+// .fg- {
+//   color: var(--color-border);
+// }
+// .\!#{$namespace}-fg-,
+// .\!fg- {
+//   color: var(--color-border) !important;
+// }

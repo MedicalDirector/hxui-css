@@ -33,6 +33,7 @@ const {
 const cssVariables = require('../formats/css-variables.cjs')
 const scssVariablesMixin = require('../formats/scss-variables-mixin.cjs')
 const typographyClasses = require('../formats/typography-classes.cjs')
+const colorClasses = require('../formats/color-classes.cjs')
 
 const StyleDictionary = require('style-dictionary')
 
@@ -65,6 +66,16 @@ StyleDictionary.registerTransformGroup({
   ],
 })
 StyleDictionary.registerTransformGroup({
+  name: 'css/colorClasses',
+  transforms: [
+    'name/cti/kebab',
+    'name/tokenRename',
+    'color/hexrgba',
+    'color/hslrgba',
+    // 'type/classes',
+  ],
+})
+StyleDictionary.registerTransformGroup({
   name: 'webVariables',
   transforms: [
     'attribute/cti',
@@ -85,6 +96,7 @@ StyleDictionary.registerTransformGroup({
 StyleDictionary.registerFormat(cssVariables)
 StyleDictionary.registerFormat(scssVariablesMixin)
 StyleDictionary.registerFormat(typographyClasses)
+StyleDictionary.registerFormat(colorClasses)
 
 /////////
 // CLI //
@@ -170,6 +182,12 @@ function build() {
     )
     buildTypography.buildAllPlatforms()
 
+    console.log(`\n\n🌈🌙 Building color classes for ${name} mode...`)
+    const buildColor = StyleDictionary.extend(
+      getColorConfig(inputPath, outputPath, themes, baseOnly)
+    )
+    buildColor.buildAllPlatforms()
+
     console.log('\n==============================================')
     console.log('\n✅ Build completed!')
   } else {
@@ -223,6 +241,63 @@ function getTypographyConfig(
             destination: `scss/_typography.scss`,
             format: 'css/typographyClasses',
             filter: token => token.type === 'typography',
+          },
+        ],
+      },
+    },
+  }
+}
+
+function getColorConfig(inputPath, outputPath, allThemes, baseOnly = false) {
+  const colorFilter = token =>
+    !token.path[token.path.length - 1].startsWith('_') &&
+    token.type === 'color' &&
+    token.path.includes('semantic') &&
+    !token.path.includes('action')
+
+  return {
+    // include is for baseline tokens
+    include: [
+      `${inputPath}/global/opacity/**/*base.json`,
+      `${inputPath}/global/color/**/*base.json`,
+      `${inputPath}/semantic/color/**/*base.json`,
+    ],
+    ...(allThemes?.length || !baseOnly
+      ? {
+          // source is for overrides to baseline tokens
+          source: [
+            `${inputPath}/global/color/**/*(${allThemes.join(`|*.`)}).json`,
+            `${inputPath}/semantic/color/**/*(${allThemes.join(`|*.`)}).json`,
+          ],
+        }
+      : {}),
+
+    platforms: {
+      // css: {
+      //   transformGroup: 'css/colorClasses',
+      //   buildPath: outputPath,
+      //   files: [
+      //     {
+      //       destination: `css/color.css`,
+      //       format: 'css/colorClasses',
+      //       filter: token => colorFilter(token),
+      //       options: {
+      //         outputReferences: true,
+      //       },
+      //     },
+      //   ],
+      // },
+      scss: {
+        transformGroup: 'css/colorClasses',
+        buildPath: outputPath,
+        files: [
+          {
+            destination: `scss/_color.scss`,
+            format: 'css/colorClasses',
+            filter: token => colorFilter(token),
+            // options: {
+            //   outputReferences: true,
+            // },
           },
         ],
       },
