@@ -2,7 +2,59 @@
 //  TOOLBAR  //
 ///////////////
 
-@use "../variables" as *;
+@use "../../variables" as *;
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+.#{$namespace}-toolbar--modern {
+  display: flex;
+  align-items: center;
+  gap: spacing.px(2);
+  border-width: 1px 0;
+  border-color: transparent;
+  border-style: solid;
+
+  ///////////
+  // SIZES //
+  ///////////
+
+  // default
+  padding: size.rem(7) spacing.px(4);
+
+  &.comfortable {
+    padding: size.rem(15) spacing.px(4);
+  }
+
+  &.compact {
+    padding: spacing.rem(0) spacing.px(4);
+  }
+
+  ///////////////
+  // MODIFIERS //
+  ///////////////
+
+  // perforated borders
+  &.is-perforated,
+  &.perforated-b,
+  &.perforated:not(:last-of-type) {
+    border-bottom: 1px dashed $hx-border-color;
+  }
+
+  &.perforated-t {
+    border-top: 1px dashed $hx-border-color;
+  }
+
+  // solid borders
+  &.is-divided,
+  &.solid-t,
+  &.solid:not(:first-of-type) {
+    border-top: 1px solid $hx-border-color;
+  }
+
+  &.solid-b {
+    border-bottom: 1px solid $hx-border-color;
+  }
+}
 
 .#{$namespace}-toolbar {
   display: flex;
