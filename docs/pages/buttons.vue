@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Buttons</h1>
       <h2 class="hx-subtitle">
         The classic button, in different colors, sizes, and states
@@ -135,7 +135,7 @@ export default {
           withContent: false,
           code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
   <div class="flex items-center justify-center gap-2">
-    <p class="content inline-block">Hover</p>
+    <p class="prose inline-block">Hover</p>
     <button class="hx-button hover">
       <span>Hover</span>
     </button>
@@ -154,7 +154,7 @@ export default {
   </div>
 
   <div class="flex items-center justify-center gap-2">
-    <p class="content inline-block">Focus</p>
+    <p class="prose inline-block">Focus</p>
     <button class="hx-button focus">
       <span>Focus</span>
     </button>
@@ -173,7 +173,7 @@ export default {
   </div>
 
   <div class="flex items-center justify-center gap-2">
-    <p class="content inline-block">Active</p>
+    <p class="prose inline-block">Active</p>
     <button class="hx-button active">
       <span>Active</span>
     </button>
@@ -358,7 +358,7 @@ export default {
     </div>
   </div>
   
-  <p class="text-center content">
+  <p class="text-center prose">
     Occupy the full width of the container by adding <code>.fullwidth</code> to the group.
   </p>
   

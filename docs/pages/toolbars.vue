@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Toolbars</h1>
       <h2 class="hx-subtitle">
         The toolbar component is a container for headers, titles, or actions.

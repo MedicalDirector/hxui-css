@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y content">
+  <article class="hx-section scrollable-y prose">
     <h1 class="hx-title pt-4">Download</h1>
     <h2 class="hx-subtitle">
       Please find below some of the design resources and tools about HxUI that

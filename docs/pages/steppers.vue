@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Steppers</h1>
       <h2 class="hx-subtitle">
         The <code>hx-stepper</code> component displays progress through numbered

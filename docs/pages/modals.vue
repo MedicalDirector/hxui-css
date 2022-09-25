@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Modal Dialog</h1>
       <h2 class="hx-subtitle">
         A classic modal overlay, in which you can include any content you want

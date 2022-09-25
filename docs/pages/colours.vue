@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Colours</h1>
       <h2 class="hx-subtitle">
         Out of the box you get access to all colors in our HxUI spec. These
@@ -330,7 +330,7 @@ export default {
     examples: [
       {
         title: 'Text colours',
-        code: `<p class="content">Easily colour text with text colour classes</p>
+        code: `<p class="prose">Easily colour text with text colour classes</p>
 <table class="hx-table is-striped mb-0">
   <thead>
     <tr>

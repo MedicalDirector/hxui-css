@@ -30,6 +30,178 @@
   }
 }
 
+/////////////////
+// INPUT GROUP //
+/////////////////
+///
+/// Not a substitute for wrapping label, input and help
+/// For wrapping input directly and
+/// customising input with leading and lagging icons and buttons
+///
+/// GOOD:
+/// <div class="hx-form-control">
+///   <label />
+///   <div class="hx-input-group">
+///     <i />
+///     <input />
+///     <button />
+///   </div>
+///   <span />
+/// </div>
+///
+/// GOOD:
+/// <div class="hx-form-control">
+///   <label />
+///   <input />
+///   <span />
+/// </div>
+///
+///
+/// BAD:
+/// <div class="hx-input-group">
+///   <label />
+///   <input />
+///   <span />
+/// </div>
+///
+
+.#{$namespace}-input-group {
+  :where(.#{$namespace}-form-control) &,
+  &.modern {
+    // for text inputs and textareas
+    &:has(.#{$namespace}-input) {
+      align-items: center;
+      flex-wrap: nowrap;
+      border-radius: 2px; //TODO: unhard
+      background-color: var(--color-surface-background-default); //TODO: unhard
+      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      height: size.rem(32);
+
+      &.contrast {
+        background-color: hsl(0, 0%, 100%); //TODO: unhard
+      }
+
+      &:focus-within {
+        // box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
+        border: 1px solid var(--color-border-accent-emphasis);
+        outline-offset: 0;
+        outline: var(--color-border-accent-emphasis) solid 1px; //TODO: unhard
+      }
+    }
+
+    // start icon, specifically not targeting buttons
+    > .#{$namespace}-icon-control,
+    > .#{$namespace}-adornment {
+      display: inline-flex;
+      padding: 0 0 0 spacing.px(2);
+      @include text.no-copy;
+    }
+
+    // end icon, specifically not targeting buttons
+    > .#{$namespace}-input + .#{$namespace}-icon-control,
+    > .#{$namespace}-input + .#{$namespace}-adornment {
+      padding: 0 spacing.px(2) 0 0;
+      @include text.no-copy;
+    }
+
+    .#{$namespace}-input {
+      border: none;
+      background-color: transparent;
+
+      &.contrast {
+        background-color: transparent;
+      }
+
+      &:focus,
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+
+    // actions
+    .#{$namespace}-button {
+      border-top-width: 0;
+      border-bottom-width: 0;
+
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active {
+        border-top-width: 0;
+        border-bottom-width: 0;
+      }
+
+      &:focus-visible {
+        outline-offset: 0;
+        outline-color: var(--color-border-accent-emphasis);
+      }
+    }
+
+    ///////////////
+    // MODIFIERS //
+    ///////////////
+
+    /// DEFAULT
+    &:not(.fullwidth) {
+      display: inline-flex;
+      min-width: min(300px, 100%);
+    }
+
+    /// FULLWIDTH
+    &.fullwidth {
+      display: flex;
+      flex-grow: 1;
+      min-width: unset;
+    }
+
+    /// STACKED (for radios and checkboxes)
+    &:not(.stack):has(.#{$namespace}-radio, .#{$namespace}-checkbox) {
+      display: flex;
+      flex-direction: row;
+      gap: spacing.rem(4);
+    }
+
+    &.stack {
+      display: flex;
+      flex-direction: column;
+      gap: spacing.rem(1);
+    }
+  }
+
+  /// FULLWIDTH
+  :where(.#{$namespace}-form-control).fullwidth & {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  ////////////
+  // STATES //
+  ////////////
+
+  /// DISABLED
+  :where(.#{$namespace}-form-control) &:has([disabled]),
+  :where(.#{$namespace}-form-control).disabled {
+    cursor: not-allowed;
+  }
+
+  /// INVALID
+  :where(.#{$namespace}-form-control).invalid:not(:has(.disabled, [disabled])) &,
+  :where(.#{$namespace}-form-control) &:has(.ng-invalid.ng-dirty:not(.disabled, [disabled])) {
+    // for Angular
+    // for text inputs and textareas
+    &:has(.#{$namespace}-input) {
+      // box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
+      border: 1px solid var(--color-border-danger-emphasis);
+
+      &:focus-within {
+        outline-offset: 0;
+        outline: var(--color-border-danger-emphasis) solid 2px; //TODO: unhard
+      }
+    }
+  }
+}
+
 // Container within hx-columns
 // TODO: gracefully deprecate
 .#{$namespace}-columns {
@@ -350,6 +522,7 @@
 
 // TODO: gracefully deprecate
 // Group Container
+/* stylelint-disable-next-line no-duplicate-selectors */
 .#{$namespace}-input-group {
   position: relative;
 
@@ -393,175 +566,6 @@
     }
     .#{$namespace}-label {
       margin-left: 1.8rem;
-    }
-  }
-}
-
-/////////////////
-// INPUT GROUP //
-/////////////////
-///
-/// Not a substitute for wrapping label, input and help
-/// For wrapping input directly and
-/// customising input with leading and lagging icons and buttons
-///
-/// GOOD:
-/// <div class="hx-form-control">
-///   <label />
-///   <div class="hx-input-group">
-///     <i />
-///     <input />
-///     <button />
-///   </div>
-///   <span />
-/// </div>
-///
-/// GOOD:
-/// <div class="hx-form-control">
-///   <label />
-///   <input />
-///   <span />
-/// </div>
-///
-///
-/// BAD:
-/// <div class="hx-input-group">
-///   <label />
-///   <input />
-///   <span />
-/// </div>
-///
-
-/* stylelint-disable-next-line no-duplicate-selectors */
-.#{$namespace}-input-group {
-  :where(.#{$namespace}-form-control) &,
-  &.modern {
-    // for text inputs and textareas
-    &:has(.#{$namespace}-input) {
-      align-items: center;
-      flex-wrap: nowrap;
-      border-radius: 2px; //TODO: unhard
-      background-color: var(--color-surface-background-default); //TODO: unhard
-      // box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08); //rgba(0, 0, 0, 0.2); //var(--color-border-default);
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      height: size.rem(32);
-
-      &.contrast {
-        background-color: hsl(0, 0%, 100%); //TODO: unhard
-      }
-
-      &:focus-within {
-        // box-shadow: 0 0 0 1px var(--color-border-accent-emphasis);
-        border: 1px solid var(--color-border-accent-emphasis);
-        outline-offset: 0;
-        outline: var(--color-border-accent-emphasis) solid 1px; //TODO: unhard
-      }
-    }
-
-    // start icon, specifically not targeting buttons
-    > .#{$namespace}-icon-control {
-      display: inline-flex;
-      padding: 0 0 0 spacing.px(2);
-    }
-
-    // end icon, specifically not targeting buttons
-    > .#{$namespace}-input + .#{$namespace}-icon-control {
-      padding: 0 spacing.px(2) 0 0;
-    }
-
-    .#{$namespace}-input {
-      border: none;
-      background-color: transparent;
-
-      &.contrast {
-        background-color: transparent;
-      }
-
-      &:focus,
-      &:focus-visible {
-        outline: 0;
-      }
-    }
-
-    // actions
-    .#{$namespace}-button {
-      border-top-width: 0;
-      border-bottom-width: 0;
-
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:active {
-        border-top-width: 0;
-        border-bottom-width: 0;
-      }
-
-      &:focus-visible {
-        outline-offset: 0;
-        outline-color: var(--color-border-accent-emphasis);
-      }
-    }
-
-    ///////////////
-    // MODIFIERS //
-    ///////////////
-
-    /// DEFAULT
-    &:not(.fullwidth) {
-      display: inline-flex;
-      min-width: min(300px, 100%);
-    }
-
-    /// FULLWIDTH
-    &.fullwidth {
-      display: flex;
-      flex-grow: 1;
-      min-width: unset;
-    }
-
-    /// STACKED (for radios and checkboxes)
-    &:not(.stack):has(.#{$namespace}-radio, .#{$namespace}-checkbox) {
-      display: flex;
-      flex-direction: row;
-      gap: spacing.rem(4);
-    }
-
-    &.stack {
-      display: flex;
-      flex-direction: column;
-      gap: spacing.rem(1);
-    }
-  }
-
-  /// FULLWIDTH
-  :where(.#{$namespace}-form-control).fullwidth & {
-    display: flex;
-    flex-grow: 1;
-  }
-
-  ////////////
-  // STATES //
-  ////////////
-
-  /// DISABLED
-  :where(.#{$namespace}-form-control) &:has([disabled]),
-  :where(.#{$namespace}-form-control).disabled {
-    cursor: not-allowed;
-  }
-
-  /// INVALID
-  :where(.#{$namespace}-form-control).invalid:not(:has(.disabled, [disabled])) &,
-  :where(.#{$namespace}-form-control) &:has(.ng-invalid.ng-dirty:not(.disabled, [disabled])) {
-    // for Angular
-    // for text inputs and textareas
-    &:has(.#{$namespace}-input) {
-      // box-shadow: 0 0 0 1px var(--color-border-danger-emphasis);
-      border: 1px solid var(--color-border-danger-emphasis);
-
-      &:focus-within {
-        outline-offset: 0;
-        outline: var(--color-border-danger-emphasis) solid 2px; //TODO: unhard
-      }
     }
   }
 }

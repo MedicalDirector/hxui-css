@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Cards</h1>
       <h2 class="hx-subtitle">
         An all-around flexible and composable component
@@ -87,24 +87,23 @@ export default {
         title: 'Default card',
         withContent: false,
         code: `<div class="hx-card-content grid gap-4 tablet:grid-cols-3">
-    <div class="hidden tablet:!block"></div>
-    <div class="hx-card">
-      <div class="hx-card-content">
-        <p class="b0 font-bold">Choi</p>
-        <p class="b0">Ella</p>
-        <br>
-        <p class="b2 text-subdued">11:09 PM - 1 Jan 2016</p>
-      </div>
+  <div class="hidden tablet:!block"></div>
+  <div class="hx-card">
+    <div class="hx-card-content">
+      <p class="b0 font-bold">Choi</p>
+      <p class="b0">Ella</p>
+      <br>
+      <p class="b2 text-subdued">11:09 PM - 1 Jan 2016</p>
     </div>
-    <div class="hidden tablet:!block"></div>
   </div>
+  <div class="hidden tablet:!block"></div>
 </div>`,
       },
       {
         title: 'Border highlighted card',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
-  <div class="content">
+  <div class="prose">
     <p>Add <code>.highlight</code> to the card for border highlighted card.</p>
     <p>You can also add modifiers for different colour border.</p>
     <ul>
@@ -168,7 +167,7 @@ export default {
         title: 'Border sizes',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
-  <div class="content">
+  <div class="prose">
     <p>You can add modifiers for different border sizes.</p>
     <ul>
       <li><code>.highlight-sm</code> (default)</li>
@@ -201,7 +200,7 @@ export default {
         title: 'Raised',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
-  <div class="content">
+  <div class="prose">
     <p>Add <code>.raised</code> modifier class to add depth to cards.</p>
     <ul>
       <li><code>hovered</code></li>
@@ -250,7 +249,7 @@ export default {
         title: 'Using HxUI grid',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-3 gap-4">
-  <div class="content">
+  <div class="prose">
     <p>You can create complex layouts using HxUI Grid and Form in Card.</p>
   </div>
 

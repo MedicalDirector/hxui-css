@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Sidebar / Drawer</h1>
       <h2 class="hx-subtitle">Primarily used for navigation or meta data.</h2>
     </div>
@@ -38,7 +38,7 @@ export default {
     <!-- no gradient (.hx-sidebar still works)-->
     <div class="hx-drawer is-active"></div>
     <!-- Main content -->
-    <div class="content py-3 px-6">
+    <div class="prose py-3 px-6">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>
   </div>
@@ -47,7 +47,7 @@ export default {
     <!--  purple gradient -->
     <div class="hx-drawer has-purple-gradient is-active"></div>
     <!-- Main content -->
-    <div class="content py-3 px-6">
+    <div class="prose py-3 px-6">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>
   </div>
@@ -72,7 +72,7 @@ export default {
       <div class="hx-drawer is-active"></div>
     </div>
     <!-- Main content -->
-    <div class="content py-3 px-6">
+    <div class="prose py-3 px-6">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>
   </div>
@@ -83,7 +83,7 @@ export default {
         code: `
   <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
     <div class="hx-drawer hx-bg-purple is-active is-minified"></div>
-    <div class="content py-4 px-6">
+    <div class="prose py-4 px-6">
       <h3>Minimised</h3>
       <p>Add class <code>is-minified</code> to the drawer.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
@@ -91,14 +91,14 @@ export default {
   </div>
   <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
     <div class="hx-drawer hx-bg-purple is-active"></div>
-    <div class="content py-4 px-6">
+    <div class="prose py-4 px-6">
       <h3>Default</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>
   </div>
   <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
     <div class="hx-drawer hx-bg-purple is-active is-expanded"></div>
-    <div class="content py-4 px-6">
+    <div class="prose py-4 px-6">
       <h3>Expanded</h3>
       <p>Add class <code>is-expanded</code> to the drawer.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
@@ -110,7 +110,7 @@ export default {
         title: 'Right aligned',
         code: `
   <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="content py-3 px-6">
+    <div class="prose py-3 px-6">
       <p>Add class <code>is-right</code> to the drawer.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>
@@ -124,7 +124,7 @@ export default {
   <div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
     <div class="hx-drawer hx-bg-purple is-absolute is-active"></div>
     <div class="hx-drawer-bg is-active"></div>
-    <div class="content py-4 px-6">
+    <div class="prose py-4 px-6">
       <p>Add class <code>is-expanded</code> to the drawer.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
     </div>

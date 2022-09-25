@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content">
+    <div class="prose">
       <h1 class="hx-title pt-4">Badges</h1>
       <h2 class="hx-subtitle">
         Small and adaptive tag for adding context to just about any content.

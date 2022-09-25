@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y content">
+  <article class="hx-section scrollable-y prose">
     <h1 class="hx-title pt-4">Sections</h1>
     <h2 class="hx-subtitle">
       A simple container to divide your page into sections, like the one you're

@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Pagination</h1>
       <h2 class="hx-subtitle">
         This component provides pagination links for multi-page pagination.

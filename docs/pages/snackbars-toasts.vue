@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Snackbars & toasts</h1>
       <h2 class="hx-subtitle">
         The snackbar/toast component is used to display a quick message to a
@@ -44,7 +44,7 @@ export default {
     <h5 class="mt-0 mb-0 has-text-centered">Bottom center</h5>
     <p class="mb-10 pb-10 has-text-centered">Aligning snackbar to the bottom center of the page.</p>
     <div class="hx-snackbar is-absolute is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -59,7 +59,7 @@ export default {
     <h5 class="mt-10 mb-0 pt-10 has-text-centered">Top center</h5>
     <p class="has-text-centered">Aligning snackbar to the top center of the page.</p>
     <div class="hx-snackbar is-absolute is-top is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -74,7 +74,7 @@ export default {
     <h5 class="mb-0 mt-2 has-text-centered">Top right</h5>
     <p class="has-text-centered">Aligning snackbar to the top right of the page.</p>
     <div class="hx-snackbar is-absolute is-top is-right is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -89,7 +89,7 @@ export default {
     <h5 class="mb-0 mt-2 has-text-centered">Bottom left</h5>
     <p class="has-text-centered">Aligning snackbar to the top center of the page.</p>
     <div class="hx-snackbar is-absolute is-left is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -109,7 +109,7 @@ export default {
   <div class="hx-card mt-2 pa-10" style="overflow: hidden">
     <h5 class="mt-0 mb-10 pb-10 has-text-centered">Default</h5>
     <div class="hx-snackbar is-absolute is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-danger is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -122,7 +122,7 @@ export default {
   <div class="hx-card mt-2 pa-10" style="overflow: hidden">
     <h5 class="mt-0 mb-10 pb-10 has-text-centered">Success</h5>
     <div class="hx-snackbar is-absolute is-success is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -135,7 +135,7 @@ export default {
   <div class="hx-card mt-2 pa-10" style="overflow: hidden">
     <h5 class="mt-0 mb-10 pb-10 has-text-centered">Warning</h5>
     <div class="hx-snackbar is-absolute is-warning is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">
@@ -148,7 +148,7 @@ export default {
   <div class="hx-card mt-2 pa-10" style="overflow: hidden">
     <h5 class="mt-0 mb-10 pb-10 has-text-centered">Error</h5>
     <div class="hx-snackbar is-absolute is-error is-active">
-      <div class="hx-snackbar-content">
+      <div class="hx-snackbar-prose">
         Hello, I'm a snackbar
         <button class="hx-button is-light is-flat is-small is-round" flat color="pink" @click.native="snackbar = false">
           <span class="hx-icon-control">

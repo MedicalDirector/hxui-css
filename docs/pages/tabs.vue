@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Tabs</h1>
       <h2 class="hx-subtitle">
         The tab component is used for hiding content behind a selectable item.

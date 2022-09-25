@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content">
+    <div class="prose">
       <h1 class="hx-title pt-4">Tables</h1>
       <h2 class="hx-subtitle">
         The inevitable HTML table, with special case cells
@@ -35,7 +35,7 @@ export default {
       examples: [
         {
           title: 'Default table',
-          code: `<div class="content contents">
+          code: `<div class="prose contents">
   <p>Tables are borderless by default.</p>
   <p>Add <code>class="hx-table"</code> to the table tag for a HxUI styled table.</p>
   <p>You can set a table row as <strong>selected</strong> by appending the <code>is-selected</code> modifier on a <code>&#x3C;tr&#x3E;</code>.</p>
@@ -193,7 +193,7 @@ export default {
         },
         {
           title: 'Narrow table',
-          code: `<p class="content">
+          code: `<p class="prose">
   Add <code>class="hx-table is-narrow"</code> to the table tag to make the cells narrower.
 </p>
 
@@ -230,7 +230,7 @@ export default {
         },
         {
           title: 'Hover table',
-          code: `<p class="content">
+          code: `<p class="prose">
   Add <code>class="hx-table is-hover"</code> to the table tag for a hover state on rows
 </p>
 <table class="hx-table is-hover mb-0">
@@ -266,7 +266,7 @@ export default {
         },
         {
           title: 'Contextual',
-          code: `<p class="content">
+          code: `<p class="prose">
   Add <code>class="is-danger"</code>, <code>class="is-warning"</code>, <code>class="is-success"</code>, <code>class="is-info"</code> to the tr tag
 </p>
 <table class="hx-table mb-0">
@@ -306,7 +306,7 @@ export default {
         },
         {
           title: 'Contextual Stripe',
-          code: `<p class="content">
+          code: `<p class="prose">
   Add <code>class="has-stripe-danger"</code>, <code>class="has-stripe-warning"</code>, <code>class="has-stripe-success"</code>, <code>class="has-stripe-info"</code> to the tr tag
 </p>
 <table class="hx-table">
@@ -1178,12 +1178,12 @@ export default {
         },
         {
           title: 'Sticky table columns',
-          code: `<p class="content">
+          code: `<p class="prose">
   Add <code>class="is-sticky-left"</code> or <code>class="is-sticky-right"</code> modifier to table.<br>
   You will need to make sure that the scrollable areas parent container has <code>position: relative</code> set.
 <p>
 
-<p class="content">
+<p class="prose">
   In addition add a theme modifier, as the sticky columns have transparent backgrounds.<br>
   Choose either <code>is-light</code> for white backgrounds or <code>is-dark</code> for grey backgrounds.
 </p>

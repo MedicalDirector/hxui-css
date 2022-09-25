@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Dropdown</h1>
       <h2 class="hx-subtitle">
         Contextual overlay for displaying lists of links or custom components.
@@ -80,7 +80,7 @@ export default {
         },
         {
           title: 'Grouped contextual menu',
-          code: `<p class="content">Add a header to label sections of actions and/or dividers in any dropdown menu.</p>
+          code: `<p class="prose">Add a header to label sections of actions and/or dividers in any dropdown menu.</p>
 <div class="hx-flex hx-flex-justify-center">
   <div class="hx-dropdown is-open mr-4">
     <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
@@ -138,7 +138,7 @@ export default {
         },
         {
           title: 'Position',
-          code: `<p class="content">
+          code: `<p class="prose">
   Position menu <code>.is-dropup</code>, <code>.is-left</code>, <code>.is-right</code>. Default is bottom left.
 </p>
 <div class="hx-dropdown is-dropup is-open" style="margin-top:12rem;">

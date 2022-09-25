@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Dividers</h1>
       <h2 class="hx-subtitle">
         These dividers are useful to divide content, indicating what is related
@@ -41,7 +41,7 @@ export default {
       <span class="h3">Related Content</span>
     </div>
     <hr class="is-perforated" />
-    <p class="p-4 content">
+    <p class="p-4 prose">
       <code>is-perforated</code> - to divide related content. Just like
       perforated paper.
     </p>
@@ -52,7 +52,7 @@ export default {
       <span class="h3">Non Related Content</span>
     </div>
     <hr class="is-divided" />
-    <p class="p-4 content">
+    <p class="p-4 prose">
       <code>is-divided</code> - to divide none related content
     </p>
   </div>

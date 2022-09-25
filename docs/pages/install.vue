@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y content">
+  <article class="hx-section scrollable-y prose">
     <h1 class="hx-title pt-4">Install Guide</h1>
     <h2 class="hx-subtitle">Adding Hx/UI into a project</h2>
     <hr />

@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y content">
+  <article class="hx-section scrollable-y prose">
     <div class="hx-columns">
       <div class="hx-column welcome">
         <h1>Welcome to HxUI</h1>

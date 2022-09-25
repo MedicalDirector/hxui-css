@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y content">
+  <article class="hx-section scrollable-y prose">
     <h1 class="hx-title pt-4">Container</h1>
     <h2 class="hx-subtitle">
       A simple container to center your content horizontally

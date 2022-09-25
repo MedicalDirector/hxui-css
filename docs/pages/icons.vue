@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content">
+    <div class="prose">
       <h1 class="hx-title pt-4">Icons</h1>
       <h2 class="hx-subtitle">Hx/Ui comes with its own custom icons.</h2>
     </div>
@@ -15,7 +15,7 @@
       </label>
     </div>
 
-    <h2 class="h2 content my-4">Standard Icons</h2>
+    <h2 class="h2 prose my-4">Standard Icons</h2>
 
     <section
       class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
@@ -28,7 +28,7 @@
 
     <hr />
 
-    <h2 class="h2 content mt-8 mb-4">Legacy Icons</h2>
+    <h2 class="h2 prose mt-8 mb-4">Legacy Icons</h2>
 
     <section
       class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
@@ -41,9 +41,9 @@
 
     <hr />
 
-    <h2 class="content">Usage</h2>
+    <h2 class="prose">Usage</h2>
 
-    <p class="content">
+    <p class="prose">
       Because the icons can take a few seconds to load, and because you want
       control over the space the icons will take, you can use the icon class as
       a container:
@@ -53,7 +53,7 @@
       <code ref="code" class="html">{{ code }}</code>
     </pre>
 
-    <p class="content">
+    <p class="prose">
       The <code>icon</code> container will take up exactly
       <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at
       <strong>21px</strong>.
@@ -61,8 +61,8 @@
 
     <hr />
 
-    <h2 class="content">Sizes</h2>
-    <p class="content">
+    <h2 class="prose">Sizes</h2>
+    <p class="prose">
       Font Awesome icons use a font-size of 28px by default, and are best
       rendered when using multiples of 7. The icon container is always slightly
       bigger than the font-size used:

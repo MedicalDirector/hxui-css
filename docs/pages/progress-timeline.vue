@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="content contents">
+    <div class="prose contents">
       <h1 class="hx-title pt-4">Progress Timeline</h1>
       <h2 class="hx-subtitle">
         A progress timeline component communicates to the user the progress of a
