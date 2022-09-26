@@ -191,50 +191,22 @@
 }
 
 /* Background Patterns */
-.#{$namespace}-bg-success-pattern {
+.#{$namespace}-bg-success-pattern,
+.bg-success-pattern {
   background: repeating-linear-gradient(45deg, #41b987, #41b987 10px, #369c71 10px, #369c71 20px);
 }
 
-.#{$namespace}-bg-warning-pattern {
+.#{$namespace}-bg-warning-pattern,
+.bg-warning-pattern {
   background: repeating-linear-gradient(45deg, #f68a31, #f68a31 10px, #ef6b1f 10px, #ef6b1f 20px);
 }
 
-.#{$namespace}-bg-danger-pattern {
+.#{$namespace}-bg-danger-pattern,
+.bg-danger-pattern {
   background: repeating-linear-gradient(45deg, #bd1e50, #bd1e50 10px, #9e1944 10px, #9e1944 20px);
 }
 
-.#{$namespace}-bg-info-pattern {
+.#{$namespace}-bg-info-pattern,
+.bg-info-pattern {
   background: repeating-linear-gradient(45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px);
 }
-
-// // --color startswith only
-
-// // --color-surface only
-// .#{$namespace}-bg-,
-// .bg- {
-//   background-color: var(--color-surface);
-// }
-// .\!#{$namespace}-bg-,
-// .\!bg- {
-//   background-color: var(--color-surface) !important;
-// }
-
-// // --color-border only
-// .#{$namespace}-bdr-,
-// .bdr- {
-//   border-color: var(--color-border);
-// }
-// .\!#{$namespace}-bdr-,
-// .\!bdr- {
-//   border-color: var(--color-border) !important;
-// }
-
-// // --color-foreground only
-// .#{$namespace}-fg-,
-// .fg- {
-//   color: var(--color-border);
-// }
-// .\!#{$namespace}-fg-,
-// .\!fg- {
-//   color: var(--color-border) !important;
-// }

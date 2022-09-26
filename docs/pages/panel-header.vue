@@ -107,9 +107,7 @@
       </div>
     </div>
 
-    <pre v-highlightjs ref="code">
-      <code class="html">{{ headerA }}</code>
-    </pre>
+    <pre v-highlightjs ref="code"><code class="html">{{ headerA }}</code></pre>
 
     <div class="prose contents">
       <h3>Panel Header - Type 2</h3>
@@ -220,9 +218,7 @@
       </div>
     </div>
 
-    <pre v-highlightjs ref="code">
-      <code class="html">{{ headerB }}</code>
-    </pre>
+    <pre v-highlightjs ref="code"><code class="html">{{ headerB }}</code></pre>
   </article>
 </template>
 

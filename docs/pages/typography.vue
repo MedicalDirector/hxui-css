@@ -32,387 +32,618 @@ export default {
     return {
       examples: [
         {
-          title: 'Titles',
-          code: `
-  <p>There are <strong>2 types</strong> of titles:</p>
-  <ul>
-    <li><code>.hx-title</code></li>
-    <li><code>.hx-subtitle</code></li>
-  </ul>
-  <br>
-  <h1 class="hx-title">Title</h1>
-  <h2 class="hx-subtitle">Subtitle</h2>
-            `,
+          title: 'Product typography',
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>.h1</code>
+      </td>
+      <td>
+        <h1 class="h1">h1. Product heading</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.h2</code>
+      </td>
+      <td>
+        <h2 class="h2">h2. Product heading</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.h3</code>
+      </td>
+      <td>
+        <h3 class="h3">h3. Product heading</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.h4</code>
+      </td>
+      <td>
+        <h4 class="h4">h4. Product heading</h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.h5</code>
+      </td>
+      <td>
+        <h5 class="h5">h5. Product heading</h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.h6</code>
+      </td>
+      <td>
+        <h6 class="h6">h6. Product heading</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.b0</code>
+      </td>
+      <td>
+        <p class="b0">p. Product body</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.b1</code>
+      </td>
+      <td>
+        <p class="b1">p. Product body</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.b2</code>
+      </td>
+      <td>
+        <p class="b2">p. Product body</p>
+      </td>
+    </tr>
+  </tbody>
+</table>`,
         },
         {
-          title: 'Headings',
+          title: 'Marketing typography',
           code: `
-  <p>There are <strong>6 sizes</strong> available:</p>
-  <ul>
-    <li><code>&lt;h1&gt;</code> or <code>.h1</code></li>
-    <li><code>&lt;h2&gt;</code> or <code>.h2</code></li>
-    <li><code>&lt;h3&gt;</code> or <code>.h3</code></li>
-    <li><code>&lt;h4&gt;</code> or <code>.h4</code></li>
-    <li><code>&lt;h5&gt;</code> or <code>.h5</code></li>
-    <li><code>&lt;h6&gt;</code> or <code>.h6</code></li>
-  </ul>
-  <br>
-  <h1>h1. HxUI heading</h1>
-  <h2>h2. HxUI heading</h2>
-  <h3>h3. HxUI heading</h3>
-  <h4>h4. HxUI heading</h4>
-  <h5>h5. HxUI heading</h5>
-  <h6>h6. HxUI heading</h6>
-            `,
+<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>.hx-title</code>
+      </td>
+      <td>
+        <h1 class="hx-title">Title</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>.hx-subtitle</code>
+      </td>
+      <td>
+        <p class="hx-subtitle">Subtitle</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h1&gt;</code> or <code>.h1</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h1 class="prose">h1. Marketing heading</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h2&gt;</code> or <code>.h2</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h2 class="prose">h2. Marketing heading</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h3&gt;</code> or <code>.h3</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h3 class="prose">h3. Marketing heading</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h4&gt;</code> or <code>.h4</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h4 class="prose">h4. Marketing heading</h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h5&gt;</code> or <code>.h5</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h5 class="prose">h5. Marketing heading</h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h6&gt;</code> or <code>.h6</code> with <code>.prose</code>
+      </td>
+      <td>
+        <h6 class="prose">h6. Marketing heading</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;p&gt;</code> or <code>.p</code> with <code>.prose</code>
+      </td>
+      <td>
+        <p class="prose">p. Marketing paragraph</p>
+      </td>
+    </tr>
+  </tbody>
+</table>`,
         },
         {
-          title:
-            'Heading example - Content headings (product information and monograph)',
-          code: `
-  <div class="hx-columns">
-    <div class="hx-column">
-      <h1>FLAGYL® (METRONIDAZOLE)</h1>
-      <div class="pihead">Product Information</div>
-      <div>
-        <h2 class="is-text-capitalise">1 NAME OF THE MEDICINE</h2>
-        <p>Flagyl (metronidazole) 200 mg and 400 mg tablets</p>
-        <p>Flagyl (metronidazole) 500 mg suppositories</p>
+          title: 'Marketing / prose copy',
+          withContent: false,
+          code: `<div class="hx-card-content grid tablet:grid-cols-2 gap-4 prose">
+  <div>
+    <h1>FLAGYL® (METRONIDAZOLE)</h1>
+    <div class="pihead">Product Information</div>
+    <div>
+      <h2 class="text-capitalise">1 NAME OF THE MEDICINE</h2>
+      <p>Flagyl (metronidazole) 200 mg and 400 mg tablets</p>
+      <p>Flagyl (metronidazole) 500 mg suppositories</p>
+    </div>
+    <div>
+      <h2>2 QUALITATIVE AND QUANTITATIVE COMPOSITION</h2>
+      <p>Flagyl tablets contain 200 mg or 400 mg metronidazole.</p>
+      <p>Flagyl suppositories contain 500 mg metronidazole.</p>
+      <p>
+        Metronidazole is a 1-(2-hydroxyethyl)-2-methyl-5-nitroimidazole.
+        It appears as white to brownish cream crystals with melting point of 159 to 162°C.
+        Metronidazole in a saturated aqueous solution has a pH of between 6 and 7.5.
+        Solubility at 20°C (g/100 mL): 1 in water; 0.5 in ethanol; 0.4 in chloroform;
+        slightly soluble in ether, soluble in dilute acids.
+      </p>
+      <p>
+        For the full list of excipients, see Section 6.1 List of excipients.
+      </p>
+    </div>
+    <div>
+      <h2>4 CLINICAL PARTICULARS</h2>
+      <h3>4.1 THERAPEUTIC INDICATIONS</h3>
+      <h4>Anaerobic Infections</h4>
+      <h5>Oral</h5>
+      <p>
+        Treatment of infections in which anaerobic bacteria have been identified or are suspected as pathogens,
+        particularly <i>Bacteroides fragilis</i> and other species of bacteroides, and other species such as fusobacteria,
+        eubacteria, clostridia and anaerobic streptococci. Flagyl has been used successfully in septicaemia; bacteraemia;
+        brain abscess; necrotising pneumonia; osteomyelitis; puerperal sepsis; pelvic abscess; pelvic cellulitis;
+        postoperative wound infections.
+      </p>
+      <h3>4.2 DOSE AND METHOD OF ADMINISTRATION</h3>
+      <h4>Suppositories</h4><a></a>
+      <h5>Prevention of Anaerobic Infections in High Risk Situations</h5>
+      <p>
+        A variety of dosage regimens have been tried, but the optimal variety of dosage regimen for prophylaxis against
+        anaerobic infection still remains to be established. Based on the generally accepted principles of prophylactic use
+        of antibiotics and the limited documented clinical experience on the prophylactic use of metronidazole, the
+        following dosage regimens are suggested.
+      </p>
+      <h6>1. In Appendicectomy</h6>
+      <p>(Note: As prevention of infection requires that adequate tissue concentrations of the drug should be achieved at
+        the time of surgery and as it may take approximately 8 hours to achieve peak serum levels after the suppository, the
+        need for intravenous infusion of metronidazole should be considered if the interval between the first suppository
+        and surgery is less than 8 hours.)
+      </p>
+      <p>
+        Adults and children over 12 years: two 500 mg suppositories inserted into the rectum at diagnosis (ie. before
+        surgery) and thereafter every eight hours for 48 hours after surgery.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <div class="prolog">
+      <h1>Metronidazole (Systemic)</h1>
+      <p>For a listing of dosage forms and brand names, see <span class="iref">Dosage Forms</span> section(s).</p>
+    </div>
+
+    <div class="sect2">
+      <div class="mono-anchor-top">
+        <h2>Therapeutic Class</h2>
       </div>
-      <div>
-        <h2>2 QUALITATIVE AND QUANTITATIVE COMPOSITION</h2>
-        <p>Flagyl tablets contain 200 mg or 400 mg metronidazole.</p>
-        <p>Flagyl suppositories contain 500 mg metronidazole.</p>
-        <p>Metronidazole is a 1-(2-hydroxyethyl)-2-methyl-5-nitroimidazole. It appears as white to brownish cream crystals with melting point of 159 to 162°C. Metronidazole in a saturated aqueous solution has a pH of between 6 and 7.5. Solubility at 20°C (g/100 mL): 1 in water; 0.5 in ethanol; 0.4 in chloroform; slightly soluble in ether, soluble in dilute acids.</p><p>For the full list of excipients, see Section 6.1 List of excipients.</p>
+      <div class="classgroup">
+        <span class="class">Antibacterial</span>
+        <span class="drugs"></span>
       </div>
-      <div><h2>4 CLINICAL PARTICULARS</h2>
-        <h3>4.1 THERAPEUTIC INDICATIONS</h3><h4>Anaerobic Infections</h4><a></a><h5>Oral</h5>
-        <p>Treatment of infections in which anaerobic bacteria have been identified or are suspected as pathogens,
-          particularly <i>Bacteroides fragilis</i> and other species of bacteroides, and other species such as fusobacteria,
-          eubacteria, clostridia and anaerobic streptococci. Flagyl has been used successfully in septicaemia; bacteraemia;
-          brain abscess; necrotising pneumonia; osteomyelitis; puerperal sepsis; pelvic abscess; pelvic cellulitis;
-          postoperative wound infections.</p>
-        <h3>4.2 DOSE AND METHOD OF ADMINISTRATION</h3>
-  
-          <h4>Suppositories</h4><a></a>
-          <h5>Prevention of Anaerobic Infections in High
-          Risk Situations</h5>
-        <p>A variety of dosage regimens have been tried, but the optimal variety of dosage regimen for prophylaxis against
-          anaerobic infection still remains to be established. Based on the generally accepted principles of prophylactic use
-          of antibiotics and the limited documented clinical experience on the prophylactic use of metronidazole, the
-          following dosage regimens are suggested.</p><a></a><h6>1. In Appendicectomy</h6>
-        <p>(Note: As prevention of infection requires that adequate tissue concentrations of the drug should be achieved at
-          the time of surgery and as it may take approximately 8 hours to achieve peak serum levels after the suppository, the
-          need for intravenous infusion of metronidazole should be considered if the interval between the first suppository
-          and surgery is less than 8 hours.)</p>
-        <p>Adults and children over 12 years: two 500 mg suppositories inserted into the rectum at diagnosis (ie. before
-          surgery) and thereafter every eight hours for 48 hours after surgery.</p>
+      <div class="classgroup">
+        <span class="class">Antiprotozoal</span>
+        <span class="drugs"></span>
       </div>
     </div>
-    <div class="hx-column">
-     <div class="prolog"><h1>Metronidazole (Systemic)</h1>
-      <p>For a listing of dosage forms and brand names, see <span class="iref">Dosage Forms</span> section(s).</p></div>
-  <div class="sect2">
-      <div class="mono-anchor-top"><h2>Therapeutic Class</h2></div>
-      <div class="classgroup"><span class="class">Antibacterial</span><span class="drugs"></span></div>
-      <div class="classgroup"><span class="class">Antiprotozoal</span><span class="drugs"></span></div>
-  </div>
-  <div class="sect2">
-      <div class="mono-anchor-top"><a></a>
-          <h2>Indications</h2></div>
-      <div class="note"><span class="title">Note:</span>
-          <p class="note-first">Bracketed information in the <i>Indications</i> section refers to uses that are not
-              included in the Australian approved product information.</p></div>
-      <div class="sect3"><h3>■ General considerations</h3>
-          <p>Metronidazole is effective <i>in vitro</i> against several species of anaerobic bacteria, particularly <i>Bacteroides
-              fragilis</i> and other species of bacteroides, and other species such as <i>Clostridia</i>,
-              <i>Eubacteria</i>, <i>Fusobacteria</i>, and anaerobic <i>Streptococci</i>. The minimum inhibitory
-              concentration (MIC) for most susceptible anaerobes is less than 6.2 micrograms per mL. Metronidazole is not
-              effective against aerobic and facultative anaerobic bacteria.</p>
-          <p>Metronidazole is also active against a wide range of pathogenic microorganisms, notably <i>Trichomonas
-              vaginalis</i> and other trichomonads, <i>Entamoeba histolytica</i>, <i>Giardia lamblia</i>, <i>Balantidium
-              coli</i> and the causative organisms of acute ulcerative gingivitis.</p>
-          <p>Intravenous metronidazole is indicated when immediate anti-anaerobic chemotherapy is required. Intravenous,
-              and rectal metronidazole, are indicated for treatment of anaerobic infections in patients when oral
-              administration is not possible.</p></div>
-      <div class="sect3"><h3>■ Accepted</h3>
-          <div class="entry">
-              <div class="indication"><span class="condition">Amoebiasis</span><span class="intenduse"> (treatment)</span>
-              </div>
-              <p>Metronidazole is indicated in the treatment of all forms of amoebiasis (intestinal, extraintestinal, and
-                  that of symptomless cyst passers).</p></div>
-          <div class="entry">
-              <div class="indication"><span class="condition">Bacteraemia</span><span
-                      class="intenduse"> (treatment)</span></div>
-              <div class="indication"><span class="condition">Septicaemia, bacterial</span><span class="intenduse"> (treatment)</span>
-              </div>
-              <p>Metronidazole is indicated in the treatment of bacteraemia or bacterial septicaemia caused by susceptible
-                  organisms.</p></div>
-          <div class="entry">
-              <div class="indication"><span class="condition">Bone infections</span><span
-                      class="intenduse"> (treatment)</span></div>
-              <p>Metronidazole is indicated in the treatment of osteomyelitis caused by susceptible organisms.</p></div>
-          <div class="entry">
-              <div class="indication"><span class="condition">Brain abscess</span><span
-                      class="intenduse"> (treatment)</span></div>
-              <p>Metronidazole is indicated in the treatment of brain abscess caused by susceptible organisms.</p></div>
-          <div class="entry">
-              <div class="indication"><span class="condition">Diarrhoea, antibiotic-associated</span><span
-                      class="intenduse"> (treatment)</span></div>
-              <p>Metronidazole is indicated in the treatment of antibiotic-associated diarrhoea caused by <i>Clostridium
-                  difficile</i>.</p></div>
-          <div class="entry">
-              <div class="indication"><span class="condition">Giardiasis</span><span class="intenduse"> (treatment)</span>
-              </div>
-              <p>Metronidazole is indicated in the treatment of giardiasis.</p></div>
-  
-          <div class="entry">
-              <div class="indication"><span class="condition">Gingivitis, acute, ulcerative</span><span class="intenduse"> (treatment)</span>
-              </div>
-              <p>Metronidazole is indicated in the treatment of acute ulcerative gingivitis caused by susceptible
-                  organisms.</p></div>
-  
+
+    <div class="sect2">
+      <div class="mono-anchor-top">
+        <h2>Indications</h2>
       </div>
-  </div>
-  
+
+      <div class="note">
+        <span class="title">Note:</span>
+        <p class="note-first">
+          Bracketed information in the <i>Indications</i> section refers to uses that are not
+          included in the Australian approved product information.
+        </p>
+      </div>
+
+      <div class="sect3">
+        <h3>■ General considerations</h3>
+        <p>
+          Metronidazole is effective <i>in vitro</i> against several species of anaerobic bacteria, particularly <i>Bacteroides
+          fragilis</i> and other species of bacteroides, and other species such as <i>Clostridia</i>,
+          <i>Eubacteria</i>, <i>Fusobacteria</i>, and anaerobic <i>Streptococci</i>. The minimum inhibitory
+          concentration (MIC) for most susceptible anaerobes is less than 6.2 micrograms per mL. Metronidazole is not
+          effective against aerobic and facultative anaerobic bacteria.
+        </p>
+        <p>
+          Metronidazole is also active against a wide range of pathogenic microorganisms, notably <i>Trichomonas
+          vaginalis</i> and other trichomonads, <i>Entamoeba histolytica</i>, <i>Giardia lamblia</i>, <i>Balantidium
+          coli</i> and the causative organisms of acute ulcerative gingivitis.</p>
+        <p>
+          Intravenous metronidazole is indicated when immediate anti-anaerobic chemotherapy is required. Intravenous,
+          and rectal metronidazole, are indicated for treatment of anaerobic infections in patients when oral
+          administration is not possible.
+        </p>
+      </div>
+      <div class="sect3">
+        <h3>■ Accepted</h3>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Amoebiasis</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>
+            Metronidazole is indicated in the treatment of all forms of amoebiasis (intestinal, extraintestinal, and
+            that of symptomless cyst passers).
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Bacteraemia</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <div class="indication">
+            <span class="condition">Septicaemia, bacterial</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>
+            Metronidazole is indicated in the treatment of bacteraemia or bacterial septicaemia caused by susceptible
+            organisms.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Bone infections</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>Metronidazole is indicated in the treatment of osteomyelitis caused by susceptible organisms.</p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Brain abscess</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>Metronidazole is indicated in the treatment of brain abscess caused by susceptible organisms.</p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Diarrhoea, antibiotic-associated</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>
+            Metronidazole is indicated in the treatment of antibiotic-associated diarrhoea caused by
+            <i>Clostridium difficile</i>.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Giardiasis</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>Metronidazole is indicated in the treatment of giardiasis.</p>
+        </div>
+
+        <div class="entry">
+          <div class="indication">
+            <span class="condition">Gingivitis, acute, ulcerative</span>
+            <span class="intenduse"> (treatment)</span>
+          </div>
+          <p>
+            Metronidazole is indicated in the treatment of acute ulcerative
+            gingivitis caused by susceptible organisms.
+          </p>
+        </div>
+      </div>
     </div>
-  
   </div>
-            `,
+</div>`,
         },
         {
           title: 'Heading examples - Headings in a form or panel',
-          code: `
-  <div class="hx-columns">
-    <div class="hx-column">
-      <h3>New Recipe</h3>
-      <div class="hx-input-control">
-        <input  class="hx-input" formcontrolname="Name" required="" type="text" tabindex="1">
-        <label  class="hx-label">Recipe Name <sup>*</sup></label>
-        <div class="hx-help">Please enter the recipe name</div>
-  
-        <div class="hx-card mb-4"><div class="hx-card-content recipe-card"><div class="hx-columns mt-4"><div class="hx-column is-two-thirds"><div class="hx-input-control mb-0"><textarea class="hx-textarea ng-pristine ng-invalid ktm-0 ng-touched" formcontrolname="RecipeIngredients" name="textarea-sample" placeholder="Enter ingredients" required="" rows="4" tabindex="1"></textarea><label class="hx-label" for="textarea-sample">Ingredients <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Please enter the recipe ingredients</div></div></div><div class="hx-column is-one-third pt-0"><div class="hx-columns"><div class="hx-column"><div class="hx-input-control"><input class="hx-input ng-untouched ng-pristine ng-valid ktm-0" formcontrolname="Qty" required="" type="text" tabindex="1"><label class="hx-label">Qty <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Quantity</div></div></div><div class="hx-column"><div class="hx-input-control pt-0"><input class="hx-input ng-untouched ng-pristine ng-valid ktm-0" formcontrolname="Rpts" required="" type="text" tabindex="1"><label class="hx-label">Rpts <sup _ngcontent-c28="">*</sup></label><div class="hx-help mb-0">Repeats</div></div></div></div></div></div></div></div>
-      </div>
-    </div>
-    <div class="hx-column">
-       <p>See <a href="/panel-header/">Panel Header</a> and <a href="/panel/">Panel</a>
-       </p>
+          withContent: false,
+          code: `<div class="hx-card-content grid tablet:grid-cols-4 gap-4">
+  <div>
+    <h3>New Recipe</h3>
+    <div class="hx-form-control no-label">
+      <label class="hx-label sr-only">Recipe Name</label>
+      <input class="hx-input" required type="text">
+      <span class="hx-help">Please enter the recipe name</span>
     </div>
   </div>
-            `,
+  <div class="hx-card tablet:col-start-2 tablet:col-end-5">
+    <div class="hx-card-content grid gap-4">
+      <div>
+        <div class="hx-form-control fullwidth">
+          <label class="hx-label" for="textarea-sample">
+            Ingredients
+          </label>
+          <textarea
+            class="hx-input ng-pristine ng-invalid"
+            name="textarea-sample"
+            required
+          ></textarea>
+          <span class="hx-help">
+            Please enter the recipe ingredients
+          </span>
+        </div>
+      </div>
+      <div class="grid tablet:grid-cols-2 gap-4">
+        <div class="hx-form-control fullwidth">
+          <label class="hx-label">Qty</label>
+          <input
+            class="hx-input ng-untouched ng-pristine ng-valid"
+            name="Qty"
+            required
+            type="text"
+          />
+        </div>
+        <div class="hx-form-control fullwidth">
+          <label class="hx-label">Rpts</label>
+          <input
+            class="hx-input ng-untouched ng-pristine ng-valid"
+            name="Rpts"
+            required
+            type="text"
+          />
+        </div>
+        <p class="tablet:col-start-1 tablet:col-end-3">
+          See <a href="/panel-header/">Panel Header</a> and <a href="/panel/">Panel</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>`,
         },
         {
           title: 'Paragraphs and Inline text elements',
-          code: `
-  <div class="hx-columns">
-    <div class="hx-column is-4">
-      <ul>
-        <li><code>&lt;p&gt;</code> Paragraphs</li>
-        <li><code>&lt;mark&gt;</code> Mark</li>
-        <li><code>&lt;del&gt;</code> Delete</li>
-        <li><code>&lt;s&gt;</code> Strikeline</li>
-        <li><code>&lt;ins&gt;</code> Insert</li>
-        <li><code>&lt;u&gt;</code> Underline</li>
-        <li><code>&lt;small&gt;</code> Small</li>
-        <li><code>&lt;strong&gt;</code> Strong</li>
-        <li><code>&lt;em&gt;</code> Emphasized</li>
-      </ul>
-    </div>
-    <div class="hx-column">
-      <p>This is a paragraph.</p>
-      <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-      <p><del>This line of text is meant to be treated as deleted text.</del></p>
-      <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-      <p><u>This line of text will render as underlined</u></p>
-      <p><small>This line of text is meant to be treated as fine print.</small></p>
-      <p><strong>This line rendered as bold text.</strong></p>
-      <p><em>This line rendered as italicized text.</em></p>
-    </div>
-  </div>
-            `,
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;p&gt;</code> Paragraphs</td>
+      <td>
+        <p>This is a paragraph.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;mark&gt;</code> Mark</td>
+      <td>
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;del&gt;</code> Delete</td>
+      <td>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;s&gt;</code> Strikeline</td>
+      <td>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;ins&gt;</code> Insert</td>
+      <td>
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;u&gt;</code> Underline</td>
+      <td>
+        <p><u>This line of text will render as underlined</u></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;small&gt;</code> Small</td>
+      <td>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;strong&gt;</code> Strong</td>
+      <td>
+        <p><strong>This line rendered as bold text.</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;em&gt;</code> Emphasized</td>
+      <td>
+        <p><em>This line rendered as italicized text.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>`,
         },
         {
           title: 'Lists',
-          code: `
-  <div class="hx-columns">
-    <div class="hx-column is-4">
-      <p>Use an unordered list to list things, if the order of the items doesn't matter.</p>
-      <p>And a definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, <br>like metadata or a dictionary definition. <br>Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>.</p>
-      <ul>
-        <li><code>&lt;ul&gt;</code> Unorder list</li>
-        <li><code>&lt;ol&gt;</code> Order list</li>
-        <li><code>&lt;dl&gt;</code> Definition Lists</li>
-      </ul>
-    </div>
-    <div class="hx-column is-2 is-offset-1">
-      <p><strong>Unordered lists</strong></p>
+          withContent: false,
+          code: `<div class="hx-card-content grid tablet:grid-cols-3 gap-4">
+  <div>
+    <p>Use an unordered list to list things, if the order of the items doesn't matter.</p>
+    <p>And a definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, <br>like metadata or a dictionary definition. <br>Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>.</p>
+    <ul>
+      <li><code>&lt;ul&gt;</code> Unorder list</li>
+      <li><code>&lt;ol&gt;</code> Order list</li>
+      <li><code>&lt;dl&gt;</code> Definition Lists</li>
+    </ul>
+  </div>
+
+  <div>
+    <p><strong>Unordered lists</strong></p>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
       <ul>
         <li>List item</li>
-        <li>List item</li>
-        <ul>
-          <li>List item</li>
-        </ul>
       </ul>
-      <p><strong>Ordered lists</strong></p>
+    </ul>
+    <p><strong>Ordered lists</strong></p>
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
       <ol>
         <li>List item</li>
-        <li>List item</li>
-        <ol>
-          <li>List item</li>
-        </ol>
       </ol>
-    </div>
-    <div class="hx-column is-3">
-      <p><strong>Definition list</strong></p>
-      <dl>
-        <dt>Time</dt>
-        <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
-        <dt>Space</dt>
-        <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
-        <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
-      </dl>
-    </div>
+    </ol>
   </div>
-            `,
+
+  <div>
+    <p><strong>Definition list</strong></p>
+    <dl>
+      <dt>Time</dt>
+      <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.</dd>
+      <dt>Space</dt>
+      <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+      <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+    </dl>
+  </div>
+</div>`,
         },
         {
           title: 'Alignments',
-          code: `
-  <table class="hx-table is-striped">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>.is-text-nowrap</code></td>
-        <td class="is-text-nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-truncate</code></td>
-        <td class="is-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-center</code></td>
-        <td class="is-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-    </tbody>
-  </table>
-            `,
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.is-text-nowrap</code></td>
+      <td class="is-text-nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-truncate</code></td>
+      <td class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-center</code></td>
+      <td class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>`,
         },
         {
           title: 'Transformation',
-          code: `
-  <table class="hx-table is-striped">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>.is-text-lowercase</code></td>
-        <td class="is-text-lowercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-uppercase</code></td>
-        <td class="is-text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-capitalise</code></td>
-        <td class="is-text-capitalise">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-    </tbody>
-  </table>
-            `,
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.text-lowercase</code></td>
+      <td class="text-lowercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-uppercase</code></td>
+      <td class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-capitalise</code></td>
+      <td class="text-capitalise">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>`,
         },
         {
           title: 'Weights & italics',
-          code: `
-  <table class="hx-table is-striped">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>.is-text-weight-normal</code></td>
-        <td class="is-text-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-bold</code></td>
-        <td class="is-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-text-italic</code></td>
-        <td class="is-text-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-    </tbody>
-  </table>
-            `,
-        },
-        {
-          title: 'Colours',
-          code: `
-  <p>Easily colour text with text colour classes</p>
-  <table class="hx-table is-striped">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
     <tr>
-        <td><code>.is-black</code></td>
-        <td class="is-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-white</code></td>
-        <td class="is-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-  
-  <tr>
-        <td><code>.is-light</code></td>
-        <td class="is-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-lighter</code></td>
-        <td class="is-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-  
-        <tr>
-        <td><code>.is-lightest</code></td>
-        <td class="is-lightest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-dark</code></td>
-        <td class="is-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-primary</code></td>
-        <td class="is-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-info</code></td>
-        <td class="is-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-warning</code></td>
-        <td class="is-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-      </tr>
-      <tr>
-        <td><code>.is-danger</code></td>
-        <td><span class="is-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></td>
-      </tr>
-    </tbody>
-  </table>
-            `,
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.font-normal</code></td>
+      <td class="!font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-light</code></td>
+      <td class="!font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-medium</code></td>
+      <td class="!font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-bold</code></td>
+      <td class="!font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-italic</code></td>
+      <td class="!text-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>`,
         },
       ],
     }

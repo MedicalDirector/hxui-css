@@ -49,9 +49,7 @@
       a container:
     </p>
 
-    <pre v-highlightjs>
-      <code ref="code" class="html">{{ code }}</code>
-    </pre>
+    <pre v-highlightjs><code ref="code" class="html">{{ code }}</code></pre>
 
     <p class="prose">
       The <code>icon</code> container will take up exactly

@@ -11,9 +11,7 @@
     </div>
 
     <div class="grid gap-4">
-      <pre v-highlightjs ref="code">
-        <code class="html">{{ code }}</code>
-      </pre>
+      <pre v-highlightjs ref="code"><code class="html">{{ code }}</code></pre>
     </div>
   </article>
 </template>

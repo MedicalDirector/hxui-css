@@ -10,9 +10,7 @@
       Simply add <code>.hx-section</code> to divide your page into sections.
     </p>
 
-    <pre v-highlightjs ref="code">
-      <code class="html">{{ code }}</code>
-    </pre>
+    <pre v-highlightjs ref="code"><code class="html">{{ code }}</code></pre>
 
     <br />
     <h1 class="h4">Modifiers</h1>

@@ -73,11 +73,7 @@
     </ul>
 
     <h4 class="mt-10 mb-3">Usage</h4>
-    <pre v-highlightjs>
-      <code class="html">
-        {{ code }}
-      </code>
-    </pre>
+    <pre v-highlightjs><code class="html">{{ code }}</code></pre>
   </article>
 </template>
 

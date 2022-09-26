@@ -10,9 +10,7 @@
     <section>
       <p><span class="h5">1.</span> Use <strong>NPM</strong></p>
 
-      <pre v-highlightjs>
-        <code class="shell">{{ code[0] }}</code>
-      </pre>
+      <pre v-highlightjs><code class="shell">{{ code[0] }}</code></pre>
     </section>
 
     <section>
@@ -21,9 +19,7 @@
         a index.html file.
       </p>
 
-      <pre v-highlightjs>
-        <code class="html">{{ code[1] }}</code>
-      </pre>
+      <pre v-highlightjs><code class="html">{{ code[1] }}</code></pre>
     </section>
 
     <section>
@@ -33,9 +29,7 @@
         projects scss.
       </p>
 
-      <pre v-highlightjs>
-        <code class="scss">{{ code[2] }}</code>
-      </pre>
+      <pre v-highlightjs><code class="scss">{{ code[2] }}</code></pre>
     </section>
 
     <p>
@@ -45,9 +39,7 @@
       <code>$icons-path: '../fonts/';</code> scss variable.
     </p>
 
-    <pre v-highlightjs>
-      <code class="scss">{{ code[3] }}</code>
-    </pre>
+    <pre v-highlightjs><code class="scss">{{ code[3] }}</code></pre>
 
     <br />
 
@@ -64,9 +56,7 @@
       directly:
     </p>
 
-    <pre v-highlightjs>
-      <code class="scss">{{ code[4] }}</code>
-    </pre>
+    <pre v-highlightjs><code class="scss">{{ code[4] }}</code></pre>
 
     <strong>
       Designed to optionally work in parallel with other frameworks
@@ -82,9 +72,7 @@
       container that is HxUi specific.
     </p>
 
-    <pre v-highlightjs>
-      <code class="html">{{ code[5] }}</code>
-    </pre>
+    <pre v-highlightjs><code class="html">{{ code[5] }}</code></pre>
   </article>
 </template>
 

@@ -16,9 +16,12 @@
       </button>
     </div>
     <div class="hx-card-content p-0 hx-code" :id="`${title} code snippet`">
-      <pre v-highlightjs ref="code" :class="{ open: codeVisible }">
-        <code>{{ code }}</code>
-      </pre>
+      <pre
+        v-highlightjs
+        ref="code"
+        style="border-radius: 2px"
+        :class="{ open: codeVisible }"
+      ><code>{{ code }}</code></pre>
     </div>
     <div
       class="hx-card-content"
