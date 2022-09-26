@@ -204,7 +204,7 @@ export default {
       <button class="hx-delete is-small"></button>
     </span>
     <span class="hx-badge warning">
-      <span class="hx-avatar hx-bg-black">VB</span>
+      <div class="hx-avatar hx-bg-black">VB</div>
       <span>Medium</span>
       <button class="hx-delete is-small"></button>
     </span>

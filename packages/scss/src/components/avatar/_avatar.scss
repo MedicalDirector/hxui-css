@@ -11,6 +11,22 @@
 
 @use "../../mixins/deprecate" as *;
 
+:is(.#{$namespace}-badge) {
+  .#{$namespace}-avatar {
+    @include avatar.size-small;
+
+    margin-left: -1px; // TODO: unhard - based on border-width
+  }
+}
+
+:where(.#{$namespace}-badge).lg {
+  .#{$namespace}-avatar {
+    @include avatar.size-medium;
+
+    margin-left: -1px; // TODO: unhard - based on border-width
+  }
+}
+
 .#{$namespace}-avatar {
   @include avatar.control;
 

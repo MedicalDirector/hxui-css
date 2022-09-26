@@ -78,6 +78,10 @@ $border-width-default: 1;
   @include get-size("md");
 }
 
+@mixin size-small {
+  @include get-size("sm");
+}
+
 ///////////////////////
 // Variant - Default //
 ///////////////////////

@@ -26,21 +26,21 @@
   }
 }
 
-:is(.#{$namespace}-badge.sm) {
+:where(.#{$namespace}-badge).sm {
   .#{$namespace}-badge-action,
   .#{$namespace}-delete {
     margin-right: spacing.px(0);
   }
 }
 
-:is(.#{$namespace}-badge.md) {
+:where(.#{$namespace}-badge).md {
   .#{$namespace}-badge-action,
   .#{$namespace}-delete {
     margin-right: spacing.px(1);
   }
 }
 
-:is(.#{$namespace}-badge.lg) {
+:where(.#{$namespace}-badge).lg {
   .#{$namespace}-badge-action,
   .#{$namespace}-delete {
     margin-right: spacing.px(1.5);
@@ -227,24 +227,24 @@
   // With Avatars //
   //////////////////
 
-  .#{$namespace}-avatar {
-    min-width: 24px;
-    min-height: 24px;
-    height: 24px;
-    width: 24px;
-    margin-left: -12px;
-    margin-right: 0.4rem;
-    font-size: 0.75rem;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
+  // .#{$namespace}-avatar {
+  //   min-width: 24px;
+  //   min-height: 24px;
+  //   height: 24px;
+  //   width: 24px;
+  //   margin-left: -12px;
+  //   margin-right: 0.4rem;
+  //   font-size: 0.75rem;
+  //   line-height: normal;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   box-shadow: none;
 
-    .#{$namespace}-icon {
-      font-size: 1rem;
-    }
-  }
+  //   .#{$namespace}-icon {
+  //     font-size: 1rem;
+  //   }
+  // }
 
   /////////////////
   // With Action //
