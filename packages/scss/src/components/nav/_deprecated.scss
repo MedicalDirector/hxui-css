@@ -2,6 +2,9 @@
 //  NAV  //
 ///////////
 
+/// @note
+/// duplicate of v1 nav.scss in case of forking
+
 @use "../variables" as *;
 @use "../mixins/border-radius" as round;
 @use "../mixins/state";

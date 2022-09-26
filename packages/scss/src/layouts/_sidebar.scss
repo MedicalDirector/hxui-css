@@ -11,12 +11,12 @@ $sidebar-nav-hover-color: colour-gray-light;
   flex-direction: column;
   transition: 0.3s ease-in-out;
 
-  .#{$namespace}-nav-vertical {
-    .#{$namespace}-nav-item {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
+  // .#{$namespace}-nav-vertical {
+  //   .#{$namespace}-nav-item {
+  //     padding-left: 1rem;
+  //     padding-right: 1rem;
+  //   }
+  // }
 
   &.is-medium-width {
     min-width: 15rem;

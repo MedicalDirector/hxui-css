@@ -84,23 +84,25 @@ dd {
 // }
 
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  cursor: pointer;
-  color: $hx-link-color;
-  text-decoration: $hx-link-decoration;
+  &.prose {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    cursor: pointer;
+    color: $hx-link-color;
+    text-decoration: $hx-link-decoration;
 
-  @include state.hover {
-    color: $hx-link-hover-color;
-    text-decoration: $hx-link-hover-decoration;
-  }
+    @include state.hover {
+      color: $hx-link-hover-color;
+      text-decoration: $hx-link-hover-decoration;
+    }
 
-  &.is-gray {
-    color: color.scale($hx-text, $lightness: 30%);
+    &.is-gray {
+      color: color.scale($hx-text, $lightness: 30%);
 
-    &:hover {
-      color: $hx-text;
-      text-decoration: none;
+      &:hover {
+        color: $hx-text;
+        text-decoration: none;
+      }
     }
   }
 }

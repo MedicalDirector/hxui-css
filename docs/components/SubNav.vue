@@ -1,6 +1,7 @@
 <template>
-  <div
-    class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white"
+  <!-- class="hx-sidebar is-medium-width is-active is-scrollable py-0 hx-bg-white" -->
+  <nav
+    class="hx-sidebar hx-nav vertical is-medium-width is-active is-scrollable py-0 hx-bg-white"
   >
     <expanding-nav-item
       v-for="(section, i) in sections"
@@ -9,7 +10,7 @@
       :items="section.items"
     >
     </expanding-nav-item>
-  </div>
+  </nav>
 </template>
 
 <script>
