@@ -30,7 +30,7 @@
       <h4>Examples</h4>
     </div>
 
-    <div class="grid desktop:grid-cols-2 gap-4">
+    <div class="grid laptop:grid-cols-2 gap-4">
       <div class="hx-panel mock-panel">
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
@@ -119,7 +119,7 @@
       </p>
     </div>
 
-    <div class="grid desktop:grid-cols-2 gap-4">
+    <div class="grid laptop:grid-cols-2 gap-4">
       <div class="hx-panel mock-panel">
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">

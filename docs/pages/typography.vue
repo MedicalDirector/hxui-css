@@ -205,7 +205,7 @@ export default {
         {
           title: 'Marketing / prose copy',
           withContent: false,
-          code: `<div class="hx-card-content grid tablet:grid-cols-2 gap-4 prose">
+          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4 prose">
   <div>
     <h1>FLAGYL® (METRONIDAZOLE)</h1>
     <div class="pihead">Product Information</div>
@@ -397,7 +397,7 @@ export default {
         {
           title: 'Heading examples - Headings in a form or panel',
           withContent: false,
-          code: `<div class="hx-card-content grid tablet:grid-cols-4 gap-4">
+          code: `<div class="hx-card-content grid phablet:grid-cols-4 gap-4">
   <div>
     <h3>New Recipe</h3>
     <div class="hx-form-control no-label">
@@ -406,7 +406,7 @@ export default {
       <span class="hx-help">Please enter the recipe name</span>
     </div>
   </div>
-  <div class="hx-card tablet:col-start-2 tablet:col-end-5">
+  <div class="hx-card phablet:col-start-2 phablet:col-end-5">
     <div class="hx-card-content grid gap-4">
       <div>
         <div class="hx-form-control fullwidth">
@@ -423,7 +423,7 @@ export default {
           </span>
         </div>
       </div>
-      <div class="grid tablet:grid-cols-2 gap-4">
+      <div class="grid phablet:grid-cols-2 gap-4">
         <div class="hx-form-control fullwidth">
           <label class="hx-label">Qty</label>
           <input
@@ -442,7 +442,7 @@ export default {
             type="text"
           />
         </div>
-        <p class="tablet:col-start-1 tablet:col-end-3">
+        <p class="phablet:col-start-1 phablet:col-end-3">
           See <a href="/panel-header/">Panel Header</a> and <a href="/panel/">Panel</a>
         </p>
       </div>
@@ -520,7 +520,7 @@ export default {
         {
           title: 'Lists',
           withContent: false,
-          code: `<div class="hx-card-content grid tablet:grid-cols-3 gap-4">
+          code: `<div class="hx-card-content grid phablet:grid-cols-3 gap-4">
   <div>
     <p>Use an unordered list to list things, if the order of the items doesn't matter.</p>
     <p>And a definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, <br>like metadata or a dictionary definition. <br>Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>.</p>

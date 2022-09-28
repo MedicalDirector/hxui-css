@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 /////////////
 // SPACING //
 /////////////
@@ -105,4 +106,24 @@ $_unit: $unit-padding-margins;
   .gap-#{$i} {
     gap: 1rem * ($i * $_unit);
   }
+}
+
+.\!gap-form,
+.\!gap-card {
+  gap: 1rem !important;
+}
+
+.gap-form,
+.gap-card {
+  gap: 1rem;
+}
+
+.\!gap-bar,
+.\!gap-list {
+  gap: 0.5rem !important;
+}
+
+.gap-bar,
+.gap-list {
+  gap: 0.5rem;
 }

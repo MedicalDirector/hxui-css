@@ -23,6 +23,12 @@
   width: 100%;
 
   // Responsiveness
+  @include breakpoint.phablet {
+    margin: 0 auto;
+    max-height: calc(100vh - 40px);
+    width: 640px;
+  }
+
   @include breakpoint.tablet {
     margin: 0 auto;
     max-height: calc(100vh - 40px);

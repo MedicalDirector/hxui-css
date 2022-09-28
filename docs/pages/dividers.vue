@@ -35,7 +35,7 @@ export default {
         {
           title: 'Horizontal',
           withContent: false,
-          code: `<div class="hx-card-content grid tablet:grid-cols-2  gap-4">
+          code: `<div class="hx-card-content grid phablet:grid-cols-2  gap-4">
   <div class="hx-card">
     <div class="p-4">
       <span class="h3">Related Content</span>
@@ -67,7 +67,7 @@ export default {
     Also see the toolbar for examples.
   </p>
 
-  <div class="grid tablet:grid-cols-2 gap-4">
+  <div class="grid phablet:grid-cols-2 gap-4">
     <div class="flex justify-center items-center gap-2">
       <button class="hx-button is-primary">Click me</button>
       <div class="hx-divider"></div>

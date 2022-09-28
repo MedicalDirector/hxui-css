@@ -8,9 +8,9 @@
 .#{$namespace}-container {
   position: relative;
 
-  @include breakpoint.desktop {
+  @include breakpoint.tablet {
     margin: 0 auto;
-    width: $hx-desktop - 40px;
+    width: calc($hx-tablet - 40px);
 
     // Modifiers
     &.is-fluid {
@@ -20,12 +20,12 @@
     }
   }
 
-  @include breakpoint.widescreen {
-    width: $hx-widescreen - 40px;
+  @include breakpoint.laptop {
+    width: calc($hx-laptop - 40px);
   }
 
-  @include breakpoint.fullhd {
-    width: $hx-fullhd - 40px;
+  @include breakpoint.desktop {
+    width: calc($hx-desktop - 40px);
   }
 }
 

@@ -84,14 +84,68 @@
 
 @include _grid-columns;
 
+/// phablet and above
+@include breakpoint.phablet {
+  @include _grid-columns("phablet");
+}
+
 /// tablet and above
 @include breakpoint.tablet {
   @include _grid-columns("tablet");
 }
 
+/// laptop and above
+@include breakpoint.laptop {
+  @include _grid-columns("laptop");
+}
+
 /// desktop and above
 @include breakpoint.desktop {
   @include _grid-columns("desktop");
+}
+
+// .grid-form {
+//   // 1 column
+//   // "2 columns" at phablet
+//   // "3 columns" at laptop
+// }
+
+.layout-canvas-cols-major-minor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major";
+  gap: 1rem;
+
+  @include breakpoint.tablet {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major";
+  }
+
+  @include breakpoint.laptop {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-minor canvas-cols-minor";
+  }
+
+  @include breakpoint.desktop {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: ". canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-major canvas-cols-minor canvas-cols-minor .";
+  }
+}
+
+.area-canvas-cols-major {
+  grid-area: canvas-cols-major;
+}
+
+.area-canvas-cols-minor {
+  grid-area: canvas-cols-minor;
+}
+
+// .layout-canvas-cols-solo {}
+
+// .layout-canvas-cols-table {}
+
+.area-canvas-solo {
+  grid-area: canvas-cols-solo;
 }
 
 // LEGACY

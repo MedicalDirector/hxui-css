@@ -20,7 +20,7 @@
       <p>Below is a list of the HxUI themed color palette.</p>
     </div>
 
-    <div class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-7 gap-4">
+    <div class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-7 gap-4">
       <div class="hx-card bg-primary-emphasis">
         <div class="hx-card-header flex-col items-start gap-0">
           <h3 class="h3 fg-contrast">Primary</h3>

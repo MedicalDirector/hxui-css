@@ -104,9 +104,14 @@
 
 @include _displays;
 
-/// mobile and above
+/// mobile and below
 @include breakpoint.mobile {
   @include _displays("mobile");
+}
+
+/// phablet and above
+@include breakpoint.phablet {
+  @include _displays("phablet");
 }
 
 /// tablet and above
@@ -114,28 +119,23 @@
   @include _displays("tablet");
 }
 
+/// laptop and above
+@include breakpoint.laptop {
+  @include _displays("laptop");
+}
+
 /// desktop and above
 @include breakpoint.desktop {
   @include _displays("desktop");
-}
-
-/// widescreen and above
-@include breakpoint.widescreen {
-  @include _displays("widescreen");
-}
-
-/// fullhd and above
-@include breakpoint.fullhd {
-  @include _displays("fullhd");
 }
 
 ////////////////
 // Visibility //
 ////////////////
 
-$hx-lt-desktop: $hx-desktop - 1px;
-$hx-lt-widescreen: $hx-widescreen - 1px;
-$hx-lt-fullhd: $hx-fullhd - 1px;
+// $hx-lt-desktop: $hx-desktop - 1px;
+// $hx-lt-widescreen: $hx-widescreen - 1px;
+// $hx-lt-fullhd: $hx-fullhd - 1px;
 
 // TODO: reinstate and call as hidden-down - not best practice to design down; should design up
 

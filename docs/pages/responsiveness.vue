@@ -72,7 +72,7 @@ export default {
         },
         {
           title: 'Visibility',
-          code: `<div class="grid tablet:grid-cols-2">
+          code: `<div class="grid phablet:grid-cols-2">
   <div class="prose">
     <h4 class="mt-0">Show</h4>
     <p>To show an element you can use <code>.is-{display}</code> class.<p>
@@ -91,8 +91,8 @@ export default {
     <p>To show an element by breakpoint type:<p>
     <ul>
       <li><code>.mobile:{display}</code></li>
-      <li><code>.tablet:{display}</code></li>
-      <li><code>.desktop:{display}</code></li>
+      <li><code>.phablet:{display}</code></li>
+      <li><code>.laptop:{display}</code></li>
       <li><code>.widescreen:{display}</code></li>
       <li><code>.fullhd:{display}</code></li>
     </ul>
@@ -103,8 +103,8 @@ export default {
     <p>Use <code>.hidden</code> class to hide an element.<p>
     <p>To hide an element by breakpoint type:<p>
     <ul>
-      <li><code>.tablet:hidden</code></li>
-      <li><code>.desktop:hidden</code></li>
+      <li><code>.phablet:hidden</code></li>
+      <li><code>.laptop:hidden</code></li>
       <li><code>.widescreen:hidden</code></li>
     </ul>
     <p>
@@ -117,8 +117,8 @@ export default {
     <p>To show an element by breakpoint type:<p>
     <ul>
       <li><code>.mobile:hidden</code></li>
-      <li><code>.tablet:hidden-down</code></li>
-      <li><code>.desktop:hidden-down</code></li>
+      <li><code>.phablet:hidden-down</code></li>
+      <li><code>.laptop:hidden-down</code></li>
       <li><code>.widescreen:hidden-down</code></li>
     </ul>
     <p>
@@ -131,14 +131,14 @@ export default {
           title: 'Visibility Example',
           code: `<p class="prose">To test the examples below you can use the browsers resolution emulator or simply resize the browser.</p>
 
-<div class="flex flex-col tablet:flex-row gap-4">
+<div class="flex flex-col phablet:flex-row gap-4">
   <div class="hidden mobile:flex grow-1 hx-bg-primary p-4">
     <p class="text-center">Mobile</p>
   </div>
-  <div class="hidden tablet:flex grow-1 hx-bg-primary p-4">
+  <div class="hidden phablet:flex grow-1 hx-bg-primary p-4">
     <p class="text-center">Tablet</p>
   </div>
-  <div class="hidden desktop:flex grow-1 hx-bg-primary p-4">
+  <div class="hidden laptop:flex grow-1 hx-bg-primary p-4">
     <p class="text-center">Desktop</p>
   </div>
   <div class="hidden widescreen:flex grow-1 hx-bg-primary p-4">

@@ -86,8 +86,8 @@ export default {
       {
         title: 'Default card',
         withContent: false,
-        code: `<div class="hx-card-content grid gap-4 tablet:grid-cols-3">
-  <div class="hidden tablet:!block"></div>
+        code: `<div class="hx-card-content grid gap-4 phablet:grid-cols-3">
+  <div class="hidden phablet:!block"></div>
   <div class="hx-card">
     <div class="hx-card-content">
       <p class="b0 font-bold">Choi</p>
@@ -96,13 +96,13 @@ export default {
       <p class="b2 text-subdued">11:09 PM - 1 Jan 2016</p>
     </div>
   </div>
-  <div class="hidden tablet:!block"></div>
+  <div class="hidden phablet:!block"></div>
 </div>`,
       },
       {
         title: 'Border highlighted card',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="prose">
     <p>Add <code>.highlight</code> to the card for border highlighted card.</p>
     <p>You can also add modifiers for different colour border.</p>
@@ -115,7 +115,7 @@ export default {
     </ul>
   </div>
 
-  <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card highlight highlight-info">
       <div class="hx-card-content">
         <p class="b0 font-bold">Choi</p>
@@ -166,7 +166,7 @@ export default {
       {
         title: 'Border sizes',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="prose">
     <p>You can add modifiers for different border sizes.</p>
     <ul>
@@ -175,7 +175,7 @@ export default {
     </ul>
   </div>
 
-  <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card highlight">
       <div class="hx-card-content">
         <p class="b0 font-bold">Choi</p>
@@ -199,7 +199,7 @@ export default {
       {
         title: 'Raised',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="prose">
     <p>Add <code>.raised</code> modifier class to add depth to cards.</p>
     <ul>
@@ -209,7 +209,7 @@ export default {
     </ul>
   </div>
 
-  <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card raised hover">
       <div class="hx-card-content">
         <div class="">
@@ -248,12 +248,12 @@ export default {
       {
         title: 'Using HxUI grid',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-3 gap-4">
+        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-3 gap-4">
   <div class="prose">
     <p>You can create complex layouts using HxUI Grid and Form in Card.</p>
   </div>
 
-  <div class="grid grid-cols-1 tablet:grid-cols-2 tablet:col-start-2 tablet:col-end-4 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-2 phablet:col-start-2 phablet:col-end-4 gap-4">
     <div class="hx-card highlight is-warning">
       <div class="hx-card-content">
         <p>

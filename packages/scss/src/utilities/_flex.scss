@@ -520,9 +520,14 @@
 
 @include _flex;
 
-/// mobile and above
+/// mobile and below
 @include breakpoint.mobile {
   @include _flex("mobile");
+}
+
+/// phablet and above
+@include breakpoint.phablet {
+  @include _flex("phablet");
 }
 
 /// tablet and above
@@ -530,17 +535,12 @@
   @include _flex("tablet");
 }
 
+/// laptop and above
+@include breakpoint.laptop {
+  @include _flex("laptop");
+}
+
 /// desktop and above
 @include breakpoint.desktop {
   @include _flex("desktop");
-}
-
-/// widescreen and above
-@include breakpoint.widescreen {
-  @include _flex("widescreen");
-}
-
-/// fullhd and above
-@include breakpoint.fullhd {
-  @include _flex("fullhd");
 }

@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-$hx-lt-tablet: $hx-tablet - 1px;
+$hx-lt-tablet: calc($hx-phablet - 1px);
 
 @mixin mobile {
   @media screen and (max-width: $hx-lt-tablet) {
@@ -8,8 +8,20 @@ $hx-lt-tablet: $hx-tablet - 1px;
   }
 }
 
+@mixin phablet {
+  @media screen and (min-width: $hx-phablet) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (min-width: $hx-tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $hx-laptop) {
     @content;
   }
 }
@@ -21,13 +33,13 @@ $hx-lt-tablet: $hx-tablet - 1px;
 }
 
 @mixin widescreen {
-  @media screen and (min-width: $hx-widescreen) {
+  @media screen and (min-width: $hx-laptop) {
     @content;
   }
 }
 
 @mixin fullhd {
-  @media screen and (min-width: $hx-fullhd) {
+  @media screen and (min-width: $hx-desktop) {
     @content;
   }
 }

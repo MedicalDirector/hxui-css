@@ -38,7 +38,7 @@ export default {
         {
           title: 'Input field',
           withContent: false,
-          code: `<div class="hx-card-content grid tablet:grid-cols-2 gap-4">
+          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4">
   <div class="hx-form-control fullwidth">
     <label class="hx-label" for="input-2">Full Name</label>
     <input class="hx-input" id="input-2" type="text" required>
@@ -170,7 +170,7 @@ export default {
 </div>
 
 <div 
-  class="hx-card-content grid tablet:grid-cols-2 gap-4" 
+  class="hx-card-content grid phablet:grid-cols-2 gap-4" 
   style="background-color: var(--color-surface-background-default); box-shadow: 0 -1px 0 rgb(0 0 0 / 10%);"
 >
   <div class="hx-form-control fullwidth">
@@ -402,7 +402,7 @@ export default {
           code: `<div class="hx-card-content grid gap-4">
   <p>Radio Buttons are used when the user must make only one selection out of a group of items.</p>
 
-  <div class="grid grid-cols-1 tablet:grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-4 gap-4">
     <div>
       <div class="hx-input-control">
         <div class="hx-radio-control">
@@ -542,7 +542,7 @@ export default {
     Alternatively, you can add/remove the <code>is-indeterminate</code> class.
   </p>
   
-  <div class="grid grid-cols-1 tablet:grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-4 gap-4">
     <div>
       <div class="hx-input-control">
         <div class="hx-checkbox-control">

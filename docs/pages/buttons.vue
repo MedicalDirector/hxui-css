@@ -36,7 +36,7 @@ export default {
         {
           title: 'Button colours',
           withContent: false,
-          code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-1 gap-4">
+          code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-1 gap-4">
   <div class="flex gap-2 justify-center">
     <button class="hx-button">
       <span>Default</span>
@@ -70,7 +70,7 @@ export default {
     </button>
   </div>
     
-  <div class="grid grid-cols-1 tablet:grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-bg-blue p-2 flex justify-center">
       <button class="hx-button is-white">
         <span>White</span>
@@ -427,7 +427,7 @@ export default {
         {
           title: 'Multiline button',
           withContent: false,
-          code: `<div class="hx-card-content grid grid-cols-1 tablet:grid-cols-3 gap-4">
+          code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-3 gap-4">
   <button class="hx-button multiline">
     <span>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem 

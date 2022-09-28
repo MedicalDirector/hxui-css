@@ -18,7 +18,7 @@
     }
   }
 
-  @include breakpoint.tablet {
+  @include breakpoint.phablet {
     width: 340px;
 
     &.is-medium,
@@ -27,7 +27,7 @@
     }
   }
 
-  @include breakpoint.desktop {
+  @include breakpoint.laptop {
     width: 340px;
 
     &.is-medium,
@@ -36,19 +36,7 @@
     }
   }
 
-  @include breakpoint.widescreen {
-    width: 340px;
-
-    &.is-medium {
-      width: 644px;
-    }
-
-    &.is-large {
-      width: 95%;
-    }
-  }
-
-  @include breakpoint.fullhd {
+  @include breakpoint.desktop {
     width: 340px;
 
     &.is-medium {

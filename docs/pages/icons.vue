@@ -7,18 +7,20 @@
 
     <hr />
 
-    <div class="hx-input-control">
-      <input class="hx-input" type="text" required v-model="searchTerm" />
-      <label class="hx-label">
-        <i class="hx-icon icon-search is-small"></i>
-        Search icons
-      </label>
+    <div class="hx-form-control no-label no-help fullwidth">
+      <label class="hx-label sr-only">Search icons</label>
+      <div class="hx-input-group contrast">
+        <span class="hx-icon-control">
+          <i class="hx-icon icon-search"></i>
+        </span>
+        <input class="hx-input" type="text" required v-model="searchTerm" />
+      </div>
     </div>
 
     <h2 class="h2 prose my-4">Standard Icons</h2>
 
     <section
-      class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
+      class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
     >
       <div class="text-center" v-for="icon in filterResults" :key="icon.name">
         <i class="hx-icon" :class="'icon-' + icon.name"></i>
@@ -31,7 +33,7 @@
     <h2 class="h2 prose mt-8 mb-4">Legacy Icons</h2>
 
     <section
-      class="grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-8 gap-4"
+      class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
     >
       <div class="text-center" v-for="icon in iconsLegacy" :key="icon.name">
         <i class="hx-icon" :class="'icon-' + icon.name"></i>
