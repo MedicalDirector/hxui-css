@@ -52,6 +52,18 @@
       }
     }
   }
+
+  &.is-left {
+    justify-content: flex-start;
+  }
+
+  &.is-centered {
+    justify-content: center;
+  }
+
+  &.is-right {
+    justify-content: flex-end;
+  }
 }
 
 // Hide tabbable panes to start, show them when `.is-active`

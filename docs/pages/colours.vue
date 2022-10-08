@@ -35,6 +35,9 @@
           <div class="bg-primary-muted px-4 py-2">
             <p class="b1 fg-primary">bg-primary-muted</p>
           </div>
+          <div class="bg-primary-gradient px-4 py-2">
+            <p class="b1 fg-contrast">bg-primary-gradient</p>
+          </div>
         </div>
       </div>
 

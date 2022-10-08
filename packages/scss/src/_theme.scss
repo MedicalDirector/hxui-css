@@ -6,8 +6,36 @@
 @include theme.custom-properties {
   @include variables-base;
 
-  --scrollbar-width: 9px;
-  --scrollbar-height: 9px;
+  // TODO: unhard
+  --elevation-global-0: 0;
+  --elevation-global-1: 5;
+  --elevation-global-2: 10;
+  --elevation-global-3: 15;
+  --elevation-global-4: 20;
+  --elevation-global-5: 25;
+  --elevation-global-6: 30;
+  --elevation-global-7: 35;
+  --elevation-global-8: 40;
+  --elevation-global-9: 45;
+  --elevation-global-10: 50;
+  --elevation-global-11: 55;
+  --elevation-global-12: 60;
+  --elevation-global-13: 65;
+  --elevation-global-14: 70;
+  --elevation-global-15: 75;
+  --elevation-global-16: 80;
+  --elevation-global-17: 85;
+  --elevation-global-18: 90;
+  --elevation-global-19: 95;
+  --elevation-global-20: 100;
+
+  --elevation-semantic-card: var(--elevation-global-1);
+  --elevation-semantic-appbar-top: var(--elevation-global-4);
+  --elevation-semantic-appbar-bottom: var(--elevation-global-8);
+  --elevation-semantic-menu: var(--elevation-global-8);
+  --elevation-semantic-overlay: var(--elevation-global-14);
+  --elevation-semantic-drawer: var(--elevation-global-16);
+  --elevation-semantic-dialog: var(--elevation-global-20);
 }
 
 @include theme.color-mode-theme(normal, true) {

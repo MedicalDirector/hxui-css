@@ -1,34 +1,34 @@
 @use "./deprecate" as *;
 
-@mixin all($time) {
+@mixin all($duration) {
   @include deprecate(
     "2.0.0",
     "Use alternate mixin or be specific with transition property. 'All' has performance issues."
   ) {
-    transition: all $time ease-in-out;
+    transition: all $duration ease-in-out;
   }
 }
 
-@mixin colors {
+@mixin colors($duration: 150ms) {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: $duration;
 }
 
-@mixin dimensions {
+@mixin dimensions($duration: 150ms) {
   transition-property: width, height, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: $duration;
 }
 
-@mixin shadows {
+@mixin shadows($duration: 150ms) {
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: $duration;
 }
 
-@mixin opacity {
+@mixin opacity($duration: 150ms) {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: $duration;
 }

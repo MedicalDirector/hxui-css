@@ -42,13 +42,19 @@ export default {
   <br>
   <ul class="hx-nav">
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">News & data</a>
+      <a href="#" class="hx-nav-link">
+        <span>News & data</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link is-active">Status board</a>
+      <a href="#" class="hx-nav-link active">
+        <span>Status board</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">Custom</a>
+      <a href="#" class="hx-nav-link">
+        <span>Custom</span>
+      </a>
     </li>
   </ul>
             `,
@@ -61,13 +67,19 @@ export default {
   <br>
   <ul class="hx-nav is-centered">
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">News & data</a>
+      <a href="#" class="hx-nav-link">
+        <span>News & data</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link is-active">Status board</a>
+      <a href="#" class="hx-nav-link is-active">
+        <span>Status board</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">Custom</a>
+      <a href="#" class="hx-nav-link">
+        <span>Custom</span>
+      </a>
     </li>
   </ul>
   <hr />
@@ -76,13 +88,19 @@ export default {
   <br>
   <ul class="hx-nav is-right">
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">News & data</a>
+      <a href="#" class="hx-nav-link">
+        <span>News & data</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link is-active">Status board</a>
+      <a href="#" class="hx-nav-link is-active">
+        <span>Status board</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">Custom</a>
+      <a href="#" class="hx-nav-link">
+        <span>Custom</span>
+      </a>
     </li>
   </ul>
             `,
@@ -94,13 +112,19 @@ export default {
   <br>
   <ul class="hx-nav is-vertical">
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">News & data</a>
+      <a href="#" class="hx-nav-link">
+        <span>News & data</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link is-active">Status board</a>
+      <a href="#" class="hx-nav-link is-active">
+        <span>Status board</span>
+      </a>
     </li>
     <li class="hx-nav-item">
-      <a href="#" class="hx-nav-link">Custom</a>
+      <a href="#" class="hx-nav-link">
+        <span>Custom</span>
+      </a>
     </li>
   </ul>
             `,

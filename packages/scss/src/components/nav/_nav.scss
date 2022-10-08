@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 ///////////
 //  NAV  //
 ///////////
@@ -6,74 +7,134 @@
 @use "../../mixins/border-radius" as round;
 @use "../../mixins/state";
 @use "../../mixins/transition";
+@use "../../mixins/text";
+@use "../../mixins/deprecate" as *;
 
 @use "../../functions/spacing";
 @use "../../functions/size";
 
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _label {
+  > span,
+  > div {
+    &:not(.#{$namespace}-icon-control),
+    &:not(.#{$namespace}-icon-container),
+    &:not(.#{$namespace}-icon),
+    &:not(.icon) {
+      @content;
+    }
+  }
+
+  .#{$namespace}-nav-label {
+    @content;
+  }
+}
+
+:where(.#{$namespace}-drawer-container) {
+  &:not(.bottom) :where(.#{$namespace}-sidebar, .#{$namespace}-drawer) {
+    .#{$namespace}-nav {
+      width: size.rem(240);
+    }
+
+    &:is(.is-collapsed, .collapsed, [aria-expanded="false"]) {
+      .#{$namespace}-nav {
+        width: 0;
+      }
+    }
+
+    &:is(.is-minified, .mini) {
+      .#{$namespace}-nav {
+        width: size.rem(56);
+      }
+    }
+  }
+}
+
 .#{$namespace}-nav {
   display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  flex-shrink: 0;
+  gap: spacing.rem(1);
+  @include transition.dimensions(300ms);
 
   &.#{$namespace}-nav-vertical,
   &.is-vertical,
-  &.vertical {
+  &.vertical,
+  :where(.#{$namespace}-drawer-container):not(.bottom) & {
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 18em;
-    gap: spacing.rem(1);
+    align-items: stretch;
 
-    &.is-bottom {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding-bottom: 1rem;
+    &:not(:has(.#{$namespace}-nav-section)) {
+      padding: 0 spacing.px(3);
+    }
+
+    @include deprecate("2.0.0", "Use a flex display with .hx-spacer or flex-grow") {
+      &.is-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 1rem;
+      }
     }
   }
 
-  &.is-left {
-    justify-content: flex-start;
-  }
-
-  &.is-centered {
+  &.is-centered,
+  &.center,
+  :where(.#{$namespace}-drawer-container).bottom & {
     justify-content: center;
   }
 
-  &.is-right {
+  &.is-right,
+  &.right {
     justify-content: flex-end;
   }
-}
 
-.#{$namespace}-nav-section {
-  display: contents;
+  @mixin nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-  & + .#{$namespace}-nav-section {
-    .#{$namespace}-nav-heading {
-      // border-top: 1px solid rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
-      box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
-    }
+  @include nav-list;
+
+  :where(li, ul) {
+    @include nav-list;
+  }
+
+  :where(li, li[role="none"]) {
+    display: contents;
   }
 }
 
-.#{$namespace}-nav-items {
+/////////////
+// SECTION //
+/////////////
+/// for containing a heading and a list of items
+.#{$namespace}-nav-section + .#{$namespace}-nav-section {
+  .#{$namespace}-nav-heading {
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+  }
+}
+
+//////////
+// LIST //
+//////////
+/// for containing a list of items
+.#{$namespace}-nav-list {
   display: flex;
   padding: 0 spacing.px(3);
-  margin: 0 0 spacing.rem(2);
+  margin: 0;
   gap: spacing.rem(1);
 
   :where(.#{$namespace}-nav).vertical & {
     flex-direction: column;
+    align-self: stretch;
 
-    &[aria-expanded="false"]:not(.not-a11y) {
+    &[aria-expanded="false"]:not(.with-inert) {
       display: none;
     }
 
-    // below is not a11y; still keyboard-focusable
-    &.not-a11y {
-      transition-property: max-height;
+    // still keyboard-focusable if "inert" html attribute not applied
+    &.with-inert {
+      transition-property: max-height, margin;
       transition-duration: 300ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -83,16 +144,21 @@
 
       &[aria-expanded="false"] {
         max-height: 0;
+        margin-bottom: -1 * size.rem(4);
       }
     }
   }
 }
 
+/////////////
+// HEADING //
+/////////////
+
 .#{$namespace}-nav-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: spacing.rem(1) spacing.px(3) spacing.rem(1) spacing.px(6);
+  padding: spacing.rem(1) spacing.px(3) 0 spacing.px(6); //spacing.rem(1) spacing.px(6);
   font: var(--h6);
   font-weight: 700;
   color: var(--color-foreground-muted);
@@ -100,264 +166,141 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-
-  // h6 {
-  //   margin: 1rem;
-  // }
-}
-
-.#{$namespace}-nav-item,
-.#{$namespace}-nav-heading,
-.#{$namespace}-nav-spacer {
   width: 100%;
-}
 
-:where(.#{$namespace}-nav .vertical) {
-  .#{$namespace}-nav-item {
-    padding: 0 spacing.px(6);
-  }
-}
-
-.#{$namespace}-nav-item {
-  display: flex;
-  flex: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  // below is not a11y; still keyboard-focusable
-  :where(.#{$namespace}-nav-items)[aria-expanded="true"].not-a11y & {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include _label {
+    @include text.truncate;
   }
 
-  :where(.#{$namespace}-nav-items)[aria-expanded="false"].not-a11y & {
-    opacity: 0;
-  }
-}
+  //////////////
+  // Variants //
+  //////////////
 
-.#{$namespace}-nav-link {
-  display: flex;
-  align-items: center;
-  flex: 1;
-
-  /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-  // padding: calc(#{$hx-spacer} / 2) $hx-spacer;
-
-  padding: spacing.rem(1.5) spacing.px(3);
-
-  @include transition.colors;
-
-  font: var(--h5);
-  color: var(--color-foreground-default);
-  text-decoration: none;
-
-  // color: $hx-nav-link-color;
-  // font-size: $hx-nav-link-font-size;
-  // font-weight: $hx-nav-link-font-weight;
-
-  border-radius: size.rem(16);
-
-  // @include state.hover-focus {
-  //   text-decoration: none;
-
-  //   // background-color: $hx-nav-link-hover-color;
-  //   color: $hx-nav-link-active-color;
-
-  //   i.icon {
-  //     color: $hx-nav-link-active-color;
-  //   }
-  // }
-
-  &:hover {
-    background-color: var(--color-action-secondary-active);
-  }
-
-  // span:first-of-type{
-  //   padding-left:$hx-spacer/2;
-  // }
-
-  &.is-active,
-  &.active {
-    color: var(--color-foreground-primary);
-    background-color: var(--color-surface-primary-muted);
-
-    // background-color: rgba(0, 0, 0, 0.04);
-    // color: $hx-nav-link-active-color;
-
-    // border: 1px solid $hx-color-gray-lighter;
-
-    i.icon {
-      color: $hx-nav-link-active-color;
-    }
-  }
-
-  // Disabled state lightens text and removes hover/tab effects
-  &.is-disabled,
-  &.disabled {
-    opacity: 0.3;
-
-    // color: $hx-nav-disabled-link-color;
-
-    @include state.plain-hover-focus {
-      // color: $hx-nav-disabled-link-hover-color;
-      cursor: $hx-cursor-disabled;
-      background-color: transparent;
-    }
-  }
-
-  i.icon {
-    font-size: 1.5rem;
-    color: $hx-color-gray-light;
-    /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-    margin: 0 calc(#{$hx-spacer} / 2) 0 calc(#{$hx-spacer} / 2);
-  }
-}
-
-.#{$namespace}-nav-brand {
-  position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0 0.75rem 0.25rem;
-  margin-bottom: 0.5rem;
-
-  > svg,
-  img,
-  a,
-  .icon {
-    max-width: 5rem;
-    margin: 0 auto 1rem;
-  }
-}
-
-// minified behaviour
-.is-minified {
-  .#{$namespace}-nav-item {
-    display: flex;
-    justify-content: center;
-
-    /* stylelint-disable-next-line function-calc-no-unspaced-operator */
-    margin: calc(#{$hx-spacer} / 3) 0;
-  }
-  .#{$namespace}-nav-brand {
-    margin-bottom: 0.5rem;
-
-    > svg,
-    img,
-    a,
-    .icon {
-      max-width: 2rem;
-      max-height: 2rem;
-    }
-  }
-  .#{$namespace}-nav-link {
-    display: flex;
-    justify-content: center;
-
-    @include round.border-radius(50%);
-
-    max-width: 40px;
-
-    span {
-      display: none;
-    }
-
-    &.is-active {
-      background-color: $hx-nav-link-active-color;
-      color: #fff;
-
-      i.icon {
-        color: #fff;
-      }
-    }
-  }
-  .#{$namespace}-nav-heading {
+  // MINI
+  :where(.mini, .is-minified) & {
     text-align: center;
   }
 }
 
-// themed
-.has-blue-gradient,
-.has-purple-gradient,
-.has-orange-gradient {
-  .#{$namespace}-nav-link {
-    color: #fff;
+//////////
+// ITEM //
+//////////
 
-    i.icon {
-      color: #fff;
-    }
-
-    @include state.hover-focus {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-
-      i.icon {
-        color: #fff;
-      }
-    }
-
-    &.is-active {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-
-      i.icon {
-        color: #fff;
-      }
-    }
-  }
-}
-
-.#{$namespace}-nav-drawer {
+.#{$namespace}-nav-link {
   display: flex;
-  z-index: 1;
-  @media (max-width: 1264px) {
-    position: fixed;
-    z-index: 100;
+  align-items: center;
+  opacity: 1;
+  padding: spacing.rem(1.5) size.px(6);
+  border: none;
+  background-color: transparent;
+  font: var(--h5);
+  color: var(--color-foreground-default);
+  text-decoration: none;
+  text-align: left;
+  border-radius: size.rem(16);
+  cursor: pointer;
+  white-space: nowrap;
+
+  @include transition.colors;
+
+  /* START bit with note; still keyboard-focusable if "inert" html attribute not applied to .hx-nav */
+  :where(.#{$namespace}-nav-list).with-inert & {
+    transition-property: opacity, color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 300ms, 150ms, 150ms, 150ms, 150ms, 150ms, 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  > span {
-    display: flex;
-    height: 100vh;
-    z-index: 1;
+  :where(.#{$namespace}-nav-list)[aria-expanded="false"].with-inert & {
+    opacity: 0;
+  }
+  /* END bit with note */
 
-    > .#{$namespace}-nav {
-      height: 100vh;
+  @include state.hover {
+    background-color: var(--color-action-secondary-active);
+  }
+
+  @include state.active {
+    color: var(--color-foreground-primary);
+    background-color: var(--color-surface-primary-muted);
+  }
+
+  // Disabled state lightens text and removes hover/tab effects
+  @include state.disable {
+    // TODO: fix
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  ////////////////
+  // With icons //
+  ////////////////
+
+  .#{$namespace}-icon-control,
+  .#{$namespace}-icon-container {
+    display: contents;
+  }
+
+  @include _label {
+    padding: 0 size.px(6);
+    @include text.truncate;
+
+    width: 100%;
+    transition-property: padding, width, opacity, color, background-color, border-color, text-decoration-color, fill,
+      stroke;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  //////////////
+  // Variants //
+  //////////////
+
+  // THEMING
+  :where(.#{$namespace}-bg-primary-gradient, .bg-primary-gradient, .has-blue-gradient, .has-purple-gradient, .has-orange-gradient)
+    & {
+    color: var(--color-foreground-contrast);
+
+    @include state.hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: var(--color-foreground-contrast);
+    }
+
+    @include state.active {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: var(--color-foreground-contrast);
     }
   }
-}
-.#{$namespace}-overlay {
-  @media (max-width: 1264px) {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+
+  // MINI
+  :where(.#{$namespace}-sidebar, .#{$namespace}-drawer):is(.mini, .is-minified) & {
+    padding: spacing.rem(1.5);
+    border-radius: size.rem(16);
+
+    @include _label {
+      opacity: 0;
+      width: 0;
+      padding: 0;
+    }
+  }
+
+  // BOTTOM
+  :where(.#{$namespace}-drawer-container).bottom :where(.#{$namespace}-nav):not(.vertical) & {
+    align-self: center;
   }
 }
-.#{$namespace}-nav-navicon {
-  position: fixed;
-  left: 20.5rem;
-  line-height: 3.3rem;
-  top: 0;
-  width: 3rem;
-  height: 3rem;
-  color: white;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-  z-index: 2;
 
-  &.is-closed {
-    left: 0;
-    color: gray;
-  }
+.#{$namespace}-nav-brand {
+  padding: spacing.rem(4) spacing.px(3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @media (max-width: 344px) {
-    display: none;
-  }
+  //////////////
+  // Variants //
+  //////////////
 
-  @media (min-width: 1264px) {
-    color: gray;
-    background-color: rgba(#f6f6f9, 0.6);
+  // BOTTOM
+  :where(.#{$namespace}-drawer-container).bottom & {
+    padding: 0 spacing.px(4) 0 0;
   }
 }

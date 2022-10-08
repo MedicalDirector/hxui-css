@@ -32,110 +32,97 @@ export default {
   data: () => ({
     examples: [
       {
-        title: 'Default',
-        code: `
-  <div class="hx-card is-flex mb-2 hx-nav-drawer" style="height: 10rem">
-    <!-- no gradient (.hx-sidebar still works)-->
-    <div class="hx-drawer is-active"></div>
-    <!-- Main content -->
-    <div class="prose py-3 px-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
+        title: 'States',
+        code: `<div class="hx-card flex mb-2">
+  <div class="hx-sidebar-container" style="z-index: 2;">
+    <div class="hx-sidebar bg-primary-gradient collapsed">
+      <div class="hx-nav vertical p-0"></div>
     </div>
   </div>
-  
-  <div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
-    <!--  purple gradient -->
-    <div class="hx-drawer has-purple-gradient is-active"></div>
-    <!-- Main content -->
-    <div class="prose py-3 px-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
+  <!-- Main content -->
+  <div class="prose py-4 px-6">
+    <h3>Collapsed</h3>
+    <p>Add class <code>.collapsed</code> to the drawer.</p>
+  </div>
+</div>
+
+<div class="hx-card flex mb-2">
+  <div class="hx-sidebar-container" style="z-index: 2;">
+    <div class="hx-sidebar bg-primary-gradient mini">
+      <div class="hx-nav vertical"></div>
     </div>
   </div>
-  
-  <!--
-  <div class="hx-card mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer has-purple-gradient"></div>
+  <!-- Main content -->
+  <div class="prose py-4 px-6">
+    <h3>Minimised</h3>
+    <p>Add class <code>.mini</code> to the drawer.</p>
   </div>
-  
-  <div class="hx-card mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer has-orange-gradient"></div>
+</div>
+
+<div class="hx-card flex mb-2">
+  <div class="hx-sidebar-container" style="z-index: 2;">
+    <div class="hx-sidebar bg-primary-gradient">
+      <div class="hx-nav vertical"></div>
+    </div>
   </div>
-  -->
-          `,
+  <!-- Main content -->
+  <div class="prose py-4 px-6">
+    <h3>Default</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec imperdiet pellentesque finibus.
+      Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.
+    </p>
+  </div>
+</div>`,
       },
       {
-        title: 'Navigation drawer',
+        title: 'As overlay',
         code: `
-  <div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
-    <div class="is-flex">
-      <div class="hx-drawer has-purple-gradient is-minified is-active"></div>
-      <div class="hx-drawer is-active"></div>
-    </div>
-    <!-- Main content -->
-    <div class="prose py-3 px-6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
+<p class="prose">Add class <code>.detached</code> to the drawer.</p>
+      
+<div class="hx-card flex mb-2">
+  <div class="hx-sidebar-container" style="position: relative; z-index: 2;">
+    <div class="hx-sidebar bg-primary-gradient detached">
+      <div class="hx-nav vertical"></div>
     </div>
   </div>
-          `,
-      },
-      {
-        title: 'Sizes',
-        code: `
-  <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer hx-bg-purple is-active is-minified"></div>
-    <div class="prose py-4 px-6">
-      <h3>Minimised</h3>
-      <p>Add class <code>is-minified</code> to the drawer.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
-    </div>
+
+  <!-- Main content -->
+  <div class="prose py-4 px-6">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec imperdiet pellentesque finibus.
+      Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.
+    </p>
   </div>
-  <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer hx-bg-purple is-active"></div>
-    <div class="prose py-4 px-6">
-      <h3>Default</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
+</div>
+
+<p class="prose">
+  Add element with class <code>.hx-overlay</code> 
+  inside <code>.hx-sidebar-container</code>.
+</p>
+
+<div class="hx-card flex mb-2">
+  <div class="hx-sidebar-container" style="position: relative; z-index: 2;">
+    <div class="hx-sidebar bg-primary-gradient detached">
+      <div class="hx-nav vertical"></div>
     </div>
+    <!-- Ignore custom styles -->
+    <button class="hx-overlay" style="position: absolute;"></button>
   </div>
-  <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer hx-bg-purple is-active is-expanded"></div>
-    <div class="prose py-4 px-6">
-      <h3>Expanded</h3>
-      <p>Add class <code>is-expanded</code> to the drawer.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
-    </div>
+
+  <!-- Main content -->
+  <div class="prose py-4 px-6">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec imperdiet pellentesque finibus.
+      Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.
+    </p>
+    <!-- Below for stylistic purposes only! -->
+    <div class="hx-overlay" style="position: absolute; z-index: 1;"></div>
   </div>
-          `,
-      },
-      {
-        title: 'Right aligned',
-        code: `
-  <div class="hx-card is-flex mb-2  hx-nav-drawer" style="height: 10rem">
-    <div class="prose py-3 px-6">
-      <p>Add class <code>is-right</code> to the drawer.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
-    </div>
-    <div class="hx-drawer hx-bg-purple is-active is-right"></div>
-  </div>
-          `,
-      },
-      {
-        title: 'With overlay',
-        code: `
-  <div class="hx-card is-flex  hx-nav-drawer" style="height: 10rem">
-    <div class="hx-drawer hx-bg-purple is-absolute is-active"></div>
-    <div class="hx-drawer-bg is-active"></div>
-    <div class="prose py-4 px-6">
-      <p>Add class <code>is-expanded</code> to the drawer.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet pellentesque finibus. Vestibulum consequat maximus sem, vitae tincidunt eros pharetra lacinia.</p>
-    </div>
-  </div>
-          `,
-      },
-      {
-        title: 'Top level',
-        code: `
-  <p>To have the drawer on the top level and not in a container, add class <code>is-fixed</code> to the drawer.</p>
-          `,
+</div>`,
       },
     ],
   }),

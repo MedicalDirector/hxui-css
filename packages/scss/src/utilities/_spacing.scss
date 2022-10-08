@@ -4,126 +4,273 @@
 /////////////
 
 @use "../variables" as *;
+@use "../mixins/breakpoint";
 
 /* stylelint-disable-next-line scss/dollar-variable-pattern */
 $_unit: $unit-padding-margins;
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _spacing($b: "") {
+  @if $b == "" {
+    @for $i from 0 through 12 {
+      ////////////
+      // Margin //
+      ////////////
 
-@for $i from 0 through 12 {
-  ////////////
-  // Margin //
-  ////////////
+      .mt-#{$i} {
+        margin-top: 1rem * ($i * $_unit) !important;
+      }
 
-  .mt-#{$i} {
-    margin-top: 1rem * ($i * $_unit) !important;
-  }
+      .mr-#{$i} {
+        margin-right: 1rem * ($i * $_unit) !important;
+      }
 
-  .mr-#{$i} {
-    margin-right: 1rem * ($i * $_unit) !important;
-  }
+      .mb-#{$i} {
+        margin-bottom: 1rem * ($i * $_unit) !important;
+      }
 
-  .mb-#{$i} {
-    margin-bottom: 1rem * ($i * $_unit) !important;
-  }
+      .ml-#{$i} {
+        margin-left: 1rem * ($i * $_unit) !important;
+      }
 
-  .ml-#{$i} {
-    margin-left: 1rem * ($i * $_unit) !important;
-  }
+      .mx-#{$i} {
+        margin-left: 1rem * ($i * $_unit) !important;
+        margin-right: 1rem * ($i * $_unit) !important;
+      }
 
-  .mx-#{$i} {
-    margin-left: 1rem * ($i * $_unit) !important;
-    margin-right: 1rem * ($i * $_unit) !important;
-  }
+      .my-#{$i} {
+        margin-top: 1rem * ($i * $_unit) !important;
+        margin-bottom: 1rem * ($i * $_unit) !important;
+      }
 
-  .my-#{$i} {
-    margin-top: 1rem * ($i * $_unit) !important;
-    margin-bottom: 1rem * ($i * $_unit) !important;
-  }
+      .ma-#{$i},
+      .m-#{$i} {
+        margin: 1rem * ($i * $_unit) !important;
+      }
 
-  .ma-#{$i},
-  .m-#{$i} {
-    margin: 1rem * ($i * $_unit) !important;
-  }
+      /////////////
+      // Padding //
+      /////////////
 
-  /////////////
-  // Padding //
-  /////////////
+      .pt-#{$i} {
+        padding-top: 1rem * ($i * $_unit) !important;
+      }
 
-  .pt-#{$i} {
-    padding-top: 1rem * ($i * $_unit) !important;
-  }
+      .pr-#{$i} {
+        padding-right: 1rem * ($i * $_unit) !important;
+      }
 
-  .pr-#{$i} {
-    padding-right: 1rem * ($i * $_unit) !important;
-  }
+      .pb-#{$i} {
+        padding-bottom: 1rem * ($i * $_unit) !important;
+      }
 
-  .pb-#{$i} {
-    padding-bottom: 1rem * ($i * $_unit) !important;
-  }
+      .pl-#{$i} {
+        padding-left: 1rem * ($i * $_unit) !important;
+      }
 
-  .pl-#{$i} {
-    padding-left: 1rem * ($i * $_unit) !important;
-  }
+      .px-#{$i} {
+        padding-left: 1rem * ($i * $_unit) !important;
+        padding-right: 1rem * ($i * $_unit) !important;
+      }
 
-  .px-#{$i} {
-    padding-left: 1rem * ($i * $_unit) !important;
-    padding-right: 1rem * ($i * $_unit) !important;
-  }
+      .py-#{$i} {
+        padding-top: 1rem * ($i * $_unit) !important;
+        padding-bottom: 1rem * ($i * $_unit) !important;
+      }
 
-  .py-#{$i} {
-    padding-top: 1rem * ($i * $_unit) !important;
-    padding-bottom: 1rem * ($i * $_unit) !important;
-  }
+      .pa-#{$i},
+      .p-#{$i} {
+        padding: 1rem * ($i * $_unit) !important;
+      }
 
-  .pa-#{$i},
-  .p-#{$i} {
-    padding: 1rem * ($i * $_unit) !important;
-  }
+      /////////
+      // Gap //
+      /////////
 
-  /////////
-  // Gap //
-  /////////
+      .\!gap-x-#{$i} {
+        row-gap: 1rem * ($i * $_unit) !important;
+      }
 
-  .\!gap-x-#{$i} {
-    row-gap: 1rem * ($i * $_unit) !important;
-  }
+      .gap-x-#{$i} {
+        row-gap: 1rem * ($i * $_unit);
+      }
 
-  .gap-x-#{$i} {
-    row-gap: 1rem * ($i * $_unit);
-  }
+      .\!gap-y-#{$i} {
+        column-gap: 1rem * ($i * $_unit) !important;
+      }
 
-  .\!gap-y-#{$i} {
-    column-gap: 1rem * ($i * $_unit) !important;
-  }
+      .gap-y-#{$i} {
+        column-gap: 1rem * ($i * $_unit);
+      }
 
-  .gap-y-#{$i} {
-    column-gap: 1rem * ($i * $_unit);
-  }
+      .\!gap-#{$i} {
+        gap: 1rem * ($i * $_unit) !important;
+      }
 
-  .\!gap-#{$i} {
-    gap: 1rem * ($i * $_unit) !important;
-  }
+      .gap-#{$i} {
+        gap: 1rem * ($i * $_unit);
+      }
+    }
 
-  .gap-#{$i} {
-    gap: 1rem * ($i * $_unit);
+    .\!gap-form,
+    .\!gap-card {
+      gap: 1rem !important;
+    }
+
+    .gap-form,
+    .gap-card {
+      gap: 1rem;
+    }
+
+    .\!gap-bar,
+    .\!gap-list {
+      gap: 0.5rem !important;
+    }
+
+    .gap-bar,
+    .gap-list {
+      gap: 0.5rem;
+    }
+  } @else {
+    @for $i from 0 through 12 {
+      ////////////
+      // Margin //
+      ////////////
+
+      .#{$b}\:mt-#{$i} {
+        margin-top: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:mr-#{$i} {
+        margin-right: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:mb-#{$i} {
+        margin-bottom: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:ml-#{$i} {
+        margin-left: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:mx-#{$i} {
+        margin-left: 1rem * ($i * $_unit) !important;
+        margin-right: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:my-#{$i} {
+        margin-top: 1rem * ($i * $_unit) !important;
+        margin-bottom: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:ma-#{$i},
+      .#{$b}\:m-#{$i} {
+        margin: 1rem * ($i * $_unit) !important;
+      }
+
+      /////////////
+      // Padding //
+      /////////////
+
+      .#{$b}\:pt-#{$i} {
+        padding-top: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:pr-#{$i} {
+        padding-right: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:pb-#{$i} {
+        padding-bottom: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:pl-#{$i} {
+        padding-left: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:px-#{$i} {
+        padding-left: 1rem * ($i * $_unit) !important;
+        padding-right: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:py-#{$i} {
+        padding-top: 1rem * ($i * $_unit) !important;
+        padding-bottom: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:pa-#{$i},
+      .#{$b}\:p-#{$i} {
+        padding: 1rem * ($i * $_unit) !important;
+      }
+
+      /////////
+      // Gap //
+      /////////
+
+      .#{$b}\:\!gap-x-#{$i} {
+        row-gap: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:gap-x-#{$i} {
+        row-gap: 1rem * ($i * $_unit);
+      }
+
+      .#{$b}\:\!gap-y-#{$i} {
+        column-gap: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:gap-y-#{$i} {
+        column-gap: 1rem * ($i * $_unit);
+      }
+
+      .#{$b}\:\!gap-#{$i} {
+        gap: 1rem * ($i * $_unit) !important;
+      }
+
+      .#{$b}\:gap-#{$i} {
+        gap: 1rem * ($i * $_unit);
+      }
+    }
+
+    .#{$b}\:\!gap-form,
+    .#{$b}\:\!gap-card {
+      gap: 1rem !important;
+    }
+
+    .#{$b}\:gap-form,
+    .#{$b}\:gap-card {
+      gap: 1rem;
+    }
+
+    .#{$b}\:\!gap-bar,
+    .#{$b}\:\!gap-list {
+      gap: 0.5rem !important;
+    }
+
+    .#{$b}\:gap-bar,
+    .#{$b}\:gap-list {
+      gap: 0.5rem;
+    }
   }
 }
 
-.\!gap-form,
-.\!gap-card {
-  gap: 1rem !important;
+@include _spacing;
+
+/// phablet and above
+@include breakpoint.phablet {
+  @include _spacing("phablet");
 }
 
-.gap-form,
-.gap-card {
-  gap: 1rem;
+/// tablet and above
+@include breakpoint.tablet {
+  @include _spacing("tablet");
 }
 
-.\!gap-bar,
-.\!gap-list {
-  gap: 0.5rem !important;
+/// laptop and above
+@include breakpoint.laptop {
+  @include _spacing("laptop");
 }
 
-.gap-bar,
-.gap-list {
-  gap: 0.5rem;
+/// desktop and above
+@include breakpoint.desktop {
+  @include _spacing("desktop");
 }

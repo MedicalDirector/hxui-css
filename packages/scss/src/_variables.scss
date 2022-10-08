@@ -206,6 +206,10 @@ $hx-enable-rounded: true !default;
 $hx-enable-shadows: true !default;
 $hx-enable-hover-media-query: false !default;
 
+// Scrollbar
+$hx-scrollbar-width: 6px;
+$hx-scrollbar-height: 6px;
+
 // Body
 $hx-body-bg: hsl(240, 20%, 97%) !default;
 $hx-body-color: $hx-color-gray-dark !default;
@@ -473,6 +477,14 @@ $hx-zindex-navbar-sticky: 1030 !default;
 $hx-zindex-modal-bg: 1040 !default;
 $hx-zindex-modal: 1050 !default;
 $hx-zindex-tooltip: 1070 !default;
+
+$hx-elevation-card: 5;
+$hx-elevation-appbar-top: 20;
+$hx-elevation-appbar-bottom: 40;
+$hx-elevation-menu: 40;
+$hx-elevation-overlay: 70;
+$hx-elevation-drawer: 80;
+$hx-elevation-dialog: 100;
 
 $unit-padding-margins: 0.25;
 $hx-flex-accordion-bg-color: #fafafa;

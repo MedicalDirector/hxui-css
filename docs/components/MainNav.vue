@@ -1,52 +1,68 @@
 <template>
-  <aside
-    class="hx-sidebar has-blue-gradient is-active"
-    :class="{ 'is-minified': isMini }"
+  <div
+    class="hx-drawer bg-primary-gradient p-3 phablet:p-0"
+    :class="{ mini: isMini }"
   >
-    <ul class="hx-nav hx-nav-vertical hx-flex-auto">
-      <li class="hx-nav-item hx-nav-brand">
-        <svg class="hxui-logo is-white">
+    <div class="hx-nav-brand phablet:pb-4">
+      <span class="hx-icon-container">
+        <svg class="hxui-logo">
           <use xlink:href="~/assets/images/hxui.svg#hxui"></use>
         </svg>
-      </li>
-      <li
-        class="hx-nav-item"
-        v-for="item in mainNavItems"
-        v-bind:key="item.name"
-      >
+      </span>
+    </div>
+    <hr class="mobile:hidden mt-0 mb-4" />
+    <ul class="hx-nav">
+      <li v-for="item in mainNavItems" v-bind:key="item.name">
         <a
           class="hx-nav-link"
           :href="item.link"
           :class="{
-            'is-active': item.link === 'https://hxui.io',
-            'is-disabled': item.status === 'disabled',
+            active: item.link === 'https://hxui.io',
+            disabled: item.status === 'disabled',
           }"
         >
-          <i class="hx-icon" :class="item.icon"></i>
-          <span class="ml-1">{{ item.name }}</span>
+          <span class="hx-icon-control">
+            <i class="hx-icon" :class="item.icon"></i>
+          </span>
+          <span>{{ item.name }}</span>
         </a>
       </li>
     </ul>
-    <ul class="hx-nav hx-nav-vertical is-bottom">
-      <li class="hx-nav-item">
+
+    <div class="hidden phablet:block hx-spacer"></div>
+
+    <ul class="hx-nav phablet:pb-4" :class="{ mini: isMini }">
+      <li>
         <a
           class="hx-nav-link"
           href="https://github.com/MedicalDirector/hxui-css/issues"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="hx-icon icon-chat-bubble"></i>
-          <span class="ml-1">Feedback</span>
+          <span class="hx-icon-control">
+            <i class="hx-icon icon-chat-bubble"></i>
+          </span>
+          <span>Feedback</span>
         </a>
       </li>
-      <li class="hx-nav-item">
-        <a class="hx-nav-link" @click="toggleNav">
-          <i class="hx-icon icon-more"></i>
-          <span class="ml-1">Collapse</span>
-        </a>
+
+      <li class="hidden phablet:contents">
+        <button class="hx-nav-link" @click="toggleNav">
+          <span class="hx-icon-control">
+            <i
+              class="hx-icon"
+              :class="{
+                'icon-angle-right': isMini,
+                'icon-angle-left': !isMini,
+              }"
+            ></i>
+          </span>
+          <span v-if="isMini">Expand</span>
+          <span v-else>Collapse</span>
+        </button>
       </li>
     </ul>
-  </aside>
+  </div>
 </template>
 
 <script>
@@ -54,6 +70,7 @@ export default {
   data() {
     return {
       isMini: true,
+      isDetached: false,
       mainNavItems: [
         {
           name: 'HTML & CSS',
@@ -81,8 +98,7 @@ export default {
 <style lang="scss" scoped>
 .hxui-logo {
   max-height: 2rem;
-  &.is-white {
-    fill: white;
-  }
+  max-width: 2rem;
+  fill: var(--color-foreground-contrast);
 }
 </style>

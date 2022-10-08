@@ -148,6 +148,29 @@
   grid-area: canvas-cols-solo;
 }
 
+.layout-app {
+  display: grid;
+  grid-template-areas: "main" "nav";
+  grid-template-columns: 1fr auto;
+
+  @include breakpoint.mobile {
+    height: 100vh;
+  }
+
+  @include breakpoint.phablet {
+    grid-template-areas: "nav main";
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.area-app-main {
+  grid-area: main;
+}
+
+.area-app-nav {
+  grid-area: nav;
+}
+
 // LEGACY
 @include deprecate("3.0.0", "Use .grid and related class modifiers") {
   .#{$namespace}-column {

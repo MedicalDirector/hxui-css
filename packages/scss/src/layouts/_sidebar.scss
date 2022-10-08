@@ -1,124 +1,304 @@
 @use "../variables" as *;
+
 @use "../mixins/gradient";
+@use "../mixins/transition";
+@use "../mixins/deprecate" as *;
 
-$sidebar-nav-hover-color: colour-gray-light;
+@use "../functions/spacing";
+@use "../functions/size";
 
-.#{$namespace}-sidebar,
-.#{$namespace}-drawer {
-  background-color: #fff;
-  padding: $hx-spacer 0;
-  display: inline-flex;
+///////////////////////
+// SIDEBAR CONTAINER //
+///////////////////////
+
+.#{$namespace}-drawer-container {
+  position: sticky;
+  display: flex;
+  z-index: var(--elevation-semantic-drawer);
+  bottom: 0;
+
+  &:not(.bottom) {
+    top: 0;
+    max-height: 100vh;
+  }
+
+  &:not(.right) {
+    left: 0;
+  }
+
+  &.right,
+  &.bottom {
+    right: 0;
+  }
+
+  &.bottom {
+    max-width: 100vw;
+  }
+}
+
+/////////////
+// OVERLAY //
+/////////////
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  border: none;
+  padding: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+.#{$namespace}-overlay {
+  @include _overlay;
+}
+
+/////////////
+// SIDEBAR //
+/////////////
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _drawer {
+  background-color: var(--color-surface-neutral-default);
+  box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+  display: flex;
   flex-direction: column;
-  transition: 0.3s ease-in-out;
+  flex: 1;
 
-  // .#{$namespace}-nav-vertical {
-  //   .#{$namespace}-nav-item {
-  //     padding-left: 1rem;
-  //     padding-right: 1rem;
-  //   }
-  // }
+  @include transition.dimensions(300ms);
 
-  &.is-medium-width {
-    min-width: 15rem;
+  position: relative;
+
+  &.detached {
+    position: absolute;
+    left: 100%;
+    max-height: 100vh;
+
+    &.overlay:not(.collapsed)::after {
+      content: "";
+      @include _overlay;
+    }
   }
 
-  &.is-scrollable {
-    overflow: scroll;
+  :where(.#{$namespace}-drawer-container).bottom & {
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    flex-direction: row;
+    max-height: 40vh;
+    transition-property: max-height;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    &:is(.is-collapsed, .collapsed, [aria-expanded="false"]) {
+      max-height: 0;
+    }
+
+    &.detached {
+      bottom: 100%;
+      left: 0%;
+      right: 0%;
+    }
   }
 
-  &.is-minified {
-    width: ($hx-spacer * 3.5) !important;
-    .#{$namespace}-nav-vertical {
-      .#{$namespace}-nav-item {
-        padding-left: 0;
-        padding-right: 0;
+  @include deprecate("2.0.0", "No longer part of HXUI") {
+    &.is-expanded {
+      width: ($hx-spacer * 50) !important;
+      .#{$namespace}-nav-vertical {
+        .#{$namespace}-nav-item {
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
     }
   }
 
-  &.is-expanded {
-    width: ($hx-spacer * 50) !important;
-    .#{$namespace}-nav-vertical {
-      .#{$namespace}-nav-item {
-        padding-left: 0;
-        padding-right: 0;
+  &.#{$namespace}-bg-primary-gradient,
+  &.bg-primary-gradient {
+    color: var(--color-foreground-contrast);
+
+    hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  @include deprecate("2.0.0", "Use .bg-primary-decorative") {
+    &.has-blue-gradient {
+      @include gradient.radial(top, $hx-color-green-light, $hx-color-blue);
+
+      color: #fff;
+
+      hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
       }
     }
   }
 
-  &.has-blue-gradient {
-    @include gradient.radial(top, $hx-color-green-light, $hx-color-blue);
+  @include deprecate("2.0.0", "No longer part of HXUI") {
+    &.has-orange-gradient {
+      @include gradient.radial(top, $hx-color-yellow-light, $hx-color-orange);
 
-    color: #fff;
+      color: #fff;
 
-    hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
     }
-  }
 
-  &.has-orange-gradient {
-    @include gradient.radial(top, $hx-color-yellow-light, $hx-color-orange);
+    &.has-purple-gradient {
+      @include gradient.radial(top, $hx-color-red-light, $hx-color-purple);
 
-    color: #fff;
+      color: #fff;
 
-    hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-  }
-
-  &.has-purple-gradient {
-    @include gradient.radial(top, $hx-color-red-light, $hx-color-purple);
-
-    color: #fff;
-
-    hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      hr {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
     }
   }
 }
 
-.#{$namespace}-nav-drawer {
-  height: 100%;
-  .#{$namespace}-sidebar,
-  .#{$namespace}-drawer {
-    width: 17rem;
+@include deprecate("3.0.0", "Use .hx-drawer") {
+  .#{$namespace}-sidebar {
+    @include _drawer;
+  }
+}
+
+.#{$namespace}-drawer {
+  @include _drawer;
+}
+
+//////////////////////
+// SCROLL CONTAINER //
+//////////////////////
+
+:where(.#{$namespace}-sidebar, .#{$namespace}-drawer) {
+  .scroll-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &:not(.collapsed) {
+    .scroll-container {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  &.collapsed {
+    .scroll-container {
+      overflow: hidden;
+    }
+  }
+}
+
+///////////////////
+// TOGGLE BUTTON //
+///////////////////
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _toggle {
+  display: flex;
+  border: 1px solid var(--color-foreground-contrast); //TODO: unhard
+  position: absolute;
+  top: size.px(12);
+  z-index: 1;
+  right: -1 * size.px(12);
+  background-color: hsl(164, 96%, 21%); //TODO: unhard
+  color: var(--color-foreground-contrast);
+  border-radius: 4px;
+  padding: size.px(1);
+  cursor: pointer;
+
+  &.bottom {
+    top: unset;
+    bottom: size.px(12);
+  }
+
+  &.right {
+    right: unset;
+    left: -1 * size.px(12);
+  }
+
+  :where(.#{$namespace}-icon-control, .#{$namespace}-icon-container) {
+    display: contents;
+  }
+}
+
+@include deprecate("3.0.0", "Use .hx-nav-toggle") {
+  .#{$namespace}-nav-navicon {
+    @include _toggle;
+  }
+}
+
+.#{$namespace}-nav-toggle {
+  @include _toggle;
+}
+
+/// LEGACY
+@include deprecate("3.0.0", "Use .hx-drawer-container") {
+  .#{$namespace}-nav-drawer {
     height: 100%;
-    max-height: calc(100% - 0px);
-    display: block;
-    top: 0;
-    bottom: 0;
-    transform: translateX(-100%);
-    background-color: $hx-color-gray-lightest;
-    padding: $hx-spacer 0;
-    transition: 0.3s ease-in-out;
-    box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+    display: flex;
     z-index: 1;
-
-    &-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    &.is-absolute {
-      position: absolute;
-    }
-
-    &.is-fixed {
+    @media (max-width: 1264px) {
       position: fixed;
+      z-index: 100;
     }
 
-    &.is-right {
-      right: 0;
-      transform: translateX(100%);
-      box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05);
+    > span {
+      display: flex;
+      height: 100vh;
+      z-index: 1;
+
+      > .#{$namespace}-nav {
+        height: 100vh;
+      }
     }
 
-    &.is-active {
-      transform: translateX(0%);
+    .#{$namespace}-sidebar,
+    .#{$namespace}-drawer {
+      width: 17rem;
+      height: 100%;
+      max-height: calc(100% - 0px);
+      display: block;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      background-color: $hx-color-gray-lightest;
+      padding: $hx-spacer 0;
+      transition: 0.3s ease-in-out;
+      box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+      z-index: 1;
+
+      &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      &.is-absolute {
+        position: absolute;
+      }
+
+      &.is-fixed {
+        position: fixed;
+      }
+
+      &.is-right {
+        right: 0;
+        transform: translateX(100%);
+        box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05);
+      }
+
+      &.is-active {
+        transform: translateX(0%);
+      }
     }
   }
 }

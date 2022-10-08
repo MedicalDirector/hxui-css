@@ -92,7 +92,7 @@
 
 .is-text-truncate,
 .text-truncate {
-  @include text.text-truncate;
+  @include text.truncate;
 }
 
 ///////////////
@@ -233,7 +233,7 @@
 .is-text-elipsed,
 .is-text-ellipsed,
 .is-text-ellipsis {
-  @include text.text-truncate;
+  @include text.truncate;
 }
 
 table th,

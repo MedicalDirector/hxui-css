@@ -210,3 +210,8 @@
 .bg-info-pattern {
   background: repeating-linear-gradient(45deg, #0d4d78, #0d4d78 10px, #0d3956 10px, #0d3956 20px);
 }
+
+.#{$namespace}-bg-primary-gradient,
+.bg-primary-gradient {
+  @include gradient.radial(top, $hx-color-green-light, $hx-color-blue);
+}

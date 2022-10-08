@@ -1,8 +1,8 @@
 @use "../variables" as *;
 
 ::-webkit-scrollbar {
-  width: var(--scrollbar-width);
-  height: var(--scrollbar-height);
+  width: $hx-scrollbar-width;
+  height: $hx-scrollbar-height;
 }
 
 ::-webkit-scrollbar-thumb {

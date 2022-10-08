@@ -59,7 +59,7 @@
 
   &.is-text-ellipsed {
     .#{$namespace}-dropdown-item {
-      @include text.text-truncate;
+      @include text.truncate;
     }
   }
 
