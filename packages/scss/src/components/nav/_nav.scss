@@ -14,15 +14,9 @@
 @use "../../functions/size";
 
 /* stylelint-disable-next-line scss/at-mixin-pattern */
-@mixin _label {
-  > span,
-  > div {
-    &:not(.#{$namespace}-icon-control),
-    &:not(.#{$namespace}-icon-container),
-    &:not(.#{$namespace}-icon),
-    &:not(.icon) {
-      @content;
-    }
+@mixin _label-container {
+  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+    @content;
   }
 
   .#{$namespace}-nav-label {
@@ -168,7 +162,7 @@
   cursor: pointer;
   width: 100%;
 
-  @include _label {
+  @include _label-container {
     @include text.truncate;
   }
 
@@ -235,12 +229,7 @@
   // With icons //
   ////////////////
 
-  .#{$namespace}-icon-control,
-  .#{$namespace}-icon-container {
-    display: contents;
-  }
-
-  @include _label {
+  @include _label-container {
     padding: 0 size.px(6);
     @include text.truncate;
 
@@ -276,7 +265,7 @@
     padding: spacing.rem(1.5);
     border-radius: size.rem(16);
 
-    @include _label {
+    @include _label-container {
       opacity: 0;
       width: 0;
       padding: 0;

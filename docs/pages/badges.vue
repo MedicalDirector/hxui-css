@@ -91,7 +91,7 @@ export default {
 </div>`,
         },
         {
-          title: 'Badges for numbers',
+          title: 'Numerical',
           withContent: false,
           code: `<div class="hx-card-content flex justify-center items-center gap-2">
   <div class="hx-badge sm">
@@ -118,6 +118,47 @@ export default {
   <div class="hx-badge sm danger">
     <span>2</span>
   </div>
+</div>`,
+        },
+        {
+          title: 'Contained and positioned',
+          withContent: false,
+          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+  <button class="hx-button">
+    <span>Notifications</span>
+    <div class="hx-badge sm compact top-right">
+      <span>0</span>
+    </div>
+  </button>
+  <button class="hx-button secondary">
+    <span class="hx-icon-control">
+      <i class="hx-icon icon-calendar"></i>
+    </span>
+    <div class="hx-badge sm compact top-right">
+      <span>10</span>
+    </div>
+  </button>
+  <button class="hx-button primary">
+    <span>Notifications</span>
+    <div class="hx-badge dot top-right bg-danger-emphasis"></div>
+  </button>
+  <div class="hx-avatar lg">
+    <img 
+      src="/_nuxt/assets/images/default-avatar-business-bear.png"
+      alt="portrait of cartoon bear"
+    />
+    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
+  </div>
+  <div class="hx-avatar">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-alert"></i>
+    </span>
+    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
+  </div>
+  <span class="hx-icon-container">
+    <i class="hx-icon icon-alert"></i>
+    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
+  </span>
 </div>`,
         },
         {

@@ -113,8 +113,6 @@
 
   .#{$namespace}-icon-control,
   .#{$namespace}-icon-container {
-    display: contents;
-
     @include deprecate("2.0.0", "No longer part of HXUI") {
       // start icon
       &:first-child:not(:last-child) {

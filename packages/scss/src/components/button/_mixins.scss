@@ -65,15 +65,9 @@ $border-width-default: 1;
 // Variant - Size //
 ////////////////////
 
-@mixin label-padding {
-  > span,
-  > div {
-    &:not(.#{$namespace}-icon-control),
-    &:not(.#{$namespace}-icon-container),
-    &:not(.#{$namespace}-icon),
-    &:not(.icon) {
-      @content;
-    }
+@mixin label-container {
+  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+    @content;
   }
 
   .#{$namespace}-button-label {
@@ -98,7 +92,7 @@ $border-width-default: 1;
     width: calc($py * 2 + $icon-lh + 2 * $bw);
   }
 
-  @include label-padding {
+  @include label-container {
     padding: 0 size.px(--button-#{$size}-padding-label, 4);
   }
 }

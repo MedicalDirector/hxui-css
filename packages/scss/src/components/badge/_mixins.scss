@@ -56,15 +56,9 @@ $border-width-default: 1;
 ////////////////////
 
 /* stylelint-disable-next-line scss/at-mixin-pattern */
-@mixin _label-container {
-  > span,
-  > div {
-    &:not(.#{$namespace}-icon-control),
-    &:not(.#{$namespace}-icon-container),
-    &:not(.#{$namespace}-avatar),
-    &:not(.#{$namespace}-delete) {
-      @content;
-    }
+@mixin label-container {
+  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-avatar, .#{$namespace}-delete)) {
+    @content;
   }
 
   .#{$namespace}-#{$component}-content {
@@ -81,7 +75,7 @@ $border-width-default: 1;
   border-style: solid;
   height: $h;
 
-  @include _label-container {
+  @include label-container {
     font: var(--#{$component}-#{$size}-typography, inherit);
     padding: 0 size.px(--#{$component}-#{$size}-padding-label, 4);
 
@@ -146,6 +140,15 @@ $border-width-default: 1;
   }
 }
 
+@mixin variant-dot {
+  &.dot {
+    height: size.rem(8); //size.rem(--#{$component}-xs-height);
+    width: size.rem(8); //size.rem(--#{$component}-xs-height);
+    border-radius: 50%;
+    border: none;
+  }
+}
+
 /////////////
 // Control //
 /////////////
@@ -178,5 +181,48 @@ $border-width-default: 1;
 
   &.lg {
     margin-right: spacing.px(1.5);
+  }
+}
+
+@mixin variant-positioned {
+  &.top-right {
+    // this strategy works for fixed size dot badges
+    top: -1 * size.px(2);
+    right: -1 * size.px(2);
+
+    // this strategy works a bit better for variable size badges
+    &:where(:not(.dot)) {
+      transform: translate(15%, -15%);
+    }
+
+    :where(.#{$namespace}-avatar.lg) & {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &.bottom-right {
+    bottom: -1 * size.px(2);
+    right: -1 * size.px(2);
+
+    &:where(:not(.dot)) {
+      transform: translate(15%, 15%);
+    }
+
+    :where(.#{$namespace}-avatar.lg) & {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &.top-right,
+  &.bottom-right {
+    position: absolute;
+    z-index: var(--elevation-global-1);
+
+    &:not(.no-outline) {
+      outline: 2px solid var(--color-foreground-contrast); // TODO: unhard
+      outline-offset: 0;
+    }
   }
 }

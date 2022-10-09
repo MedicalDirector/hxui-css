@@ -84,6 +84,10 @@
   &.is-tile,
   &.tile {
     border-radius: 2px; // TODO: unhard
+
+    img {
+      border-radius: 2px; // TODO: unhard
+    }
   }
 
   // === Icon Variation === //

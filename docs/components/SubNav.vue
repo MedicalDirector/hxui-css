@@ -180,6 +180,10 @@ export default {
               path: '/breadcrumbs',
             },
             {
+              name: 'Bulleted lists',
+              path: '/bullets',
+            },
+            {
               name: 'Cards',
               path: '/cards',
             },
@@ -192,7 +196,7 @@ export default {
               path: '/forms',
             },
             {
-              name: 'Lists & List Group',
+              name: 'Lists',
               path: '/lists',
             },
             {
@@ -200,7 +204,7 @@ export default {
               path: '/modals',
             },
             {
-              name: 'Meta Data',
+              name: 'Metadata',
               path: '/meta-data',
             },
             {
@@ -212,11 +216,11 @@ export default {
               path: '/pagination',
             },
             {
-              name: 'Progress Timeline',
+              name: 'Progress timeline',
               path: '/progress-timeline',
             },
             {
-              name: 'Snackbars & Toasts',
+              name: 'Snackbars & toasts',
               path: '/snackbars-toasts',
             },
             {
@@ -243,7 +247,7 @@ export default {
         },
         {
           title: 'Organisms',
-          items: [{ name: 'Panel Header', path: '/panel-header' }],
+          items: [{ name: 'Panel header', path: '/panel-header' }],
         },
         {
           title: 'Templates',
@@ -267,7 +271,9 @@ export default {
       this.isOpen = !this.isOpen
     },
     closeNav() {
-      this.isOpen = false
+      if (this.isDetachable) {
+        this.isOpen = false
+      }
     },
     getDimensions() {
       this.windowWidth = document?.documentElement.clientWidth

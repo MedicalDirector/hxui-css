@@ -108,8 +108,12 @@ export default {
         title: 'Flat avatar',
         withContent: false,
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <div class="hx-avatar flat caution outline text-black">J</div>
-  <div class="hx-avatar flat outline">CB</div>
+  <div class="hx-avatar flat caution outline text-black">
+    <span>J</span>
+  </div>
+  <div class="hx-avatar flat outline">
+    <span>CB</span>
+  </div>
   <div class="hx-avatar flat primary outline">
     <i class="hx-icon icon-pulse"></i>
   </div>
@@ -130,16 +134,16 @@ export default {
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
   <div
     class="hx-avatar tile"
-    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')}">
-  </div>
+    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')}"
+  ></div>
   <div
     class="hx-avatar tile"
-    style="background-image: url(${require('~/assets/images/0223.jpg')})">
-  </div>
+    style="background-image: url(${require('~/assets/images/0223.jpg')})"
+  ></div>
   <div
     class="hx-avatar tile"
-    style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
-  </div>
+    style="background-image: url(${require('~/assets/images/frenchie.jpg')})"
+  ></div>
   <div class="hx-avatar tile hx-bg-white">JP</div>
   <div class="hx-avatar tile hx-bg-light">CB</div>
   <div class="hx-avatar tile hx-bg-black">J</div>
@@ -179,9 +183,15 @@ export default {
       alt="portrait of dog"
     />
   </div>
-  <div class="hx-avatar sm">JP</div>
-  <div class="hx-avatar sm tile flat primary">CB</div>
-  <div class="hx-avatar sm hx-bg-black">J</div>
+  <div class="hx-avatar sm">
+    <span>JP</span>
+  </div>
+  <div class="hx-avatar sm tile flat primary">
+    <span>CB</span>
+  </div>
+  <div class="hx-avatar sm hx-bg-black">
+    <span>J</span>
+  </div>
   <div class="hx-avatar sm hx-bg-danger">
     <i class="hx-icon icon-pulse"></i>
   </div>
@@ -202,16 +212,16 @@ export default {
         code: `<div class="hx-card-content flex justify-center items-center gap-2">
   <div
     class="hx-avatar lg"
-    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})">
-  </div>
+    style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"
+  ></div>
   <div
     class="hx-avatar lg"
-    style="background-image: url(${require('~/assets/images/0223.jpg')})">
-  </div>
+    style="background-image: url(${require('~/assets/images/0223.jpg')})"
+  ></div>
   <div
     class="hx-avatar lg"
-    style="background-image: url(${require('~/assets/images/frenchie.jpg')})">
-  </div>
+    style="background-image: url(${require('~/assets/images/frenchie.jpg')})"
+  ></div>
   <div class="hx-avatar lg danger">
     <i class="hx-icon icon-pulse"></i>
   </div>

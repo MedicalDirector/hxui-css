@@ -223,6 +223,16 @@
     @include badge.variant-flat;
   }
 
+  /// DOT
+  @include badge.variant-dot;
+
+  /// Remove label padding
+  &.compact {
+    @include badge.label-container {
+      padding: 0;
+    }
+  }
+
   //////////////////
   // With Avatars //
   //////////////////
@@ -253,6 +263,8 @@
   .#{$namespace}-delete {
     @include badge.delete;
   }
+
+  @include badge.variant-positioned;
 }
 
 .#{$namespace}-badge-action {
@@ -303,11 +315,6 @@
     &.lg {
       margin-right: spacing.px(1.5);
       padding: spacing.px(1);
-    }
-
-    .#{$namespace}-icon-control,
-    .#{$namespace}-icon-container {
-      display: contents;
     }
   }
 

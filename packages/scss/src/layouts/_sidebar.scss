@@ -221,10 +221,6 @@
     right: unset;
     left: -1 * size.px(12);
   }
-
-  :where(.#{$namespace}-icon-control, .#{$namespace}-icon-container) {
-    display: contents;
-  }
 }
 
 @include deprecate("3.0.0", "Use .hx-nav-toggle") {
