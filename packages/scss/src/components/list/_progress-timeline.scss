@@ -2,7 +2,7 @@
 //  PROGRESS TIMELINE  //
 /////////////////////////
 
-@use "../variables" as *;
+@use "../../variables" as *;
 
 .#{$namespace}-progress-timeline-status {
   position: relative;
