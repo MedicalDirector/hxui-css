@@ -26,10 +26,17 @@
           v-if="item.path"
           class="hx-nav-link"
           :to="{ path: item.path }"
-          exact-active-class="is-active"
+          exact-active-class="active"
           @click.native="closeNav()"
         >
-          <span>{{ item.name }}</span>
+          <span class="inline-flex grow-1">{{ item.name }}</span>
+          <span
+            v-if="item.isLegacy"
+            class="hx-badge sm warning"
+            style="width: unset"
+          >
+            <span class="hx-badge-content">Legacy</span>
+          </span>
         </router-link>
         <a
           class="hx-nav-link"

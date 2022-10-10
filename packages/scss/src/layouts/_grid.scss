@@ -20,9 +20,13 @@
       grid-template-rows: none;
     }
 
-    @for $i from 0 through 12 {
+    @for $i from 0 through 13 {
       .grid-cols-#{$i} {
         grid-template-columns: repeat($i, minmax(0, 1fr));
+      }
+
+      .col-span-#{$i} {
+        grid-column: span $i;
       }
 
       .col-start-#{$i} {
@@ -35,6 +39,10 @@
 
       .grid-rows-#{$i} {
         grid-template-rows: repeat($i, minmax(0, 1fr));
+      }
+
+      .row-span-#{$i} {
+        grid-row: span $i;
       }
 
       .row-start-#{$i} {
@@ -54,9 +62,13 @@
       grid-template-rows: none;
     }
 
-    @for $i from 0 through 12 {
+    @for $i from 0 through 13 {
       .#{$b}\:grid-cols-#{$i} {
         grid-template-columns: repeat($i, minmax(0, 1fr));
+      }
+
+      .#{$b}\:col-span-#{$i} {
+        grid-column: span $i;
       }
 
       .#{$b}\:col-start-#{$i} {
@@ -69,6 +81,10 @@
 
       .#{$b}\:grid-rows-#{$i} {
         grid-template-rows: repeat($i, minmax(0, 1fr));
+      }
+
+      .#{$b}\:row-span-#{$i} {
+        grid-row: span $i;
       }
 
       .#{$b}\:row-start-#{$i} {

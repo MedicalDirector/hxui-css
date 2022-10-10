@@ -87,19 +87,19 @@ $_unit: $unit-padding-margins;
       /////////
 
       .\!gap-x-#{$i} {
-        row-gap: 1rem * ($i * $_unit) !important;
-      }
-
-      .gap-x-#{$i} {
-        row-gap: 1rem * ($i * $_unit);
-      }
-
-      .\!gap-y-#{$i} {
         column-gap: 1rem * ($i * $_unit) !important;
       }
 
-      .gap-y-#{$i} {
+      .gap-x-#{$i} {
         column-gap: 1rem * ($i * $_unit);
+      }
+
+      .\!gap-y-#{$i} {
+        row-gap: 1rem * ($i * $_unit) !important;
+      }
+
+      .gap-y-#{$i} {
+        row-gap: 1rem * ($i * $_unit);
       }
 
       .\!gap-#{$i} {

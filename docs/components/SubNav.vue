@@ -20,7 +20,7 @@
       </button>
 
       <div class="scroll-container" :inert="!isOpen">
-        <nav class="hx-nav vertical">
+        <nav class="hx-nav vertical pb-2">
           <expanding-nav-item
             v-for="(section, i) in sections"
             :key="i"
@@ -42,228 +42,15 @@
 </template>
 
 <script>
-import ExpandingNavItem from '@/components/ExpandingNavItem'
+import ExpandingNavItem from './ExpandingNavItem.vue'
+import { NAV_ITEMS } from './constants.ts'
 
 export default {
   data() {
     return {
       isOpen: true,
       isDetachable: false,
-      windowWidth: undefined,
-      sections: [
-        {
-          title: 'Getting started',
-          items: [
-            {
-              name: 'Welcome',
-              path: '/',
-            },
-            {
-              name: 'Install guide',
-              path: '/install',
-            },
-          ],
-        },
-        {
-          title: 'Layouts',
-          items: [
-            {
-              name: 'Containers',
-              path: '/containers',
-            },
-            {
-              name: 'Dividers',
-              path: '/dividers',
-            },
-            {
-              name: 'Elevation',
-              path: '/elevation',
-            },
-            {
-              name: 'Flexbox',
-              path: '/flexbox',
-            },
-            {
-              name: 'Grid',
-              path: '/grid',
-            },
-            {
-              name: 'Pages',
-              path: '/pages',
-            },
-            {
-              name: 'Sections',
-              path: '/sections',
-            },
-            {
-              name: 'Sidebar',
-              path: '/sidebar',
-            },
-          ],
-        },
-        {
-          title: 'Styles',
-          items: [
-            {
-              name: 'Colours',
-              path: 'colours',
-            },
-            {
-              name: 'Typography',
-              path: '/typography',
-            },
-          ],
-        },
-        {
-          title: 'Helpers',
-          items: [
-            {
-              name: 'Responsiveness',
-              path: '/responsiveness',
-            },
-            {
-              name: 'Scrollable',
-              path: '/scrollable',
-            },
-            {
-              name: 'Spacing',
-              path: '/spacing',
-            },
-            {
-              name: 'Text',
-              path: '/text',
-            },
-            {
-              name: 'Other',
-              path: '/other',
-            },
-          ],
-        },
-        {
-          title: 'Elements',
-          items: [
-            {
-              name: 'Badges',
-              path: '/badges',
-            },
-            {
-              name: 'Buttons',
-              path: '/buttons',
-            },
-            {
-              name: 'Icons',
-              path: '/icons',
-            },
-            {
-              name: 'Tables',
-              path: '/tables',
-            },
-          ],
-        },
-        {
-          title: 'Components',
-          items: [
-            {
-              name: 'Accordions',
-              path: '/accordions',
-            },
-            {
-              name: 'Alerts',
-              path: '/alerts',
-            },
-            {
-              name: 'Avatars',
-              path: '/avatars',
-            },
-            {
-              name: 'Breadcrumbs',
-              path: '/breadcrumbs',
-            },
-            {
-              name: 'Bulleted lists',
-              path: '/bullets',
-            },
-            {
-              name: 'Cards',
-              path: '/cards',
-            },
-            {
-              name: 'Dropdowns',
-              path: '/dropdowns',
-            },
-            {
-              name: 'Forms',
-              path: '/forms',
-            },
-            {
-              name: 'Lists',
-              path: '/lists',
-            },
-            {
-              name: 'Modals',
-              path: '/modals',
-            },
-            {
-              name: 'Metadata',
-              path: '/meta-data',
-            },
-            {
-              name: 'Nav',
-              path: '/nav',
-            },
-            {
-              name: 'Pagination',
-              path: '/pagination',
-            },
-            {
-              name: 'Progress timeline',
-              path: '/progress-timeline',
-            },
-            {
-              name: 'Snackbars & toasts',
-              path: '/snackbars-toasts',
-            },
-            {
-              name: 'Steppers',
-              path: '/steppers',
-            },
-            {
-              name: 'Tabs',
-              path: '/tabs',
-            },
-            {
-              name: 'Toggle',
-              path: '/toggle',
-            },
-            {
-              name: 'Toolbars',
-              path: '/toolbars',
-            },
-            {
-              name: 'Tooltips',
-              path: '/tooltips',
-            },
-          ],
-        },
-        {
-          title: 'Organisms',
-          items: [{ name: 'Panel header', path: '/panel-header' }],
-        },
-        {
-          title: 'Templates',
-          items: [{ name: 'Panel', path: '/panel' }],
-        },
-        {
-          title: 'Other',
-          items: [
-            { name: 'Downloads', path: '/downloads' },
-            {
-              name: 'Changelog',
-              link: 'https://github.com/MedicalDirector/hxui-css/blob/master/CHANGELOG.md',
-            },
-          ],
-        },
-      ],
+      sections: NAV_ITEMS,
     }
   },
   methods: {
@@ -276,9 +63,10 @@ export default {
       }
     },
     getDimensions() {
-      this.windowWidth = document?.documentElement.clientWidth
-      // 896px 56rem
-      if (!!this.windowWidth && this.windowWidth < 896) {
+      const windowWidth = document?.documentElement.clientWidth
+
+      if (!!windowWidth && windowWidth < 896) {
+        // 56rem === 896px
         this.isDetachable = true
       } else {
         this.isDetachable = false

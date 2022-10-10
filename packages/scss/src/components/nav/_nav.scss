@@ -15,7 +15,7 @@
 
 /* stylelint-disable-next-line scss/at-mixin-pattern */
 @mixin _label-container {
-  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon, .#{$namespace}-badge, .#{$namespace}-avatar)) {
     @content;
   }
 
@@ -56,10 +56,6 @@
     flex-direction: column;
     align-items: stretch;
 
-    &:not(:has(.#{$namespace}-nav-section)) {
-      padding: 0 spacing.px(3);
-    }
-
     @include deprecate("2.0.0", "Use a flex display with .hx-spacer or flex-grow") {
       &.is-bottom {
         position: absolute;
@@ -68,6 +64,10 @@
         padding-bottom: 1rem;
       }
     }
+  }
+
+  :where(.#{$namespace}-drawer-container):not(.bottom) &:not(:has(.#{$namespace}-nav-section)) {
+    padding: 0 spacing.px(3);
   }
 
   &.is-centered,

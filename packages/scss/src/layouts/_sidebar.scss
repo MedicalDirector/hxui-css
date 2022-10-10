@@ -103,6 +103,10 @@
     }
   }
 
+  :where(.#{$namespace}-drawer-container):not(.bottom) & {
+    height: 100%;
+  }
+
   @include deprecate("2.0.0", "No longer part of HXUI") {
     &.is-expanded {
       width: ($hx-spacer * 50) !important;
