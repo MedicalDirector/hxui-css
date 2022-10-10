@@ -32,3 +32,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: $duration;
 }
+
+@mixin propless($duration: 150ms) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $duration;
+}

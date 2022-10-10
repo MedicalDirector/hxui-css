@@ -3,7 +3,7 @@
 //////////
 
 @use "../variables" as *;
-
+@use "../mixins/transition";
 @use "../mixins/deprecate" as *;
 
 @include deprecate("3.0.0", "No longer part of HXUI") {
@@ -20,11 +20,25 @@
 }
 
 .#{$namespace}-code {
-  max-height: 38rem;
+  max-height: 0;
+  display: block;
   overflow: auto;
-}
-
-pre {
   margin: 0;
-  border-radius: 2px;
+  transition-property: max-height;
+  @include transition.propless(300ms);
+
+  &:not(.square) {
+    border-radius: 2px;
+  }
+
+  &.open,
+  &[aria-expanded="true"] {
+    max-height: 38rem;
+  }
+
+  code {
+    display: block;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
 }

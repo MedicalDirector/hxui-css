@@ -79,8 +79,8 @@ export default {
     font: var(--h3);
 
     transition-property: transform, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    @include transition.propless;
+
     @include breakpoint.tablet {
       font: var(--h2);
     }

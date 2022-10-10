@@ -5,6 +5,7 @@
 @use "../../variables" as *;
 @use "../../mixins/text";
 @use "../../functions/spacing";
+@use "../../mixins/transition";
 @use "../../functions/size";
 
 /// MODERN
@@ -41,8 +42,7 @@
       /* stylelint-disable-next-line declaration-empty-line-before */
       border-radius: 2px;
       transition-property: background-color, border-color;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 150ms;
+      @include transition.propless;
 
       ////////////
       // STATES //
@@ -60,8 +60,8 @@
         height: size.rem(16);
         transform: scale(0);
         transition-property: transform, clip-path;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 100ms;
+        @include transition.propless(100ms);
+
         box-shadow: inset 1rem 1rem white; //$hx-color-primary;
 
         /* stylelint-disable-next-line declaration-empty-line-before */

@@ -247,7 +247,8 @@ table td {
   }
 }
 
-.is-text-multiline {
+.is-text-multiline,
+.text-multiline {
   @include text.multiline;
 }
 

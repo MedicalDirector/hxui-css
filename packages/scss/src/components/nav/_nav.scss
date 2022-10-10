@@ -129,8 +129,7 @@
     // still keyboard-focusable if "inert" html attribute not applied
     &.with-inert {
       transition-property: max-height, margin;
-      transition-duration: 300ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @include transition.propless(300ms);
 
       &[aria-expanded="true"] {
         max-height: 100%;
@@ -199,9 +198,10 @@
 
   /* START bit with note; still keyboard-focusable if "inert" html attribute not applied to .hx-nav */
   :where(.#{$namespace}-nav-list).with-inert & {
+    @include transition.propless;
+
     transition-property: opacity, color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-duration: 300ms, 150ms, 150ms, 150ms, 150ms, 150ms, 150ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   :where(.#{$namespace}-nav-list)[aria-expanded="false"].with-inert & {
@@ -236,8 +236,7 @@
     width: 100%;
     transition-property: padding, width, opacity, color, background-color, border-color, text-decoration-color, fill,
       stroke;
-    transition-duration: 150ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition.propless(150ms);
   }
 
   //////////////
