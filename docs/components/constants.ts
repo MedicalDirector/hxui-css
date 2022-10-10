@@ -25,8 +25,25 @@ export const NAV_ITEMS = [
     title: 'Utilities',
     items: [
       {
-        name: 'Responsiveness',
-        path: '/responsiveness',
+        name: 'Elevation',
+        path: '/elevation',
+      },
+      {
+        name: 'Flexbox',
+        path: '/flexbox',
+      },
+      {
+        name: 'Grid',
+        path: '/grid',
+      },
+      {
+        name: 'Grid',
+        path: '/grid-legacy',
+        isLegacy: true,
+      },
+      {
+        name: 'Responsive display',
+        path: '/responsive',
       },
       {
         name: 'Scrollable',
@@ -58,54 +75,8 @@ export const NAV_ITEMS = [
         path: '/dividers',
       },
       {
-        name: 'Elevation',
-        path: '/elevation',
-      },
-      {
-        name: 'Flexbox',
-        path: '/flexbox',
-      },
-      {
-        name: 'Grid',
-        path: '/grid',
-      },
-      {
-        name: 'Grid',
-        path: '/grid-legacy',
-        isLegacy: true,
-      },
-      {
-        name: 'Pages',
-        path: '/pages',
-      },
-      {
-        name: 'Sections',
-        path: '/sections',
-      },
-      {
         name: 'Sidebar',
         path: '/sidebar',
-      },
-    ],
-  },
-  {
-    title: 'Elements',
-    items: [
-      {
-        name: 'Badges',
-        path: '/badges',
-      },
-      {
-        name: 'Buttons',
-        path: '/buttons',
-      },
-      {
-        name: 'Icons',
-        path: '/icons',
-      },
-      {
-        name: 'Tables',
-        path: '/tables',
       },
     ],
   },
@@ -125,12 +96,20 @@ export const NAV_ITEMS = [
         path: '/avatars',
       },
       {
+        name: 'Badges',
+        path: '/badges',
+      },
+      {
         name: 'Breadcrumbs',
         path: '/breadcrumbs',
       },
       {
         name: 'Bulleted lists',
         path: '/bullets',
+      },
+      {
+        name: 'Buttons',
+        path: '/buttons',
       },
       {
         name: 'Cards',
@@ -143,6 +122,10 @@ export const NAV_ITEMS = [
       {
         name: 'Forms',
         path: '/forms',
+      },
+      {
+        name: 'Icons',
+        path: '/icons',
       },
       {
         name: 'Lists',
@@ -165,20 +148,24 @@ export const NAV_ITEMS = [
         path: '/pagination',
       },
       {
-        name: 'Progress timeline',
-        path: '/progress-timeline',
-      },
-      {
-        name: 'Snackbars & toasts',
-        path: '/snackbars-toasts',
-      },
-      {
         name: 'Steppers',
         path: '/steppers',
       },
       {
+        name: 'Tables',
+        path: '/tables',
+      },
+      {
         name: 'Tabs',
         path: '/tabs',
+      },
+      {
+        name: 'Timeline',
+        path: '/timeline',
+      },
+      {
+        name: 'Toasts',
+        path: '/toasts',
       },
       {
         name: 'Toggle',
@@ -195,12 +182,34 @@ export const NAV_ITEMS = [
     ],
   },
   {
-    title: 'Organisms',
-    items: [{ name: 'Panel header', path: '/panel-header' }],
+    title: 'Patterns',
+    items: [
+      {
+        name: 'Panel',
+        path: '/panel',
+      },
+      {
+        name: 'Panel header',
+        path: '/panel-header',
+      },
+    ],
   },
   {
-    title: 'Templates',
-    items: [{ name: 'Panel', path: '/panel' }],
+    title: 'Marketing',
+    items: [
+      {
+        name: 'Pages',
+        path: '/pages',
+      },
+      {
+        name: 'Sections',
+        path: '/sections',
+      },
+      {
+        name: 'Typography',
+        path: '/marketing-typography',
+      },
+    ],
   },
   {
     title: 'Other',

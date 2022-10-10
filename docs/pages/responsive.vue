@@ -1,7 +1,7 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
-      <h1 class="hx-title pt-4">Responsiveness</h1>
+      <h1 class="hx-title pt-4">Responsive</h1>
       <h2 class="hx-subtitle">
         Helpers when dealing with responsive layouts/elements
       </h2>

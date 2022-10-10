@@ -101,6 +101,101 @@ export default {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
       </td>
     </tr>
+    <tr>
+      <td><code>.is-text-nowrap</code></td>
+      <td class="is-text-nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-truncate</code></td>
+      <td class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>`,
+        },
+        {
+          title: 'Decoration',
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><code>.is-text-line-through</code></td>
+      <td class="is-text-line-through">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </td>
+    </tr>
+    <tr>
+      <td><code>.is-text-underline</code></td>
+      <td class="is-text-underline">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </td>
+    </tr>
+    <tr>
+      <td><code>.is-text-dotted</code></td>
+      <td class="is-text-dotted">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </td>
+    </tr>
+  </tbody>
+</table>`,
+        },
+        {
+          title: 'Weights & italics',
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><code>.font-normal</code></td>
+      <td class="!font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-light</code></td>
+      <td class="!font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-medium</code></td>
+      <td class="!font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.font-bold</code></td>
+      <td class="!font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.text-italic</code></td>
+      <td class="text-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+  </tbody>
+</table>`,
+        },
+        {
+          title: 'Selectable',
+          code: `<table class="hx-table is-striped mb-0">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td><code>.is-text-unselectable</code></td>
+      <td class="is-text-unselectable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
+    <tr>
+      <td><code>.is-text-select-all</code></td>
+      <td class="is-text-select-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
+    </tr>
   </tbody>
 </table>`,
         },
@@ -180,89 +275,6 @@ export default {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </div>
       </td>
-    </tr>
-  </tbody>
-</table>`,
-        },
-        {
-          title: 'Decoration',
-          code: `<table class="hx-table is-striped mb-0">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>.is-text-line-through</code></td>
-      <td class="is-text-line-through">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-    <tr>
-      <td><code>.is-text-underline</code></td>
-      <td class="is-text-underline">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-    <tr>
-      <td><code>.is-text-dotted</code></td>
-      <td class="is-text-dotted">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-  </tbody>
-</table>`,
-        },
-        {
-          title: 'Weights & italics',
-          code: `<table class="hx-table is-striped mb-0">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>.font-normal</code></td>
-      <td class="!font-normal">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-    <tr>
-      <td><code>.font-bold</code></td>
-      <td class="!font-bold">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-    <tr>
-      <td><code>.font-italic</code></td>
-      <td class="!font-italic">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </td>
-    </tr>
-  </tbody>
-</table>`,
-        },
-        {
-          title: 'Selectable',
-          code: `<table class="hx-table is-striped mb-0">
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td><code>.is-text-unselectable</code></td>
-      <td class="is-text-unselectable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
-    </tr>
-    <tr>
-      <td><code>.is-text-select-all</code></td>
-      <td class="is-text-select-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</td>
     </tr>
   </tbody>
 </table>`,
