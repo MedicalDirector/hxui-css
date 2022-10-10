@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose">
+    <div class="hx-prose">
       <h1 class="hx-title pt-4">Icons</h1>
       <h2 class="hx-subtitle">Hx/Ui comes with its own custom icons.</h2>
     </div>
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <h2 class="h2 prose my-4">Standard Icons</h2>
+    <h2 class="h2 hx-prose my-4">Standard Icons</h2>
 
     <section
       class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
@@ -30,7 +30,7 @@
 
     <hr />
 
-    <h2 class="h2 prose mt-8 mb-4">Legacy Icons</h2>
+    <h2 class="h2 hx-prose mt-8 mb-4">Legacy Icons</h2>
 
     <section
       class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
@@ -43,9 +43,9 @@
 
     <hr />
 
-    <h2 class="prose">Usage</h2>
+    <h2 class="hx-prose">Usage</h2>
 
-    <p class="prose">
+    <p class="hx-prose">
       Because the icons can take a few seconds to load, and because you want
       control over the space the icons will take, you can use the icon class as
       a container:
@@ -53,7 +53,7 @@
 
     <pre v-highlightjs><code ref="code" class="html">{{ code }}</code></pre>
 
-    <p class="prose">
+    <p class="hx-prose">
       The <code>icon</code> container will take up exactly
       <strong>1.5rem x 1.5rem</strong>. The icon itself is sized at
       <strong>21px</strong>.
@@ -61,8 +61,8 @@
 
     <hr />
 
-    <h2 class="prose">Sizes</h2>
-    <p class="prose">
+    <h2 class="hx-prose">Sizes</h2>
+    <p class="hx-prose">
       Font Awesome icons use a font-size of 28px by default, and are best
       rendered when using multiples of 7. The icon container is always slightly
       bigger than the font-size used:

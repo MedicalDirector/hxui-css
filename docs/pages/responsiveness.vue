@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Responsiveness</h1>
       <h2 class="hx-subtitle">
         Helpers when dealing with responsive layouts/elements
@@ -35,7 +35,7 @@ export default {
       examples: [
         {
           title: 'Breakpoints',
-          code: `<p class="prose">There are 5 breakpoints available in HxUI:</p>
+          code: `<p class="hx-prose">There are 5 breakpoints available in HxUI:</p>
 <table class="hx-table matrix mb-0">
   <thead>
     <tr>
@@ -73,7 +73,7 @@ export default {
         {
           title: 'Visibility',
           code: `<div class="grid phablet:grid-cols-2">
-  <div class="prose">
+  <div class="hx-prose">
     <h4 class="mt-0">Show</h4>
     <p>To show an element you can use <code>.is-{display}</code> class.<p>
     <p>Just replace <code>{display}</code> with one of the following display types:</p>
@@ -98,7 +98,7 @@ export default {
     </ul>
   </div>
 
-  <div class="prose">
+  <div class="hx-prose">
     <h4 class="mt-0">Hide</h4>
     <p>Use <code>.hidden</code> class to hide an element.<p>
     <p>To hide an element by breakpoint type:<p>
@@ -129,7 +129,7 @@ export default {
         },
         {
           title: 'Visibility Example',
-          code: `<p class="prose">To test the examples below you can use the browsers resolution emulator or simply resize the browser.</p>
+          code: `<p class="hx-prose">To test the examples below you can use the browsers resolution emulator or simply resize the browser.</p>
 
 <div class="flex flex-col phablet:flex-row gap-4">
   <div class="hidden mobile:flex grow-1 hx-bg-primary p-4">

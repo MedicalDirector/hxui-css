@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Text</h1>
       <h2 class="hx-subtitle">Helpers when working with text</h2>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Tooltips</h1>
       <h2 class="hx-subtitle">
         This component is used to display extra information to a user about an

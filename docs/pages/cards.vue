@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Cards</h1>
       <h2 class="hx-subtitle">
         An all-around flexible and composable component
@@ -103,7 +103,7 @@ export default {
         title: 'Border highlighted card',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
-  <div class="prose">
+  <div class="hx-prose">
     <p>Add <code>.highlight</code> to the card for border highlighted card.</p>
     <p>You can also add modifiers for different colour border.</p>
     <ul>
@@ -167,7 +167,7 @@ export default {
         title: 'Border sizes',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
-  <div class="prose">
+  <div class="hx-prose">
     <p>You can add modifiers for different border sizes.</p>
     <ul>
       <li><code>.highlight-sm</code> (default)</li>
@@ -200,7 +200,7 @@ export default {
         title: 'Raised',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
-  <div class="prose">
+  <div class="hx-prose">
     <p>Add <code>.raised</code> modifier class to add depth to cards.</p>
     <ul>
       <li><code>hovered</code></li>
@@ -249,7 +249,7 @@ export default {
         title: 'Using HxUI grid',
         withContent: false,
         code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-3 gap-4">
-  <div class="prose">
+  <div class="hx-prose">
     <p>You can create complex layouts using HxUI Grid and Form in Card.</p>
   </div>
 

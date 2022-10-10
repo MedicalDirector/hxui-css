@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Typography</h1>
       <h2 class="hx-subtitle">Simple typography to add depth to your page</h2>
     </div>
@@ -145,58 +145,58 @@ export default {
     </tr>
     <tr>
       <td>
-        <code>&lt;h1&gt;</code> or <code>.h1</code> with <code>.prose</code>
+        <code>&lt;h1&gt;</code> or <code>.h1</code> with <code>.hx-prose</code>
       </td>
       <td>
-        <h1 class="prose">h1. Marketing heading</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;h2&gt;</code> or <code>.h2</code> with <code>.prose</code>
-      </td>
-      <td>
-        <h2 class="prose">h2. Marketing heading</h2>
+        <h1 class="hx-hx-prose">h1. Marketing heading</h1>
       </td>
     </tr>
     <tr>
       <td>
-        <code>&lt;h3&gt;</code> or <code>.h3</code> with <code>.prose</code>
+        <code>&lt;h2&gt;</code> or <code>.h2</code> with <code>.hx-prose</code>
       </td>
       <td>
-        <h3 class="prose">h3. Marketing heading</h3>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;h4&gt;</code> or <code>.h4</code> with <code>.prose</code>
-      </td>
-      <td>
-        <h4 class="prose">h4. Marketing heading</h4>
+        <h2 class="hx-prose">h2. Marketing heading</h2>
       </td>
     </tr>
     <tr>
       <td>
-        <code>&lt;h5&gt;</code> or <code>.h5</code> with <code>.prose</code>
+        <code>&lt;h3&gt;</code> or <code>.h3</code> with <code>.hx-prose</code>
       </td>
       <td>
-        <h5 class="prose">h5. Marketing heading</h5>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;h6&gt;</code> or <code>.h6</code> with <code>.prose</code>
-      </td>
-      <td>
-        <h6 class="prose">h6. Marketing heading</h6>
+        <h3 class="hx-prose">h3. Marketing heading</h3>
       </td>
     </tr>
     <tr>
       <td>
-        <code>&lt;p&gt;</code> or <code>.p</code> with <code>.prose</code>
+        <code>&lt;h4&gt;</code> or <code>.h4</code> with <code>.hx-prose</code>
       </td>
       <td>
-        <p class="prose">p. Marketing paragraph</p>
+        <h4 class="hx-prose">h4. Marketing heading</h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h5&gt;</code> or <code>.h5</code> with <code>.hx-prose</code>
+      </td>
+      <td>
+        <h5 class="hx-prose">h5. Marketing heading</h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;h6&gt;</code> or <code>.h6</code> with <code>.hx-prose</code>
+      </td>
+      <td>
+        <h6 class="hx-prose">h6. Marketing heading</h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>&lt;p&gt;</code> or <code>.p</code> with <code>.hx-hx-prose</code>
+      </td>
+      <td>
+        <p class="hx-prose">p. Marketing paragraph</p>
       </td>
     </tr>
   </tbody>
@@ -205,7 +205,7 @@ export default {
         {
           title: 'Marketing / prose copy',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4 prose">
+          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4 hx-prose">
   <div>
     <h1>FLAGYL® (METRONIDAZOLE)</h1>
     <div class="pihead">Product Information</div>

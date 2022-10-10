@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Panel Header</h1>
       <h2 class="hx-subtitle">
         The Panel Header is a header organism that is placed at the start of a
@@ -109,7 +109,7 @@
 
     <pre v-highlightjs ref="code"><code class="html">{{ headerA }}</code></pre>
 
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h3>Panel Header - Type 2</h3>
       <p>
         This header consists of two rows - the first row contains the main

@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Nav</h1>
       <h2 class="hx-subtitle">
         A responsive horizontal nav bar that can contain links, tabs, buttons,

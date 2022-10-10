@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Bulleted lists</h1>
       <h2 class="hx-subtitle">
         A simple configurable way of using <code>ul</code> list.

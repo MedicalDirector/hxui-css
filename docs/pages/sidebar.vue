@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Sidebar / Drawer</h1>
       <h2 class="hx-subtitle">Primarily used for navigation or meta data.</h2>
     </div>
@@ -40,7 +40,7 @@ export default {
     </div>
   </div>
   <!-- Main content -->
-  <div class="prose py-4 px-6">
+  <div class="hx-prose py-4 px-6">
     <h3>Collapsed</h3>
     <p>Add class <code>.collapsed</code> to the drawer.</p>
   </div>
@@ -53,7 +53,7 @@ export default {
     </div>
   </div>
   <!-- Main content -->
-  <div class="prose py-4 px-6">
+  <div class="hx-prose py-4 px-6">
     <h3>Minimised</h3>
     <p>Add class <code>.mini</code> to the drawer.</p>
   </div>
@@ -66,7 +66,7 @@ export default {
     </div>
   </div>
   <!-- Main content -->
-  <div class="prose py-4 px-6">
+  <div class="hx-prose py-4 px-6">
     <h3>Default</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -79,7 +79,7 @@ export default {
       {
         title: 'As overlay',
         code: `
-<p class="prose">Add class <code>.detached</code> to the drawer.</p>
+<p class="hx-prose">Add class <code>.detached</code> to the drawer.</p>
       
 <div class="hx-card flex mb-2">
   <div class="hx-sidebar-container" style="position: relative; z-index: 2;">
@@ -89,7 +89,7 @@ export default {
   </div>
 
   <!-- Main content -->
-  <div class="prose py-4 px-6">
+  <div class="hx-prose py-4 px-6">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Donec imperdiet pellentesque finibus.
@@ -98,7 +98,7 @@ export default {
   </div>
 </div>
 
-<p class="prose">
+<p class="hx-prose">
   Add element with class <code>.hx-overlay</code> 
   inside <code>.hx-sidebar-container</code>.
 </p>
@@ -113,7 +113,7 @@ export default {
   </div>
 
   <!-- Main content -->
-  <div class="prose py-4 px-6">
+  <div class="hx-prose py-4 px-6">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Donec imperdiet pellentesque finibus.

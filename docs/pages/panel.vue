@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Panel</h1>
       <h2 class="hx-subtitle">
         A Panel is a template that consists of a

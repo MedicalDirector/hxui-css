@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Toggle</h1>
       <h2 class="hx-subtitle">A toggle switch is used as an on/off control.</h2>
     </div>

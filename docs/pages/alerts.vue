@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Alerts</h1>
       <h2 class="hx-subtitle">
         The alert component is a small complete navigation component.
@@ -36,7 +36,7 @@ export default {
           title: 'Contextual',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>
       The <code>.hx-alert</code> component comes in 4 variations, success, info, warning and error.
       They can have icons assigned which can be changed and represent different actions.
@@ -89,7 +89,7 @@ export default {
           title: 'Closable',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>A close button can be added.</p>
   </div>
   
@@ -106,7 +106,7 @@ export default {
           title: 'Custom icon / No icon',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>You can easily assign a custom icon or remove it all together.</p>
   </div>
 
@@ -129,7 +129,7 @@ export default {
           title: 'Inverted',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>Invert the alert style by using the <code>.is-inverse</code> modifier. </p>
   </div>
 
@@ -198,7 +198,7 @@ export default {
           title: 'Bordered',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>Inverted styles are predominantly designed to work on white backgrounds.</p>
     <p>In some cases they will go on other background colours that make the inverted style hard to see.</p>
     <p>Use the <code>.is-bordered</code> modifier to make it stand out.</p>
@@ -254,7 +254,7 @@ export default {
           title: 'Sizes',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4 grid-cols-1">
-  <div class="prose">
+  <div class="hx-prose">
     <p>Add the <code>.is-small</code> modifier to reduce padding and overall size of alerts.</p>
   </div>
   

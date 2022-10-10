@@ -84,7 +84,7 @@ dd {
 // }
 
 a {
-  &.prose {
+  &.hx-prose {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
     cursor: pointer;
@@ -119,7 +119,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  &.prose {
+  &.hx-prose {
     font-family: $hx-headings-font-family;
     font-weight: $hx-headings-font-weight;
     line-height: $hx-headings-line-height;
@@ -129,7 +129,7 @@ h6,
 
 h1,
 .h1 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h1;
     font-weight: $hx-font-weight-bold;
     color: $hx-color-info;
@@ -139,7 +139,7 @@ h1,
 
 h2,
 .h2 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h2;
     margin-top: 1rem * 1.35;
     margin-bottom: 1rem * 0.75;
@@ -148,7 +148,7 @@ h2,
 
 h3,
 .h3 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h3;
     font-weight: $hx-font-weight-bolder;
     color: $hx-color-info;
@@ -159,7 +159,7 @@ h3,
 
 h4,
 .h4 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h4;
     font-weight: $hx-font-weight-bold;
     margin-top: 1rem * 1.1;
@@ -169,7 +169,7 @@ h4,
 
 h5,
 .h5 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h5;
     font-weight: $hx-font-weight-bolder;
     margin-top: 1rem * 1.1;
@@ -179,7 +179,7 @@ h5,
 
 h6,
 .h6 {
-  &.prose {
+  &.hx-prose {
     font-size: $hx-font-size-h6;
     font-weight: $hx-font-weight-boldest;
     color: $hx-color-gray-lighter;
@@ -190,13 +190,13 @@ h6,
   }
 }
 
-p.prose {
+p.hx-prose {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 // Headings
-.prose {
+.hx-prose {
   color: $hx-text;
 
   &.h1,
@@ -223,8 +223,8 @@ p.prose {
   :where(.h4),
   :where(.h5),
   :where(.h6) {
-    // &:not(.not-prose),
-    &:not(:where([class~="not-prose"] *)) {
+    // &:not(.hx-not-prose),
+    &:not(:where([class~="hx-not-prose"] *)) {
       font-family: $hx-headings-font-family;
       font-weight: $hx-headings-font-weight;
       line-height: $hx-headings-line-height;
@@ -232,23 +232,23 @@ p.prose {
     }
   }
 
-  :where(h1):not(:where([class~="not-prose"] *)),
-  :where(.h1):not(:where([class~="not-prose"] *)) {
+  :where(h1):not(:where([class~="hx-not-prose"] *)),
+  :where(.h1):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h1;
     font-weight: $hx-font-weight-bold;
     color: $hx-color-info;
     margin-bottom: 1rem * 1; // no top as h1 should only be used once
   }
 
-  :where(h2):not(:where([class~="not-prose"] *)),
-  :where(.h2):not(:where([class~="not-prose"] *)) {
+  :where(h2):not(:where([class~="hx-not-prose"] *)),
+  :where(.h2):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h2;
     margin-top: 1rem * 1.35;
     margin-bottom: 1rem * 0.75;
   }
 
-  :where(h3):not(:where([class~="not-prose"] *)),
-  :where(.h3):not(:where([class~="not-prose"] *)) {
+  :where(h3):not(:where([class~="hx-not-prose"] *)),
+  :where(.h3):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h3;
     font-weight: $hx-font-weight-bolder;
     color: $hx-color-info;
@@ -256,24 +256,24 @@ p.prose {
     margin-bottom: 1rem * 0.5;
   }
 
-  :where(h4):not(:where([class~="not-prose"] *)),
-  :where(.h4):not(:where([class~="not-prose"] *)) {
+  :where(h4):not(:where([class~="hx-not-prose"] *)),
+  :where(.h4):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h4;
     font-weight: $hx-font-weight-bold;
     margin-top: 1rem * 1.1;
     margin-bottom: 1rem * 0.35;
   }
 
-  :where(h5):not(:where([class~="not-prose"] *)),
-  :where(.h5):not(:where([class~="not-prose"] *)) {
+  :where(h5):not(:where([class~="hx-not-prose"] *)),
+  :where(.h5):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h5;
     font-weight: $hx-font-weight-bolder;
     margin-top: 1rem * 1.1;
     margin-bottom: 1rem * 0.25;
   }
 
-  :where(h6):not(:where([class~="not-prose"] *)),
-  :where(.h6):not(:where([class~="not-prose"] *)) {
+  :where(h6):not(:where([class~="hx-not-prose"] *)),
+  :where(.h6):not(:where([class~="hx-not-prose"] *)) {
     font-size: $hx-font-size-h6;
     font-weight: $hx-font-weight-boldest;
     color: $hx-color-gray-lighter;
@@ -283,7 +283,7 @@ p.prose {
     margin-bottom: 1rem * 0.5;
   }
 
-  :where(p):not(:where([class~="not-prose"] *)) {
+  :where(p):not(:where([class~="hx-not-prose"] *)) {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -292,22 +292,22 @@ p.prose {
   //   margin-bottom: 1.5rem;
   // }
 
-  :where(dt):not(:where([class~="not-prose"] *)) {
+  :where(dt):not(:where([class~="hx-not-prose"] *)) {
     font-weight: $hx-font-weight-bold;
   }
 
-  :where(dd):not(:where([class~="not-prose"] *)) {
+  :where(dd):not(:where([class~="hx-not-prose"] *)) {
     margin: 0;
   }
 
-  :where(ol):not(:where([class~="not-prose"] *)) {
+  :where(ol):not(:where([class~="hx-not-prose"] *)) {
     list-style: decimal outside;
     margin-left: 2em;
     margin-right: 2em;
     margin-top: 1em;
   }
 
-  :where(ul):not(:where([class~="not-prose"] *)) {
+  :where(ul):not(:where([class~="hx-not-prose"] *)) {
     list-style: disc outside;
     margin-left: 2em;
     margin-right: 2em;
@@ -323,11 +323,11 @@ p.prose {
     }
   }
 
-  :where(p):not(:where([class~="not-prose"] *)),
-  :where(ol):not(:where([class~="not-prose"] *)),
-  :where(ul):not(:where([class~="not-prose"] *)),
-  :where(blockquote):not(:where([class~="not-prose"] *)),
-  :where(table):not(:where([class~="not-prose"] *)) {
+  :where(p):not(:where([class~="hx-not-prose"] *)),
+  :where(ol):not(:where([class~="hx-not-prose"] *)),
+  :where(ul):not(:where([class~="hx-not-prose"] *)),
+  :where(blockquote):not(:where([class~="hx-not-prose"] *)),
+  :where(table):not(:where([class~="hx-not-prose"] *)) {
     &:not(:last-child) {
       margin-bottom: 1em;
     }

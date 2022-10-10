@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose">
+    <div class="hx-prose">
       <h1 class="hx-title pt-4">Breadcrumbs</h1>
       <h2 class="hx-subtitle">
         The <code>hx-breadcrumb</code> component is a navigational helper for

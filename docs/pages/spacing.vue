@@ -1,5 +1,5 @@
 <template>
-  <article class="hx-section scrollable-y prose">
+  <article class="hx-section scrollable-y hx-prose">
     <h1 class="hx-title pt-4">Spacing</h1>
     <h2 class="hx-subtitle">
       Update your layout without creating new classes. Spacing helpers are

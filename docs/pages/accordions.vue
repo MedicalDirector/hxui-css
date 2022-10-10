@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="contents prose">
+    <div class="contents hx-prose">
       <h1 class="hx-title pt-4">Accordions</h1>
       <h2 class="hx-subtitle">
         The <code>hx-accordion</code> component is useful for reducing vertical

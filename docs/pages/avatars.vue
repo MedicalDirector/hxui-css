@@ -243,7 +243,7 @@ export default {
 
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose">
+    <div class="hx-prose">
       <h1 class="hx-title pt-4">Avatars</h1>
       <h2 class="hx-subtitle">
         The avatar component is used to control the size and border radius of

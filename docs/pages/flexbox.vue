@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Flexbox</h1>
       <h2 class="hx-subtitle">
         The <code>hx-flex</code> component is an abstraction of the flexbox
@@ -70,7 +70,7 @@ export default {
       examples: [
         {
           title: 'Horizontal flex direction (Row)',
-          code: `<p class="prose">
+          code: `<p class="hx-prose">
   Add <code>hx-flex</code> for a flexbox display.
   This arranges the items horizontally by default without adding <code>flex-row</code> modifier.
 </p>
@@ -83,7 +83,7 @@ export default {
         },
         {
           title: 'Vertical flex direction (Column)',
-          code: `<p class="prose"><code>flex-col</code> modifier arranges the items vertically.</p>
+          code: `<p class="hx-prose"><code>flex-col</code> modifier arranges the items vertically.</p>
 <div class="hx-flex flex-col gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -134,7 +134,7 @@ export default {
         },
         {
           title: 'Flex wrap',
-          code: `<p class="prose">
+          code: `<p class="hx-prose">
   Flex items will all try to fit onto one line by default.
   Allow items to wrap with <code>flex-wrap</code> modifier.
 </p>
@@ -168,12 +168,12 @@ export default {
         },
         {
           title: 'Justify content',
-          code: `<p class="prose">
+          code: `<p class="hx-prose">
   The below modifiers control the alignment along the main axis.
   Horizontall with <code>flex-row</code>; vertically with <code>flex-col</code>.
 </p>
 
-<p class="prose">
+<p class="hx-prose">
   <span class="font-medium">flex-start </span>
   <code>justify-start</code>
   <span>(default)</span>
@@ -185,7 +185,7 @@ export default {
   <div class="box">4</div>
 </div>
 
-<p class="prose font-medium">flex-end <code>justify-end</code></p>
+<p class="hx-prose font-medium">flex-end <code>justify-end</code></p>
 <div class="hx-flex justify-end gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -193,7 +193,7 @@ export default {
   <div class="box">4</div>
 </div>
 
-<p class="prose font-medium">center <code>justify-center</code></p>
+<p class="hx-prose font-medium">center <code>justify-center</code></p>
 <div class="hx-flex justify-center gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -201,7 +201,7 @@ export default {
   <div class="box">4</div>
 </div>
 
-<p class="prose font-medium">space-between <code>justify-between</code></p>
+<p class="hx-prose font-medium">space-between <code>justify-between</code></p>
 <div class="hx-flex justify-between gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -209,7 +209,7 @@ export default {
   <div class="box">4</div>
 </div>
 
-<p class="prose font-medium">space-around <code>justify-around</code></p>
+<p class="hx-prose font-medium">space-around <code>justify-around</code></p>
 <div class="hx-flex justify-around gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -217,7 +217,7 @@ export default {
   <div class="box">4</div>
 </div>
 
-<p class="prose font-medium">space-evenly <code>justify-evenly</code></p>
+<p class="hx-prose font-medium">space-evenly <code>justify-evenly</code></p>
 <div class="hx-flex justify-evenly gap-1 bg-background">
   <div class="box">1</div>
   <div class="box">2</div>
@@ -227,12 +227,12 @@ export default {
         },
         {
           title: 'Align items',
-          code: `<p class="prose">
+          code: `<p class="hx-prose">
   The below modifiers control the alignment along the minor axis.
   Vertically with <code>flex-row</code>; horizontally with <code>flex-col</code>.
 </p>
 
-<p class="prose font-medium">flex-start <code>align-start</code></p>
+<p class="hx-prose font-medium">flex-start <code>align-start</code></p>
 <div class="hx-flex align-start gap-1 bg-background box-container">
   <div class="box box--fixed">1</div>
   <div class="box box--fixed">2</div>
@@ -240,7 +240,7 @@ export default {
   <div class="box box--fixed">4</div>
 </div>
 
-<p class="prose font-medium">flex-end <code>align-end</code></p>
+<p class="hx-prose font-medium">flex-end <code>align-end</code></p>
 <div class="hx-flex align-end gap-1 bg-background box-container">
   <div class="box box--fixed">1</div>
   <div class="box box--fixed">2</div>
@@ -248,7 +248,7 @@ export default {
   <div class="box box--fixed">4</div>
 </div>
 
-<p class="prose font-medium">center <code>align-center</code></p>
+<p class="hx-prose font-medium">center <code>align-center</code></p>
 <div class="hx-flex align-center gap-1 bg-background box-container">
   <div class="box box--fixed">1</div>
   <div class="box box--fixed">2</div>
@@ -256,7 +256,7 @@ export default {
   <div class="box box--fixed">4</div>
 </div>
 
-<p class="prose font-medium">stretch <code>align-stretch</code></p>
+<p class="hx-prose font-medium">stretch <code>align-stretch</code></p>
 <div class="hx-flex align-stretch gap-1 bg-background box-container">
   <div class="box">1</div>
   <div class="box">2</div>

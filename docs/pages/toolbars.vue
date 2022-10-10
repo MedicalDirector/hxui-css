@@ -1,6 +1,6 @@
 <template>
   <article class="hx-section scrollable-y">
-    <div class="prose contents">
+    <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Toolbars</h1>
       <h2 class="hx-subtitle">
         The toolbar component is a container for headers, titles, or actions.
@@ -280,7 +280,7 @@ export default {
         {
           title: 'Sizes',
           code: `<p>Toolbar supports 3 sizes.</p>
-<p class="prose">(default)</p>
+<p class="hx-prose">(default)</p>
 <div class="hx-toolbar--modern bg-info-emphasis fg-contrast">
   <span>Title</span>
   <div class="hx-spacer"></div>
@@ -291,7 +291,7 @@ export default {
   </button>
 </div>
 
-<p class="prose"><code>.compact</code></p>
+<p class="hx-prose"><code>.compact</code></p>
 <div class="hx-toolbar--modern bg-info-emphasis fg-contrast compact mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
@@ -302,7 +302,7 @@ export default {
   </button>
 </div>
 
-<p class="prose"><code>.comfortable</code></p>
+<p class="hx-prose"><code>.comfortable</code></p>
 <div class="hx-toolbar--modern bg-info-emphasis fg-contrast comfortable mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
