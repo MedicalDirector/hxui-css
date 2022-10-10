@@ -13,12 +13,11 @@
 @use "../../mixins/text";
 @use "../../mixins/deprecate" as *;
 
-.#{$namespace}-badge,
-.#{$namespace}-badge-content {
-  display: inline-flex;
-  align-items: center;
-}
+///////////////////////
+//  BADGE CONTAINER  //
+///////////////////////
 
+/// IMPLICIT DEFAULTS
 :is(.#{$namespace}-badge) {
   .#{$namespace}-badge-action,
   .#{$namespace}-delete {
@@ -47,6 +46,7 @@
   }
 }
 
+/// MAIN
 .#{$namespace}-badge {
   @include badge.control;
 
@@ -237,24 +237,26 @@
   // With Avatars //
   //////////////////
 
-  // .#{$namespace}-avatar {
-  //   min-width: 24px;
-  //   min-height: 24px;
-  //   height: 24px;
-  //   width: 24px;
-  //   margin-left: -12px;
-  //   margin-right: 0.4rem;
-  //   font-size: 0.75rem;
-  //   line-height: normal;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   box-shadow: none;
+  @include deprecate("2.0.0", "Refer updated style modifiers") {
+    .#{$namespace}-avatar {
+      min-width: 24px;
+      min-height: 24px;
+      height: 24px;
+      width: 24px;
+      margin-left: -12px;
+      margin-right: 0.4rem;
+      font-size: 0.75rem;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
 
-  //   .#{$namespace}-icon {
-  //     font-size: 1rem;
-  //   }
-  // }
+      .#{$namespace}-icon {
+        font-size: 1rem;
+      }
+    }
+  }
 
   /////////////////
   // With Action //
@@ -266,6 +268,21 @@
 
   @include badge.variant-positioned;
 }
+
+/////////////////////
+//  BADGE CONTENT  //
+/////////////////////
+
+:where(.#{$namespace}-badge)
+  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-avatar, .#{$namespace}-delete)),
+.#{$namespace}-badge-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+////////////////////
+//  BADGE ACTION  //
+////////////////////
 
 .#{$namespace}-badge-action {
   &:not(.delete) {

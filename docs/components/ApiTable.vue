@@ -20,7 +20,7 @@
               secondary: d.type !== 'component',
             }"
           >
-            <span class="hx-badge-content text-capitalise">{{ d.type }}</span>
+            <span class="text-capitalise">{{ d.type }}</span>
           </span>
         </td>
         <td>{{ d.description }}</td>

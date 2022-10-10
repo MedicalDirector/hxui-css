@@ -124,7 +124,7 @@ export default {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  gap: 1rem;
+  gap: 0.5rem;
 
   @include breakpoint.laptop {
     margin-bottom: 3rem;
@@ -132,11 +132,13 @@ export default {
 
   .subtitle {
     font: var(--h3);
+    font-weight: 400;
     color: var(--color-foreground-contrast);
     margin: 0;
 
     @include breakpoint.tablet {
-      font: var(--h2);
+      font: var(--h1);
+      font-weight: 300;
     }
   }
 }

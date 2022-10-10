@@ -41,10 +41,10 @@ export default {
     <span>Default</span>
   </div>
   <div class="hx-badge primary">
-    <span class="hx-badge-content">Primary</span>
+    <span>Primary</span>
   </div>
   <div class="hx-badge secondary">
-    <span class="hx-badge-content">Secondary</span>
+    <span>Secondary</span>
   </div>
   <div class="hx-badge success">
     <span>Success</span>
@@ -71,7 +71,7 @@ export default {
     <span>Secondary (Default)</span>
   </div>
   <div class="hx-badge primary flat">
-    <span class="hx-badge-content">Primary</span>
+    <span>Primary</span>
   </div>
   <div class="hx-badge success flat">
     <span>Success</span>
@@ -166,17 +166,17 @@ export default {
           withContent: false,
           code: `<div class="hx-card-content flex justify-center items-center gap-2">
   <div class="hx-badge sm">
-    <span class="hx-badge-content">
+    <span>
       Small
     </span>
   </div>
   <div class="hx-badge md">
-    <span class="hx-badge-content">
+    <span>
       Medium (Default)
     </span>
   </div>
   <div class="hx-badge lg">
-    <span class="hx-badge-content">
+    <span>
       Large
     </span>
   </div>

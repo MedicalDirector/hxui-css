@@ -35,7 +35,7 @@
             class="hx-badge sm warning"
             style="width: unset"
           >
-            <span class="hx-badge-content">Legacy</span>
+            <span>Legacy</span>
           </span>
         </router-link>
         <a

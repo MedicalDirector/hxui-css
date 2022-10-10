@@ -61,7 +61,7 @@ $border-width-default: 1;
     @content;
   }
 
-  .#{$namespace}-#{$component}-content {
+  .#{$namespace}-badge-content {
     @content;
   }
 }

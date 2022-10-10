@@ -16,7 +16,7 @@
             class="hx-badge sm warning"
             style="width: unset"
           >
-            <span class="hx-badge-content">Legacy</span>
+            <span>Legacy</span>
           </span>
           <div class="inline-flex grow-1"></div>
           <span class="hx-icon-container">
