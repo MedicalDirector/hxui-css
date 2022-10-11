@@ -1,9 +1,9 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
-      <h1 class="hx-title pt-4">Progress timeline</h1>
+      <h1 class="hx-title pt-4">Timeline</h1>
       <h2 class="hx-subtitle">
-        A progress timeline component communicates to the user the progress of a
+        A timeline component communicates to the user the progress of a
         particular process.
       </h2>
     </div>
@@ -37,190 +37,273 @@ export default {
       examples: [
         {
           title: 'Example',
-          code: `
-  <div class="hx-columns">
-    <div class="hx-column is-6 is-offset-3">
-      <div class="hx-card">
-        <div class="hx-card-content">
-          <ul class="hx-bullet-list has-status is-joined">
-            <li class="is-success is-checked">
-              <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
-              <div class="hx-collapsible">
-                <div class="hx-group">
-                  <p><strong>SMS sent: Appointment Reminder</strong><p>
-                  <p><em>16.04.2017</em></p>
-                </div>
-                <div class="hx-group">
-                  <p><strong>SMS sent: Appointment booked</strong><p>
-                  <p><em>20.04.2017</em></p>
-                </div>
-                <div class="hx-group">
-                  <p>You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
-            You can reply 'YES' to this message to confirm, or 'NO' to cancel.
-            If you need to reschedule. please call us at 03 3482 2181.</p>
-                </div>
-              </div>
-            </li>
-            <li class="is-not-checked is-success">
-              <h6 class="hx-title">Confirmed <i class="hx-icon icon-angle-up"></i></h6>
-              <div class="hx-collapsible">
-                <div class="hx-group">
-                  <p><strong>SMS rec'd: Patient Confirmed</strong><p>
-                  <p><em>20.03.2017</em></p>
-                  <p>YES</p>
-                </div>
-              </div>
-            </li>
-            <li class="is-not-checked is-warning">
-              <h6 class="hx-title">Checked in <i class="hx-icon icon-angle-up"></i></h6>
-              <div class="hx-collapsible">
-                <div class="hx-group">
-                  <p class="is-warning"><strong>SMS rec'd: Patient Replied at 3:55pm.</strong><p>
-                  <p><em>20.03.2017</em></p>
-                  <p>YES</p>
-                </div>
-              </div>
-            </li>
-            <li class="is-not-checked is-danger">
-              <h6 class="hx-title">Waiting <i class="hx-icon icon-angle-up"></i></h6>
-              <div class="hx-collapsible">
-                <div class="hx-group">
-                  <p class="is-danger"><strong>SMS rec'd: Patient Declined at 4:05pm.</strong><p>
-                  <p><em>20.03.2017</em></p>
-                  <p>YES</p>
-                </div>
-              </div>
-            </li>
-            <li></li>
-          </ul>
+          withContent: false,
+          code: `<div class="hx-card-content grid phablet:grid-cols-4">
+  <div class="hx-card p-4 phablet:col-start-2 phablet:col-end-4">
+    <ul class="hx-bullet-list status joined">
+      <li class="success checked">
+        <div class="hx-flex justify-between">
+          <h3 class="h4">Booked</h3>
+          <button class="hx-button sm">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-angle-up"></i>
+            </span>
+          </button>
         </div>
-      </div>
-    </div>
+
+        <div class="hx-collapsible flex flex-col">
+          <div class="flex justify-between">
+            <span class="b1 font-medium fg-subdued">Appointment reminder</span>
+            <span class="b1 fg-muted">SEP 4 at 12:00pm</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="b1 font-medium fg-subdued">Appointment booked</span>
+            <span class="b1 fg-muted">SEP 11 at 3:35pm</span>
+          </div>
+          <span class="b2 fg-subdued">
+            You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
+            You can reply 'YES' to this message to confirm, or 'NO' to cancel.
+            If you need to reschedule. please call us at 03 3482 2181.
+          </span>
+        </div>
+      </li>
+
+      <li class="checked success">
+        <div class="hx-flex justify-between">
+          <h3 class="h4">Confirmed</h3>
+          <button class="hx-button sm">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-angle-up"></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="hx-collapsible flex flex-col">
+          <div class="flex justify-between">
+            <span class="b1 font-medium fg-success">Patient confirmed</span>
+            <span class="b1 fg-muted">Today at 8:55am</span>
+          </div>
+          <span class="b2 fg-subdued">YES</span>
+        </div>
+      </li>
+
+      <li class="checked warning">
+        <div class="hx-flex justify-between">
+          <h3 class="h4">Checked in</h3>
+          <button class="hx-button sm">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-angle-up"></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="hx-collapsible flex flex-col">
+          <div class="flex justify-between">
+            <span class="b1 font-medium fg-warning">Patient replied</span>
+            <span class="b1 fg-muted">Today at 3:55pm</span>
+          </div>
+          <span class="b2 fg-subdued">YES</span>
+        </div>
+      </li>
+
+      <li class="checked danger">
+        <div class="hx-flex justify-between">
+          <h3 class="h4">Waiting</h3>
+          <button class="hx-button sm">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-angle-up"></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="hx-collapsible flex flex-col">
+          <div class="flex justify-between">
+            <span class="b1 font-medium fg-danger">Patient declined</span>
+            <span class="b1 fg-muted">Today at 4:05pm</span>
+          </div>
+          <span class="b2 fg-subdued">YES</span>
+        </div>
+      </li>
+    </ul>
   </div>
-            `,
+</div>`,
         },
         {
           title: 'Progress timeline in popover',
-          code: `
-  <div class="hx-card" style="margin-bottom: 32rem">
-    <div class="hx-card-content">
-      <div class="hx-flex hx-flex-justify-between">
-        <h4 class="is-marginless">Current Visit</h4>
-        <div class="hx-flex hx-flex-align-center">
-          <div class="hx-progress-timeline-status">
-            <span class="hx-marker is-success is-animated"><i class="icon icon-check-empty"></i></span>
-            <div class="hx-popover is-opened">
-              <ul class="hx-bullet-list has-status is-joined">
-                <li class="is-success is-checked">
-                  <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
-                  <div class="hx-collapsible">
-                    <div class="hx-group">
-                      <p><strong>SMS sent: Appointment Reminder</strong><p>
-                      <p><em>16.04.2017</em></p>
-                    </div>
-                    <div class="hx-group">
-                      <p><strong>SMS sent: Appointment booked</strong><p>
-                      <p><em>20.04.2017</em></p>
-                    </div>
-                    <div class="hx-group">
-                      <p>You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
-                You can reply 'YES' to this message to confirm, or 'NO' to cancel.
-                If you need to reschedule. please call us at 03 3482 2181.</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="is-not-checked is-success">
-                  <h6 class="hx-title">Confirmed <i class="hx-icon icon-angle-up"></i></h6>
-                  <div class="hx-collapsible">
-                    <div class="hx-group">
-                      <p><strong>SMS rec'd: Patient Confirmed</strong><p>
-                      <p><em>20.03.2017</em></p>
-                      <p>YES</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="is-not-checked is-warning">
-                  <h6 class="hx-title">Checked in <i class="hx-icon icon-angle-up"></i></h6>
-                  <div class="hx-collapsible">
-                    <div class="hx-group">
-                      <p class="is-warning"><strong>SMS rec'd: Patient Replied at 3:55pm.</strong><p>
-                      <p><em>20.03.2017</em></p>
-                      <p>YES</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="is-not-checked is-danger">
-                  <h6 class="hx-title">Waiting <i class="hx-icon icon-angle-up"></i></h6>
-                  <div class="hx-collapsible">
-                    <div class="hx-group">
-                      <p class="is-danger"><strong>SMS rec'd: Patient Declined at 4:05pm.</strong><p>
-                      <p><em>20.03.2017</em></p>
-                      <p>YES</p>
-                    </div>
-                  </div>
-                </li>
-                <li></li>
-              </ul>
-            </div>
+          code: `<div class="hx-card" style="margin-bottom: 32rem">
+  <div class="hx-card-content">
+    <div class="hx-flex justify-between items-center">
+      <h3 class="h3">Current Visit</h4>
+
+      <div class="hx-flex items-center gap-2">
+        <div class="hx-progress-timeline-status">
+          <div class="py-1">
+            <ul class="hx-bullet-list status horizontal">
+              <li class="success checked">
+                <span class="h4">Booked</span>
+              </li>
+            </ul>
           </div>
-          <strong class="is-success">Booked</strong>
-          <i class="icon icon-angle-right"></i>
-          <a class="hx-button is-primary">
-            <span>Add to queue</span>
-            <span class="hx-icon-control"><i class="icon icon-angle-down"></i></span>
-          </a>
+
+          <div class="hx-popover open bottom-middle">
+            <ul class="hx-bullet-list status joined">
+              <li class="success checked">
+                <div class="hx-flex justify-between">
+                  <h3 class="h4">Booked</h3>
+                  <button class="hx-button sm">
+                    <span class="hx-icon-container">
+                      <i class="hx-icon icon-angle-up"></i>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hx-collapsible flex flex-col">
+                  <div class="flex justify-between">
+                    <span class="b1 font-medium fg-subdued">Appointment reminder</span>
+                    <span class="b1 fg-muted">SEP 4 at 12:00pm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="b1 font-medium fg-subdued">Appointment booked</span>
+                    <span class="b1 fg-muted">SEP 11 at 3:35pm</span>
+                  </div>
+                  <span class="b2 fg-subdued">
+                    You have an appointment with Dr John GP at 1:30pm on 06/03/2017 at 45 Mariposa Parade, South Yackandandah, VIC 3749.
+                    You can reply 'YES' to this message to confirm, or 'NO' to cancel.
+                    If you need to reschedule. please call us at 03 3482 2181.
+                  </span>
+                </div>
+              </li>
+
+              <li class="checked success">
+                <div class="hx-flex justify-between">
+                  <h3 class="h4">Confirmed</h3>
+                  <button class="hx-button sm">
+                    <span class="hx-icon-container">
+                      <i class="hx-icon icon-angle-up"></i>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hx-collapsible flex flex-col">
+                  <div class="flex justify-between">
+                    <span class="b1 font-medium fg-success">Patient confirmed</span>
+                    <span class="b1 fg-muted">Today at 8:55am</span>
+                  </div>
+                  <span class="b2 fg-subdued">YES</span>
+                </div>
+              </li>
+
+              <li class="checked warning">
+                <div class="hx-flex justify-between">
+                  <h3 class="h4">Checked in</h3>
+                  <button class="hx-button sm">
+                    <span class="hx-icon-container">
+                      <i class="hx-icon icon-angle-up"></i>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hx-collapsible flex flex-col">
+                  <div class="flex justify-between">
+                    <span class="b1 font-medium fg-warning">Patient replied</span>
+                    <span class="b1 fg-muted">Today at 3:55pm</span>
+                  </div>
+                  <span class="b2 fg-subdued">YES</span>
+                </div>
+              </li>
+
+              <li class="checked danger">
+                <div class="hx-flex justify-between">
+                  <h3 class="h4">Waiting</h3>
+                  <button class="hx-button sm">
+                    <span class="hx-icon-container">
+                      <i class="hx-icon icon-angle-up"></i>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="hx-collapsible flex flex-col">
+                  <div class="flex justify-between">
+                    <span class="b1 font-medium fg-danger">Patient declined</span>
+                    <span class="b1 fg-muted">Today at 4:05pm</span>
+                  </div>
+                  <span class="b2 fg-subdued">YES</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+        
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-angle-right"></i>
+        </span>
+
+        <button class="hx-button primary">
+          <span>Add to queue</span>
+          <span class="hx-icon-container">
+            <i class="icon icon-angle-down"></i>
+          </span>
+        </a>
       </div>
     </div>
   </div>
-            `,
+</div>`,
         },
         {
           title: 'Progress timeline marker states',
-          code: `
-  <div class="hx-card">
-    <div class="hx-card-content">
-      <div class="hx-flex hx-flex-justify-between">
-        <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-bullet-list has-status is-horizontal pr-1">
-            <li class="is-success is-checked">
-              <strong class="is-success">Success</strong>
-            </li>
-          </ul>
-          <i class="hx-icon icon-angle-right"></i>
-          <button class="hx-button is-primary">
-            <span>Next action</span>
-            <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
-          </button>
-        </div>
-        <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-bullet-list has-status is-horizontal pr-1">
-            <li class="is-warning is-not-checked">
-              <strong class="is-warning">Attention</strong>
-            </li>
-          </ul>
-          <i class="hx-icon icon-angle-right"></i>
-          <button class="hx-button is-primary">
-            <span>Next action</span>
-            <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
-          </button>
-        </div>
-        <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-bullet-list has-status is-horizontal pr-1">
-            <li class="is-danger is-not-checked">
-              <strong class="is-danger">Declined</strong>
-            </li>
-          </ul>
-          <i class="hx-icon icon-angle-right"></i>
-          <button class="hx-button is-primary">
-            <span>Next action</span>
-            <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
-          </button>
-        </div>
-      </div>
+          withContent: false,
+          code: `<div class="hx-card-content flex justify-between">
+  <div class="hx-flex items-center gap-2">
+    <div class="py-1">
+      <ul class="hx-bullet-list status horizontal">
+        <li class="success checked">
+          <span class="h4">Success</span>
+        </li>
+      </ul>
     </div>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-angle-right"></i>
+    </span>
+    <button class="hx-button primary">
+      <span>Next action</span>
+      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+    </button>
   </div>
-            `,
+
+  <div class="hx-flex items-center gap-2">
+    <div class="py-1">
+      <ul class="hx-bullet-list status horizontal">
+        <li class="warning unchecked">
+          <span class="h4 is-warning">Attention</span>
+        </li>
+      </ul>
+    </div>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-angle-right"></i>
+    </span>
+    <button class="hx-button primary">
+      <span>Next action</span>
+      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+    </button>
+  </div>
+
+  <div class="hx-flex items-center gap-2">
+    <div class="py-1">
+      <ul class="hx-bullet-list status horizontal">
+        <li class="danger unchecked">
+          <span class="h4 is-danger">Declined</span>
+        </li>
+      </ul>
+    </div>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-angle-right"></i>
+    </span>
+    <button class="hx-button primary">
+      <span>Next action</span>
+      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+    </button>
+  </div>
+</div>`,
         },
       ],
     }

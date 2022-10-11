@@ -6,247 +6,163 @@
 
 @use "../../variables" as *;
 @use "../../functions/color" as c;
+@use "../../functions/spacing";
+@use "../../functions/size";
 
-:where(.#{$namespace}-card-content, .#{$namespace}-popover) {
-  .#{$namespace}-bullet-list {
-    margin-top: 0;
-  }
-}
+@use "../../mixins/deprecate" as *;
 
 .#{$namespace}-bullet-list {
   list-style: none;
+  margin-top: 0;
+  padding: 0 0 0 spacing.rem(8);
+  display: flex;
+  flex-direction: column;
+  gap: spacing.rem(2);
 
-  > li {
-    color: $hx-text;
+  :where(li) {
+    margin: 0;
+    display: flex;
+    color: var(--color-foreground-default);
+    font: var(--b0);
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      left: -1rem;
-      top: 0.4rem;
-      width: 0.5rem;
-      height: 0.5rem;
+      left: -1 * size.rem(24);
+      top: size.rem(8);
+      width: size.rem(8);
+      height: size.rem(8);
       border-radius: 100%;
-      background-color: $hx-color-gray-lighter;
-      z-index: 1;
+      background-color: var(--color-foreground-subdued);
     }
 
-    &.is-success {
+    &.success {
       &::before {
-        background-color: $hx-color-success;
+        background-color: var(--color-foreground-success);
       }
     }
 
-    &.is-warning {
+    &.warning {
       &::before {
-        background-color: $hx-color-warning;
+        background-color: var(--color-foreground-warning);
       }
     }
 
-    &.is-danger {
+    &.danger {
       &::before {
-        background-color: $hx-color-danger;
+        background-color: var(--color-foreground-danger);
       }
     }
 
-    &.is-info {
+    &.info {
       &::before {
-        background-color: $hx-color-info;
+        background-color: var(--color-foreground-info);
       }
     }
   }
 
-  &.is-inverse {
-    > li {
+  ////////////////
+  //  Variants  //
+  ////////////////
+
+  /// STATUS
+  &:is(.status) {
+    :where(li) {
+      flex-direction: column;
+
       &::before {
-        background-color: c.tint($hx-color-gray-lighter, 85%);
+        left: -1 * size.px(32);
+        top: size.rem(4);
+        width: size.rem(16);
+        height: size.rem(16);
+      }
+    }
+
+    .unchecked {
+      &::before {
+        outline-width: 2px;
+        outline-style: solid;
+        outline-offset: -2px;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+        outline-color: var(--color-foreground-subdued);
+        background-color: transparent;
       }
 
-      &.is-success {
-        &.is-not-checked::before,
+      &.success {
         &::before {
-          background-color: c.tint($hx-color-success, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-success, 10%);
-        }
-      }
-
-      &.is-warning {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-warning, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-warning, 10%);
-        }
-      }
-
-      &.is-danger {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-danger, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-danger, 10%);
+          outline-color: var(--color-foreground-success);
         }
       }
 
-      &.is-info {
-        &.is-not-checked::before,
+      &.warning {
         &::before {
-          background-color: c.tint($hx-color-info, 85%);
+          outline-color: var(--color-foreground-warning);
         }
+      }
 
-        &.is-checked::before {
-          color: c.shade($hx-color-info, 10%);
+      &.danger {
+        &::before {
+          outline-color: var(--color-foreground-danger);
+        }
+      }
+
+      &.info {
+        &::before {
+          outline-color: var(--color-foreground-info);
         }
       }
     }
 
-    &.is-bordered {
-      > li {
-        &::before {
-          border: 1px solid $hx-color-gray-lightest;
-        }
-
-        &.is-success:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-success, 0.3);
-          }
-        }
-
-        &.is-warning:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-warning, 0.3);
-          }
-        }
-
-        &.is-danger:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-danger, 0.3);
-          }
-        }
-
-        &.is-info:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-info, 0.3);
-          }
-        }
+    .checked {
+      &::before {
+        content: "\E90F";
+        font-family: hxui;
+        font-size: size.rem(22); // MAGIC
+        text-indent: -1 * size.rem(3); // MAGIC
+        color: var(--color-foreground-contrast);
+        line-height: size.rem(16);
+        width: size.rem(16);
+        height: size.rem(16);
+        border-radius: 100%;
       }
     }
   }
 
-  &.has-status {
-    padding-left: 2rem;
+  /// JOINED
+  &:where(.status).joined {
+    gap: spacing.rem(4);
 
-    > li {
-      margin-bottom: 0.5em;
+    :where(li) {
+      gap: spacing.rem(2);
 
-      &::before {
-        left: -2rem;
-        top: 0.2rem;
-        width: 1rem;
-        height: 1rem;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: size.rem(24);
+        left: -1 * size.rem(24);
+        bottom: -1 * size.rem(16);
+        width: 1px;
+        background-color: var(--color-foreground-subdued);
       }
 
-      & + li {
-        margin-top: 0;
-
-        //   &:before {
-        //     top: .4em;
-        //   }
+      &.success::after {
+        background-color: var(--color-foreground-success);
       }
 
-      &.is-not-checked {
-        &::before {
-          border: 2px solid $hx-color-gray-lighter;
-          background-color: transparent;
-        }
-
-        &.is-success {
-          &::before {
-            border-color: $hx-color-success;
-          }
-        }
-
-        &.is-warning {
-          &::before {
-            border-color: $hx-color-warning;
-          }
-        }
-
-        &.is-danger {
-          &::before {
-            border-color: $hx-color-danger;
-          }
-        }
-
-        &.is-info {
-          &::before {
-            border-color: $hx-color-info;
-          }
-        }
+      &.warning::after {
+        background-color: var(--color-foreground-warning);
       }
 
-      &.is-checked {
-        &::before {
-          content: "\E90F";
-          font-family: hxui;
-          font-size: 1.2rem;
-          color: $hx-color-white;
-          line-height: 0.88;
-          text-indent: -0.09em;
-        }
+      &.danger::after {
+        background-color: var(--color-foreground-danger);
       }
-    }
 
-    &.is-joined {
-      > li {
-        padding-bottom: 1rem;
+      &.info::before {
+        border-color: var(--color-foreground-info);
+      }
 
-        &::before {
-          top: 0.25em;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 1.6rem;
-          left: -1.5rem;
-          bottom: -0.45rem;
-          width: 1px;
-          background-color: $hx-color-gray-lighter;
-        }
-
-        &.is-success {
-          &::after {
-            background-color: $hx-color-success;
-          }
-        }
-
-        &.is-warning {
-          &::after {
-            background-color: $hx-color-warning;
-          }
-        }
-
-        &.is-danger {
-          &::after {
-            background-color: $hx-color-danger;
-          }
-        }
-
-        &.is-info {
-          &::before {
-            border-color: $hx-color-info;
-          }
-        }
-
+      @include deprecate("2.0.0", "Use product typogaphy") {
         .#{$namespace}-title {
           font-size: 1rem;
           font-weight: $hx-font-weight-bolder;
@@ -267,31 +183,107 @@
         }
       }
     }
+  }
 
-    &.is-inverse {
-      > li {
-        &.is-not-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info)::before {
-          background-color: c.tint($hx-color-gray-lighter, 85%);
+  /// OUTLINED
+  &.outlined {
+    :where(li) {
+      &::before {
+        background-color: var(--color-surface-neutral-muted);
+      }
+
+      &.success::before {
+        background-color: var(--color-surface-success-muted);
+      }
+
+      &.warning::before {
+        background-color: var(--color-surface-warning-muted);
+      }
+
+      &.danger::before {
+        background-color: var(--color-surface-danger-muted);
+      }
+
+      &.info::before {
+        background-color: var(--color-surface-info-muted);
+      }
+    }
+
+    .checked {
+      &::before {
+        outline-width: 2px;
+        outline-style: solid;
+        outline-offset: -2px;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+        outline-color: var(--color-foreground-subdued);
+        color: var(--color-foreground-subdued);
+      }
+
+      &.success::before {
+        outline-color: var(--color-foreground-success);
+        color: var(--color-foreground-success);
+      }
+
+      &.warning::before {
+        outline-color: var(--color-foreground-warning);
+        color: var(--color-foreground-warning);
+      }
+
+      &.danger::before {
+        outline-color: var(--color-foreground-danger);
+        color: var(--color-foreground-danger);
+      }
+
+      &.info::before {
+        outline-color: var(--color-foreground-info);
+        color: var(--color-foreground-info);
+      }
+    }
+  }
+
+  @include deprecate("2.0.0", "Use .outlined") {
+    &.outlined.bordered {
+      :where(li) {
+        &::before {
+          border: 1px solid $hx-color-gray-lightest;
         }
 
-        &.is-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info)::before {
-          color: c.shade($hx-color-gray-lighter, 10%);
+        &.success:not(.unchecked) {
+          &::before {
+            border-color: rgba($hx-color-success, 0.3);
+          }
+        }
+
+        &.warning:not(.unchecked) {
+          &::before {
+            border-color: rgba($hx-color-warning, 0.3);
+          }
+        }
+
+        &.danger:not(.unchecked) {
+          &::before {
+            border-color: rgba($hx-color-danger, 0.3);
+          }
+        }
+
+        &.info:not(.unchecked) {
+          &::before {
+            border-color: rgba($hx-color-info, 0.3);
+          }
         }
       }
     }
   }
 
-  &.is-horizontal {
-    padding-left: 1.5rem;
+  /// ARRANGEMENT
+  &.horizontal:not(.joined) {
+    flex-direction: row;
     margin: 0;
+    gap: size.px(32);
 
-    > li {
-      display: inline-flex;
-      line-height: 1.5rem;
-      margin-right: 4.5rem;
-
-      &::before {
-        left: -1.5rem;
+    :where(li) {
+      &:has(+ li) {
+        margin: 0 size.rem(16) 0 0;
       }
     }
   }

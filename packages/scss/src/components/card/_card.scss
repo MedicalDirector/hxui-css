@@ -29,10 +29,10 @@ $border-width-default: 1;
 // highlight: context - background; size - width
 
 .#{$namespace}-card {
-  background-color: $hx-color-white;
+  background-color: var(--color-surface-neutral-default);
   border: 1px solid rgba($hx-color-black, 0.08);
   border-radius: 2px;
-  color: $hx-text;
+  color: var(--color-foreground-default);
   max-width: 100%;
   position: relative;
 
