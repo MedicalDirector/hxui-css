@@ -1,0 +1,98 @@
+/* stylelint-disable scss/at-mixin-pattern */
+
+////////////////
+//  METADATA  //
+////////////////
+
+@use "../../variables" as *;
+
+@use "../../functions/size";
+@use "../../functions/spacing";
+
+@use "../../mixins/deprecate" as *;
+
+/// CONTAINER
+@include deprecate("3.0.0", "Use .hx-data-label") {
+  .#{$namespace}-metadata {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.#{$namespace}-data-label {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/// LABEL
+.#{$namespace}-label {
+  @include deprecate("3.0.0", "Use .hx-label") {
+    :where(.#{$namespace}-metadata) & {
+      font: var(--b3);
+      color: var(--color-foreground-muted);
+    }
+
+    :where(.#{$namespace}-metadata):not(.alternate) & {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    :where(.#{$namespace}-metadata).alternate & {
+      font: var(--b2);
+      line-height: size.rem(16);
+    }
+  }
+
+  :where(.#{$namespace}-data-label) & {
+    font: var(--b3);
+    color: var(--color-foreground-muted);
+  }
+
+  :where(.#{$namespace}-data-label):not(.alternate) & {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  :where(.#{$namespace}-data-label).alternate & {
+    font: var(--b2);
+    line-height: size.rem(16);
+  }
+}
+
+@mixin _data {
+  font: var(--b1);
+  color: var(--color-foreground-default);
+  display: flex;
+  align-items: center;
+  gap: spacing.px(2);
+
+  > :where(span, div):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon, .#{$namespace}-badge)) {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+/// DATA VALUE
+@include deprecate("3.0.0", "Use .hx-data inside .hx-data-label") {
+  .#{$namespace}-value {
+    :where(.#{$namespace}-metadata) & {
+      @include _data;
+    }
+
+    :where(.#{$namespace}-metadata).alternate & {
+      font-weight: 500;
+    }
+  }
+}
+
+.#{$namespace}-data {
+  :where(.#{$namespace}-data-label) & {
+    @include _data;
+  }
+
+  :where(.#{$namespace}-data-label).alternate & {
+    font-weight: 500;
+  }
+}

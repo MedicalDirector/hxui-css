@@ -116,6 +116,10 @@ export const NAV_ITEMS = [
         path: '/cards',
       },
       {
+        name: 'Data labels',
+        path: '/data-label',
+      },
+      {
         name: 'Dropdowns',
         path: '/dropdowns',
       },
@@ -134,10 +138,6 @@ export const NAV_ITEMS = [
       {
         name: 'Modals',
         path: '/modals',
-      },
-      {
-        name: 'Metadata',
-        path: '/meta-data',
       },
       {
         name: 'Nav',
