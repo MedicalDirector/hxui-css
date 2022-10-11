@@ -34,215 +34,394 @@ export default {
     return {
       examples: [
         {
-          title: 'Contextual menu',
-          code: `<div class="hx-dropdown is-open">
-  <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-    Dropdown button
-  </button>
-  <div class="hx-dropdown-menu">
-    <a class="hx-dropdown-item" href="#">Action</a>
-    <a class="hx-dropdown-item" href="#">Another action</a>
-    <a class="hx-dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
+          title: 'Basic',
+          withContent: false,
+          code: `<div class="hx-card-content h-15">
+  <div class="grid phablet:grid-cols-2 gap-4">
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown">
+        <button class="hx-button">
+          Dropdown button
+        </button>
 
-<!-- ignore below -->
-<br /><br /><br /><br /><br />`,
-        },
-        {
-          title: 'Contextual menu with icons',
-          code: `<div class="hx-dropdown is-open">
-  <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-    Dropdown button
-  </button>
-  <div class="hx-dropdown-menu hx-dropdown-icon">
-    <div class="hx-dropdown-header">
-      Actions
-    </div>
-    <a class="hx-dropdown-item" href="#">
-      <i class="hx-icon icon-clock-outline"></i> 
-      Book appointment
-    </a>
-    <a class="hx-dropdown-item" href="#">
-      <i class="hx-icon icon-doctor-outline"></i> 
-      Start consult
-    </a>
-    <div class="hx-dropdown-divider"></div>
-    <a class="hx-dropdown-item" href="#">
-      <i class="hx-icon icon-send"></i> 
-      Send letter
-    </a>
-  </div>
-</div>
-
-<!-- ignore below -->
-<br /><br /><br /><br /><br /><br /><br /><br />`,
-        },
-        {
-          title: 'Grouped contextual menu',
-          code: `<p class="hx-prose">Add a header to label sections of actions and/or dividers in any dropdown menu.</p>
-<div class="hx-flex hx-flex-justify-center">
-  <div class="hx-dropdown is-open mr-4">
-    <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-      Dropdown button
-    </button>
-    <div class="hx-dropdown-menu">
-      <div class="hx-dropdown-header">Dropdown header</div>
-      <a class="hx-dropdown-item" href="#">Action</a>
-      <a class="hx-dropdown-item" href="#">Another action</a>
-      <div class="hx-dropdown-divider"></div>
-      <a class="hx-dropdown-item" href="#">Action</a>
-      <a class="hx-dropdown-item" href="#">Another action</a>
-    </div>
-  </div>
-
-  <div class="hx-dropdown is-open ml-4">
-    <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-      Dropdown button
-    </button>
-    <div class="hx-dropdown-menu">
-      <div class="hx-dropdown-header">Sort By</div>
-      <a class="hx-dropdown-item is-active" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-up"></i>Ascending</div></a>
-      <a class="hx-dropdown-item" href="#"><div class="hx-flex hx-flex-align-center"><i class="hx-icon icon-caret-down"></i>Descending</div></a>
-
-      <div class="hx-dropdown-divider"></div>
-      <div class="hx-dropdown-header">
-        Filter <a href="">clear filters</a>
-      </div>
-      <div class="hx-flex hx-flex-column pl-4 pr-4 mt-4">
-        <div class="hx-input-group">
-          <div class="hx-input-control mb-0">
-            <input id="mhrFilterDateFrom" class="hx-input" type="text" required>
-            <label class="hx-label">From</label>
-            <div class="hx-help">&nbsp;</div>
-          </div>
-          <i id="fromDateCalendar" class="hx-icon icon-calendar-outline"></i>
-        </div>
-        <div class="hx-input-group" id="toContainer">
-          <div class="hx-input-control mb-0">
-            <input id="mhrFilterDateTo" class="hx-input" type="text" required>
-            <label class="hx-label">To</label>
-            <div class="hx-help">&nbsp;</div>
-          </div>
-          <i id="toDateCalendar" class="hx-icon icon-calendar-outline"></i>
+        <div class="hx-dropdown-menu open">
+          <button class="hx-dropdown-item">
+            Action
+          </button>
+          <button class="hx-dropdown-item">
+            Another action
+          </button>
+          <button class="hx-dropdown-item">
+            Something else here
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  </div>
-</div>
-  
-<!-- ignore below -->
-<br /><br /><br /><br /><br /><br /><br />
-<br><br><br><br><br><br><br>`,
-        },
-        {
-          title: 'Position',
-          code: `<p class="hx-prose">
-  Position menu <code>.is-dropup</code>, <code>.is-left</code>, <code>.is-right</code>. Default is bottom left.
-</p>
-<div class="hx-dropdown is-dropup is-open" style="margin-top:12rem;">
-  <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-    Dropdown button
-  </button>
-  <div class="hx-dropdown-menu">
-    <div class="hx-dropdown-header">Dropdown header</div>
-    <a class="hx-dropdown-item" href="#">Action</a>
-    <a class="hx-dropdown-item" href="#">Another action</a>
-    <div class="hx-dropdown-divider"></div>
-    <a class="hx-dropdown-item" href="#">Action</a>
-    <a class="hx-dropdown-item" href="#">Another action</a>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open">
+          <div class="hx-dropdown-header">
+            Actions
+          </div>
+          <button class="hx-dropdown-item">
+            <span class="container-start hx-icon-container">
+              <i class="hx-icon icon-clock-outline"></i> 
+            </span>
+            <span>Book appointment</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span class="container-start hx-icon-container">
+              <i class="hx-icon icon-doctor-outline"></i>
+            </span>
+            <span>Start consult</span>
+          </button>
+          <hr class="hx-dropdown-divider" />
+          <button class="hx-dropdown-item">
+            <span class="container-start hx-icon-container">
+              <i class="hx-icon icon-send-outline"></i>
+            </span>
+            <span>Send letter</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>`,
         },
         {
-          title: 'Limit width and/or height',
-          code: `<div class="hx-dropdown is-open">
-  <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-    Dropdown button
-  </button>
-  <div class="hx-dropdown-menu has-limited-width has-limited-height">
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 1
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 2
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 3
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 4
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 5
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 6
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 7
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 8
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 9
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 10 is really reaally really really reaally really really reaally really long
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 11
-    </a>
-    <a class="hx-dropdown-item is-text-ellipsed" href="#">
-      Action 12
-    </a>
-  </div>
-</div>
+          title: 'Position',
+          withContent: false,
+          code: `<div class="hx-card-content">
+  <p class="hx-prose">
+    Add any of the following modifiers to <code>.hx-dropdown-menu</code>.
+  </p>
 
-<!-- ignore below -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`,
+  <div class="grid phablet:grid-cols-2 laptop:grid-cols-3 gap-4">
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-top:6rem;">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <p class="hx-prose">
+          <code>.top-start</code>
+        </p>
+
+        <div class="hx-dropdown-menu open top-start">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-top:6rem;">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <p class="hx-prose">
+          <code>.top-middle</code>
+        </p>
+
+        <div class="hx-dropdown-menu open top-middle">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-top:6rem;">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <p class="hx-prose">
+          <code>.top-end</code>
+        </p>
+
+        <div class="hx-dropdown-menu open top-end">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-bottom:6rem;">
+        <p class="hx-prose">
+          <code>.bottom-start</code>
+        </p>
+
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open bottom-start">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-bottom:6rem;">
+        <p class="hx-prose">
+          <code>.bottom-middle</code>
+        </p>
+
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open bottom-middle">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown" style="margin-bottom:6rem;">
+        <p class="hx-prose">
+          <code>.bottom-end</code>
+        </p>
+
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open bottom-end">
+          <button class="hx-dropdown-item">
+            <span>Action</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Another action</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
         },
         {
-          title: 'Custom',
-          code: `<p>Add any component within. No padding, no margins.<br>Styling should be controlled by the component.</p>
+          title: 'Limited length',
+          withContent: false,
+          code: `<div class="hx-card-content h-30">
+  <p class="hx-prose">
+    Add modifier <code>.limit-width</code> or <code>.limit-height</code> to <code>.hx-dropdown-menu</code>.
+  </p>
 
-<div class="hx-dropdown is-open">
-  <button class="hx-button hx-button-gray hx-button-dropdown" type="button">
-    Dropdown button
-  </button>
-  <div class="hx-dropdown-menu p-4">
-    <h1 class="hx-title">Custom Component</h1>
-    <h2 class="hx-subtitle">Supports any type of content</h2>
-    <hr>
-    <table class="table">
-      <thead>
-      <tr>
-        <th>Col 1</th>
-        <th>Col 2</th>
-        <th>Col 3</th>
-        <th>Col 4</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>Col 1</td>
-        <td>Col 2</td>
-        <td>Col 3</td>
-        <td>Col 4</td>
-        <td>Col 4</td>
-      </tr>
-      </tbody>
-    </table>
+  <div class="grid phablet:grid-cols-2 gap-4">
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+        <div class="hx-dropdown-menu open limit-width limit-height text-ellipsed">
+          <button class="hx-dropdown-item">
+            <span>Action 1</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 2</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 3</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 4</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 5</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 6</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 7</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 8</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 9</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 10 is really reaally really really reaally really really reaally really long</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 11</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span>Action 12</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+</div>`,
+        },
+        {
+          title: 'Kitchen sink / Custom',
+          withContent: false,
+          code: `<div class="hx-card-content h-30">
+  <p class="hx-prose">
+    Add any component within. No padding, no margins.
+    Styling should be controlled by the component.
+  </p>
+
+  <div class="grid phablet:grid-cols-2 gap-4">
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open" style="width: 14rem;">
+          <span class="hx-dropdown-header">
+            Sort By
+          </span>
+          <button class="hx-dropdown-item active">
+            <span class="container-start hx-icon-container">
+              <i class="hx-icon icon-caret-up"></i>
+            </span>
+            <span>Ascending</span>
+          </button>
+          <button class="hx-dropdown-item">
+            <span class="container-start hx-icon-container">
+              <i class="hx-icon icon-caret-down"></i>
+            </span>
+            <span>Descending</span>
+          </button>
+
+          <hr class="hx-dropdown-divider" />
+
+          <div class="hx-dropdown-header">
+            Filter
+            <button class="hx-button sm">
+              <span class="h6 font-bold fg-subdued text-uppercase">
+                Clear
+              </span>
+            </button>
+          </div>
+
+          <div class="hx-flex flex-col gap-4 p-4">
+            <div class="hx-form-control fullwidth no-help">
+              <label class="hx-label" for="from">From</label>
+              <div class="hx-input-group">
+                <input class="hx-input" id="from" type="text">
+                <button class="hx-button flat icon">
+                  <span class="hx-icon-control">
+                    <i class="hx-icon icon-calendar-outline"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hx-form-control fullwidth no-help">
+              <label class="hx-label" for="to">To</label>
+              <div class="hx-input-group">
+                <input class="hx-input" id="to" type="text">
+                <button class="hx-button flat icon">
+                  <span class="hx-icon-control">
+                    <i class="hx-icon icon-calendar-outline"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hx-flex justify-center">
+      <div class="hx-dropdown">
+        <button class="hx-button">
+          Dropdown button
+        </button>
+
+        <div class="hx-dropdown-menu open p-4" style="width: 14rem;">
+          <span class="h3">Custom Component</span>
+          <span class="b1">Supports any type of content</span>
+          <hr>
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Col 1</th>
+              <th>Col 2</th>
+              <th>Col 3</th>
+              <th>Col 4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Col 1</td>
+              <td>Col 2</td>
+              <td>Col 3</td>
+              <td>Col 4</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-  
-<!-- ignore below -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`,
+</div>`,
         },
       ],
     }
   },
 }
 </script>
+
+<style lang="scss">
+.h-10 {
+  height: 10rem;
+}
+
+.h-15 {
+  height: 15rem;
+}
+
+.h-20 {
+  height: 20rem;
+}
+
+.h-25 {
+  height: 25rem;
+}
+
+.h-30 {
+  height: 30rem;
+}
+
+.h-40 {
+  height: 40rem;
+}
+</style>

@@ -1,0 +1,424 @@
+////////////////
+//  DROPDOWN  //
+////////////////
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+@use "../../mixins/state";
+@use "../../functions/spacing";
+@use "../../functions/size";
+@use "../../mixins/transition";
+@use "../../mixins/deprecate" as *;
+
+//////////////////////////
+//  DROPDOWN CONTAINER  //
+//////////////////////////
+
+.#{$namespace}-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/////////////////////
+//  DROPDOWN MENU  //
+/////////////////////
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin _direction-bottom-left {
+  top: 100%;
+  left: 0;
+  transform: translateY(4px);
+}
+
+// The dropdown menu
+.#{$namespace}-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: spacing.rem(1) 0;
+  margin: 0;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  background-color: var(--color-surface-neutral-default);
+  color: var(--color-foreground-default);
+  border: 1px solid rgba($hx-color-black, 0.08);
+  box-shadow: var(--shadow-global-md);
+  border-radius: 2px;
+  position: absolute;
+  min-width: size.px(160);
+  z-index: var(--elevation-semantic-menu);
+  overflow: hidden;
+  opacity: 0;
+  transition-property: opacity;
+  @include transition.propless(300ms);
+
+  // default direction
+  @include _direction-bottom-left;
+
+  &.has-limited-width,
+  &.limit-width {
+    max-width: 20rem;
+  }
+
+  &.has-limited-height,
+  &.limit-height {
+    max-height: 20rem;
+  }
+
+  &.is-text-ellipsed,
+  &.text-ellipsed {
+    :where(.#{$namespace}-dropdown-item) {
+      > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+        @include text.truncate;
+      }
+
+      // @include text.truncate;
+    }
+  }
+
+  &.is-text-multiline,
+  &.text-multiline {
+    :where(.#{$namespace}-dropdown-item) {
+      > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+        @include text.multiline;
+      }
+
+      // @include text.multiline;
+    }
+  }
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// STATES
+  :where(.#{$namespace}-dropdown):is(.is-open, .open) &,
+  &:is(.is-open, .open) {
+    opacity: 1;
+    overflow-y: auto;
+  }
+
+  /// DIRECTION
+  &.bottom-start {
+    @include _direction-bottom-left;
+  }
+
+  &.bottom-end {
+    top: 100%;
+    left: unset;
+    right: 0;
+    transform: translateY(4px);
+  }
+
+  &.bottom-middle {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 4px);
+  }
+
+  &.top-start {
+    top: unset;
+    bottom: 100%;
+    left: 0;
+    transform: translateY(-4px);
+  }
+
+  &.top-end {
+    top: unset;
+    left: unset;
+    bottom: 100%;
+    right: 0;
+    transform: translateY(-4px);
+  }
+
+  &.top-middle {
+    top: unset;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -4px);
+  }
+}
+
+// CDK specific
+.hxa-dropdown-panel {
+  .#{$namespace}-dropdown-menu {
+    position: initial;
+  }
+
+  &.is-fluid-min-width {
+    .#{$namespace}-dropdown-menu {
+      min-width: 100%;
+    }
+  }
+  &.is-open > .#{$namespace}-dropdown,
+  &.open > .#{$namespace}-dropdown-menu {
+    display: block;
+  }
+}
+
+// Dividers (basically an `<hr>`) within the dropdown
+.#{$namespace}-dropdown-divider {
+  &:not(:where(hr)) {
+    height: 1px;
+    background-color: rgba($hx-color-black, 0.1); // TODO: unhard
+  }
+
+  margin: size.rem(3.5) 0;
+}
+
+/////////////////////
+//  DROPDOWN ITEM  //
+/////////////////////
+
+// Links, buttons, and more within the dropdown menu
+// `<button>`-specific styles are denoted with `// For <button>s`
+.#{$namespace}-dropdown-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: spacing.rem(1) spacing.px(4);
+  gap: spacing.px(2);
+  color: var(--color-foreground-default);
+  background-color: transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  flex: 1;
+  font: var(--b0);
+
+  &:where(a, button) {
+    cursor: pointer;
+  }
+
+  @include transition.colors;
+
+  // @include state.hover-focus {
+  //   color: $hx-dropdown-link-hover-color;
+  //   background-color: $hx-dropdown-link-hover-bg;
+  // }
+
+  // &.is-active,
+  // &.active {
+  //   @include state.plain-hover-focus {
+  //     color: $hx-dropdown-link-active-bg;
+  //     text-decoration: none;
+  //     background-color: $hx-dropdown-link-active-color;
+  //     outline: 0;
+  //   }
+  // }
+
+  @include deprecate("3.0.0", "Do not use buttons inside dropdowns") {
+    // temporary for Helix clashing with bootstrap
+    button.#{$namespace}-button.is-link {
+      text-decoration: none;
+      text-align: left;
+      padding: 0;
+      width: 100%;
+      justify-content: flex-start;
+
+      @include state.hover-focus {
+        color: $hx-dropdown-link-hover-color;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  // DISABLED STATE
+  // Gray out text and ensure the hover/focus state remains gray
+  &.disabled {
+    @include state.plain-hover-focus {
+      color: $hx-dropdown-link-disabled-color;
+    }
+
+    // Nuke hover/focus effects
+    @include state.hover-focus {
+      text-decoration: none;
+      cursor: $hx-cursor-disabled;
+      background-color: transparent;
+      background-image: none; // Remove CSS gradient
+    }
+  }
+
+  //////////////
+  //  STATES  //
+  //////////////
+
+  /// MODERN
+  /// HOVER
+  @include state.hover {
+    background-color: var(--color-action-secondary-active);
+  }
+
+  /// ACTIVE
+  @include state.active {
+    color: var(--color-foreground-primary);
+    background-color: var(--color-surface-primary-muted);
+  }
+}
+
+///////////////////////
+//  LIST ITEM PARTS  //
+///////////////////////
+
+:where(.#{$namespace}-dropdown-item) {
+  :where(div, span) {
+    color: inherit;
+    font: inherit;
+  }
+
+  // /// START
+  // .container-start {
+  //   grid-area: item-start;
+  //   display: inline-flex;
+  //   align-self: center;
+  //   gap: spacing.px(2);
+
+  //   &:has(+ .container-primary),
+  //   &:has(+ :is(div, span)) {
+  //     margin-right: spacing.px(2);
+  //   }
+  // }
+
+  // /// PRIMARY
+  // .container-primary {
+
+  //   grid-area: item-primary;
+  //   display: flex;
+  //   align-self: center;
+  //   flex: 1;
+  //   gap: spacing.px(2);
+
+  //   &:has(+ .container-end) {
+  //     margin-right: spacing.px(2);
+  //   }
+  // }
+
+  // /// END
+  // .container-end {
+  //   color: inherit;
+  //   grid-area: item-end;
+  //   display: inline-flex;
+  //   align-self: center;
+  //   gap: spacing.px(2);
+  // }
+
+  // :where(div, span):not(:where(.container-start, .container-primary, .container-end)),
+  // &:not(:has(.container-start, .container-primary, .container-end)) {
+  //   @extend .container-primary;
+  // }
+}
+
+@include deprecate("3.0.0", "Use .hx-dropdown-item with .container-start") {
+  // Iconised dropdown item
+  .#{$namespace}-dropdown-icon {
+    .#{$namespace}-dropdown-item {
+      padding-left: 2.8rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    // icons
+    i.icon,
+    i.#{$namespace}-icon {
+      position: absolute;
+      left: 0.76rem;
+      top: 0.2rem;
+    }
+  }
+}
+
+@include deprecate("3.0.0", "Use .open with .hx-dropdown-menu") {
+  // Open state for the dropdown
+  .is-open,
+  .open {
+    // Show the menu
+    > .#{$namespace}-dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+@include deprecate("3.0.0", "Use updated position modifiers") {
+  // Menu positioning
+  .is-right {
+    .#{$namespace}-dropdown-menu {
+      position: absolute;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .is-left {
+    .#{$namespace}-dropdown-menu {
+      position: absolute;
+      right: auto;
+      left: 0;
+    }
+  }
+}
+
+///////////////////////
+//  DROPDOWN HEADER  //
+///////////////////////
+
+// Dropdown section headers
+.#{$namespace}-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: spacing.rem(1) spacing.px(4);
+  font: var(--h6);
+  color: var(--color-foreground-subdued);
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  // > a {
+  //   font-weight: normal;
+  //   text-transform: capitalize;
+  // }
+}
+
+// Backdrop to catch body clicks on mobile, etc.
+.#{$namespace}-dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ($hx-zindex-dropdown - 10);
+}
+
+@include deprecate("3.0.0", "Use updated position modifiers") {
+  // Allow for dropdowns to go bottom up (aka, is-dropup)
+  // Just add .hx-dropup after the standard .hx-dropdown class and you're set.
+  .dropup,
+  .is-dropup,
+  .#{$namespace}-dropup {
+    position: relative;
+
+    // Reverse the caret
+    .caret {
+      content: "";
+      border-top: 0;
+      border-bottom: $hx-caret-width solid;
+    }
+
+    // Different positioning for bottom up menu
+    .#{$namespace}-dropdown-menu {
+      position: absolute;
+      top: auto;
+      bottom: 100%;
+      margin-bottom: 2px;
+    }
+
+    .#{$namespace}-btn-dropdown {
+      &::after {
+        border-top: 0;
+        border-bottom: $hx-caret-width solid;
+      }
+    }
+  }
+}

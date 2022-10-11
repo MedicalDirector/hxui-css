@@ -93,39 +93,12 @@
   }
 }
 
-.#{$namespace}-popover {
-  background-color: var(--color-surface-neutral-default);
-  border: 1px solid rgba($hx-color-black, 0.08);
-  box-shadow: var(--shadow-global-lg);
-  border-radius: 2px;
-  position: absolute;
+:where(.#{$namespace}-dropdown-menu).popup-timeline {
   min-width: size.px(360);
-  margin: spacing.rem(2) 0 0;
   padding: spacing.rem(4) spacing.px(4);
-  z-index: var(--elevation-semantic-menu);
-  overflow: hidden;
-  opacity: 0;
-  max-height: 0;
-  transition-property: opacity, max-height;
-  @include transition.propless(300);
 
   &.open {
-    opacity: 1;
     max-height: size.rem(500);
-    overflow-y: auto;
-  }
-
-  &.bottom-end {
-    right: 0;
-  }
-
-  &.bottom-start {
-    left: 0;
-  }
-
-  &.bottom-middle {
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 

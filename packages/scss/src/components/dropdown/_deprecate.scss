@@ -2,10 +2,13 @@
 //  DROPDOWN  //
 ////////////////
 
-@use "../variables" as *;
-@use "../mixins/text";
-@use "../mixins/state";
-@use "../mixins/nav-divider" as *;
+/// @note
+/// duplicate of v1 dropdown.scss in case of forking
+
+@use "../../variables" as *;
+@use "../../mixins/text";
+@use "../../mixins/state";
+@use "../../mixins/nav-divider" as *;
 
 // The dropdown wrapper (`<div>`)
 .is-dropup,
@@ -88,7 +91,10 @@
 
 // Dividers (basically an `<hr>`) within the dropdown
 .#{$namespace}-dropdown-divider {
-  @include nav-divider($hx-dropdown-divider-bg);
+  height: 1px;
+  margin: calc(1rem / 2) 0;
+  overflow: hidden;
+  background-color: $hx-dropdown-divider-bg;
 }
 
 // Links, buttons, and more within the dropdown menu

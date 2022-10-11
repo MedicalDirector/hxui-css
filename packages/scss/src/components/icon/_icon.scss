@@ -109,6 +109,14 @@
   }
 }
 
+:where(.#{$namespace}-dropdown-item) {
+  .#{$namespace}-icon {
+    @include icon-md;
+
+    line-height: 1.5rem; // TODO: unhard
+  }
+}
+
 .#{$namespace}-icon {
   display: inline-flex;
   justify-content: center;

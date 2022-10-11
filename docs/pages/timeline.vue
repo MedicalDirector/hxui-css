@@ -136,7 +136,7 @@ export default {
       <h3 class="h3">Current Visit</h4>
 
       <div class="hx-flex items-center gap-2">
-        <div class="hx-progress-timeline-status">
+        <div class="hx-dropdown">
           <div class="py-1">
             <ul class="hx-bullet-list status horizontal">
               <li class="success checked">
@@ -145,7 +145,7 @@ export default {
             </ul>
           </div>
 
-          <div class="hx-popover open bottom-middle">
+          <div class="hx-dropdown-menu popup-timeline open bottom-middle">
             <ul class="hx-bullet-list status joined">
               <li class="success checked">
                 <div class="hx-flex justify-between">

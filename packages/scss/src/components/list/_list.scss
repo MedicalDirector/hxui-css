@@ -245,7 +245,10 @@
     display: inline-flex;
     align-self: center;
     gap: spacing.px(2);
-    margin-right: spacing.px(2);
+
+    &:has(+ .container-primary) {
+      margin-right: spacing.px(2);
+    }
   }
 
   /// PRIMARY
@@ -257,7 +260,10 @@
     align-self: center;
     flex: 1;
     gap: spacing.px(2);
-    margin-right: spacing.px(2);
+
+    &:has(+ .container-end) {
+      margin-right: spacing.px(2);
+    }
   }
 
   /// END
