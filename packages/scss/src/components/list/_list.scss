@@ -5,398 +5,295 @@
 @use "sass:color";
 
 @use "../../variables" as *;
-@use "../../functions/color" as c;
 
-.#{$namespace}-card-content,
-.#{$namespace}-popover {
-  > .#{$namespace}-list {
-    margin-top: 0;
-  }
-}
+@use "../../functions/size";
+@use "../../functions/spacing";
+
+@use "../../mixins/size" as msize;
+@use "../../mixins/context";
+@use "../../mixins/state";
+@use "../../mixins/transition";
+@use "../../mixins/deprecate" as *;
+
 .#{$namespace}-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
-
-  > li {
-    color: $hx-text;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: -1rem;
-      top: 0.4rem;
-      width: 0.5rem;
-      height: 0.5rem;
-      border-radius: 100%;
-      background-color: $hx-color-gray-lighter;
-      z-index: 1;
-    }
-
-    &.is-success {
-      &::before {
-        background-color: $hx-color-success;
-      }
-    }
-
-    &.is-warning {
-      &::before {
-        background-color: $hx-color-warning;
-      }
-    }
-
-    &.is-danger {
-      &::before {
-        background-color: $hx-color-danger;
-      }
-    }
-
-    &.is-info {
-      &::before {
-        background-color: $hx-color-info;
-      }
-    }
-  }
-
-  &.is-inverse {
-    > li {
-      &::before {
-        background-color: c.tint($hx-color-gray-lighter, 85%);
-      }
-
-      &.is-success {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-success, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-success, 10%);
-        }
-      }
-
-      &.is-warning {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-warning, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-warning, 10%);
-        }
-      }
-
-      &.is-danger {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-danger, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-danger, 10%);
-        }
-      }
-
-      &.is-info {
-        &.is-not-checked::before,
-        &::before {
-          background-color: c.tint($hx-color-info, 85%);
-        }
-
-        &.is-checked::before {
-          color: c.shade($hx-color-info, 10%);
-        }
-      }
-    }
-
-    &.is-bordered {
-      > li {
-        &::before {
-          border: 1px solid $hx-color-gray-lightest;
-        }
-
-        &.is-success:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-success, 0.3);
-          }
-        }
-
-        &.is-warning:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-warning, 0.3);
-          }
-        }
-
-        &.is-danger:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-danger, 0.3);
-          }
-        }
-
-        &.is-info:not(.is-not-checked) {
-          &::before {
-            border-color: rgba($hx-color-info, 0.3);
-          }
-        }
-      }
-    }
-  }
-
-  &.has-status {
-    padding-left: 2rem;
-
-    > li {
-      margin-bottom: 0.5em;
-
-      &::before {
-        left: -2rem;
-        top: 0.2rem;
-        width: 1rem;
-        height: 1rem;
-      }
-
-      & + li {
-        margin-top: 0;
-
-        //   &:before {
-        //     top: .4em;
-        //   }
-      }
-
-      &.is-not-checked {
-        &::before {
-          border: 2px solid $hx-color-gray-lighter;
-          background-color: transparent;
-        }
-
-        &.is-success {
-          &::before {
-            border-color: $hx-color-success;
-          }
-        }
-
-        &.is-warning {
-          &::before {
-            border-color: $hx-color-warning;
-          }
-        }
-
-        &.is-danger {
-          &::before {
-            border-color: $hx-color-danger;
-          }
-        }
-
-        &.is-info {
-          &::before {
-            border-color: $hx-color-info;
-          }
-        }
-      }
-
-      &.is-checked {
-        &::before {
-          content: "\E90F";
-          font-family: hxui;
-          font-size: 1.2rem;
-          color: $hx-color-white;
-          line-height: 0.88;
-          text-indent: -0.09em;
-        }
-      }
-    }
-
-    &.is-joined {
-      > li {
-        padding-bottom: 1rem;
-
-        &::before {
-          top: 0.25em;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 1.6rem;
-          left: -1.5rem;
-          bottom: -0.45rem;
-          width: 1px;
-          background-color: $hx-color-gray-lighter;
-        }
-
-        &.is-success {
-          &::after {
-            background-color: $hx-color-success;
-          }
-        }
-
-        &.is-warning {
-          &::after {
-            background-color: $hx-color-warning;
-          }
-        }
-
-        &.is-danger {
-          &::after {
-            background-color: $hx-color-danger;
-          }
-        }
-
-        &.is-info {
-          &::before {
-            border-color: $hx-color-info;
-          }
-        }
-
-        .#{$namespace}-title {
-          font-size: 1rem;
-          font-weight: $hx-font-weight-bolder;
-          margin-bottom: 0.5rem;
-
-          .#{$namespace}-icon {
-            font-size: 1rem;
-          }
-        }
-
-        .#{$namespace}-group {
-          margin-bottom: 0.5rem;
-
-          p {
-            font-size: 0.85rem;
-            margin: 0;
-          }
-        }
-      }
-    }
-
-    &.is-inverse {
-      > li {
-        &.is-not-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info)::before {
-          background-color: c.tint($hx-color-gray-lighter, 85%);
-        }
-
-        &.is-checked:not(.is-success):not(.is-warning):not(.is-danger):not(.is-info)::before {
-          color: c.shade($hx-color-gray-lighter, 10%);
-        }
-      }
-    }
-  }
-
-  &.is-horizontal {
-    padding-left: 1.5rem;
-    margin: 0;
-
-    > li {
-      display: inline-flex;
-      line-height: 1.5rem;
-      margin-right: 4.5rem;
-
-      &::before {
-        left: -1.5rem;
-      }
-    }
-  }
-}
-
-// List group
-.#{$namespace}-list-group {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 
-  li {
-    & + li {
-      margin-top: 0;
-    }
-
-    a {
-      display: flex;
-      min-height: 44px;
-      padding: 0.6rem $hx-spacer;
-      line-height: 1.2;
-      align-items: center;
-      color: $hx-color-black;
-      transition: 0.3s;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      cursor: pointer;
-
-      &:hover,
-      &.is-hover,
-      &.is-active {
-        background-color: rgba(0, 0, 0, 0.02);
-        text-decoration: none;
-        color: $hx-color-primary !important;
-
-        *:not(button) {
-          color: $hx-color-primary !important;
-        }
-
-        button * {
-          color: unset !important;
-        }
+  @include deprecate("2.0.0", "Use .hx-list-item") {
+    li {
+      & + li {
+        margin-top: 0;
       }
 
-      &.is-gray {
-        color: color.scale($hx-text, $lightness: 50%);
+      a:not(.#{$namespace}-list-item) {
+        display: flex;
+        min-height: 44px;
+        padding: 0.6rem $hx-spacer;
+        line-height: 1.2;
+        align-items: center;
+        color: $hx-color-black;
+        transition: 0.3s;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        text-decoration: none;
 
-        > .#{$namespace}-icon {
-          color: color.scale($hx-text, $lightness: 60%);
+        &:hover,
+        &.is-hover,
+        &.is-active {
+          background-color: rgba(0, 0, 0, 0.02);
+          text-decoration: none;
+          color: $hx-color-primary !important;
+
+          *:not(button) {
+            color: $hx-color-primary !important;
+          }
+
+          button * {
+            color: unset !important;
+          }
         }
 
-        &:hover {
-          color: $hx-text;
+        &.is-gray {
+          color: color.scale($hx-text, $lightness: 50%);
 
           > .#{$namespace}-icon {
+            color: color.scale($hx-text, $lightness: 60%);
+          }
+
+          &:hover {
             color: $hx-text;
+
+            > .#{$namespace}-icon {
+              color: $hx-text;
+            }
           }
         }
       }
-    }
 
-    &.has-text-field {
-      min-height: 44px;
-      padding: 0.25rem;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      &.has-text-field {
+        min-height: 44px;
+        padding: 0.25rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
-      > input[type="text"] {
-        margin: 0;
-        padding: 0.6rem 0.8rem;
-        width: 100%;
-        border-radius: 0.2rem;
-        border: 1px solid color.scale($hx-text, $lightness: 65%);
-        box-shadow: none;
-        outline: none;
-        font-size: 0.92rem;
-        font-weight: 300;
-        transition: 0.3s;
+        > input[type="text"] {
+          margin: 0;
+          padding: 0.6rem 0.8rem;
+          width: 100%;
+          border-radius: 0.2rem;
+          border: 1px solid color.scale($hx-text, $lightness: 65%);
+          box-shadow: none;
+          outline: none;
+          font-size: 0.92rem;
+          font-weight: 300;
+          transition: 0.3s;
 
-        &::-webkit-input-placeholder {
-          /* Chrome/Opera/Safari */
-          color: color.scale($hx-text, $lightness: 60%);
-        }
+          &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: color.scale($hx-text, $lightness: 60%);
+          }
 
-        &::-moz-placeholder {
-          /* Firefox 19+ */
-          color: color.scale($hx-text, $lightness: 60%);
-        }
+          &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: color.scale($hx-text, $lightness: 60%);
+          }
 
-        &:-ms-input-placeholder {
-          /* IE 10+ */
-          color: color.scale($hx-text, $lightness: 60%);
-        }
+          &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: color.scale($hx-text, $lightness: 60%);
+          }
 
-        &:-moz-placeholder {
-          /* Firefox 18- */
-          color: color.scale($hx-text, $lightness: 60%);
-        }
+          &:-moz-placeholder {
+            /* Firefox 18- */
+            color: color.scale($hx-text, $lightness: 60%);
+          }
 
-        &:focus {
-          background-color: rgba(255, 255, 255, 0.5);
-          box-shadow: inset 0 0 0 1px color.scale($hx-text, $lightness: 65%), inset 0 0 3px 1px rgba(0, 0, 0, 0.1);
+          &:focus {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: inset 0 0 0 1px color.scale($hx-text, $lightness: 65%), inset 0 0 3px 1px rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
   }
 
+  :where(li:has(.#{$namespace}-list-item)) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  &:not(.horizontal) li:not(:first-of-type) {
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+  }
+}
+
+///////////////////////////
+//  LIST ITEM CONTAINER  //
+///////////////////////////
+
+.#{$namespace}-list-item {
+  position: relative;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "item-start item-primary item-end" "item-secondary item-secondary item-secondary";
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  grid-template-rows: size.rem(32) auto;
+  padding: spacing.rem(2) spacing.px(4);
+  color: var(--color-foreground-default);
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  flex: 1;
+
+  &:not(:where(.#{$namespace}-button, .#{$namespace}-form-control)) {
+    display: grid;
+  }
+
+  ////////////////
+  //  Variants  //
+  ////////////////
+
+  /// BUTTON
+  /// NOTE: it is semantically incorrect to nest links and buttons.
+  /// This would only make sense when the list item itself is the only
+  /// interactive element.
+  &:where(a, button) {
+    cursor: pointer;
+
+    @include transition.colors;
+
+    @include state.hover {
+      background-color: var(--color-action-secondary-active);
+    }
+
+    @include state.active {
+      color: var(--color-foreground-primary);
+      background-color: var(--color-surface-primary-muted);
+    }
+  }
+
+  // COMPACT
+  :where(.#{$namespace}-list).compact & {
+    grid-template-rows: size.rem(24) auto;
+    padding: spacing.rem(2) spacing.px(4);
+  }
+
+  // ADD ITEM
+  &:where(.#{$namespace}-button) {
+    border-radius: 0;
+    justify-content: flex-start;
+    flex: 1;
+    border: none;
+  }
+
+  // STRIPPED
+  &.highlight {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      // default is success
+      background-color: var(--color-surface-success-emphasis);
+
+      // default is sm
+      width: 4px;
+    }
+
+    /* stylelint-disable-next-line scss/dollar-variable-pattern */
+    $_ctx: "success" "danger" "info" "warning" "caution";
+
+    @each $c, $v in $_ctx {
+      @include context.add($c, "-") {
+        &::before {
+          content: "";
+          background-color: var(--color-surface-#{$c}-emphasis);
+        }
+      }
+    }
+
+    /* stylelint-disable-next-line scss/dollar-variable-pattern */
+    $_sizes: ("sm" "small" 4px, "lg" "large" 8px);
+
+    @each $short, $long, $value in $_sizes {
+      @include msize.add($short, $long, "-") {
+        &::before {
+          content: "";
+          width: #{$value};
+        }
+      }
+    }
+  }
+}
+
+///////////////////////
+//  LIST ITEM PARTS  //
+///////////////////////
+
+:where(.#{$namespace}-list-item) {
+  /// START
+  .container-start {
+    grid-area: item-start;
+    display: inline-flex;
+    align-self: center;
+    gap: spacing.px(2);
+    margin-right: spacing.px(2);
+  }
+
+  /// PRIMARY
+  .container-primary {
+    color: inherit;
+    font: var(--h4);
+    grid-area: item-primary;
+    display: flex;
+    align-self: center;
+    flex: 1;
+    gap: spacing.px(2);
+    margin-right: spacing.px(2);
+  }
+
+  /// END
+  .container-end {
+    color: inherit;
+    grid-area: item-end;
+    display: inline-flex;
+    align-self: center;
+    gap: spacing.px(2);
+  }
+
+  /// SECONDARY
+  .container-secondary {
+    font: var(--b1);
+    margin-top: spacing.rem(4);
+    grid-area: item-secondary;
+    display: flex;
+    flex: 1;
+  }
+}
+
+@include deprecate("2.0.0", "Use .container-primary inside .hx-list-item") {
+  .#{$namespace}-list-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    & + .#{$namespace}-list-action {
+      padding-left: 1rem;
+      padding-right: 0;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@include deprecate("2.0.0", "Use .container-end inside .hx-list-item") {
   .#{$namespace}-list-action {
     display: flex;
     align-items: center;
@@ -416,35 +313,25 @@
       }
     }
   }
+}
 
-  .#{$namespace}-list-content {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-
-    & + .#{$namespace}-list-action {
-      padding-left: 1rem;
-      padding-right: 0;
-      justify-content: flex-end;
+@include deprecate("2.0.0", "Use .hx-list.compact") {
+  /// Narrow list
+  .#{$namespace}-list.is-small,
+  .#{$namespace}-list.is-narrow {
+    li a {
+      padding: 0.6rem 0.8rem;
+      min-height: 2.25em;
     }
   }
-}
 
-/// Narrow list
-.#{$namespace}-list-group.is-small,
-.#{$namespace}-list-group.is-narrow {
-  li a {
-    padding: 0.6rem 0.8rem;
-    min-height: 2.25em;
-  }
-}
-
-// Extra narrow list
-.#{$namespace}-list-group.is-xnarrow {
-  li a {
-    padding: 0.1rem 0.8rem;
-    min-height: 1.75em;
-    font-size: 0.85rem;
-    line-height: 1;
+  // Extra narrow list
+  .#{$namespace}-list.is-xnarrow {
+    li a {
+      padding: 0.1rem 0.8rem;
+      min-height: 1.75em;
+      font-size: 0.85rem;
+      line-height: 1;
+    }
   }
 }

@@ -115,7 +115,7 @@ export default {
   
               <h3>Favourites</h3>
               <div class="hx-card">
-                <ul class="hx-list-group">
+                <ul class="hx-list">
                   <li class="">
                     <a>
                       <div class="hx-list-content">Cras justo odio</div>
@@ -200,7 +200,7 @@ export default {
   
             <h3>List heading (L3)</h3>
             <div class="hx-panel-section is-fill-to-edges">
-              <ul class="hx-list-group">
+              <ul class="hx-list">
                 <li class="">
                   <a>
                     <div class="hx-list-content">Cras justo odio</div>

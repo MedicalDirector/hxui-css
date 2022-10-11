@@ -42,7 +42,7 @@ export default {
     <div class="hx-column is-6 is-offset-3">
       <div class="hx-card">
         <div class="hx-card-content">
-          <ul class="hx-list has-status is-joined">
+          <ul class="hx-bullet-list has-status is-joined">
             <li class="is-success is-checked">
               <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
               <div class="hx-collapsible">
@@ -110,7 +110,7 @@ export default {
           <div class="hx-progress-timeline-status">
             <span class="hx-marker is-success is-animated"><i class="icon icon-check-empty"></i></span>
             <div class="hx-popover is-opened">
-              <ul class="hx-list has-status is-joined">
+              <ul class="hx-bullet-list has-status is-joined">
                 <li class="is-success is-checked">
                   <h6 class="hx-title">Booked <i class="icon icon-angle-up"></i></h6>
                   <div class="hx-collapsible">
@@ -182,7 +182,7 @@ export default {
     <div class="hx-card-content">
       <div class="hx-flex hx-flex-justify-between">
         <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-list has-status is-horizontal pr-1">
+          <ul class="hx-bullet-list has-status is-horizontal pr-1">
             <li class="is-success is-checked">
               <strong class="is-success">Success</strong>
             </li>
@@ -194,7 +194,7 @@ export default {
           </button>
         </div>
         <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-list has-status is-horizontal pr-1">
+          <ul class="hx-bullet-list has-status is-horizontal pr-1">
             <li class="is-warning is-not-checked">
               <strong class="is-warning">Attention</strong>
             </li>
@@ -206,7 +206,7 @@ export default {
           </button>
         </div>
         <div class="hx-flex hx-flex-align-center">
-          <ul class="hx-list has-status is-horizontal pr-1">
+          <ul class="hx-bullet-list has-status is-horizontal pr-1">
             <li class="is-danger is-not-checked">
               <strong class="is-danger">Declined</strong>
             </li>
