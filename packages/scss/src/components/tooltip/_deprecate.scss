@@ -2,8 +2,8 @@
 //  TOOLTIPS  //
 ////////////////
 
-@use "../variables" as *;
-@use "../mixins/transition";
+@use "../../variables" as *;
+@use "../../mixins/transition";
 
 .#{$namespace}-tooltip {
   @include transition.opacity;

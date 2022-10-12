@@ -40,7 +40,7 @@
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: var(--color-surface-neutral-default);
   color: var(--color-foreground-default);
-  border: 1px solid rgba($hx-color-black, 0.08);
+  border: 1px solid rgba($hx-color-black, 0.1);
   box-shadow: var(--shadow-global-md);
   border-radius: 2px;
   position: absolute;
