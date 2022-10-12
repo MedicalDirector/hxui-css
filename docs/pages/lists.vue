@@ -2,12 +2,12 @@
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
       <h1 class="hx-title pt-4">Lists</h1>
-      <h2 class="hx-subtitle">
-        A simple configurable way of using <code>ul</code> list.
-      </h2>
+      <h2 class="hx-subtitle">Stacked cards</h2>
     </div>
 
     <hr />
+
+    <api-table :data="data"></api-table>
 
     <div class="grid gap-4">
       <expanding-code-example
@@ -25,13 +25,60 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-list',
+          type: 'component',
+          description: 'Container element. Use `ul`.',
+        },
+        {
+          class: 'compact',
+          type: 'modifier',
+          description: 'Reduced vertical padding for list items',
+        },
+        {
+          class: 'hx-list-item',
+          type: 'component',
+          description: 'List item element',
+        },
+        {
+          class: 'container-start',
+          type: 'sub-component',
+          description: 'Container for start icons and avatars (optional)',
+        },
+        {
+          class: 'container-primary',
+          type: 'sub-component',
+          description:
+            'Container for primary label like subheadings and data-labels (required)',
+        },
+        {
+          class: 'container-end',
+          type: 'sub-component',
+          description: 'Container for end buttons (optional)',
+        },
+        {
+          class: 'container-secondary',
+          type: 'sub-component',
+          description:
+            'Container for additional information (optional). Ocuppies own row.',
+        },
+        {
+          class: 'highlight highlight-{context}',
+          type: 'modifier',
+          description:
+            'Adds leading vertical highlight bar. Requires context: success (default), danger, warning, info',
+        },
+      ],
       examples: [
         {
           title: 'Examples',

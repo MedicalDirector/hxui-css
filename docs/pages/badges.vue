@@ -9,6 +9,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="grid gap-4">
       <expanding-code-example
         v-for="(example, i) in examples"
@@ -25,13 +27,58 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-badge',
+          type: 'component',
+          description: 'Container element',
+        },
+        {
+          class: '{context}',
+          type: 'modifier',
+          description:
+            'Contexts: primary, secondary (default), tertiary, success, danger, warning, caution, info',
+        },
+        {
+          class: 'flat',
+          type: 'modifier',
+          description: 'Muted variant',
+        },
+        {
+          class: '{size}',
+          type: 'modifier',
+          description: 'Sizes: sm, md, lg',
+        },
+        {
+          class: 'compact',
+          type: 'modifier',
+          description: 'Reduced horizontal padding for size: sm',
+        },
+        {
+          class: 'dot',
+          type: 'modifier',
+          description: 'Dot variant. Requires a positional modifier.',
+        },
+        {
+          class: '{position}',
+          type: 'modifier',
+          description: 'Position modifier: top-right, bottom-right.',
+        },
+        {
+          class: 'hx-badge-content',
+          type: 'sub-component',
+          description: 'Label element (class optional, element required)',
+        },
+      ],
       examples: [
         {
           title: 'Basic',
@@ -123,42 +170,54 @@ export default {
         {
           title: 'Contained and positioned',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
-  <button class="hx-button">
-    <span>Notifications</span>
-    <div class="hx-badge sm compact top-right">
-      <span>0</span>
+          code: `<div class="hx-card-content">
+  <p class="hx-prose">
+    Add a positional modifier like <code>.top-right</code> or <code>.bottom-right</code>.
+    Must be contained inside an <code>.hx-avatar</code>, <code>.hx-button</code>, <code>.hx-badge</code>, <code>.hx-icon</code>.
+  </p>
+
+  <div class="flex justify-center items-center gap-2">
+    <button class="hx-button">
+      <span>Notifications</span>
+      <div class="hx-badge sm compact top-right">
+        <span>0</span>
+      </div>
+    </button>
+
+    <button class="hx-button secondary">
+      <span class="hx-icon-control">
+        <i class="hx-icon icon-calendar"></i>
+      </span>
+      <div class="hx-badge sm compact top-right">
+        <span>10</span>
+      </div>
+    </button>
+
+    <button class="hx-button primary">
+      <span>Notifications</span>
+      <div class="hx-badge dot top-right bg-danger-emphasis"></div>
+    </button>
+
+    <div class="hx-avatar lg">
+      <img 
+        src="/_nuxt/assets/images/default-avatar-business-bear.png"
+        alt="portrait of cartoon bear"
+      />
+      <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
     </div>
-  </button>
-  <button class="hx-button secondary">
-    <span class="hx-icon-control">
-      <i class="hx-icon icon-calendar"></i>
-    </span>
-    <div class="hx-badge sm compact top-right">
-      <span>10</span>
+
+    <div class="hx-avatar">
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-alert"></i>
+      </span>
+      <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
     </div>
-  </button>
-  <button class="hx-button primary">
-    <span>Notifications</span>
-    <div class="hx-badge dot top-right bg-danger-emphasis"></div>
-  </button>
-  <div class="hx-avatar lg">
-    <img 
-      src="/_nuxt/assets/images/default-avatar-business-bear.png"
-      alt="portrait of cartoon bear"
-    />
-    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
-  </div>
-  <div class="hx-avatar">
+
     <span class="hx-icon-container">
       <i class="hx-icon icon-alert"></i>
+      <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
     </span>
-    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
   </div>
-  <span class="hx-icon-container">
-    <i class="hx-icon icon-alert"></i>
-    <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
-  </span>
 </div>`,
         },
         {

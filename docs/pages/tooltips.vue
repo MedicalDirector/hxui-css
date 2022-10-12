@@ -67,7 +67,7 @@ export default {
         },
         {
           class: 'hx-tooltip-content',
-          type: 'component',
+          type: 'sub-component',
           description: 'Content element (class is optional, element is not)',
         },
       ],

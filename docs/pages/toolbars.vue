@@ -6,7 +6,10 @@
         The toolbar component is a container for headers, titles, or actions.
       </h2>
     </div>
+
     <hr />
+
+    <api-table :data="data"></api-table>
 
     <div class="grid gap-4">
       <expanding-code-example
@@ -24,13 +27,32 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-toolbar--modern',
+          type: 'component',
+          description: 'Container element. Use `ul`.',
+        },
+        {
+          class: 'compact',
+          type: 'modifier',
+          description: 'Reduced vertical padding',
+        },
+        {
+          class: 'comfortable',
+          type: 'modifier',
+          description: 'Extended vertical padding',
+        },
+      ],
       examples: [
         //         {
         //           title: 'Basic',

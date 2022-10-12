@@ -14,30 +14,20 @@ export default {
         type: 'component',
         description: 'Container element',
       },
-      // {
-      //   class: ',
-      //   type: 'modifier',
-      //   description: 'For usage with icons',
-      // },
-      // {
-      //   class: 'outline',
-      //   type: 'modifier',
-      //   description: 'Colored border with transparent background',
-      // },
       {
         class: 'tile',
         type: 'modifier',
         description: 'Square',
       },
       {
-        class: 'sm',
+        class: 'flat',
         type: 'modifier',
-        description: 'Small size',
+        description: 'Muted variant',
       },
       {
-        class: 'lg',
+        class: '{size}',
         type: 'modifier',
-        description: 'Large size',
+        description: 'Sizes: sm, md (default), lg',
       },
     ],
     examples: [
@@ -84,26 +74,6 @@ export default {
   </div>
 </div>`,
       },
-      //       {
-      //         title: 'Outlined avatar',
-      //         withContent: false,
-      //         code: `<div class="hx-card-content flex justify-center items-center gap-2">
-      //   <div class="hx-avatar caution outline text-black">J</div>
-      //   <div class="hx-avatar outline">CB</div>
-      //   <div class="hx-avatar primary outline">
-      //     <i class="hx-icon icon-pulse"></i>
-      //   </div>
-      //   <div class="hx-avatar danger outline">
-      //     <i class="hx-icon icon-wine"></i>
-      //   </div>
-      //   <div class="hx-avatar warning outline">
-      //     <i class="hx-icon icon-medications"></i>
-      //   </div>
-      //   <div class="hx-avatar caution outline">
-      //     <i class="hx-icon icon-carrot"></i>
-      //   </div>
-      // </div>`,
-      //       },
       {
         title: 'Flat avatar',
         withContent: false,

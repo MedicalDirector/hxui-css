@@ -9,6 +9,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="grid gap-4">
       <expanding-code-example
         v-for="(ex, i) in examples"
@@ -25,13 +27,73 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-button',
+          type: 'component',
+          description: 'Container element',
+        },
+        {
+          class: '{context}',
+          type: 'modifier',
+          description:
+            'Contexts: primary, secondary (default), tertiary, success, danger, warning, caution, info',
+        },
+        {
+          class: 'flat',
+          type: 'modifier',
+          description: 'Muted variant',
+        },
+        {
+          class: 'loading',
+          type: 'modifier',
+          description: 'Loading variant',
+        },
+        {
+          class: 'link',
+          type: 'modifier',
+          description: 'Link variant',
+        },
+        {
+          class: '{size}',
+          type: 'modifier',
+          description: 'Sizes: sm, md, lg',
+        },
+        {
+          class: 'multiline',
+          type: 'modifier',
+          description: 'Allows for multiline support',
+        },
+        {
+          class: 'fullwidth',
+          type: 'modifier',
+          description: 'Spans full width of containing element',
+        },
+        {
+          class: 'hx-button-content',
+          type: 'sub-component',
+          description: 'Label element (class optional, element required)',
+        },
+        {
+          class: 'hx-button-group',
+          type: 'component',
+          description: 'Container element for groups of buttons',
+        },
+        {
+          class: 'hx-button-split',
+          type: 'component',
+          description: 'Container element for split button',
+        },
+      ],
       examples: [
         {
           title: 'Button colours',

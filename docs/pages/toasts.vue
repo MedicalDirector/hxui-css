@@ -100,7 +100,7 @@ export default {
         },
         {
           class: 'hx-toast-content',
-          type: 'component',
+          type: 'sub-component',
           description: 'Content element (class is optional, element is not)',
         },
       ],

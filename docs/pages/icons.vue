@@ -7,6 +7,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="hx-form-control no-label no-help fullwidth">
       <label class="hx-label sr-only">Search icons</label>
       <div class="hx-input-group contrast">
@@ -17,31 +19,62 @@
       </div>
     </div>
 
-    <h2 class="h2 hx-prose my-4">Standard Icons</h2>
+    <h2 class="h2 hx-prose my-4">Standard icons</h2>
 
     <section
       class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
     >
-      <div class="text-center" v-for="icon in filterResults" :key="icon.name">
-        <i class="hx-icon" :class="'icon-' + icon.name"></i>
+      <div
+        class="text-center"
+        v-for="icon in filterResultsModern"
+        :key="icon.name"
+      >
+        <span class="hx-icon-container">
+          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+        </span>
         <p class="b1" v-text="icon.name"></p>
       </div>
     </section>
 
     <hr />
 
-    <h2 class="h2 hx-prose mt-8 mb-4">Legacy Icons</h2>
+    <h2 class="h2 hx-prose my-4">Card icons</h2>
 
     <section
       class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
     >
-      <div class="text-center" v-for="icon in iconsLegacy" :key="icon.name">
-        <i class="hx-icon" :class="'icon-' + icon.name"></i>
+      <div
+        class="text-center"
+        v-for="icon in filterResultsCard"
+        :key="icon.name"
+      >
+        <span class="hx-icon-container">
+          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+        </span>
         <p class="b1" v-text="icon.name"></p>
       </div>
     </section>
 
     <hr />
+
+    <h2 class="h2 hx-prose mt-8 mb-4">Legacy icons</h2>
+
+    <section
+      class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-8 gap-4"
+    >
+      <div
+        class="text-center"
+        v-for="icon in filterResultsLegacy"
+        :key="icon.name"
+      >
+        <span class="hx-icon-container">
+          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+        </span>
+        <p class="b1" v-text="icon.name"></p>
+      </div>
+    </section>
+
+    <!-- <hr />
 
     <h2 class="hx-prose">Usage</h2>
 
@@ -51,7 +84,7 @@
       a container:
     </p>
 
-    <pre v-highlightjs><code ref="code" class="html">{{ code }}</code></pre>
+    <pre v-highlightjs class="hx-code"><code ref="code" class="html">{{ code }}</code></pre>
 
     <p class="hx-prose">
       The <code>icon</code> container will take up exactly
@@ -111,12 +144,17 @@
           <td>3rem x 3rem</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
   </article>
 </template>
 
 <script>
+import ApiTable from '../components/ApiTable.vue'
+
 export default {
+  components: {
+    ApiTable,
+  },
   data() {
     const listIcons = [
       { name: 'lock-outline' },
@@ -220,7 +258,6 @@ export default {
       { name: 'html-css' },
       { name: 'more' },
       { name: 'angular' },
-      { name: 'credit-card' },
       { name: 'paperclip' },
       { name: 'attachment' },
       { name: 'note' },
@@ -330,14 +367,6 @@ export default {
       { name: 'medications-alerts' },
       { name: 'table' },
       { name: 'table-outline' },
-      { name: 'card-blank' },
-      { name: 'card-medicare-m' },
-      { name: 'card-dva' },
-      { name: 'card-dva-outlined' },
-      { name: 'card-cc' },
-      { name: 'card-scc' },
-      { name: 'card-pcc' },
-      { name: 'card-hcc' },
       { name: 'send' },
       { name: 'virus' },
       { name: 'video-outline' },
@@ -362,6 +391,18 @@ export default {
       { name: 'shuffle' },
     ]
 
+    const listIconsCard = [
+      { name: 'card-blank' },
+      { name: 'card-medicare-m' },
+      { name: 'card-dva' },
+      { name: 'card-dva-outlined' },
+      { name: 'card-cc' },
+      { name: 'card-scc' },
+      { name: 'card-pcc' },
+      { name: 'card-hcc' },
+      { name: 'credit-card' },
+    ]
+
     const listIconsLegacy = [
       { name: 'legacy-discharge' },
       { name: 'legacy-pathology' },
@@ -379,41 +420,77 @@ export default {
     const compare = (a, b) => (a.name > b.name ? 1 : -1)
 
     return {
+      data: [
+        {
+          class: 'hx-icon-container',
+          type: 'component',
+          description: 'Container element',
+        },
+        {
+          class: 'hx-icon',
+          type: 'component',
+          description: 'Icon element',
+        },
+        {
+          class: 'icon-{name}',
+          type: 'modifier',
+          description: 'Specific icon',
+        },
+        {
+          class: '{size}',
+          type: 'modifier',
+          description: 'Sizes: sm, md (default)',
+        },
+      ],
       searchTerm: '',
-      filterResults: this.icons,
+      filterResultsModern: this.icons,
       code: '<i class="hx-icon icon-helix"></i>',
       icons: listIcons.sort(compare),
+      iconsCard: listIconsCard.sort(compare),
       iconsLegacy: listIconsLegacy.sort(compare),
     }
   },
   mounted() {
-    this.filterResults = this.icons
+    this.filterResultsModern = this.icons
+    this.filterResultsCard = this.iconsCard
+    this.filterResultsLegacy = this.iconsLegacy
   },
   watch: {
     searchTerm() {
       if (this.searchTerm.length > 0) {
-        this.filterResults = []
+        this.filterResultsModern = []
+        this.filterResultsCard = []
+        this.filterResultsLegacy = []
+
         for (const icon of this.icons) {
           if (
             icon.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) >= 0
           ) {
-            this.filterResults.push({ name: icon.name })
+            this.filterResultsModern.push({ name: icon.name })
+          }
+        }
+
+        for (const icon of this.iconsCard) {
+          if (
+            icon.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) >= 0
+          ) {
+            this.filterResultsCard.push({ name: icon.name })
+          }
+        }
+
+        for (const icon of this.iconsLegacy) {
+          if (
+            icon.name.toLowerCase().indexOf(this.searchTerm.toLowerCase()) >= 0
+          ) {
+            this.filterResultsLegacy.push({ name: icon.name })
           }
         }
       } else {
-        this.filterResults = this.icons
+        this.filterResultsModern = this.icons
+        this.filterResultsCard = this.iconsCard
+        this.filterResultsLegacy = this.iconsLegacy
       }
     },
   },
 }
 </script>
-
-<style lang="scss" scoped>
-pre {
-  margin: 0;
-
-  code {
-    border-radius: 2px;
-  }
-}
-</style>

@@ -9,6 +9,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="grid gap-4">
       <expanding-code-example
         v-for="(ex, i) in examples"
@@ -25,13 +27,75 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-dropdown',
+          type: 'component',
+          description: 'Container element (optional)',
+        },
+        {
+          class: 'hx-dropdown-menu',
+          type: 'component',
+          description:
+            'Main element. Requires adding element attribute of role="tooltip".',
+        },
+        {
+          class: 'open',
+          type: 'modifier',
+          description: 'Makes menu visible',
+        },
+        {
+          class: '{position}',
+          type: 'modifier',
+          description:
+            'Direction of menu: .top-start, .top-middle, .top-end, .bottom-start, .bottom-middle, .bottom-end,',
+        },
+        {
+          class: '{restriction}',
+          type: 'modifier',
+          description:
+            'Restricts width and height: .limit-height, .limit-width',
+        },
+        {
+          class: 'text-ellipsed',
+          type: 'modifier',
+          description: 'Ellipses overflowing item text',
+        },
+        {
+          class: 'text-multiline',
+          type: 'modifier',
+          description: 'Allows overflowing of item text to multiple lines',
+        },
+        {
+          class: 'hx-dropdown-item',
+          type: 'component',
+          description: 'Content element (class is optional, element is not)',
+        },
+        {
+          class: 'active',
+          type: 'modifier',
+          description: 'Active state of item',
+        },
+        {
+          class: 'hx-dropdown-heading',
+          type: 'component',
+          description: 'Heading for a group of items',
+        },
+        {
+          class: 'hx-dropdown-divider',
+          type: 'component',
+          description: 'Divider for unrelated items',
+        },
+      ],
       examples: [
         {
           title: 'Basic',

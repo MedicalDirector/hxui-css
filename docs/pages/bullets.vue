@@ -9,6 +9,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="grid gap-4">
       <expanding-code-example
         v-for="(ex, i) in examples"
@@ -25,13 +27,49 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-bullet-list',
+          type: 'component',
+          description: 'Container element. Use `ul`.',
+        },
+        {
+          class: 'status',
+          type: 'modifier',
+          description: 'Reduced vertical padding for list items',
+        },
+        {
+          class: 'outlined',
+          type: 'modifier',
+          description: 'Reduced vertical padding for list items',
+        },
+        {
+          class: 'horizontal',
+          type: 'component',
+          description: 'Arranges items horizontally',
+        },
+        {
+          class: '{checked}',
+          type: 'modifier',
+          description: '.checked, .unchecked. For list item. Requires .status',
+        },
+
+        {
+          class: '{context}',
+          type: 'modifier',
+          description:
+            'Context: .success, .danger, .warning, .info. For list item.',
+        },
+      ],
       examples: [
         {
           title: 'Basic',
@@ -107,7 +145,7 @@ export default {
 </ul>`,
         },
         {
-          title: 'Flat',
+          title: 'Outlined',
           code: `<p class="hx-prose mb-4">
   Add modifier <code>.outlined</code> to the invert the bullet styles in the list.
 </p>

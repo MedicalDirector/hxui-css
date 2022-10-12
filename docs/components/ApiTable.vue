@@ -46,22 +46,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.hx-code {
-  overflow: auto;
-
-  pre {
-    display: none;
-
-    &.open {
-      display: flex;
-      margin-bottom: 0;
-
-      code {
-        flex: 1 0 auto;
-      }
-    }
-  }
-}
-</style>

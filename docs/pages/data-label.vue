@@ -10,6 +10,8 @@
 
     <hr />
 
+    <api-table :data="data"></api-table>
+
     <div class="grid gap-4">
       <expanding-code-example
         v-for="(ex, i) in examples"
@@ -26,13 +28,37 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data() {
     return {
+      data: [
+        {
+          class: 'hx-data-label',
+          type: 'component',
+          description: 'Container element',
+        },
+        {
+          class: 'alternate',
+          type: 'modifier',
+          description: 'Alternate styling',
+        },
+        {
+          class: 'hx-label',
+          type: 'sub-component',
+          description: 'Label element',
+        },
+        {
+          class: 'hx-data',
+          type: 'sub-component',
+          description: 'Data value element',
+        },
+      ],
       examples: [
         {
           title: 'Examples',
