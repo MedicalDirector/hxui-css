@@ -1,0 +1,179 @@
+/////////////
+//  TOAST  //
+/////////////
+
+@use "../../variables" as *;
+@use "../../functions/size";
+@use "../../functions/spacing";
+@use "../../mixins/deprecate" as *;
+@use "./mixins" as toast;
+
+/////////////////
+//  CONTAINER  //
+/////////////////
+/// Optional for positioning
+.#{$namespace}-toast-container {
+  z-index: var(--elevation-semantic-dialog);
+
+  @include toast.position-top-left;
+  @include toast.position-top-right;
+  @include toast.position-top-middle;
+  @include toast.position-bottom-left;
+  @include toast.position-bottom-right;
+  @include toast.position-bottom-middle;
+}
+
+/////////////
+//  TOAST  //
+/////////////
+
+.#{$namespace}-toast {
+  @include toast.control-shared;
+
+  z-index: var(--elevation-semantic-dialog);
+  box-shadow: var(--shadow-global-xl);
+  display: inline-flex;
+  font-weight: 500;
+  min-width: spacing.rem(64);
+  max-width: spacing.rem(128);
+  min-height: size.rem(64);
+
+  /// default context
+  @include toast.context-success;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// CONTEXT
+  &.success {
+    @include toast.context-success;
+  }
+
+  &.danger {
+    @include toast.context-danger;
+  }
+
+  &.warning {
+    @include toast.context-warning;
+  }
+
+  &.info {
+    @include toast.context-info;
+  }
+}
+
+///////////////
+//  CONTENT  //
+///////////////
+
+:where(.#{$namespace}-toast) {
+  :where(span, div):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .#{$namespace}-badge, .#{$namespace}-button)),
+  .#{$namespace}-toast-content {
+    display: flex;
+    align-items: center;
+    font: inherit;
+    color: inherit;
+    flex: 1;
+  }
+}
+
+/// LEGACY
+@include deprecate("3.0.0", "Use .hx-toast") {
+  .#{$namespace}-snackbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transition: 0.3s;
+    transform: translate3d(-50%, 100%, 0);
+    opacity: 0;
+    min-width: 288px;
+
+    &.is-absolute {
+      position: absolute;
+    }
+
+    &.is-top {
+      top: 0;
+      transform: translate3d(-50%, -100%, 0);
+      bottom: auto;
+    }
+
+    &.is-right {
+      padding: 0.5rem;
+      right: 0;
+      left: auto;
+      transform: translate3d(0%, 100%, 0);
+
+      &.is-top {
+        transform: translate3d(0%, -100%, 0);
+      }
+    }
+
+    &.is-left {
+      padding: 0.5rem;
+      left: 0;
+      transform: translate3d(0%, 100%, 0);
+
+      &.is-top {
+        transform: translate3d(0%, -100%, 0);
+      }
+    }
+
+    &.is-active {
+      transform: translate3d(-50%, 0, 0);
+      opacity: 1;
+
+      &.is-right,
+      &.is-left {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.2);
+      color: white;
+      font-weight: 400;
+      min-width: 18rem;
+      max-width: 35.5rem;
+      border-radius: $hx-border-radius-sm;
+
+      .#{$namespace}-button {
+        margin: 0 0 0 3rem;
+      }
+    }
+
+    &.is-success {
+      .#{$namespace}-snackbar-content {
+        background-color: $hx-color-success;
+        color: $hx-color-success-invert;
+      }
+    }
+
+    &.is-info {
+      .#{$namespace}-snackbar-content {
+        background-color: $hx-color-info;
+        color: $hx-color-success-invert;
+      }
+    }
+
+    &.is-warning {
+      .#{$namespace}-snackbar-content {
+        background-color: $hx-color-warning;
+        color: $hx-color-warning-invert;
+      }
+    }
+
+    &.is-error {
+      .#{$namespace}-snackbar-content {
+        background-color: $hx-color-danger;
+      }
+    }
+  }
+}

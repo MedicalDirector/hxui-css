@@ -67,6 +67,14 @@ export const NAV_ITEMS = [
     title: 'Layouts',
     items: [
       {
+        name: 'Accordions',
+        path: '/accordions',
+      },
+      {
+        name: 'Cards',
+        path: '/cards',
+      },
+      {
         name: 'Containers',
         path: '/containers',
       },
@@ -78,19 +86,15 @@ export const NAV_ITEMS = [
         name: 'Sidebar',
         path: '/sidebar',
       },
+      {
+        name: 'Toolbars',
+        path: '/toolbars',
+      },
     ],
   },
   {
-    title: 'Components',
+    title: 'Data',
     items: [
-      {
-        name: 'Accordions',
-        path: '/accordions',
-      },
-      {
-        name: 'Alerts',
-        path: '/alerts',
-      },
       {
         name: 'Avatars',
         path: '/avatars',
@@ -100,32 +104,12 @@ export const NAV_ITEMS = [
         path: '/badges',
       },
       {
-        name: 'Breadcrumbs',
-        path: '/breadcrumbs',
-      },
-      {
         name: 'Bulleted lists',
         path: '/bullets',
       },
       {
-        name: 'Buttons',
-        path: '/buttons',
-      },
-      {
-        name: 'Cards',
-        path: '/cards',
-      },
-      {
         name: 'Data labels',
         path: '/data-label',
-      },
-      {
-        name: 'Dropdowns',
-        path: '/dropdowns',
-      },
-      {
-        name: 'Forms',
-        path: '/forms',
       },
       {
         name: 'Icons',
@@ -136,48 +120,79 @@ export const NAV_ITEMS = [
         path: '/lists',
       },
       {
-        name: 'Modals',
-        path: '/modals',
-      },
-      {
-        name: 'Nav',
-        path: '/nav',
-      },
-      {
         name: 'Pagination',
         path: '/pagination',
-      },
-      {
-        name: 'Steppers',
-        path: '/steppers',
       },
       {
         name: 'Tables',
         path: '/tables',
       },
       {
-        name: 'Tabs',
-        path: '/tabs',
-      },
-      {
         name: 'Timeline',
         path: '/timeline',
+      },
+    ],
+  },
+  {
+    title: 'Feedback',
+    items: [
+      {
+        name: 'Alerts',
+        path: '/alerts',
+      },
+      {
+        name: 'Modals',
+        path: '/modals',
       },
       {
         name: 'Toasts',
         path: '/toasts',
       },
       {
+        name: 'Tooltips',
+        path: '/tooltips',
+      },
+    ],
+  },
+  {
+    title: 'Inputs',
+    items: [
+      {
+        name: 'Buttons',
+        path: '/buttons',
+      },
+      {
+        name: 'Dropdowns',
+        path: '/dropdowns',
+      },
+      {
+        name: 'Forms',
+        path: '/forms',
+      },
+      {
         name: 'Toggle',
         path: '/toggle',
       },
+    ],
+  },
+  {
+    title: 'Navigation',
+    items: [
       {
-        name: 'Toolbars',
-        path: '/toolbars',
+        name: 'Breadcrumbs',
+        path: '/breadcrumbs',
       },
       {
-        name: 'Tooltips',
-        path: '/tooltips',
+        name: 'Nav',
+        path: '/nav',
+      },
+      {
+        name: 'Steppers',
+        path: '/steppers',
+      },
+      {
+        name: 'Tabs',
+        path: '/tabs',
       },
     ],
   },

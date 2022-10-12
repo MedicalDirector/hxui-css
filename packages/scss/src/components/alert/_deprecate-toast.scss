@@ -1,8 +1,11 @@
 ////////////////
-//  SNACKBAR  //
+//  TOAST  //
 ////////////////
 
-@use "../variables" as *;
+/// @note
+/// duplicate of v1 toast.scss in case of forking
+
+@use "../../variables" as *;
 
 .#{$namespace}-snackbar {
   position: fixed;

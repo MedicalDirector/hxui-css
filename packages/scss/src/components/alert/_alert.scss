@@ -1,0 +1,211 @@
+/////////////
+//  ALERT  //
+/////////////
+
+@use "../../variables" as *;
+@use "../../functions/color" as c;
+@use "../../functions/spacing";
+@use "../../functions/size";
+@use "../../mixins/deprecate" as *;
+@use "./mixins" as alert;
+
+.#{$namespace}-alert[role="alert"] {
+  @include alert.control-shared;
+
+  margin-bottom: 1rem;
+  display: flex;
+  font-weight: 400;
+  min-height: size.rem(64);
+
+  /// default context
+  @include alert.context-success;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// COMPACT
+  &.is-small,
+  &.compact {
+    padding: size.rem(7) spacing.px(4);
+    min-height: size.rem(48);
+  }
+
+  /// CONTEXT
+  &.is-info,
+  &.info {
+    @include alert.context-info;
+  }
+
+  &.is-success,
+  &.success {
+    @include alert.context-success;
+  }
+
+  &.is-warning,
+  &.warning {
+    @include alert.context-warning;
+  }
+
+  &.is-danger,
+  &.danger {
+    @include alert.context-danger;
+  }
+
+  @include deprecate("2.0.0", "Use updated styles") {
+    &.is-inverse {
+      background-color: $hx-color-gray-lightest;
+      color: $hx-color-gray-dark;
+      text-shadow: none;
+
+      a {
+        color: c.shade($hx-color-gray-dark, 10%);
+        text-decoration: none;
+        border-bottom: 1px solid $hx-color-gray-dark;
+        border-bottom-color: $hx-color-gray-dark;
+        transition: 0.3s;
+
+        &:hover {
+          color: $hx-color-gray;
+          border-bottom-color: transparent;
+        }
+      }
+      .#{$namespace}-icon {
+        color: $hx-color-gray-dark;
+      }
+
+      &.is-info {
+        background-color: c.tint($hx-color-info, 85%);
+        color: c.shade($hx-color-info, 10%);
+
+        a {
+          color: c.shade($hx-color-info, 10%);
+          border-bottom-color: c.shade($hx-color-info, 10%);
+
+          &:hover {
+            color: $hx-color-gray;
+            border-bottom-color: transparent;
+          }
+        }
+
+        .#{$namespace}-icon {
+          color: c.shade($hx-color-info, 10%);
+        }
+      }
+
+      &.is-success {
+        background-color: c.tint($hx-color-success, 85%);
+        color: c.shade($hx-color-success, 10%);
+
+        a {
+          color: c.shade($hx-color-success, 10%);
+          border-bottom-color: c.shade($hx-color-success, 10%);
+
+          &:hover {
+            color: $hx-color-gray;
+            border-bottom-color: transparent;
+          }
+        }
+
+        .#{$namespace}-icon {
+          color: c.shade($hx-color-success, 10%);
+        }
+      }
+
+      &.is-warning {
+        background-color: c.tint($hx-color-warning, 85%);
+        color: c.shade($hx-color-warning, 10%);
+
+        a {
+          color: c.shade($hx-color-warning, 10%);
+          border-bottom-color: c.shade($hx-color-warning, 10%);
+
+          &:hover {
+            color: $hx-color-gray;
+            border-bottom-color: transparent;
+          }
+        }
+
+        .#{$namespace}-icon {
+          color: c.shade($hx-color-warning, 10%);
+        }
+      }
+
+      &.is-danger {
+        background-color: c.tint($hx-color-danger, 85%);
+        color: c.shade($hx-color-danger, 10%);
+
+        a {
+          color: c.shade($hx-color-danger, 10%);
+          border-bottom-color: c.shade($hx-color-danger, 10%);
+
+          &:hover {
+            color: $hx-color-gray;
+            border-bottom-color: transparent;
+          }
+        }
+
+        .#{$namespace}-icon {
+          color: c.shade($hx-color-danger, 10%);
+        }
+      }
+      /* stylelint-enable no-descending-specificity */
+
+      &.is-bordered {
+        border: 1px solid rgba($hx-color-dark, 0.3);
+
+        &.is-info {
+          border-color: rgba($hx-color-info, 0.3);
+        }
+
+        &.is-success {
+          border-color: rgba($hx-color-success, 0.3);
+        }
+
+        &.is-warning {
+          border-color: rgba($hx-color-warning, 0.3);
+        }
+
+        &.is-danger {
+          border-color: rgba($hx-color-danger, 0.3);
+        }
+      }
+    }
+
+    &.is-float {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      width: 25rem;
+      box-shadow: 0 0 0 1px rgba($hx-color-white, 0.1), 0 0 1rem 0 rgba(#333, 0.5), 0 0 3rem rgba(#333, 0.4);
+
+      &.is-success {
+        box-shadow: 0 0 0 1px rgba($hx-color-white, 0.1), 0 0 1rem 0 rgba($hx-color-primary, 0.5),
+          0 0 3rem rgba($hx-color-primary, 0.4);
+      }
+
+      &.is-warning {
+        box-shadow: 0 0 0 1px rgba($hx-color-white, 0.1), 0 0 1rem 0 rgba(#f6a904, 0.5), 0 0 3rem rgba(#f6a904, 0.4);
+      }
+
+      &.is-danger {
+        box-shadow: 0 0 0 1px rgba($hx-color-white, 0.1), 0 0 1rem 0 rgba(#b81e4f, 0.5), 0 0 3rem rgba(#b81e4f, 0.4);
+      }
+    }
+  }
+}
+
+///////////////
+//  CONTENT  //
+///////////////
+
+:where(.#{$namespace}-alert) {
+  :where(span, div):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .#{$namespace}-badge, .#{$namespace}-button)),
+  .#{$namespace}-alert-content {
+    display: flex;
+    align-items: center;
+    font: inherit;
+    color: inherit;
+    flex: 1;
+  }
+}

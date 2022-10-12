@@ -1,0 +1,99 @@
+@use "../../functions/spacing";
+@use "../../functions/size";
+
+/////////////
+// Control //
+/////////////
+
+@mixin control-shared {
+  position: relative;
+  align-items: center;
+  padding: size.rem(15) spacing.px(4);
+  gap: spacing.rem(2);
+  font: var(--b1);
+  border-radius: 2px; //TODO: unhard
+  border-width: 1px; //TODO: unhard
+  border-style: solid;
+}
+
+///////////////////////
+// Variant - Context //
+///////////////////////
+
+@mixin context-success {
+  color: var(--color-foreground-success);
+  background-color: var(--color-surface-success-muted);
+  border-color: var(--color-surface-success-emphasis);
+}
+
+@mixin context-danger {
+  color: var(--color-foreground-danger);
+  background-color: var(--color-surface-danger-muted);
+  border-color: var(--color-surface-danger-emphasis);
+}
+
+@mixin context-warning {
+  color: var(--color-foreground-warning);
+  background-color: var(--color-surface-warning-muted);
+  border-color: var(--color-surface-warning-emphasis);
+}
+
+@mixin context-info {
+  color: var(--color-foreground-info);
+  background-color: var(--color-surface-info-muted);
+  border-color: var(--color-surface-info-emphasis);
+}
+
+////////////////////////
+// Variant - Position //
+////////////////////////
+
+@mixin position-top-left {
+  &.top-left {
+    position: fixed;
+    top: spacing.px(4);
+    left: spacing.px(4);
+  }
+}
+
+@mixin position-top-middle {
+  &.top-middle {
+    position: fixed;
+    top: spacing.px(4);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin position-top-right {
+  &.top-right {
+    position: fixed;
+    top: spacing.px(4);
+    right: spacing.px(4);
+  }
+}
+
+@mixin position-bottom-left {
+  &.bottom-left {
+    position: fixed;
+    bottom: spacing.px(4);
+    left: spacing.px(4);
+  }
+}
+
+@mixin position-bottom-middle {
+  &.bottom-middle {
+    position: fixed;
+    bottom: spacing.px(4);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin position-bottom-right {
+  &.bottom-right {
+    position: fixed;
+    bottom: spacing.px(4);
+    right: spacing.px(4);
+  }
+}
