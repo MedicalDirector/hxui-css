@@ -101,7 +101,7 @@ dd {
 // }
 
 a {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
     cursor: pointer;
@@ -136,7 +136,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-family: $hx-headings-font-family;
     font-weight: $hx-headings-font-weight;
     line-height: $hx-headings-line-height;
@@ -146,7 +146,7 @@ h6,
 
 h1,
 .h1 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h1;
     font-weight: $hx-font-weight-bold;
     color: $hx-color-info;
@@ -156,7 +156,7 @@ h1,
 
 h2,
 .h2 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h2;
     margin-top: 1rem * 1.35;
     margin-bottom: 1rem * 0.75;
@@ -165,7 +165,7 @@ h2,
 
 h3,
 .h3 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h3;
     font-weight: $hx-font-weight-bolder;
     color: $hx-color-info;
@@ -176,7 +176,7 @@ h3,
 
 h4,
 .h4 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h4;
     font-weight: $hx-font-weight-bold;
     margin-top: 1rem * 1.1;
@@ -186,7 +186,7 @@ h4,
 
 h5,
 .h5 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h5;
     font-weight: $hx-font-weight-bolder;
     margin-top: 1rem * 1.1;
@@ -196,7 +196,7 @@ h5,
 
 h6,
 .h6 {
-  &.hx-prose {
+  &.#{$namespace}-prose {
     font-size: $hx-font-size-h6;
     font-weight: $hx-font-weight-boldest;
     color: $hx-color-gray-lighter;
@@ -207,13 +207,13 @@ h6,
   }
 }
 
-p.hx-prose {
+p.#{$namespace}-prose {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 // Headings
-.hx-prose {
+.#{$namespace}-prose {
   color: $hx-text;
 
   &.h1,

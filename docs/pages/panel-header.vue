@@ -1,12 +1,12 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
-      <h1 class="hx-title pt-4">Panel Header</h1>
+      <h1 class="hx-title pt-4">App bar</h1>
       <h2 class="hx-subtitle">
-        The Panel Header is a header organism that is placed at the start of a
+        The app bar is a header organism that is placed at the start of a
         <a href="/panel">Panel</a> template.
       </h2>
-      <p>
+      <!-- <p>
         The panel header consists of a main heading (with icon, h2 heading and
         optional subheading) and optional back link, action items and input
         field.
@@ -25,319 +25,150 @@
           a fixed header height of 110px. The base body/html font is 15px rather
           than 16px as used this document.</small
         >
-      </p>
-
-      <h4>Examples</h4>
+      </p> -->
     </div>
 
-    <div class="grid laptop:grid-cols-2 gap-4">
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <a class="hx-button hx-panel-back is-flat is-small pl-1">
-              <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
-              <div class="hx-panel-back-text">Back</div>
-            </a>
-            <div class="hx-panel-header-row-actions">
-              <a class="hx-button is-small">Action</a>
-              <a class="hx-button is-small is-white px-1">
-                <i
-                  class="hx-icon is-medium icon-close-empty"
-                  aria-hidden="true"
-                ></i>
-              </a>
-            </div>
-          </div>
-          <div class="hx-panel-header-row">
-            <div class="hx-flex-column">
-              <div class="hx-panel-header-heading">
-                <i
-                  class="hx-icon icon-prescription is-heading-icon"
-                  aria-hidden="true"
-                ></i>
-                <div class="h2">Prescription</div>
-              </div>
-              <div class="hx-panel-header-subheading">
-                Prescription subheading
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <div class="hx-panel-header-heading">
-              <i
-                class="hx-icon icon-pathology-outline is-heading-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="h2">Pathology Request</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <a class="hx-button hx-panel-back is-flat is-small pl-1">
-              <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
-              <div class="hx-panel-back-text">Letter Generator</div>
-            </a>
-            <div class="hx-panel-header-row-actions">
-              <a class="hx-button is-small is-white px-1">
-                <i class="hx-icon icon-external-link" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-          <div class="hx-panel-header-row">
-            <div class="hx-panel-header-heading">
-              <i
-                class="hx-icon icon-file-outline is-heading-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="h2">Blank Letter</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <div class="hx-flex-column">
-              <div class="hx-panel-header-heading">
-                <i
-                  class="hx-icon icon-woman is-heading-icon"
-                  aria-hidden="true"
-                ></i>
-                <div class="h2">Obstetrics</div>
-              </div>
-              <div class="hx-panel-header-subheading">No current pregnancy</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="grid gap-4">
+      <expanding-code-example
+        v-for="(ex, i) in examples"
+        :key="i"
+        :title="ex.title"
+        :code="ex.code"
+        :example="ex.code"
+        :visible="false"
+        :className="ex.class"
+        :withContent="ex.withContent"
+      ></expanding-code-example>
     </div>
-
-    <pre v-highlightjs ref="code"><code class="html">{{ headerA }}</code></pre>
-
-    <div class="hx-prose contents">
-      <h3>Panel Header - Type 2</h3>
-      <p>
-        This header consists of two rows - the first row contains the main
-        heading (icon and h2 heading, plus optional action buttons/icons) and
-        the second row contains a full width input field. Each row takes up
-        about half the height of the panel.
-      </p>
-    </div>
-
-    <div class="grid laptop:grid-cols-2 gap-4">
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <div class="hx-panel-header-heading">
-              <i
-                class="hx-icon icon-prescription is-heading-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="h2">Prescription</div>
-            </div>
-            <div class="hx-panel-header-row-actions">
-              <a class="hx-button is-small">Monograph</a>
-              <a class="hx-button is-small">CMI</a>
-              <a class="hx-button is-small">PI</a>
-            </div>
-          </div>
-          <div class="hx-panel-header-row has-search hx-flex-column">
-            <div class="hx-input-group">
-              <i class="hx-icon icon-search" aria-hidden="true"></i>
-              <div class="hx-input-control">
-                <input class="hx-input" type="text" required="" />
-                <label class="hx-label"></label>
-                <div class="hx-help"></div>
-              </div>
-              <div class="hx-input-actions">
-                <div class="hx-button-group">
-                  <button class="hx-button is-flat">
-                    <span class="hx-icon-container"
-                      ><i
-                        class="hx-icon icon-close-empty"
-                        aria-hidden="true"
-                      ></i
-                    ></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <div class="hx-panel-header-heading">
-              <i
-                class="hx-icon icon-injection is-heading-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="h2">Immunisation</div>
-            </div>
-            <div class="hx-panel-header-row-actions">
-              <div class="hx-button-group">
-                <a class="hx-button is-small"> Record Immunisation </a>
-                <a class="hx-button is-small"> View Schedule </a>
-              </div>
-            </div>
-          </div>
-          <div class="hx-panel-header-row has-search hx-flex-column">
-            <div class="hx-input-group">
-              <i class="hx-icon icon-search" aria-hidden="true"></i>
-              <div class="hx-input-control">
-                <input class="hx-input" type="text" required="" />
-                <label class="hx-label"></label>
-                <div class="hx-help"></div>
-              </div>
-              <div class="hx-input-actions">
-                <div class="hx-button-group">
-                  <button class="hx-button is-flat">
-                    <span class="hx-icon-container"
-                      ><i class="icon icon-close-empty" aria-hidden="true"></i
-                    ></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hx-panel mock-panel">
-        <div class="hx-panel-header has-fixed-height">
-          <div class="hx-panel-header-row">
-            <div class="hx-panel-header-heading">
-              <i
-                class="hx-icon icon-file-outline is-heading-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="h2">Letter Creator</div>
-            </div>
-            <div class="hx-panel-header-row-actions">
-              <a class="hx-button is-small is-white px-1">
-                <i
-                  class="hx-icon is-medium icon-close-empty"
-                  aria-hidden="true"
-                ></i>
-              </a>
-            </div>
-          </div>
-          <div class="hx-panel-header-row has-search hx-flex-column">
-            <div class="hx-input-group">
-              <i class="hx-icon icon-search" aria-hidden="true"></i>
-              <div class="hx-input-control">
-                <input class="hx-input" type="text" required="" />
-                <label class="hx-label"></label>
-                <div class="hx-help"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <pre v-highlightjs ref="code"><code class="html">{{ headerB }}</code></pre>
   </article>
 </template>
 
 <script>
+import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+// import ApiTable from '../components/ApiTable.vue'
+
 export default {
+  components: {
+    ExpandingCodeExample,
+    // ApiTable,
+  },
   data() {
     return {
-      headerA: `<div class="hx-panel-header has-fixed-height">
-  <div class="hx-panel-header-row">
-    <a class="hx-button hx-panel-back is-flat is-small pl-1">
-      <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
-      <div class="hx-panel-back-text">
-      Back
-      </div>
-    </a>
-    <div class="hx-panel-header-row-actions">
-      <a class="hx-button is-small">Action</a>
-      <a class="hx-button is-small is-white px-1">
-        <i class="hx-icon is-medium icon-close-empty" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
-  <div class="hx-panel-header-row">
-    <div class="hx-flex-column">
-      <div class="hx-panel-header-heading">
-        <i class="hx-icon icon-prescription is-heading-icon" aria-hidden="true"></i>
-        <div class="h2">
-          Prescription
+      examples: [
+        {
+          title: 'Single-row',
+          class: 'compact',
+          code: `<div class="hx-panel demo-panel">
+  <header class="hx-panel__header">
+    <div class="hx-bar app">
+      <div class="hx-bar__title">
+        <button class="hx-button flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-arrow-left" aria-hidden="true"></i>
+          </span>
+          <span class="sr-only">Back</span>
+        </button>
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-woman" aria-hidden="true"></i>
+        </span>
+        <h1>Obstetrics</h1>
+        <div class="hx-badge lg">
+          <span>No current pregnancy</span>
         </div>
       </div>
-      <div class="hx-panel-header-subheading">
-        Prescription subheading
-      </div>
     </div>
-  </div>
+  </header>
 </div>`,
-      headerB: `<div class="hx-panel">
-  <div class="hx-panel-header has-fixed-height">
-    <div class="hx-panel-header-row">
-      <div class="hx-panel-header-heading">
-        <i class="hx-icon icon-file-outline is-heading-icon" aria-hidden="true"></i>
-        <div class="h2">
-          Letter Creator
-        </div>
+        },
+        {
+          title: 'Multi-row',
+          class: 'compact grid gap-4 bg-neutral-emphasis',
+          code: `<div class="hx-panel demo-panel">
+  <header class="hx-panel__header">
+    <div class="hx-bar app">
+      <div class="hx-bar__title">
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-prescription" aria-hidden="true"></i>
+        </span>
+        <h1>Prescription</h1>
       </div>
-      <div class="hx-panel-header-row-actions">
-        <a class="hx-button is-small is-white px-1">
-          <i class="hx-icon is-medium icon-close-empty" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-    <div class="hx-panel-header-row has-search hx-flex-column">
-      <div class="hx-input-group">
-        <i class="hx-icon icon-search" aria-hidden="true"></i>
-        <div class="hx-input-control">
-          <input class="hx-input" type="text" required="">
-          <label class="hx-label"></label>
-          <div class="hx-help"></div>
-        </div>
-        <div class="hx-input-actions">
-          <div class="hx-button-group">
-            <button class="hx-button is-flat">
-              <span class="hx-icon-container">
-                <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-        </div>
+
+      <div class="hx-bar__actions">
+        <button class="hx-button">
+          <span>Monography</span>
+        </button>
+        <button class="hx-button">
+          <span>CMI</span>
+        </button>
+        <button class="hx-button">
+          <span>PI</span>
+        </button>
+        <button class="hx-button flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-more" aria-hidden="true"></i>
+          </span>
+          <span class="sr-only">More</span>
+        </button>
       </div>
     </div>
-  </div>
+    <div class="hx-bar sub solid-b">
+      <div class="hx-form-control no-label no-help fullwidth">
+        <label class="hx-label sr-only">Search icons</label>
+        <div class="hx-input-group contrast">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-search" aria-hidden="true"></i>
+          </span>
+          <input class="hx-input" type="text" />
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="hx-panel demo-panel">
+  <header class="hx-panel__header">
+    <div class="hx-bar app">
+      <div class="hx-bar__title">
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-file-outline" aria-hidden="true"></i>
+        </span>
+        <h1>Letter writer</h1>
+      </div>
+
+      <div class="hx-bar__actions">
+        <button class="hx-button flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+          </span>
+          <span class="sr-only">Close</span>
+        </button>
+      </div>
+    </div>
+    <div class="hx-bar sub solid-b">
+      <div class="hx-form-control no-label no-help fullwidth">
+        <label class="hx-label sr-only">Search icons</label>
+        <div class="hx-input-group contrast">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-search" aria-hidden="true"></i>
+          </span>
+          <input class="hx-input" type="text" />
+        </div>
+      </div>
+    </div>
+  </header>
 </div>`,
+        },
+      ],
     }
   },
 }
 </script>
 
-<style lang="scss" scoped>
-.mock-panel {
-  border: 1px solid #dedede;
-  min-width: 480px;
-  height: 40vh;
-}
+<style lang="scss">
+@use '@hxui/css/src/variables' as *;
 
-pre {
-  margin: 0;
-
-  code {
-    border-radius: 2px;
-  }
+.demo-panel {
+  border-top: 1px solid $hx-border-color;
+  padding-bottom: 6rem;
 }
 </style>

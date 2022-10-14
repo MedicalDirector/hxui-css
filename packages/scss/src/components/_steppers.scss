@@ -116,7 +116,7 @@
       color: $hx-color-white;
       margin-right: 0.5rem;
 
-      .hx-icon {
+      .#{namespace}-icon {
         font-size: 1.8rem;
         line-height: 1.8;
       }

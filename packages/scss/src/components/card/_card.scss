@@ -212,11 +212,11 @@ $border-width-default: 1;
     }
   }
 
-  @include msize.add("sm", "small") {
+  &.compact {
     padding: 0;
   }
 
-  @include msize.add("lg", "large") {
+  &.comfortable {
     padding: spacing.rem(6) spacing.px(6);
   }
 }

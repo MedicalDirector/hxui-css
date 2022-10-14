@@ -23,11 +23,10 @@
       border: 1px solid $hx-color-gray-light;
       border-width: 0 0 1px;
       color: $hx-table-head;
-
       text-transform: uppercase;
       font-size: $hx-font-size-sm;
 
-      .hx-icon {
+      .#{$namespace}-icon {
         font-size: 0.75rem;
         height: 0.75rem;
         width: 0.75rem;
@@ -47,9 +46,9 @@
         }
       }
     }
-    > tr > th > .hx-checkbox-control {
+    > tr > th > .#{$namespace}-checkbox-control {
       margin-bottom: -3px !important;
-      > .hx-checkbox + label {
+      > .#{$namespace}-checkbox + label {
         padding-top: 5px !important;
         font-weight: $hx-font-weight-boldest !important;
         text-transform: uppercase;
@@ -89,13 +88,13 @@
     }
   }
 
-  > tbody:not(.hx-table-group) > tr > td,
-  > tbody:not(.hx-table-group) > tr > th {
+  > tbody:not(.#{$namespace}-table-group) > tr > td,
+  > tbody:not(.#{$namespace}-table-group) > tr > th {
     border-bottom: 1px solid $hx-table-border;
   }
 
-  > tbody:not(.hx-table-group) > tr > td,
-  > tbody:not(.hx-table-group) > tr > th,
+  > tbody:not(.#{$namespace}-table-group) > tr > td,
+  > tbody:not(.#{$namespace}-table-group) > tr > th,
   > thead > tr > th {
     padding: 0.9em 0.75em;
     font-weight: $hx-font-weight-bolder;
@@ -114,9 +113,9 @@
   > tbody > tr > td,
   > tbody > tr > th,
   > thead > tr > th {
-    .hx-checkbox-control {
+    .#{$namespace}-checkbox-control {
       margin: 0;
-      .hx-checkbox + .hx-label {
+      .#{$namespace}-checkbox + .#{$namespace}-label {
         padding-top: 2px;
         display: initial;
         font-weight: $hx-font-weight-normal;
@@ -125,13 +124,13 @@
   }
 
   > thead > tr > th {
-    .hx-checkbox-control {
+    .#{$namespace}-checkbox-control {
       margin-left: 0.18rem;
     }
   }
 
   // Always striped
-  > tbody:not(.hx-table-group) {
+  > tbody:not(.#{$namespace}-table-group) {
     > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
       &:nth-child(even) {
         > th,
@@ -143,8 +142,8 @@
   }
 
   // Groups
-  > tbody.hx-table-group > tr > td,
-  > tbody.hx-table-group > tr > th {
+  > tbody.#{$namespace}-table-group > tr > td,
+  > tbody.#{$namespace}-table-group > tr > th {
     // @include transition.all(0.3s);
     font-weight: $hx-font-weight-bold;
     background-color: #fff;
@@ -166,19 +165,19 @@
   }
 
   &.is-narrow {
-    > tbody.hx-table-group > tr > th {
+    > tbody.#{$namespace}-table-group > tr > th {
       padding: 0.6rem 0.5em;
     }
-    > thead > tr > th .hx-checkbox-control {
+    > thead > tr > th .#{$namespace}-checkbox-control {
       margin-left: 0.09rem;
     }
   }
 
-  > tbody.hx-table-group {
+  > tbody.#{$namespace}-table-group {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03), 0 4px 8px 0 rgba(0, 0, 0, 0.03);
   }
 
-  > thead + tbody.hx-table-group {
+  > thead + tbody.#{$namespace}-table-group {
     > tr > td,
     > tr > th {
       border-top: transparent;
@@ -191,7 +190,7 @@
   }
 
   > tbody > tr > td {
-    button.hx-button .hx-icon {
+    button.#{$namespace}-button .#{$namespace}-icon {
       color: $hx-color-black;
     }
   }
@@ -203,7 +202,7 @@
   }
 
   > thead > tr,
-  > tbody:not(.hx-table-group) > tr {
+  > tbody:not(.#{$namespace}-table-group) > tr {
     &.is-selected,
     &.is-selected:hover {
       > th,
@@ -212,14 +211,14 @@
       }
       > th,
       > td,
-      > th a:not(.hx-dropdown-item),
-      > td a:not(.hx-dropdown-item) {
+      > th a:not(.#{$namespace}-dropdown-item),
+      > td a:not(.#{$namespace}-dropdown-item) {
       }
     }
   }
 
   > thead > tr,
-  > tbody:not(.hx-table-group) > tr {
+  > tbody:not(.#{$namespace}-table-group) > tr {
     &.is-focused:not(.is-selected),
     &.is-focused:hover {
       > th,
@@ -228,8 +227,8 @@
       }
       > th,
       > td,
-      > th a:not(.hx-dropdown-item),
-      > td a:not(.hx-dropdown-item) {
+      > th a:not(.#{$namespace}-dropdown-item),
+      > td a:not(.#{$namespace}-dropdown-item) {
       }
     }
   }
@@ -311,7 +310,7 @@
   }
 
   &.is-hover {
-    > tbody:not(.hx-table-group) {
+    > tbody:not(.#{$namespace}-table-group) {
       > tr:not(.is-selected) {
         &:hover {
           > td {
@@ -342,7 +341,7 @@
       > th {
         color: $hx-color-warning;
         > div,
-        > span:not(.hx-badge) {
+        > span:not(.#{$namespace}-badge) {
           color: $hx-color-warning;
         }
       }
@@ -355,7 +354,7 @@
       > th {
         color: $hx-color-caution;
         > div,
-        > span:not(.hx-badge) {
+        > span:not(.#{$namespace}-badge) {
           color: $hx-color-caution;
         }
       }
@@ -516,7 +515,7 @@
         background-color: #fff;
       }
 
-      > tbody:not(.hx-table-group) {
+      > tbody:not(.#{$namespace}-table-group) {
         > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
           &:nth-child(even) {
             > th,
@@ -562,7 +561,7 @@
       }
 
       &.is-hover {
-        > tbody:not(.hx-table-group) {
+        > tbody:not(.#{$namespace}-table-group) {
           > tr:not(.is-selected) {
             &:hover {
               > td {
@@ -580,7 +579,7 @@
         background-color: #f6f6f9;
       }
 
-      > tbody:not(.hx-table-group) {
+      > tbody:not(.#{$namespace}-table-group) {
         > tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):not(.is-caution) {
           &:nth-child(even) {
             > th,
@@ -626,7 +625,7 @@
       }
 
       &.is-hover {
-        > tbody:not(.hx-table-group) {
+        > tbody:not(.#{$namespace}-table-group) {
           > tr:not(.is-selected) {
             &:hover {
               > td {

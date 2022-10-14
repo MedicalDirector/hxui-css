@@ -34,8 +34,8 @@
         :code="ex.code"
         :example="ex.code"
         :visible="false"
-        :background="ex.bg"
-        :withContent="ex.withContent"
+        :className="ex.className"
+        :styleName="ex.styleName"
       ></expanding-code-example>
     </div>
 
@@ -211,95 +211,89 @@ export default {
       examples: [
         {
           title: 'Default',
-          withContent: false,
-          code: `<section class="hx-card__content" style="background-color: rgba(0, 0, 0, 0.5);">
+          styleName: 'background-color: rgba(0, 0, 0, 0.5);',
+          code: `<!-- ignore style overrides -->
+<!-- add class 'sm' for small width and 'lg' for large width -->
+<dialog class="hx-dialog" open style="position: relative;">
+  <header class="hx-dialog__header">
+    <div class="hx-bar dialog">
+      <h1 class="h2">Title</h1>
 
-  <!-- ignore style overrides -->
-  <!-- add class 'sm' for small width and 'lg' for large width -->
-  <dialog class="hx-dialog" open style="position: relative;">
-    <header class="hx-dialog__header">
-      <div class="hx-bar dialog">
-        <h1 class="h2">Title</h1>
+      <button class="hx-button flat">
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+          <span class="sr-only">Close</span>
+        </span>
+      </button>
+    </div>
+  </header>
 
-        <button class="hx-button flat">
-          <span class="hx-icon-container">
-            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
-            <span class="sr-only">Close</span>
-          </span>
-        </button>
-      </div>
-    </header>
+  <section class="hx-dialog__content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+      accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
+      nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+      odio, sollicitudin vel erat vel, interdum mattis neque.
+    </p>
+  </section>
 
-    <section class="hx-dialog__content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-        accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
-        nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
-        odio, sollicitudin vel erat vel, interdum mattis neque.
-      </p>
-    </section>
-
-    <footer class="hx-dialog__footer">
-      <div class="hx-bar footer">
-        <button class="hx-button">
-          <span>Cancel</span>
-        </button>
-        <button class="hx-button primary">
-          <span>Save changes</span>
-        </button>
-      </div>
-    </footer>
-  </dialog>
-</section>`,
+  <footer class="hx-dialog__footer">
+    <div class="hx-bar footer">
+      <button class="hx-button">
+        <span>Cancel</span>
+      </button>
+      <button class="hx-button primary">
+        <span>Save changes</span>
+      </button>
+    </div>
+  </footer>
+</dialog>`,
         },
         {
           title: 'Side (anchored)',
-          withContent: false,
-          code: `<section class="hx-card__content" style="background-color: rgba(0, 0, 0, 0.5);">
+          styleName: 'background-color: rgba(0, 0, 0, 0.5);',
+          code: `<!-- ignore style overrides -->
+<dialog class="hx-dialog side" open style="position: relative;">
+  <header class="hx-dialog__header">
+    <div class="hx-bar dialog">
+      <h1 class="h2">Notes</h1>
 
-  <!-- ignore style overrides -->
-  <dialog class="hx-dialog side" open style="position: relative;">
-    <header class="hx-dialog__header">
-      <div class="hx-bar dialog">
-        <h1 class="h2">Notes</h1>
+      <button class="hx-button flat">
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+          <span class="sr-only">Close</span>
+        </span>
+      </button>
+    </div>
+    <div class="hx-bar sub">
+      <button class="hx-button primary">
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
+        </span>
+        <span>New</span>
+      </button>
 
-        <button class="hx-button flat">
-          <span class="hx-icon-container">
-            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
-            <span class="sr-only">Close</span>
-          </span>
-        </button>
-      </div>
-      <div class="hx-toolbar next">
-        <button class="hx-button primary">
-          <span class="hx-icon-container">
-            <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
-          </span>
-          <span>New</span>
-        </button>
+      <div class="hx-divider mx-1"></div>
 
-        <div class="hx-divider mx-1"></div>
+      <dl>
+        <dt class="sr-only">Count</dt>
+        <dd>
+          <span class="b1 fg-info font-medium">2</span>
+          <span class="b1"> items</span>
+        </dd>
+      </dl>
 
-        <dl>
-          <dt class="sr-only">Count</dt>
-          <dd>
-            <span class="b1 fg-info font-medium">2</span>
-            <span class="b1"> items</span>
-          </dd>
-        </dl>
+      <div class="hx-spacer"></div>
 
-        <div class="hx-spacer"></div>
-
-        <button class="hx-button">
-          <span>All</span>
-          <span class="hx-icon-container">
-            <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </div>
-    </header>
-  </dialog>
-</section>`,
+      <button class="hx-button">
+        <span>All</span>
+        <span class="hx-icon-container">
+          <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
+        </span>
+      </button>
+    </div>
+  </header>
+</dialog>`,
         },
       ],
     }

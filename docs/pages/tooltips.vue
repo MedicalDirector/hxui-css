@@ -21,7 +21,7 @@
         :example="ex.code"
         :visible="false"
         :withContent="ex.withContent"
-        :background="ex.bg"
+        :className="ex.bg"
       ></expanding-code-example>
     </div>
   </article>

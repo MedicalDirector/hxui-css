@@ -35,13 +35,15 @@
       class="hx-card__content"
       v-if="!!withContent"
       v-html="example"
-      :class="background"
+      :class="className"
+      :style="styleName"
     ></section>
     <section
       class="contents"
       v-if="!withContent"
       v-html="example"
-      :class="background"
+      :class="className"
+      :style="styleName"
     ></section>
   </section>
 </template>
@@ -52,7 +54,8 @@ export default {
     title: { default: 'Example title', type: String },
     code: { default: '<h1>Code here</h1>', type: String },
     example: { default: 'Example goes here', type: String },
-    background: { default: '', type: String },
+    className: { default: '', type: String },
+    styleName: { default: '', type: String },
     visible: { default: false, type: Boolean },
     withContent: { default: true, type: Boolean },
   },

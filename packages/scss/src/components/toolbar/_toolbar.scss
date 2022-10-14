@@ -93,23 +93,39 @@
   &.solid-b {
     border-bottom: 1px solid $hx-border-color;
   }
+
+  .#{$namespace}-bar__title,
+  .#{$namespace}-bar__actions {
+    display: flex;
+    align-items: center;
+    gap: spacing.px(2);
+    flex-flow: row nowrap;
+  }
 }
 
 :where(.#{$namespace}-bar).app {
   justify-content: space-between;
-  padding: size.rem(11) spacing.px(4) size.rem(11) spacing.px(6);
+  padding: size.rem(11) spacing.px(4);
   background-color: var(--color-surface-neutral-default);
-  border-bottom: 1px solid $hx-border-color;
   gap: spacing.px(2);
 
+  &.comfortable {
+    padding: size.rem(11) spacing.px(4) size.rem(11) spacing.px(6);
+  }
+
+  &:not(:has(+ .#{$namespace}-bar.sub)) {
+    border-bottom: 1px solid $hx-border-color;
+  }
+
   :where(h1, h2, h3, h4, h5, h6) {
-    font: var(--h1);
+    font: var(--h2);
   }
 }
 
 :where(.#{$namespace}-bar).sub,
 .#{$namespace}-toolbar.next {
   gap: spacing.px(2);
+  background-color: var(--color-surface-neutral-default);
 
   ///////////
   // SIZES //

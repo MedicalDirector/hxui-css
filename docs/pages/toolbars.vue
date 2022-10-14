@@ -63,7 +63,7 @@ export default {
           title: 'Examples',
           withContent: false,
           code: `<div class="hx-card__content grid gap-4">
-  <div class="hx-toolbar next perforated-b">
+  <div class="hx-bar sub perforated-b">
     <button class="hx-button">
       <span class="hx-icon-container">
         <i class="hx-icon icon-send" aria-hidden="true"></i>
@@ -97,7 +97,7 @@ export default {
     </button>
   </div>
     
-  <div class="hx-toolbar next perforated-b">
+  <div class="hx-bar sub perforated-b">
     <div>
       <span class="is-info font-medium">4</span>
       <span> items in the address book</span>
@@ -139,7 +139,7 @@ export default {
     </button>
   </div>
     
-  <div class="hx-toolbar next perforated-b">
+  <div class="hx-bar sub perforated-b">
     <button class="hx-button">
       <span class="hx-icon-container">
         <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
@@ -200,7 +200,7 @@ export default {
           title: 'Sizes',
           code: `<p>Toolbar supports 3 sizes.</p>
 <p class="hx-prose">(default)</p>
-<div class="hx-toolbar next bg-info-emphasis fg-contrast">
+<div class="hx-bar sub bg-info-emphasis fg-contrast">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
@@ -211,7 +211,7 @@ export default {
 </div>
 
 <p class="hx-prose"><code>.compact</code></p>
-<div class="hx-toolbar next bg-info-emphasis fg-contrast compact mt-2">
+<div class="hx-bar sub bg-info-emphasis fg-contrast compact mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
@@ -222,7 +222,7 @@ export default {
 </div>
 
 <p class="hx-prose"><code>.comfortable</code></p>
-<div class="hx-toolbar next bg-info-emphasis fg-contrast comfortable mt-2">
+<div class="hx-bar sub bg-info-emphasis fg-contrast comfortable mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">

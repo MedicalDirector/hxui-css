@@ -5,6 +5,11 @@
 @use "../variables" as *;
 @use "../mixins/shadow" as *;
 
+.#{$namespace}-panel__header {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .#{$namespace}-panel-header {
   padding: 1rem;
   background-color: $hx-color-white;

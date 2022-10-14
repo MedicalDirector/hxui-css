@@ -22,6 +22,12 @@
   // height: 1.5rem;
 }
 
+@mixin icon-lg {
+  font-size: size.rem(32); // TODO: unhard
+  // width: 1.5rem;
+  // height: 1.5rem;
+}
+
 /// @usage nested inside .hx-button
 /// lower specificity than
 ///
@@ -163,6 +169,10 @@
 
   @include msize.md {
     @include icon-md;
+  }
+
+  @include msize.lg {
+    @include icon-lg;
   }
 }
 
