@@ -97,6 +97,10 @@
 
 :where(.#{$namespace}-bar).app {
   justify-content: space-between;
+  padding: size.rem(11) spacing.px(4) size.rem(11) spacing.px(6);
+  background-color: var(--color-surface-neutral-default);
+  border-bottom: 1px solid $hx-border-color;
+  gap: spacing.px(2);
 
   :where(h1, h2, h3, h4, h5, h6) {
     font: var(--h1);

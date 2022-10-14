@@ -74,14 +74,14 @@ export default {
   <p class="hx-prose"><code>.success</code> (default)</p>
   <div class="hx-alert" role="alert">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-check"></i>
+      <i class="hx-icon icon-check" aria-hidden="true"></i>
     </span>
     <span>
       This is a success alert
     </span>
     <button class="hx-button success flat">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -89,14 +89,14 @@ export default {
   <p class="hx-prose"><code>.warning</code></p>
   <div class="hx-alert warning" role="alert">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-exclamation"></i>
+      <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
     </span>
     <span>
       This is a warning alert
     </span>
     <button class="hx-button warning flat">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -104,14 +104,14 @@ export default {
   <p class="hx-prose"><code>.danger</code></p>
   <div class="hx-alert danger" role="alert">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-exclamation"></i>
+      <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
     </span>
     <span>
       This is a danger alert
     </span>
     <button class="hx-button danger flat">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -119,14 +119,14 @@ export default {
   <p class="hx-prose"><code>.info</code></p>
   <div class="hx-alert info" role="alert">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-information"></i>
+      <i class="hx-icon icon-information" aria-hidden="true"></i>
     </span>
     <span>
       This is the default alert
     </span>
     <button class="hx-button info flat">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -142,14 +142,14 @@ export default {
   
   <div class="hx-alert compact" role="alert">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-check"></i>
+      <i class="hx-icon icon-check" aria-hidden="true"></i>
     </span>
     <span>
       This is the default alert
     </span>
     <button class="hx-button info flat">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
     </button>
   </div>

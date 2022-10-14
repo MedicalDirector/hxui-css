@@ -484,7 +484,7 @@ export default {
           code: `
   <div class="hx-alert info" role="alert">
     <span class="hx-icon-container mr-2">
-      <i class="hx-icon is-medium icon-information"></i>
+      <i class="hx-icon is-medium icon-information" aria-hidden="true"></i>
     </span>
     <span class="hx-flex-1">
       Resize your browser and see when the columns are stacked and when they are horizontally distributed.
@@ -547,7 +547,7 @@ export default {
           code: `
   <div class="hx-alert info" role="alert">
     <span class="hx-icon-container mr-2">
-      <i class="hx-icon is-medium icon-information"></i>
+      <i class="hx-icon is-medium icon-information" aria-hidden="true"></i>
     </span>
     <span class="hx-flex-1">
       Resize your browser and see when the columns are stacked and when they are horizontally distributed.

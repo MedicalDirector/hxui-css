@@ -13,13 +13,13 @@
     <div class="hx-flex justify-center gap-4 mb-8 laptop:mb-12">
       <a class="hero-pill" href="#contents">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-html-css"></i>
+          <i class="hx-icon icon-html-css" aria-hidden="true"></i>
         </span>
         <span>HTML & CSS</span>
       </a>
       <a class="hero-pill" href="https://angular.hxui.io">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-angular"></i>
+          <i class="hx-icon icon-angular" aria-hidden="true"></i>
         </span>
         <span>Angular</span>
       </a>

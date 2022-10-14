@@ -15,7 +15,7 @@
     <!-- 
     <div class="hx-alert info" role="alert">
       <span class="hx-icon-container mr-2">
-        <i class="hx-icon is-medium icon-information"></i>
+        <i class="hx-icon is-medium icon-information" aria-hidden="true"></i>
       </span>
       <span class="grow-1">
         Unlike the grid system it does not have any padding, margins and does
@@ -27,7 +27,7 @@
 
     <div class="hx-alert" role="alert">
       <span class="hx-icon-container mr-2">
-        <i class="hx-icon is-medium icon-information"></i>
+        <i class="hx-icon is-medium icon-information" aria-hidden="true"></i>
       </span>
       <span class="grow-1">
         This abstraction utility supports most of the flexbox properties. <br />

@@ -118,6 +118,12 @@
 }
 
 :where(.#{$namespace}-icon-container) .#{$namespace}-icon {
+  // harsh but icons alone are decorative and otherwise degrade
+  // experience for those relying on screen readers
+  &:not(:where([aria-hidden="true"])) {
+    display: none;
+  }
+
   display: inline-flex;
   justify-content: center;
   align-items: center;

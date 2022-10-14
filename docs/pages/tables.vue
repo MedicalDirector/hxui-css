@@ -279,27 +279,27 @@ export default {
   <tbody>
     <tr class="is-danger">
       <td>Danger</td>
-      <td><i class="hx-icon icon-exclamation"></i></td>
+      <td><i class="hx-icon icon-exclamation" aria-hidden="true"></i></td>
     </tr>
     <tr class="is-caution">
       <td>Caution</td>
-      <td><i class="hx-icon icon-exclamation-outline"></i></td>
+      <td><i class="hx-icon icon-exclamation-outline" aria-hidden="true"></i></td>
     </tr>
     <tr class="is-warning">
       <td>Warning</td>
-      <td><i class="hx-icon icon-exclamation-outline"></i></td>
+      <td><i class="hx-icon icon-exclamation-outline" aria-hidden="true"></i></td>
     </tr>
     <tr class="is-success">
       <td>Success</td>
-      <td><i class="hx-icon icon-check"></i></td>
+      <td><i class="hx-icon icon-check" aria-hidden="true"></i></td>
     </tr>
     <tr class="is-info">
       <td>Info</td>
-      <td><i class="hx-icon icon-information"></i></td>
+      <td><i class="hx-icon icon-information" aria-hidden="true"></i></td>
     </tr>
     <tr>
       <td>Default</td>
-      <td><i class="hx-icon icon-information-outline"></i></td>
+      <td><i class="hx-icon icon-information-outline" aria-hidden="true"></i></td>
     </tr>
   </tbody>
 </table>`,
@@ -319,27 +319,27 @@ export default {
   <tbody>
     <tr class="has-stripe-danger">
       <td>Danger</td>
-      <td><i class="hx-icon icon-exclamation"></i></td>
+      <td><i class="hx-icon icon-exclamation" aria-hidden="true"></i></td>
     </tr>
     <tr class="has-stripe-caution">
       <td>Caution</td>
-      <td><i class="hx-icon icon-exclamation-outline"></i></td>
+      <td><i class="hx-icon icon-exclamation-outline" aria-hidden="true"></i></td>
     </tr>
     <tr class="has-stripe-warning">
       <td>Warning</td>
-      <td><i class="hx-icon icon-exclamation-outline"></i></td>
+      <td><i class="hx-icon icon-exclamation-outline" aria-hidden="true"></i></td>
     </tr>
     <tr class="has-stripe-success">
       <td>Success</td>
-      <td><i class="hx-icon icon-check"></i></td>
+      <td><i class="hx-icon icon-check" aria-hidden="true"></i></td>
     </tr>
     <tr class="has-stripe-info">
       <td>Info</td>
-      <td><i class="hx-icon icon-information"></i></td>
+      <td><i class="hx-icon icon-information" aria-hidden="true"></i></td>
     </tr>
     <tr>
       <td>Default</td>
-      <td><i class="hx-icon icon-information-outline"></i></td>
+      <td><i class="hx-icon icon-information-outline" aria-hidden="true"></i></td>
     </tr>
   </tbody>
 </table>`,
@@ -350,7 +350,12 @@ export default {
   <thead>
     <tr>
       <th>Dessert (100g)</th>
-      <th class="has-text-right"><a href="#"><i class="hx-icon icon-arrow-down"></i> Calories</a></th>
+      <th class="has-text-right">
+        <a href="#">
+          <i class="hx-icon icon-arrow-down" aria-hidden="true"></i>
+          Calories
+        </a>
+      </th>
       <th class="has-text-right">Fat (g)</th>
       <th class="has-text-right">Carbs (g)</th>
       <th class="has-text-right">Protein (g)</th>
@@ -389,7 +394,7 @@ export default {
     <tr>
       <td colspan="6">
         <a href="#" class="is-gray is-flex hx-flex-align-center">
-          <i class="hx-icon icon-plus-outline mr-2"></i>
+          <i class="hx-icon icon-plus-outline mr-2" aria-hidden="true"></i>
           Add new row
         </a>
       </td>
@@ -402,7 +407,12 @@ export default {
   <thead>
     <tr>
       <th>Dessert (100g)</th>
-      <th class="has-text-right"><a href="#"><i class="hx-icon icon-arrow-down"></i> Calories</a></th>
+      <th class="has-text-right">
+        <a href="#">
+          <i class="hx-icon icon-arrow-down" aria-hidden="true"></i> 
+          Calories
+        </a>
+      </th>
       <th class="has-text-right">Fat (g)</th>
       <th class="has-text-right">Carbs (g)</th>
       <th class="has-text-right">Protein (g)</th>
@@ -441,7 +451,7 @@ export default {
     <tr>
       <td colspan="6">
         <a href="#" class="is-gray is-flex hx-flex-align-center">
-          <i class="hx-icon icon-plus-outline mr-2"></i>
+          <i class="hx-icon icon-plus-outline mr-2" aria-hidden="true"></i>
           Add new row
         </a>
       </td>
@@ -457,11 +467,15 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-send" aria-hidden="true"></i>
+    </div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
+    </div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -493,11 +507,14 @@ export default {
             <span>Batch 1</span>
             <small class="ml-3">Mr Kun Aguero</small>
             <div class="hx-spacer"></div>
-            <small class="hx-flex hx-flex-align-center is-warning"><i class="hx-icon icon-exclamation"> </i> Check item no 3287 for......</small>
+            <small class="hx-flex hx-flex-align-center is-warning">
+              <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
+              Check item no 3287 for......
+            </small>
 
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 04/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
           </div>
         </div>
       </th>
@@ -516,8 +533,16 @@ export default {
       <td>Shakur</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
         </div>
       </td>
     </tr>
@@ -533,8 +558,16 @@ export default {
       <td>Pulliese</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
+            </span>
+          </button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
+            </span>
+          </button>
         </div>
       </td>
     </tr>
@@ -552,12 +585,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat ">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -577,7 +610,7 @@ export default {
             <small class="ml-3">Mr Leonel Messi</small>
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 05/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
           </div>
         </div>
       </th>
@@ -598,12 +631,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -622,12 +655,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -647,12 +680,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -671,12 +704,12 @@ export default {
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-edit"></i>
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-bin"></i>
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
           </span>
         </button>
       </div>
@@ -694,12 +727,12 @@ export default {
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-edit"></i>
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-bin"></i>
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
           </span>
         </button>
       </div>
@@ -719,11 +752,14 @@ export default {
             <small class="ml-3">Ms Kim Yeonkiong</small>
             <div class="hx-spacer"></div>
 
-            <small class="hx-flex hx-flex-align-center "><i class="hx-icon icon-exclamation"> </i>Medicare error no 7896...</small>
+            <small class="hx-flex hx-flex-align-center">
+              <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
+              Medicare error no 7896...
+            </small>
 
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 06/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
           </div>
         </div>
       </th>
@@ -744,12 +780,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -769,12 +805,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -794,12 +830,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat is-danger">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -816,11 +852,15 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-send" aria-hidden="true"></i>
+    </div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
+    </div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -853,7 +893,7 @@ export default {
             <small class="ml-3">Mr Kun Aguero</small>
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 04/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
           </div>
         </div>
       </th>
@@ -873,12 +913,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -904,12 +944,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -934,12 +974,12 @@ export default {
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-edit"></i>
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-bin"></i>
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
           </span>
         </button>
       </div>
@@ -965,7 +1005,7 @@ export default {
             <small class="ml-3">Mr Leonel Messi</small>
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 05/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
           </div>
         </div>
       </th>
@@ -990,8 +1030,16 @@ export default {
       <td>Reed</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
+            </span>
+          </button>
+          <button type="button" class="hx-button is-flat">
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
+            </span>
+          </button>
         </div>
       </td>
     </tr>
@@ -1016,12 +1064,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -1046,12 +1094,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -1076,12 +1124,12 @@ export default {
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-edit"></i>
+              <i class="hx-icon icon-edit" aria-hidden="true"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-bin"></i>
+              <i class="hx-icon icon-bin" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -1098,8 +1146,16 @@ export default {
       <td>Liang</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button type="button" class="hx-button flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
       </td>
     </tr>
@@ -1117,10 +1173,13 @@ export default {
             <span>Batch 3</span>
             <small class="ml-3">Ms Kim Yeonkiong</small>
               <div class="hx-spacer"></div>
-            <small class="hx-flex hx-flex-align-center is-danger"><i class="hx-icon icon-exclamation"> </i> Check item no 3287 for......</small>
+            <small class="hx-flex hx-flex-align-center is-danger">
+              <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
+              Check item no 3287 for......
+            </small>
             <div class="hx-spacer"></div>
             <small class="mr-3"><b>Batch Date:</b> 06/02/18</small>
-            <span class="hx-icon icon-angle-down"></span>
+            <span class="hx-icon icon-angle-down" aria-hidden="true"></span>
         </div>
       </div>
       </th>
@@ -1137,8 +1196,16 @@ export default {
       <td>Smalls</td>
       <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button type="button" class="hx-button is-flat ">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
       </td>
     </tr>
@@ -1152,8 +1219,16 @@ export default {
       <td>Sampson</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button type="button" class="hx-button is-flat ">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
       </td>
     </tr>
@@ -1167,8 +1242,16 @@ export default {
       <td>Pipps</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-edit" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button type="button" class="hx-button is-flat ">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-bin" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
       </td>
     </tr>
@@ -1190,11 +1273,15 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-send" aria-hidden="true"></i>
+    </div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container">
+      <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
+    </div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -1229,8 +1316,16 @@ export default {
           <td>Shakur</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1244,8 +1339,16 @@ export default {
           <td>Pulliese</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1259,8 +1362,16 @@ export default {
           <td>Smith</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1274,8 +1385,16 @@ export default {
           <td>Reed</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1289,8 +1408,16 @@ export default {
           <td>Mendez</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1304,8 +1431,16 @@ export default {
           <td>Sechi</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1319,8 +1454,16 @@ export default {
           <td>Yap</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1334,8 +1477,16 @@ export default {
           <td>Liang</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1349,8 +1500,16 @@ export default {
           <td>Smalls</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1364,8 +1523,16 @@ export default {
           <td>Sampson</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat ">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>
@@ -1379,8 +1546,16 @@ export default {
           <td>Pipps</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-edit" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button type="button" class="hx-button is-flat is-danger">
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
           </div>
           </td>
         </tr>

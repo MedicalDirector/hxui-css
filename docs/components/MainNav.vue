@@ -5,7 +5,7 @@
   >
     <router-link class="hx-nav-brand phablet:pb-4" :to="{ path: '/' }">
       <span class="hx-icon-container">
-        <svg class="hxui-logo">
+        <svg class="hxui-logo" aria-hidden="true">
           <use xlink:href="~/assets/images/hxui.svg#hxui"></use>
         </svg>
       </span>
@@ -24,7 +24,7 @@
           }"
         >
           <span class="hx-icon-container">
-            <i class="hx-icon" :class="item.icon"></i>
+            <i class="hx-icon" :class="item.icon" aria-hidden="true"></i>
           </span>
           <span>{{ item.name }}</span>
         </router-link>
@@ -38,7 +38,7 @@
           }"
         >
           <span class="hx-icon-container">
-            <i class="hx-icon" :class="item.icon"></i>
+            <i class="hx-icon" :class="item.icon" aria-hidden="true"></i>
           </span>
           <span>{{ item.name }}</span>
         </a>
@@ -56,7 +56,7 @@
           rel="noopener noreferrer"
         >
           <span class="hx-icon-container">
-            <i class="hx-icon icon-chat-bubble"></i>
+            <i class="hx-icon icon-chat-bubble" aria-hidden="true"></i>
           </span>
           <span>Feedback</span>
         </a>
@@ -71,6 +71,7 @@
                 'icon-angle-right': isMini,
                 'icon-angle-left': !isMini,
               }"
+              aria-hidden="true"
             ></i>
           </span>
           <span v-if="isMini">Expand</span>

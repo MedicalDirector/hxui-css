@@ -46,7 +46,7 @@ export default {
           <h3 class="h4">Booked</h3>
           <button class="hx-button sm">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-angle-up"></i>
+              <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -73,7 +73,7 @@ export default {
           <h3 class="h4">Confirmed</h3>
           <button class="hx-button sm">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-angle-up"></i>
+              <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -92,7 +92,7 @@ export default {
           <h3 class="h4">Checked in</h3>
           <button class="hx-button sm">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-angle-up"></i>
+              <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -111,7 +111,7 @@ export default {
           <h3 class="h4">Waiting</h3>
           <button class="hx-button sm">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-angle-up"></i>
+              <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -152,7 +152,7 @@ export default {
                   <h3 class="h4">Booked</h3>
                   <button class="hx-button sm">
                     <span class="hx-icon-container">
-                      <i class="hx-icon icon-angle-up"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
@@ -179,7 +179,7 @@ export default {
                   <h3 class="h4">Confirmed</h3>
                   <button class="hx-button sm">
                     <span class="hx-icon-container">
-                      <i class="hx-icon icon-angle-up"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
@@ -198,7 +198,7 @@ export default {
                   <h3 class="h4">Checked in</h3>
                   <button class="hx-button sm">
                     <span class="hx-icon-container">
-                      <i class="hx-icon icon-angle-up"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
@@ -217,7 +217,7 @@ export default {
                   <h3 class="h4">Waiting</h3>
                   <button class="hx-button sm">
                     <span class="hx-icon-container">
-                      <i class="hx-icon icon-angle-up"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
@@ -235,13 +235,13 @@ export default {
         </div>
         
         <span class="hx-icon-container">
-          <i class="hx-icon icon-angle-right"></i>
+          <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
         </span>
 
         <button class="hx-button primary">
           <span>Add to queue</span>
           <span class="hx-icon-container">
-            <i class="icon icon-angle-down"></i>
+            <i class="icon icon-angle-down" aria-hidden="true"></i>
           </span>
         </a>
       </div>
@@ -262,11 +262,13 @@ export default {
       </ul>
     </div>
     <span class="hx-icon-container">
-      <i class="hx-icon icon-angle-right"></i>
+      <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
     </button>
   </div>
 
@@ -279,11 +281,13 @@ export default {
       </ul>
     </div>
     <span class="hx-icon-container">
-      <i class="hx-icon icon-angle-right"></i>
+      <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
     </button>
   </div>
 
@@ -296,11 +300,13 @@ export default {
       </ul>
     </div>
     <span class="hx-icon-container">
-      <i class="hx-icon icon-angle-right"></i>
+      <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
     </button>
   </div>
 </div>`,

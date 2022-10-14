@@ -21,7 +21,6 @@
           <div class="inline-flex grow-1"></div>
           <span class="hx-icon-container">
             <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
-            <span class="sr-only">Navigate</span>
           </span>
         </router-link>
         <a

@@ -106,7 +106,7 @@ export default {
       <div class="hx-stepper-header">
         <div class="hx-stepper-step is-complete">
           <span class="hx-stepper-step-step">
-            <i class="hx-icon icon-check-empty"></i>
+            <i class="hx-icon icon-check-empty" aria-hidden="true"></i>
           </span>
           <div class="hx-stepper-step-label">Name of step 1</div>
         </div>
@@ -131,7 +131,7 @@ export default {
       <div class="hx-stepper-header">
         <div class="hx-stepper-step is-editable is-complete">
           <span class="hx-stepper-step-step">
-            <i class="hx-icon icon-check-empty"></i>
+            <i class="hx-icon icon-check-empty" aria-hidden="true"></i>
           </span>
           <div class="hx-stepper-step-label">Name of step 1</div>
         </div>
@@ -156,14 +156,14 @@ export default {
       <div class="hx-stepper-header">
         <div class="hx-stepper-step is-editable is-complete">
           <span class="hx-stepper-step-step">
-            <i class="hx-icon icon-check-empty"></i>
+            <i class="hx-icon icon-check-empty" aria-hidden="true"></i>
           </span>
           <div class="hx-stepper-step-label">Name of step 1</div>
         </div>
         <hr class="divider" />
         <div class="hx-stepper-step has-error">
           <span class="hx-stepper-step-step">
-            <i class="hx-icon icon-exclamation"></i>
+            <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
           </span>
           <div class="hx-stepper-step-label">Name of step 2</div>
         </div>
@@ -214,7 +214,7 @@ export default {
       </div>
       <div class="hx-stepper-step has-error">
         <span class="hx-stepper-step-step">
-          <i class="hx-icon icon-exclamation"></i>
+          <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
         </span>
         <div class="hx-stepper-step-label">Name of step 2</div>
       </div>

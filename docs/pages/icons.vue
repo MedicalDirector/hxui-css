@@ -13,7 +13,7 @@
       <label class="hx-label sr-only">Search icons</label>
       <div class="hx-input-group contrast">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-search"></i>
+          <i class="hx-icon icon-search" aria-hidden="true"></i>
         </span>
         <input class="hx-input" type="text" required v-model="searchTerm" />
       </div>
@@ -30,7 +30,11 @@
         :key="icon.name"
       >
         <span class="hx-icon-container">
-          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+          <i
+            class="hx-icon"
+            :class="'icon-' + icon.name"
+            aria-hidden="true"
+          ></i>
         </span>
         <p class="b1" v-text="icon.name"></p>
       </div>
@@ -49,7 +53,11 @@
         :key="icon.name"
       >
         <span class="hx-icon-container">
-          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+          <i
+            class="hx-icon"
+            :class="'icon-' + icon.name"
+            aria-hidden="true"
+          ></i>
         </span>
         <p class="b1" v-text="icon.name"></p>
       </div>
@@ -68,7 +76,11 @@
         :key="icon.name"
       >
         <span class="hx-icon-container">
-          <i class="hx-icon" :class="'icon-' + icon.name"></i>
+          <i
+            class="hx-icon"
+            :class="'icon-' + icon.name"
+            aria-hidden="true"
+          ></i>
         </span>
         <p class="b1" v-text="icon.name"></p>
       </div>
@@ -114,7 +126,7 @@
         <tr>
           <td><code>hx-icon is-small</code></td>
           <td class="has-text-centered">
-            <i class="hx-icon icon-helix is-small"></i>
+            <i class="hx-icon icon-helix is-small" aria-hidden="true"></i>
           </td>
           <td>14px</td>
           <td>1rem x 1rem</td>
@@ -122,7 +134,7 @@
         <tr>
           <td><code>hx-icon</code></td>
           <td class="has-text-centered">
-            <i class="hx-icon icon-helix"></i>
+            <i class="hx-icon icon-helix" aria-hidden="true"></i>
           </td>
           <td>21px</td>
           <td>1.5rem x 1.5rem</td>
@@ -130,7 +142,7 @@
         <tr>
           <td><code>hx-icon is-medium</code></td>
           <td class="has-text-centered">
-            <i class="hx-icon icon-helix is-medium"></i>
+            <i class="hx-icon icon-helix is-medium" aria-hidden="true"></i>
           </td>
           <td>28px</td>
           <td>2rem x 2rem</td>
@@ -138,7 +150,7 @@
         <tr>
           <td><code>hx-icon is-large</code></td>
           <td class="has-text-centered">
-            <i class="hx-icon icon-helix is-large"></i>
+            <i class="hx-icon icon-helix is-large" aria-hidden="true"></i>
           </td>
           <td>42px</td>
           <td>3rem x 3rem</td>
@@ -427,9 +439,10 @@ export default {
           description: 'Container element',
         },
         {
-          class: 'hx-icon',
+          class: 'hx-icon[aria-hidden="true"]',
           type: 'component',
-          description: 'Icon element',
+          description:
+            'Icon element. Requires adding element attribute of aria-hidden="true".',
         },
         {
           class: 'icon-{name}',

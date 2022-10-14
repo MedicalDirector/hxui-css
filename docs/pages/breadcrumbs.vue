@@ -69,13 +69,13 @@ export default {
     <a href="#">Dashboard</a>
   </li>
   <li class="hx-breadcrumb-divider">
-    <i class="hx-icon icon-angle-right"></i>
+    <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
   </li>
   <li class="">
     <a href="#">Parent</a>
   </li>
   <li class="hx-breadcrumb-divider">
-    <i class="hx-icon icon-angle-right"></i>
+    <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
   </li>
   <li class=" is-disabled">
     <a href="#">Child page</a>
@@ -87,13 +87,13 @@ export default {
     <a href="#">Dashboard</a>
   </li>
   <li class="hx-breadcrumb-divider">
-    <i class="hx-icon icon-arrow-right"></i>
+    <i class="hx-icon icon-arrow-right" aria-hidden="true"></i>
   </li>
   <li class="">
     <a href="#">Parent</a>
   </li>
   <li class="hx-breadcrumb-divider">
-    <i class="hx-icon icon-arrow-right"></i>
+    <i class="hx-icon icon-arrow-right" aria-hidden="true"></i>
   </li>
   <li class=" is-disabled">
     <a href="#">Child page</a>

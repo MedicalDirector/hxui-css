@@ -75,12 +75,12 @@ export default {
 
     <div class="hx-toast success">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-check"></i>
+        <i class="hx-icon icon-check" aria-hidden="true"></i>
       </span>
       <span>Save successful</span>
       <button class="hx-button success flat">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-close-empty"></i>
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -91,12 +91,12 @@ export default {
 
     <div class="hx-toast danger">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-exclamation"></i>
+        <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
       </span>
       <span>Failed to send</span>
       <button class="hx-button danger flat">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-close-empty"></i>
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -107,12 +107,12 @@ export default {
 
     <div class="hx-toast warning">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-exclamation"></i>
+        <i class="hx-icon icon-exclamation" aria-hidden="true"></i>
       </span>
       <span>We're offline</span>
       <button class="hx-button warning flat">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-close-empty"></i>
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -122,12 +122,12 @@ export default {
     <p class="hx-prose"><code>.info</code></p>
     <div class="hx-toast info">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-information"></i>
+        <i class="hx-icon icon-information" aria-hidden="true"></i>
       </span>
       <span>For your information</span>
       <button class="hx-button info flat">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-close-empty"></i>
+          <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -150,12 +150,12 @@ export default {
       <div class="hx-toast-container bottom-left" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -171,12 +171,12 @@ export default {
       <div class="hx-toast-container bottom-middle" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -192,12 +192,12 @@ export default {
       <div class="hx-toast-container bottom-right" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -217,12 +217,12 @@ export default {
       <div class="hx-toast-container top-left" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -238,12 +238,12 @@ export default {
       <div class="hx-toast-container top-middle" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -259,20 +259,19 @@ export default {
       <div class="hx-toast-container top-right" style="position: absolute;">
         <div class="hx-toast">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-check"></i>
+            <i class="hx-icon icon-check" aria-hidden="true"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
             <span class="hx-icon-container">
-              <i class="hx-icon icon-close-empty"></i>
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             </span>
           </button>
         </div>
       </div>
     </div>
   </div>
-</div>
-`,
+</div>`,
         },
       ],
     }

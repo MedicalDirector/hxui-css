@@ -108,8 +108,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -130,8 +131,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -152,8 +154,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -174,8 +177,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -196,8 +200,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -218,8 +223,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -249,13 +255,15 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-more"></i>
+                <i class="hx-icon icon-more" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
           <div class="hx-list-item__secondary">
@@ -280,13 +288,15 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-more"></i>
+                <i class="hx-icon icon-more" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
           <div class="hx-list-item__secondary">
@@ -305,7 +315,7 @@ export default {
       <li>
         <button class="hx-list-item hx-button">
           <span class="hx-icon-container">
-            <i class="hx-icon icon-plus-empty"></i>
+            <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
           </span>
           <span>Add item</span>
         </button>
@@ -340,8 +350,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-more"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -362,8 +373,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+                <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -393,8 +405,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button sm flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-more"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>
@@ -415,8 +428,9 @@ export default {
           <div class="hx-list-item__end">
             <button class="hx-button sm flat">
               <span class="hx-icon-container">
-                <i class="hx-icon icon-bin"></i>
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
               </span>
+              <span class="sr-only">Delete</span>
             </button>
           </div>
         </div>

@@ -35,20 +35,26 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <a class="hx-button hx-panel-back is-flat is-small pl-1">
-              <i class="hx-icon icon-angle-left"></i>
+              <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
               <div class="hx-panel-back-text">Back</div>
             </a>
             <div class="hx-panel-header-row-actions">
               <a class="hx-button is-small">Action</a>
               <a class="hx-button is-small is-white px-1">
-                <i class="hx-icon is-medium icon-close-empty"></i>
+                <i
+                  class="hx-icon is-medium icon-close-empty"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </div>
           <div class="hx-panel-header-row">
             <div class="hx-flex-column">
               <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-prescription is-heading-icon"></i>
+                <i
+                  class="hx-icon icon-prescription is-heading-icon"
+                  aria-hidden="true"
+                ></i>
                 <div class="h2">Prescription</div>
               </div>
               <div class="hx-panel-header-subheading">
@@ -63,7 +69,10 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <div class="hx-panel-header-heading">
-              <i class="hx-icon icon-pathology-outline is-heading-icon"></i>
+              <i
+                class="hx-icon icon-pathology-outline is-heading-icon"
+                aria-hidden="true"
+              ></i>
               <div class="h2">Pathology Request</div>
             </div>
           </div>
@@ -74,18 +83,21 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <a class="hx-button hx-panel-back is-flat is-small pl-1">
-              <i class="hx-icon icon-angle-left"></i>
+              <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
               <div class="hx-panel-back-text">Letter Generator</div>
             </a>
             <div class="hx-panel-header-row-actions">
               <a class="hx-button is-small is-white px-1">
-                <i class="hx-icon icon-external-link"></i>
+                <i class="hx-icon icon-external-link" aria-hidden="true"></i>
               </a>
             </div>
           </div>
           <div class="hx-panel-header-row">
             <div class="hx-panel-header-heading">
-              <i class="hx-icon icon-file-outline is-heading-icon"></i>
+              <i
+                class="hx-icon icon-file-outline is-heading-icon"
+                aria-hidden="true"
+              ></i>
               <div class="h2">Blank Letter</div>
             </div>
           </div>
@@ -97,7 +109,10 @@
           <div class="hx-panel-header-row">
             <div class="hx-flex-column">
               <div class="hx-panel-header-heading">
-                <i class="hx-icon icon-woman is-heading-icon"></i>
+                <i
+                  class="hx-icon icon-woman is-heading-icon"
+                  aria-hidden="true"
+                ></i>
                 <div class="h2">Obstetrics</div>
               </div>
               <div class="hx-panel-header-subheading">No current pregnancy</div>
@@ -124,7 +139,10 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <div class="hx-panel-header-heading">
-              <i class="hx-icon icon-prescription is-heading-icon"></i>
+              <i
+                class="hx-icon icon-prescription is-heading-icon"
+                aria-hidden="true"
+              ></i>
               <div class="h2">Prescription</div>
             </div>
             <div class="hx-panel-header-row-actions">
@@ -135,7 +153,7 @@
           </div>
           <div class="hx-panel-header-row has-search hx-flex-column">
             <div class="hx-input-group">
-              <i class="hx-icon icon-search"></i>
+              <i class="hx-icon icon-search" aria-hidden="true"></i>
               <div class="hx-input-control">
                 <input class="hx-input" type="text" required="" />
                 <label class="hx-label"></label>
@@ -145,7 +163,10 @@
                 <div class="hx-button-group">
                   <button class="hx-button is-flat">
                     <span class="hx-icon-container"
-                      ><i class="icon icon-close-empty"></i
+                      ><i
+                        class="hx-icon icon-close-empty"
+                        aria-hidden="true"
+                      ></i
                     ></span>
                   </button>
                 </div>
@@ -159,7 +180,10 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <div class="hx-panel-header-heading">
-              <i class="hx-icon icon-injection is-heading-icon"></i>
+              <i
+                class="hx-icon icon-injection is-heading-icon"
+                aria-hidden="true"
+              ></i>
               <div class="h2">Immunisation</div>
             </div>
             <div class="hx-panel-header-row-actions">
@@ -171,7 +195,7 @@
           </div>
           <div class="hx-panel-header-row has-search hx-flex-column">
             <div class="hx-input-group">
-              <i class="hx-icon icon-search"></i>
+              <i class="hx-icon icon-search" aria-hidden="true"></i>
               <div class="hx-input-control">
                 <input class="hx-input" type="text" required="" />
                 <label class="hx-label"></label>
@@ -181,7 +205,7 @@
                 <div class="hx-button-group">
                   <button class="hx-button is-flat">
                     <span class="hx-icon-container"
-                      ><i class="icon icon-close-empty"></i
+                      ><i class="icon icon-close-empty" aria-hidden="true"></i
                     ></span>
                   </button>
                 </div>
@@ -195,18 +219,24 @@
         <div class="hx-panel-header has-fixed-height">
           <div class="hx-panel-header-row">
             <div class="hx-panel-header-heading">
-              <i class="hx-icon icon-file-outline is-heading-icon"></i>
+              <i
+                class="hx-icon icon-file-outline is-heading-icon"
+                aria-hidden="true"
+              ></i>
               <div class="h2">Letter Creator</div>
             </div>
             <div class="hx-panel-header-row-actions">
               <a class="hx-button is-small is-white px-1">
-                <i class="hx-icon is-medium icon-close-empty"></i>
+                <i
+                  class="hx-icon is-medium icon-close-empty"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </div>
           <div class="hx-panel-header-row has-search hx-flex-column">
             <div class="hx-input-group">
-              <i class="hx-icon icon-search"></i>
+              <i class="hx-icon icon-search" aria-hidden="true"></i>
               <div class="hx-input-control">
                 <input class="hx-input" type="text" required="" />
                 <label class="hx-label"></label>
@@ -229,7 +259,7 @@ export default {
       headerA: `<div class="hx-panel-header has-fixed-height">
   <div class="hx-panel-header-row">
     <a class="hx-button hx-panel-back is-flat is-small pl-1">
-      <i class="hx-icon icon-angle-left"></i>
+      <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
       <div class="hx-panel-back-text">
       Back
       </div>
@@ -237,14 +267,14 @@ export default {
     <div class="hx-panel-header-row-actions">
       <a class="hx-button is-small">Action</a>
       <a class="hx-button is-small is-white px-1">
-        <i class="hx-icon is-medium icon-close-empty"></i>
+        <i class="hx-icon is-medium icon-close-empty" aria-hidden="true"></i>
       </a>
     </div>
   </div>
   <div class="hx-panel-header-row">
     <div class="hx-flex-column">
       <div class="hx-panel-header-heading">
-        <i class="hx-icon icon-prescription is-heading-icon"></i>
+        <i class="hx-icon icon-prescription is-heading-icon" aria-hidden="true"></i>
         <div class="h2">
           Prescription
         </div>
@@ -259,20 +289,20 @@ export default {
   <div class="hx-panel-header has-fixed-height">
     <div class="hx-panel-header-row">
       <div class="hx-panel-header-heading">
-        <i class="hx-icon icon-file-outline is-heading-icon"></i>
+        <i class="hx-icon icon-file-outline is-heading-icon" aria-hidden="true"></i>
         <div class="h2">
           Letter Creator
         </div>
       </div>
       <div class="hx-panel-header-row-actions">
         <a class="hx-button is-small is-white px-1">
-          <i class="hx-icon is-medium icon-close-empty"></i>
+          <i class="hx-icon is-medium icon-close-empty" aria-hidden="true"></i>
         </a>
       </div>
     </div>
     <div class="hx-panel-header-row has-search hx-flex-column">
       <div class="hx-input-group">
-        <i class="hx-icon icon-search"></i>
+        <i class="hx-icon icon-search" aria-hidden="true"></i>
         <div class="hx-input-control">
           <input class="hx-input" type="text" required="">
           <label class="hx-label"></label>
@@ -281,7 +311,9 @@ export default {
         <div class="hx-input-actions">
           <div class="hx-button-group">
             <button class="hx-button is-flat">
-              <span class="hx-icon-container"><i class="icon icon-close-empty"></i></span>
+              <span class="hx-icon-container">
+                <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+              </span>
             </button>
           </div>
         </div>

@@ -222,8 +222,8 @@ export default {
         <h1 class="h2">Title</h1>
 
         <button class="hx-button flat">
-          <span class="hx-icon-container" aria-hidden="true">
-            <i class="hx-icon icon-close-empty"></i>
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             <span class="sr-only">Close</span>
           </span>
         </button>
@@ -264,16 +264,16 @@ export default {
         <h1 class="h2">Notes</h1>
 
         <button class="hx-button flat">
-          <span class="hx-icon-container" aria-hidden="true">
-            <i class="hx-icon icon-close-empty"></i>
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
             <span class="sr-only">Close</span>
           </span>
         </button>
       </div>
       <div class="hx-toolbar next">
         <button class="hx-button primary">
-          <span class="hx-icon-container" aria-hidden="true">
-            <i class="hx-icon icon-plus-empty"></i>
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
           </span>
           <span>New</span>
         </button>
@@ -292,8 +292,8 @@ export default {
 
         <button class="hx-button">
           <span>All</span>
-          <span class="hx-icon-container" aria-hidden="true">
-            <i class="hx-icon icon-caret-down"></i>
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
           </span>
         </button>
       </div>

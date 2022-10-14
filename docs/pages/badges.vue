@@ -186,7 +186,7 @@ export default {
 
     <button class="hx-button secondary">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-calendar"></i>
+        <i class="hx-icon icon-calendar" aria-hidden="true"></i>
       </span>
       <div class="hx-badge sm compact top-right">
         <span>10</span>
@@ -208,13 +208,13 @@ export default {
 
     <div class="hx-avatar">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-alert"></i>
+        <i class="hx-icon icon-alert" aria-hidden="true"></i>
       </span>
       <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
     </div>
 
     <span class="hx-icon-container">
-      <i class="hx-icon icon-alert"></i>
+      <i class="hx-icon icon-alert" aria-hidden="true"></i>
       <div class="hx-badge dot bottom-right bg-danger-emphasis"></div>
     </span>
   </div>
@@ -225,19 +225,13 @@ export default {
           withContent: false,
           code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge sm">
-    <span>
-      Small
-    </span>
+    <span>Small</span>
   </div>
   <div class="hx-badge md">
-    <span>
-      Medium (Default)
-    </span>
+    <span>Medium (Default)</span>
   </div>
   <div class="hx-badge lg">
-    <span>
-      Large
-    </span>
+    <span>Large</span>
   </div>
 </div>`,
         },
@@ -267,7 +261,7 @@ export default {
     <span>Default</span>
     <button class="hx-badge-action">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-refresh is-white"></i>
+        <i class="hx-icon icon-refresh is-white" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -275,7 +269,7 @@ export default {
     <span>Medium</span>
     <button class="hx-badge-action">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-refresh is-white"></i>
+        <i class="hx-icon icon-refresh is-white" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -283,7 +277,7 @@ export default {
     <span>Large</span>
     <button class="hx-badge-action">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-refresh"></i>
+        <i class="hx-icon icon-refresh" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -310,7 +304,7 @@ export default {
     </span>
     <span class="hx-badge danger">
       <span class="hx-avatar hx-bg-black">
-        <i class="hx-icon icon-injection"></i>
+        <i class="hx-icon icon-injection" aria-hidden="true"></i>
       </span>
       <span>Medium</span>
       <button class="hx-delete is-small"></button>
@@ -333,7 +327,7 @@ export default {
     </div>
     <div class="hx-badge warning lg">
       <span class="hx-avatar hx-bg-black">
-        <i class="hx-icon icon-bell"></i>
+        <i class="hx-icon icon-bell" aria-hidden="true"></i>
       </span>
       <span>Large</span>
       <button class="hx-badge-action delete"></button>

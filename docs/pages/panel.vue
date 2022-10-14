@@ -57,7 +57,10 @@ export default {
             <div class="hx-panel-header has-fixed-height">
               <div class="hx-panel-header-row">
                 <div class="hx-panel-header-heading">
-                  <i class="hx-icon icon-file-outline is-heading-icon"></i>
+                  <i 
+                    class="hx-icon icon-file-outline is-heading-icon"
+                    aria-hidden="true"
+                  ></i>
                   <div class="hx-panel-header-heading-text">
                     <div class="h2">
                       Letter Creator
@@ -66,13 +69,16 @@ export default {
                 </div>
                 <div class="hx-panel-header-row-actions">
                   <a class="hx-button is-small is-white px-1">
-                    <i class="hx-icon is-medium icon-close-empty"></i>
+                    <i
+                      class="hx-icon is-medium icon-close-empty"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                 </div>
               </div>
               <div class="hx-panel-header-row has-search hx-flex-column">
                 <div class="hx-input-group">
-                  <i class="hx-icon icon-search"></i>
+                  <i class="hx-icon icon-search" aria-hidden="true"></i>
                   <div class="hx-input-control">
                     <input class="hx-input" type="text" required="">
                     <label class="hx-label"></label>
@@ -101,14 +107,14 @@ export default {
                   <td>Nurse Nunez</td>
                   <td>Dr Dean Doco</td>
                   <td>03/01/2019</td>
-                  <td><i class="hx-icon icon-edit"></i></td>
+                  <td><i class="hx-icon icon-edit" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
                   <td>Specialist referral</td>
                   <td>Nurse Namma</td>
                   <td>Dr Sally Surgeon</td>
                   <td>06/01/2019</td>
-                  <td><i class="hx-icon icon-edit"></i></td>
+                  <td><i class="hx-icon icon-edit" aria-hidden="true"></i></td>
                 </tr>
                 </tbody>
               </table>
@@ -120,7 +126,11 @@ export default {
                     <a>
                       <div class="hx-list-content">Cras justo odio</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat">
+                          <span class="hx-icon-container">
+                            <i class="hx-icon icon-star" aria-hidden="true"></i>
+                          </span>
+                        </button>
                       </div>
                     </a>
                   </li>
@@ -128,7 +138,11 @@ export default {
                     <a>
                       <div class="hx-list-content">Dapibus ac facilisis in</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat">
+                          <span class="hx-icon-container">
+                            <i class="hx-icon icon-star" aria-hidden="true"></i>
+                          </span>
+                        </button>
                       </div>
                     </a>
                   </li>
@@ -136,7 +150,11 @@ export default {
                     <a>
                       <div class="hx-list-content">Morbi leo risus</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat">
+                          <span class="hx-icon-container">
+                            <i class="hx-icon icon-star" aria-hidden="true"></i>
+                          </span>
+                        </button>
                       </div>
                     </a>
                   </li>
@@ -144,7 +162,11 @@ export default {
                     <a>
                       <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat">
+                          <span class="hx-icon-container">
+                            <i class="hx-icon icon-star" aria-hidden="true"></i>
+                          </span>
+                        </button>
                       </div>
                     </a>
                   </li>
@@ -152,7 +174,11 @@ export default {
                     <a>
                       <div class="hx-list-content">Vestibulum at eros</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat">
+                          <span class="hx-icon-container">
+                            <i class="hx-icon icon-star" aria-hidden="true"></i>
+                          </span>
+                        </button>
                       </div>
                     </a>
                   </li>
@@ -162,7 +188,7 @@ export default {
               <h3>
                 <div class="is-flex hx-flex-align-center hx-flex-justify-between">
                   <div class="h3">WorkCover Certificates</div>
-                  <i class="hx-icon is-medium icon-angle-right"></i>
+                    <i class="hx-icon is-medium icon-angle-right" aria-hidden="true"></i>
                 </div>
               </h3>
             </div>
@@ -178,7 +204,7 @@ export default {
             <div class="hx-panel-header-row">
               <div class="hx-panel-header-heading">
   
-                <i class="hx-icon icon-pathology-outline is-heading-icon"></i>
+                <i class="hx-icon icon-pathology-outline is-heading-icon" aria-hidden="true"></i>
                 <div class="hx-panel-header-heading-text">
                   <div class="h2">
                     Kitchen Sink L2
@@ -205,7 +231,11 @@ export default {
                   <a>
                     <div class="hx-list-content">Cras justo odio</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat">
+                        <span class="hx-icon-container">
+                          <i class="hx-icon icon-star" aria-hidden="true"></i>
+                        </span>
+                      </button>
                     </div>
                   </a>
                 </li>
@@ -213,7 +243,11 @@ export default {
                   <a>
                     <div class="hx-list-content">Dapibus ac facilisis in</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat">
+                        <span class="hx-icon-container">
+                          <i class="hx-icon icon-star" aria-hidden="true"></i>
+                        </span>
+                      </button>
                     </div>
                   </a>
                 </li>
@@ -221,7 +255,11 @@ export default {
                   <a>
                     <div class="hx-list-content">Morbi leo risus</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat">
+                        <span class="hx-icon-container">
+                          <i class="hx-icon icon-star" aria-hidden="true"></i>
+                        </span>
+                      </button>
                     </div>
                   </a>
                 </li>
@@ -229,7 +267,11 @@ export default {
                   <a>
                     <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat">
+                        <span class="hx-icon-container">
+                          <i class="hx-icon icon-star" aria-hidden="true"></i>
+                        </span>
+                      </button>
                     </div>
                   </a>
                 </li>
@@ -237,7 +279,11 @@ export default {
                   <a>
                     <div class="hx-list-content">Vestibulum at eros</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat">
+                        <span class="hx-icon-container">
+                          <i class="hx-icon icon-star" aria-hidden="true"></i>
+                        </span>
+                      </button>
                     </div>
                   </a>
                 </li>
@@ -250,8 +296,8 @@ export default {
                 <a class="hx-accordion-header">
                   <div class="header-title">Item 1</div>
                   <div class="header-icon">
-                    <i class="hx-icon is-small icon-angle-down"></i>
-                    <i class="hx-icon is-small icon-angle-up" style="display: none"></i>
+                    <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
+                    <i class="hx-icon is-small icon-angle-up" style="display: none" aria-hidden="true"></i>
                   </div>
                 </a>
                 <div class="hx-accordion-body" style="height: 0">
@@ -264,8 +310,8 @@ export default {
                 <a class="hx-accordion-header">
                   <div class="header-title">Item 2</div>
                   <div class="header-icon">
-                    <i class="hx-icon is-small icon-angle-down"></i>
-                    <i class="hx-icon is-small icon-angle-up" style="display: none"></i>
+                    <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
+                    <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
                   </div>
                 </a>
                 <div class="hx-accordion-body" style="height: 0">
@@ -278,8 +324,8 @@ export default {
                 <a class="hx-accordion-header">
                   <div class="header-title">Item 3</div>
                   <div class="header-icon">
-                    <i class="hx-icon is-small icon-angle-down"></i>
-                    <i class="hx-icon is-small icon-angle-up" style="display: none"></i>
+                    <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
+                    <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
                   </div>
                 </a>
                 <div class="hx-accordion-body" style="height: 0">
@@ -292,7 +338,7 @@ export default {
   
             <div class="is-flex hx-flex-align-center hx-flex-justify-between mt-6">
               <div class="h3">Section heading as link (L3)</div>
-              <i class="hx-icon is-medium icon-angle-right"></i>
+              <i class="hx-icon is-medium icon-angle-right" aria-hidden="true"></i>
             </div>
   
             <div class="hx-panel-section is-fill-to-edges">
@@ -303,8 +349,8 @@ export default {
                       <div class="h3">Accordion section heading one (L3)</div>
                     </div>
                     <div class="header-icon">
-                      <i class="hx-icon icon-angle-down"></i>
-                      <i class="hx-icon icon-angle-up" style="display: none"></i>
+                      <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true" style="display: none"></i>
                     </div>
                   </a>
                   <div class="hx-accordion-body" style="height: 0">
@@ -317,8 +363,8 @@ export default {
                       <div class="h3">Accordion section heading two (L3)</div>
                     </div>
                     <div class="header-icon">
-                      <i class="hx-icon icon-angle-down" style="display: none"></i>
-                      <i class="hx-icon icon-angle-up"></i>
+                      <i class="hx-icon icon-angle-down" aria-hidden="true" style="display: none"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                     </div>
                   </a>
                   <div class="hx-accordion-body">
@@ -330,8 +376,8 @@ export default {
                               <div class="h4">Nested accordion section heading one (L4)</div>
                             </div>
                             <div class="header-icon">
-                              <i class="hx-icon icon-angle-down"></i>
-                              <i class="hx-icon icon-angle-up" style="display: none"></i>
+                              <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+                              <i class="hx-icon icon-angle-up" aria-hidden="true" style="display: none"></i>
                             </div>
                           </div>
                           <div class="hx-accordion-body">
@@ -344,8 +390,8 @@ export default {
                               <div class="h4">Nested accordion section heading two (L4)</div>
                             </div>
                             <div class="header-icon">
-                              <i class="hx-icon icon-angle-down" style="display: none"></i>
-                              <i class="hx-icon icon-angle-up" ></i>
+                              <i class="hx-icon icon-angle-down" aria-hidden="true" style="display: none"></i>
+                              <i class="hx-icon icon-angle-up" aria-hidden="true"></i>
                             </div>
                           </div>
                           <div class="hx-accordion-body">
@@ -383,8 +429,8 @@ export default {
                       <div class="h3">Accordion section heading three  (L3)</div>
                     </div>
                     <div class="header-icon">
-                      <i class="hx-icon icon-angle-down"></i>
-                      <i class="hx-icon icon-angle-up" style="display: none"></i>
+                      <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+                      <i class="hx-icon icon-angle-up" aria-hidden="true" style="display: none"></i>
                     </div>
                   </a>
                   <div class="hx-accordion-body" style="height: 0">

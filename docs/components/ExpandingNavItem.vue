@@ -3,13 +3,14 @@
     <button class="hx-nav-heading" @click="toggleItem">
       <span>{{ title }}</span>
       <div class="hx-button icon flat">
-        <span class="hx-icon-container" aria-hidden="true">
+        <span class="hx-icon-container">
           <i
             class="hx-icon"
             :class="{
               'icon-angle-down': show,
               'icon-angle-up': !show,
             }"
+            aria-hidden="true"
           ></i>
         </span>
         <span class="sr-only">{{ show ? 'Close' : 'Show' }}</span>

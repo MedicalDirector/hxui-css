@@ -53,7 +53,9 @@ export default {
       alt="portrait of dog"
     />
   </div>
-  <div class="hx-avatar">JP</div>
+  <div class="hx-avatar">
+    <span>JP</span>
+  </div>
 </div>`,
       },
       {
@@ -61,16 +63,24 @@ export default {
         withContent: false,
         code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-avatar danger">
-    <i class="hx-icon icon-pulse"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-pulse" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar warning">
-    <i class="hx-icon icon-wine"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-wine" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar success">
-    <i class="hx-icon icon-medications"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-medications" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar info">
-    <i class="hx-icon icon-carrot"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-carrot" aria-hidden="true"></i>
+    </span>
   </div>
 </div>`,
       },
@@ -78,23 +88,31 @@ export default {
         title: 'Flat avatar',
         withContent: false,
         code: `<div class="hx-card__content flex justify-center items-center gap-2">
-  <div class="hx-avatar flat caution outline text-black">
+  <div class="hx-avatar flat caution text-black">
     <span>J</span>
   </div>
-  <div class="hx-avatar flat outline">
+  <div class="hx-avatar flat">
     <span>CB</span>
   </div>
-  <div class="hx-avatar flat primary outline">
-    <i class="hx-icon icon-pulse"></i>
+  <div class="hx-avatar flat primary">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-pulse" aria-hidden="true"></i>
+    </span>
   </div>
-  <div class="hx-avatar flat danger outline">
-    <i class="hx-icon icon-wine"></i>
+  <div class="hx-avatar flat danger">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-wine" aria-hidden="true"></i>
+    </span>
   </div>
-  <div class="hx-avatar flat warning outline">
-    <i class="hx-icon icon-medications"></i>
+  <div class="hx-avatar flat warning">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-medications" aria-hidden="true"></i>
+    </span>
   </div>
-  <div class="hx-avatar flat caution outline">
-    <i class="hx-icon icon-carrot"></i>
+  <div class="hx-avatar flat caution">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-carrot" aria-hidden="true"></i>
+    </span>
   </div>
 </div>`,
       },
@@ -118,16 +136,24 @@ export default {
   <div class="hx-avatar tile hx-bg-light">CB</div>
   <div class="hx-avatar tile hx-bg-black">J</div>
   <div class="hx-avatar hx-bg-danger tile">
-    <i class="hx-icon icon-pulse"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-pulse" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar hx-bg-warning tile">
-    <i class="hx-icon icon-wine"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-wine" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar hx-bg-success tile">
-    <i class="hx-icon icon-medications"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-medications" aria-hidden="true"></i>
+    </span>
   </div>
-  <div class="hx-avatar is-info tile is-outline">
-    <i class="hx-icon icon-carrot"></i>
+  <div class="hx-avatar is-info tile">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-carrot" aria-hidden="true"></i>
+    </span>
   </div>
 </div>`,
       },
@@ -163,16 +189,24 @@ export default {
     <span>J</span>
   </div>
   <div class="hx-avatar sm hx-bg-danger">
-    <i class="hx-icon icon-pulse"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-pulse" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar sm hx-bg-warning">
-    <i class="hx-icon icon-wine"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-wine" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar sm tile hx-bg-success">
-    <i class="hx-icon icon-medications"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-medications" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar sm is-info is-outline">
-    <i class="hx-icon icon-carrot"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-carrot" aria-hidden="true"></i>
+    </span>
   </div>
 </div>`,
       },
@@ -193,16 +227,24 @@ export default {
     style="background-image: url(${require('~/assets/images/frenchie.jpg')})"
   ></div>
   <div class="hx-avatar lg danger">
-    <i class="hx-icon icon-pulse"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-pulse" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar lg warning">
-    <i class="hx-icon icon-wine"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-wine" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar lg success">
-    <i class="hx-icon icon-medications"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-medications" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-avatar lg info outline">
-    <i class="hx-icon icon-carrot"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-carrot" aria-hidden="true"></i>
+    </span>
   </div>
 </div>`,
       },

@@ -49,12 +49,12 @@ export default {
     <label class="hx-label" for="input-3">Full Name</label>
     <div class="hx-input-group">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-search"></i>
+        <i class="hx-icon icon-search" aria-hidden="true"></i>
       </span>
       <input class="hx-input" id="input-3" type="text" required>
       <button class="hx-button flat icon">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-plus"></i>
+          <i class="hx-icon icon-plus" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -183,12 +183,12 @@ export default {
     <label class="hx-label" for="input-3">Full Name</label>
     <div class="hx-input-group contrast">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-search"></i>
+        <i class="hx-icon icon-search" aria-hidden="true"></i>
       </span>
       <input class="hx-input" id="input-3" type="text" required>
       <button class="hx-button flat icon">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-plus"></i>
+          <i class="hx-icon icon-plus" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -202,7 +202,7 @@ export default {
           title: 'Input field',
           code: `
   <div class="hx-input-group">
-    <i class="hx-icon icon-search"></i>
+    <i class="hx-icon icon-search" aria-hidden="true"></i>
     <div class="hx-input-control">
       <input class="hx-input" type="text" required>
       <label class="hx-label">Search <sup>*</sup></label>
@@ -211,8 +211,16 @@ export default {
     <div class="hx-input-actions">
       <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
       <div class="hx-button-group">
-        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-close-empty"></i></span></button>
-        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-plus"></i></span></button>
+        <button class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-plus" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
     </div>
   </div>
@@ -293,10 +301,14 @@ export default {
       <label class="hx-label">Date <sup>*</sup></label>
       <div class="hx-help">Please select a date</div>
     </div>
-    <i class="hx-icon icon-calendar"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-calendar" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-input-group">
-    <i class="hx-icon icon-search"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-search" aria-hidden="true"></i>
+    </span>
     <div class="hx-input-control">
       <input class="hx-input" type="text" required>
       <label class="hx-label">Search <sup>*</sup></label>
@@ -305,8 +317,16 @@ export default {
     <div class="hx-input-actions">
       <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
       <div class="hx-button-group">
-        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-close-empty"></i></span></button>
-        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-plus"></i></span></button>
+        <button class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="icon icon-close-empty" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button class="hx-button is-flat">
+          <span class="hx-icon-container">
+            <i class="icon icon-plus" aria-hidden="true"></i>
+          </span>
+        </button>
       </div>
     </div>
   </div>
@@ -319,13 +339,17 @@ export default {
     <div class="hx-input-actions"><div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div></div>
   </div>
   <div class="hx-input-group">
-   <i class="hx-icon icon-person"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-person" aria-hidden="true"></i>
+    </span>
     <div class="hx-input-control">
       <input class="hx-input" type="text" value="JG001" required>
       <label class="hx-label">Username <sup>*</sup></label>
       <div class="hx-help">Please enter your username</div>
     </div>
-    <i class="hx-icon icon-check-empty is-medium is-success"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-check-empty is-medium is-success" aria-hidden="true"></i>
+    </span>
   </div>
   <div class="hx-input-group">
     <div class="hx-input-control">

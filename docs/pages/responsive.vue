@@ -130,7 +130,7 @@ export default {
 
   <div class="hx-alert info phablet:col-span-2 mb-0" role="alert">
     <span class="hx-icon-container mr-2">
-      <i class="hx-icon is-medium icon-information"></i>
+      <i class="hx-icon icon-information" aria-hidden="true"></i>
     </span>
     <span class="hx-flex-1">
       Resize your browser to observe changes in grid layout.

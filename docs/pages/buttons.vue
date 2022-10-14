@@ -291,31 +291,31 @@ export default {
   <div class="flex items-center justify-center gap-2">
     <button class="hx-button">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-helix"></i>
+        <i class="hx-icon icon-helix" aria-hidden="true"></i>
       </span>
       <span>Helix</span>
     </button>
     <button class="hx-button primary">
       <span>Helix</span>
       <span class="hx-icon-container">
-        <i class="hx-icon icon-helix"></i>
+        <i class="hx-icon icon-helix" aria-hidden="true"></i>
       </span>
     </button>
     <button class="hx-button success">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
       </span>
       <span>Add</span>
     </button>
     <button class="hx-button info">
       <span>More</span>
       <span class="hx-icon-container">
-        <i class="hx-icon icon-more"></i>
+        <i class="hx-icon icon-more" aria-hidden="true"></i>
       </span>
     </button>
     <button class="hx-button danger">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-close-empty"></i>
+        <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
       </span>
       <span>Remove</span>
     </button>
@@ -324,23 +324,27 @@ export default {
   <div class="flex items-center justify-center gap-2">
     <button class="hx-button primary icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-helix"></i>
+        <i class="hx-icon icon-helix" aria-hidden="true"></i>
       </span>
+      <span class="sr-only">Helix</span>
     </button>
     <button class="hx-button warning icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
       </span>
+      <span class="sr-only">Add</span>
     </button>
     <button class="hx-button success icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-right"></i>
+        <i class="hx-icon icon-angle-right" aria-hidden="true"></i>
       </span>
+      <span class="sr-only">Next</span>
     </button>
     <button class="hx-button danger icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-heart"></i>
+        <i class="hx-icon icon-heart" aria-hidden="true"></i>
       </span>
+      <span class="sr-only">Heart</span>
     </button>
   </div>
 
@@ -348,19 +352,19 @@ export default {
     <button class="hx-button sm">
       <span>Small</span>
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
     <button class="hx-button">
       <span>Medium</span>
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
     <button class="hx-button lg">
       <span>Large</span>
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -374,17 +378,17 @@ export default {
     <div class="hx-button-group">
       <button class="hx-button">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-email-outline"></i>
+          <i class="hx-icon icon-email-outline" aria-hidden="true"></i>
         </span>
       </button>
       <button class="hx-button active">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-printer-outline"></i>
+          <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
         </span>
       </button>
       <button class="hx-button">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-credit-card"></i>
+          <i class="hx-icon icon-credit-card" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -401,19 +405,19 @@ export default {
     <div class="hx-button-group">
       <button class="hx-button primary active">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-email-outline"></i>
+          <i class="hx-icon icon-email-outline" aria-hidden="true"></i>
         </span>
         <span>Email</span>
       </button>
       <button class="hx-button primary">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-printer-outline"></i>
+          <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
         </span>
         <span>Print</span>
       </button>
       <button class="hx-button primary">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-credit-card"></i>
+          <i class="hx-icon icon-credit-card" aria-hidden="true"></i>
         </span>
         <span>Pay</span>
       </button>
@@ -428,19 +432,19 @@ export default {
     <div class="hx-button-group fullwidth">
       <button class="hx-button">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-email-outline"></i>
+          <i class="hx-icon icon-email-outline" aria-hidden="true"></i>
         </span>
         <span>Email to the patient</span>
       </button>
       <button class="hx-button">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-printer-outline"></i>
+          <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
         </span>
         <span>Print invoice</span>
       </button>
       <button class="hx-button">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-credit-card"></i>
+          <i class="hx-icon icon-credit-card" aria-hidden="true"></i>
         </span>
         <span>Pay bill with credit card</span>
       </button>
@@ -458,7 +462,7 @@ export default {
     </button>
     <button class="hx-button primary sm icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -469,7 +473,7 @@ export default {
     </button>
     <button class="hx-button primary icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -480,7 +484,7 @@ export default {
     </button>
     <button class="hx-button primary lg icon">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-angle-down"></i>
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
@@ -503,13 +507,13 @@ export default {
       accusantium doloremque laudantium
     </span>
     <span class="hx-icon-container">
-      <i class="hx-icon icon-angle-down"></i>
+      <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
     </span>
   </button>
 
   <button class="hx-button multiline is-primary">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-plus-empty"></i>
+      <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
     </span>
     <span>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem 

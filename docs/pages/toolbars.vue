@@ -66,14 +66,14 @@ export default {
   <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-send"></i>
+        <i class="hx-icon icon-send" aria-hidden="true"></i>
       </span>
       <span>Resubmit</span>
     </button>
 
     <button class="hx-button">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-printer-outline"></i>
+        <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
       </span>
       <span>Print</span>
     </button>
@@ -91,7 +91,7 @@ export default {
 
     <button class="hx-button primary">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
       </span>
       <span>Task</span>
     </button>
@@ -105,7 +105,7 @@ export default {
 
     <div class="hx-spacer"></div>
 
-    <i class="hx-icon icon-filter-outline"></i>
+    <i class="hx-icon icon-filter-outline" aria-hidden="true"></i>
     <div class="hx-dropdown">
       <button class="hx-button hx-button-dropdown">
         <span>
@@ -113,7 +113,7 @@ export default {
           <span class="font-medium text-ellipsed">Mr John GP</span>
         </span>
         <span class="hx-icon-container">
-          <i class="hx-icon icon-caret-down"></i>
+          <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -124,7 +124,7 @@ export default {
           <span class="font-medium text-ellipsed">New</span>
         </span>
         <span class="hx-icon-container">
-          <i class="hx-icon icon-caret-down"></i>
+          <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -133,7 +133,7 @@ export default {
 
     <button class="hx-button primary">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-plus-empty"></i>
+        <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
       </span>
       <span>Address</span>
     </button>
@@ -142,7 +142,7 @@ export default {
   <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
       <span class="hx-icon-container">
-        <i class="hx-icon icon-printer-outline"></i>
+        <i class="hx-icon icon-printer-outline" aria-hidden="true"></i>
       </span>
       <span>Print</span>
     </button>
@@ -158,7 +158,9 @@ export default {
 
     <div class="hx-spacer"></div>
 
-    <i class="hx-icon icon-filter-outline mx-1"></i>
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-filter-outline" aria-hidden="true"></i>
+    </span>
     <div class="hx-dropdown">
       <button class="hx-button hx-button-dropdown">
         <span>
@@ -166,7 +168,7 @@ export default {
           <span class="font-medium text-ellipsed">Mr John GP</span>
         </span>
         <span class="hx-icon-container">
-          <i class="hx-icon icon-caret-down"></i>
+          <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -178,7 +180,7 @@ export default {
           <span class="font-medium text-ellipsed">New</span>
         </span>
         <span class="hx-icon-container">
-          <i class="hx-icon icon-caret-down"></i>
+          <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
         </span>
       </button>
     </div>
@@ -186,7 +188,7 @@ export default {
     <div class="hx-form-control no-label no-help">
       <div class="hx-input-group">
         <span class="hx-icon-container">
-          <i class="hx-icon icon-search"></i>
+          <i class="hx-icon icon-search" aria-hidden="true"></i>
         </span>
         <input class="hx-input" type="search" placeholder="Search patient...">
       </div>
@@ -203,7 +205,7 @@ export default {
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-more"></i>
+      <i class="hx-icon icon-more" aria-hidden="true"></i>
     </span>
   </button>
 </div>
@@ -214,7 +216,7 @@ export default {
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-more"></i>
+      <i class="hx-icon icon-more" aria-hidden="true"></i>
     </span>
   </button>
 </div>
@@ -225,11 +227,10 @@ export default {
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
     <span class="hx-icon-container">
-      <i class="hx-icon icon-more"></i>
+      <i class="hx-icon icon-more" aria-hidden="true"></i>
     </span>
   </button>
-</div>
-            `,
+</div>`,
         },
       ],
     }

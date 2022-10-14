@@ -203,7 +203,7 @@ export default {
           title: 'Line Clamping / Multi-line Ellipsis',
           code: `<div class="hx-alert info" role="alert">
   <span class="hx-icon-container mr-2">
-    <i class="hx-icon is-medium icon-information"></i>
+    <i class="hx-icon is-medium icon-information" aria-hidden="true"></i>
   </span>
   <span class="hx-flex-1">
     Line clamping is possible via the <strong>-webkit-box-orient: vertical;</strong> css property which is non-standard and is not on a standards track.<br>
@@ -213,7 +213,7 @@ export default {
 
 <div class="hx-alert warning" role="alert">
   <span class="hx-icon-container mr-2">
-    <i class="hx-icon is-medium icon-exclamation"></i>
+    <i class="hx-icon is-medium icon-exclamation" aria-hidden="true"></i>
   </span>
   <span class="hx-flex-1">
         Line clamping will only work with plain text and not html formatted text.

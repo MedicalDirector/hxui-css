@@ -67,7 +67,7 @@ export default {
        <tr>
           <th>Title</th>
           <th>Description</th>
-          <th><a href="#"><i class="hx-icon icon-arrow-down"></i>Due</a></th>
+          <th><a href="#"><i class="hx-icon icon-arrow-down" aria-hidden="true"></i>Due</a></th>
           <th>Provider</th>
           <th class="is-text-center">Complete</th>
         </tr>

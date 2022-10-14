@@ -64,8 +64,8 @@ export default {
     <a class="hx-accordion-header">
       <div class="header-title">Item 1</div>
       <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down" style="display: none"></i>
-        <i class="hx-icon is-small icon-angle-up"></i>
+        <i class="hx-icon is-small icon-angle-down" aria-hidden="true" style="display: none"></i>
+        <i class="hx-icon is-small icon-angle-up" aria-hidden="true"></i>
       </div>
     </a>
     <div class="hx-accordion-body">
@@ -78,8 +78,8 @@ export default {
     <a class="hx-accordion-header">
       <div class="header-title">Item 2</div>
       <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down"></i>
-        <i class="hx-icon is-small icon-angle-up" style="display: none"></i>
+        <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
+        <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
       </div>
     </a>
     <div class="hx-accordion-body" style="height: 0">
@@ -92,8 +92,8 @@ export default {
     <a class="hx-accordion-header">
       <div class="header-title">Item 3</div>
       <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down"></i>
-        <i class="hx-icon is-small icon-angle-up" style="display: none"></i>
+        <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
+        <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
       </div>
     </a>
     <div class="hx-accordion-body" style="height: 0">

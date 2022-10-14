@@ -15,6 +15,7 @@
               'icon-angle-left': isOpen,
               'icon-angle-right': !isOpen,
             }"
+            aria-hidden="true"
           ></i>
         </span>
       </button>

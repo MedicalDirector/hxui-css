@@ -134,20 +134,20 @@ export default {
           </div>
           <button class="hx-dropdown-item">
             <span class="container-start hx-icon-container">
-              <i class="hx-icon icon-clock-outline"></i> 
+              <i class="hx-icon icon-clock-outline" aria-hidden="true"></i> 
             </span>
             <span>Book appointment</span>
           </button>
           <button class="hx-dropdown-item">
             <span class="container-start hx-icon-container">
-              <i class="hx-icon icon-doctor-outline"></i>
+              <i class="hx-icon icon-doctor-outline" aria-hidden="true"></i>
             </span>
             <span>Start consult</span>
           </button>
           <hr class="hx-dropdown-divider" />
           <button class="hx-dropdown-item">
             <span class="container-start hx-icon-container">
-              <i class="hx-icon icon-send-outline"></i>
+              <i class="hx-icon icon-send-outline" aria-hidden="true"></i>
             </span>
             <span>Send letter</span>
           </button>
@@ -373,13 +373,13 @@ export default {
           </span>
           <button class="hx-dropdown-item active">
             <span class="container-start hx-icon-container">
-              <i class="hx-icon icon-caret-up"></i>
+              <i class="hx-icon icon-caret-up" aria-hidden="true"></i>
             </span>
             <span>Ascending</span>
           </button>
           <button class="hx-dropdown-item">
             <span class="container-start hx-icon-container">
-              <i class="hx-icon icon-caret-down"></i>
+              <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
             </span>
             <span>Descending</span>
           </button>
@@ -402,7 +402,7 @@ export default {
                 <input class="hx-input" id="from" type="text">
                 <button class="hx-button flat icon">
                   <span class="hx-icon-container">
-                    <i class="hx-icon icon-calendar-outline"></i>
+                    <i class="hx-icon icon-calendar-outline" aria-hidden="true"></i>
                   </span>
                 </button>
               </div>
@@ -414,7 +414,7 @@ export default {
                 <input class="hx-input" id="to" type="text">
                 <button class="hx-button flat icon">
                   <span class="hx-icon-container">
-                    <i class="hx-icon icon-calendar-outline"></i>
+                    <i class="hx-icon icon-calendar-outline" aria-hidden="true"></i>
                   </span>
                 </button>
               </div>
