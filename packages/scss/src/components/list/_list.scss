@@ -238,51 +238,48 @@
 //  LIST ITEM PARTS  //
 ///////////////////////
 
-:where(.#{$namespace}-list-item) {
-  /// START
-  .container-start {
-    grid-area: item-start;
-    display: inline-flex;
-    align-self: center;
-    gap: spacing.px(2);
+/// START
+.#{$namespace}-list-item__start {
+  grid-area: item-start;
+  display: inline-flex;
+  align-self: center;
+  gap: spacing.px(2);
 
-    &:has(+ .container-primary) {
-      margin-right: spacing.px(2);
-    }
+  &:has(+ .#{$namespace}-list-item__primary) {
+    margin-right: spacing.px(2);
   }
+}
 
-  /// PRIMARY
-  .container-primary {
-    color: inherit;
-    font: var(--h4);
-    grid-area: item-primary;
-    display: flex;
-    align-self: center;
-    flex: 1;
-    gap: spacing.px(2);
+/// PRIMARY
+.#{$namespace}-list-item__primary {
+  color: inherit;
+  font: var(--h4);
+  grid-area: item-primary;
+  display: flex;
+  align-self: center;
+  flex: 1;
+  gap: spacing.px(2);
 
-    &:has(+ .container-end) {
-      margin-right: spacing.px(2);
-    }
+  &:has(+ .#{$namespace}-list-item__end) {
+    margin-right: spacing.px(2);
   }
+}
 
-  /// END
-  .container-end {
-    color: inherit;
-    grid-area: item-end;
-    display: inline-flex;
-    align-self: center;
-    gap: spacing.px(2);
-  }
+/// END
+.#{$namespace}-list-item__end {
+  color: inherit;
+  grid-area: item-end;
+  display: inline-flex;
+  align-self: center;
+}
 
-  /// SECONDARY
-  .container-secondary {
-    font: var(--b1);
-    margin-top: spacing.rem(4);
-    grid-area: item-secondary;
-    display: flex;
-    flex: 1;
-  }
+/// SECONDARY
+.#{$namespace}-list-item__secondary {
+  font: var(--b1);
+  margin-top: spacing.rem(4);
+  grid-area: item-secondary;
+  display: flex;
+  flex: 1;
 }
 
 @include deprecate("2.0.0", "Use .container-primary inside .hx-list-item") {

@@ -6,7 +6,7 @@
 @use "../../functions/spacing";
 @use "../../functions/size";
 
-.#{$namespace}-toolbar--modern {
+.#{$namespace}-toolbar.next {
   display: flex;
   align-items: center;
   gap: spacing.px(2);
@@ -56,7 +56,7 @@
   }
 }
 
-.#{$namespace}-toolbar {
+.#{$namespace}-toolbar:not(.next) {
   display: flex;
   align-items: center;
   padding: $hx-spacer;

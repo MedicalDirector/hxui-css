@@ -12,7 +12,7 @@
 @use "../../mixins/deprecate" as *;
 
 /// CONTAINER
-@include deprecate("3.0.0", "Use .hx-data-label") {
+@include deprecate("3.0.0", "Use .hx-stat") {
   .#{$namespace}-metadata {
     display: inline-flex;
     flex-direction: column;
@@ -20,18 +20,19 @@
   }
 }
 
-.#{$namespace}-data-label {
+.#{$namespace}-stat {
   display: inline-flex;
   flex-direction: column;
   width: 100%;
 }
 
 /// LABEL
-.#{$namespace}-label {
-  @include deprecate("3.0.0", "Use .hx-label") {
+.#{$namespace}-stat__label {
+  @include deprecate("3.0.0", "Use .hx-stat__label") {
     :where(.#{$namespace}-metadata) & {
       font: var(--b3);
       color: var(--color-foreground-muted);
+      margin: 0;
     }
 
     :where(.#{$namespace}-metadata):not(.alternate) & {
@@ -45,17 +46,19 @@
     }
   }
 
-  :where(.#{$namespace}-data-label) & {
+  // above repeated for preferred naming
+  :where(.#{$namespace}-stat) & {
     font: var(--b3);
     color: var(--color-foreground-muted);
+    margin: 0;
   }
 
-  :where(.#{$namespace}-data-label):not(.alternate) & {
+  :where(.#{$namespace}-stat):not(.alternate) & {
     font-weight: 500;
     text-transform: uppercase;
   }
 
-  :where(.#{$namespace}-data-label).alternate & {
+  :where(.#{$namespace}-stat).alternate & {
     font: var(--b2);
     line-height: size.rem(16);
   }
@@ -67,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: spacing.px(2);
+  margin: 0;
 
   > :where(span, div):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon, .#{$namespace}-badge)) {
     font: inherit;
@@ -75,7 +79,7 @@
 }
 
 /// DATA VALUE
-@include deprecate("3.0.0", "Use .hx-data inside .hx-data-label") {
+@include deprecate("3.0.0", "Use .hx-data inside .hx-stat") {
   .#{$namespace}-value {
     :where(.#{$namespace}-metadata) & {
       @include _data;
@@ -87,12 +91,12 @@
   }
 }
 
-.#{$namespace}-data {
-  :where(.#{$namespace}-data-label) & {
+.#{$namespace}-stat__data {
+  :where(.#{$namespace}-stat) & {
     @include _data;
   }
 
-  :where(.#{$namespace}-data-label).alternate & {
+  :where(.#{$namespace}-stat).alternate & {
     font-weight: 500;
   }
 }

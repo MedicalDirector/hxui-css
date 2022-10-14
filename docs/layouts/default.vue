@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="layout-app">
     <aside
-      class="area-app-nav hx-drawer-container"
+      class="area-app-nav hx-drawer__container"
       :class="{ bottom: isMobile }"
     >
       <main-nav></main-nav>

@@ -9,63 +9,80 @@
 
 small,
 .small {
-  font-size: $hx-small-font-size;
-  font-weight: $hx-font-weight-normal;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    font-size: $hx-small-font-size;
+    font-weight: $hx-font-weight-normal;
+  }
 }
 
 mark,
 .mark {
-  padding: $hx-mark-padding;
-  background-color: $hx-mark-bg;
-}
-
-hr {
-  margin-top: $hx-spacer;
-  margin-bottom: $hx-spacer;
-  border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    padding: $hx-mark-padding;
+    background-color: $hx-mark-bg;
+  }
 }
 
 // Inline
 li + li {
-  margin-top: 0.25em;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    margin-top: 0.25em;
+  }
 }
 
 // Block
 blockquote {
-  // background-color: $background;
-  border-left: 5px solid $hx-border-color;
-  padding: 1.25em 1.5em;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    // background-color: $background;
+    border-left: 5px solid $hx-border-color;
+    padding: 1.25em 1.5em;
+  }
 }
 
 ol {
-  list-style: decimal outside;
-  margin-top: 1em;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    list-style: decimal outside;
+    margin-top: 1em;
+  }
 }
 
 ul {
-  list-style: disc outside;
-  margin-top: 1em;
-  padding: 0 1rem;
-
-  ul {
-    list-style-type: circle;
-    margin-top: 0.5em;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    list-style: disc outside;
+    margin-top: 1em;
+    padding: 0 1rem;
 
     ul {
-      list-style-type: square;
+      list-style-type: circle;
+      margin-top: 0.5em;
+
+      ul {
+        list-style-type: square;
+      }
     }
   }
 }
 
 dt {
-  font-weight: $hx-font-weight-bold;
-  margin-bottom: 0.3rem;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    font-weight: $hx-font-weight-bold;
+    margin-bottom: 0.3rem;
+  }
 }
 
 dd {
-  margin: 0;
-  margin-bottom: 0.3rem;
+  :where(.#{$namespace}-prose) &,
+  &.#{$namespace}-prose {
+    margin: 0;
+    margin-bottom: 0.3rem;
+  }
 }
 
 // p,

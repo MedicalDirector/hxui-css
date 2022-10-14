@@ -128,7 +128,7 @@ export default {
     </p>
   </div>
 
-  <div class="hx-alert is-inverse phablet:col-span-2 mb-0">
+  <div class="hx-alert info phablet:col-span-2 mb-0" role="alert">
     <span class="hx-icon-control mr-2">
       <i class="hx-icon is-medium icon-information"></i>
     </span>

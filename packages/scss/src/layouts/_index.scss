@@ -5,8 +5,3 @@
 @forward "./section";
 @forward "./sidebar";
 @forward "./grid";
-
-/// side-panel needs to be imported at root,
-/// it potentially could be wrapped inside the framework-wrap
-/// and this is not desirable for something that always need to
-/// be based against the document

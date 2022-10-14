@@ -38,9 +38,14 @@ export default {
     return {
       data: [
         {
-          class: 'hx-toolbar--modern',
+          class: 'hx-toolbar',
           type: 'component',
           description: 'Container element. Use `ul`.',
+        },
+        {
+          class: 'next',
+          type: 'modifier',
+          description: 'Required. Adopts next styles',
         },
         {
           class: 'compact',
@@ -54,121 +59,11 @@ export default {
         },
       ],
       examples: [
-        //         {
-        //           title: 'Basic',
-        //           code: `<p>
-        //   The most common use case for this component, will be a single row toolbar with a title and/or actions.
-        // </p>
-
-        // <div class="hx-toolbar--modern">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-star"></i>
-        //   </button>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-plus"></i>
-        //   </button>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-more"></i>
-        //   </button>
-        // </div>`,
-        //         },
-        //         {
-        //           title: 'Contextual',
-        //           code: `<p>
-        //   Toolbars can be themed using one of the existing contextual modifiers
-        // </p>
-
-        // <div class="hx-toolbar--modern">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-star"></i>
-        //   </button>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-plus"></i>
-        //   </button>
-        //   <button class="hx-button flat">
-        //     <i class="hx-icon icon-more"></i>
-        //   </button>
-        // </div>
-        // <br>
-        // <div class="hx-toolbar is-primary">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        // </div>
-        // <br>
-        // <div class="hx-toolbar is-warning">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        // </div>
-        // <br>
-        // <div class="hx-toolbar is-danger">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        // </div>
-        // <br>
-        // <div class="hx-toolbar is-info">
-        //   <span>Title</span>
-        //   <div class="hx-spacer"></div>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //   <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        // </div>`,
-        //         },
-        //         {
-        //           title: 'Inverted',
-        //           code: `
-        //   <p>Toolbar themes support the inverted modifier</p>
-
-        //     <div class="hx-toolbar is-primary is-inverted">
-        //       <span>Title</span>
-        //       <div class="hx-spacer"></div>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        //     </div>
-        //     <br>
-        //     <div class="hx-toolbar is-warning is-inverted">
-        //       <span>Title</span>
-        //       <div class="hx-spacer"></div>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        //     </div>
-        //     <br>
-        //     <div class="hx-toolbar is-danger is-inverted">
-        //       <span>Title</span>
-        //       <div class="hx-spacer"></div>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        //     </div>
-        //     <br>
-        //     <div class="hx-toolbar is-info is-inverted">
-        //       <span>Title</span>
-        //       <div class="hx-spacer"></div>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-star"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-plus"></i></button>
-        //       <button class="hx-button is-flat"><i class="hx-icon icon-more"></i></button>
-        //     </div>
-        //             `,
-        //         },
         {
           title: 'Examples',
           withContent: false,
           code: `<div class="hx-card-content grid gap-4">
-  <div class="hx-toolbar--modern perforated-b">
+  <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
       <span class="hx-icon-control">
         <i class="hx-icon icon-send"></i>
@@ -202,7 +97,7 @@ export default {
     </button>
   </div>
     
-  <div class="hx-toolbar--modern perforated-b">
+  <div class="hx-toolbar next perforated-b">
     <div>
       <span class="is-info font-medium">4</span>
       <span> items in the address book</span>
@@ -244,7 +139,7 @@ export default {
     </button>
   </div>
     
-  <div class="hx-toolbar--modern perforated-b">
+  <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
       <span class="hx-icon-control">
         <i class="hx-icon icon-printer-outline"></i>
@@ -303,7 +198,7 @@ export default {
           title: 'Sizes',
           code: `<p>Toolbar supports 3 sizes.</p>
 <p class="hx-prose">(default)</p>
-<div class="hx-toolbar--modern bg-info-emphasis fg-contrast">
+<div class="hx-toolbar next bg-info-emphasis fg-contrast">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
@@ -314,7 +209,7 @@ export default {
 </div>
 
 <p class="hx-prose"><code>.compact</code></p>
-<div class="hx-toolbar--modern bg-info-emphasis fg-contrast compact mt-2">
+<div class="hx-toolbar next bg-info-emphasis fg-contrast compact mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">
@@ -325,7 +220,7 @@ export default {
 </div>
 
 <p class="hx-prose"><code>.comfortable</code></p>
-<div class="hx-toolbar--modern bg-info-emphasis fg-contrast comfortable mt-2">
+<div class="hx-toolbar next bg-info-emphasis fg-contrast comfortable mt-2">
   <span>Title</span>
   <div class="hx-spacer"></div>
   <button class="hx-button flat">

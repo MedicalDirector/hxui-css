@@ -51,23 +51,23 @@ export default {
           description: 'List item element',
         },
         {
-          class: 'container-start',
+          class: 'hx-list-item__start',
           type: 'sub-component',
           description: 'Container for start icons and avatars (optional)',
         },
         {
-          class: 'container-primary',
+          class: 'hx-list-item__primary',
           type: 'sub-component',
           description:
             'Container for primary label like subheadings and data-labels (required)',
         },
         {
-          class: 'container-end',
+          class: 'hx-list-item__end',
           type: 'sub-component',
           description: 'Container for end buttons (optional)',
         },
         {
-          class: 'container-secondary',
+          class: 'hx-list-item__secondary',
           type: 'sub-component',
           description:
             'Container for additional information (optional). Ocuppies own row.',
@@ -94,7 +94,7 @@ export default {
     <ul class="hx-card hx-list">
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -102,10 +102,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -116,7 +116,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -124,10 +124,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -138,7 +138,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -146,10 +146,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -160,7 +160,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -168,10 +168,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -182,7 +182,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -190,10 +190,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -204,7 +204,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -212,10 +212,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -235,7 +235,7 @@ export default {
     <ul class="hx-card hx-list">
       <li>
         <div class="hx-list-item highlight">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -243,10 +243,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -258,7 +258,7 @@ export default {
               </span>
             </button>
           </div>
-          <div class="container-secondary">
+          <div class="hx-list-item__secondary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
           </div>
@@ -266,7 +266,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item highlight highlight-danger">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -274,10 +274,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -289,7 +289,7 @@ export default {
               </span>
             </button>
           </div>
-          <div class="container-secondary">
+          <div class="hx-list-item__secondary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
           </div>
@@ -326,7 +326,7 @@ export default {
     <ul class="hx-card hx-list">
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -334,10 +334,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-more"></i>
@@ -348,7 +348,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -356,10 +356,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>
@@ -379,7 +379,7 @@ export default {
     <ul class="hx-card hx-list compact">
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar sm">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -387,10 +387,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button sm flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-more"></i>
@@ -401,7 +401,7 @@ export default {
       </li>
       <li>
         <div class="hx-list-item">
-          <div class="container-start">
+          <div class="hx-list-item__start">
             <div class="hx-avatar sm">
               <img 
                 src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -409,10 +409,10 @@ export default {
               />
             </div>
           </div>
-          <div class="container-primary">
+          <div class="hx-list-item__primary">
             Cras justo odio
           </div>
-          <div class="container-end">
+          <div class="hx-list-item__end">
             <button class="hx-button sm flat">
               <span class="hx-icon-control">
                 <i class="hx-icon icon-bin"></i>

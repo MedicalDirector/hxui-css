@@ -161,7 +161,7 @@ export default {
         },
         {
           title: 'Columns responsiveness',
-          code: `<div class="hx-alert is-inverse">
+          code: `<div class="hx-alert info" role="alert">
   <span class="hx-icon-control mr-2">
     <i class="hx-icon is-medium icon-information"></i>
   </span>

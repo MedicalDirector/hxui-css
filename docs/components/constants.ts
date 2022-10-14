@@ -12,7 +12,7 @@ export const NAV_ITEMS = [
     title: 'Theme',
     items: [
       {
-        name: 'Colours',
+        name: 'Colour',
         path: 'colours',
       },
       {
@@ -67,27 +67,23 @@ export const NAV_ITEMS = [
     title: 'Layouts',
     items: [
       {
-        name: 'Accordions',
+        name: 'Accordion',
         path: '/accordions',
       },
       {
-        name: 'Cards',
+        name: 'Card',
         path: '/cards',
       },
       {
-        name: 'Containers',
-        path: '/containers',
-      },
-      {
-        name: 'Dividers',
+        name: 'Divider',
         path: '/dividers',
       },
       {
-        name: 'Sidebar',
-        path: '/sidebar',
+        name: 'Drawer',
+        path: '/drawer',
       },
       {
-        name: 'Toolbars',
+        name: 'Toolbar',
         path: '/toolbars',
       },
     ],
@@ -96,27 +92,27 @@ export const NAV_ITEMS = [
     title: 'Data',
     items: [
       {
-        name: 'Avatars',
+        name: 'Avatar',
         path: '/avatars',
       },
       {
-        name: 'Badges',
+        name: 'Badge',
         path: '/badges',
       },
       {
-        name: 'Bulleted lists',
+        name: 'Bulleted list',
         path: '/bullets',
       },
       {
-        name: 'Data labels',
-        path: '/data-label',
+        name: 'Stat',
+        path: '/stat',
       },
       {
-        name: 'Icons',
+        name: 'Icon',
         path: '/icons',
       },
       {
-        name: 'Lists',
+        name: 'List',
         path: '/lists',
       },
       {
@@ -124,7 +120,7 @@ export const NAV_ITEMS = [
         path: '/pagination',
       },
       {
-        name: 'Tables',
+        name: 'Table',
         path: '/tables',
       },
       {
@@ -137,19 +133,19 @@ export const NAV_ITEMS = [
     title: 'Feedback',
     items: [
       {
-        name: 'Alerts',
+        name: 'Alert',
         path: '/alerts',
       },
       {
-        name: 'Modals',
-        path: '/modals',
+        name: 'Modal dialog',
+        path: '/dialog',
       },
       {
-        name: 'Toasts',
+        name: 'Toast',
         path: '/toasts',
       },
       {
-        name: 'Tooltips',
+        name: 'Tooltip',
         path: '/tooltips',
       },
     ],
@@ -158,15 +154,15 @@ export const NAV_ITEMS = [
     title: 'Inputs',
     items: [
       {
-        name: 'Buttons',
+        name: 'Button',
         path: '/buttons',
       },
       {
-        name: 'Dropdowns',
+        name: 'Dropdown',
         path: '/dropdowns',
       },
       {
-        name: 'Forms',
+        name: 'Form',
         path: '/forms',
       },
       {
@@ -179,7 +175,7 @@ export const NAV_ITEMS = [
     title: 'Navigation',
     items: [
       {
-        name: 'Breadcrumbs',
+        name: 'Breadcrumb',
         path: '/breadcrumbs',
       },
       {
@@ -187,11 +183,11 @@ export const NAV_ITEMS = [
         path: '/nav',
       },
       {
-        name: 'Steppers',
+        name: 'Stepper',
         path: '/steppers',
       },
       {
-        name: 'Tabs',
+        name: 'Tab',
         path: '/tabs',
       },
     ],
@@ -213,11 +209,11 @@ export const NAV_ITEMS = [
     title: 'Marketing',
     items: [
       {
-        name: 'Pages',
+        name: 'Page',
         path: '/pages',
       },
       {
-        name: 'Sections',
+        name: 'Section',
         path: '/sections',
       },
       {

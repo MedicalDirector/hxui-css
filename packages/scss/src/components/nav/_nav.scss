@@ -24,7 +24,7 @@
   }
 }
 
-:where(.#{$namespace}-drawer-container) {
+:where(.#{$namespace}-drawer__container) {
   &:not(.bottom) :where(.#{$namespace}-sidebar, .#{$namespace}-drawer) {
     .#{$namespace}-nav {
       width: size.rem(240);
@@ -52,7 +52,7 @@
   &.#{$namespace}-nav-vertical,
   &.is-vertical,
   &.vertical,
-  :where(.#{$namespace}-drawer-container):not(.bottom) & {
+  :where(.#{$namespace}-drawer__container):not(.bottom) & {
     flex-direction: column;
     align-items: stretch;
 
@@ -66,13 +66,13 @@
     }
   }
 
-  :where(.#{$namespace}-drawer-container):not(.bottom) &:not(:has(.#{$namespace}-nav-section)) {
+  :where(.#{$namespace}-drawer__container):not(.bottom) &:not(:has(.#{$namespace}-nav-section)) {
     padding: 0 spacing.px(3);
   }
 
   &.is-centered,
   &.center,
-  :where(.#{$namespace}-drawer-container).bottom & {
+  :where(.#{$namespace}-drawer__container).bottom & {
     justify-content: center;
   }
 
@@ -272,7 +272,7 @@
   }
 
   // BOTTOM
-  :where(.#{$namespace}-drawer-container).bottom :where(.#{$namespace}-nav):not(.vertical) & {
+  :where(.#{$namespace}-drawer__container).bottom :where(.#{$namespace}-nav):not(.vertical) & {
     align-self: center;
   }
 }
@@ -288,7 +288,7 @@
   //////////////
 
   // BOTTOM
-  :where(.#{$namespace}-drawer-container).bottom & {
+  :where(.#{$namespace}-drawer__container).bottom & {
     padding: 0 spacing.px(4) 0 0;
   }
 }

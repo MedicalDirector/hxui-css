@@ -34,3 +34,10 @@ hr.is-divided {
   height: 20px;
   align-self: center;
 }
+
+hr {
+  margin-top: $hx-spacer;
+  margin-bottom: $hx-spacer;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}

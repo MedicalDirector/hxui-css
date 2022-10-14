@@ -13,7 +13,7 @@
 
     <hr />
 
-    <div class="hx-alert is-info is-inverse">
+    <div class="hx-alert info" role="alert">
       <span class="hx-icon-control mr-2">
         <i class="hx-icon is-medium icon-information"></i>
       </span>
@@ -25,7 +25,7 @@
       </span>
     </div>
 
-    <div class="hx-alert is-inverse">
+    <div class="hx-alert" role="alert">
       <span class="hx-icon-control mr-2">
         <i class="hx-icon is-medium icon-information"></i>
       </span>

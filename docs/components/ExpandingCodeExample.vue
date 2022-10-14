@@ -1,6 +1,6 @@
 <template>
   <section class="hx-card">
-    <div class="hx-card-header">
+    <header class="hx-card-header">
       <h2 class="h3 grow-1">{{ title }}</h2>
 
       <div class="hx-tooltip-container hoverable inline-flex">
@@ -19,27 +19,29 @@
 
         <div class="hx-tooltip left" role="tooltip">Show code</div>
       </div>
-    </div>
-    <div class="hx-card-content p-0" :id="`${title} code snippet`">
+    </header>
+
+    <section class="hx-card-content p-0" :id="`${title} code snippet`">
       <pre
         v-highlightjs
         ref="code"
         class="hx-code square"
         :class="{ open: codeVisible }"
       ><code>{{ code }}</code></pre>
-    </div>
-    <div
+    </section>
+
+    <section
       class="hx-card-content"
       v-if="!!withContent"
       v-html="example"
       :class="background"
-    ></div>
-    <div
+    ></section>
+    <section
       class="contents"
       v-if="!withContent"
       v-html="example"
       :class="background"
-    ></div>
+    ></section>
   </section>
 </template>
 

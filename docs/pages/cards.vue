@@ -245,48 +245,6 @@ export default {
   </div>
 </div>`,
       },
-      {
-        title: 'Using HxUI grid',
-        withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-3 gap-4">
-  <div class="hx-prose">
-    <p>You can create complex layouts using HxUI Grid and Form in Card.</p>
-  </div>
-
-  <div class="grid grid-cols-1 phablet:grid-cols-2 phablet:col-start-2 phablet:col-end-4 gap-4">
-    <div class="hx-card highlight is-warning">
-      <div class="hx-card-content">
-        <p>
-          <strong>09:37</strong> <a href="#">@Liz</a>: Please call James Meadows asap re: his test result. 2nd time he has called.
-        </p>
-        <div class="hx-input-control is-warning">
-          <input class="hx-input" type="text" placeholder="Enter your notes">
-          <label class="hx-label">Add Notes</label>
-        </div>
-        <button class="hx-button warning fullwidth">
-          <span class="hx-icon-control">
-            <i class="hx-icon icon-plus-empty"></i>
-          </span>
-          <span>Add</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="hx-card highlight is-info not-scrollable">
-      <div class="hx-card-content has-padding-small">
-        <div class="hx-columns">
-          <div class="hx-column is-2">
-            <div class="hx-card-icon">
-              <i class="hx-icon icon-calendar-outline is-large"></i>
-            </div>
-          </div>
-          <div class="hx-column"><p>Lunch/catch-up on patient notes</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`,
-      },
     ],
   }),
 }

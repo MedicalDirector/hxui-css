@@ -19,7 +19,7 @@
         </span>
       </button>
 
-      <div class="scroll-container" :inert="!isOpen">
+      <div class="hx-drawer__scroll-container" :inert="!isOpen">
         <nav class="hx-nav vertical pb-2">
           <expanding-nav-item
             v-for="(section, i) in sections"
@@ -90,7 +90,7 @@ export default {
 .hx-nav-toggle {
   top: 52px;
 
-  :where(.hx-drawer-container).bottom & {
+  :where(.hx-drawer__container).bottom & {
     top: unset;
     bottom: -40px;
     right: 22px;

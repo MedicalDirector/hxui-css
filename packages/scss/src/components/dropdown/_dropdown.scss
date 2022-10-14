@@ -265,47 +265,6 @@
     color: inherit;
     font: inherit;
   }
-
-  // /// START
-  // .container-start {
-  //   grid-area: item-start;
-  //   display: inline-flex;
-  //   align-self: center;
-  //   gap: spacing.px(2);
-
-  //   &:has(+ .container-primary),
-  //   &:has(+ :is(div, span)) {
-  //     margin-right: spacing.px(2);
-  //   }
-  // }
-
-  // /// PRIMARY
-  // .container-primary {
-
-  //   grid-area: item-primary;
-  //   display: flex;
-  //   align-self: center;
-  //   flex: 1;
-  //   gap: spacing.px(2);
-
-  //   &:has(+ .container-end) {
-  //     margin-right: spacing.px(2);
-  //   }
-  // }
-
-  // /// END
-  // .container-end {
-  //   color: inherit;
-  //   grid-area: item-end;
-  //   display: inline-flex;
-  //   align-self: center;
-  //   gap: spacing.px(2);
-  // }
-
-  // :where(div, span):not(:where(.container-start, .container-primary, .container-end)),
-  // &:not(:has(.container-start, .container-primary, .container-end)) {
-  //   @extend .container-primary;
-  // }
 }
 
 @include deprecate("3.0.0", "Use .hx-dropdown-item with .container-start") {

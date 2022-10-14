@@ -1,0 +1,175 @@
+@use "../../variables" as *;
+@use "../../mixins/transition";
+@use "../../mixins/breakpoint";
+@use "../../functions/size";
+@use "../../functions/spacing";
+@use "../../mixins/deprecate" as *;
+
+///////////////////////////
+//  SIDE PANEL CONTAINER //
+///////////////////////////
+
+.#{$namespace}-dialog {
+  border: none;
+  padding: 0;
+  position: fixed;
+  z-index: var(--elevation-semantic-dialog);
+  background-color: var(--color-surface-background-default);
+  box-shadow: var(--shadow-global-xl);
+
+  &::backdrop {
+    // cannot use css custom properties with dialog
+    background-color: rgba($hx-color-black, 0.5);
+  }
+
+  &:not(.side) {
+    margin: auto;
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+    width: 100%;
+    border-radius: 4px;
+
+    &.sm {
+      max-width: size.rem(480);
+    }
+
+    // Responsiveness
+    @include breakpoint.phablet {
+      max-height: calc(100vh - 40px);
+      width: size.rem(640);
+    }
+
+    @include breakpoint.tablet {
+      &.lg {
+        width: size.rem(864);
+      }
+    }
+  }
+
+  &.side {
+    height: 100vh;
+    min-height: 100vh;
+    width: 0;
+    border-left: rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+    transform-origin: right center;
+    @include transition.dimensions(300ms);
+
+    top: 0;
+    margin-left: auto;
+
+    &[open],
+    &.open {
+      width: 100%;
+
+      @include breakpoint.tablet {
+        width: size.rem(600);
+      }
+    }
+  }
+}
+
+@include deprecate("3.0.0", "Use .is-flat instead") {
+  .#{$namespace}-inspector {
+    height: 100vh;
+    min-height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: var(--elevation-semantic-dialog);
+    background-color: var(--color-surface-background-default);
+    border-left: rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+    box-shadow: var(--shadow-global-xl);
+    transform-origin: right center;
+    @include transition.dimensions(300ms);
+
+    padding: 0;
+    top: 0;
+    margin-left: auto;
+    border: none;
+
+    &::backdrop {
+      // cannot use css custom properties with dialog
+      background-color: rgba($hx-color-black, 0.5);
+    }
+
+    &[open],
+    &.open {
+      width: 100%;
+
+      @include breakpoint.tablet {
+        width: size.rem(600);
+      }
+    }
+  }
+}
+
+.#{$namespace}-dialog__header {
+  :where(.#{$namespace}-dialog, .#{$namespace}-inspector) & {
+    background-color: var(--color-surface-neutral-default);
+    display: flex;
+    flex-flow: column nowrap;
+    opacity: 0;
+    @include transition.opacity(200ms);
+  }
+
+  :where(.#{$namespace}-dialog.side, .#{$namespace}-inspector) & {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+  }
+
+  :where(.#{$namespace}-dialog__container).open :where(.#{$namespace}-dialog) &,
+  :where(.#{$namespace}-dialog):is([open], .open) &,
+  :where(.#{$namespace}-inspector).open & {
+    opacity: 1;
+  }
+}
+
+.#{$namespace}-dialog__content {
+  :where(.#{$namespace}-dialog, .#{$namespace}-inspector) & {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-y: auto;
+    opacity: 0;
+    @include transition.opacity(200ms);
+  }
+
+  :where(.#{$namespace}-dialog.side, .#{$namespace}-inspector) & {
+    background-color: var(--color-surface-background-default);
+
+    &.padded {
+      padding: spacing.rem(4) spacing.px(4);
+    }
+  }
+
+  :where(.#{$namespace}-dialog:not(.side)) & {
+    padding: spacing.rem(1) spacing.px(4) spacing.rem(4);
+    background-color: var(--color-surface-neutral-default);
+  }
+
+  :where(.#{$namespace}-dialog__container).open :where(.#{$namespace}-dialog) &,
+  :where(.#{$namespace}-dialog):is([open], .open) &,
+  :where(.#{$namespace}-inspector).open & {
+    opacity: 1;
+  }
+}
+
+.#{$namespace}-dialog__footer {
+  :where(.#{$namespace}-dialog, .#{$namespace}-inspector) & {
+    background-color: var(--color-surface-neutral-default);
+    display: flex;
+    gap: spacing.px(2);
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05); //TODO: unhard var(--color-border-default);
+    opacity: 0;
+    @include transition.opacity(200ms);
+  }
+
+  :where(.#{$namespace}-dialog:not(.side)) & {
+    background-color: var(--color-surface-background-default);
+  }
+
+  :where(.#{$namespace}-dialog__container).open :where(.#{$namespace}-dialog) &,
+  :where(.#{$namespace}-dialog):is([open], .open) &,
+  :where(.#{$namespace}-inspector).open & {
+    opacity: 1;
+  }
+}
