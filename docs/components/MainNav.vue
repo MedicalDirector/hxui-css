@@ -23,7 +23,7 @@
             disabled: item.status === 'disabled',
           }"
         >
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon" :class="item.icon"></i>
           </span>
           <span>{{ item.name }}</span>
@@ -37,7 +37,7 @@
             disabled: item.status === 'disabled',
           }"
         >
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon" :class="item.icon"></i>
           </span>
           <span>{{ item.name }}</span>
@@ -55,7 +55,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-chat-bubble"></i>
           </span>
           <span>Feedback</span>
@@ -64,7 +64,7 @@
 
       <li class="hidden phablet:contents">
         <button class="hx-nav-link" @click="toggleNav">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i
               class="hx-icon"
               :class="{

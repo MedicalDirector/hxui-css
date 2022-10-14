@@ -200,8 +200,8 @@
 ///////////////
 
 :where(.#{$namespace}-alert) {
-  :where(span, div):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .#{$namespace}-badge, .#{$namespace}-button)),
-  .#{$namespace}-alert-content {
+  :where(span, div):not(:where(.#{$namespace}-icon-container, .#{$namespace}-badge, .#{$namespace}-button)),
+  .#{$namespace}-alert__content {
     display: flex;
     align-items: center;
     font: inherit;

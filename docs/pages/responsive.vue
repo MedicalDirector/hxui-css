@@ -41,36 +41,36 @@ export default {
 
 <div class="flex scrollable-x">
   <div class="grid grow-1 phablet:grid-cols-5 gap-y-2">
-    <div class="box col-span-1">
+    <div class="box--main col-span-1">
       <span class="h4">Mobile</span>
       <br>
       <span class="b2">Up to 603px</span>
     </div>
-    <div class="box--alt col-span-4 mobile:hidden"></div>
+    <div class="box--secondary col-span-4 mobile:hidden"></div>
 
-    <div class="box--alt col-span-1 mobile:hidden"></div>
-    <div class="box phablet:col-span-4">
+    <div class="box--secondary col-span-1 mobile:hidden"></div>
+    <div class="box--main phablet:col-span-4">
       <span class="h4">Phablet</span>
       <br>
       <span class="b2">Between 604px and 895px</small>
     </div>
 
-    <div class="box--alt col-span-2 mobile:hidden"></div>
-    <div class="box phablet:col-span-3">
+    <div class="box--secondary col-span-2 mobile:hidden"></div>
+    <div class="box--main phablet:col-span-3">
       <span class="h4">Tablet</span>
       <br>
       <span class="b2">Between 896px and 1247px</small>
     </div>
 
-    <div class="box--alt col-span-3 mobile:hidden"></div>
-    <div class="box phablet:col-span-2">
+    <div class="box--secondary col-span-3 mobile:hidden"></div>
+    <div class="box--main phablet:col-span-2">
       <span class="h4">Laptop</span>
       <br>
       <span class="b2">Between 1248px and 1439px</small>
     </div>
 
-    <div class="box--alt col-span-4 mobile:hidden"></div>
-    <div class="box phablet:col-span-1">
+    <div class="box--secondary col-span-4 mobile:hidden"></div>
+    <div class="box--main phablet:col-span-1">
       <span class="h4">Desktop</span>
       <br>
       <span class="b2">1440px and above</small>
@@ -82,7 +82,7 @@ export default {
           title: 'Visibility',
           withContent: false,
           code: `<div 
-  class="hx-card-content grid phablet:grid-cols-2 gap-4"
+  class="hx-card__content grid phablet:grid-cols-2 gap-4"
 >
   <div class="hx-prose">
     <h3 class="h4 mt-0">Show</h4>
@@ -129,7 +129,7 @@ export default {
   </div>
 
   <div class="hx-alert info phablet:col-span-2 mb-0" role="alert">
-    <span class="hx-icon-control mr-2">
+    <span class="hx-icon-container mr-2">
       <i class="hx-icon is-medium icon-information"></i>
     </span>
     <span class="hx-flex-1">
@@ -140,11 +140,11 @@ export default {
   <div 
   class="flex flex-col phablet:flex-row gap-4 phablet:col-span-2"
 >
-    <p class="hidden mobile:flex box">Mobile</p>
-    <p class="hidden phablet:flex box">Phablet</p>
-    <p class="hidden tablet:flex box">Tablet</p>
-    <p class="hidden laptop:flex box">Laptop</p>
-    <p class="hidden desktop:flex box">Desktop</p>
+    <p class="hidden mobile:flex box--main">Mobile</p>
+    <p class="hidden phablet:flex box--main">Phablet</p>
+    <p class="hidden tablet:flex box--main">Tablet</p>
+    <p class="hidden laptop:flex box--main">Laptop</p>
+    <p class="hidden desktop:flex box--main">Desktop</p>
   </div>  
 </div>`,
         },
@@ -173,17 +173,27 @@ table.matrix > tbody > tr > th {
 }
 
 .box {
-  text-align: center;
-  background-color: var(--color-surface-primary-emphasis);
   color: var(--color-foreground-contrast);
-  padding: 0.5rem 1rem;
-  flex-grow: 1;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+
+  &--main {
+    @extend .box;
+    background-color: var(--color-surface-primary-emphasis);
+  }
 
   &--alt {
-    text-align: center;
-    flex-grow: 1;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-surface-background-default);
+    @extend .box;
+
+    background-color: var(--color-surface-info-emphasis);
+  }
+
+  &--secondary {
+    @extend .box;
+
+    background-color: var(--color-surface-neutral-muted);
   }
 }
 </style>

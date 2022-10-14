@@ -63,7 +63,7 @@ export default {
         {
           title: 'Examples',
           withContent: false,
-          code: `<div class="hx-card-content">
+          code: `<div class="hx-card__content">
   <dl class="grid phablet:grid-cols-2 tablet:grid-cols-4 gap-4">
     <div class="hx-stat">
       <dt class="hx-stat__label">Hcp</dt>

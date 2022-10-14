@@ -34,7 +34,7 @@ export default {
       {
         title: 'Basic avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-avatar">
     <img 
       src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -59,7 +59,7 @@ export default {
       {
         title: 'Icon avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-avatar danger">
     <i class="hx-icon icon-pulse"></i>
   </div>
@@ -77,7 +77,7 @@ export default {
       {
         title: 'Flat avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-avatar flat caution outline text-black">
     <span>J</span>
   </div>
@@ -101,7 +101,7 @@ export default {
       {
         title: 'Tiled avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div
     class="hx-avatar tile"
     style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -134,7 +134,7 @@ export default {
       {
         title: 'Small avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-avatar sm">
     <img 
       src="${require('~/assets/images/default-avatar-business-bear.png')}"
@@ -179,7 +179,7 @@ export default {
       {
         title: 'Large avatar',
         withContent: false,
-        code: `<div class="hx-card-content flex justify-center items-center gap-2">
+        code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div
     class="hx-avatar lg"
     style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"

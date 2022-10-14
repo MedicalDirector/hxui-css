@@ -131,7 +131,7 @@ export default {
         {
           title: 'Lists',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-3 gap-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-3 gap-4">
   <div>
     <p>Use an unordered list to list things, if the order of the items doesn't matter.</p>
     <p>And a definition list <code>&lt;dl&gt;</code> is used to display name-value pairs, <br>like metadata or a dictionary definition. <br>Each term <code>&lt;dt&gt;</code> is paired with one or more definitions <code>&lt;dd&gt;</code>.</p>
@@ -243,7 +243,7 @@ export default {
         {
           title: 'Copy',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4 hx-prose">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2 gap-4 hx-prose">
   <div>
     <h1>FLAGYL® (METRONIDAZOLE)</h1>
     <div class="pihead">Product Information</div>

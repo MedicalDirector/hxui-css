@@ -100,7 +100,7 @@ export default {
         {
           title: 'Basic',
           withContent: false,
-          code: `<div class="hx-card-content h-15">
+          code: `<div class="hx-card__content h-15">
   <div class="grid phablet:grid-cols-2 gap-4">
     <div class="hx-flex justify-center">
       <div class="hx-dropdown">
@@ -160,7 +160,7 @@ export default {
         {
           title: 'Position',
           withContent: false,
-          code: `<div class="hx-card-content">
+          code: `<div class="hx-card__content">
   <p class="hx-prose">
     Add any of the following modifiers to <code>.hx-dropdown-menu</code>.
   </p>
@@ -297,7 +297,7 @@ export default {
         {
           title: 'Limited length',
           withContent: false,
-          code: `<div class="hx-card-content h-30">
+          code: `<div class="hx-card__content h-30">
   <p class="hx-prose">
     Add modifier <code>.limit-width</code> or <code>.limit-height</code> to <code>.hx-dropdown-menu</code>.
   </p>
@@ -354,7 +354,7 @@ export default {
         {
           title: 'Kitchen sink / Custom',
           withContent: false,
-          code: `<div class="hx-card-content h-30">
+          code: `<div class="hx-card__content h-30">
   <p class="hx-prose">
     Add any component within. No padding, no margins.
     Styling should be controlled by the component.
@@ -401,7 +401,7 @@ export default {
               <div class="hx-input-group">
                 <input class="hx-input" id="from" type="text">
                 <button class="hx-button flat icon">
-                  <span class="hx-icon-control">
+                  <span class="hx-icon-container">
                     <i class="hx-icon icon-calendar-outline"></i>
                   </span>
                 </button>
@@ -413,7 +413,7 @@ export default {
               <div class="hx-input-group">
                 <input class="hx-input" id="to" type="text">
                 <button class="hx-button flat icon">
-                  <span class="hx-icon-control">
+                  <span class="hx-icon-container">
                     <i class="hx-icon icon-calendar-outline"></i>
                   </span>
                 </button>

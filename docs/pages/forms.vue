@@ -38,7 +38,7 @@ export default {
         {
           title: 'Input field',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2 gap-4">
   <div class="hx-form-control fullwidth">
     <label class="hx-label" for="input-2">Full Name</label>
     <input class="hx-input" id="input-2" type="text" required>
@@ -48,12 +48,12 @@ export default {
   <div class="hx-form-control fullwidth">
     <label class="hx-label" for="input-3">Full Name</label>
     <div class="hx-input-group">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-search"></i>
       </span>
       <input class="hx-input" id="input-3" type="text" required>
       <button class="hx-button flat icon">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-plus"></i>
         </span>
       </button>
@@ -170,7 +170,7 @@ export default {
 </div>
 
 <div 
-  class="hx-card-content grid phablet:grid-cols-2 gap-4" 
+  class="hx-card__content grid phablet:grid-cols-2 gap-4" 
   style="background-color: var(--color-surface-background-default); box-shadow: 0 -1px 0 rgb(0 0 0 / 10%);"
 >
   <div class="hx-form-control fullwidth">
@@ -182,12 +182,12 @@ export default {
   <div class="hx-form-control fullwidth">
     <label class="hx-label" for="input-3">Full Name</label>
     <div class="hx-input-group contrast">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-search"></i>
       </span>
       <input class="hx-input" id="input-3" type="text" required>
       <button class="hx-button flat icon">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-plus"></i>
         </span>
       </button>
@@ -211,8 +211,8 @@ export default {
     <div class="hx-input-actions">
       <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
       <div class="hx-button-group">
-        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
-        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-close-empty"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-plus"></i></span></button>
       </div>
     </div>
   </div>
@@ -305,8 +305,8 @@ export default {
     <div class="hx-input-actions">
       <div class="hx-loader is-small"><div></div><div></div><div></div><div></div></div>
       <div class="hx-button-group">
-        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-close-empty"></i></span></button>
-        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="icon icon-plus"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-close-empty"></i></span></button>
+        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="icon icon-plus"></i></span></button>
       </div>
     </div>
   </div>
@@ -399,7 +399,7 @@ export default {
         {
           title: 'Radio buttons',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <p>Radio Buttons are used when the user must make only one selection out of a group of items.</p>
 
   <div class="grid grid-cols-1 phablet:grid-cols-4 gap-4">
@@ -527,7 +527,7 @@ export default {
         {
           title: 'Checkboxes',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <p>
     Use checkboxes when looking for yes or no answers. 
     The <code>for</code> attribute is necessary to bind our custom checkbox with the input.

@@ -116,62 +116,62 @@ export default {
   </tbody>
 </table>`,
         },
-        {
-          title: 'Heading examples - Headings in a form or panel',
-          withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-4 gap-4">
-  <div>
-    <h3>New Recipe</h3>
-    <div class="hx-form-control no-label">
-      <label class="hx-label sr-only">Recipe Name</label>
-      <input class="hx-input" required type="text">
-      <span class="hx-help">Please enter the recipe name</span>
-    </div>
-  </div>
-  <div class="hx-card phablet:col-start-2 phablet:col-end-5">
-    <div class="hx-card-content grid gap-4">
-      <div>
-        <div class="hx-form-control fullwidth">
-          <label class="hx-label" for="textarea-sample">
-            Ingredients
-          </label>
-          <textarea
-            class="hx-input ng-pristine ng-invalid"
-            name="textarea-sample"
-            required
-          ></textarea>
-          <span class="hx-help">
-            Please enter the recipe ingredients
-          </span>
-        </div>
-      </div>
-      <div class="grid phablet:grid-cols-2 gap-4">
-        <div class="hx-form-control fullwidth">
-          <label class="hx-label">Qty</label>
-          <input
-            class="hx-input ng-untouched ng-pristine ng-valid"
-            name="Qty"
-            required
-            type="text"
-          />
-        </div>
-        <div class="hx-form-control fullwidth">
-          <label class="hx-label">Rpts</label>
-          <input
-            class="hx-input ng-untouched ng-pristine ng-valid"
-            name="Rpts"
-            required
-            type="text"
-          />
-        </div>
-        <p class="phablet:col-start-1 phablet:col-end-3">
-          See <a href="/panel-header/">Panel Header</a> and <a href="/panel/">Panel</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>`,
-        },
+        //         {
+        //           title: 'Heading examples - Headings in a form or panel',
+        //           withContent: false,
+        //           code: `<div class="hx-card__content grid phablet:grid-cols-4 gap-4">
+        //   <div>
+        //     <h3>New Recipe</h3>
+        //     <div class="hx-form-control no-label">
+        //       <label class="hx-label sr-only">Recipe Name</label>
+        //       <input class="hx-input" required type="text">
+        //       <span class="hx-help">Please enter the recipe name</span>
+        //     </div>
+        //   </div>
+        //   <div class="hx-card phablet:col-start-2 phablet:col-end-5">
+        //     <div class="hx-card__content grid gap-4">
+        //       <div>
+        //         <div class="hx-form-control fullwidth">
+        //           <label class="hx-label" for="textarea-sample">
+        //             Ingredients
+        //           </label>
+        //           <textarea
+        //             class="hx-input ng-pristine ng-invalid"
+        //             name="textarea-sample"
+        //             required
+        //           ></textarea>
+        //           <span class="hx-help">
+        //             Please enter the recipe ingredients
+        //           </span>
+        //         </div>
+        //       </div>
+        //       <div class="grid phablet:grid-cols-2 gap-4">
+        //         <div class="hx-form-control fullwidth">
+        //           <label class="hx-label">Qty</label>
+        //           <input
+        //             class="hx-input ng-untouched ng-pristine ng-valid"
+        //             name="Qty"
+        //             required
+        //             type="text"
+        //           />
+        //         </div>
+        //         <div class="hx-form-control fullwidth">
+        //           <label class="hx-label">Rpts</label>
+        //           <input
+        //             class="hx-input ng-untouched ng-pristine ng-valid"
+        //             name="Rpts"
+        //             required
+        //             type="text"
+        //           />
+        //         </div>
+        //         <p class="phablet:col-start-1 phablet:col-end-3">
+        //           See <a href="/panel-header/">Panel Header</a> and <a href="/panel/">Panel</a>
+        //         </p>
+        //       </div>
+        //     </div>
+        //   </div>
+        // </div>`,
+        //         },
       ],
     }
   },

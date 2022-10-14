@@ -96,7 +96,7 @@
   @include size.sm {
     @include deprecate("2.0.0", "No longer part of HXUI") {
       &:not(.is-round) {
-        .#{$namespace}-icon-control {
+        .#{$namespace}-icon-container {
           * {
             font-size: 14px;
           }
@@ -111,7 +111,6 @@
   // With icons //
   ////////////////
 
-  .#{$namespace}-icon-control,
   .#{$namespace}-icon-container {
     @include deprecate("2.0.0", "No longer part of HXUI") {
       // start icon
@@ -187,7 +186,7 @@
       margin-left: 0.25rem;
       margin-right: 0.25rem;
 
-      .#{$namespace}-icon-control {
+      .#{$namespace}-icon-container {
         margin-top: 1px;
       }
 

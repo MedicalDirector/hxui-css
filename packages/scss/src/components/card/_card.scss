@@ -133,14 +133,21 @@ $border-width-default: 1;
 // CARD HEADER //
 /////////////////
 
-.#{$namespace}-card-header {
+.#{$namespace}-card-header,
+.#{$namespace}-card__header {
   // border-bottom: 1px solid $hx-border-color;
   box-shadow: 0 1px 0 $hx-border-color;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: spacing.rem(2) spacing.px(4);
   gap: spacing.px(2);
   min-height: spacing.rem(12);
+  flex: 1;
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    font: var(--h3);
+  }
 }
 
 .#{$namespace}-card-header-start,
@@ -153,7 +160,7 @@ $border-width-default: 1;
   flex-grow: 1;
 }
 
-@include deprecate("3.0.0", "Use .h4 contained inside .hx-card-header-title") {
+@include deprecate("3.0.0", "Use .h4 contained inside .hx-card__header-title") {
   .#{$namespace}-card-header-title {
     align-items: center;
     color: $hx-text-strong;
@@ -164,7 +171,7 @@ $border-width-default: 1;
   }
 }
 
-@include deprecate("3.0.0", "Use .hx-button for actions contained inside .hx-card-header-end") {
+@include deprecate("3.0.0", "Use .hx-button for actions contained inside .hx-card__header-end") {
   .#{$namespace}-card-header-icon {
     align-items: center;
     cursor: pointer;
@@ -174,7 +181,8 @@ $border-width-default: 1;
   }
 }
 
-.#{$namespace}-card-image {
+.#{$namespace}-card-image,
+.#{$namespace}-card__image {
   display: block;
   position: relative;
 }
@@ -185,7 +193,8 @@ $border-width-default: 1;
 
 // TODO: should also apply to card-header and card-footer,
 // and be settable from card container
-.#{$namespace}-card-content {
+.#{$namespace}-card-content,
+.#{$namespace}-card__content {
   padding: spacing.rem(4) spacing.px(4);
 
   @include deprecate("2.0.0", "Remove modifier") {
@@ -224,7 +233,8 @@ $border-width-default: 1;
 // CARD FOOTER //
 /////////////////
 
-.#{$namespace}-card-footer {
+.#{$namespace}-card-footer,
+.#{$namespace}-card__footer {
   // border-top: 1px solid $hx-border-color;
   box-shadow: 0 -1px 0 $hx-border-color;
   display: flex;

@@ -41,20 +41,20 @@
 
     <dialog class="hx-dialog side" ref="dialogSide">
       <header class="hx-dialog__header">
-        <div class="hx-flex justify-between items-center py-3 px-4">
-          <h1 class="h2">Notes</h1>
+        <div class="hx-bar dialog">
+          <h1>Notes</h1>
 
           <button class="hx-button flat" @click="closeDialogAnchored()">
-            <span class="hx-icon-control" aria-hidden="true">
-              <i class="hx-icon icon-close-empty"></i>
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
               <span class="sr-only">Close</span>
             </span>
           </button>
         </div>
-        <div class="hx-toolbar next">
+        <div class="hx-bar sub">
           <button class="hx-button primary">
-            <span class="hx-icon-control" aria-hidden="true">
-              <i class="hx-icon icon-plus-empty"></i>
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
             </span>
             <span>New</span>
           </button>
@@ -73,8 +73,8 @@
 
           <button class="hx-button">
             <span>All</span>
-            <span class="hx-icon-control" aria-hidden="true">
-              <i class="hx-icon icon-caret-down"></i>
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
             </span>
           </button>
         </div>
@@ -90,12 +90,12 @@
       ref="dialogCenter"
     >
       <header class="hx-dialog__header">
-        <div class="hx-flex justify-between items-center py-3 px-4">
+        <div class="hx-bar dialog">
           <h1 class="h2">Title</h1>
 
           <button class="hx-button flat" @click="closeDialogCentered()">
-            <span class="hx-icon-control" aria-hidden="true">
-              <i class="hx-icon icon-close-empty"></i>
+            <span class="hx-icon-container">
+              <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
               <span class="sr-only">Close</span>
             </span>
           </button>
@@ -155,7 +155,7 @@ export default {
       dialogSize: '',
       data: [
         {
-          class: 'hx-dialog__container',
+          class: 'hx-dialog-container',
           type: 'component',
           description:
             'Container element (not requried if using `dialog` element)',
@@ -174,7 +174,8 @@ export default {
         {
           class: 'hx-dialog',
           type: 'component',
-          description: 'Main element',
+          description:
+            'Main element. Requires role attribute of "dialog" if not using `dialog` element',
         },
         {
           class: 'side',
@@ -211,17 +212,17 @@ export default {
         {
           title: 'Default',
           withContent: false,
-          code: `<section class="hx-card-content" style="background-color: rgba(0, 0, 0, 0.5);">
+          code: `<section class="hx-card__content" style="background-color: rgba(0, 0, 0, 0.5);">
 
   <!-- ignore style overrides -->
   <!-- add class 'sm' for small width and 'lg' for large width -->
   <dialog class="hx-dialog" open style="position: relative;">
     <header class="hx-dialog__header">
-      <div class="hx-flex justify-between items-center py-3 px-4">
+      <div class="hx-bar dialog">
         <h1 class="h2">Title</h1>
 
         <button class="hx-button flat">
-          <span class="hx-icon-control" aria-hidden="true">
+          <span class="hx-icon-container" aria-hidden="true">
             <i class="hx-icon icon-close-empty"></i>
             <span class="sr-only">Close</span>
           </span>
@@ -239,7 +240,7 @@ export default {
     </section>
 
     <footer class="hx-dialog__footer">
-      <div class="hx-flex justify-end gap-2 items-center p-4">
+      <div class="hx-bar footer">
         <button class="hx-button">
           <span>Cancel</span>
         </button>
@@ -254,16 +255,16 @@ export default {
         {
           title: 'Side (anchored)',
           withContent: false,
-          code: `<section class="hx-card-content" style="background-color: rgba(0, 0, 0, 0.5);">
+          code: `<section class="hx-card__content" style="background-color: rgba(0, 0, 0, 0.5);">
 
   <!-- ignore style overrides -->
   <dialog class="hx-dialog side" open style="position: relative;">
     <header class="hx-dialog__header">
-      <div class="hx-flex justify-between items-center py-3 px-4">
+      <div class="hx-bar dialog">
         <h1 class="h2">Notes</h1>
 
         <button class="hx-button flat">
-          <span class="hx-icon-control" aria-hidden="true">
+          <span class="hx-icon-container" aria-hidden="true">
             <i class="hx-icon icon-close-empty"></i>
             <span class="sr-only">Close</span>
           </span>
@@ -271,7 +272,7 @@ export default {
       </div>
       <div class="hx-toolbar next">
         <button class="hx-button primary">
-          <span class="hx-icon-control" aria-hidden="true">
+          <span class="hx-icon-container" aria-hidden="true">
             <i class="hx-icon icon-plus-empty"></i>
           </span>
           <span>New</span>
@@ -291,7 +292,7 @@ export default {
 
         <button class="hx-button">
           <span>All</span>
-          <span class="hx-icon-control" aria-hidden="true">
+          <span class="hx-icon-container" aria-hidden="true">
             <i class="hx-icon icon-caret-down"></i>
           </span>
         </button>

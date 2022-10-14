@@ -3,7 +3,7 @@
     <button class="hx-nav-heading" @click="toggleItem">
       <span>{{ title }}</span>
       <div class="hx-button icon flat">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container" aria-hidden="true">
           <i
             class="hx-icon"
             :class="{
@@ -12,6 +12,7 @@
             }"
           ></i>
         </span>
+        <span class="sr-only">{{ show ? 'Close' : 'Show' }}</span>
       </div>
     </button>
 

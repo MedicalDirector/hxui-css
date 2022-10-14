@@ -67,7 +67,7 @@
   &.is-text-ellipsed,
   &.text-ellipsed {
     :where(.#{$namespace}-dropdown-item) {
-      > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+      > :is(div, span):not(:where(.#{$namespace}-icon-container)) {
         @include text.truncate;
       }
 
@@ -78,7 +78,7 @@
   &.is-text-multiline,
   &.text-multiline {
     :where(.#{$namespace}-dropdown-item) {
-      > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+      > :is(div, span):not(:where(.#{$namespace}-icon-container)) {
         @include text.multiline;
       }
 

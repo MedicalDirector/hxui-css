@@ -117,7 +117,7 @@
   }
 }
 
-.#{$namespace}-icon {
+:where(.#{$namespace}-icon-container) .#{$namespace}-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +178,6 @@
   }
 }
 
-.#{$namespace}-icon-control,
 .#{$namespace}-icon-container {
   position: relative;
   display: inline-flex;

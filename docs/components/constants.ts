@@ -198,10 +198,12 @@ export const NAV_ITEMS = [
       {
         name: 'Panel',
         path: '/panel',
+        isLegacy: true,
       },
       {
         name: 'Panel header',
         path: '/panel-header',
+        isLegacy: true,
       },
     ],
   },

@@ -12,9 +12,9 @@
     </div>
 
     <hr />
-
+    <!-- 
     <div class="hx-alert info" role="alert">
-      <span class="hx-icon-control mr-2">
+      <span class="hx-icon-container mr-2">
         <i class="hx-icon is-medium icon-information"></i>
       </span>
       <span class="grow-1">
@@ -26,7 +26,7 @@
     </div>
 
     <div class="hx-alert" role="alert">
-      <span class="hx-icon-control mr-2">
+      <span class="hx-icon-container mr-2">
         <i class="hx-icon is-medium icon-information"></i>
       </span>
       <span class="grow-1">
@@ -42,7 +42,7 @@
           for a complete guide to flexbox.
         </p>
       </span>
-    </div>
+    </div> -->
 
     <div class="grid gap-4">
       <expanding-code-example

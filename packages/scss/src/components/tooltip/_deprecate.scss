@@ -97,7 +97,7 @@
       border-style: solid;
     }
 
-    .#{$namespace}-tooltip-content {
+    .#{$namespace}-tooltip__content {
       color: $hx-text;
       background-color: $hx-color-white;
       border: 1px solid $hx-color-gray-lightest;
@@ -185,7 +185,7 @@
   }
 
   &.is-success {
-    .#{$namespace}-tooltip-content {
+    .#{$namespace}-tooltip__content {
       background-color: $hx-color-success;
     }
 
@@ -215,7 +215,7 @@
   }
 
   &.is-warning {
-    .#{$namespace}-tooltip-content {
+    .#{$namespace}-tooltip__content {
       background-color: $hx-color-warning;
     }
 
@@ -245,7 +245,7 @@
   }
 
   &.is-danger {
-    .#{$namespace}-tooltip-content {
+    .#{$namespace}-tooltip__content {
       background-color: $hx-color-danger;
     }
 

@@ -8,7 +8,7 @@
 @use "../variables" as *;
 
 .#{$namespace}-badge,
-.#{$namespace}-badge-content {
+.#{$namespace}-badge__label {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;

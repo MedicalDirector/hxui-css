@@ -74,7 +74,7 @@ export default {
           description: 'Position modifier: top-right, bottom-right.',
         },
         {
-          class: 'hx-badge-content',
+          class: 'hx-badge__label',
           type: 'sub-component',
           description: 'Label element (class optional, element required)',
         },
@@ -83,7 +83,7 @@ export default {
         {
           title: 'Basic',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge">
     <span>Default</span>
   </div>
@@ -113,7 +113,7 @@ export default {
         {
           title: 'Flat',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge">
     <span>Secondary (Default)</span>
   </div>
@@ -140,7 +140,7 @@ export default {
         {
           title: 'Numerical',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge sm">
     <span>0</span>
   </div>
@@ -170,7 +170,7 @@ export default {
         {
           title: 'Contained and positioned',
           withContent: false,
-          code: `<div class="hx-card-content">
+          code: `<div class="hx-card__content">
   <p class="hx-prose">
     Add a positional modifier like <code>.top-right</code> or <code>.bottom-right</code>.
     Must be contained inside an <code>.hx-avatar</code>, <code>.hx-button</code>, <code>.hx-badge</code>, <code>.hx-icon</code>.
@@ -185,7 +185,7 @@ export default {
     </button>
 
     <button class="hx-button secondary">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-calendar"></i>
       </span>
       <div class="hx-badge sm compact top-right">
@@ -223,7 +223,7 @@ export default {
         {
           title: 'Sizes',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge sm">
     <span>
       Small
@@ -244,7 +244,7 @@ export default {
         {
           title: 'Standard delete button',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge">
     <span>Default</span>
     <button class="hx-delete is-small"></button>
@@ -262,11 +262,11 @@ export default {
         {
           title: 'Custom action button',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-center items-center gap-2">
+          code: `<div class="hx-card__content flex justify-center items-center gap-2">
   <div class="hx-badge">
     <span>Default</span>
     <button class="hx-badge-action">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-refresh is-white"></i>
       </span>
     </button>
@@ -274,7 +274,7 @@ export default {
   <div class="hx-badge primary">
     <span>Medium</span>
     <button class="hx-badge-action">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-refresh is-white"></i>
       </span>
     </button>
@@ -282,7 +282,7 @@ export default {
   <div class="hx-badge primary flat lg">
     <span>Large</span>
     <button class="hx-badge-action">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-refresh"></i>
       </span>
     </button>
@@ -293,7 +293,7 @@ export default {
           title: 'With avatar & icons',
           language: 'javascript',
           withContent: false,
-          code: `<div class="hx-card-content grid justify-center items-center gap-2">
+          code: `<div class="hx-card__content grid justify-center items-center gap-2">
   <div class="flex items-center justify-center gap-2">
     <span class="hx-badge primary">
       <span

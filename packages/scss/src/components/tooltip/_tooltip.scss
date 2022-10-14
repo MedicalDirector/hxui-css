@@ -130,7 +130,7 @@
   //  TOOLTIP CONTENT  //
   ///////////////////////
 
-  .#{$namespace}-tooltip-content,
+  .#{$namespace}-tooltip__content,
   > :is(span, div) {
     font: inherit;
     color: inherit;
@@ -281,7 +281,7 @@
 
   @include deprecate("2.0.0", "Tooltips no longer have context.") {
     &.is-success {
-      .#{$namespace}-tooltip-content {
+      .#{$namespace}-tooltip__content {
         background-color: $hx-color-success;
       }
 
@@ -311,7 +311,7 @@
     }
 
     &.is-warning {
-      .#{$namespace}-tooltip-content {
+      .#{$namespace}-tooltip__content {
         background-color: $hx-color-warning;
       }
 
@@ -341,7 +341,7 @@
     }
 
     &.is-danger {
-      .#{$namespace}-tooltip-content {
+      .#{$namespace}-tooltip__content {
         background-color: $hx-color-danger;
       }
 

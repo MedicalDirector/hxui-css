@@ -457,11 +457,11 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-control"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-control"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -516,8 +516,8 @@ export default {
       <td>Shakur</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
         </div>
       </td>
     </tr>
@@ -533,8 +533,8 @@ export default {
       <td>Pulliese</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
         </div>
       </td>
     </tr>
@@ -551,12 +551,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat ">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -597,12 +597,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -621,12 +621,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -646,12 +646,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -670,12 +670,12 @@ export default {
         <td>
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-edit"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-bin"></i>
           </span>
         </button>
@@ -693,12 +693,12 @@ export default {
         <td>
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-edit"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-bin"></i>
           </span>
         </button>
@@ -743,12 +743,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -768,12 +768,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -793,12 +793,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat is-danger">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -816,11 +816,11 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-control"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-control"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -872,12 +872,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -903,12 +903,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -933,12 +933,12 @@ export default {
         <td>
       <div class="hx-flex">
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-edit"></i>
           </span>
         </button>
         <button type="button" class="hx-button is-flat">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-bin"></i>
           </span>
         </button>
@@ -990,8 +990,8 @@ export default {
       <td>Reed</td>
       <td>
         <div class="hx-flex">
-          <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-          <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+          <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+          <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
         </div>
       </td>
     </tr>
@@ -1015,12 +1015,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -1045,12 +1045,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -1075,12 +1075,12 @@ export default {
       <td>
         <div class="hx-flex">
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-edit"></i>
             </span>
           </button>
           <button type="button" class="hx-button is-flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-bin"></i>
             </span>
           </button>
@@ -1098,8 +1098,8 @@ export default {
       <td>Liang</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
       </div>
       </td>
     </tr>
@@ -1137,8 +1137,8 @@ export default {
       <td>Smalls</td>
       <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
       </div>
       </td>
     </tr>
@@ -1152,8 +1152,8 @@ export default {
       <td>Sampson</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
       </div>
       </td>
     </tr>
@@ -1167,8 +1167,8 @@ export default {
       <td>Pipps</td>
         <td>
       <div class="hx-flex">
-        <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-        <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+        <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+        <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
       </div>
       </td>
     </tr>
@@ -1190,11 +1190,11 @@ export default {
 
 <div class="hx-toolbar is-xsmall py-4 is-perforated">
   <button class="hx-button is-outlined mr-1">
-    <div class="hx-icon-control"><i class="hx-icon icon-send"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-send"></i></div>
     <div>Resubmit</div>
   </button>
   <button class="hx-button is-outlined">
-    <div class="hx-icon-control"><i class="hx-icon icon-printer-outline"></i></div>
+    <div class="hx-icon-container"><i class="hx-icon icon-printer-outline"></i></div>
     <div>Print</div>
   </button>
   <div class="hx-spacer"></div>
@@ -1229,8 +1229,8 @@ export default {
           <td>Shakur</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1244,8 +1244,8 @@ export default {
           <td>Pulliese</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1259,8 +1259,8 @@ export default {
           <td>Smith</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1274,8 +1274,8 @@ export default {
           <td>Reed</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1289,8 +1289,8 @@ export default {
           <td>Mendez</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1304,8 +1304,8 @@ export default {
           <td>Sechi</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1319,8 +1319,8 @@ export default {
           <td>Yap</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1334,8 +1334,8 @@ export default {
           <td>Liang</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1349,8 +1349,8 @@ export default {
           <td>Smalls</td>
           <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1364,8 +1364,8 @@ export default {
           <td>Sampson</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat "><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat "><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>
@@ -1379,8 +1379,8 @@ export default {
           <td>Pipps</td>
             <td>
           <div class="hx-flex">
-            <button type="button" class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-edit"></i></span></button>
-            <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-control"><i class="hx-icon icon-bin"></i></span></button>
+            <button type="button" class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-edit"></i></span></button>
+            <button type="button" class="hx-button is-flat is-danger"><span class="hx-icon-container"><i class="hx-icon icon-bin"></i></span></button>
           </div>
           </td>
         </tr>

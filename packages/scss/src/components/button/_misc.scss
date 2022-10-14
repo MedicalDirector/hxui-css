@@ -8,7 +8,7 @@
 .#{$namespace}-delete {
   @include delete;
 
-  &.#{$namespace}-icon-control {
+  &.#{$namespace}-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
   &.sm {
     // specific to accommodate small delete circle
     // can be abstracted to -icon.is-xsmall
-    &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
+    &.#{$namespace}-icon-container > .#{$namespace}-icon.is-small {
       height: 0.75rem;
       width: 0.75rem;
       font-size: 0.75rem;

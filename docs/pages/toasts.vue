@@ -43,34 +43,10 @@ export default {
           description: 'Container element (optional)',
         },
         {
-          class: 'top-left',
+          class: '{position}',
           type: 'modifier',
-          description: 'Achor to top left of screen',
-        },
-        {
-          class: 'top-middle',
-          type: 'modifier',
-          description: 'Achor to top middle of screen',
-        },
-        {
-          class: 'top-right',
-          type: 'modifier',
-          description: 'Achor to top right of screen',
-        },
-        {
-          class: 'bottom-left',
-          type: 'modifier',
-          description: 'Achor to bottom left of screen',
-        },
-        {
-          class: 'bottom-middle',
-          type: 'modifier',
-          description: 'Achor to bottom middle of screen',
-        },
-        {
-          class: 'bottom-right',
-          type: 'modifier',
-          description: 'Achor to bottom right of screen',
+          description:
+            'Achoring to screen edge: top-left, top-middle, top-right, bottom-left, bottom-middle, bottom-right',
         },
         {
           class: 'hx-toast[role="alert"]',
@@ -79,27 +55,12 @@ export default {
             'Main element. Requires adding element attribute of role="alert".',
         },
         {
-          class: 'success',
+          class: '{context}',
           type: 'modifier',
-          description: 'Success context',
+          description: 'Context: success (default), danger, warning, info',
         },
         {
-          class: 'danger',
-          type: 'modifier',
-          description: 'Danger context',
-        },
-        {
-          class: 'warning',
-          type: 'modifier',
-          description: 'Warning context',
-        },
-        {
-          class: 'info',
-          type: 'modifier',
-          description: 'Info context',
-        },
-        {
-          class: 'hx-toast-content',
+          class: 'hx-toast__content',
           type: 'sub-component',
           description: 'Content element (class is optional, element is not)',
         },
@@ -108,17 +69,17 @@ export default {
         {
           title: 'Context',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 laptop:grid-cols-4 gap-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2 laptop:grid-cols-4 gap-4">
   <div>
     <p class="hx-prose"><code>.success</code> (default)</p>
 
     <div class="hx-toast success">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-check"></i>
       </span>
       <span>Save successful</span>
       <button class="hx-button success flat">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-close-empty"></i>
         </span>
       </button>
@@ -129,12 +90,12 @@ export default {
     <p class="hx-prose"><code>.danger</code></p>
 
     <div class="hx-toast danger">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-exclamation"></i>
       </span>
       <span>Failed to send</span>
       <button class="hx-button danger flat">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-close-empty"></i>
         </span>
       </button>
@@ -145,12 +106,12 @@ export default {
     <p class="hx-prose"><code>.warning</code></p>
 
     <div class="hx-toast warning">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-exclamation"></i>
       </span>
       <span>We're offline</span>
       <button class="hx-button warning flat">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-close-empty"></i>
         </span>
       </button>
@@ -160,12 +121,12 @@ export default {
   <div>
     <p class="hx-prose"><code>.info</code></p>
     <div class="hx-toast info">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-information"></i>
       </span>
       <span>For your information</span>
       <button class="hx-button info flat">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-close-empty"></i>
         </span>
       </button>
@@ -176,7 +137,7 @@ export default {
         {
           title: 'Position',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <h3 class="h4 hx-prose m-0">Bottom</h3>
   <div class="hx-card p-4 grid laptop:grid-cols-3" style="overflow: hidden">
 
@@ -188,12 +149,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container bottom-left" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>
@@ -209,12 +170,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container bottom-middle" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>
@@ -230,12 +191,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container bottom-right" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>
@@ -255,12 +216,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container top-left" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>
@@ -276,12 +237,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container top-middle" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>
@@ -297,12 +258,12 @@ export default {
       <!-- ignore style overrides -->
       <div class="hx-toast-container top-right" style="position: absolute;">
         <div class="hx-toast">
-          <span class="hx-icon-control">
+          <span class="hx-icon-container">
             <i class="hx-icon icon-check"></i>
           </span>
           <span>Save successful</span>
           <button class="hx-button success flat">
-            <span class="hx-icon-control">
+            <span class="hx-icon-container">
               <i class="hx-icon icon-close-empty"></i>
             </span>
           </button>

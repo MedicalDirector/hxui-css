@@ -36,7 +36,7 @@ export default {
   data: () => ({
     data: [
       {
-        class: 'hx-drawer__container',
+        class: 'hx-drawer-container',
         type: 'component',
         description: 'Outer container element. Used to house 1 or more drawers',
       },
@@ -75,7 +75,7 @@ export default {
       {
         title: 'States',
         code: `<div class="hx-card flex mb-4">
-  <div class="hx-drawer__container" style="z-index: 2;">
+  <div class="hx-drawer-container" style="z-index: 2;">
     <div class="hx-drawer bg-primary-gradient collapsed">
       <div class="hx-nav vertical p-0"></div>
     </div>
@@ -88,7 +88,7 @@ export default {
 </div>
 
 <div class="hx-card flex mb-4">
-  <div class="hx-drawer__container" style="z-index: 2;">
+  <div class="hx-drawer-container" style="z-index: 2;">
     <div class="hx-drawer bg-primary-gradient mini">
       <div class="hx-nav vertical"></div>
     </div>
@@ -101,7 +101,7 @@ export default {
 </div>
 
 <div class="hx-card flex">
-  <div class="hx-drawer__container" style="z-index: 2;">
+  <div class="hx-drawer-container" style="z-index: 2;">
     <div class="hx-drawer bg-primary-gradient">
       <div class="hx-nav vertical"></div>
     </div>
@@ -123,7 +123,7 @@ export default {
 <p class="hx-prose">Add class <code>.detached</code> to the drawer.</p>
       
 <div class="hx-card flex mb-4">
-  <div class="hx-drawer__container" style="position: relative; z-index: 2;">
+  <div class="hx-drawer-container" style="position: relative; z-index: 2;">
     <div class="hx-drawer bg-primary-gradient detached">
       <div class="hx-nav vertical"></div>
     </div>
@@ -141,11 +141,11 @@ export default {
 
 <p class="hx-prose">
   Add element with class <code>.hx-overlay</code> 
-  inside <code>.hx-drawer__container</code>.
+  inside <code>.hx-drawer-container</code>.
 </p>
 
 <div class="hx-card flex">
-  <div class="hx-drawer__container" style="position: relative; z-index: 2;">
+  <div class="hx-drawer-container" style="position: relative; z-index: 2;">
     <div class="hx-drawer bg-primary-gradient detached">
       <div class="hx-nav vertical"></div>
     </div>

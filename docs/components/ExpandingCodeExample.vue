@@ -1,6 +1,6 @@
 <template>
   <section class="hx-card">
-    <header class="hx-card-header">
+    <header class="hx-card__header">
       <h2 class="h3 grow-1">{{ title }}</h2>
 
       <div class="hx-tooltip-container hoverable inline-flex">
@@ -12,8 +12,9 @@
           :aria-controls="`${title} code snippet`"
           aria-label="Toggle code snippet"
         >
-          <span class="hx-icon-control">
-            <i class="hx-icon icon-code"></i>
+          <span class="hx-icon-container">
+            <i class="hx-icon icon-code" aria-hidden="true"></i>
+            <span class="sr-only">Code</span>
           </span>
         </button>
 
@@ -21,7 +22,7 @@
       </div>
     </header>
 
-    <section class="hx-card-content p-0" :id="`${title} code snippet`">
+    <section class="hx-card__content p-0" :id="`${title} code snippet`">
       <pre
         v-highlightjs
         ref="code"
@@ -31,7 +32,7 @@
     </section>
 
     <section
-      class="hx-card-content"
+      class="hx-card__content"
       v-if="!!withContent"
       v-html="example"
       :class="background"

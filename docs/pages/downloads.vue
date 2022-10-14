@@ -15,7 +15,7 @@
             class="doc-resources-download hx-link"
           >
             <div class="hx-card">
-              <div class="hx-card-content">
+              <div class="hx-card__content">
                 <div class="hx-flex">
                   <img
                     src="~/assets/images/sketch-logo.png"

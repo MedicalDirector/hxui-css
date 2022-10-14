@@ -202,7 +202,7 @@ export default {
         {
           title: 'Line Clamping / Multi-line Ellipsis',
           code: `<div class="hx-alert info" role="alert">
-  <span class="hx-icon-control mr-2">
+  <span class="hx-icon-container mr-2">
     <i class="hx-icon is-medium icon-information"></i>
   </span>
   <span class="hx-flex-1">
@@ -212,7 +212,7 @@ export default {
 </div>
 
 <div class="hx-alert warning" role="alert">
-  <span class="hx-icon-control mr-2">
+  <span class="hx-icon-container mr-2">
     <i class="hx-icon is-medium icon-exclamation"></i>
   </span>
   <span class="hx-flex-1">

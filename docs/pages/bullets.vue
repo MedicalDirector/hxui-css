@@ -54,7 +54,7 @@ export default {
         },
         {
           class: 'horizontal',
-          type: 'component',
+          type: 'modifier',
           description: 'Arranges items horizontally',
         },
         {

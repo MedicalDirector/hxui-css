@@ -34,7 +34,7 @@ export default {
         {
           title: 'Toggle examples',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 gap-4 justify-center">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2 gap-4 justify-center">
   <div class="hx-form-control fullwidth no-label no-help">
     <label class="hx-toggle">
       <span>Off switch</span>

@@ -38,7 +38,7 @@ export default {
         {
           title: 'Example',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-4">
   <div class="hx-card p-4 phablet:col-start-2 phablet:col-end-4">
     <ul class="hx-bullet-list status joined">
       <li class="success checked">
@@ -131,7 +131,7 @@ export default {
         {
           title: 'Progress timeline in popover',
           code: `<div class="hx-card" style="margin-bottom: 32rem">
-  <div class="hx-card-content">
+  <div class="hx-card__content">
     <div class="hx-flex justify-between items-center">
       <h3 class="h3">Current Visit</h4>
 
@@ -252,7 +252,7 @@ export default {
         {
           title: 'Progress timeline marker states',
           withContent: false,
-          code: `<div class="hx-card-content flex justify-between">
+          code: `<div class="hx-card__content flex justify-between">
   <div class="hx-flex items-center gap-2">
     <div class="py-1">
       <ul class="hx-bullet-list status horizontal">
@@ -266,7 +266,7 @@ export default {
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
     </button>
   </div>
 
@@ -283,7 +283,7 @@ export default {
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
     </button>
   </div>
 
@@ -300,7 +300,7 @@ export default {
     </span>
     <button class="hx-button primary">
       <span>Next action</span>
-      <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+      <span class="hx-icon-container"><i class="hx-icon icon-angle-down"></i></span>
     </button>
   </div>
 </div>`,

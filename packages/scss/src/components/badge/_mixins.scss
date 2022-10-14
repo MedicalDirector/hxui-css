@@ -57,11 +57,11 @@ $border-width-default: 1;
 
 /* stylelint-disable-next-line scss/at-mixin-pattern */
 @mixin label-container {
-  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-avatar, .#{$namespace}-delete)) {
+  > :is(div, span):not(:where(.#{$namespace}-icon-container, .#{$namespace}-avatar, .#{$namespace}-delete)) {
     @content;
   }
 
-  .#{$namespace}-badge-content {
+  .#{$namespace}-badge__label {
     @content;
   }
 }

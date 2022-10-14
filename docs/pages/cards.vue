@@ -47,49 +47,34 @@ export default {
         description: 'Main container element',
       },
       {
-        class: 'hx-card-header',
-        type: 'component',
+        class: 'hx-card__header',
+        type: 'sub-component',
         description: 'Horizontal bar with a shadow',
       },
       {
-        class: 'hx-card-header-title',
+        class: 'hx-card__image',
         type: 'sub-component',
-        description: 'Left-aligned bold text',
-      },
-      {
-        class: 'hx-card-header-icon',
-        type: 'sub-component',
-        description: 'A placeholder for an icon',
-      },
-      {
-        class: 'hx-card-image',
-        type: 'component',
         description: 'A fullwidth container for a responsive image',
       },
       {
-        class: 'hx-card-content',
-        type: 'component',
+        class: 'hx-card__content',
+        type: 'sub-component',
         description: 'A container for the main content',
       },
       {
-        class: 'hx-card-footer',
-        type: 'component',
-        description: 'A horizontal list of controls',
-      },
-      {
-        class: 'hx-card-footer-item',
+        class: 'hx-card__footer',
         type: 'sub-component',
-        description: 'A repeatable list item',
+        description: 'A horizontal list of controls',
       },
     ],
     examples: [
       {
         title: 'Default card',
         withContent: false,
-        code: `<div class="hx-card-content grid gap-4 phablet:grid-cols-3">
+        code: `<div class="hx-card__content grid gap-4 phablet:grid-cols-3">
   <div class="hidden phablet:!block"></div>
   <div class="hx-card">
-    <div class="hx-card-content">
+    <div class="hx-card__content">
       <p class="b0 font-bold">Choi</p>
       <p class="b0">Ella</p>
       <br>
@@ -102,7 +87,7 @@ export default {
       {
         title: 'Border highlighted card',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card__content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="hx-prose">
     <p>Add <code>.highlight</code> to the card for border highlighted card.</p>
     <p>You can also add modifiers for different colour border.</p>
@@ -117,7 +102,7 @@ export default {
 
   <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card highlight highlight-info">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -126,7 +111,7 @@ export default {
     </div>
 
     <div class="hx-card highlight highlight-success">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -135,7 +120,7 @@ export default {
     </div>
 
     <div class="hx-card highlight highlight-warning">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -144,7 +129,7 @@ export default {
     </div>
 
     <div class="hx-card highlight highlight-caution">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -153,7 +138,7 @@ export default {
     </div>
 
     <div class="hx-card highlight highlight-danger">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -166,7 +151,7 @@ export default {
       {
         title: 'Border sizes',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card__content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="hx-prose">
     <p>You can add modifiers for different border sizes.</p>
     <ul>
@@ -177,7 +162,7 @@ export default {
 
   <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card highlight">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -186,7 +171,7 @@ export default {
     </div>
 
     <div class="hx-card highlight highlight-lg">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <p class="b0 font-bold">Choi</p>
         <p class="b0">Ella</p>
         <br>
@@ -199,7 +184,7 @@ export default {
       {
         title: 'Raised',
         withContent: false,
-        code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-2 gap-4">
+        code: `<div class="hx-card__content grid grid-cols-1 phablet:grid-cols-2 gap-4">
   <div class="hx-prose">
     <p>Add <code>.raised</code> modifier class to add depth to cards.</p>
     <ul>
@@ -211,7 +196,7 @@ export default {
 
   <div class="grid grid-cols-1 phablet:grid-cols-2 gap-4">
     <div class="hx-card raised hover">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <div class="">
           <div><strong>Choi</strong></div>
           <div>Ella</div>
@@ -222,7 +207,7 @@ export default {
     </div>
 
     <div class="hx-card raised focus">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <div class="">
           <div><strong>Choi</strong></div>
           <div>Ella</div>
@@ -233,7 +218,7 @@ export default {
     </div>
 
     <div class="hx-card raised active">
-      <div class="hx-card-content">
+      <div class="hx-card__content">
         <div class="">
           <div><strong>Choi</strong></div>
           <div>Ella</div>

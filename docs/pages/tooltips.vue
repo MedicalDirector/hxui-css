@@ -66,7 +66,7 @@ export default {
           description: 'Makes tooltip visible',
         },
         {
-          class: 'hx-tooltip-content',
+          class: 'hx-tooltip__content',
           type: 'sub-component',
           description: 'Content element (class is optional, element is not)',
         },
@@ -75,7 +75,7 @@ export default {
         {
           title: 'Basic',
           withContent: false,
-          code: `<div class="hx-card-content grid grid-cols-2">
+          code: `<div class="hx-card__content grid grid-cols-2">
 
   <div class="hx-flex justify-center">
     <div class="hx-tooltip active" role="tooltip">
@@ -98,7 +98,7 @@ export default {
         {
           title: 'Hover',
           withContent: false,
-          code: `<div class="hx-card-content flex grow-1 justify-center">
+          code: `<div class="hx-card__content flex grow-1 justify-center">
   <div class="hx-tooltip-container hoverable">
     <span>Hover over me!</span>
     <div class="hx-tooltip" role="tooltip">
@@ -112,7 +112,7 @@ export default {
         {
           title: 'Position (on hover)',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2 tablet:grid-cols-4 gap-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2 tablet:grid-cols-4 gap-4">
   <div class="hx-flex justify-center">
     <div class="hx-tooltip-container hoverable">
       <span>Hover over me!</span>

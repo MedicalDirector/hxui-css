@@ -56,6 +56,89 @@
   }
 }
 
+//////////////
+//  APPBAR  //
+//////////////
+///
+.#{$namespace}-bar {
+  display: flex;
+  align-items: center;
+  border-width: 1px 0;
+  border-color: transparent;
+  border-style: solid;
+  flex: 1;
+
+  ///////////////
+  // MODIFIERS //
+  ///////////////
+
+  // perforated borders
+  &.is-perforated,
+  &.perforated-b,
+  &.perforated:not(:last-of-type) {
+    border-bottom: 1px dashed $hx-border-color;
+  }
+
+  &.perforated-t {
+    border-top: 1px dashed $hx-border-color;
+  }
+
+  // solid borders
+  &.is-divided,
+  &.solid-t,
+  &.solid:not(:first-of-type) {
+    border-top: 1px solid $hx-border-color;
+  }
+
+  &.solid-b {
+    border-bottom: 1px solid $hx-border-color;
+  }
+}
+
+:where(.#{$namespace}-bar).app {
+  justify-content: space-between;
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    font: var(--h1);
+  }
+}
+
+:where(.#{$namespace}-bar).sub,
+.#{$namespace}-toolbar.next {
+  gap: spacing.px(2);
+
+  ///////////
+  // SIZES //
+  ///////////
+
+  // default
+  padding: size.rem(7) spacing.px(4);
+
+  &.comfortable {
+    padding: size.rem(15) spacing.px(4);
+  }
+
+  &.compact {
+    padding: spacing.rem(0) spacing.px(4);
+  }
+}
+
+:where(.#{$namespace}-bar).dialog {
+  justify-content: space-between;
+  padding: size.rem(11) spacing.px(4);
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    font: var(--h2);
+  }
+}
+
+:where(.#{$namespace}-bar).footer {
+  padding: size.rem(15) spacing.px(4);
+  justify-content: flex-end;
+  gap: spacing.px(2);
+}
+
+/// LEGACY
 .#{$namespace}-toolbar:not(.next) {
   display: flex;
   align-items: center;

@@ -8,7 +8,7 @@
       }"
     >
       <button class="hx-nav-toggle" @click="toggleNav()">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i
             class="hx-icon"
             :class="{
@@ -90,7 +90,7 @@ export default {
 .hx-nav-toggle {
   top: 52px;
 
-  :where(.hx-drawer__container).bottom & {
+  :where(.hx-drawer-container).bottom & {
     top: unset;
     bottom: -40px;
     right: 22px;

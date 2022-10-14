@@ -35,7 +35,7 @@ export default {
         {
           title: 'Horizontal',
           withContent: false,
-          code: `<div class="hx-card-content grid phablet:grid-cols-2  gap-4">
+          code: `<div class="hx-card__content grid phablet:grid-cols-2  gap-4">
   <div class="hx-card">
     <div class="p-4">
       <span class="h3">Related Content</span>
@@ -61,7 +61,7 @@ export default {
         {
           title: 'Vertical',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <p>
     <code>hx-divider</code> - a vertical divider, fixed height of 20px.
     Also see the toolbar for examples.

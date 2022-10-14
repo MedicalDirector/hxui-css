@@ -66,11 +66,11 @@ $border-width-default: 1;
 ////////////////////
 
 @mixin label-container {
-  > :is(div, span):not(:where(.#{$namespace}-icon-control, .#{$namespace}-icon-container, .#{$namespace}-icon, .icon)) {
+  > :is(div, span):not(:where(.#{$namespace}-icon-container)) {
     @content;
   }
 
-  .#{$namespace}-button-label {
+  .#{$namespace}-button__label {
     @content;
   }
 }

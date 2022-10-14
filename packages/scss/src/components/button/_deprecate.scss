@@ -50,7 +50,7 @@ a.#{$namespace}-button,
     color: inherit;
   }
 
-  .#{$namespace}-icon-control {
+  .#{$namespace}-icon-container {
     &:first-child:not(:last-child) {
       margin-left: calc(-0.1rem - 1px);
       margin-right: 0.3rem;
@@ -217,7 +217,7 @@ a.#{$namespace}-button,
     @include button-small;
 
     &:not(.is-round) {
-      .#{$namespace}-icon-control {
+      .#{$namespace}-icon-container {
         * {
           font-size: 14px;
         }
@@ -264,7 +264,7 @@ a.#{$namespace}-button,
     margin-left: 0.25rem;
     margin-right: 0.25rem;
 
-    .#{$namespace}-icon-control {
+    .#{$namespace}-icon-container {
       margin-top: 1px;
     }
 
@@ -330,7 +330,7 @@ a.#{$namespace}-button,
 .#{$namespace}-delete {
   @include delete;
 
-  &.#{$namespace}-icon-control {
+  &.#{$namespace}-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,7 +362,7 @@ a.#{$namespace}-button,
   &.is-small {
     // specific to accommodate small delete circle
     // can be abstracted to -icon.is-xsmall
-    &.#{$namespace}-icon-control > .#{$namespace}-icon.is-small {
+    &.#{$namespace}-icon-container > .#{$namespace}-icon.is-small {
       height: 0.75rem;
       width: 0.75rem;
       font-size: 0.75rem;

@@ -22,10 +22,10 @@
 
     <div class="grid grid-cols-2 phablet:grid-cols-4 laptop:grid-cols-7 gap-4">
       <div class="hx-card bg-primary-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg-contrast">Primary</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-primary-emphasis px-4 py-2">
             <p class="b1 fg-contrast">bg-primary-emphasis</p>
           </div>
@@ -42,11 +42,11 @@
       </div>
 
       <div class="hx-card bg-background">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg">Neutrals</h3>
           <p class="b2">&nbsp;</p>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-background px-4 py-2">
             <p class="b1 fg">bg-background</p>
           </div>
@@ -69,10 +69,10 @@
       </div>
 
       <div class="hx-card bg-success-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg-contrast">Success</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-success-emphasis px-4 py-2">
             <p class="b1 fg-contrast">bg-success-emphasis</p>
           </div>
@@ -89,10 +89,10 @@
       </div>
 
       <div class="hx-card bg-danger-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg-contrast">Danger</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-danger-emphasis px-4 py-2">
             <p class="b1 fg-contrast">bg-danger-emphasis</p>
           </div>
@@ -109,10 +109,10 @@
       </div>
 
       <div class="hx-card bg-warning-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg">Warning</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-warning-emphasis px-4 py-2">
             <p class="b1 fg">bg-warning-emphasis</p>
           </div>
@@ -129,10 +129,10 @@
       </div>
 
       <div class="hx-card bg-info-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg-contrast">Info</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-info-emphasis px-4 py-2">
             <p class="b1 fg-contrast">bg-info-emphasis</p>
           </div>
@@ -149,10 +149,10 @@
       </div>
 
       <div class="hx-card bg-caution-emphasis">
-        <div class="hx-card-header flex-col items-start gap-0">
+        <div class="hx-card__header flex-col items-start gap-0">
           <h3 class="h3 fg">Caution</h3>
         </div>
-        <div class="hx-card-content p-0">
+        <div class="hx-card__content p-0">
           <div class="bg-caution-emphasis px-4 py-2">
             <p class="b1 fg">bg-caution-emphasis</p>
           </div>

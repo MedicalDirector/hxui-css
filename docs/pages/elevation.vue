@@ -30,7 +30,7 @@
       </div>
       <div class="hx-column">
         <div class="hx-card" :class="'is-elevate-' + n">
-          <div class="hx-card-content">
+          <div class="hx-card__content">
             <h4 class="has-text-centered mt-3 mb-0">Elevation {{ n }}</h4>
             <p class="has-text-centered">
               <code>is-elevate-{{ n }}</code>

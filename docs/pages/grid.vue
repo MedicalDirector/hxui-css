@@ -53,7 +53,7 @@ export default {
         {
           title: 'Spanning columns',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <p class="hx-prose">
     Add a modifier with a reference to the number of columns spanned <code>.col-span-{{ number }}</code>.
   </p>
@@ -80,7 +80,7 @@ export default {
         {
           title: 'Offsetting columns',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <p class="hx-prose">
     Add a modifier with a start <code>.col-start-{{ number }}</code> and end <code>.col-end-{{ number }}</code> column reference to span multiple columns.
   </p>
@@ -162,7 +162,7 @@ export default {
         {
           title: 'Columns responsiveness',
           code: `<div class="hx-alert info" role="alert">
-  <span class="hx-icon-control mr-2">
+  <span class="hx-icon-container mr-2">
     <i class="hx-icon is-medium icon-information"></i>
   </span>
   <span class="hx-flex-1">

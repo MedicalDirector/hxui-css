@@ -120,7 +120,7 @@ export default {
                     <a>
                       <div class="hx-list-content">Cras justo odio</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                       </div>
                     </a>
                   </li>
@@ -128,7 +128,7 @@ export default {
                     <a>
                       <div class="hx-list-content">Dapibus ac facilisis in</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                       </div>
                     </a>
                   </li>
@@ -136,7 +136,7 @@ export default {
                     <a>
                       <div class="hx-list-content">Morbi leo risus</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                       </div>
                     </a>
                   </li>
@@ -144,7 +144,7 @@ export default {
                     <a>
                       <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                       </div>
                     </a>
                   </li>
@@ -152,7 +152,7 @@ export default {
                     <a>
                       <div class="hx-list-content">Vestibulum at eros</div>
                       <div class="hx-list-action">
-                        <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                        <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                       </div>
                     </a>
                   </li>
@@ -205,7 +205,7 @@ export default {
                   <a>
                     <div class="hx-list-content">Cras justo odio</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                     </div>
                   </a>
                 </li>
@@ -213,7 +213,7 @@ export default {
                   <a>
                     <div class="hx-list-content">Dapibus ac facilisis in</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                     </div>
                   </a>
                 </li>
@@ -221,7 +221,7 @@ export default {
                   <a>
                     <div class="hx-list-content">Morbi leo risus</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                     </div>
                   </a>
                 </li>
@@ -229,7 +229,7 @@ export default {
                   <a>
                     <div class="hx-list-content">Phasellus sem tortor, consectetur sit amet ex non, varius rhoncus neque.</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                     </div>
                   </a>
                 </li>
@@ -237,7 +237,7 @@ export default {
                   <a>
                     <div class="hx-list-content">Vestibulum at eros</div>
                     <div class="hx-list-action">
-                      <button class="hx-button is-flat"><span class="hx-icon-control"><i class="hx-icon icon-star"></i></span></button>
+                      <button class="hx-button is-flat"><span class="hx-icon-container"><i class="hx-icon icon-star"></i></span></button>
                     </div>
                   </a>
                 </li>

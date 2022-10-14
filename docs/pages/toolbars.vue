@@ -62,17 +62,17 @@ export default {
         {
           title: 'Examples',
           withContent: false,
-          code: `<div class="hx-card-content grid gap-4">
+          code: `<div class="hx-card__content grid gap-4">
   <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-send"></i>
       </span>
       <span>Resubmit</span>
     </button>
 
     <button class="hx-button">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-printer-outline"></i>
       </span>
       <span>Print</span>
@@ -90,7 +90,7 @@ export default {
     <div class="hx-spacer"></div>
 
     <button class="hx-button primary">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-plus-empty"></i>
       </span>
       <span>Task</span>
@@ -112,7 +112,7 @@ export default {
           <span class="font-normal">Practitioner:&nbsp;</span>
           <span class="font-medium text-ellipsed">Mr John GP</span>
         </span>
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-caret-down"></i>
         </span>
       </button>
@@ -123,7 +123,7 @@ export default {
           <span>Status:&nbsp;</span>
           <span class="font-medium text-ellipsed">New</span>
         </span>
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-caret-down"></i>
         </span>
       </button>
@@ -132,7 +132,7 @@ export default {
     <div class="hx-divider mx-1"></div>
 
     <button class="hx-button primary">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-plus-empty"></i>
       </span>
       <span>Address</span>
@@ -141,7 +141,7 @@ export default {
     
   <div class="hx-toolbar next perforated-b">
     <button class="hx-button">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-printer-outline"></i>
       </span>
       <span>Print</span>
@@ -165,7 +165,7 @@ export default {
           <span class="font-normal">Practitioner:&nbsp;</span>
           <span class="font-medium text-ellipsed">Mr John GP</span>
         </span>
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-caret-down"></i>
         </span>
       </button>
@@ -177,7 +177,7 @@ export default {
           <span class="font-normal">Status:&nbsp;</span>
           <span class="font-medium text-ellipsed">New</span>
         </span>
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-caret-down"></i>
         </span>
       </button>
@@ -185,7 +185,7 @@ export default {
 
     <div class="hx-form-control no-label no-help">
       <div class="hx-input-group">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-search"></i>
         </span>
         <input class="hx-input" type="search" placeholder="Search patient...">

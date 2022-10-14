@@ -91,7 +91,7 @@
     }
 
     // start icon, specifically not targeting buttons
-    > .#{$namespace}-icon-control,
+    > .#{$namespace}-icon-container,
     > .#{$namespace}-adornment {
       display: inline-flex;
       padding: 0 0 0 spacing.px(2);
@@ -99,7 +99,7 @@
     }
 
     // end icon, specifically not targeting buttons
-    > .#{$namespace}-input + .#{$namespace}-icon-control,
+    > .#{$namespace}-input + .#{$namespace}-icon-container,
     > .#{$namespace}-input + .#{$namespace}-adornment {
       padding: 0 spacing.px(2) 0 0;
       @include text.no-copy;

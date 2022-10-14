@@ -12,7 +12,7 @@
     <div class="hx-form-control no-label no-help fullwidth">
       <label class="hx-label sr-only">Search icons</label>
       <div class="hx-input-group contrast">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-search"></i>
         </span>
         <input class="hx-input" type="text" required v-model="searchTerm" />

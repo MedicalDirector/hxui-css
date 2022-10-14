@@ -1,7 +1,12 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
-      <h1 class="hx-title pt-4">Grid (legacy)</h1>
+      <div class="pt-4 hx-flex items-center gap-4">
+        <h1 class="hx-title inline-block">Grid</h1>
+        <div class="hx-badge lg warning">
+          <span>Legacy</span>
+        </div>
+      </div>
       <h2 class="hx-subtitle">Responsive layouts (based on css flexbox)</h2>
     </div>
     <hr />
@@ -478,7 +483,7 @@ export default {
           title: 'Columns responsiveness',
           code: `
   <div class="hx-alert info" role="alert">
-    <span class="hx-icon-control mr-2">
+    <span class="hx-icon-container mr-2">
       <i class="hx-icon is-medium icon-information"></i>
     </span>
     <span class="hx-flex-1">
@@ -491,22 +496,22 @@ export default {
   <div class="hx-columns is-mobile">
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">2</div>
+        <div class="hx-card__content has-text-centered">2</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">3</div>
+        <div class="hx-card__content has-text-centered">3</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">4</div>
+        <div class="hx-card__content has-text-centered">4</div>
       </div>
     </div>
   </div>
@@ -516,22 +521,22 @@ export default {
   <div class="hx-columns is-desktop">
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">2</div>
+        <div class="hx-card__content has-text-centered">2</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">3</div>
+        <div class="hx-card__content has-text-centered">3</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">4</div>
+        <div class="hx-card__content has-text-centered">4</div>
       </div>
     </div>
   </div>
@@ -541,7 +546,7 @@ export default {
           title: 'Different column sizes per breakpoint',
           code: `
   <div class="hx-alert info" role="alert">
-    <span class="hx-icon-control mr-2">
+    <span class="hx-icon-container mr-2">
       <i class="hx-icon is-medium icon-information"></i>
     </span>
     <span class="hx-flex-1">
@@ -553,7 +558,7 @@ export default {
   <div class="hx-columns is-mobile">
     <div class="hx-column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">
+        <div class="hx-card__content has-text-centered">
           <code>is-three-quarters-mobile</code><br />
           <code>is-two-thirds-tablet</code><br />
           <code>is-half-desktop</code><br />
@@ -564,22 +569,22 @@ export default {
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
     <div class="hx-column">
       <div class="hx-card hx-bg-teal lighten-5">
-        <div class="hx-card-content has-text-centered">1</div>
+        <div class="hx-card__content has-text-centered">1</div>
       </div>
     </div>
   </div>

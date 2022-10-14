@@ -79,7 +79,7 @@ export default {
           description: 'Spans full width of containing element',
         },
         {
-          class: 'hx-button-content',
+          class: 'hx-button__label',
           type: 'sub-component',
           description: 'Label element (class optional, element required)',
         },
@@ -98,7 +98,7 @@ export default {
         {
           title: 'Button colours',
           withContent: false,
-          code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-1 gap-4">
+          code: `<div class="hx-card__content grid grid-cols-1 phablet:grid-cols-1 gap-4">
   <div class="flex gap-2 justify-center">
     <button class="hx-button">
       <span>Default</span>
@@ -156,7 +156,7 @@ export default {
         {
           title: 'Sizes',
           withContent: false,
-          code: `<div class="hx-card-content flex gap-2 justify-center items-center">
+          code: `<div class="hx-card__content flex gap-2 justify-center items-center">
   <button class="hx-button">
     <span>Default</span>
   </button>
@@ -174,7 +174,7 @@ export default {
         {
           title: 'Flat',
           withContent: false,
-          code: `<div class="hx-card-content flex gap-2 justify-center">
+          code: `<div class="hx-card__content flex gap-2 justify-center">
   <button class="hx-button flat">
     <span>Default</span>
   </button>
@@ -195,7 +195,7 @@ export default {
         {
           title: 'States',
           withContent: false,
-          code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
+          code: `<div class="hx-card__content flex flex-col gap-4 justify-center">
   <div class="flex items-center justify-center gap-2">
     <p class="hx-prose inline-block">Hover</p>
     <button class="hx-button hover">
@@ -257,7 +257,7 @@ export default {
         {
           title: 'Loading',
           withContent: false,
-          code: `<div class="hx-card-content flex items-center justify-center gap-2">
+          code: `<div class="hx-card__content flex items-center justify-center gap-2">
   <button class="hx-button loading">
     <span>Loading</span>
   </button>
@@ -278,7 +278,7 @@ export default {
         {
           title: 'Disabled',
           withContent: false,
-          code: `<div class="hx-card-content flex items-center justify-center gap-2">
+          code: `<div class="hx-card__content flex items-center justify-center gap-2">
   <button class="hx-button" disabled>
     <span>Disabled</span>
   </button>
@@ -287,34 +287,34 @@ export default {
         {
           title: 'With icons',
           withContent: false,
-          code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
+          code: `<div class="hx-card__content flex flex-col gap-4 justify-center">
   <div class="flex items-center justify-center gap-2">
     <button class="hx-button">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-helix"></i>
       </span>
       <span>Helix</span>
     </button>
     <button class="hx-button primary">
       <span>Helix</span>
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-helix"></i>
       </span>
     </button>
     <button class="hx-button success">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-plus-empty"></i>
       </span>
       <span>Add</span>
     </button>
     <button class="hx-button info">
       <span>More</span>
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-more"></i>
       </span>
     </button>
     <button class="hx-button danger">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-close-empty"></i>
       </span>
       <span>Remove</span>
@@ -323,22 +323,22 @@ export default {
 
   <div class="flex items-center justify-center gap-2">
     <button class="hx-button primary icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-helix"></i>
       </span>
     </button>
     <button class="hx-button warning icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-plus-empty"></i>
       </span>
     </button>
     <button class="hx-button success icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-right"></i>
       </span>
     </button>
     <button class="hx-button danger icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-heart"></i>
       </span>
     </button>
@@ -347,19 +347,19 @@ export default {
   <div class="flex items-center justify-center gap-2">
     <button class="hx-button sm">
       <span>Small</span>
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
     <button class="hx-button">
       <span>Medium</span>
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
     <button class="hx-button lg">
       <span>Large</span>
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
@@ -369,21 +369,21 @@ export default {
         {
           title: 'Button group',
           withContent: false,
-          code: `<div class="hx-card-content flex flex-col gap-4 justify-center">
+          code: `<div class="hx-card__content flex flex-col gap-4 justify-center">
   <div class="flex items-center justify-center gap-4">
     <div class="hx-button-group">
       <button class="hx-button">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-email-outline"></i>
         </span>
       </button>
       <button class="hx-button active">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-printer-outline"></i>
         </span>
       </button>
       <button class="hx-button">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-credit-card"></i>
         </span>
       </button>
@@ -400,19 +400,19 @@ export default {
 
     <div class="hx-button-group">
       <button class="hx-button primary active">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-email-outline"></i>
         </span>
         <span>Email</span>
       </button>
       <button class="hx-button primary">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-printer-outline"></i>
         </span>
         <span>Print</span>
       </button>
       <button class="hx-button primary">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-credit-card"></i>
         </span>
         <span>Pay</span>
@@ -427,19 +427,19 @@ export default {
   <div class="flex items-center justify-center gap-2">
     <div class="hx-button-group fullwidth">
       <button class="hx-button">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-email-outline"></i>
         </span>
         <span>Email to the patient</span>
       </button>
       <button class="hx-button">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-printer-outline"></i>
         </span>
         <span>Print invoice</span>
       </button>
       <button class="hx-button">
-        <span class="hx-icon-control">
+        <span class="hx-icon-container">
           <i class="hx-icon icon-credit-card"></i>
         </span>
         <span>Pay bill with credit card</span>
@@ -451,13 +451,13 @@ export default {
         {
           title: 'Split buttons',
           withContent: false,
-          code: `<div class="hx-card-content flex items-center justify-center gap-2">
+          code: `<div class="hx-card__content flex items-center justify-center gap-2">
   <div class="hx-button-split">
     <button class="hx-button primary sm">
       <span>Create recall</span>
     </button>
     <button class="hx-button primary sm icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
@@ -468,7 +468,7 @@ export default {
       <span>Create recall</span>
     </button>
     <button class="hx-button primary icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
@@ -479,7 +479,7 @@ export default {
       <span>Create recall</span>
     </button>
     <button class="hx-button primary lg icon">
-      <span class="hx-icon-control">
+      <span class="hx-icon-container">
         <i class="hx-icon icon-angle-down"></i>
       </span>
     </button>
@@ -489,7 +489,7 @@ export default {
         {
           title: 'Multiline button',
           withContent: false,
-          code: `<div class="hx-card-content grid grid-cols-1 phablet:grid-cols-3 gap-4">
+          code: `<div class="hx-card__content grid grid-cols-1 phablet:grid-cols-3 gap-4">
   <button class="hx-button multiline">
     <span>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
@@ -502,13 +502,13 @@ export default {
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
       accusantium doloremque laudantium
     </span>
-    <span class="hx-icon-control">
+    <span class="hx-icon-container">
       <i class="hx-icon icon-angle-down"></i>
     </span>
   </button>
 
   <button class="hx-button multiline is-primary">
-    <span class="hx-icon-control">
+    <span class="hx-icon-container">
       <i class="hx-icon icon-plus-empty"></i>
     </span>
     <span>

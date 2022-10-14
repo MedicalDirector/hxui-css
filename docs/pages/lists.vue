@@ -84,7 +84,7 @@ export default {
           title: 'Examples',
           withContent: false,
           code: `<div 
-  class="hx-card-content grid tablet:grid-cols-2 gap-4"
+  class="hx-card__content grid tablet:grid-cols-2 gap-4"
 >
   <div>
     <h3 class="hx-prose h4 mt-0">
@@ -107,7 +107,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -129,7 +129,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -151,7 +151,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -173,7 +173,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -195,7 +195,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -217,7 +217,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -248,12 +248,12 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-more"></i>
               </span>
             </button>
@@ -279,12 +279,12 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-more"></i>
               </span>
             </button>
@@ -339,7 +339,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-more"></i>
               </span>
             </button>
@@ -361,7 +361,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>
@@ -392,7 +392,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button sm flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-more"></i>
               </span>
             </button>
@@ -414,7 +414,7 @@ export default {
           </div>
           <div class="hx-list-item__end">
             <button class="hx-button sm flat">
-              <span class="hx-icon-control">
+              <span class="hx-icon-container">
                 <i class="hx-icon icon-bin"></i>
               </span>
             </button>

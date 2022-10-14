@@ -144,7 +144,7 @@
               <div class="hx-input-actions">
                 <div class="hx-button-group">
                   <button class="hx-button is-flat">
-                    <span class="hx-icon-control"
+                    <span class="hx-icon-container"
                       ><i class="icon icon-close-empty"></i
                     ></span>
                   </button>
@@ -180,7 +180,7 @@
               <div class="hx-input-actions">
                 <div class="hx-button-group">
                   <button class="hx-button is-flat">
-                    <span class="hx-icon-control"
+                    <span class="hx-icon-container"
                       ><i class="icon icon-close-empty"></i
                     ></span>
                   </button>
@@ -281,7 +281,7 @@ export default {
         <div class="hx-input-actions">
           <div class="hx-button-group">
             <button class="hx-button is-flat">
-              <span class="hx-icon-control"><i class="icon icon-close-empty"></i></span>
+              <span class="hx-icon-container"><i class="icon icon-close-empty"></i></span>
             </button>
           </div>
         </div>
