@@ -78,7 +78,8 @@
     left: 100%;
     max-height: 100vh;
 
-    &.overlay:not(.collapsed)::after {
+    &.overlay:not(.collapsed)::after,
+    &.overlay[aria-expanded="true"]::after {
       content: "";
       @include _overlay;
     }
@@ -183,14 +184,15 @@
     flex: 1;
   }
 
-  &:not(.collapsed) {
+  &:not(.collapsed),
+  &[aria-expanded="true"] {
     .#{$namespace}-drawer__scroll-container {
       overflow-y: auto;
       overflow-x: hidden;
     }
   }
 
-  &.collapsed {
+  &:is(.collapsed, [aria-expanded="false"]) {
     .#{$namespace}-drawer__scroll-container {
       overflow: hidden;
     }
@@ -234,6 +236,11 @@
 
 .#{$namespace}-nav-toggle {
   @include _toggle;
+  @include transition.dimensions(300);
+
+  :where(.#{$namespace}-drawer):is(.collapsed, [aria-expanded="false"]) & {
+    transform: rotateY(180deg);
+  }
 }
 
 /// LEGACY

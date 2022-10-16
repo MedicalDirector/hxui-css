@@ -175,6 +175,14 @@
   }
 }
 
+.#{$namespace}-icon {
+  @include transition.dimensions(300ms);
+
+  :where(.#{$namespace}-nav-heading)[aria-expanded="false"] & {
+    transform: rotateX(180deg);
+  }
+}
+
 //////////
 // ITEM //
 //////////

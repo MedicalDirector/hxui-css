@@ -23,7 +23,8 @@
                 class="hx-badge"
                 :class="{
                   primary: d.type === 'component',
-                  secondary: d.type !== 'component',
+                  'primary flat': d.type === 'sub-component',
+                  secondary: !['component', 'sub-component'].includes(d.type),
                 }"
               >
                 <span class="text-capitalise">{{ d.type }}</span>

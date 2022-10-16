@@ -7,16 +7,9 @@
         detached: isDetachable,
       }"
     >
-      <button class="hx-nav-toggle" @click="toggleNav()">
+      <button class="hx-nav-toggle" @click="toggleNav">
         <span class="hx-icon-container">
-          <i
-            class="hx-icon"
-            :class="{
-              'icon-angle-left': isOpen,
-              'icon-angle-right': !isOpen,
-            }"
-            aria-hidden="true"
-          ></i>
+          <i class="hx-icon icon-angle-left" aria-hidden="true"></i>
         </span>
       </button>
 
@@ -27,7 +20,7 @@
             :key="i"
             :title="section.title"
             :items="section.items"
-            @close-nav="closeNav()"
+            @close-nav="closeNav"
           >
           </expanding-nav-item>
         </nav>
@@ -36,7 +29,7 @@
     <button
       class="hx-overlay"
       v-if="isDetachable && isOpen"
-      @click="toggleNav()"
+      @click="toggleNav"
       aria-label="collapse sidebar"
     ></button>
   </div>

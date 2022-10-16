@@ -1,17 +1,14 @@
 <template>
   <li class="hx-nav-section">
-    <button class="hx-nav-heading" @click="toggleItem">
+    <button
+      class="hx-nav-heading"
+      @click="toggleItem"
+      :aria-expanded="`${show}`"
+    >
       <span>{{ title }}</span>
       <div class="hx-button icon flat">
         <span class="hx-icon-container">
-          <i
-            class="hx-icon"
-            :class="{
-              'icon-angle-down': show,
-              'icon-angle-up': !show,
-            }"
-            aria-hidden="true"
-          ></i>
+          <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
         </span>
         <span class="sr-only">{{ show ? 'Close' : 'Show' }}</span>
       </div>
@@ -29,7 +26,7 @@
           class="hx-nav-link"
           :to="{ path: item.path }"
           exact-active-class="active"
-          @click.native="closeNav()"
+          @click.native="closeNav"
         >
           <span class="inline-flex grow-1">{{ item.name }}</span>
           <span
@@ -46,7 +43,7 @@
           :href="item.link"
           target="_blank"
           rel="noreferrer noopener"
-          @click="closeNav()"
+          @click="closeNav"
         >
           <span>{{ item.name }}</span>
         </a>

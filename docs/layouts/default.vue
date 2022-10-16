@@ -1,13 +1,13 @@
 <template>
   <div id="app" class="layout-app">
     <aside
-      class="area-app-nav hx-drawer-container"
+      class="area-app__nav hx-drawer-container"
       :class="{ bottom: isMobile }"
     >
       <main-nav></main-nav>
       <sub-nav></sub-nav>
     </aside>
-    <main class="area-app-main">
+    <main class="area-app__main">
       <nuxt />
     </main>
   </div>
