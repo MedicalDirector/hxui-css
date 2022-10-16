@@ -2,57 +2,234 @@
 //  ACCORDIONS  //
 //////////////////
 
-@use "../variables" as *;
+@use "../../variables" as *;
+@use "../../mixins/transition";
+@use "../../mixins/deprecate" as *;
+@use "../../mixins/state";
+@use "./mixins" as accordion;
 
-.#{$namespace}-accordion {
-  list-style: none;
-  background-color: $hx-color-white;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 0;
+@use "../../functions/spacing";
+@use "../../functions/size";
 
-  &-container {
-    margin-top: 0;
+/// LEGACY
+@include deprecate("2.0.0", "Use a flex display with .hx-spacer or flex-grow") {
+  .#{$namespace}-accordion {
+    list-style: none;
+    background-color: $hx-color-white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0;
 
-    &:not(:last-child) {
-      box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.08);
+    &-container {
+      margin-top: 0;
+
+      &:not(:last-child) {
+        box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.08);
+      }
+
+      &:not(.is-active) {
+        .#{$namespace}-accordion-header:hover {
+          background-color: rgba(0, 0, 0, 0.02);
+          text-decoration: none;
+          color: $hx-color-primary;
+        }
+      }
     }
 
-    &:not(.is-active) {
-      .#{$namespace}-accordion-header:hover {
-        background-color: rgba(0, 0, 0, 0.02);
+    &-header {
+      color: $hx-text;
+      padding: $hx-spacer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.3s;
+
+      &:hover {
+        color: $hx-text;
         text-decoration: none;
-        color: $hx-color-primary;
+      }
+
+      .header-icon {
+        transition: 0.3s;
+        display: flex;
+      }
+    }
+
+    &-body {
+      overflow-y: hidden;
+      background-color: $hx-flex-accordion-bg-color;
+      transition: 0.5s;
+      box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.08);
+
+      &-wrapper {
+        padding: 1rem;
       }
     }
   }
+}
 
-  &-header {
-    color: $hx-text;
-    padding: $hx-spacer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.3s;
+/// MODERN
 
-    &:hover {
-      color: $hx-text;
-      text-decoration: none;
-    }
+/////////////////
+//  CONTAINER  //
+/////////////////
 
-    .header-icon {
-      transition: 0.3s;
-      display: flex;
+.#{$namespace}-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  &:not(.no-border) {
+    border: 1px solid $hx-border-color;
+  }
+}
+
+//////////////
+//  HEADER  //
+//////////////
+
+// zero specifity for base heading
+:where(.#{$namespace}-accordion-header, .#{$namespace}-accordion__header) {
+  :where(h1, h2, h3, h4, h5, h6) {
+    font: var(--h3);
+  }
+}
+
+.#{$namespace}-accordion-header,
+.#{$namespace}-accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// HAS TOGGLE
+  &:not(:has(> :where(button):not(.#{$namespace}-button))) {
+    @include accordion.header-control;
+
+    /// COMPACT
+    &.compact {
+      @include accordion.header-size-compact;
     }
   }
 
-  &-body {
-    overflow-y: hidden;
-    background-color: $hx-flex-accordion-bg-color;
-    transition: 0.5s;
-    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.08);
+  /// IS TOGGLE
+  > :where(button):not(.#{$namespace}-button) {
+    @include accordion.header-control;
+  }
 
-    &-wrapper {
-      padding: 1rem;
+  /// COMPACT, IS TOGGLE
+  &.compact > :where(button):not(.#{$namespace}-button) {
+    @include accordion.header-size-compact;
+  }
+
+  @supports not selector(:has(a)) {
+    @include accordion.header-control;
+  }
+
+  /// IS TOGGLE
+  &:where(button),
+  > :where(button):not(.#{$namespace}-button) {
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-surface-neutral-default);
+
+    @include state.hover {
+      background-color: var(--color-action-secondary-active);
+    }
+
+    @include state.active {
+      color: var(--color-foreground-primary);
+      background-color: var(--color-surface-primary-muted);
+    }
+
+    > .#{$namespace}-icon-container {
+      padding: 0 size.px(6);
+    }
+  }
+
+  /// CLOSED, LAST ITEM
+  &[aria-expanded="false"]:has(+ .#{$namespace}-accordion__content:last-of-type) {
+    box-shadow: none;
+  }
+
+  /// CONTENT OPEN STATE CONTROLLER
+  /// With and without animation
+  &[aria-expanded="false"] {
+    & + .#{$namespace}-accordion__content {
+      @include accordion.body-collapse-no-transition;
+    }
+
+    & + .#{$namespace}-accordion__content.with-inert {
+      @include accordion.body-collapse-with-transition;
+    }
+  }
+}
+
+.#{$namespace}-icon {
+  @include transition.dimensions(300ms);
+
+  :where(.#{$namespace}-accordion-header, .#{$namespace}-accordion__header)[aria-expanded="false"] & {
+    transform: rotateX(180deg);
+  }
+}
+
+///////////////
+//  CONTENT  //
+///////////////
+
+.#{$namespace}-accordion__content[role="region"] {
+  display: flex;
+  flex-direction: column;
+  padding: spacing.rem(4) spacing.px(4);
+  background-color: var(--color-surface-neutral-default);
+
+  &:not(:last-of-type) {
+    box-shadow: inset 0 -1px 0 0 $hx-border-color;
+  }
+
+  //////////////
+  // Variants //
+  //////////////
+
+  /// CONTRASTING BACKGROUND
+  &.contrast {
+    background-color: var(--color-surface-background-default);
+  }
+
+  /// SIZING
+  &.compact {
+    padding: 0;
+  }
+
+  /// ALTERNATE OPEN STATE CONTROLLER
+  &.collapsed:not(.with-inert) {
+    display: none;
+  }
+
+  // still keyboard-focusable if "inert" html attribute not applied
+  &.with-inert {
+    transition-property: max-height, padding;
+    @include transition.propless(300ms);
+
+    &:not(.collapsed) {
+      max-height: 100%;
+    }
+
+    &.collapsed {
+      max-height: 0;
+
+      &:not(.compact) {
+        padding: 0 spacing.px(4);
+      }
     }
   }
 }

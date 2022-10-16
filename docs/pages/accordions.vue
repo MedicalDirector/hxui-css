@@ -1,17 +1,16 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="contents hx-prose">
-      <h1 class="hx-title pt-4">Accordions</h1>
+      <h1 class="hx-title pt-4">Accordion</h1>
       <h2 class="hx-subtitle">
         The <code>hx-accordion</code> component is useful for reducing vertical
-        space with large amounts of information. The default functionality of
-        the component is to only display one accordion-panel body at a time,
-        however, with the <code>expandable</code> property, the accordion-panel
-        can remain open until explicitly closed.
+        space with large amounts of information.
       </h2>
-
-      <hr />
     </div>
+
+    <hr />
+
+    <api-table :data="data"></api-table>
 
     <div class="grid gap-4">
       <expanding-code-example
@@ -30,79 +29,126 @@
 
 <script>
 import ExpandingCodeExample from '../components/ExpandingCodeExample.vue'
+import ApiTable from '../components/ApiTable.vue'
 
 export default {
   components: {
     ExpandingCodeExample,
+    ApiTable,
   },
   data: () => ({
-    demo: [
+    data: [
       {
-        title: 'Item 1',
-        content: `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-          `,
+        class: 'hx-accordion',
+        type: 'component',
+        description: 'Container element',
       },
       {
-        title: 'Item 2',
-        content: `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-          `,
+        class: 'no-border',
+        type: 'modifier',
+        description: 'Removes outer border',
       },
       {
-        title: 'Item 3',
-        content: `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-          `,
+        class: 'hx-accordion__header',
+        type: 'sub-component',
+        description: 'Header element',
+      },
+      {
+        class: '[aria-expanded="true"]',
+        type: 'modifier',
+        description: 'Added to header. Controls visibility of adjacent content',
+      },
+      {
+        class: 'compact',
+        type: 'modifier',
+        description: 'Reduces vertical padding to header',
+      },
+      {
+        class: 'hx-accordion__content[role="region"]',
+        type: 'sub-component',
+        description: 'Content element',
+      },
+      {
+        class: 'compact',
+        type: 'modifier',
+        description: 'Removes padding to content',
       },
     ],
     examples: [
       {
-        title: 'Examples',
-        code: `<ul class="hx-accordion mt-0">
-  <li class="hx-accordion-container is-active">
-    <a class="hx-accordion-header">
-      <div class="header-title">Item 1</div>
-      <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down" aria-hidden="true" style="display: none"></i>
-        <i class="hx-icon is-small icon-angle-up" aria-hidden="true"></i>
-      </div>
-    </a>
-    <div class="hx-accordion-body">
-      <div class="hx-accordion-body-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-      </div>
-    </div>
-  </li>
-  <li class="hx-accordion-container">
-    <a class="hx-accordion-header">
-      <div class="header-title">Item 2</div>
-      <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
-        <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
-      </div>
-    </a>
-    <div class="hx-accordion-body" style="height: 0">
-      <div class="hx-accordion-body-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-      </div>
-    </div>
-  </li>
-  <li class="hx-accordion-container">
-    <a class="hx-accordion-header">
-      <div class="header-title">Item 3</div>
-      <div class="header-icon">
-        <i class="hx-icon is-small icon-angle-down" aria-hidden="true"></i>
-        <i class="hx-icon is-small icon-angle-up" aria-hidden="true" style="display: none"></i>
-      </div>
-    </a>
-    <div class="hx-accordion-body" style="height: 0">
-      <div class="hx-accordion-body-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer libero mi, fermentum non eleifend eu, scelerisque ut risus. Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac eros sit amet diam mattis porttitor ut vitae nulla. Nulla non ligula mattis, hendrerit urna eu, aliquet mauris. Sed vulputate tempor mauris at aliquam. Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.</p>
-      </div>
-    </div>
-  </li>
-</ul>`,
+        title: 'Kitchen sink',
+        code: `<section class="hx-accordion">
+  
+  <!-- header as a button -->
+  <div class="hx-accordion__header" aria-expanded="true">
+    <button>
+      <span class="h3">Item 1</span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="hx-accordion__content" role="region">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Integer libero mi, fermentum non eleifend eu, scelerisque ut risus.
+      Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales.
+      Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Etiam ac eros sit amet diam mattis porttitor ut vitae nulla.
+      Nulla non ligula mattis, hendrerit urna eu, aliquet mauris.
+      Sed vulputate tempor mauris at aliquam.
+      Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.
+    </p>
+  </div>
+
+  <!-- header with a button -->
+  <div class="hx-accordion__header" aria-expanded="true">
+    <h3>Item 2</h3>
+    <button class="hx-button flat">
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="hx-accordion__content" role="region">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Integer libero mi, fermentum non eleifend eu, scelerisque ut risus.
+      Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales.
+      Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Etiam ac eros sit amet diam mattis porttitor ut vitae nulla.
+      Nulla non ligula mattis, hendrerit urna eu, aliquet mauris.
+      Sed vulputate tempor mauris at aliquam.
+      Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.
+    </p>
+  </div>
+
+  <!-- compact header -->
+  <div class="hx-accordion__header compact" aria-expanded="true">
+    <h4 class="h4">
+      <span>Item 3</span>
+      <span> <code>.compact</code></span>
+    </h4>
+    <button class="hx-button flat">
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="hx-accordion__content contrast" role="region">
+    <p><code>.contrast</code></p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Integer libero mi, fermentum non eleifend eu, scelerisque ut risus.
+      Nullam accumsan metus a magna pretium, vitae malesuada nisl sodales.
+      Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Etiam ac eros sit amet diam mattis porttitor ut vitae nulla.
+      Nulla non ligula mattis, hendrerit urna eu, aliquet mauris.
+      Sed vulputate tempor mauris at aliquam.
+      Integer porta nibh tincidunt tortor tincidunt, vel dignissim quam dignissim.
+    </p>
+  </div>
+</section>`,
       },
     ],
   }),

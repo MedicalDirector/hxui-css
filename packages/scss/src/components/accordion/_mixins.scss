@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+@use "../../mixins/transition";
+@use "../../functions/spacing";
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin body-collapse-no-transition {
+  display: none;
+}
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin body-collapse-with-transition {
+  transition-property: max-height, padding;
+  @include transition.propless(300ms);
+
+  &:not(.collapsed) {
+    max-height: 100%;
+  }
+
+  &.collapsed {
+    max-height: 0;
+
+    &:not(.compact) {
+      padding: 0 spacing.px(4);
+    }
+  }
+}
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin header-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: spacing.rem(2) spacing.px(4);
+  min-height: spacing.rem(12);
+  gap: spacing.px(2);
+  box-shadow: inset 0 -1px 0 0 $hx-border-color;
+  background-color: var(--color-surface-neutral-default);
+  z-index: 1;
+  outline-offset: 0;
+}
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin header-size-compact {
+  padding: 0 spacing.px(4);
+  min-height: spacing.rem(8);
+}
