@@ -84,7 +84,7 @@
   }
 
   /// OPEN ON HOVER
-  :where(.#{$namespace}-tooltip-container).hoverable:hover & {
+  :where(.#{$namespace}-tooltip-container):not(.manual):is(:hover, :focus-within) & {
     opacity: 1;
     box-shadow: var(--shadow-global-sm);
   }

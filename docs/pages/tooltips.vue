@@ -45,9 +45,10 @@ export default {
           description: 'Container element (optional)',
         },
         {
-          class: 'hoverable',
+          class: 'manual',
           type: 'modifier',
-          description: 'Makes tooltip visible on hover',
+          description:
+            'Programmatic control of visibility. Requires use of "active" modifier.',
         },
         {
           class: 'hx-tooltip[role="tooltip"]',
@@ -63,7 +64,7 @@ export default {
         {
           class: 'active',
           type: 'modifier',
-          description: 'Makes tooltip visible',
+          description: 'Makes tooltip visible. Requires "manual" modifier.',
         },
         {
           class: 'hx-tooltip__content',

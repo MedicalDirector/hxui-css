@@ -107,6 +107,10 @@
   justify-content: space-between;
   flex: 1;
 
+  :where(.#{$namespace}-button) {
+    border: none;
+  }
+
   //////////////
   // Variants //
   //////////////

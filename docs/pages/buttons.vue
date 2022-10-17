@@ -54,9 +54,9 @@ export default {
           description: 'Muted variant',
         },
         {
-          class: 'loading',
+          class: '[aria-live="polite"][aria-busy="true"]',
           type: 'modifier',
-          description: 'Loading variant',
+          description: 'Loading variant. aria-busy to "false" to stop spinner.',
         },
         {
           class: 'link',
@@ -258,19 +258,19 @@ export default {
           title: 'Loading',
           withContent: false,
           code: `<div class="hx-card__content flex items-center justify-center gap-2">
-  <button class="hx-button loading">
+  <button class="hx-button" aria-live="polite" aria-busy="true">
     <span>Loading</span>
   </button>
-  <button class="hx-button primary loading">
+  <button class="hx-button primary" aria-live="polite" aria-busy="true">
     <span>Loading</span>
   </button>
-  <button class="hx-button info loading">
+  <button class="hx-button info" aria-live="polite" aria-busy="true">
     <span>Loading</span>
   </button>
-  <button class="hx-button warning loading">
+  <button class="hx-button warning" aria-live="polite" aria-busy="true">
     <span>Loading</span>
   </button>
-  <button class="hx-button danger loading">
+  <button class="hx-button danger" aria-live="polite" aria-busy="true">
     <span>Loading</span>
   </button>
 </div>`,

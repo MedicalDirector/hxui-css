@@ -178,7 +178,8 @@ $border-width-default: 1;
 
 @mixin variant-loading {
   &.is-loading,
-  &.loading {
+  &.loading,
+  &[aria-live="polite"][aria-busy="true"] {
     color: transparent;
     pointer-events: none;
     width: 80px;
