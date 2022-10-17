@@ -401,6 +401,18 @@ export default {
       { name: 'refresh' },
       { name: 'shuffle-outline' },
       { name: 'shuffle' },
+      { name: 'redo' },
+      { name: 'redo-outline' },
+      { name: 'undo' },
+      { name: 'undo-outline' },
+      { name: 'image-outline' },
+      { name: 'image' },
+      { name: 'expand-outline' },
+      { name: 'horizontal-expand-outline' },
+      { name: 'drag-outline' },
+      { name: 'crop-outline' },
+      { name: 'email-lock' },
+      { name: 'email-lock-outline' },
     ]
 
     const listIconsCard = [
