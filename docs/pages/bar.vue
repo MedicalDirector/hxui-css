@@ -1,9 +1,9 @@
 <template>
   <article class="hx-section scrollable-y">
     <div class="hx-prose contents">
-      <h1 class="hx-title pt-4">Toolbars</h1>
+      <h1 class="hx-title pt-4">Bar</h1>
       <h2 class="hx-subtitle">
-        The toolbar component is a container for headers, titles, or actions.
+        The bar component is a container for headers and footers.
       </h2>
     </div>
 
@@ -38,24 +38,44 @@ export default {
     return {
       data: [
         {
-          class: 'hx-toolbar',
+          class: 'hx-bar',
           type: 'component',
-          description: 'Container element. Use `ul`.',
+          description: 'Main element',
         },
         {
-          class: 'next',
-          type: 'modifier',
-          description: 'Required. Adopts next styles',
+          class: 'hx-bar__title',
+          type: 'sub-component',
+          description: 'Title container element (left)',
         },
         {
-          class: 'compact',
-          type: 'modifier',
-          description: 'Reduced vertical padding',
+          class: 'hx-bar__actions',
+          type: 'sub-component',
+          description: 'Actions container element (right)',
         },
         {
-          class: 'comfortable',
+          class: 'app',
           type: 'modifier',
-          description: 'Extended vertical padding',
+          description: 'Appbar template',
+        },
+        {
+          class: 'sub',
+          type: 'modifier',
+          description: 'Subbar (toolbar) template',
+        },
+        {
+          class: 'dialog',
+          type: 'modifier',
+          description: 'Dialog header bar template',
+        },
+        {
+          class: 'footer',
+          type: 'modifier',
+          description: 'Bottom bar template',
+        },
+        {
+          class: '{padding}',
+          type: 'modifier',
+          description: '.compact or .comfortable. Controls vertical padding',
         },
       ],
       examples: [
@@ -232,8 +252,109 @@ export default {
   </button>
 </div>`,
         },
+        {
+          title: 'Templates',
+          code: `<p class="hx-prose"><code>.app</code></p>
+<div class="hx-bar app mt-0 mb-2 demo-border">
+  <div class="hx-bar__title">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-prescription" aria-hidden="true"></i>
+    </span>
+    <h1>Prescription</h1>
+  </div>
+
+  <div class="hx-bar__actions">
+    <button class="hx-button">
+      <span>Monography</span>
+    </button>
+    <button class="hx-button">
+      <span>CMI</span>
+    </button>
+    <button class="hx-button">
+      <span>PI</span>
+    </button>
+    <button class="hx-button flat">
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-more" aria-hidden="true"></i>
+      </span>
+      <span class="sr-only">More</span>
+    </button>
+  </div>
+</div>
+
+<p class="hx-prose"><code>.dialog</code></p>
+<div class="hx-bar dialog mb-2 demo-border">
+  <h1 class="h2">Title</h1>
+
+  <button class="hx-button flat">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-close-empty" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </span>
+  </button>
+</div>
+
+<p class="hx-prose"><code>.sub / .tool</code></p>
+<div class="hx-bar sub mb-2 demo-border">
+  <button class="hx-button primary">
+    <span class="hx-icon-container">
+      <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
+    </span>
+    <span>Address</span>
+  </button>
+  <div class="hx-divider mx-1"></div>
+  <div>
+    <span class="is-info font-medium">4</span>
+    <span> items in the address book</span>
+  </div>
+
+  <div class="hx-spacer"></div>
+
+  <i class="hx-icon icon-filter-outline" aria-hidden="true"></i>
+  <div class="hx-dropdown">
+    <button class="hx-button hx-button-dropdown">
+      <span>
+        <span class="font-normal">Practitioner:&nbsp;</span>
+        <span class="font-medium text-ellipsed">Mr John GP</span>
+      </span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="hx-dropdown">
+    <button class="hx-button hx-button-dropdown">
+      <span>
+        <span>Status:&nbsp;</span>
+        <span class="font-medium text-ellipsed">New</span>
+      </span>
+      <span class="hx-icon-container">
+        <i class="hx-icon icon-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+</div>
+
+<p class="hx-prose"><code>.footer</code></p>
+<div class="hx-bar footer demo-border">
+  <button class="hx-button">
+    <span>Cancel</span>
+  </button>
+  <button class="hx-button primary">
+    <span>Save changes</span>
+  </button>
+</div>`,
+        },
       ],
     }
   },
 }
 </script>
+
+<style lang="scss">
+@use '@hxui/css/src/variables' as *;
+
+.demo-border {
+  border: 1px solid $hx-border-color;
+}
+</style>

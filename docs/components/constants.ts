@@ -84,7 +84,7 @@ export const NAV_ITEMS = [
       },
       {
         name: 'Bar',
-        path: '/toolbars',
+        path: '/bar',
       },
     ],
   },
@@ -199,6 +199,10 @@ export const NAV_ITEMS = [
         name: 'Panel',
         path: '/panel',
         isLegacy: true,
+      },
+      {
+        name: 'Filter',
+        path: '/filter',
       },
       {
         name: 'App bar',
