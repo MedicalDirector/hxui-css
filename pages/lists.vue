@@ -1,19 +1,28 @@
 <template>
   <div id="lists">
     <h1 class="hx-title">Lists</h1>
-    <h2 class="hx-subtitle">A simple configurable way of using <code>ul</code> list.</h2>
+    <h2 class="hx-subtitle">
+      A simple configurable way of using <code>ul</code> list.
+    </h2>
 
-    <hr>
+    <hr />
 
-    <expanding-code-example v-for="(example, i) in examples" :key="i" :title="example.title" :code="example.code" :example="example.code" :visible="false" :background="example.bg"></expanding-code-example>
-
+    <expanding-code-example
+      v-for="(example, i) in examples"
+      :key="i"
+      :title="example.title"
+      :code="example.code"
+      :example="example.code"
+      :visible="false"
+      :background="example.bg"
+    ></expanding-code-example>
   </div>
 </template>
 
 <script>
 import ExpandingCodeExample from '@/components/ExpandingCodeExample'
 export default {
-  data () {
+  data() {
     return {
       examples: [
         {
@@ -28,7 +37,7 @@ export default {
   <li class="is-danger">Item four - danger</li>
   <li class="is-info">Item five - info</li>
 </ul>
-          `
+          `,
         },
         {
           title: 'List with status',
@@ -61,7 +70,7 @@ export default {
   <li class="is-checked is-info">Item five - info</li>
 </ul>
 
-          `
+          `,
         },
         {
           title: 'Modifiers',
@@ -151,7 +160,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   <li class="is-checked is-danger">Item four - danger</li>
   <li class="is-checked is-info">Item five - info</li>
 </ul>
-          `
+          `,
         },
         {
           title: 'Progress list',
@@ -209,7 +218,7 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
   </li>
   <li></li>
 </ul>
-          `
+          `,
         },
         {
           title: 'List group',
@@ -372,16 +381,93 @@ Use the  <code>.is-bordered</code> modifier to make it stand out. </p>
     </div>
   </div>
 </div>
-          `
-        }
-      ]
+
+<div>
+  <p>Kitchen sink</p>
+
+    <ul class="hx-card hx-list-group">
+      <li>
+        <div class="hx-list-item is-highlight">
+          <div class="hx-list-item__start">
+            <div 
+              class="hx-avatar is-small" 
+              style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"
+            ></div>
+          </div>
+          <div class="hx-list-item__primary">
+            <span class="h5 is-text-bold">Cras justo odio</span>
+          </div>
+          <div class="hx-list-item__end">
+            <button class="hx-button is-flat">
+              <span class="hx-icon-control" title="Delete">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button class="hx-button is-flat">
+              <span class="hx-icon-control" title="More">
+                <i class="hx-icon icon-more" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="hx-list-item__secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="hx-list-item is-highlight-danger">
+          <div class="hx-list-item__start">
+            <div 
+              class="hx-avatar is-small" 
+              style="background-image: url(${require('~/assets/images/default-avatar-business-bear.png')})"
+            ></div>
+          </div>
+          <div class="hx-list-item__primary">
+            <span class="h5 is-text-bold">Cras justo odio</span>
+          </div>
+          <div class="hx-list-item__end">
+            <button class="hx-button is-flat">
+              <span class="hx-icon-control" title="Delete">
+                <i class="hx-icon icon-bin" aria-hidden="true"></i>
+              </span>
+            </button>
+            <button class="hx-button is-flat">
+              <span class="hx-icon-control" title="More">
+                <i class="hx-icon icon-more" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="hx-list-item__secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. 
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="hx-list-item has-text-field">
+          <input type="text" placeholder="Add item here" />
+        </div>
+      </li>
+      <li>
+        <button class="hx-list-item hx-button">
+          <span class="hx-icon-control">
+            <i class="hx-icon icon-plus-empty" aria-hidden="true"></i>
+          </span>
+          <span>Add item</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>`,
+        },
+      ],
     }
   },
   components: {
-    ExpandingCodeExample
-  }
+    ExpandingCodeExample,
+  },
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
