@@ -377,6 +377,8 @@ export default {
       { name: 'horizontal-expand-outline' },
       { name: 'drag-outline' },
       { name: 'crop-outline' },
+      { name: 'email-lock' },
+      { name: 'email-lock-outline' },
     ]
 
     const listIconsLegacy = [
