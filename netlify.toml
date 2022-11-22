@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/angular/*"
+  to = "https://angular-hxui.netlify.app/angular/:splat"
+  status = 200
+  force = true

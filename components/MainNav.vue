@@ -19,7 +19,7 @@
           :href="item.link"
           :class="{
             'is-active': item.link === 'https://hxui.io',
-            'is-disabled': item.status === 'disabled'
+            'is-disabled': item.status === 'disabled',
           }"
         >
           <i class="hx-icon" :class="item.icon"></i>
@@ -59,22 +59,22 @@ export default {
           name: 'HTML & CSS',
           link: 'https://hxui.io',
           icon: 'icon-html-css',
-          status: 'active'
+          status: 'active',
         },
         {
           name: 'Angular',
-          link: 'https://angular.hxui.io',
+          link: 'https://hxui.io/angular',
           icon: 'icon-angular',
-          status: 'active'
-        }
-      ]
+          status: 'active',
+        },
+      ],
     }
   },
   methods: {
     toggleNav() {
       this.isMini = !this.isMini
-    }
-  }
+    },
+  },
 }
 </script>
 
